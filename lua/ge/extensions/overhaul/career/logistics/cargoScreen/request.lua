@@ -159,6 +159,19 @@ function part.new(inputs)
     addLoanerCards(fac)
   end
 
+  -- Stock cargo-overview panels read organization fields even for facilities without one (remote pits, addons).
+  local function organizationStub(orgId)
+    return {
+      id = orgId,
+      name = "",
+      reputation = {level = 0, value = 0, min = 0, max = 0, nextThreshold = 1, prevThreshold = 0, label = ""},
+      reputationLevels = {},
+      offersDeliveries = false,
+      hasUnlocks = false,
+      associatedFacilities = {},
+    }
+  end
+
   -- Large delivery systems the facility receives are offered too, even when it does not provide them.
   local function formatAvailableSystems(fac)
     local systems = deepcopy(fac.providedSystemsLookup or {})
@@ -222,6 +235,12 @@ function part.new(inputs)
     uiData.facility = formatFacilityPanel(fac)
     if organization then
       addOrganizationServices(uiData, fac, organization)
+    else
+      -- Always send an organization the stock screen can read, even when facId or psPath is odd.
+      uiData.facility.organization = organizationStub(fac.associatedOrganization)
+      log("D", "", string.format(
+        "Using safe organization stub for facility %s (organization %s)",
+        tostring(facId), tostring(fac.associatedOrganization)))
     end
 
     uiData.availableSystems = formatAvailableSystems(fac)
