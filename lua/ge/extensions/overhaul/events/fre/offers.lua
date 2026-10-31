@@ -476,6 +476,7 @@ local function purgeDisciplineEntries(discipline, dState, now, vehiclePool, spon
           if not sponsor.warningIssued then
             sponsor.warningIssued = true
             sponsor.warningIssuedAt = now
+            sponsor.warningAcknowledgedAt = nil
             sponsor.nextCheckAt = now + graceMinutes
             changed = true
           else
