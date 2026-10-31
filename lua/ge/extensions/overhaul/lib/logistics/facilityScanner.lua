@@ -167,6 +167,7 @@ end
 -- Returns metres and whether a complete navgraph route produced them. A direct-distance result is an estimate: callers may use it, but must not cache it as a finished driving route.
 function M.getDistanceBetweenLocations(posA, posB)
   local directDistance = getDirectDistance(posA, posB)
+  if not posA or not posB then return directDistance, false end
   local name_a, _, distance_a = map.findClosestRoad(posA)
   local name_b, _, distance_b = map.findClosestRoad(posB)
   if not name_a or not name_b then return directDistance, false end

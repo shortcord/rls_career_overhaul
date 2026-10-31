@@ -42,25 +42,100 @@ local function addCheckmark(props, keyLabel)
   table.insert(props, {icon = "checkmark", keyLabel = keyLabel})
 end
 
+-- Throttles: one warning per broken spot or unconfirmed cargo, not one per menu refresh.
+local warnedMissingSpots = {}
+local warnedUncountedCargo = {}
+local warnedMissingCargoPosition = {}
+
+local function isFiniteNumber(value)
+  return type(value) == "number" and value == value and value > -math.huge and value < math.huge
+end
+
+local function hasFinitePosition(pos)
+  if not pos then return false end
+  local ok, x, y, z = pcall(function() return pos.x, pos.y, pos.z end)
+  return ok and isFiniteNumber(x) and isFiniteNumber(y) and isFiniteNumber(z)
+end
+
+local function destinationFacilityMatches(destination, elem)
+  if not destination then return false end
+  if destination.type == "multi" then
+    for _, dest in ipairs(destination.destinations or {}) do
+      if dest.facId and dest.facId == elem.facId then return true end
+    end
+    return false
+  end
+  return destination.facId ~= nil and destination.facId == elem.facId
+end
+
+local function describeDestination(destination)
+  if not destination then return "destination=nil" end
+  if destination.type == "multi" then
+    local parts = {}
+    for _, dest in ipairs(destination.destinations or {}) do
+      parts[#parts + 1] = string.format("%s/%s", tostring(dest.facId), tostring(dest.psPath))
+    end
+    return "destination=multi[" .. table.concat(parts, ",") .. "]"
+  end
+  return string.format("destination=%s/%s", tostring(destination.facId), tostring(destination.psPath))
+end
+
 -- counts ----------------------------------------------------------------------------------------
 
 local function addDropOffCargo(inputs, counts, elem, psPos, container, cargo)
   local materialContracts = inputs.services.materialContracts
   local isContractCargo = cargo.data and cargo.data.materialContractId and materialContracts
-  local acceptsContractMaterial = isContractCargo
-    and materialContracts.getMaterialDeliveryCapacity(cargo.materialType, {
+  local contractCapacity
+  if isContractCargo then
+    contractCapacity = materialContracts.getMaterialDeliveryCapacity(cargo.materialType, {
       type = "facilityParkingspot", facId = elem.facId, psPath = elem.psPath,
-    }, cargo.data.materialContractId) > 0
+    }, cargo.data.materialContractId)
+  end
+  local acceptsContractMaterial = contractCapacity ~= nil and contractCapacity > 0
   local measuredType, add = cargoSemantics.measure(cargo)
-  local nearStall = (container.position - psPos):squaredLength() < STALL_RADIUS_SQUARED_M
+  local proximityKnown = hasFinitePosition(container.position) and hasFinitePosition(psPos)
+  local nearStall = false
+  if proximityKnown then
+    nearStall = (container.position - psPos):squaredLength() < STALL_RADIUS_SQUARED_M
+  else
+    local key = tostring(cargo.id) .. "|" .. tostring(elem.psPath)
+    if not warnedMissingCargoPosition[key] then
+      warnedMissingCargoPosition[key] = true
+      log("W", "", string.format(
+        "Cargo %s (%s) has no usable position at stall %s/%s; proximity cannot be confirmed, so the destination match decides counting",
+        tostring(cargo.id), tostring(cargo.type), tostring(elem.facId), tostring(elem.psPath)))
+    end
+  end
+  -- A missing position cannot confirm proximity: keep the destination match and drop only the radius test.
+  local proximityOk = nearStall or not proximityKnown
+
+  local counted = 0
   if acceptsContractMaterial then
-    counts[measuredType] = counts[measuredType] + (nearStall and add or 0)
-  elseif cargo.destination.type == "facilityParkingspot" then
+    local amount = proximityOk and add or 0
+    counts[measuredType] = counts[measuredType] + amount
+    counted = counted + amount
+  elseif cargo.destination and cargo.destination.type == "facilityParkingspot" then
     -- Writes under cargo.type but sums the measured type. The two match for ordinary cargo; the mismatch is kept as it was, because changing it changes the counts.
-    counts[cargo.type] = counts[measuredType] + ((cargo.destination.psPath == elem.psPath and nearStall) and add or 0)
-  elseif cargo.destination.type == "multi" then
+    local amount = (cargo.destination.psPath == elem.psPath and proximityOk) and add or 0
+    counts[cargo.type] = counts[measuredType] + amount
+    counted = counted + amount
+  elseif cargo.destination and cargo.destination.type == "multi" then
     for _, dest in ipairs(cargo.destination.destinations) do
-      counts[measuredType] = counts[measuredType] + ((dest.psPath == elem.psPath and nearStall) and add or 0)
+      local amount = (dest.psPath == elem.psPath and proximityOk) and add or 0
+      counts[measuredType] = counts[measuredType] + amount
+      counted = counted + amount
+    end
+  end
+
+  if counted == 0 and destinationFacilityMatches(cargo.destination, elem) then
+    local key = tostring(cargo.id) .. "|" .. tostring(elem.psPath)
+    if not warnedUncountedCargo[key] then
+      warnedUncountedCargo[key] = true
+      log("W", "", string.format(
+        "Cargo %s (%s) at stall %s/%s matches the facility but was not counted: %s, proximity %s%s",
+        tostring(cargo.id), tostring(cargo.type), tostring(elem.facId), tostring(elem.psPath),
+        describeDestination(cargo.destination), proximityKnown and tostring(nearStall) or "unknown",
+        contractCapacity ~= nil and string.format(", material contract capacity %s", tostring(contractCapacity)) or ""))
     end
   end
 end
@@ -450,7 +525,18 @@ local function gatherParkingActivity(inputs, elem, activityData)
     props = {},
     sorting = {type = elem.type, id = elem.id},
   }
-  local psPos = inputs.services.generator.getParkingSpotByPath(elem.psPath).pos
+  local spot = inputs.services.generator.getParkingSpotByPath(elem.psPath)
+  if not spot or not spot.pos then
+    local key = tostring(elem.facId) .. "|" .. tostring(elem.psPath)
+    if not warnedMissingSpots[key] then
+      warnedMissingSpots[key] = true
+      log("W", "", string.format(
+        "Skipping parking activity for missing or incomplete parking spot: facId=%s psPath=%s elemId=%s",
+        tostring(elem.facId), tostring(elem.psPath), tostring(elem.id)))
+    end
+    return
+  end
+  local psPos = spot.pos
   local stall = dropOffStall(inputs, elem, poiTemplate, psPos)
   local pickUpCounts = countPickUpCargo(inputs, elem, psPos)
   addPickUpProps(poiTemplate.props, pickUpCounts)

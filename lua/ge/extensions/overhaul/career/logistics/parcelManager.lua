@@ -451,7 +451,11 @@ M.getAllCargoInVehicles = getAllCargoInVehicles
 
 local function getLocationLabelShort(location)
   if location.type == "facilityParkingspot" then
-    return _tr(dGenerator.getFacilityById(location.facId).name)
+    local facility = dGenerator.getFacilityById(location.facId)
+    if not facility then
+      return location.facId and string.format("Unknown facility (%s)", tostring(location.facId)) or "Unknown location"
+    end
+    return _tr(facility.name)
   elseif location.type == "vehicle" then
     if be:getPlayerVehicleID(0) == location.vehId then
       return string.format("Current Vehicle (%d)", location.vehId)
@@ -472,8 +476,11 @@ end
 
 local function getLocationLabelLong(location)
   if location.type == "facilityParkingspot" then
+    local facility = dGenerator.getFacilityById(location.facId)
+    local facilityName = facility and _tr(facility.name)
+      or (location.facId and string.format("Unknown facility (%s)", tostring(location.facId)) or "Unknown location")
     local parkingSpot = dGenerator.getParkingSpotByPath(location.psPath)
-    local facilityName = _tr(dGenerator.getFacilityById(location.facId).name)
+    if not parkingSpot or not parkingSpot.customFields then return facilityName end
     return parkingSpot.customFields:has("name") and string.format("%s - %s",
       facilityName,
       _tr(parkingSpot.customFields:get("name"))) or facilityName
