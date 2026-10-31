@@ -15,6 +15,7 @@ function part.new(inputs)
   local _tr = deliveryText.text
   local core_locales = {contextTranslate = deliveryText.context}
   local issued = require('overhaul/lib/vehicles/issued')
+  local loanerCuts = require("overhaul/lib/logistics/loanerCuts")
   local deliveryServices, taskState = assert(inputs.services), assert(inputs.state)
   local abandonFine = assert(type(inputs.abandonFine) == 'function' and inputs.abandonFine, 'rewards.abandonFine callback required')
   local callbacks = {}
@@ -142,23 +143,27 @@ function part.new(inputs)
 
   -- Each loaner organization takes its cut, unless employment already pays it on shift.
   local function addLoanerOrganisationCuts(breakdown, taskData, originalRewards, loanerOrgReputationReward)
+    local emp = overhaul_career_work_employment
+    local skipOrganizationIds = {}
     for organizationId, _ in pairs(taskData.loanerOrganisations or {}) do
-      local emp = overhaul_career_work_employment
-      if not (emp and emp.usesEmploymentPayForOrg and emp.usesEmploymentPayForOrg(organizationId)) then
-        local organization = overhaul_world_organizations.getOrganization(organizationId)
-        local level = organization and organization.reputation and organization.reputation.level
-        local levelInfo = level and organization.reputationLevels and organization.reputationLevels[level+2]
-        local organizationCut = (levelInfo and levelInfo.loanerCut and levelInfo.loanerCut.value or 0.5)
-
-        local organizationElement = {
-          label = core_locales.contextTranslate("ui.career.delivery.breakdown.loanerOrganization", {cut = round(organizationCut * 100)}),
-          rewards = {money = -organizationCut * originalRewards.money},
-          simpleBreakdownType = "loaner",
-        }
-        organizationElement.rewards[organizationId.."Reputation"] = loanerOrgReputationReward
-
-        table.insert(breakdown, organizationElement)
+      if emp and emp.usesEmploymentPayForOrg and emp.usesEmploymentPayForOrg(organizationId) then
+        skipOrganizationIds[organizationId] = true
       end
+    end
+
+    local loanerRows = loanerCuts.compute(taskData.loanerOrganisations, originalRewards.money, {
+      skipOrganizationIds = skipOrganizationIds,
+      reputationAmount = loanerOrgReputationReward,
+    })
+    for _, loaner in ipairs(loanerRows) do
+      local organizationElement = {
+        label = core_locales.contextTranslate("ui.career.delivery.breakdown.loanerOrganization", {cut = round(loaner.cut * 100)}),
+        rewards = {money = loaner.money},
+        simpleBreakdownType = "loaner",
+      }
+      organizationElement.rewards[loaner.organizationId.."Reputation"] = loaner.reputationAmount
+
+      table.insert(breakdown, organizationElement)
     end
   end
 

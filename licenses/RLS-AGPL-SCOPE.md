@@ -25,6 +25,7 @@ inference applies to other files. Existing grants elsewhere remain in effect.
 - `lua/ge/extensions/overhaul/lib/career/challengeRounding.lua`
 - `lua/ge/extensions/overhaul/lib/career/economyManifest.lua`
 - `lua/ge/extensions/overhaul/lib/events/raceDataCatalog.lua`
+- `lua/ge/extensions/overhaul/lib/logistics/loanerCuts.lua`
 - `lua/ge/extensions/overhaul/lib/phone/appDiscovery.lua`
 - `lua/ge/extensions/overhaul/lib/platform/catalog.lua`
 - `lua/ge/extensions/overhaul/lib/platform/jsonCatalog.lua`

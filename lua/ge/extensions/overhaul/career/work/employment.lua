@@ -1234,6 +1234,35 @@ M.applyEmploymentPayToBreakdown = function(originalRewards, breakdown, adjustedR
       table.insert(filteredBreakdown, rewardBreakdown)
     end
   end
+
+  -- Loaner cuts alone must not push the payout below zero. Trim the last loaner rows
+  -- when a legacy or mixed breakdown deducts more than the job's gross.
+  local loanerDeduction = 0
+  for _, rewardBreakdown in ipairs(filteredBreakdown) do
+    if rewardBreakdown and rewardBreakdown.simpleBreakdownType == "loaner" then
+      local money = tonumber(rewardBreakdown.rewards and rewardBreakdown.rewards.money) or 0
+      if money < 0 then loanerDeduction = loanerDeduction + money end
+    end
+  end
+  local grossMoney = math.max(tonumber(originalRewards and originalRewards.money) or 0, 0)
+  local excessDeduction = -grossMoney - loanerDeduction
+  if excessDeduction > 0 then
+    for i = #filteredBreakdown, 1, -1 do
+      local rewardBreakdown = filteredBreakdown[i]
+      if rewardBreakdown and rewardBreakdown.simpleBreakdownType == "loaner" then
+        local money = tonumber(rewardBreakdown.rewards and rewardBreakdown.rewards.money) or 0
+        if money < 0 then
+          local reduction = math.min(-money, excessDeduction)
+          rewardBreakdown.rewards.money = money + reduction
+          adjustedRewards.money = (tonumber(adjustedRewards.money) or 0) + reduction
+          excessDeduction = excessDeduction - reduction
+          changed = true
+          if excessDeduction <= 0 then break end
+        end
+      end
+    end
+  end
+
   if changed then
     return originalRewards, filteredBreakdown, adjustedRewards
   end
