@@ -136,7 +136,50 @@ local multiseatActiveMarkers = {}
 local multiseatMarkerGeneration = -1
 local multiseatInteractionActive = false
 
-local function displayMultiseatTriggers(dtReal)
+-- A failed level mount can leave NaN marker positions in the cluster quadtree, and the
+-- tree then throws while it walks. Invalid query positions skip the query, failures log
+-- once per level instead of every frame, and the marker walk still runs on what is left.
+local function isFiniteNumber(v)
+  return type(v) == "number" and v == v and math.abs(v) < math.huge
+end
+
+local function emptyIterator() return nil end
+
+local warnedClusterQueryLevels = {}
+local function warnClusterQuery(level, reason)
+  local key = level or "unknown level"
+  if warnedClusterQueryLevels[key] then return end
+  warnedClusterQueryLevels[key] = true
+  log('W', 'markerInteraction', 'Marker cluster query failed on ' .. tostring(key) .. ': ' .. tostring(reason))
+end
+
+local function queryClustersNotNested(clusterQt, x1, y1, x2, y2, level)
+  if not (isFiniteNumber(x1) and isFiniteNumber(y1) and isFiniteNumber(x2) and isFiniteNumber(y2)) then
+    return emptyIterator
+  end
+  if not (clusterQt and type(clusterQt.queryNotNested) == "function") then
+    return emptyIterator
+  end
+  local ok, iterator, state, control = pcall(clusterQt.queryNotNested, clusterQt, x1, y1, x2, y2)
+  if not ok or type(iterator) ~= "function" then
+    warnClusterQuery(level, ok and 'queryNotNested did not return an iterator' or iterator)
+    return emptyIterator
+  end
+  -- queryNotNested returns (iterator, state); the tree walk is lazy and can throw on a later step.
+  local exhausted = false
+  return function()
+    if exhausted then return nil end
+    local okStep, id = pcall(iterator, state, control)
+    if not okStep then
+      exhausted = true
+      warnClusterQuery(level, id)
+      return nil
+    end
+    return id
+  end
+end
+
+local function displayMultiseatTriggers(dtReal, level)
   local markerGeneration = gameplay_rawPois.getRawPoiGeneration()
   if multiseatMarkerGeneration ~= markerGeneration then
     table.clear(multiseatActiveMarkers)
@@ -171,11 +214,12 @@ local function displayMultiseatTriggers(dtReal)
       data.dt = dtReal
       table.clear(data.nearbyIds)
 
-      for id in clusterQt:queryNotNested(
+      for id in queryClustersNotNested(clusterQt,
         data.vehPos.x - maxRadius,
         data.vehPos.y - maxRadius,
         data.vehPos.x + maxRadius,
-        data.vehPos.y + maxRadius
+        data.vehPos.y + maxRadius,
+        level
       ) do
         data.nearbyIds[id] = true
       end
@@ -281,7 +325,7 @@ local function displayMissionMarkers(level, dtSim, dtReal)
       prompt.closeForMultiseat()
       multiseatInteractionActive = true
     end
-    displayMultiseatTriggers(dtReal)
+    displayMultiseatTriggers(dtReal, level)
     markerWalkFull = true
     profilerPopEvent("MissionMarker precalc")
     return
@@ -370,16 +414,18 @@ local function displayMissionMarkers(level, dtSim, dtReal)
     local clusterQt = gameplay_playmodeMarkers.getPlaymodeClustersAsQuadtree()
     if markerVehiclesLib.isQueryableClusterQt(clusterQt) and updateData.playerPosition then
       -- Stock nearby set around the seated vehicle / player position.
-      for id in clusterQt:queryNotNested(updateData.playerPosition.x-maxRadius, updateData.playerPosition.y-maxRadius, updateData.playerPosition.x+maxRadius, updateData.playerPosition.y + maxRadius) do
+      local playerPos = updateData.playerPosition
+      for id in queryClustersNotNested(clusterQt, playerPos.x-maxRadius, playerPos.y-maxRadius, playerPos.x+maxRadius, playerPos.y + maxRadius, level) do
         nearbyIds[id] = true
       end
       -- Coupled extras only add markers in their small local bubble.
       if #vehicles.playerVehIds > 1 then
-        vehicles.queryClustersNearSecondaryPlayerVehicles(clusterQt, nearbyIds)
+        vehicles.queryClustersNearSecondaryPlayerVehicles(clusterQt, nearbyIds, level)
       end
 
       if updateData.isFreeCam and updateData.camPos then
-        for id in clusterQt:queryNotNested(updateData.camPos.x-maxRadius, updateData.camPos.y-maxRadius, updateData.camPos.x+maxRadius, updateData.camPos.y + maxRadius) do
+        local camPos = updateData.camPos
+        for id in queryClustersNotNested(clusterQt, camPos.x-maxRadius, camPos.y-maxRadius, camPos.x+maxRadius, camPos.y + maxRadius, level) do
           nearbyIds[id] = true
         end
       end
