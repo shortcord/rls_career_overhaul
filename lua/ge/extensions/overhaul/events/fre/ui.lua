@@ -206,6 +206,7 @@ local function formatSponsorForUi(sponsor, now, level)
     warningIssued = sponsor.warningIssued == true,
     probation = sponsor.probation == true,
     warningIssuedAt = sponsor.warningIssuedAt,
+    warningAcknowledgedAt = sponsor.warningAcknowledgedAt,
     lastQualifiedAt = lastQualifiedAt,
     lastQualifiedRaceName = sponsor.lastQualifiedRaceName,
     lastQualifiedRaceRouteType = sponsor.lastQualifiedRaceRouteType,

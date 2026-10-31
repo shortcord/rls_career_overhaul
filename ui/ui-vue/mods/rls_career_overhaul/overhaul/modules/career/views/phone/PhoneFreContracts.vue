@@ -351,7 +351,7 @@
               v-for="sponsor in sortedActiveSponsors"
               :key="sponsor.id"
               class="deal-card sponsor"
-              :class="{ warning: sponsor.warningIssued }"
+              :class="{ warning: isWarningActive(sponsor) }"
             >
               <div class="deal-card-top">
                 <div class="deal-card-title-wrap">
@@ -369,10 +369,10 @@
                 <div class="objective-block">
                   <div class="objective-label">Requirement</div>
                   <div class="objective-value compact">{{ sponsorRequirementHeadline(sponsor) }}</div>
-                  <div class="objective-sub">{{ sponsor.warningIssued ? 'Warning active' : sponsor.probation ? 'Qualify once to activate bonus' : 'Keep requirement satisfied' }}</div>
+                  <div class="objective-sub">{{ isWarningActive(sponsor) ? 'Warning active' : sponsor.probation ? 'Qualify once to activate bonus' : 'Keep requirement satisfied' }}</div>
                 </div>
               </div>
-              <div v-if="sponsor.warningIssued" class="warning-panel">
+              <div v-if="isWarningActive(sponsor)" class="warning-panel">
                 Warning active. Complete an event in {{ formatMinutes(displayRemaining(sponsor.checkMinutesRemaining)) }} to keep the sponsor.
                 <button class="inline-action" :disabled="actionBusy" @click="acknowledgeSponsorWarning(sponsor.id)">Acknowledge Warning</button>
               </div>
@@ -498,8 +498,14 @@ function sortByUrgencyThenReward(a, b) {
   return (displayRemaining(a.minutesRemaining) - displayRemaining(b.minutesRemaining)) || (Number(b.rewardMoney || 0) - Number(a.rewardMoney || 0))
 }
 
+function isWarningActive(sponsor) {
+  return Boolean(sponsor?.warningIssued) && !sponsor?.warningAcknowledgedAt
+}
+
 function sortByWarningThenUpkeep(a, b) {
-  return (Boolean(a.warningIssued) === Boolean(b.warningIssued) ? 0 : a.warningIssued ? -1 : 1) || (displayRemaining(a.checkMinutesRemaining) - displayRemaining(b.checkMinutesRemaining))
+  const aWarningActive = isWarningActive(a)
+  const bWarningActive = isWarningActive(b)
+  return (aWarningActive === bWarningActive ? 0 : aWarningActive ? -1 : 1) || (displayRemaining(a.checkMinutesRemaining) - displayRemaining(b.checkMinutesRemaining))
 }
 
 function sortByMinutesRemaining(a, b) {
