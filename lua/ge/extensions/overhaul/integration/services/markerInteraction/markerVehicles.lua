@@ -33,6 +33,49 @@ local function isQueryableClusterQt(clusterQt)
 end
 markerVehicles.isQueryableClusterQt = isQueryableClusterQt
 
+-- A failed level mount can leave NaN marker positions in the cluster quadtree, and the
+-- tree then throws while it walks. Invalid query positions skip the query, failures log
+-- once per level, and the remaining secondary vehicles still contribute nearby markers.
+local function isFiniteNumber(v)
+  return type(v) == "number" and v == v and math.abs(v) < math.huge
+end
+
+local function emptyIterator() return nil end
+
+local warnedClusterQueryLevels = {}
+local function warnClusterQuery(level, reason)
+  local key = level or "unknown level"
+  if warnedClusterQueryLevels[key] then return end
+  warnedClusterQueryLevels[key] = true
+  log('W', 'markerVehicles', 'Marker cluster query failed on ' .. tostring(key) .. ': ' .. tostring(reason))
+end
+
+local function queryClustersNotNested(clusterQt, x1, y1, x2, y2, level)
+  if not (isFiniteNumber(x1) and isFiniteNumber(y1) and isFiniteNumber(x2) and isFiniteNumber(y2)) then
+    return emptyIterator
+  end
+  if not (clusterQt and type(clusterQt.queryNotNested) == "function") then
+    return emptyIterator
+  end
+  local ok, iterator, state, control = pcall(clusterQt.queryNotNested, clusterQt, x1, y1, x2, y2)
+  if not ok or type(iterator) ~= "function" then
+    warnClusterQuery(level, ok and 'queryNotNested did not return an iterator' or iterator)
+    return emptyIterator
+  end
+  -- queryNotNested returns (iterator, state); the tree walk is lazy and can throw on a later step.
+  local exhausted = false
+  return function()
+    if exhausted then return nil end
+    local okStep, id = pcall(iterator, state, control)
+    if not okStep then
+      exhausted = true
+      warnClusterQuery(level, id)
+      return nil
+    end
+    return id
+  end
+end
+
 -- prompt: the marker interaction's prompt (POI classification and its re-evaluation flags).
 function markerVehicles.create(updateData, interactableElements, prompt, promptPolicy)
   local collector = {}
@@ -313,17 +356,18 @@ function markerVehicles.create(updateData, interactableElements, prompt, promptP
   end
 
   -- Only secondary player vehicles expand the nearby set, and only in a tight radius.
-  function collector.queryClustersNearSecondaryPlayerVehicles(clusterQt, outIds)
+  function collector.queryClustersNearSecondaryPlayerVehicles(clusterQt, outIds, level)
     if not isQueryableClusterQt(clusterQt) then
       return
     end
     for i = 2, #playerVehIds do
       probePos:set(getVehicleBB(playerVehIds[i], false).center)
-      for id in clusterQt:queryNotNested(
+      for id in queryClustersNotNested(clusterQt,
         probePos.x - SECONDARY_NEAR_RADIUS,
         probePos.y - SECONDARY_NEAR_RADIUS,
         probePos.x + SECONDARY_NEAR_RADIUS,
-        probePos.y + SECONDARY_NEAR_RADIUS
+        probePos.y + SECONDARY_NEAR_RADIUS,
+        level
       ) do
         outIds[id] = true
       end
