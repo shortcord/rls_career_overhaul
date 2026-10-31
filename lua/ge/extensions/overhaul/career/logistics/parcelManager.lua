@@ -17,6 +17,7 @@ local core_locales = {contextTranslate = deliveryText.context}
 local M = {}
 
 local ffi = require('ffi')
+local loanerCuts = require("overhaul/lib/logistics/loanerCuts")
 
 local cargoLocationsChangedThisFrame = false
 
@@ -555,18 +556,17 @@ local function getRewardsWithBreakdown(cargo)
     end
   end
 
-  for organizationId, _ in pairs(cargo.loanerOrganisations or {}) do
-    local organization = overhaul_world_organizations.getOrganization(organizationId)
-    local level = organization and organization.reputation and organization.reputation.level
-    local levelInfo = level and organization.reputationLevels and organization.reputationLevels[level+2]
-    local organizationCut = (levelInfo and levelInfo.loanerCut and levelInfo.loanerCut.value or 0.5)
-
+  local loanerReputation = 5 + round((tonumber(cargo.data and cargo.data.originalDistance) or 0)/1000)
+  local loanerRows = loanerCuts.compute(cargo.loanerOrganisations, originalMoney, {
+    reputationAmount = loanerReputation,
+  })
+  for _, loaner in ipairs(loanerRows) do
     local organizationElement = {
-      label = core_locales.contextTranslate("ui.career.delivery.breakdown.loanerOrganization", {cut = round(organizationCut * 100)}),
-      rewards = {money = -organizationCut * originalMoney},
+      label = core_locales.contextTranslate("ui.career.delivery.breakdown.loanerOrganization", {cut = round(loaner.cut * 100)}),
+      rewards = {money = loaner.money},
       simpleBreakdownType = "loaner",
     }
-    organizationElement.rewards[organizationId.."Reputation"] = 5 + round((tonumber(cargo.data and cargo.data.originalDistance) or 0)/1000)
+    organizationElement.rewards[loaner.organizationId.."Reputation"] = loaner.reputationAmount
 
     table.insert(breakdown, organizationElement)
   end
