@@ -50,6 +50,7 @@ inference applies to other files. Existing grants elsewhere remain in effect.
 - `lua/ge/extensions/overhaul/lib/vehicles/policy.lua`
 - `lua/ge/extensions/overhaul/lib/vehicles/vehicleCommands.lua`
 - `lua/vehicle/overhaul/geCallback.lua`
+- `tools/build_release.sh`
 - `ui/modModules/overhaulCelebrationPopUp/overhaulCelebrationPopUp.css`
 - `ui/modModules/overhaulCelebrationPopUp/overhaulCelebrationPopUp.html`
 - `ui/modModules/overhaulCelebrationPopUp/overhaulCelebrationPopUp.js`
