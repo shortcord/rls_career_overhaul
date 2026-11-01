@@ -960,6 +960,12 @@ end
 local function abortSaveInFlight(reason)
   forgetSavedBlobs()
   reason = saveFailureReason or reason
+  local waiting = {}
+  for name in pairs(asyncSaveExtensions) do waiting[#waiting + 1] = name end
+  table.sort(waiting)
+  log('W', 'saveSystem', string.format('Save abort diagnostics generation=%s path=%s waiting=%s queuedWrites=%d syncDone=%s',
+    tostring(activeSaveGeneration), tostring(oldestSave), table.concat(waiting, ','),
+    math.max(0, #writeQueue - writeIndex + 1), tostring(syncSaveExtensionsDone)))
   log("E", "saveSystem", "Save failed: " .. tostring(reason))
   exitSaveFailed = true
   -- Timed autosaves retry one interval after a failure.
@@ -1155,6 +1161,8 @@ local function saveCurrentActual(vehiclesThumbnailUpdate, saveName, forceSave)
   local started = clockMs()
   log('D', 'saveSystem', string.format('save prepare_ms=%.3f', started - snapshotStarted))
   log("D", "saveSystem", string.format("save capture at %s stationary_s=%.2f exit=%s", tostring(os.time()), stoppedFor, tostring(exitFlush)))
+  log('I', 'saveSystem', string.format('Save started generation=%d path=%s mode=%s', activeSaveGeneration, oldestSave,
+    exitFlush and 'exit' or inFlightManualSave and 'manual' or 'auto'))
   lifecycle.phase(saveTransition, "capture")
   captureSaveWrites(function(writer)
     if overhaul_integration_services_statistic then overhaul_integration_services_statistic.ensureCareerReady("saveCurrentActual") end

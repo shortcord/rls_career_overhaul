@@ -385,6 +385,10 @@ parts.persistence = require('overhaul/career/garage/inventory/persistence').new(
   travel = travel,
   vehIdToInventoryId = vehIdToInventoryId,
   vehicles = vehicles,
+  -- Hibernated vehicles freeze their conditions, so a save keeps the last live capture.
+  isHibernated = function(vehId)
+    return parts.hibernation ~= nil and parts.hibernation.isHibernated(vehId) == true
+  end,
 })
 parts.bindings = require('overhaul/career/garage/inventory/bindings').new({
   state = garageState,
@@ -450,6 +454,17 @@ parts.operations = require('overhaul/career/garage/inventory/operations').new({
   inventoryIdToVehId = inventoryIdToVehId,
   teleportPlayerToStartingGarage = teleportPlayerToStartingGarage,
   useVehicleRetrievalService = useVehicleRetrievalService,
+  vehicles = vehicles,
+})
+-- Distance hibernation is opt-in and suspends simulation only; every part above still sees the record.
+parts.hibernation = require('overhaul/career/garage/inventory/hibernation').new({
+  state = garageState,
+  M = M,
+  inventoryIdToVehId = inventoryIdToVehId,
+  isDamageRestorePending = parts.spawn.isDamageRestorePending,
+  isPersonalInventoryId = parts.persistence.isPersonalInventoryId,
+  isVehicleRestorePending = function() return travel.activeRestore ~= nil end,
+  vehIdToInventoryId = vehIdToInventoryId,
   vehicles = vehicles,
 })
 -- Frame update ------------------------------------------------------------------------------------
@@ -531,6 +546,7 @@ end
 
 local function onUpdate(dtReal, dtSim, _dtRaw)
   parts.spawn.onUpdate(dtSim)
+  parts.hibernation.onUpdate(dtReal, dtSim)
   parts.persistence.pumpThumbnailCaptures()
   retryPendingMigration()
   tickNewCareerSave()
@@ -798,9 +814,19 @@ end
 
 M.addVehicle = parts.bindings.addVehicle
 M.removeVehicle = parts.bindings.removeVehicle
-M.removeVehicleObject = parts.bindings.removeVehicleObject
-M.spawnVehicle = parts.spawn.spawnVehicle
-M.enterVehicle = parts.spawn.enterVehicle
+-- A hibernated car is woken before any operation that expects live vehicle Lua.
+M.removeVehicleObject = function(inventoryId, ...)
+  parts.hibernation.wakeInventoryId(inventoryId)
+  return parts.bindings.removeVehicleObject(inventoryId, ...)
+end
+M.spawnVehicle = function(inventoryId, ...)
+  parts.hibernation.wakeInventoryId(inventoryId)
+  return parts.spawn.spawnVehicle(inventoryId, ...)
+end
+M.enterVehicle = function(inventoryId, ...)
+  parts.hibernation.wakeInventoryId(inventoryId)
+  return parts.spawn.enterVehicle(inventoryId, ...)
+end
 M.sellVehicle = parts.operations.sellVehicle
 M.sellVehicleFromInventory = parts.operations.sellVehicleFromInventory
 M.returnLoanedVehicleFromInventory = parts.operations.returnLoanedVehicleFromInventory
@@ -821,13 +847,21 @@ M.getDirtiedVehicles = parts.operations.getDirtiedVehicles
 M.getVehicles = parts.operations.getVehicles
 M.getVehicle = parts.operations.getVehicle
 M.isEmpty = parts.operations.isEmpty
-M.updatePartConditions = parts.bindings.updatePartConditions
+M.updatePartConditions = function(vehId, inventoryId, ...)
+  if vehId then parts.hibernation.wakeVehicle(vehId) end
+  if inventoryId then parts.hibernation.wakeInventoryId(inventoryId) end
+  return parts.bindings.updatePartConditions(vehId, inventoryId, ...)
+end
 M.updatePartConditionsOfSpawnedVehicles = parts.persistence.updatePartConditionsOfSpawnedVehicles
 M.getPartConditionsCallback = parts.bindings.getPartConditionsCallback
 M.applyPartConditions = parts.bindings.applyPartConditions
 M.applyPreparedMigration = parts.setup.applyPendingMigration
 M.isVehiclePendingTravel = travel.isPending
-M.prepareMapTravel = travel.prepare
+-- Travel staging reads couplers and transforms from live objects.
+M.prepareMapTravel = function(...)
+  parts.hibernation.wakeAll('map-travel')
+  return travel.prepare(...)
+end
 M.clearPreparedMapTravel = travel.clear
 
 -- Public API: license plates and names ------------------------------------------------------------
@@ -915,6 +949,13 @@ M.getRegistryView = function() return registryView end
 -- Per-attempt spawn readiness (placed, bound, conditions, VE ack, damage, AI), observed only.
 M.getSpawnReadiness = function() return parts.spawn.spawnReadiness end
 
+-- Distance hibernation ----------------------------------------------------------------------------
+
+M.isVehicleHibernated = parts.hibernation.isHibernated
+M.wakeVehicle = parts.hibernation.wakeVehicle
+M.wakeAllVehicles = parts.hibernation.wakeAll
+M.getHibernationDiagnostics = parts.hibernation.diagnostics
+
 -- Public API: auction listings --------------------------------------------------------------------
 
 M.isVehicleListedForAuction = parts.persistence.isVehicleListedForAuction
@@ -960,8 +1001,15 @@ M.publishVehicleSale = saleEvents.publish
 -- Game hooks --------------------------------------------------------------------------------------
 
 M.onExtensionLoaded = parts.setup.onExtensionLoaded
-M.onOverhaulSaveCurrentProfile = parts.persistence.onOverhaulSaveCurrentProfile
-M.onOverhaulSaveCurrentProfileAsyncStart = parts.persistence.onOverhaulSaveCurrentProfileAsyncStart
+-- Saves read live transforms and conditions; waking first keeps the established save path unchanged.
+M.onOverhaulSaveCurrentProfile = function(...)
+  parts.hibernation.wakeAll('save-capture')
+  return parts.persistence.onOverhaulSaveCurrentProfile(...)
+end
+M.onOverhaulSaveCurrentProfileAsyncStart = function(...)
+  parts.hibernation.wakeAll('save')
+  return parts.persistence.onOverhaulSaveCurrentProfileAsyncStart(...)
+end
 M.onBigMapActivated = parts.ui.onBigMapActivated
 M.onUpdate = onUpdate
 M.onBeforeWalkingModeToggled = parts.ui.onBeforeWalkingModeToggled
@@ -975,6 +1023,8 @@ M.onOverhaulComputerAddFunctions = parts.operations.onOverhaulComputerAddFunctio
 M.onOverhaulExperimentalMaintenanceModeChanged = onOverhaulExperimentalMaintenanceModeChanged
 M.onOverhaulCheckPermission = parts.operations.onOverhaulCheckPermission
 M.onGetRawPoiListForLevel = parts.operations.onGetRawPoiListForLevel
+M.onVehicleSpawned = parts.hibernation.onVehicleSpawned
+M.onVehicleDestroyed = parts.hibernation.onVehicleDestroyed
 
 -- Inventory owns name resolution; finance only runs registered providers while recording.
 local disposeFinanceProvider = require("overhaul/lib/finance/metadata").registerProvider("inventory.vehicleName", function(context)
@@ -994,6 +1044,9 @@ local disposeFinanceProvider = require("overhaul/lib/finance/metadata").register
   if type(name) == "table" then name = core_locales.translateWithOrWithoutContext(name) end
   return {vehicleId = id, vehicleName = name, vehicleKey = key}
 end)
-M.onExtensionUnloaded = function() disposeFinanceProvider() end
+M.onExtensionUnloaded = function()
+  parts.hibernation.shutdown()
+  disposeFinanceProvider()
+end
 
 return M

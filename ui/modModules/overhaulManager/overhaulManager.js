@@ -32,6 +32,8 @@ const managerEnglish = {
   "ui.overhaulManager.settings.autosaveIntervalMinutes.unit": "min",
   "ui.overhaulManager.settings.forcePhoneTutorial.label": "Phone Tutorial",
   "ui.overhaulManager.settings.forcePhoneTutorial.description": "Allow completed tutorials to run again.",
+  "ui.overhaulManager.settings.hibernateDistantVehicles.label": "Distant Vehicle Hibernation",
+  "ui.overhaulManager.settings.hibernateDistantVehicles.description": "Pause far-away parked owned vehicles until you return.",
   "ui.overhaulManager.settings.mapDevMode.label": "Map Dev Mode",
   "ui.overhaulManager.settings.mapDevMode.description": "Map editing and testing tools.",
   "ui.overhaulManager.settings.noParkedMode.label": "No Parked Mode",

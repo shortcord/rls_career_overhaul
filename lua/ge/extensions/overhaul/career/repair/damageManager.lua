@@ -125,6 +125,8 @@ local function attachTarget(capture, destination, task)
   end
   capture.targets[#capture.targets + 1] = {file = destination, task = task}
   task.pending = task.pending + 1
+  log('D', 'damageManager', string.format('Save damage queued generation=%s inventoryId=%s pending=%d',
+    tostring(task.generation), capture.key, task.pending))
 end
 
 local function finishCapture(capture, ok, reason)
@@ -168,6 +170,10 @@ local function onDamageDataWritten(writer, inventoryId, writtenFile, captureSequ
     return
   end
   local current = requestSeq[key] == captureSequence
+  if #capture.targets > 0 then
+    log('D', 'damageManager', string.format('Save damage replied inventoryId=%s sequence=%d current=%s written=%s',
+      key, captureSequence, tostring(current), tostring(undamaged or FS:fileExists(writtenFile))))
+  end
   local successful = false
   if undamaged then
     if current then

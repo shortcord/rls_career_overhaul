@@ -285,6 +285,11 @@ local partInputs = {
     ensureVehicleFallbackState = ensureVehicleFallbackState,
     findPersonalPart = findPersonalPart,
     freshWheelState = freshWheelState,
+    isHibernated = function(vehId)
+      local inventory = overhaul_career_garage_inventory
+      return inventory ~= nil and inventory.isVehicleHibernated ~= nil
+        and inventory.isVehicleHibernated(vehId) == true
+    end,
     isMaintenanceEnabled = isMaintenanceEnabled,
     lastContextSignatures = lastContextSignatures,
     markDirty = markDirty,

@@ -1,0 +1,16 @@
+{
+  "id": "hibernateDistantVehicles",
+  "key": "hibernateDistantVehicles",
+  "order": 210,
+  "type": "boolean",
+  "default": false,
+  "section": "developer",
+  "validateSingle": false,
+  "validateLoaded": false,
+  "ui": {
+    "label": "ui.overhaulManager.settings.hibernateDistantVehicles.label",
+    "description": "ui.overhaulManager.settings.hibernateDistantVehicles.description",
+    "section": "world",
+    "icon": "car"
+  }
+}

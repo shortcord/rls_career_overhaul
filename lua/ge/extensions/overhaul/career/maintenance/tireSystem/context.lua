@@ -416,6 +416,12 @@ function partFactory.new(inputs)
     end
     inputs.runtimeOwnersByVehId[vehId] = {kind = "personal", inventoryId = tonumber(inventoryId)}
 
+    -- A hibernated vehicle's Lua VM is suspended, so a queued context would never run. Waking re-sends
+    -- it with force, and keeping the stored signature untouched leaves the next ordinary tick correct.
+    if inputs.isHibernated and inputs.isHibernated(vehId) then
+      return true
+    end
+
     local excludedReason = excludedReasonFor(vehicleData, vehId)
     local burnout = inputs.burnoutOverrides[tonumber(inventoryId)] == true
     local dyno = inputs.dynoOverrides[tonumber(inventoryId)] == true

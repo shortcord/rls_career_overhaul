@@ -253,6 +253,12 @@ function persistence.new(inputs)
         completedResponseCount = completedResponseCount + 1
         finishIfAllResponsesCompleted()
       end
+      -- A hibernated vehicle cannot answer, and its conditions cannot change while suspended, so the
+      -- record already holds the live values. Finish without queuing a request or waiting for a timeout.
+      if inputs.isHibernated and inputs.isHibernated(vehId) then
+        finished()
+        return
+      end
       if deferRequests then
         schedulePartConditionTimeout(batchToken, inventoryId, function() return hasFinished end, finished)
       end
