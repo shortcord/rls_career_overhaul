@@ -14,7 +14,7 @@ Overhaul has its own career mode, saves and RLS West Coast map. Start a new care
 
 - **Jobs and deliveries:** Find work in Job Broker, group matching jobs in My Loads, and haul parcels, materials, fluids and vehicles with suitable equipment.
 - **Shifts and passengers:** Work for employers, drive taxis and buses, and take on recovery, quarry and facility work.
-- **Cars and garages:** Shop dealerships, negotiate purchases, manage storage, sell through the Marketplace, and buy or list vehicles at auction.
+- **Cars and garages:** Shop dealerships, order factory vehicles from your garage computer, negotiate purchases, manage storage, sell through the Marketplace, and buy or list vehicles at auction.
 - **Workshops and businesses:** Build and manage engines, tune vehicles, organise fleet work, and track business finances.
 - **Racing and events:** Run drag, circuit, rally, drift, crawling and other events. Compatible map courses can use the shared Dakar system.
 - **Police and insurance:** Take police work, deal with pursuits and fines, and choose coverage and repairs for your cars.
@@ -36,6 +36,26 @@ Available jobs, facilities and events depend on your map, equipment and career p
 [Read the full changelog](https://github.com/RLS-Modding/rls_career_overhaul/releases/tag/v2.8.0).
 
 ![Jobs and passenger work](ui/modules/whatsnew/2.8.0_public/bus.jpg)
+
+## What we are working on right now
+
+These additions are on the development branch after the public release.
+
+**New features**
+
+- **Factory vehicle ordering:** Owned garage computers can order any vehicle configuration from the game's catalogue. Choose a trim and standard or expedited shipping, pay up front, and follow up to five pending orders until they arrive. Orders can be cancelled before delivery.
+- **Distant vehicle hibernation:** An optional setting pauses simulation for far-away parked vehicles you own until you return or the car is needed. Vehicles coupled or touching each other sleep and wake together.
+
+**Fixes and improvements**
+
+- Save failures are reported, `Ctrl+L` recovers from soft locks, and repaired part conditions stay in sync.
+- Business pulls recover missing cars, and career vehicles settle before damage is restored.
+- Taxi fares stay fair while a ride is paused, and map and pause queries work without an owned car.
+- Cash-delivery loaners prefer secure vehicles, and stacked loaner cuts cannot make a payout negative.
+- Owned cars show their wheel data correctly, and Racing Team spectate races start the full grid with shared race AI.
+- Linux native cache paths and lowercase save imports work correctly.
+- Acknowledged sponsor warnings stay hidden, and delivery screens tolerate missing facility, spot or organisation data.
+- Marker cluster queries no longer throw on invalid positions.
 
 ## Install
 
