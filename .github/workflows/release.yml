@@ -2,7 +2,7 @@ name: Build release
 
 on:
   push:
-    tags:
+    branches:
       - "v*"
   workflow_dispatch:
     inputs:
