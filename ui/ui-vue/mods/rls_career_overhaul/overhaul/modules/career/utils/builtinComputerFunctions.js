@@ -71,6 +71,11 @@ export const BUILTIN_COMPUTER_FUNCTIONS = [
     "routeTarget": "overhaul.computer.vehicleInventory"
   },
   {
+    "id": "vehicleOrdering",
+    "icon": "carCoins",
+    "routeTarget": "overhaul.computer.vehicleOrdering"
+  },
+  {
     "id": "vehicleShop",
     "icon": "carCoins",
     "routeTarget": "overhaul.computer.vehicleShopping"

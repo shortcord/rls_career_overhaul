@@ -16,6 +16,7 @@
   "overhaul.computer.partInventory": "overhaul_career_parts_partInventory",
   "overhaul.computer.partShopping": "overhaul_career_parts_partShopping",
   "overhaul.computer.tuning": "overhaul_career_parts_tuning",
+  "overhaul.computer.vehicleOrdering": "overhaul_career_market_vehicleOrdering",
   "overhaul.employeeDropOff": "overhaul_career_work_employment",
   "overhaul.employeeShift": "overhaul_career_work_employment",
   "overhaul.engineRetail": "overhaul_career_parts_engines_engineRetail",

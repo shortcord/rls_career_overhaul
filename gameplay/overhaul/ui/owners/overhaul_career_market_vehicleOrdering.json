@@ -1,0 +1,22 @@
+{
+  "id": "overhaul_career_market_vehicleOrdering",
+  "order": 110,
+  "exports": {
+    "namespace": true
+  },
+  "routes": [
+    {
+      "name": "overhaul.computer.vehicleOrdering",
+      "order": 20,
+      "meta": {
+        "uiApps": {
+          "shown": false
+        },
+        "luaRoute": {
+          "backTarget": "overhaul.computer",
+          "title": "Order Vehicle"
+        }
+      }
+    }
+  ]
+}

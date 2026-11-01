@@ -1,0 +1,5 @@
+{
+  "id": "vehicleOrdering",
+  "icon": "carCoins",
+  "routeTarget": "overhaul.computer.vehicleOrdering"
+}

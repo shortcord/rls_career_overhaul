@@ -775,6 +775,18 @@ export default {
           "component": "/ui/ui-vue/mods/rls_career_overhaul/overhaul/modules/career/views/PurchaseBusiness.vue"
         },
         {
+          "name": "overhaul.computer.vehicleOrdering",
+          "path": "computer/vehicleOrdering/:computerId?",
+          "platformOrder": 61,
+          "owner": "overhaul_career_market_vehicleOrdering",
+          "component": "/ui/ui-vue/mods/rls_career_overhaul/overhaul/modules/career/views/VehicleOrderingMain.vue",
+          "meta": {
+            "uiApps": {
+              "shown": false
+            }
+          }
+        },
+        {
           "name": "challenge-completed",
           "path": "challenge-completed",
           "platformOrder": 109,

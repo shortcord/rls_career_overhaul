@@ -83,6 +83,7 @@ const MOD_NAMESPACES = [
   "overhaul_career_ui_uiUtils",
   "overhaul_career_market_valueCalculator",
   "overhaul_career_parts_vehiclePerformance",
+  "overhaul_career_market_vehicleOrdering",
   "overhaul_career_market_vehicleShopping",
   "overhaul_jobs_cardGames_cardGames",
   "overhaul_jobs_quarry_quarry",
