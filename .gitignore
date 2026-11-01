@@ -1,0 +1,5 @@
+.ruff_cache
+
+# Release build output
+dist/
+build/
