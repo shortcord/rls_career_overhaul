@@ -1,0 +1,87 @@
+name: Build release
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Version to stamp, without the leading v
+        required: false
+        type: string
+      source_sha:
+        description: Commit SHA to record (defaults to the checked-out commit)
+        required: false
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build release artifacts
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+        with:
+          # Tags are needed for the generated developer changelog.
+          fetch-depth: 0
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        env:
+          INPUT_VERSION: ${{ inputs.version }}
+        run: |
+          set -euo pipefail
+          version="${INPUT_VERSION:-}"
+          if [[ -z "$version" && "${GITHUB_REF_TYPE:-}" == "tag" ]]; then
+            version="${GITHUB_REF_NAME:-}"
+            version="${version#v}"
+          fi
+          if [[ -z "$version" ]]; then
+            version="$(sed -n 's/.*"version_string"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' gameplay/overhaul/version.json | head -n 1)"
+          fi
+          echo "value=${version}" >> "$GITHUB_OUTPUT"
+          echo "Building version ${version}"
+
+      - name: Build and verify
+        shell: bash
+        env:
+          VERSION: ${{ steps.version.outputs.value }}
+          SOURCE_SHA: ${{ inputs.source_sha }}
+        run: |
+          set -euo pipefail
+          rm -rf dist
+          args=(--version "$VERSION" --out dist --changelog-from-git)
+          if [[ -n "${SOURCE_SHA:-}" ]]; then
+            args+=(--source-sha "$SOURCE_SHA")
+          fi
+          bash tools/build_release.sh "${args[@]}"
+          sha256sum dist/*
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: rls-career-overhaul-v${{ steps.version.outputs.value }}
+          path: dist/*
+          if-no-files-found: error
+          # The ZIP is already compressed.
+          compression-level: 0
+          retention-days: 30
+
+      - name: Publish GitHub release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          files: dist/*
+          generate_release_notes: true
+          fail_on_unmatched_files: true
