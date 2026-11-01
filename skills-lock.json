@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "beamng-mods": {
+      "source": "aaronflorey/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/beamng-mods/SKILL.md",
+      "computedHash": "1a1c72f7ad30ccbbbc2e4516daf336e67b35e9aa26063732f04e3603a65f05be"
+    }
+  }
+}
