@@ -27,37 +27,10 @@ Run from the repository root.
 - Loaded extensions are global tables named after the extension; use `optional(name)` or `rawget(_G, name)` for soft dependencies instead of assuming another owner is loaded.
 - The current UI is Vue under `ui/ui-vue/mods/rls_career_overhaul/`, loaded from its `index.js`. `ui/modules/` and `ui/modModules/` are the older Angular/shared UI that it still imports. Routes, phone apps, computer functions and business types are declared in `gameplay/overhaul/*.json` and discovered at runtime.
 
-## Local skills
-
-```xml
-<available_skills>
-  <skill>
-    <name>beamng-mods</name>
-    <description>Build and debug BeamNG.drive and BeamMP mods, resources, and server plugins using Lua. Use this skill whenever the user mentions BeamNG modding, BeamMP, Resources/Server, Resources/Client, modScript.lua, lua/ge/extensions, extensions.load, MP.RegisterEvent, AddEventHandler, client/server event wiring, custom vehicles, gameplay scripts, or BeamNG Lua hooks.</description>
-  </skill>
-</available_skills>
-```
-
-Canonical source: `.agents/skills/beamng-mods/SKILL.md`, with API references in `references/` and working examples in `examples/`. `.claude/skills/beamng-mods` and `.hermes/skills/beamng-mods` are symlinks to it.
-
 ## Unit Test Generation
 
 This project uses unit test generation skills.
 
-### Available Skills
-
-```xml
-<available_skills>
-  <skill>
-    <name>generate-tests</name>
-    <description>Use when the user asks to generate, create, write, or add unit tests for existing code, or to cover a class, method, or file with tests — including Java targets using JUnit 5, Mockito, or AssertJ. Not for analysis-only requests that stop at listing test cases.</description>
-  </skill>
-  <skill>
-    <name>generate-test-cases</name>
-    <description>Use when the user asks to analyze code for test coverage, list what test cases are needed, or review testing strategy — WITHOUT generating actual test code.</description>
-  </skill>
-</available_skills>
-```
 ### Workflow
 
 When asked to write tests for a target, run the two skills in order — do not go
@@ -97,3 +70,48 @@ before writing code.
 
 - Lua: 2-space indent; module files follow `local M = {}` ... `return M` and the header/comment style of neighboring files.
 - Vue/JS: use the mod's `.prettierrc.json` (2 spaces, double quotes, semicolons, 120 columns).
+
+<skills_system priority="1">
+
+## Available Skills
+
+<!-- SKILLS_TABLE_START -->
+<usage>
+When users ask you to perform tasks, check if any of the available skills below can help complete the task more effectively. Skills provide specialized capabilities and domain knowledge.
+
+How to use skills:
+- Invoke: `npx openskills read <skill-name>` (run in your shell)
+  - For multiple: `npx openskills read skill-one,skill-two`
+- The skill content will load with detailed instructions on how to complete the task
+- Base directory provided in output for resolving bundled resources (references/, scripts/, assets/)
+
+Usage notes:
+- Only use skills listed in <available_skills> below
+- Do not invoke a skill that is already loaded in your context
+- Each skill invocation is stateless
+</usage>
+
+<available_skills>
+
+<skill>
+<name>beamng-mods</name>
+<description>Build and debug BeamNG.drive and BeamMP mods, resources, and server plugins using Lua. Use this skill whenever the user mentions BeamNG modding, BeamMP, `Resources/Server`, `Resources/Client`, `modScript.lua`, `lua/ge/extensions`, `extensions.load`, `MP.RegisterEvent`, `AddEventHandler`, client/server event wiring, custom vehicles, gameplay scripts, or BeamNG Lua hooks.</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>generate-test-cases</name>
+<description>"Use when the user asks to analyze code for test coverage, list what test cases are needed, or review testing strategy — WITHOUT generating actual test code."</description>
+<location>project</location>
+</skill>
+
+<skill>
+<name>generate-tests</name>
+<description>"Use when the user asks to generate, create, write, or add unit tests for existing code, or to cover a class, method, or file with tests — including Java targets using JUnit 5, Mockito, or AssertJ. Not for analysis-only requests that stop at listing test cases."</description>
+<location>project</location>
+</skill>
+
+</available_skills>
+<!-- SKILLS_TABLE_END -->
+
+</skills_system>
