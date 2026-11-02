@@ -45,6 +45,8 @@ local SESSION_DIR = "/temp/rls_career/damageSession/"
 local DAMAGE_SUBDIR = "/career/vehicles/damage/"
 local FILE_SUFFIX = "_damageState.json"
 local SAVE_EXTENSION = "damageManager"
+-- A silent car is asked once more, then the save keeps the last damage it is known to have.
+local MAX_CAPTURE_ATTEMPTS = 2
 
 -- sessionState: "pending", "written", "failed" or "cleared" per vehicle key.
 local sessionState = {}
@@ -118,6 +120,25 @@ local function copyDamage(source, destination, task, writer)
   return true
 end
 
+local onCaptureDeadline -- set once the retry and fallback paths below exist
+
+local function hasLiveSaveTarget(capture)
+  for _, target in ipairs(capture.targets) do
+    if taskIsCurrent(target.task) then return true end
+  end
+  return false
+end
+
+-- A capture joined to a save gets a bounded wait; the deadline owns the retry and the fallback.
+local function ensureCaptureDeadline(capture)
+  if capture.deadlineScheduled then return end
+  capture.deadlineScheduled = true
+  core_jobsystem.create(function(job)
+    job.sleep(repairConfig.get().captureTimeoutS)
+    onCaptureDeadline(capture)
+  end)
+end
+
 local function attachTarget(capture, destination, task)
   if not taskIsCurrent(task) then return end
   for _, target in ipairs(capture.targets) do
@@ -127,6 +148,7 @@ local function attachTarget(capture, destination, task)
   task.pending = task.pending + 1
   log('D', 'damageManager', string.format('Save damage queued generation=%s inventoryId=%s pending=%d',
     tostring(task.generation), capture.key, task.pending))
+  ensureCaptureDeadline(capture)
 end
 
 local function finishCapture(capture, ok, reason)
@@ -221,9 +243,41 @@ end
 
 -- Saving a vehicle's damage ----------------------------------------------------------------------
 
+-- A damaged car answers a capture through its own Lua. A silent car is asked once more after being
+-- woken, and the save then keeps the last snapshot that car is known to have.
+local function captureFileFor(key, sequence)
+  return SESSION_DIR .. key .. "_capture_" .. captureEpoch .. "_"
+    .. tostring(saveTask and saveTask.generation or "session") .. "_" .. sequence .. FILE_SUFFIX
+end
+
+-- The name the player knows a car by, or its inventory id once the record is gone.
+local function vehicleLabel(inventoryId)
+  local inventory = overhaul_career_garage_inventory
+  local name = inventory.getVehicleNiceNameTranslated and inventory.getVehicleNiceNameTranslated(inventoryId)
+  if type(name) ~= 'string' or name == '' then
+    local record = inventory.getVehicles()[inventoryId]
+    name = record and (record.niceName or record.model)
+    if type(name) == 'table' and core_locales then name = core_locales.translateWithOrWithoutContext(name) end
+  end
+  if type(name) ~= 'string' or name == '' then return 'vehicle ' .. tostring(inventoryId) end
+  return name
+end
+
+-- Cars whose damage had to come from the last snapshot, reported once the save completes.
+local function noteStaleVehicle(task, label)
+  if not task then return end
+  local stale = task.staleVehicles
+  if not stale then stale = {} task.staleVehicles = stale end
+  for _, name in ipairs(stale) do
+    if name == label then return end
+  end
+  stale[#stale + 1] = label
+end
+
 -- Asks the vehicle to write its damage to captureFile, then to reply; a removed car is deleted after the reply.
-local function queueDamageCapture(object, vehId, key, captureFile, captureSequence, removeVehicle, inspectDamage)
+local function queueDamageCapture(capture, object, vehId, key, captureFile, captureSequence, removeVehicle, inspectDamage)
   local replyId = vehicleCallbacks.open('damageDataWritten', {owner = 'damageManager', timeout = false})
+  capture.replyId = replyId
   local replyArguments = string.format("%q, %q, %d", key, captureFile, captureSequence)
   local reply = string.format("obj:queueGameEngineLua(require('vehicle/overhaul/geCallback').reply(%d, 'damageDataWritten', %q));",
     replyId, replyArguments)
@@ -244,6 +298,25 @@ local function queueDamageCapture(object, vehId, key, captureFile, captureSequen
   object:queueLuaCommand(saveCommand .. " obj:queueGameEngineLua(require('vehicle/overhaul/geCallback').reply(" .. deleteReplyId .. ", 'damageVehicleDelete', " .. vehId .. "));")
 end
 
+-- A capture that gave up: its save targets fail, and the caller's completion hears why.
+local function failCapture(capture, reason)
+  if captures[capture.sequence] ~= capture or capture.discarded then return end
+  capture.discarded = true
+  local key = capture.key
+  if requestSeq[key] == capture.sequence then
+    nextCaptureSequence(capture.inventoryId)
+    sessionState[key] = capture.previousState
+  end
+  for _, target in ipairs(capture.targets) do
+    if taskIsCurrent(target.task) then
+      failSave(target.task, reason)
+      target.task.pending = target.task.pending - 1
+    end
+  end
+  capture.targets = {}
+  finishCapture(capture, false, reason)
+end
+
 -- Starts a live capture of a damaged vehicle; the reply copies the capture to its save targets.
 local function captureDamagedVehicle(inventoryId, key, saveFile, removeVehicle, intoSession, writer, inspectDamage, done)
   local vehId = overhaul_career_garage_inventory.getVehicleIdFromInventoryId(inventoryId)
@@ -255,39 +328,151 @@ local function captureDamagedVehicle(inventoryId, key, saveFile, removeVehicle, 
   local previous = captures[requestSeq[key]]
   finishCapture(previous, false, 'Capture superseded')
   local captureSequence = nextCaptureSequence(inventoryId)
-  local captureFile = SESSION_DIR .. key .. "_capture_" .. captureEpoch .. "_" .. tostring(saveTask and saveTask.generation or "session") .. "_" .. captureSequence .. FILE_SUFFIX
+  local captureFile = captureFileFor(key, captureSequence)
   ensureDirFor(captureFile, writer)
   local previousState = sessionState[key]
   if previous then previousState = previous.previousState end
-  local capture = {key = key, file = captureFile, targets = {}, done = done, previousState = previousState}
+  local capture = {key = key, inventoryId = inventoryId, vehId = vehId, sequence = captureSequence, attempt = 1,
+    file = captureFile, targets = {}, done = done, previousState = previousState,
+    removeVehicle = removeVehicle, inspectDamage = inspectDamage}
   captures[captureSequence] = capture
   sessionState[key] = "pending"
   if not intoSession then attachTarget(capture, saveFile, saveTask) end
-  local queued, err = pcall(queueDamageCapture, object, vehId, key, captureFile, captureSequence, removeVehicle, inspectDamage)
-  local function fail(reason)
-    if captures[captureSequence] ~= capture or capture.discarded then return end
-    capture.discarded = true
-    if requestSeq[key] == captureSequence then
-      nextCaptureSequence(inventoryId)
-      sessionState[key] = capture.previousState
-    end
-    for _, target in ipairs(capture.targets) do
-      if taskIsCurrent(target.task) then
-        failSave(target.task, reason)
-        target.task.pending = target.task.pending - 1
-      end
-    end
-    capture.targets = {}
-    finishCapture(capture, false, reason)
+  -- A hibernated car does not run queued vehicle Lua: wake it, or the capture would never answer.
+  local inventory = overhaul_career_garage_inventory
+  if vehId and inventory.wakeVehicle and inventory.wakeVehicle(vehId) then
+    log('D', 'damageManager', string.format('Damage capture woke hibernated vehId=%s inventoryId=%s', tostring(vehId), key))
   end
-  if not queued then fail('Damage capture failed: ' .. tostring(err)); return capture end
+  local queued, err = pcall(queueDamageCapture, capture, object, vehId, key, captureFile, captureSequence, removeVehicle, inspectDamage)
+  if not queued then failCapture(capture, 'Damage capture failed: ' .. tostring(err)); return capture end
   if done then
     core_jobsystem.create(function(job)
       job.sleep(repairConfig.get().captureTimeoutS)
-      if capture.done then fail('Damage capture timed out') end
+      -- A save-joined capture is timed by its save deadline, which retries before it gives up.
+      if capture.done and not capture.discarded and not hasLiveSaveTarget(capture) then
+        failCapture(capture, 'Damage capture timed out')
+      end
     end)
   end
   return capture
+end
+
+-- True when the file holds a damage snapshot the vehicle can be restored from.
+local function isValidDamageSnapshot(file)
+  if not (file and FS:fileExists(file)) then return false end
+  local snapshot = jsonReadFile(file)
+  return type(snapshot) == 'table' and type(snapshot.partStates) == 'table'
+end
+
+-- The newest damage the car is known to have: its session copy, else the loaded save's copy.
+-- A cleared car has no snapshot, so a silent capture still fails rather than saving it undamaged.
+local function lastKnownDamageSource(inventoryId)
+  local sessionFile = getSessionFile(inventoryId)
+  if isValidDamageSnapshot(sessionFile) then return sessionFile, 'session' end
+  local loaded = getLoadedSaveFile(inventoryId)
+  if isValidDamageSnapshot(loaded) then return loaded, 'save' end
+  return nil, nil
+end
+
+-- Drops the request so a late reply can neither write the save nor count a second time.
+local function retireCapture(capture)
+  capture.discarded = true
+  capture.targets, capture.done = {}, nil
+  if captures[capture.sequence] == capture then captures[capture.sequence] = nil end
+  if capture.replyId then
+    vehicleCallbacks.close(capture.replyId)
+    capture.replyId = nil
+  end
+end
+
+local fallbackSaveCapture -- defined below; the retry hands over to it when there is nothing to ask
+
+-- Re-asks a silent car. A command queued while the car was hibernated never runs, so wake it first.
+local function retrySaveCapture(capture)
+  local key, inventoryId = capture.key, capture.inventoryId
+  local inventory = overhaul_career_garage_inventory
+  -- A respawned car answers from its new object, so never re-ask the id the silent capture used.
+  local currentVehId = inventory.getVehicleIdFromInventoryId and inventory.getVehicleIdFromInventoryId(inventoryId)
+  local vehId = currentVehId or capture.vehId
+  local object = vehId and be:getObjectByID(vehId) or nil
+  if not object then
+    log('W', 'damageManager', string.format('Save damage retry skipped inventoryId=%s vehId=%s reason=vehicle missing',
+      key, tostring(vehId)))
+    return fallbackSaveCapture(capture)
+  end
+  local woke = inventory.wakeVehicle and inventory.wakeVehicle(vehId) or false
+  local sequence = nextCaptureSequence(inventoryId)
+  local retry = {key = key, inventoryId = inventoryId, vehId = vehId, sequence = sequence,
+    attempt = (capture.attempt or 1) + 1, file = captureFileFor(key, sequence),
+    targets = capture.targets, done = capture.done, previousState = capture.previousState,
+    removeVehicle = capture.removeVehicle, inspectDamage = capture.inspectDamage}
+  retireCapture(capture)
+  captures[sequence] = retry
+  sessionState[key] = 'pending'
+  log('D', 'damageManager', string.format('Save damage retry inventoryId=%s vehId=%s sequence=%d attempt=%d woke=%s',
+    key, tostring(vehId), sequence, retry.attempt, tostring(woke == true)))
+  local queued, err = pcall(queueDamageCapture, retry, object, vehId, key, retry.file, sequence, retry.removeVehicle, retry.inspectDamage)
+  if not queued then
+    log('E', 'damageManager', 'Save damage retry could not queue: ' .. tostring(err))
+    return fallbackSaveCapture(retry)
+  end
+  ensureCaptureDeadline(retry)
+end
+
+-- Last resort: the save keeps the newest damage the car is known to have, or fails rather than
+-- recording missing damage as if the car were undamaged.
+fallbackSaveCapture = function(capture)
+  local key, inventoryId, vehId = capture.key, capture.inventoryId, capture.vehId
+  local targets = capture.targets or {}
+  retireCapture(capture)
+  local source, kind = lastKnownDamageSource(inventoryId)
+  if requestSeq[key] == capture.sequence then
+    nextCaptureSequence(inventoryId)
+    sessionState[key] = source and 'written' or capture.previousState
+  end
+  local live = {}
+  for _, target in ipairs(targets) do
+    if taskIsCurrent(target.task) then live[#live + 1] = target end
+  end
+  local label = vehicleLabel(inventoryId)
+  if not source then
+    log('E', 'damageManager', string.format('Save damage unavailable inventoryId=%s vehId=%s vehicle=%s',
+      key, tostring(vehId), label))
+    for _, target in ipairs(live) do
+      failSave(target.task, 'the current damage for ' .. label .. ' could not be read')
+      target.task.pending = target.task.pending - 1
+    end
+    return
+  end
+  if #live > 0 then noteStaleVehicle(saveTask, label) end
+  log('W', 'damageManager', string.format('Save damage fallback inventoryId=%s vehId=%s vehicle=%s source=%s attempt=%d',
+    key, tostring(vehId), label, tostring(kind), capture.attempt or 1))
+  overhaul_career_saveSystem.captureSaveWrites(function(writer)
+    local sessionFile = getSessionFile(inventoryId)
+    if source ~= sessionFile then copyDamage(source, sessionFile, saveTask, writer) end
+    for _, target in ipairs(live) do
+      if target.file ~= sessionFile then copyDamage(source, target.file, target.task, writer) end
+    end
+  end)
+  for _, target in ipairs(live) do
+    target.task.pending = target.task.pending - 1
+    finishSave(target.task)
+  end
+end
+
+onCaptureDeadline = function(capture)
+  if capture.discarded or captures[capture.sequence] ~= capture then return end
+  if not hasLiveSaveTarget(capture) then return end
+  local inventory = overhaul_career_garage_inventory
+  local hibernated = inventory and inventory.isVehicleHibernated and capture.vehId
+    and inventory.isVehicleHibernated(capture.vehId) == true
+  log('W', 'damageManager', string.format('Save damage capture silent inventoryId=%s vehId=%s sequence=%d attempt=%d hibernated=%s',
+    capture.key, tostring(capture.vehId), capture.sequence, capture.attempt or 1, tostring(hibernated or false)))
+  if (capture.attempt or 1) < MAX_CAPTURE_ATTEMPTS then
+    retrySaveCapture(capture)
+  else
+    fallbackSaveCapture(capture)
+  end
 end
 
 -- Resets the damage tracking inside a spawned vehicle, if it has one.
@@ -614,6 +799,18 @@ M.onOverhaulVehicleSaveFinished = function()
     saveTask.inventoryDone = true
     finishSave(saveTask)
   end
+end
+
+-- A completed save that had to reuse old damage tells the player which cars need another save.
+M.onOverhaulSaveFinished = function()
+  local stale = saveTask and saveTask.staleVehicles
+  if not stale or #stale == 0 then return end
+  saveTask.staleVehicles = nil
+  local names = table.concat(stale, ', ')
+  log('W', 'damageManager', 'Save kept the last known damage for: ' .. names)
+  guihooks.trigger("toastrMsg", {type = "warning", label = "career-save", title = "Vehicle damage not updated",
+    msg = string.format("The current damage for %s could not be read, so the last saved damage was kept. Save again to update it.", names),
+    config = {timeOut = 20000}})
 end
 
 M.onOverhaulSaveCurrentProfile = onOverhaulSaveCurrentProfile
