@@ -9,6 +9,8 @@
 -- Read in order: garage queries, display data, menu projection, fade callbacks, retrieval and API; inventory.lua owns frame work.
 local ui = {}
 
+local pingWait = require('overhaul/career/garage/inventory/pingWait')
+
 function ui.new(inputs)
   local garageState = inputs.state
   local M = inputs.M
@@ -34,6 +36,10 @@ function ui.new(inputs)
     "repairEnabled", "sellEnabled", "favoriteEnabled", "storingEnabled", "returnLoanerEnabled",
   }
 
+  -- The part-condition snapshot reply is best-effort: it must never hold a retrieval open.
+  local PING_WAIT_SECONDS = 2
+  local PING_WAIT_INTERVAL = 0.05
+
   -- Inventory rows, chooser actions, the computer hero and phone selling share this projection.
   local VEHICLE_LIST_FIELDS = {
     "id", "owned", "odometer", "location", "niceLocation", "dirtyDate",
@@ -49,16 +55,32 @@ function ui.new(inputs)
   local menuHeader
   local menuBackTarget
   local callbackAfterFade
+  local retrievalFadeActive
   local publishedVehicles
 
   -- Garage queries --------------------------------------------------------------------------------
 
+  -- A far-away vehicle can be hibernated, and a bridge command queued while it is suspended earns
+  -- no reply. Wake it first, then bound the wait: a lost ping must not strand the retrieval.
   local function setPartConditionResetSnapshot(veh, callback)
+    if not veh then return end
+    if M.wakeVehicle then M.wakeVehicle(veh:getID()) end
     core_vehicleBridge.executeAction(veh, 'createPartConditionSnapshot', "beforeReset")
     core_vehicleBridge.executeAction(veh, 'setPartConditionResetSnapshotKey', "beforeReset")
-    if callback then
-      core_vehicleBridge.requestValue(veh, callback, "ping")
-    end
+    if not callback then return end
+    pingWait.waitForReply({
+      veh = veh,
+      request = core_vehicleBridge.requestValue,
+      kind = "ping",
+      timeout = PING_WAIT_SECONDS,
+      interval = PING_WAIT_INTERVAL,
+      onCompletion = callback,
+      onTimeout = function()
+        log("W", "inventory", string.format(
+          "Part condition snapshot ping timed out for vehicle %d; continuing without the reply", veh:getID()))
+        callback()
+      end,
+    })
   end
 
   local function onBigMapActivated()
@@ -632,11 +654,24 @@ function ui.new(inputs)
 
   -- Fade callbacks --------------------------------------------------------------------------------
 
+  -- Every retrieval path releases the fade through this guard, so the black screen stops exactly once.
+  local function stopRetrievalFade()
+    if not retrievalFadeActive then return end
+    retrievalFadeActive = false
+    ui_fadeScreen.stop(0.5)
+  end
+
   local function onScreenFadeState(state)
-    if callbackAfterFade and state == 1 then
-      overhaul_career_garage_vehicleDeletionService.deleteFlaggedVehicles()
-      callbackAfterFade()
-      callbackAfterFade = nil
+    if not callbackAfterFade or state ~= 1 then return end
+    overhaul_career_garage_vehicleDeletionService.deleteFlaggedVehicles()
+    -- Clear before calling so a fade state raised inside the callback cannot run it again.
+    local callback = callbackAfterFade
+    callbackAfterFade = nil
+    local ok, err = pcall(callback)
+    if not ok then
+      -- A callback that raises before reaching its own release path would leave the screen black.
+      log("E", "inventory", "Vehicle retrieval after fade failed: " .. tostring(err))
+      stopRetrievalFade()
     end
   end
 
@@ -644,6 +679,7 @@ function ui.new(inputs)
 
   local function spawnVehicleAfterFade(enterAfterSpawn, inventoryId, callback)
     ui_fadeScreen.start(0.5)
+    retrievalFadeActive = true
     callbackAfterFade = function()
       if enterAfterSpawn then
         helpers.enterVehicle(inventoryId, nil, callback)
@@ -651,7 +687,7 @@ function ui.new(inputs)
         if inventoryIdToVehId[inventoryId] then
           callback()
         elseif not helpers.spawnVehicle(inventoryId, nil, callback, nil, true) then
-          ui_fadeScreen.stop(0.5)
+          stopRetrievalFade()
           local vehInfo = vehicles[inventoryId]
           if not (vehInfo and vehInfo.listedForAuction) then
             guihooks.trigger("toastrMsg", {type="error", label = "vehSpawnFailed", title = _tr("ui.career.inventory.toast.vehicleSpawnFailed.title"), msg = _tr("ui.career.inventory.toast.vehicleSpawnFailed.msg")})
@@ -666,7 +702,7 @@ function ui.new(inputs)
     spawnVehicleAfterFade(enterAfterSpawn, inventoryId,
     function(success, reason)
       if success == false then
-        ui_fadeScreen.stop(0.5)
+        stopRetrievalFade()
         ui_message(reason or 'Vehicle retrieval failed.', 5, 'Vehicle retrieval', 'error')
         return
       end
@@ -675,7 +711,7 @@ function ui.new(inputs)
       end
       local vehObj = getObjectByID(inventoryIdToVehId[inventoryId])
       if not vehObj then
-        ui_fadeScreen.stop(0.5)
+        stopRetrievalFade()
         return
       end
       setPartConditionResetSnapshot(vehObj,
@@ -685,7 +721,7 @@ function ui.new(inputs)
             if M.completeVehiclePlacement then M.completeVehiclePlacement(inventoryId, vehObj:getID()) end
             log("E", "inventory", string.format("Unable to retrieve inventory vehicle %s: no destination garage", tostring(inventoryId)))
             ui_message("Could not find the current garage.", 5, "Vehicle retrieval", "error")
-            ui_fadeScreen.stop(0.5)
+            stopRetrievalFade()
             return
           end
           overhaul_world_facilities.teleportToGarage(closestGarage.id, vehObj, false)
@@ -694,7 +730,7 @@ function ui.new(inputs)
           overhaul_career_maintenance_fuel.minimumRefuelingCheck(vehObj:getId())
           helpers.setVehicleDirty(inventoryId)
           extensions.ui_router.navigate('play')
-          ui_fadeScreen.stop(0.5)
+          stopRetrievalFade()
 
           local pos, _ = overhaul_world_facilities.getGaragePosRot(closestGarage, vehObj)
           overhaul_career_police_playerDriving.showPosition(pos)
