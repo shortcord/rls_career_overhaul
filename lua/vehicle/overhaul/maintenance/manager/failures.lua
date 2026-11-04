@@ -413,7 +413,11 @@ function M.create(inputs)
     local rootEntry = partConditions[cache.rootPartId] or {}
     local persistentCareerDamage = type(options) == "table" and options.persistentCareerDamage == true
     local persistentDamageReason = type(options) == "table" and options.reason or nil
-    local powertrainState = buildHardFailurePowertrainState(categoryName, persistentDamageReason)
+    -- The GE-side thermals state must match the failure type: a head gasket blow is a cooling failure,
+    -- rings and bearings are not.
+    local powertrainFailureType = type(options) == "table" and options.type or nil
+    local hardFailureReason = powertrainFailureType and (powertrainFailureType == 'engine_head_gasket_blown' and 'head_gasket_failure')
+    local powertrainState = buildHardFailurePowertrainState(categoryName, hardFailureReason)
 
     local lastSyncDistanceM = tonumber(runtime.state.lastSyncMileage) or 0
     rootEntry.odometer = tonumber(rootEntry.odometer) or tonumber(categoryState.avgOdometer) or lastSyncDistanceM
@@ -431,9 +435,11 @@ function M.create(inputs)
     helpers.syncPartConditions(partConditions)
 
     runtime.runtimeState[categoryName] = {}
+    local failureType = (type(options) == "table" and options.type) or
+                        (persistentCareerDamage and string.format("%s_lockup", categoryName) or
+                                             string.format("%s_break", categoryName))
     categoryState.lastFailureTime = os.time()
-    categoryState.lastFailureType = persistentCareerDamage and string.format("%s_lockup", categoryName) or
-                                        string.format("%s_break", categoryName)
+    categoryState.lastFailureType = failureType
     categoryState.persistentCareerDamage = persistentCareerDamage
     categoryState.persistentDamageReason = persistentDamageReason
     refreshLastHardFailureTime()
@@ -577,10 +583,14 @@ function M.create(inputs)
     else
       module.stepRuntime(runtimeCategory, categoryState, derived, env, dt)
       local forcedHardFailureTarget = runtimeCategory.forceHardFailureTarget
+      -- advenginetune's hard-failure thresholds are integrity-based with no mileage floor, so they bypass it.
+      local integrityBasedWearFlags = derived.pistonRingsDamaged == true or derived.headGasketBlown == true or
+                                      derived.connectingRodBearingsDamaged == true
       local canRollHardFailure = avgMiles >= (tonumber(module.minimumHardFailureMileage) or math.huge)
       if categoryName == 'engine' and not canRollHardFailure then
         canRollHardFailure = (derived.severeOilStarvation == true or derived.catastrophicOilStarvation == true) or
                                  ((derived.oilStarvationSeverity or 0) >= 0.3 and (derived.integritySeverity or 0) >= 0.25) or
+                                 integrityBasedWearFlags or
                                  ((derived.oilConditionSeverity or 0) >= 0.28 and
                                      ((derived.loadFactor or 0) >= 0.65 or (derived.rpmFactor or 0) >= 0.65))
       end
@@ -592,6 +602,12 @@ function M.create(inputs)
             reason = runtimeCategory.forceHardFailureReason
           }
         end
+      elseif integrityBasedWearFlags and categoryName == 'engine' then
+        -- Integrity-based failure is repairable like the other maintenance failures: repairing the part clears it.
+        local failureType = derived.pistonRingsDamaged and 'engine_piston_rings_damaged' or
+                            (derived.headGasketBlown and 'engine_head_gasket_blown' or 'engine_connecting_rod_bearings_damaged')
+        pendingHardFailure = {categoryName = categoryName, type = failureType}
+
       elseif canRollHardFailure and config.common.rollChance(derived.hardFailureRate, dt) then
         pendingHardFailure = pendingHardFailure or {categoryName = categoryName}
       end

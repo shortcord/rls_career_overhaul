@@ -49,11 +49,20 @@ function partFactory.new(inputs)
     categoryRevealed[itemName] = {roundedPercent = tonumber(roundedPercent) or 100}
   end
 
+  -- advenginetune's repairEngineParts: only the Engine Overhaul service resets per-vehicle wear.
+  local function resetEngineWearBaseline(inventoryId, itemName)
+    if not inventoryId or itemName ~= 'engineOverhaul' then return false end
+    -- Look up the maintenance extension defensively; it is registered as overhaulMaintenance in _G by
+    -- the vehicle-side maintenance extension. Fallback to nil so a missing manager is a no-op.
+    local manager = rawget(_G, 'overhaulMaintenance')
+    if type(manager) ~= "table" or type(manager.repairEngineParts) ~= "function" then return false end
+    return pcall(manager.repairEngineParts, inventoryId)
+  end
+
   local function completeServiceJob(uiState, categoryState, job, itemDefinition)
+    local filledItemName = itemDefinition and itemDefinition.fillsItem or nil
     categoryState.maintenance[job.item] = 1
     revealMaintenanceItem(uiState, job.category, job.item, 100)
-
-    local filledItemName = itemDefinition and itemDefinition.fillsItem or nil
     if filledItemName and categoryState.maintenance[filledItemName] ~= nil then
       categoryState.maintenance[filledItemName] = 1
       revealMaintenanceItem(uiState, job.category, filledItemName, 100)
@@ -308,6 +317,7 @@ function partFactory.new(inputs)
       completeServiceJob(uiState, maintenanceState.categories[categoryName], {
         kind = "service", category = categoryName, item = itemName,
       }, itemDefinition)
+      resetEngineWearBaseline(vehicleId, itemName)
       overhaul_career_saveSystem.saveCurrent()
     end, debug.traceback)
     if not committed then
@@ -364,6 +374,7 @@ function partFactory.new(inputs)
         category = categoryName,
         item = itemName,
       }, itemDefinition)
+      resetEngineWearBaseline(inventoryId, itemName)
       syncRuntimeState(vehicleData.id)
       inputs.persistVehicleMutation(vehicleData.id)
     end, debug.traceback)

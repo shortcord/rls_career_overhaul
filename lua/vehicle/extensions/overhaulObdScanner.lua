@@ -665,12 +665,28 @@ local function maintenanceCategoryHasHardware(categoryName)
   return hasParts
 end
 
+-- Live wear state from the maintenance model overlays GE device thermals: GE only carries damage once a
+-- hard-failure event fires, but integrity can be below thresholds without such an event yet occurring.
+local function mergeWearState(thermals, wearState)
+  local rings = reportedBoolean(thermals, "pistonRingsDamaged") == true
+  local headGasket = reportedBoolean(thermals, "headGasketBlown") == true
+  local rodBearings = reportedBoolean(thermals, "connectingRodBearingsDamaged") == true
+  if type(wearState) == "table" then
+    rings = rings or wearState.pistonRingsDamaged == true
+    headGasket = headGasket or wearState.headGasketBlown == true
+    rodBearings = rodBearings or wearState.connectingRodBearingsDamaged == true
+  end
+  return rings, headGasket, rodBearings
+end
+
 local function getMilRequestMode(engine, thermals, electricValues, hasCoolingSystem, maintenanceLiveConditions)
   if not engine then return nil end
 
-  local nativeDamage = reportedBoolean(thermals, "pistonRingsDamaged") == true
-    or reportedBoolean(thermals, "headGasketBlown") == true
-    or reportedBoolean(thermals, "connectingRodBearingsDamaged") == true
+  local pistonRingsDamaged, headGasketBlown, connectingRodBearingsDamaged = mergeWearState(
+    thermals, maintenanceLiveConditions and maintenanceLiveConditions.engineWearState or {})
+  local nativeDamage = pistonRingsDamaged
+    or headGasketBlown
+    or connectingRodBearingsDamaged
     or trackerDamageActive("engine", "engineHydrolocked") == true
   if nativeDamage then return "steady" end
 
@@ -700,6 +716,13 @@ local function collectLiveDevices()
     local ok, conditions = pcall(manager.getLiveConditionState)
     if ok and type(conditions) == "table" then maintenanceLiveConditions = conditions end
   end
+  -- Live integrity/wear state from the maintenance layer's model; falls back to GE device thermals,
+  -- which only carry damage once a hard-failure event has fired.
+  local engineWearState = nil
+  if manager and type(manager.getEngineWearState) == "function" then
+    local ok, wearState = pcall(manager.getEngineWearState)
+    if ok and type(wearState) == "table" then engineWearState = wearState end
+  end
   return {
     ev = electrics and electrics.values or {},
     engine = getEngine(),
@@ -708,6 +731,7 @@ local function collectLiveDevices()
     clutch = getClutch(),
     hasCoolingSystem = maintenanceCategoryHasHardware("radiator"),
     maintenanceLiveConditions = maintenanceLiveConditions,
+    engineWearState = engineWearState,
   }
 end
 
@@ -914,14 +938,18 @@ local function writeScannerRestrictionReadings(
   result.motorMaxRpm = isElectric and firstNumber(engine.maxRPM, engine.maxAV and engine.maxAV * calibratedAVToRPM) or nil
 end
 
+-- Reported as booleans (GE devices publish strings/nil until a fault is present; live state fills gaps).
+-- Called after the single module-level mergeWearState defined above.
 local function writeScannerComponentReadings(
   result, gearbox, clutch, clutchRatedTorque, clutchAvailableTorque, thermals, engineName,
-  gearboxName, clutchName, flywheelName, centerCouplingName, transferCase
+  gearboxName, clutchName, flywheelName, centerCouplingName, transferCase, wearState
 )
   result.engineName = engineName
-  result.pistonRingsDamaged = reportedBoolean(thermals, "pistonRingsDamaged")
-  result.headGasketDamaged = reportedBoolean(thermals, "headGasketBlown")
-  result.rodBearingsDamaged = reportedBoolean(thermals, "connectingRodBearingsDamaged")
+  local pistonRingsDamaged, headGasketBlown, connectingRodBearingsDamaged = mergeWearState(
+    thermals, wearState or {})
+  result.pistonRingsDamaged = pistonRingsDamaged
+  result.headGasketDamaged = headGasketBlown
+  result.rodBearingsDamaged = connectingRodBearingsDamaged
   result.engineHydrolocked = trackerDamageActive("engine", "engineHydrolocked")
   result.gearboxType = gearbox and gearbox.type or nil
   result.gearboxName = gearboxName
@@ -1015,7 +1043,7 @@ local function buildState(devices)
   )
   writeScannerComponentReadings(
     result, gearbox, clutch, clutchRatedTorque, clutchAvailableTorque, thermals, engineName,
-    gearboxName, clutchName, flywheelName, centerCouplingName, transferCase
+    gearboxName, clutchName, flywheelName, centerCouplingName, transferCase, devices.engineWearState
   )
   return result
 end

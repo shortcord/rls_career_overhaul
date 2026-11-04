@@ -490,6 +490,16 @@ function M.create(inputs)
         table.insert(flags, buildRiskFlag("piston_rings", "Damaged piston rings are consuming oil", "high",
           string.format("%.6f per sec", tonumber(derived.pistonRingOilConsumptionRate) or 0)))
       end
+      if derived.headGasketBlown == true then
+        table.insert(flags, buildRiskFlag("head_gasket_blown", "Head gasket has blown",
+          "high", string.format("%.0f%% integrity remaining; coolant loss and hard failure are imminent.",
+            (tonumber(derived.integrityValue) or 0) * 100)))
+      end
+      if derived.connectingRodBearingsDamaged == true then
+        table.insert(flags, buildRiskFlag("connecting_rod_bearings", "Connecting rod bearings are damaged",
+          "high", string.format("%.0f%% integrity remaining; catastrophic failure is imminent.",
+            (tonumber(derived.integrityValue) or 0) * 100)))
+      end
     elseif categoryName == 'radiator' then
       if derived.catastrophicCoolingLoss then
         table.insert(flags, buildRiskFlag("cooling_catastrophic", "Catastrophic coolant loss", "high",

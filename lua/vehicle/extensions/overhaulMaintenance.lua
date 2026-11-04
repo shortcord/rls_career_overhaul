@@ -494,6 +494,38 @@ M.updateGFX = updateGFX
 M.initFromSave = initFromSave
 M.refreshFromCurrentPartConditions = refreshFromCurrentPartConditions
 M.clearForDisabledSave = clearForDisabledSave
+-- Engine wear state from the integrity model: damage flags and career-facing mechanical condition.
+-- Reported live so the phone scanner can show wear even before a hard-failure event fires on GE.
+local function getEngineWearState()
+  if not runtime.runtimeDisabled or not runtime.state then return nil end
+  local engineRuntime = runtime.runtimeState and runtime.runtimeState.engine or {}
+  local derived = type(engineRuntime.derived) == "table" and engineRuntime.derived or nil
+  if not derived then return nil end
+
+  -- Mechanical condition is the career-facing engineOverhaul value written by drainMaintenance.
+  local categoryState = runtime.state.categories and runtime.state.categories.engine
+  local mechanicalCondition = type(categoryState) == "table" and
+                              tonumber(categoryState.maintenance and categoryState.maintenance.engineOverhaul) or nil
+  return {
+    integrityValue = config.common.clamp(integrityValue or 1, 0, 1),
+    headGasketBlown = derived.headGasketBlown == true,
+    pistonRingsDamaged = derived.pistonRingsDamaged == true,
+    connectingRodBearingsDamaged = derived.connectingRodBearingsDamaged == true,
+    mechanicalCondition = config.common.clamp(mechanicalCondition or 1, 0, 1),
+  }
+end
+M.getEngineWearState = getEngineWearState
+
+-- advenginetune's repairEngineParts hook, scoped per vehicle. A completed Engine Overhaul service resets
+-- the wear baseline so mechanical condition is restored rather than immediately overwritten.
+local function repairEngineParts(inventoryId)
+  if not runtime.runtimeDisabled or not runtime.state then return false end
+  local ok, result = pcall(engineCategory.repairEngineParts, inventoryId)
+  if not ok then log("E", "overhaulMaintenance", tostring(result)) return false end
+  return true
+end
+M.repairEngineParts = repairEngineParts
+
 M.getSnapshot = getSnapshot
 M.hasCategoryParts = hasCategoryParts
 M.getLiveConditionState = getLiveConditionState
