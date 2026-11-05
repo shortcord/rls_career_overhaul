@@ -31,7 +31,7 @@ local isRegistered = false
 local cargoData
 
 local functionFields = {
-  "beamSpringFunction", "beamLimitSpringFunction", "beamDampFunction",
+  "beamSpringFunction", "beamLimitSpringFunction", "beamDampFunction", "beamLimitDampFunction",
   "nodeWeightFunction", "beamStrengthFunction", "beamDeformFunction", "beamShortBoundFunction",
   "beamLongBoundFunction", "beamPrecompressionFunction"
 }
@@ -377,6 +377,8 @@ local function restorePhysicalValues()
       end
       if beam.beamStrengthFunction then obj:setBeamStrength(beamId, beam.beamStrength) end
       if beam.beamDeformFunction then obj:setBeamDeform(beamId, beam.beamDeform) end
+      if beam.beamShortBoundFunction then obj:setBoundedBeamShortBound(beamId, beam.beamShortBound) end
+      if beam.beamLongBoundFunction then obj:setBoundedBeamLongBound(beamId, beam.beamLongBound) end
       if beam.beamPrecompressionFunction then obj:setPrecompressionRatio(beamId, beam.beamPrecompression or 1) end
     end
   end

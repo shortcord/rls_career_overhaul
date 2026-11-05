@@ -593,6 +593,14 @@ local function resetAllCategories(inventoryId)
   return ok
 end
 
+-- Wear lives in the vehicle VM, not GE. As with other runtime commands, an
+-- unspawned inventory vehicle has no runtime to update; its snapshot is saved by the caller.
+local function resetEngineWearBaseline(inventoryId)
+  inventoryId = tonumber(inventoryId)
+  if not inventoryId then return false end
+  return queueRuntimeCommand(inventoryId, vehicleCommands.call('overhaulMaintenance', 'repairEngineParts', inventoryId))
+end
+
 -- Public API --------------------------------------------------------------------------------------
 
 M.onVehicleMaintenanceStateChanged = onVehicleMaintenanceStateChanged
@@ -605,6 +613,7 @@ M.applyInspectionSnapshotToVehicleData = applyInspectionSnapshotToVehicleData
 M.registerInspectionVehicle = registerInspectionVehicle
 M.unregisterInspectionVehicle = unregisterInspectionVehicle
 M.resetAllCategories = resetAllCategories
+M.resetEngineWearBaseline = resetEngineWearBaseline
 
 -- Game hooks --------------------------------------------------------------------------------------
 

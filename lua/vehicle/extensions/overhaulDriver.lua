@@ -186,12 +186,12 @@ local function driveExactPath(routePoints, target, targetDir, options)
     return true
 end
 
-local function driveToTarget(drivability, dirMult, penaltyAboveCutoff, penaltyBelowCutoff, wZ)
-    drivability = drivability or 0
-    dirMult = dirMult or 10000
-    penaltyAboveCutoff = penaltyAboveCutoff or 1000
-    penaltyBelowCutoff = penaltyBelowCutoff or 100000
-    wZ = wZ or 1
+local function driveToTarget(requestedDrivability, requestedDirMult, requestedPenaltyAboveCutoff, requestedPenaltyBelowCutoff, requestedWZ)
+    drivability = requestedDrivability or 0
+    dirMult = requestedDirMult or 10000
+    penaltyAboveCutoff = requestedPenaltyAboveCutoff or 1000
+    penaltyBelowCutoff = requestedPenaltyBelowCutoff or 100000
+    wZ = requestedWZ or 1
 
     obj:queueGameEngineLua([[
         local target = core_groundMarkers.getTargetPos()
@@ -200,12 +200,12 @@ local function driveToTarget(drivability, dirMult, penaltyAboveCutoff, penaltyBe
     ]])
 end
 
-local function driveFastToTarget(drivability, dirMult, penaltyAboveCutoff, penaltyBelowCutoff, wZ)
-    drivability = drivability or 0.1
-    dirMult = dirMult or 1
-    penaltyAboveCutoff = penaltyAboveCutoff or 1
-    penaltyBelowCutoff = penaltyBelowCutoff or 1
-    wZ = wZ or 1
+local function driveFastToTarget(requestedDrivability, requestedDirMult, requestedPenaltyAboveCutoff, requestedPenaltyBelowCutoff, requestedWZ)
+    drivability = requestedDrivability or 0.1
+    dirMult = requestedDirMult or 1
+    penaltyAboveCutoff = requestedPenaltyAboveCutoff or 1
+    penaltyBelowCutoff = requestedPenaltyBelowCutoff or 1
+    wZ = requestedWZ or 1
 
     obj:queueGameEngineLua([[
         local target = core_groundMarkers.getTargetPos()

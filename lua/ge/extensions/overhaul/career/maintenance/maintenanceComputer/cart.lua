@@ -171,6 +171,9 @@ function partFactory.new(inputs)
       end
 
       -- Sync completed services after tire checkout so its runtime refresh cannot leave stale maintenance state.
+      for _, entry in ipairs(services) do
+        parts.services.resetEngineWearBaseline(vehicleData.id, entry.item)
+      end
       parts.services.syncRuntimeState(vehicleData.id)
       inputs.persistVehicleMutation(vehicleData.id)
     end, debug.traceback)
