@@ -44,7 +44,7 @@ These additions are on the development branch after the public release.
 **New features**
 
 - **Factory vehicle ordering:** Owned garage computers can order any vehicle configuration from the game's catalogue. Choose a trim and standard or expedited shipping, pay up front, and follow up to five pending orders until they arrive. Orders can be cancelled before delivery.
-- **Distant vehicle hibernation:** An optional setting pauses simulation for far-away parked vehicles you own until you return or the car is needed. Vehicles coupled or touching each other sleep and wake together.
+- **Distant vehicle hibernation:** An optional setting with a configurable distance pauses simulation for far-away parked vehicles you own until you return or the car is needed. Vehicles coupled or touching each other sleep and wake together.
 
 **Fixes and improvements**
 

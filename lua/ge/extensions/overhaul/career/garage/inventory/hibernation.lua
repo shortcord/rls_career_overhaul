@@ -16,12 +16,14 @@ function hibernation.new(inputs)
   -- Config ------------------------------------------------------------------------------------------
 
   local SETTING_KEY = 'hibernateDistantVehicles'
+  local DISTANCE_SETTING_KEY = 'hibernateDistanceMeters'
   local TICK_SECONDS = 1
-  local SLEEP_DISTANCE_METERS = 500
-  local WAKE_DISTANCE_METERS = 300
+  local DEFAULT_SLEEP_DISTANCE_METERS = 500
+  -- Wake at 60% of the sleep distance so approaching traffic wakes before it reaches the player.
+  local WAKE_DISTANCE_RATIO = 0.6
   local WAKE_LOOKAHEAD_SECONDS = 8
   -- Wake must stay below sleep, or a fast approach would wake and re-sleep the same cluster each tick.
-  local MAX_WAKE_DISTANCE_METERS = SLEEP_DISTANCE_METERS - 20
+  local MIN_SLEEP_WAKE_GAP_METERS = 20
   local STATIONARY_SECONDS = 10
   local STATIONARY_SPEED_METERS_PER_SECOND = 0.5
   local MAX_CLUSTERS_PER_TICK = 3
@@ -50,6 +52,19 @@ function hibernation.new(inputs)
   local function enabled()
     local settings = overhaul_shell_settings
     return settings ~= nil and settings.getSetting(SETTING_KEY) == true
+  end
+
+  -- Read live so a changed setting applies on the next scan instead of after a restart.
+  local function sleepDistanceMeters()
+    local settings = overhaul_shell_settings
+    local distance = settings and tonumber(settings.getSetting(DISTANCE_SETTING_KEY))
+    if not distance or distance <= 0 then return DEFAULT_SLEEP_DISTANCE_METERS end
+    return distance
+  end
+
+  local function wakeReachMeters(playerSpeed, sleepDistance)
+    local maxWakeDistance = math.max(0, sleepDistance - MIN_SLEEP_WAKE_GAP_METERS)
+    return math.min(sleepDistance * WAKE_DISTANCE_RATIO + playerSpeed * WAKE_LOOKAHEAD_SECONDS, maxWakeDistance)
   end
 
   local function careerActive()
@@ -235,6 +250,7 @@ function hibernation.new(inputs)
     local entries, entryByVehId = {}, {}
     local boxByVehId = {}
     local playerVehId = be:getPlayerVehicleID(0)
+    local sleepDistance = sleepDistanceMeters()
 
     -- Non-owned active vehicles join the graph as blockers: a car resting on someone else's carrier
     -- must keep that whole cluster awake.
@@ -277,7 +293,7 @@ function hibernation.new(inputs)
         local moving = vehicleSpeed(vehicle) > STATIONARY_SPEED_METERS_PER_SECOND
         stationarySeconds[entry.vehId] = moving and 0 or ((stationarySeconds[entry.vehId] or 0) + dtSim)
         entry.candidate = inputs.isPersonalInventoryId(inventoryId)
-          and entry.distance >= SLEEP_DISTANCE_METERS
+          and entry.distance >= sleepDistance
           and stationarySeconds[entry.vehId] >= STATIONARY_SECONDS
           and entry.vehId ~= playerVehId
           and not vehicle:isPlayerControlled()
@@ -318,6 +334,7 @@ function hibernation.new(inputs)
   -- Wakes every cluster the player is close enough to reach before the next check.
   local function updateWake(playerPos, playerSpeed)
     local ids = {}
+    local reach = wakeReachMeters(playerSpeed, sleepDistanceMeters())
     for id in pairs(clusters) do ids[#ids + 1] = id end
     table.sort(ids)
     for _, id in ipairs(ids) do
@@ -330,7 +347,6 @@ function hibernation.new(inputs)
           if not nearest or distance < nearest then nearest = distance end
         end
       end
-      local reach = math.min(WAKE_DISTANCE_METERS + playerSpeed * WAKE_LOOKAHEAD_SECONDS, MAX_WAKE_DISTANCE_METERS)
       if not nearest or nearest <= reach then wakeCluster(id, 'proximity') end
     end
   end
@@ -407,7 +423,7 @@ function hibernation.new(inputs)
       for _, id in ipairs(ids) do
         out[#out + 1] = deepcopy(clusters[id])
       end
-      return {enabled = enabled(), clusters = out}
+      return {enabled = enabled(), distanceMeters = sleepDistanceMeters(), clusters = out}
     end,
   }
 end

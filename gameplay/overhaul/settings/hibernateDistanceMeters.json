@@ -1,0 +1,22 @@
+{
+  "id": "hibernateDistanceMeters",
+  "key": "hibernateDistanceMeters",
+  "order": 220,
+  "type": "number",
+  "default": 500,
+  "section": "developer",
+  "validateSingle": true,
+  "validateLoaded": true,
+  "range": {
+    "min": 100,
+    "max": 3000,
+    "step": 50
+  },
+  "ui": {
+    "label": "ui.overhaulManager.settings.hibernateDistanceMeters.label",
+    "description": "ui.overhaulManager.settings.hibernateDistanceMeters.description",
+    "section": "world",
+    "unit": "ui.overhaulManager.settings.hibernateDistanceMeters.unit",
+    "icon": "car"
+  }
+}
