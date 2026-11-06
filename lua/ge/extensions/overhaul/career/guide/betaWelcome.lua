@@ -7,8 +7,8 @@ M.dependencies = {'overhaul_career_career'}
 -- A new id shows the splash again for everyone; a hotfix keeps the old id to stay silent.
 local currentCycle = {
   enabled = true,
-  id = "2.8.0_public",
-  folder = "2.8.0_public",
+  id = "2.8.1_scf",
+  folder = "2.8.1_scf",
 }
 
 local CONTENT_ROOT = "/ui/modules/whatsnew/"

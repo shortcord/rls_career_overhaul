@@ -16,19 +16,19 @@ The script needs `bash`, `zip`, `git`, and the usual coreutils tools (`find`,
 Run from the repository root:
 
 ```sh
-tools/build_release.sh --version 2.8.0
+tools/build_release.sh --version 2.8.1-scf
 ```
 
 The files are written to `dist/`. To derive the version from a tag:
 
 ```sh
-tools/build_release.sh --tag v2.8.0 --changelog-from-git
+tools/build_release.sh --tag v2.8.1-scf --changelog-from-git
 ```
 
 To include a curated changelog instead of generating one from `git log`:
 
 ```sh
-tools/build_release.sh --version 2.8.0 --changelog path/to/changelog.md
+tools/build_release.sh --version 2.8.1-scf --changelog path/to/changelog.md
 ```
 
 `--source` and `--out` select another checkout and output directory. Without

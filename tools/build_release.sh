@@ -9,8 +9,8 @@
 # configuration, tooling and other development-only material stays out.
 #
 # Example:
-#   tools/build_release.sh --version 2.8.0
-#   tools/build_release.sh --tag v2.8.0 --changelog-from-git
+#   tools/build_release.sh --version 2.8.1-scf
+#   tools/build_release.sh --tag v2.8.1-scf --changelog-from-git
 
 set -euo pipefail
 
@@ -44,7 +44,7 @@ Options:
   --source PATH        repository root to package (default: ${DEFAULT_SOURCE})
   --out PATH           output directory (default: <source>/dist)
   --version VERSION    version to stamp, with or without a leading v
-  --tag TAG            release tag to derive the version from, e.g. v2.8.0
+  --tag TAG            release tag to derive the version from, e.g. v2.8.1-scf
   --source-sha SHA     commit SHA to record (default: git HEAD)
   --changelog PATH     existing developer changelog to bundle
   --changelog-from-git generate a developer changelog from git log

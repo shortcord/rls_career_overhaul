@@ -2,11 +2,11 @@
 
 Build a career around the way you like to drive. Race, deliver cargo, run businesses, work shifts, buy and build cars, or take a different route through police work and off-road events.
 
-**v2.8.0 Public Release · BeamNG.drive 0.40.3**
+**v2.8.1-scf Public Release · BeamNG.drive 0.40.3**
 
-[Download v2.8.0](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest) · [Getting started](https://github.com/RLS-Modding/rls_career_overhaul/wiki/Installation) · [Wiki](https://github.com/RLS-Modding/rls_career_overhaul/wiki) · [Report a bug](https://github.com/RLS-Modding/rls_career_overhaul/issues)
+[Download v2.8.1-scf](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest) · [Getting started](https://github.com/RLS-Modding/rls_career_overhaul/wiki/Installation) · [Wiki](https://github.com/RLS-Modding/rls_career_overhaul/wiki) · [Report a bug](https://github.com/RLS-Modding/rls_career_overhaul/issues)
 
-![RLS West Coast](ui/modules/whatsnew/2.8.0_public/west-coast.jpg)
+![RLS West Coast](ui/modules/whatsnew/2.8.1_scf/west-coast.jpg)
 
 ## Your career
 
@@ -22,7 +22,7 @@ Overhaul has its own career mode, saves and RLS West Coast map. Start a new care
 
 Available jobs, facilities and events depend on your map, equipment and career progress.
 
-## What's new in v2.8.0
+## What's new in v2.8.1-scf
 
 - Separate career mode and a clearer path for importing older RLS saves.
 - Refreshed phone apps, controller navigation and shortcut setup.
@@ -33,9 +33,9 @@ Available jobs, facilities and events depend on your map, equipment and career p
 - Lighter menus, less background processing and long-session cleanup.
 - Updated Dakar controls and a smoother compass.
 
-[Read the full changelog](https://github.com/RLS-Modding/rls_career_overhaul/releases/tag/v2.8.0).
+[Read the full changelog](https://github.com/RLS-Modding/rls_career_overhaul/releases/tag/v2.8.1-scf).
 
-![Jobs and passenger work](ui/modules/whatsnew/2.8.0_public/bus.jpg)
+![Jobs and passenger work](ui/modules/whatsnew/2.8.1_scf/bus.jpg)
 
 ## What we are working on right now
 
@@ -59,7 +59,7 @@ These additions are on the development branch after the public release.
 
 ## Install
 
-1. Download **`rls_career_overhaul_v2.8.0.zip`** from the [release Assets](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest).
+1. Download **`rls_career_overhaul_v2.8.1-scf.zip`** from the [release Assets](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest).
 2. In the BeamNG launcher, open **Manage User Folder → Open in Explorer**. Use the user folder for the profile you actually play.
 3. Put the ZIP in its `mods` folder. Leave it zipped.
 4. Remove or disable older Overhaul copies, including unpacked copies. Enable the new version in the Mod Manager and restart the game after changing versions.
@@ -101,7 +101,7 @@ For suspected security vulnerabilities, use the [private reporting policy](SECUR
 
 ## Credits
 
-Created and maintained by **RLS Modding**, with help from contributors, testers and the community. See the [v2.8.0 credits](CREDITS.md), [contributors](https://github.com/RLS-Modding/rls_career_overhaul/graphs/contributors) and bundled `licenses` for included third-party material.
+Created and maintained by **RLS Modding**, with help from contributors, testers and the community. See the [v2.8.1-scf credits](CREDITS.md), [contributors](https://github.com/RLS-Modding/rls_career_overhaul/graphs/contributors) and bundled `licenses` for included third-party material.
 
 RLS Career Overhaul is a community mod and is not affiliated with BeamNG GmbH.
 

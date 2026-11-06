@@ -1,5 +1,5 @@
 {
-  "label": "v2.8.0 Public Release",
+  "label": "v2.8.1-scf Public Release",
   "continueLabel": "Continue",
   "loadingLabel": "Loading career...",
   "dontShowLabel": "Don't show again",
@@ -8,7 +8,7 @@
       "kind": "intro",
       "image": "west-coast.jpg",
       "eyebrow": "What's New",
-      "title": "RLS Career Overhaul v2.8.0",
+      "title": "RLS Career Overhaul v2.8.1-scf",
       "subtitle": "Public Release",
       "summary": "The biggest changes since v2.7.2: smoother driving, better jobs and clearer money.",
       "contentsLabel": "In this update"
