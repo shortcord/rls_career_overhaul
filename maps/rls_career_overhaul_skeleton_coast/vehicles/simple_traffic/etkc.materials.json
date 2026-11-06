@@ -1,0 +1,140 @@
+{
+  "traffic_etkc": {
+    "name": "traffic_etkc",
+    "mapTo": "traffic_etkc",
+    "class": "material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etkc/traffic_etkc_grille_b.color.png",
+        "metallicFactor": 0.193000004,
+        "normalMap": "/vehicles/simple_traffic/etkc/traffic_etkc_grille_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etkc/traffic_etkc_grille_o.data.png",
+        "roughnessMap": "/vehicles/simple_traffic/etkc/traffic_etkc_grille_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "version": 1.5
+  },
+  "traffic_etkc_lights": {
+    "name": "traffic_etkc_lights",
+    "mapTo": "traffic_etkc_lights",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_b.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_n.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_etkc_lights_on": {
+    "name": "traffic_etkc_lights_on",
+    "mapTo": "traffic_etkc_lights_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 15000,
+        "emissiveMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_g.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_n.normal.png",
+        "opacityFactor": 0,
+        "roughnessFactor": 0.458000004
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_etkc_lights_on_intense": {
+    "name": "traffic_etkc_lights_on_intense",
+    "mapTo": "traffic_etkc_lights_on_intense",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 20000,
+        "emissiveMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_g_intense.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/etkc/traffic_etkc_lights_n.normal.png",
+        "roughnessFactor": 0.442999989
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  }
+}

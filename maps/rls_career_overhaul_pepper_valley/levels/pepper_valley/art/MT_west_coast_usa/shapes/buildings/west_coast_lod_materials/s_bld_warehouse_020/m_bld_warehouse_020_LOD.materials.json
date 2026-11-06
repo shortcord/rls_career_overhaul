@@ -1,0 +1,40 @@
+{
+  "m_bld_warehouse_020_LOD": {
+    "name": "m_bld_warehouse_020_LOD",
+    "mapTo": "m_bld_warehouse_020_LOD",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.995925009,
+          0.995925009,
+          0.995925009,
+          1
+        ],
+        "baseColorMap": "levels/pepper_valley/art/mt_west_coast_usa/shapes/buildings/west_coast_lod_materials/s_bld_warehouse_020/t_bld_warehouse_020_lod_b.color.png",
+        "metallicFactor": 0.699999988,
+        "metallicMap": "levels/pepper_valley/art/mt_west_coast_usa/shapes/buildings/west_coast_lod_materials/s_bld_warehouse_020/t_bld_warehouse_020_lod_m.data.png",
+        "roughnessFactor": 0.649999976,
+        "roughnessMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/buildings/west_coast_lod_materials/s_bld_warehouse_020/t_bld_warehouse_020_lod_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "cubemap": "cubemap_wca_city_reflection",
+    "version": 1.5,
+    "persistentId": "a64879a4-473e-4df7-95e0-991f7fb8a78b"
+  }
+}

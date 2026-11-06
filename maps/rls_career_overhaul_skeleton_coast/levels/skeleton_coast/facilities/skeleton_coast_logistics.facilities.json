@@ -1,0 +1,3923 @@
+{
+    "deliveryProviders": [
+        {
+            "id": "horseshoeBaySpringbokTransport",
+            "name": "Horseshoe Bay Springbok Transport",
+            "description": "Warehouse hub that receives port stock and ships zone inventory.",
+            "associatedOrganization": "springbokTransport",
+            "preview": "pictures/horseshoeBaySpringbokTransport.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "horseshoeBaySpringbokTransportToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "horseshoeBaySpringbokTransportParcel",
+                    "logisticTypesProvided": [
+                        "groceryInventoryHorseshoeBay",
+                        "hardwareInventoryOtjovasando",
+                        "groceryInventorySperrgebiet",
+                        "mineEquipmentSupplies"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "horseshoeBaySpringbokTransportParcel",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "warehouseInventory",
+                        "mineCoreSamples"
+                    ]
+                },
+                {
+                    "psName": "horseshoeBaySpringbokTransportTrailer1",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTransport",
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTransport",
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan28ft9600kg",
+                        "trailerDeliveryWarehouseHorseshoeBayTiltdeck22ftGooseneckWood",
+                        "trailerDeliveryWarehouseHorseshoeBayTiltdeck30ftGooseneckWood",
+                        "trailerDeliveryWarehouseHorseshoeBayTiltdeck40ftStandardWood",
+                        "trailerDeliveryWarehouseHorseshoeBayMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseHorseshoeBaySmallcrateplankstrailer",
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokEmpty",
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokHalf",
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokFull",
+                        "trailerDeliveryWarehouseToPortHorseshoeBayFlatbed32ft",
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryBusinessHorseshoeBayDryvan28ft",
+                        "trailerDeliveryBusinessHorseshoeBayTiltdeck40ftStandard",
+                        "trailerDeliveryBusinessHorseshoeBayTiltdeck30ftGooseneck",
+                        "trailerDeliveryBusinessHorseshoeBayTiltdeck22ftGooseneck",
+                        "trailerDeliveryBusinessHorseshoeBayMediumemptytrailer",
+                        "trailerDeliveryBusinessHorseshoeBaySmallemptytrailer",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokEmpty",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokHalf",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokFull",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood",
+                        "trailerDeliveryBusinessSperrgebietDryvan28ft",
+                        "ore",
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreDouble",
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreTriple",
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreWideDouble"
+                    ],
+                    "loanerTrailerPriority": 1,
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryInventoryHorseshoeBay",
+                "hardwareInventoryOtjovasando",
+                "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTransport",
+                "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTransport",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan28ft9600kg",
+                "trailerDeliveryWarehouseHorseshoeBayTiltdeck22ftGooseneckWood",
+                "trailerDeliveryWarehouseHorseshoeBayTiltdeck30ftGooseneckWood",
+                "trailerDeliveryWarehouseHorseshoeBayTiltdeck40ftStandardWood",
+                "trailerDeliveryWarehouseHorseshoeBayMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseHorseshoeBaySmallcrateplankstrailer",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokEmpty",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokHalf",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokFull",
+                "trailerDeliveryWarehouseToPortHorseshoeBayFlatbed32ft",
+                "groceryInventorySperrgebiet",
+                "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg",
+                "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg",
+                "mineEquipmentSupplies"
+            ],
+            "logisticTypesReceived": [
+                "warehouseInventory",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                "trailerDeliveryBusinessHorseshoeBayDryvan28ft",
+                "trailerDeliveryBusinessHorseshoeBayTiltdeck40ftStandard",
+                "trailerDeliveryBusinessHorseshoeBayTiltdeck30ftGooseneck",
+                "trailerDeliveryBusinessHorseshoeBayTiltdeck22ftGooseneck",
+                "trailerDeliveryBusinessHorseshoeBayMediumemptytrailer",
+                "trailerDeliveryBusinessHorseshoeBaySmallemptytrailer",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokEmpty",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokHalf",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokFull",
+                "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                "trailerDeliveryPortToWarehouseFlatbed32ftWood",
+                "trailerDeliveryBusinessSperrgebietDryvan28ft",
+                "ore",
+                "trailerDeliveryMineToHorseshoeBayFramelessDumpOreDouble",
+                "trailerDeliveryMineToHorseshoeBayFramelessDumpOreTriple",
+                "trailerDeliveryMineToHorseshoeBayFramelessDumpOreWideDouble",
+                "mineCoreSamples"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryInventoryHorseshoeBay"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "hardwareInventoryOtjovasando"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "warehouseInventory"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_transport",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTransport"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_transport",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTransport"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan28ft4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_9600kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan28ft9600kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayTiltdeck22ftGooseneckWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_30ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayTiltdeck30ftGooseneckWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_40ft_standard_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayTiltdeck40ftStandardWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "mediumCratePlanksTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayMediumcrateplankstrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "smallCratePlanksTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBaySmallcrateplankstrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Empty",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Half",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokHalf"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Full",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan48ftSpringbokFull"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortHorseshoeBayFlatbed32ft"
+                    ]
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryInventorySperrgebiet"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_9600kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg"
+                    ]
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "ore"
+                    ],
+                    "materialType": "ore",
+                    "capacity": 80000,
+                    "target": 0,
+                    "variance": 8000,
+                    "interval": 480,
+                    "rate": 3500
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "mineEquipmentSupplies"
+                    ],
+                    "min": 1,
+                    "max": 3,
+                    "interval": 180
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "mineCoreSamples"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 180
+                }
+            ],
+            "logisticMaxItems": 30
+        },
+        {
+            "id": "koFoodsHB",
+            "name": "KO Foods Horseshoe Bay",
+            "description": "Local grocery business that receives inventory and provides grocery orders.",
+            "associatedOrganization": "koFoods",
+            "preview": "pictures/koFoodsHB.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "koFoodsHBToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderHorseshoeBay"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryHorseshoeBay"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "koFoodsHBTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessHorseshoeBayDryvan28ft",
+                        "mineWorkerProvisions"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseHorseshoeBayDryvan28ft9600kg"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderHorseshoeBay",
+                "trailerDeliveryBusinessHorseshoeBayDryvan28ft",
+                "mineWorkerProvisions"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryHorseshoeBay",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseHorseshoeBayDryvan28ft9600kg"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderHorseshoeBay"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryHorseshoeBay"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessHorseshoeBayDryvan28ft"
+                    ]
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "mineWorkerProvisions"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 240
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "horseshoeBayWaterStorage6",
+            "name": "Horseshoe Bay Water Storage 6",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "previews/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "horseshoeBayWaterStorage6Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "koFoodsOT",
+            "name": "KO Foods Otjovasando",
+            "description": "Local grocery business that receives inventory and provides grocery orders.",
+            "associatedOrganization": "koFoods",
+            "preview": "pictures/koFoodsOT.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "koFoodsOTToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryOtjovasando"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "koFoodsOTTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessOtjovasandoDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderOtjovasando",
+                "trailerDeliveryBusinessOtjovasandoDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryOtjovasando",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryOtjovasando"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoDryvan28ft"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "nodeolineStoresOT",
+            "name": "Nodeoline Otjovasando",
+            "description": "Local station that receives grocery inventory, trailer deliveries, and fuel materials.",
+            "associatedOrganization": "nodeolineStores",
+            "preview": "pictures/nodeolineStoresOT.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "nodeolineStoresTollOT",
+                    "logisticTypesProvided": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryOtjovasando"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "nodeolineStoresTrailerOT",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessOtjovasandoDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg",
+                        "gasoline",
+                        "diesel"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderOtjovasando",
+                "trailerDeliveryBusinessOtjovasandoDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryOtjovasando",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg",
+                "gasoline",
+                "diesel"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryOtjovasando"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoDryvan28ft"
+                    ]
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "otjovasandoCosmoSteelHardware",
+            "name": "Otjovasando Cosmo Steel Hardware",
+            "description": "Hardware business that receives stock and provides hardware supplies.",
+            "associatedOrganization": "cosmoSteelHardware",
+            "preview": "pictures/otjovasandoCosmoSteelHardware.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "otjovasandoCosmoSteelHardwareToll",
+                    "logisticTypesProvided": [
+                        "hardwareSuppliesOtjovasando"
+                    ],
+                    "logisticTypesReceived": [
+                        "hardwareInventoryOtjovasando"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "otjovasandoCosmoSteelHardwareTrailerR",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck40ftStandard",
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck30ftGooseneck",
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck22ftGooseneck",
+                        "trailerDeliveryBusinessOtjovasandoMediumemptytrailer",
+                        "trailerDeliveryBusinessOtjovasandoSmallemptytrailer"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck22ftGooseneckWood",
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck30ftGooseneckWood",
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck40ftStandardWood",
+                        "trailerDeliveryWarehouseOtjovasandoMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "hardwareSuppliesOtjovasando",
+                "trailerDeliveryBusinessOtjovasandoTiltdeck40ftStandard",
+                "trailerDeliveryBusinessOtjovasandoTiltdeck30ftGooseneck",
+                "trailerDeliveryBusinessOtjovasandoTiltdeck22ftGooseneck",
+                "trailerDeliveryBusinessOtjovasandoMediumemptytrailer",
+                "trailerDeliveryBusinessOtjovasandoSmallemptytrailer"
+            ],
+            "logisticTypesReceived": [
+                "hardwareInventoryOtjovasando",
+                "trailerDeliveryWarehouseOtjovasandoTiltdeck22ftGooseneckWood",
+                "trailerDeliveryWarehouseOtjovasandoTiltdeck30ftGooseneckWood",
+                "trailerDeliveryWarehouseOtjovasandoTiltdeck40ftStandardWood",
+                "trailerDeliveryWarehouseOtjovasandoMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "hardwareSuppliesOtjovasando"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareInventoryOtjovasando"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_40ft_standard",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck40ftStandard"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_30ft_gooseneck",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck30ftGooseneck"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck22ftGooseneck"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "mediumEmptyTrailer",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoMediumemptytrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "smallEmptyTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessOtjovasandoSmallemptytrailer"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "otjovasandoSpringbokTransport",
+            "name": "Otjovasando Springbok Transport",
+            "description": "Warehouse hub that receives port stock and ships zone inventory.",
+            "associatedOrganization": "springbokTransport",
+            "preview": "pictures/otjovasandoSpringbokTransport.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "otjovasandoSpringbokTransportToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "otjovasandoSpringbokTransportParcel",
+                    "logisticTypesProvided": [
+                        "groceryInventoryOtjovasando",
+                        "hardwareInventoryOtjovasando",
+                        "groceryInventorySperrgebiet"
+                    ],
+                    "logisticTypesReceived": [
+                        "warehouseInventory"
+                    ]
+                },
+                {
+                    "psName": "otjovasandoSpringbokTransportTrailer1",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTransport",
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTransport",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg",
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck22ftGooseneckWood",
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck30ftGooseneckWood",
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck40ftStandardWood",
+                        "trailerDeliveryWarehouseOtjovasandoMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokEmpty",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokHalf",
+                        "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokFull",
+                        "trailerDeliveryWarehouseToPortOtjovasandoFlatbed32ft",
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg"
+                    ],
+                    "logisticTypesReceived": [],
+                    "loanerTrailerPriority": 1,
+                    "loanerNonTrailerPriority": 1
+                },
+                {
+                    "psName": "otjovasandoSpringbokTransportTrailerR",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryBusinessOtjovasandoDryvan28ft",
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck40ftStandard",
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck30ftGooseneck",
+                        "trailerDeliveryBusinessOtjovasandoTiltdeck22ftGooseneck",
+                        "trailerDeliveryBusinessOtjovasandoMediumemptytrailer",
+                        "trailerDeliveryBusinessOtjovasandoSmallemptytrailer",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokEmpty",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokHalf",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokFull",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood",
+                        "trailerDeliveryBusinessSperrgebietDryvan28ft"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryInventoryOtjovasando",
+                "hardwareInventoryOtjovasando",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTransport",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTransport",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg",
+                "trailerDeliveryWarehouseOtjovasandoTiltdeck22ftGooseneckWood",
+                "trailerDeliveryWarehouseOtjovasandoTiltdeck30ftGooseneckWood",
+                "trailerDeliveryWarehouseOtjovasandoTiltdeck40ftStandardWood",
+                "trailerDeliveryWarehouseOtjovasandoMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer",
+                "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokEmpty",
+                "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokHalf",
+                "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokFull",
+                "trailerDeliveryWarehouseToPortOtjovasandoFlatbed32ft",
+                "groceryInventorySperrgebiet",
+                "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg",
+                "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg"
+            ],
+            "logisticTypesReceived": [
+                "warehouseInventory",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                "trailerDeliveryBusinessOtjovasandoDryvan28ft",
+                "trailerDeliveryBusinessOtjovasandoTiltdeck40ftStandard",
+                "trailerDeliveryBusinessOtjovasandoTiltdeck30ftGooseneck",
+                "trailerDeliveryBusinessOtjovasandoTiltdeck22ftGooseneck",
+                "trailerDeliveryBusinessOtjovasandoMediumemptytrailer",
+                "trailerDeliveryBusinessOtjovasandoSmallemptytrailer",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokEmpty",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokHalf",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokFull",
+                "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                "trailerDeliveryPortToWarehouseFlatbed32ftWood",
+                "trailerDeliveryBusinessSperrgebietDryvan28ft"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryInventoryOtjovasando"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "hardwareInventoryOtjovasando"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "warehouseInventory"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_transport",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTransport"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_transport",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTransport"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_9600kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft9600kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck22ftGooseneckWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_30ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck30ftGooseneckWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_40ft_standard_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoTiltdeck40ftStandardWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "mediumCratePlanksTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoMediumcrateplankstrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "smallCratePlanksTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Empty",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Half",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokHalf"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Full",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan48ftSpringbokFull"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoFlatbed32ft"
+                    ]
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryInventorySperrgebiet"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_9600kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 30
+        },
+        {
+            "id": "sperrgebietCornerStation",
+            "name": "Sperrgebiet Corner Station",
+            "description": "Local station that receives grocery inventory, trailer deliveries, and fuel materials.",
+            "preview": "pictures/sperrgebietCornerStation.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "sperrgebietCornerStationToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventorySperrgebiet"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "sperrgebietCornerStationTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessSperrgebietDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg",
+                        "gasoline",
+                        "diesel"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderOtjovasando",
+                "trailerDeliveryBusinessSperrgebietDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventorySperrgebiet",
+                "trailerDeliveryWarehouseSperrgebietDryvan28ft4500kg",
+                "trailerDeliveryWarehouseSperrgebietDryvan28ft9600kg",
+                "gasoline",
+                "diesel"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventorySperrgebiet"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessSperrgebietDryvan28ft"
+                    ]
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "koFoodsVC",
+            "name": "KO Foods Vogalsang",
+            "description": "Local grocery business that receives inventory and provides grocery orders.",
+            "associatedOrganization": "koFoods",
+            "preview": "pictures/koFoodsVC.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "koFoodsVCToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderVogelsang"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "koFoodsVCTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessVogelsangDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderVogelsang",
+                "trailerDeliveryBusinessVogelsangDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryVogelsang",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderVogelsang"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangDryvan28ft"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "nodeolineStoresVC",
+            "name": "Nodeoline Vogelsang",
+            "description": "Local station that receives grocery inventory, trailer deliveries, and fuel materials.",
+            "associatedOrganization": "nodeolineStores",
+            "preview": "pictures/nodeolineStoresVC.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "nodeolineStoresTollVC",
+                    "logisticTypesProvided": [
+                        "groceryOrderVogelsang"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "nodeolineStoresTrailerVC",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessVogelsangDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg",
+                        "gasoline",
+                        "diesel"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderVogelsang",
+                "trailerDeliveryBusinessVogelsangDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryVogelsang",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg",
+                "gasoline",
+                "diesel"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderVogelsang"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangDryvan28ft"
+                    ]
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangCosmoSteelHardware",
+            "name": "Vogelsang Cosmo Steel Hardware",
+            "description": "Hardware business that receives stock and provides hardware supplies.",
+            "associatedOrganization": "cosmoSteelHardware",
+            "preview": "pictures/vogelsangCosmoSteelHardware.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangCosmoSteelHardwareToll",
+                    "logisticTypesProvided": [
+                        "hardwareSuppliesVogelsang"
+                    ],
+                    "logisticTypesReceived": [
+                        "hardwareInventoryVogelsang"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "vogelsangCosmoSteelHardwareTrailerR",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessVogelsangTiltdeck40ftStandard",
+                        "trailerDeliveryBusinessVogelsangTiltdeck30ftGooseneck",
+                        "trailerDeliveryBusinessVogelsangTiltdeck22ftGooseneck",
+                        "trailerDeliveryBusinessVogelsangMediumemptytrailer",
+                        "trailerDeliveryBusinessVogelsangSmallemptytrailer"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangTiltdeck22ftGooseneckWood",
+                        "trailerDeliveryWarehouseVogelsangTiltdeck30ftGooseneckWood",
+                        "trailerDeliveryWarehouseVogelsangTiltdeck40ftStandardWood",
+                        "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "hardwareSuppliesVogelsang",
+                "trailerDeliveryBusinessVogelsangTiltdeck40ftStandard",
+                "trailerDeliveryBusinessVogelsangTiltdeck30ftGooseneck",
+                "trailerDeliveryBusinessVogelsangTiltdeck22ftGooseneck",
+                "trailerDeliveryBusinessVogelsangMediumemptytrailer",
+                "trailerDeliveryBusinessVogelsangSmallemptytrailer"
+            ],
+            "logisticTypesReceived": [
+                "hardwareInventoryVogelsang",
+                "trailerDeliveryWarehouseVogelsangTiltdeck22ftGooseneckWood",
+                "trailerDeliveryWarehouseVogelsangTiltdeck30ftGooseneckWood",
+                "trailerDeliveryWarehouseVogelsangTiltdeck40ftStandardWood",
+                "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "hardwareSuppliesVogelsang"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareInventoryVogelsang"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_40ft_standard",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangTiltdeck40ftStandard"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_30ft_gooseneck",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangTiltdeck30ftGooseneck"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangTiltdeck22ftGooseneck"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "mediumEmptyTrailer",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangMediumemptytrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "smallEmptyTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangSmallemptytrailer"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangSpringbokTransport",
+            "name": "Vogelsang Springbok Transport",
+            "description": "Warehouse hub that receives port stock and ships zone inventory.",
+            "associatedOrganization": "springbokTransport",
+            "preview": "pictures/vogelsangSpringbokTransport.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangSpringbokTransportToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "vogelsangSpringbokTransportParcel",
+                    "logisticTypesProvided": [
+                        "groceryInventoryVogelsang",
+                        "hardwareInventoryVogelsang"
+                    ],
+                    "logisticTypesReceived": [
+                        "warehouseInventory"
+                    ]
+                },
+                {
+                    "psName": "vogelsangSpringbokTransportTrailer1",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTransport",
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTransport",
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg",
+                        "trailerDeliveryWarehouseVogelsangTiltdeck22ftGooseneckWood",
+                        "trailerDeliveryWarehouseVogelsangTiltdeck30ftGooseneckWood",
+                        "trailerDeliveryWarehouseVogelsangTiltdeck40ftStandardWood",
+                        "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer",
+                        "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokEmpty",
+                        "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokHalf",
+                        "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokFull",
+                        "trailerDeliveryWarehouseToPortVogelsangFlatbed32ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryBusinessVogelsangDryvan28ft",
+                        "trailerDeliveryBusinessVogelsangTiltdeck40ftStandard",
+                        "trailerDeliveryBusinessVogelsangTiltdeck30ftGooseneck",
+                        "trailerDeliveryBusinessVogelsangTiltdeck22ftGooseneck",
+                        "trailerDeliveryBusinessVogelsangMediumemptytrailer",
+                        "trailerDeliveryBusinessVogelsangSmallemptytrailer",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokEmpty",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokHalf",
+                        "trailerDeliveryPortToWarehouseDryvan48ftSpringbokFull",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood"
+                    ],
+                    "loanerTrailerPriority": 1,
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryInventoryVogelsang",
+                "hardwareInventoryVogelsang",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTransport",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTransport",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg",
+                "trailerDeliveryWarehouseVogelsangTiltdeck22ftGooseneckWood",
+                "trailerDeliveryWarehouseVogelsangTiltdeck30ftGooseneckWood",
+                "trailerDeliveryWarehouseVogelsangTiltdeck40ftStandardWood",
+                "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer",
+                "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokEmpty",
+                "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokHalf",
+                "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokFull",
+                "trailerDeliveryWarehouseToPortVogelsangFlatbed32ft"
+            ],
+            "logisticTypesReceived": [
+                "warehouseInventory",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                "trailerDeliveryBusinessVogelsangDryvan28ft",
+                "trailerDeliveryBusinessVogelsangTiltdeck40ftStandard",
+                "trailerDeliveryBusinessVogelsangTiltdeck30ftGooseneck",
+                "trailerDeliveryBusinessVogelsangTiltdeck22ftGooseneck",
+                "trailerDeliveryBusinessVogelsangMediumemptytrailer",
+                "trailerDeliveryBusinessVogelsangSmallemptytrailer",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokEmpty",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokHalf",
+                "trailerDeliveryPortToWarehouseDryvan48ftSpringbokFull",
+                "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                "trailerDeliveryPortToWarehouseFlatbed32ftWood"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "hardwareInventoryVogelsang"
+                    ],
+                    "min": 2,
+                    "max": 4,
+                    "interval": 120
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "warehouseInventory"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_transport",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTransport"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_transport",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTransport"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_9600kg",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangTiltdeck22ftGooseneckWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_30ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangTiltdeck30ftGooseneckWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_40ft_standard_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangTiltdeck40ftStandardWood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "mediumCratePlanksTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "smallCratePlanksTrailers",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Empty",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Half",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokHalf"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_48ft_springbok_Full",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseVogelsangDryvan48ftSpringbokFull"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortVogelsangFlatbed32ft"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 30
+        },
+        {
+            "id": "vogelsangLiquidStorageDepot",
+            "name": "Vogelsang Liquid Storage Depot",
+            "description": "Liquid storage depot that provides bulk fluids for regional deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/vogelsangLiquidStorageDepot.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangLiquidStorageDepotToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "vogelsangLiquidStorageDepotTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTankEmpty",
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTankDouble",
+                        "trailerDeliveryLiquidDepotToMineTank20ftFull"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                        "trailerDeliveryMineToLiquidDepotTank20ftEmpty"
+                    ]
+                },
+                {
+                    "psName": "vogelsangLiquidStorageDepotMaterial1",
+                    "logisticTypesProvided": [
+                        "water",
+                        "gasoline",
+                        "diesel"
+                    ],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTankEmpty",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTankDouble",
+                "water",
+                "gasoline",
+                "diesel",
+                "trailerDeliveryLiquidDepotToMineTank20ftFull"
+            ],
+            "logisticTypesReceived": [
+                "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                "trailerDeliveryMineToLiquidDepotTank20ftEmpty"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_tank_empty",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTankEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_tank_double",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTankDouble"
+                    ]
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 100000,
+                    "target": 100000,
+                    "variance": 2500,
+                    "interval": 600,
+                    "rate": 3000,
+                    "pickUpSpotName": "vogelsangLiquidStorageDepotMaterial1"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 100000,
+                    "target": 100000,
+                    "variance": 5000,
+                    "interval": 600,
+                    "rate": 4500,
+                    "pickUpSpotName": "vogelsangLiquidStorageDepotMaterial1"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 100000,
+                    "target": 100000,
+                    "variance": 5000,
+                    "interval": 600,
+                    "rate": 4500,
+                    "pickUpSpotName": "vogelsangLiquidStorageDepotMaterial1"
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_tank",
+                    "logisticTypes": [
+                        "trailerDeliveryLiquidDepotToMineTank20ftFull"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 30
+        },
+        {
+            "id": "vogelsangWaterStorage1",
+            "name": "Vogelsang Water Storage 1",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage1Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangWaterStorage2",
+            "name": "Vogelsang Water Storage 2",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage2Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangWaterStorage3",
+            "name": "Vogelsang Water Storage 3",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage3Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangWaterStorage4",
+            "name": "Vogelsang Water Storage 4",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage4Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangWaterStorage5",
+            "name": "Vogelsang Water Storage 5",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage5Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangWaterStorage6",
+            "name": "Vogelsang Water Storage 6",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage6Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangWaterStorage7",
+            "name": "Vogelsang Water Storage 7",
+            "description": "Water storage site that receives bulk water deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangWaterStorage7Material",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "water"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "water"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 360,
+                    "rate": 1700
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "godfremBakery",
+            "name": "Vogelsang Bay Godfrem Bakery",
+            "description": "Local grocery business that receives inventory and provides grocery orders.",
+            "associatedOrganization": "godfremBakery",
+            "preview": "pictures/godfremBakery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "godfremBakeryToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "godfremBakeryTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderVogelsangBay",
+                "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryVogelsang",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "vogelsangPort",
+            "name": "Springbok Marine Port",
+            "description": "Port logistics hub that feeds warehouse inventory and imported vehicle deliveries into Skeleton Coast.",
+            "associatedOrganization": "springbokTransport",
+            "preview": "pictures/vogelsangPort.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "vogelsangPortToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "vogelsangPortParcel1",
+                    "logisticTypesProvided": [
+                        "warehouseInventory"
+                    ],
+                    "logisticTypesReceived": [],
+                    "loanerTrailerPriority": 1,
+                    "loanerNonTrailerPriority": 1
+                },
+                {
+                    "psName": "vogelsangPortTrailer1",
+                    "logisticTypesProvided": [
+                        "vehForPrivate",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood",
+                        "trailerDeliveryPortToMineFlatbed48ftTires",
+                        "trailerDeliveryPortToMineFlatbed48ftTiresDouble",
+                        "trailerDeliveryPortToMineFlatbed32ftPipes",
+                        "trailerDeliveryPortToMineFlatbed48ftPipes"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "vogelsangPortTrailer2",
+                    "logisticTypesProvided": [
+                        "vehForPrivate",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "vogelsangPortTrailer3",
+                    "logisticTypesProvided": [
+                        "vehForPrivate",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "vogelsangPortTrailer4",
+                    "logisticTypesProvided": [
+                        "vehForPrivate",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "vogelsangPortTrailerR",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTankEmpty",
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTankEmpty",
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTankEmpty",
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTankDouble",
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTankDouble",
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTankDouble",
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTransport",
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTransport",
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTransport",
+                        "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTransport",
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTransport",
+                        "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTransport",
+                        "trailerDeliveryWarehouseToPortHorseshoeBayFlatbed32ft",
+                        "trailerDeliveryWarehouseToPortOtjovasandoFlatbed32ft",
+                        "trailerDeliveryWarehouseToPortVogelsangFlatbed32ft",
+                        "trailerDeliveryMineToPortFlatbed28ftSingleEmpty",
+                        "trailerDeliveryMineToPortFlatbed28ftDoubleEmpty",
+                        "trailerDeliveryMineToPortFlatbed32ftEmpty",
+                        "trailerDeliveryMineToPortFlatbed48ftDoubleEmpty",
+                        "trailerDeliveryMineToPortFlatbed53ftTripleEmpty",
+                        "sand",
+                        "trailerDeliveryMineToPortFramelessDumpSandDouble",
+                        "trailerDeliveryMineToPortFramelessDumpSandTriple",
+                        "trailerDeliveryMineToPortFramelessDumpSandWideDouble"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "warehouseInventory",
+                "vehForPrivate",
+                "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble",
+                "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort",
+                "trailerDeliveryPortToWarehouseFlatbed32ftCoil",
+                "trailerDeliveryPortToWarehouseFlatbed32ftPipes",
+                "trailerDeliveryPortToWarehouseFlatbed32ftWood",
+                "trailerDeliveryPortToMineFlatbed48ftTires",
+                "trailerDeliveryPortToMineFlatbed48ftTiresDouble",
+                "trailerDeliveryPortToMineFlatbed32ftPipes",
+                "trailerDeliveryPortToMineFlatbed48ftPipes"
+            ],
+            "logisticTypesReceived": [
+                "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTankEmpty",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTankEmpty",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTankEmpty",
+                "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTankDouble",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTankDouble",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTankDouble",
+                "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer20ft2axleTransport",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTransport",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer20ft2axleTransport",
+                "trailerDeliveryWarehouseToPortHorseshoeBayContainertrailer40ft3axleTransport",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTransport",
+                "trailerDeliveryWarehouseToPortVogelsangContainertrailer40ft3axleTransport",
+                "trailerDeliveryWarehouseToPortHorseshoeBayFlatbed32ft",
+                "trailerDeliveryWarehouseToPortOtjovasandoFlatbed32ft",
+                "trailerDeliveryWarehouseToPortVogelsangFlatbed32ft",
+                "trailerDeliveryMineToPortFlatbed28ftSingleEmpty",
+                "trailerDeliveryMineToPortFlatbed28ftDoubleEmpty",
+                "trailerDeliveryMineToPortFlatbed32ftEmpty",
+                "trailerDeliveryMineToPortFlatbed48ftDoubleEmpty",
+                "trailerDeliveryMineToPortFlatbed53ftTripleEmpty",
+                "sand",
+                "trailerDeliveryMineToPortFramelessDumpSandDouble",
+                "trailerDeliveryMineToPortFramelessDumpSandTriple",
+                "trailerDeliveryMineToPortFramelessDumpSandWideDouble"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "warehouseInventory"
+                    ],
+                    "min": 2,
+                    "max": 5,
+                    "interval": 90
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_tank",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_20ft_double",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftDouble"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_20ft_short",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseContainertrailer40ft3axle20ftShort"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft_coil",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseFlatbed32ftCoil"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft_pipes",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseFlatbed32ftPipes"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft_wood",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToWarehouseFlatbed32ftWood"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 1,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "cheapVehFilter",
+                    "logisticTypes": [
+                        "vehForPrivate"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 1,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "budgetVehFilter",
+                    "logisticTypes": [
+                        "vehForPrivate"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 1,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "mediumVehFilter",
+                    "logisticTypes": [
+                        "vehForPrivate"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 1,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "highEndVehFilter",
+                    "logisticTypes": [
+                        "vehForPrivate"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 1,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "exoticTierVehFilter",
+                    "logisticTypes": [
+                        "vehForPrivate"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 170,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_48ft_tires",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToMineFlatbed48ftTires"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_48ft_tires_double",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToMineFlatbed48ftTiresDouble"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 170,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft_pipes",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToMineFlatbed32ftPipes"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 190,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_48ft_pipes",
+                    "logisticTypes": [
+                        "trailerDeliveryPortToMineFlatbed48ftPipes"
+                    ]
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "sand"
+                    ],
+                    "materialType": "sand",
+                    "capacity": 120000,
+                    "target": 0,
+                    "variance": 10000,
+                    "interval": 420,
+                    "rate": 6000
+                }
+            ],
+            "logisticMaxItems": 60
+        },
+        {
+            "id": "africaMiniMarketVB",
+            "name": "Vogelsang Bay Africa Mini Market",
+            "description": "Local grocery business that receives inventory and provides grocery orders.",
+            "preview": "pictures/africaMiniMarketVB.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "africaMiniMarketVBToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "africaMiniMarketVBTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderVogelsangBay",
+                "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryVogelsang",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+                    ]
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "nodeolineStoresVB",
+            "name": "Nodeoline Vogelsang Bay",
+            "description": "Local station that receives grocery inventory, trailer deliveries, and fuel materials.",
+            "associatedOrganization": "nodeolineStores",
+            "preview": "pictures/nodeolineStoresVB.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "nodeolineStoresVBToll",
+                    "logisticTypesProvided": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "logisticTypesReceived": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "nodeolineStoresVBTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg",
+                        "gasoline",
+                        "diesel"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "groceryOrderVogelsangBay",
+                "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+            ],
+            "logisticTypesReceived": [
+                "groceryInventoryVogelsang",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg",
+                "gasoline",
+                "diesel"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "min": 0,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 120
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 210,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "trailerDeliveryBusinessVogelsangBayDryvan28ft"
+                    ]
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2500,
+                    "interval": 60,
+                    "rate": 160
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "otjovasandoLiquidStorageDepot",
+            "name": "Otjovasando Liquid Storage Depot",
+            "description": "Liquid storage depot that provides bulk fluids for regional deliveries.",
+            "associatedOrganization": "skeletonCoastWaterAuthority",
+            "preview": "pictures/otjovasandoLiquidStorageDepot.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "otjovasandoLiquidStorageDepotToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "otjovasandoLiquidStorageDepotTrailer",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTankEmpty",
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTankDouble",
+                        "water",
+                        "gasoline",
+                        "diesel"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                        "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank"
+                    ],
+                    "isInspectSpot": true
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTankEmpty",
+                "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTankDouble",
+                "water",
+                "gasoline",
+                "diesel"
+            ],
+            "logisticTypesReceived": [
+                "trailerDeliveryPortToWarehouseContainertrailer20ft2axle20ft",
+                "trailerDeliveryPortToWarehouseContainertrailer20ft2axleTank"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_tank_empty",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer20ft2axleTankEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 140,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_40ft_3axle_tank_double",
+                    "logisticTypes": [
+                        "trailerDeliveryWarehouseToPortOtjovasandoContainertrailer40ft3axleTankDouble"
+                    ]
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "water"
+                    ],
+                    "materialType": "water",
+                    "capacity": 100000,
+                    "target": 100000,
+                    "variance": 2500,
+                    "interval": 600,
+                    "rate": 3000,
+                    "pickUpSpotName": "otjovasandoLiquidStorageDepotTrailer"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 100000,
+                    "target": 100000,
+                    "variance": 5000,
+                    "interval": 600,
+                    "rate": 4500,
+                    "pickUpSpotName": "otjovasandoLiquidStorageDepotTrailer"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 100000,
+                    "target": 100000,
+                    "variance": 5000,
+                    "interval": 600,
+                    "rate": 4500,
+                    "pickUpSpotName": "otjovasandoLiquidStorageDepotTrailer"
+                }
+            ],
+            "logisticMaxItems": 30
+        },
+        {
+            "id": "outfittersWarehouse",
+            "name": "Outfitters Warehouse",
+            "description": "Remote warehouse that receives parcel stock and smaller trailer loads from regional stores and warehouses.",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "outfittersWarehouseToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "groceryOrderVogelsang",
+                        "groceryOrderVogelsangBay",
+                        "hardwareSuppliesVogelsang",
+                        "groceryInventoryVogelsang",
+                        "hardwareInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "outfittersWarehouseTrailer",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg",
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg",
+                        "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderVogelsang",
+                "groceryOrderVogelsangBay",
+                "hardwareSuppliesVogelsang",
+                "groceryInventoryVogelsang",
+                "hardwareInventoryVogelsang",
+                "warehouseInventory",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft9600kg",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg",
+                "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderVogelsang",
+                        "groceryOrderVogelsangBay",
+                        "hardwareSuppliesVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 3,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang",
+                        "groceryInventoryVogelsang",
+                        "hardwareInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 150
+                }
+            ],
+            "logisticMaxItems": 18
+        },
+        {
+            "id": "fishingPort",
+            "name": "Fishing Port Storage",
+            "description": "Small port storage site that receives parcel stock and smaller trailer loads for the bay.",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fishingPortToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "groceryOrderVogelsangBay",
+                        "groceryOrderVogelsang",
+                        "hardwareSuppliesVogelsang",
+                        "groceryInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "fishingPortTrailer",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg",
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderVogelsangBay",
+                "groceryOrderVogelsang",
+                "hardwareSuppliesVogelsang",
+                "groceryInventoryVogelsang",
+                "warehouseInventory",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangBayDryvan28ft9600kg",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderVogelsangBay",
+                        "groceryOrderVogelsang",
+                        "hardwareSuppliesVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 3,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang",
+                        "groceryInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "min": -2,
+                    "max": 1,
+                    "interval": 150
+                }
+            ],
+            "logisticMaxItems": 16
+        },
+        {
+            "id": "desertLodgeStorage",
+            "name": "Desert Lodge Storage",
+            "description": "Remote lodge storage that receives groceries, core parcels, and the smallest trailer loads from Vogelsang.",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "desertLodgeStorageToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "groceryOrderVogelsang",
+                        "groceryInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "desertLodgeStorageTrailer",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderVogelsang",
+                "groceryInventoryVogelsang",
+                "warehouseInventory",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "min": -1,
+                    "max": 1,
+                    "interval": 150
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "twaalfonteinRanch",
+            "name": "Twaalfontein Ranch Supply",
+            "description": "Large remote ranch that receives hardware, core parcels, and small to medium trailer supplies from Vogelsang.",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "twaalfonteinRanchToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "hardwareSuppliesVogelsang",
+                        "groceryOrderVogelsang",
+                        "hardwareInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "twaalfonteinRanchTrailer",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                        "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "hardwareSuppliesVogelsang",
+                "groceryOrderVogelsang",
+                "hardwareInventoryVogelsang",
+                "warehouseInventory",
+                "trailerDeliveryWarehouseVogelsangDryvan28ft4500kg",
+                "trailerDeliveryWarehouseVogelsangMediumcrateplankstrailer",
+                "trailerDeliveryWarehouseVogelsangSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareSuppliesVogelsang",
+                        "groceryOrderVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareInventoryVogelsang",
+                        "warehouseInventory"
+                    ],
+                    "min": -1,
+                    "max": 1,
+                    "interval": 150
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "kalahariLodge",
+            "name": "Kalahari Desert Lodge Storage",
+            "description": "Remote lodge storage that receives groceries, core parcels, and the smallest trailer loads from Otjovasando.",
+            "preview": "pictures/skeletonCoastLogistics.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "kalahariLodgeToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "groceryOrderOtjovasando",
+                        "groceryInventoryOtjovasando",
+                        "warehouseInventory"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "kalahariLodgeTrailer",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                        "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer"
+                    ]
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderOtjovasando",
+                "groceryInventoryOtjovasando",
+                "warehouseInventory",
+                "trailerDeliveryWarehouseOtjovasandoDryvan28ft4500kg",
+                "trailerDeliveryWarehouseOtjovasandoSmallcrateplankstrailer"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 90
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryInventoryOtjovasando",
+                        "warehouseInventory"
+                    ],
+                    "min": -1,
+                    "max": 1,
+                    "interval": 150
+                }
+            ],
+            "logisticMaxItems": 10
+        },
+        {
+            "id": "residentialOtjovasando",
+            "name": "Otjovasando Residential Deliveries",
+            "description": "Receives local grocery, hardware, and imported vehicle deliveries for this zone.",
+            "preview": "pictures/skeletonCoastResidential.jpg",
+            "multiDropOffSpotFilter": [
+                {
+                    "type": "byZone",
+                    "zoneName": "otjovasando"
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderOtjovasando",
+                "hardwareSuppliesOtjovasando",
+                "vehForPrivate"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderOtjovasando"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareSuppliesOtjovasando"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 120
+                }
+            ],
+            "logisticMaxItems": 8
+        },
+        {
+            "id": "residentialVogelsang",
+            "name": "Vogelsang Residential Deliveries",
+            "description": "Receives local grocery, hardware, and imported vehicle deliveries for this zone.",
+            "preview": "pictures/skeletonCoastResidential.jpg",
+            "multiDropOffSpotFilter": [
+                {
+                    "type": "byZone",
+                    "zoneName": "vogelsang"
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderVogelsang",
+                "hardwareSuppliesVogelsang",
+                "vehForPrivate"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareSuppliesVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 120
+                }
+            ],
+            "logisticMaxItems": 8
+        },
+        {
+            "id": "residentialVogelsangBay",
+            "name": "Vogelsang Bay Residential Deliveries",
+            "description": "Receives local grocery, hardware, and imported vehicle deliveries for this zone.",
+            "preview": "pictures/skeletonCoastResidential.jpg",
+            "multiDropOffSpotFilter": [
+                {
+                    "type": "byZone",
+                    "zoneName": "vogelsang-bay"
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderVogelsangBay",
+                "hardwareSuppliesVogelsang",
+                "vehForPrivate"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderVogelsangBay"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareSuppliesVogelsang"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 120
+                }
+            ],
+            "logisticMaxItems": 8
+        },
+        {
+            "id": "residentialHorseshoeBay",
+            "name": "Horseshoe Bay Residential Deliveries",
+            "description": "Receives local grocery, hardware, and imported vehicle deliveries for this zone.",
+            "preview": "pictures/skeletonCoastResidential.jpg",
+            "multiDropOffSpotFilter": [
+                {
+                    "type": "byZone",
+                    "zoneName": "horseshoe-bay"
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [],
+            "logisticTypesReceived": [
+                "groceryOrderHorseshoeBay",
+                "hardwareSuppliesOtjovasando",
+                "vehForPrivate"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "groceryOrderHorseshoeBay"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "hardwareSuppliesOtjovasando"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 120
+                }
+            ],
+            "logisticMaxItems": 8
+        },
+        {
+            "id": "woermannMines",
+            "name": "Woermann Mines",
+            "description": "Mining logistics site that receives heavy supplies and exports sand, ore, and secured diamonds.",
+            "associatedOrganization": "skeletonCoastMiningCompany",
+            "preview": "pictures/woermannMines.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "woermannMinesToll",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "woermannMinesTireTrailerDrop",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToMineFlatbed48ftTires",
+                        "trailerDeliveryPortToMineFlatbed48ftTiresDouble"
+                    ],
+                    "loanerTrailerPriority": 1
+                },
+                {
+                    "psName": "woermannMinesTrailerPipeDrop",
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryPortToMineFlatbed32ftPipes",
+                        "trailerDeliveryPortToMineFlatbed48ftPipes",
+                        "trailerDeliveryLiquidDepotToMineTank20ftFull"
+                    ],
+                    "loanerTrailerPriority": 1
+                },
+                {
+                    "psName": "woermannMinesEmptyFlatbedPickup",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryMineToPortFlatbed28ftSingleEmpty",
+                        "trailerDeliveryMineToPortFlatbed28ftDoubleEmpty",
+                        "trailerDeliveryMineToPortFlatbed32ftEmpty",
+                        "trailerDeliveryMineToPortFlatbed48ftDoubleEmpty",
+                        "trailerDeliveryMineToPortFlatbed53ftTripleEmpty"
+                    ],
+                    "logisticTypesReceived": [],
+                    "loanerTrailerPriority": 1
+                },
+                {
+                    "psName": "woermannMinesEmptyFlatbedDrop2",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryMineToLiquidDepotTank20ftEmpty"
+                    ],
+                    "logisticTypesReceived": [],
+                    "loanerTrailerPriority": 1
+                },
+                {
+                    "psName": "woermannMinesMaterialPickup",
+                    "logisticTypesProvided": [
+                        "sand",
+                        "ore",
+                        "diamonds",
+                        "mineCoreSamples",
+                        "mineIncidentReports"
+                    ],
+                    "logisticTypesReceived": [
+                        "mineEquipmentSupplies",
+                        "mineWorkerProvisions"
+                    ],
+                    "isInspectSpot": true
+                },
+                {
+                    "psName": "woermannMinesMaterialTrailerPickup",
+                    "logisticTypesProvided": [
+                        "trailerDeliveryMineToPortFramelessDumpSandDouble",
+                        "trailerDeliveryMineToPortFramelessDumpSandTriple",
+                        "trailerDeliveryMineToPortFramelessDumpSandWideDouble",
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreDouble",
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreTriple",
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreWideDouble"
+                    ],
+                    "logisticTypesReceived": [],
+                    "loanerTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "skeleton_coast_logistics.sites.json",
+            "logisticTypesProvided": [
+                "trailerDeliveryMineToPortFlatbed28ftSingleEmpty",
+                "trailerDeliveryMineToPortFlatbed28ftDoubleEmpty",
+                "trailerDeliveryMineToPortFlatbed32ftEmpty",
+                "trailerDeliveryMineToPortFlatbed48ftDoubleEmpty",
+                "trailerDeliveryMineToPortFlatbed53ftTripleEmpty",
+                "trailerDeliveryMineToLiquidDepotTank20ftEmpty",
+                "sand",
+                "ore",
+                "diamonds",
+                "trailerDeliveryMineToPortFramelessDumpSandDouble",
+                "trailerDeliveryMineToPortFramelessDumpSandTriple",
+                "trailerDeliveryMineToPortFramelessDumpSandWideDouble",
+                "trailerDeliveryMineToHorseshoeBayFramelessDumpOreDouble",
+                "trailerDeliveryMineToHorseshoeBayFramelessDumpOreTriple",
+                "trailerDeliveryMineToHorseshoeBayFramelessDumpOreWideDouble",
+                "mineCoreSamples",
+                "mineIncidentReports"
+            ],
+            "logisticTypesReceived": [
+                "trailerDeliveryPortToMineFlatbed48ftTires",
+                "trailerDeliveryPortToMineFlatbed48ftTiresDouble",
+                "trailerDeliveryPortToMineFlatbed32ftPipes",
+                "trailerDeliveryPortToMineFlatbed48ftPipes",
+                "trailerDeliveryLiquidDepotToMineTank20ftFull",
+                "mineEquipmentSupplies",
+                "mineWorkerProvisions"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "sand"
+                    ],
+                    "materialType": "sand",
+                    "capacity": 100000,
+                    "target": 90000,
+                    "variance": 10000,
+                    "interval": 600,
+                    "rate": 6000,
+                    "pickUpSpotName": "woermannMinesMaterialPickup"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "ore"
+                    ],
+                    "materialType": "ore",
+                    "capacity": 60000,
+                    "target": 50000,
+                    "variance": 6000,
+                    "interval": 700,
+                    "rate": 3500,
+                    "pickUpSpotName": "woermannMinesMaterialPickup"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "diamonds"
+                    ],
+                    "materialType": "diamonds",
+                    "capacity": 1200,
+                    "target": 1000,
+                    "variance": 120,
+                    "interval": 900,
+                    "rate": 75,
+                    "pickUpSpotName": "woermannMinesMaterialPickup"
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 600,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 240,
+                        "max": 420
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_single",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFlatbed28ftSingleEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 600,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 240,
+                        "max": 420
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFlatbed28ftDoubleEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 600,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 240,
+                        "max": 420
+                    },
+                    "filter": "vanillaTrailer_flatbed_32ft",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFlatbed32ftEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 600,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 240,
+                        "max": 420
+                    },
+                    "filter": "vanillaTrailer_flatbed_48ft_double",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFlatbed48ftDoubleEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 600,
+                    "min": 0,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 240,
+                        "max": 420
+                    },
+                    "filter": "vanillaTrailer_flatbed_53ft_triple",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFlatbed53ftTripleEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_tank_empty",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToLiquidDepotTank20ftEmpty"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "rlsTrailer_frameless_dump_woermann_sand_double",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFramelessDumpSandDouble"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "rlsTrailer_frameless_dump_woermann_sand_triple",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFramelessDumpSandTriple"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "rlsTrailer_frameless_dump_woermann_sand_wide_double",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToPortFramelessDumpSandWideDouble"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "rlsTrailer_frameless_dump_woermann_ore_double",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreDouble"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "rlsTrailer_frameless_dump_woermann_ore_triple",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreTriple"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 180,
+                    "min": 1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 600,
+                        "max": 900
+                    },
+                    "filter": "rlsTrailer_frameless_dump_woermann_ore_wide_double",
+                    "logisticTypes": [
+                        "trailerDeliveryMineToHorseshoeBayFramelessDumpOreWideDouble"
+                    ]
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "mineCoreSamples"
+                    ],
+                    "min": 1,
+                    "max": 2,
+                    "interval": 240
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "mineIncidentReports"
+                    ],
+                    "min": 0,
+                    "max": 1,
+                    "interval": 360
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "mineEquipmentSupplies",
+                        "mineWorkerProvisions"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 180
+                }
+            ],
+            "logisticMaxItems": 42
+        }
+    ]
+}

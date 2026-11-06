@@ -1,0 +1,23 @@
+{
+  "GroundGrid" : {
+    "name" : "GroundGrid",
+    "mapTo" : "grid_10_diff",
+    "internalName" : "Grid",
+    "class" : "Material",
+    "persistentId" : "37f386da-8735-4473-adfa-66e2020752cf",
+    "Stages" : [
+      {
+        "colorMap" : "/levels/pepper_valley/grid_10_diff",
+        "detailScale" : [ 50, 50 ],
+        "useAnisotropic" : true
+      },
+      {},
+      {},
+      {}
+    ],
+    "detailDistance" : "2000",
+    "detailSize" : "1",
+    "diffuseSize" : "1",
+    "materialTag0" : "Miscellaneous"
+  }
+}

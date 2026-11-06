@@ -1,0 +1,20 @@
+{
+  "oldrustedabandonedvessel3_vessel9_rusted_basecolor_dds": {
+    "name": "oldrustedabandonedvessel3_vessel9_rusted_basecolor_dds",
+    "mapTo": "oldrustedabandonedvessel3_vessel9_rusted_basecolor.dds",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 3/oldrustedabandonedvessel3_vessel9_rusted_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 3/oldrustedabandonedvessel3_vessel9_rusted_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 3/oldrustedabandonedvessel3_vessel9_rusted_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 3/oldrustedabandonedvessel3_vessel9_rusted_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

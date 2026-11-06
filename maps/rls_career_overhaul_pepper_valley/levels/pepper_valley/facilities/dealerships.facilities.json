@@ -1,0 +1,565 @@
+{
+  "dealerships": [
+    {
+      "id": "tyrannosDealership",
+      "name": "Tyrannos Dealership",
+      "description": "Got A Lemon? We pay top dollar!",
+      "preview": "dealer/Tyrannos_dealership.jpg",
+      "stock": 20,
+      "range": [
+        0.7,
+        0.9,
+        1.05,
+        1.1
+      ],
+      "associatedOrganization": "tyrannosDealership",
+      "doors": [
+        [
+          "tyrannosDealership_area",
+          "tyrannosDealership_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "tyrannosDealership_parking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 205000000,
+            "max": 816001971
+          }
+        },
+        "blackList": {
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 6,
+          "whiteList": {
+            "Country": [
+              "United States"
+            ],
+            "Value": {
+              "min": 500,
+              "max": 20000
+            }
+          }
+        },
+        {
+          "probability": 2,
+          "whiteList": {
+            "Country": [
+              "Poland",
+              "Italy",
+              "France",
+              "Germany",
+              "Japan",
+              "Canada",
+              "Great Britain",
+              "Soviet Union/Russia",
+              "United Kingdom",
+              "Sweden"
+            ],
+            "Value": {
+              "min": 500,
+              "max": 20000
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Value": {
+              "min": 500,
+              "max": 20000
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "Tyrannos"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          false
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "estradaDealership",
+      "name": "Estrada Dealership",
+      "description": "Estrada surprised everyone by showing up with some amazing vehicles",
+      "preview": "dealer/estrada_dealership.jpg",
+      "stock": 20,
+      "range": [
+        0.7,
+        0.9,
+        1.05,
+        1.1
+      ],
+      "associatedOrganization": "estradaDealership",
+      "doors": [
+        [
+          "estradaDealership_area",
+          "estradaDealership_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "estradaDealership_parking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 25000000,
+            "max": 316001971
+          }
+        },
+        "blackList": {
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 10,
+          "whiteList": {
+            "Mileage": {
+              "min": 160934400,
+              "max": 321868800
+            },
+            "Years": {
+              "min": 1980,
+              "max": 1999
+            },
+            "Country": [
+              "United States"
+            ],
+            "Body Style": [
+              "Van",
+              "SUV",
+              "Pickup"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 160934400,
+              "max": 321868800
+            },
+            "Years": {
+              "min": 1980,
+              "max": 2009
+            },
+            "Country": [
+              "United Kingdom",
+              "Japan",
+              "Canada",
+              "France",
+              "Poland",
+              "Soviet Union/Russia",
+              "Germany",
+              "Great Britain",
+              "Sweden",
+              "Italy",
+              "The Netherlands"
+            ],
+            "Body Style": [
+              "Van",
+              "SUV",
+              "Pickup"
+            ]
+          }
+        },
+        {
+          "probability": 6,
+          "whiteList": {
+            "Config Type": [
+              "Rally"
+            ]
+          }
+        },
+        {
+          "probability": 8,
+          "whiteList": {
+            "Body Style": [
+              "Buggy"
+            ]
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Brand": [
+              "DW",
+              "SP",
+              "Trackfab"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "Tyrannos"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          false
+        ],
+        "configSearchText": {}
+      }
+    },
+    {//Commercial Dealership
+      "id": "commercialDealer",
+      "name": "Commercial Imports",
+      "description": "Heavy duty vehicles imported directly to the logistics hub and ready for work!",
+      "preview": "dealer/commercialDealer.jpg",
+      "stock": 35,
+      "range": [0.7, 0.95, 1.2, 1.4],
+      "associatedOrganization": "commercialDealer",
+      "doors": [
+        ["commercialDealer_area", "commercialDealer_icon", 30]
+      ],
+      "parkingSpotNames": [
+	  "commercialDealerParking"
+	  ],
+      "activityAcceptProps": [
+        { "keyLabel": "Used Trucks & Trailers" }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 52654080,
+            "max": 1182032200
+          },
+		  "Value": { "min": 50000 },
+          "Type": [
+            "Truck",
+            "Trailer"
+          ],
+          "Config Type": [
+            "Factory",
+            "Service"
+          ]
+        },
+        "blackList": {
+          "Config Type": [
+            "Custom",
+            "Frame",
+            "Loaner",
+			      "Police",
+            "Dakar"
+          ],
+          "Brand": [
+            "SP",
+            "DW",
+            "Ibishu",
+            "Trackfab",
+            "Wolf Heavy Industries"
+          ],
+          "Body Style": [
+            "Ambulance"
+          ],
+          "model_key": [
+            "midtruck"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 4,
+          "whiteList": {
+            "Derby Class": [
+              "Heavy Truck",
+              "Heavy Off-Road Truck"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "model_key": [
+              "md_series"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+           "Derby Class": [
+              "Medium Truck"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Type": [
+              "Trailer"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Trucks",
+        "MDs",
+        "SUVs/Pickups",
+        "Trailers"
+      ],
+      "fees": 2500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.05,
+      "ui": {
+        "showMatchingConfigs": [true, true],
+        "configSearchText": {}
+      }
+    },
+    {//Drift Dealership
+      "id": "driftDealer",
+      "name": "Pepper Valley Drift Dealership",
+      "description": "Overnight cars from Japan.",
+      "preview": "dealer/driftDealer.jpg",
+      "stock": 25,
+      "range": [0.7, 0.95, 1.2, 1.4],
+      "associatedOrganization": "driftDealer",
+      "doors": [
+        ["driftDealer_area", "driftDealer_icon", 30]
+      ],
+      "parkingSpotNames": [
+	  "driftDealerParking"
+	  ],
+      "activityAcceptProps": [
+        { "keyLabel": "Purpose-Built Drift Cars" }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 27043976,
+            "max": 289675634
+          }
+        },
+        "blackList": {
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 6,
+          "whiteList": {
+            "Config Type": [
+              "Drift"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Config Type": [
+              "Race"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Drift Filter",
+        "Race Filter"
+      ],
+      "fees": 1500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.05,
+      "ui": {
+        "showMatchingConfigs": [true, true],
+        "configSearchText": {}
+      }
+    }
+  ],
+  "privateSellers": [
+    {
+      "id": "private",
+      "name": "Private",
+      "description": "Private vehicles, what more is there to say",
+      "preview": "dealer/private_dealership.jpg",
+      "stock": 50,
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 2500000,
+            "max": 580000000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Loaner"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 7,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 2010,
+              "max": 2025
+            },
+            "Value": {}
+          }
+        },
+        {
+          "probability": 6,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 2000,
+              "max": 2009
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 1990,
+              "max": 1999
+            }
+          }
+        },
+        {
+          "probability": 4,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 1980,
+              "max": 1989
+            }
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 1970,
+              "max": 1979
+            }
+          }
+        },
+        {
+          "probability": 2,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 1950,
+              "max": 1969
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 4800,
+              "max": 16093
+            },
+            "Years": {
+              "min": 1900,
+              "max": 1949
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3"
+      ],
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    }
+  ]
+}

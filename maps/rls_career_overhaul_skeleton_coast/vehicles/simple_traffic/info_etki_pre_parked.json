@@ -1,0 +1,18 @@
+{
+  "paints": {},
+  "paintCollections": ["etki_factory"],
+  "defaultPaintName1": "royal_blue",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropParked",
+  "isAuxiliary": true,
+  "Population": 15000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.etki_eu_pre_parked.Configuration"
+}

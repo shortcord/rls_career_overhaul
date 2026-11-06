@@ -1,0 +1,45 @@
+{
+  "description":"Description of these Sites. Contains Locations, Zones, and Parking Spots.",
+  "dir":"/levels/pepper_valley/",
+  "locations":{},
+  "name":"dynoSession.sites.json",
+  "parkingSpots":[
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"dynoSessionParking",
+      "oldId":6339,
+      "pos":[
+        240.630859375,
+        -1171.0079345703,
+        117.20008087158
+      ],
+      "rot":[
+        0,
+        0,
+        -0.40674122461764,
+        0.9135432750586
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    }
+  ],
+  "zones":{}
+}

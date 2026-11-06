@@ -1,0 +1,177 @@
+{
+  "desert_bush": {
+    "name": "desert_bush",
+    "mapTo": "desert_bush",
+    "class": "Material",
+    "persistentId": "74730fd2-d4e5-494a-976a-feca25e5efe3",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_d.color.png",
+        "detailNormalMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_n.normal.png",
+        "detailNormalMapStrength": 0.699999988,
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_n.normal.png",
+        "roughnessFactor": 0.746999979,
+        "specularMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_s.color.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 55,
+    "alphaTest": true,
+    "annotation": "GRASS",
+    "doubleSided": true,
+    "groundType": "GRASS"
+  },
+  "desert_bush_branch": {
+    "name": "desert_bush_branch",
+    "mapTo": "desert_bush_branch",
+    "class": "Material",
+    "persistentId": "a5a95caa-ecb4-4ccd-bf87-970d8fb58e47",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_branch_d.color.png",
+        "detailNormalMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_branch_n.normal.png",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_branch_n.normal.png",
+        "specularMap": "/levels/pepper_valley/art/shapes/groundcover/dry_bush_branch_s.color.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 59,
+    "alphaTest": true,
+    "annotation": "GRASS",
+    "doubleSided": true,
+    "groundType": "GRASS"
+  },
+  "dry_grass": {
+    "name": "dry_grass",
+    "mapTo": "dry_grass",
+    "class": "Material",
+    "persistentId": "a58a2f27-8d2f-4556-bbc0-f7e2b2672bd5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_ao.data.png",
+        "baseColorFactor": [
+          0.905882418,
+          0.905882418,
+          0.905882418,
+          1
+        ],
+        "baseColorMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_b.color.png",
+        "normalMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_r.data.png",
+        "specular": [
+          0.988235354,
+          0.988235354,
+          0.988235354,
+          1
+        ]
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 60,
+    "alphaTest": true,
+    "annotation": "GRASS",
+    "doubleSided": true,
+    "groundType": "GRASS",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vegetation",
+    "materialTag2": "vegetation",
+    "materialTag3": "Natural",
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_jv_dry_branch": {
+    "name": "m_jv_dry_branch",
+    "mapTo": "m_jv_dry_branch",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_b.color.png",
+        "normalMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "version": 1.5
+  },
+  "m_jv_dry_bush": {
+    "name": "m_jv_dry_bush",
+    "mapTo": "m_jv_dry_bush",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_02_b.color.png",
+        "normalMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "version": 1.5
+  },
+  "m_jv_dry_grass": {
+    "name": "m_jv_dry_grass",
+    "mapTo": "m_jv_dry_grass",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_b.color.png",
+        "normalMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "version": 1.5
+  }
+}

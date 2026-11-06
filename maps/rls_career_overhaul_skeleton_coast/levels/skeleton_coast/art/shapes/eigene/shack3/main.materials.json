@@ -1,0 +1,72 @@
+{
+  "Equipment_002": {
+    "name": "Equipment_002",
+    "mapTo": "Equipment_002",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack3/Equipment.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Generator_002": {
+    "name": "Generator_002",
+    "mapTo": "Generator_002",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack3/Generator_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Laggue_002": {
+    "name": "Laggue_002",
+    "mapTo": "Laggue_002",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack3/Laggue_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Roof_002": {
+    "name": "Roof_002",
+    "mapTo": "Roof_002",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack3/Roof_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Wall_002": {
+    "name": "Wall_002",
+    "mapTo": "Wall_002",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack3/DirtyBuild_Base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

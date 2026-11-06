@@ -1,0 +1,17 @@
+{
+  "id": "utah.utahFossilFieldRare",
+  "version": 1,
+  "mapId": "utah",
+  "key": "utahFossilFieldRare",
+  "unlockFlag": "smallPackagesDelivery",
+  "unlockLabel": "Fossil Field Work",
+  "priority": 2,
+  "icon": "cardboardBox",
+  "label": "Rare Fossil Extraction",
+  "shortDescription": "",
+  "important": true,
+  "template": {
+    "type": "utahFossilFieldRare",
+    "moneyMultipler": 18
+  }
+}

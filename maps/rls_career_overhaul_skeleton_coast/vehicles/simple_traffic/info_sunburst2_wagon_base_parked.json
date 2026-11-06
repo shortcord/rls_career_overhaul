@@ -1,0 +1,18 @@
+{
+  "paints": {},
+  "paintCollections": ["sunburst2_factory"],
+  "defaultPaintName1": "blue_gray",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropParked",
+  "isAuxiliary": true,
+  "Population": 5000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.sunburst2_eu_wagon_base_parked.Configuration"
+}

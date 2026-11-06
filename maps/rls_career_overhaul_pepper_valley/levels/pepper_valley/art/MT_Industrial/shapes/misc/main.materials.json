@@ -1,0 +1,29 @@
+{
+  "zebra": {
+    "name": "zebra",
+    "mapTo": "zebra",
+    "class": "Material",
+    "persistentId": "56ccba42-c539-4608-aa03-60f5441cfdae",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/misc/zebra_d.color.png",
+        "diffuseColor": [
+          1,
+          0.999997973,
+          0.999989986,
+          0.587541997
+        ],
+        "normalMap": "/levels/pepper_valley/art/mt_industrial/shapes/misc/zebra_n.normal.png",
+        "overlayMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/utah_breakup_texture.dds",
+        "specularMap": "/levels/pepper_valley/art/mt_industrial/shapes/misc/zebra_s.color.png",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "translucent": true,
+    "translucentZWrite": true
+  }
+}

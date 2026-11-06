@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "pepper_valley",
+  "name": "Pepper Valley",
+  "order": 2,
+  "expectedLocationCount": 4,
+  "stampLabel": "Pepper Valley Explorer",
+  "locations": [
+    {
+      "id": "dune_overlook",
+      "name": "Dune Overlook",
+      "description": "A windswept turnout overlooking Pepper Valley's rolling dunes.",
+      "zoneName": "tj_dune_overlook_zone",
+      "parkingSpotName": "Dune Overlook",
+      "scene": {
+        "timeOfDay": 0.69166666269302,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.20000000298023,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 6.123234263e-17
+        },
+        "cloudCover": 1.2999999523163,
+        "fogDensity": 1.5000000130385,
+        "fogAtmosphereHeight": 71.5,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "rest_stop",
+      "name": "Rest Stop",
+      "description": "A quiet roadside pull-off beneath Pepper Valley's desert ridges.",
+      "zoneName": "tj_rest_stop_zone",
+      "parkingSpotName": "Rest Stop",
+      "scene": {
+        "timeOfDay": 0.78125,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.89999997615814,
+        "cloudWindDirection": {
+          "x": 0.9848077297,
+          "y": 0.1736481786
+        },
+        "cloudCover": 1.8099999427795,
+        "fogDensity": 16.319999471307,
+        "fogAtmosphereHeight": 45,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "heavens_door",
+      "name": "Heavens Door",
+      "description": "A high overlook above Pepper Valley.",
+      "zoneName": "tj_heavens_door_zone",
+      "parkingSpotName": "Heavens Door",
+      "scene": {
+        "timeOfDay": 0.69791668653488,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 1.7999999523163,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 0
+        },
+        "cloudCover": 0.88999998569489,
+        "fogDensity": 1.5000000130385,
+        "fogAtmosphereHeight": 75.98999786377,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "impact_site",
+      "name": "Impact Site",
+      "description": "A scarred desert basin marking a tremendous impact in Pepper Valley.",
+      "zoneName": "tj_impact_site_zone",
+      "parkingSpotName": "Impact Site",
+      "scene": {
+        "timeOfDay": 0.26041665673256,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.20000000298023,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 6.123234263e-17
+        },
+        "cloudCover": 1.2300000190735,
+        "fogDensity": 2.0999999251217,
+        "fogAtmosphereHeight": 70,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    }
+  ]
+}

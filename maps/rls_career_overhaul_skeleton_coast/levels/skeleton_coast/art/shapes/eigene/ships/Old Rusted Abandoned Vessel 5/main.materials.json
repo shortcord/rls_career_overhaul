@@ -1,0 +1,59 @@
+{
+  "oldrustedabandonedvessel5_center_basecolor": {
+    "name": "oldrustedabandonedvessel5_center_basecolor",
+    "mapTo": "oldrustedabandonedvessel5_center_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_center_ao.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_center_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_center_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_center_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_center_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "oldrustedabandonedvessel5_left_basecolor": {
+    "name": "oldrustedabandonedvessel5_left_basecolor",
+    "mapTo": "oldrustedabandonedvessel5_left_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_left_ao.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_left_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_left_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_left_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_left_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "oldrustedabandonedvessel5_right_basecolor": {
+    "name": "oldrustedabandonedvessel5_right_basecolor",
+    "mapTo": "oldrustedabandonedvessel5_right_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_right_ao.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_right_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_right_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_right_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Rusted Abandoned Vessel 5/oldrustedabandonedvessel5_right_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

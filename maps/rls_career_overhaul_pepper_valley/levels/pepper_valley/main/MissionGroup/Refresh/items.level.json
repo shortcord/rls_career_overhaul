@@ -1,0 +1,12 @@
+{"name":"repair spots","class":"SimGroup","__parent":"Refresh"}
+{"name":"guardrails and stuff","class":"SimGroup","__parent":"Refresh"}
+{"name":"racetrack refresh","class":"SimGroup","__parent":"Refresh"}
+{"name":"auctionHouse","class":"SimGroup","__parent":"Refresh"}
+{"name":"Tuff Truck Refresh","class":"SimGroup","__parent":"Refresh"}
+{"name":"burnout Pad","class":"SimGroup","__parent":"Refresh"}
+{"name":"Demo Derby","class":"SimGroup","__parent":"Refresh","hidden":true,"isRenderEnabled0":"0"}
+{"name":"STA_Lights","class":"SimGroup","__parent":"Refresh"}
+{"name":"dakarAssets","class":"SimGroup","__parent":"Refresh"}
+{"name":"hero house","class":"SimGroup","__parent":"Refresh"}
+{"name":"drift water folder","class":"SimGroup","__parent":"Refresh"}
+{"name":"SimGroup_n","class":"SimGroup","__parent":"Refresh"}

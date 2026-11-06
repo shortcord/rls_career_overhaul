@@ -1,0 +1,103 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "utahTheRightTurnReceiving",
+      "name": "The Right Turn",
+      "description": "Receiving area for the owned The Right Turn convenience store.",
+      "manualAccessPoints": [
+        {
+          "psName": "The Right Turn",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "miniMartSupplies",
+            "utRetailFreight"
+          ]
+        }
+      ],
+      "sitesFile": "smallBusinesses.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "miniMartSupplies",
+        "utRetailFreight"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "utRetailFreight"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 60
+        }
+      ],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "utahTyrannosReceiving",
+      "name": "Utah Tyrannos",
+      "description": "Receiving area for the owned Utah Tyrannos convenience store.",
+      "manualAccessPoints": [
+        {
+          "psName": "Utah Tyrannos",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "miniMartSupplies",
+            "utRetailFreight"
+          ]
+        }
+      ],
+      "sitesFile": "smallBusinesses.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "miniMartSupplies",
+        "utRetailFreight"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "utRetailFreight"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 60
+        }
+      ],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "utahCanyonFuelReceiving",
+      "name": "Canyon Fuel",
+      "description": "Receiving area for the owned Canyon Fuel convenience store.",
+      "manualAccessPoints": [
+        {
+          "psName": "Canyon Fuel",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "miniMartSupplies",
+            "utRetailFreight"
+          ]
+        }
+      ],
+      "sitesFile": "smallBusinesses.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "miniMartSupplies",
+        "utRetailFreight"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "utRetailFreight"
+          ],
+          "min": -1,
+          "max": 2,
+          "interval": 60
+        }
+      ],
+      "logisticMaxItems": 0
+    }
+  ]
+}

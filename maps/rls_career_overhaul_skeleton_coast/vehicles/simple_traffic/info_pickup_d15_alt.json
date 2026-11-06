@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["pickup_factory"],
+  "defaultPaintName1": "deep_plum",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropTraffic",
+  "Population": 3000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.pickup_d15.Configuration"
+}

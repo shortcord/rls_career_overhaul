@@ -1,0 +1,17 @@
+{
+  "id": "utah.utahFossilTransfer",
+  "version": 1,
+  "mapId": "utah",
+  "key": "utahFossilTransfer",
+  "unlockFlag": "smallPackagesDelivery",
+  "unlockLabel": "Fossil Transfers",
+  "priority": 2,
+  "icon": "cardboardBox",
+  "label": "Fossil Transfer",
+  "shortDescription": "",
+  "important": true,
+  "template": {
+    "type": "utahFossilTransfer",
+    "moneyMultipler": 8
+  }
+}

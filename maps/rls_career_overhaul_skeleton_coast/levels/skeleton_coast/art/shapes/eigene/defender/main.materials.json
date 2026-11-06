@@ -1,0 +1,46 @@
+{
+  "UVTextureChecker_Cabina": {
+    "name": "UVTextureChecker_Cabina",
+    "mapTo": "UVTextureChecker_Cabina",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/defender/UVTextureChecker_Cabina_albedo.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/defender/UVTextureChecker_Cabina_normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "UVTextureChecker_Glass": {
+    "name": "UVTextureChecker_Glass",
+    "mapTo": "UVTextureChecker_Glass",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/defender/UVTextureChecker_Glass_albedo.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "UVTextureChecker_varios": {
+    "name": "UVTextureChecker_varios",
+    "mapTo": "UVTextureChecker_varios",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/defender/UVTextureChecker_varios_albedo.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/defender/UVTextureChecker_varios_normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

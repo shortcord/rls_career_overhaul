@@ -1,0 +1,30 @@
+{
+  "oldcar": {
+    "name": "oldcar",
+    "mapTo": "oldcar",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.659413993,
+          0.659413993,
+          0.65940702,
+          0.00800000038
+        ],
+        "baseColorMap": "levels/skeleton_coast/art/shapes/eigene/oldcars/oldcar_c.dds",
+        "normalMap": "levels/skeleton_coast/art/shapes/eigene/oldcars/oldcar_n.dds"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "cubemap": "BNG_Sky_02_cubemap",
+    "version": 1.5
+  }
+}

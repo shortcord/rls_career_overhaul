@@ -1,0 +1,27 @@
+{
+  "si_metal_roof_neu": {
+    "name": "si_metal_roof_neu",
+    "mapTo": "si_metal_roof_neu",
+    "class": "material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

@@ -1,0 +1,43 @@
+This is the list of all non vanilla assets used in the map. You can use them for your own map projects
+either as free to use with credit or for some you have to ask for permission before use. Only one folder
+can not be used since I bought the assets. 
+All free to use assets from Sketchfab have a creative commons license. Some I could not find the original
+author anymore but I know for sure they were free to use with cc license aswell. 
+
+free to use (with credit):
+
+ - shapes/eigene/africantrails some buildings by Ouerbacker
+ - shapes/eigene/aircraft | made by ismael.tharin with CC license from Sketchfab
+ - shapes/eigene/bones | CC license from Sketchfab author unknown
+ - shapes/eigene/defender | made by johnguataquira with CC license from Sketchfab
+ - shapes/eigene/mining_vehicles/fzg1_dozer | made by semyon.kan with CC license
+ - shapes/eigene/mining_vehicles/fzg2_bagger | CC license from Sketchfab author unknown
+ - shapes/eigene/mining_vehicles/fzg3_komatsu | made by drcrazzie CC license from Sketchfab
+ - shapes/eigene/mining_vehicles/villageexcavator1 | CC license from Sketchfab author unknown
+ - shapes/eigene/offroadcars/cherokee | made by Renafox CC license from Sketchfab
+ - shapes/eigene/toyotalandcruiser    | made by Renafox CC license from Sketchfab
+ - shapes/eigene/offroadcars/dirtycar01 | CC license from Sketchfab author unknown
+ - shapes/eigene/offroadcars/navara | made by Gabee CC license from Sketchfab
+ - shapes/eigene/offroadcars/roamer | CC license from Sketchfab author unknown
+ - shapes/eigene/shack1 (&shack3) | made by 3Dji CC license from Sketchfab
+ - shapes/eigene/shack4 |  CC license from Sketchfab author unknown
+ - shapes/eigene/whale | made by Bohdan Lvov CC license from Sketchfab
+ - sounds | sounds-mp3.com
+
+only use with permission:
+
+ - shapes/eigene/oldcars | made by Car_Killer
+ - shapes/eigene/block1 | made by Murokmakto
+ - shapes/eigene/background_island | made by Murokmakto
+ - shapes/eigene/shopsigns | made by Murokmakto
+ - Mainlevel.lua | parts are done by Barbent Servo GT and MegaKnight
+
+strictly NO PERMISSION to use:
+
+ - shapes/eigene/ships | These assets were bought from cgtrader and made by maxpsr
+
+
+Special thanks:
+Berbent Servo GT - for the patience and irreplacable help along the whole project
+Megaknight -  for writing the LUA code for the landmarks
+Thom6502 - for creating the awesome skins for this project aswell as license plates and tedious beta testing

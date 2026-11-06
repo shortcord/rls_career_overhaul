@@ -1,0 +1,1049 @@
+{
+    "warehouseInventory": {
+        "names": [
+            "Imported Warehouse Pallet",
+            "Containerized Warehouse Stock",
+            "Springbok Warehouse Crate",
+            "Bulk Warehouse Inventory"
+        ],
+        "logisticTypes": [
+            "warehouseInventory"
+        ],
+        "slots": 128,
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 1.1,
+        "generationChance": 0.45,
+        "duplicationChance": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.75,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0.5
+        ],
+        "offerDuration": 360,
+        "weight": [
+            18,
+            28,
+            36
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "groceryInventoryOtjovasando": {
+        "names": [
+            "Pallet of Delarey Meat",
+            "Dry Goods Pallet",
+            "Produce Crates",
+            "Cold Storage Grocery Stock",
+            "Bakery Ingredient Pallet"
+        ],
+        "logisticTypes": [
+            "groceryInventoryOtjovasando"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.4,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            20,
+            28
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "groceryInventoryVogelsang": {
+        "names": [
+            "Pallet of Delarey Meat",
+            "Dry Goods Pallet",
+            "Produce Crates",
+            "Cold Storage Grocery Stock",
+            "Bakery Ingredient Pallet"
+        ],
+        "logisticTypes": [
+            "groceryInventoryVogelsang"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.4,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            20,
+            28
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "groceryInventoryVogelsangBay": {
+        "names": [
+            "Pallet of Delarey Meat",
+            "Dry Goods Pallet",
+            "Produce Crates",
+            "Cold Storage Grocery Stock",
+            "Bakery Ingredient Pallet"
+        ],
+        "logisticTypes": [
+            "groceryInventoryVogelsangBay"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.4,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            20,
+            28
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "groceryInventoryHorseshoeBay": {
+        "names": [
+            "Pallet of Delarey Meat",
+            "Dry Goods Pallet",
+            "Produce Crates",
+            "Cold Storage Grocery Stock",
+            "Bakery Ingredient Pallet"
+        ],
+        "logisticTypes": [
+            "groceryInventoryHorseshoeBay"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.4,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            20,
+            28
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "hardwareInventoryOtjovasando": {
+        "names": [
+            "Hardware Inventory Pallet",
+            "Cosmo Steel Stock Crate",
+            "Tool and Fastener Pallet",
+            "Building Supply Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryOtjovasando"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 1,
+        "generationChance": 0.35,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            18,
+            28,
+            40
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "hardwareInventoryVogelsang": {
+        "names": [
+            "Hardware Inventory Pallet",
+            "Cosmo Steel Stock Crate",
+            "Tool and Fastener Pallet",
+            "Building Supply Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryVogelsang"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 1,
+        "generationChance": 0.35,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            18,
+            28,
+            40
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "hardwareInventoryVogelsangBay": {
+        "names": [
+            "Hardware Inventory Pallet",
+            "Cosmo Steel Stock Crate",
+            "Tool and Fastener Pallet",
+            "Building Supply Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryVogelsangBay"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 1,
+        "generationChance": 0.35,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            18,
+            28,
+            40
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "hardwareInventoryHorseshoeBay": {
+        "names": [
+            "Hardware Inventory Pallet",
+            "Cosmo Steel Stock Crate",
+            "Tool and Fastener Pallet",
+            "Building Supply Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryHorseshoeBay"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 1,
+        "generationChance": 0.35,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            18,
+            28,
+            40
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "hardwareInventory64Otjovasando": {
+        "names": [
+            "Compact Hardware Restock",
+            "Small Building Supply Crate",
+            "Tool Stock Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryOtjovasando"
+        ],
+        "slots": 64,
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.3,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.35,
+            0.2,
+            0.1
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            18,
+            24
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "hardwareInventory64Vogelsang": {
+        "names": [
+            "Compact Hardware Restock",
+            "Small Building Supply Crate",
+            "Tool Stock Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryVogelsang"
+        ],
+        "slots": 64,
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.3,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.35,
+            0.2,
+            0.1
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            18,
+            24
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "hardwareInventory64VogelsangBay": {
+        "names": [
+            "Compact Hardware Restock",
+            "Small Building Supply Crate",
+            "Tool Stock Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryVogelsangBay"
+        ],
+        "slots": 64,
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.3,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.35,
+            0.2,
+            0.1
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            18,
+            24
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "hardwareInventory64HorseshoeBay": {
+        "names": [
+            "Compact Hardware Restock",
+            "Small Building Supply Crate",
+            "Tool Stock Crate"
+        ],
+        "logisticTypes": [
+            "hardwareInventoryHorseshoeBay"
+        ],
+        "slots": 64,
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.3,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.35,
+            0.2,
+            0.1
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            18,
+            24
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "groceryOrderOtjovasando": {
+        "names": [
+            "Grocery Order",
+            "Family Grocery Bags",
+            "Local Produce Order",
+            "Convenience Store Grocery Order"
+        ],
+        "logisticTypes": [
+            "groceryOrderOtjovasando"
+        ],
+        "slots": [
+            4,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.35,
+        "generationChance": 1.2,
+        "duplicationChance": [
+            1,
+            0.5,
+            0.25
+        ],
+        "offerDuration": 120,
+        "weight": [
+            1,
+            2.5,
+            5
+        ],
+        "modChance": {
+            "timed": 0.5
+        }
+    },
+    "groceryOrderVogelsang": {
+        "names": [
+            "Grocery Order",
+            "Family Grocery Bags",
+            "Local Produce Order",
+            "Convenience Store Grocery Order"
+        ],
+        "logisticTypes": [
+            "groceryOrderVogelsang"
+        ],
+        "slots": [
+            4,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.35,
+        "generationChance": 1.2,
+        "duplicationChance": [
+            1,
+            0.5,
+            0.25
+        ],
+        "offerDuration": 120,
+        "weight": [
+            1,
+            2.5,
+            5
+        ],
+        "modChance": {
+            "timed": 0.5
+        }
+    },
+    "groceryOrderVogelsangBay": {
+        "names": [
+            "Grocery Order",
+            "Family Grocery Bags",
+            "Local Produce Order",
+            "Convenience Store Grocery Order"
+        ],
+        "logisticTypes": [
+            "groceryOrderVogelsangBay"
+        ],
+        "slots": [
+            4,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.35,
+        "generationChance": 1.2,
+        "duplicationChance": [
+            1,
+            0.5,
+            0.25
+        ],
+        "offerDuration": 120,
+        "weight": [
+            1,
+            2.5,
+            5
+        ],
+        "modChance": {
+            "timed": 0.5
+        }
+    },
+    "groceryOrderHorseshoeBay": {
+        "names": [
+            "Grocery Order",
+            "Family Grocery Bags",
+            "Local Produce Order",
+            "Convenience Store Grocery Order"
+        ],
+        "logisticTypes": [
+            "groceryOrderHorseshoeBay"
+        ],
+        "slots": [
+            4,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.35,
+        "generationChance": 1.2,
+        "duplicationChance": [
+            1,
+            0.5,
+            0.25
+        ],
+        "offerDuration": 120,
+        "weight": [
+            1,
+            2.5,
+            5
+        ],
+        "modChance": {
+            "timed": 0.5
+        }
+    },
+    "hardwareSuppliesOtjovasando": {
+        "names": [
+            "Hardware Supplies",
+            "DIY Repair Order",
+            "Small Tool Order",
+            "Building Materials Order"
+        ],
+        "logisticTypes": [
+            "hardwareSuppliesOtjovasando"
+        ],
+        "slots": [
+            8,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 0.7,
+        "generationChance": 0.6,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.3
+        ],
+        "offerDuration": 180,
+        "weight": [
+            4,
+            9,
+            16
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "hardwareSuppliesVogelsang": {
+        "names": [
+            "Hardware Supplies",
+            "DIY Repair Order",
+            "Small Tool Order",
+            "Building Materials Order"
+        ],
+        "logisticTypes": [
+            "hardwareSuppliesVogelsang"
+        ],
+        "slots": [
+            8,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 0.7,
+        "generationChance": 0.6,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.3
+        ],
+        "offerDuration": 180,
+        "weight": [
+            4,
+            9,
+            16
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "hardwareSuppliesVogelsangBay": {
+        "names": [
+            "Hardware Supplies",
+            "DIY Repair Order",
+            "Small Tool Order",
+            "Building Materials Order"
+        ],
+        "logisticTypes": [
+            "hardwareSuppliesVogelsangBay"
+        ],
+        "slots": [
+            8,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 0.7,
+        "generationChance": 0.6,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.3
+        ],
+        "offerDuration": 180,
+        "weight": [
+            4,
+            9,
+            16
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "hardwareSuppliesHorseshoeBay": {
+        "names": [
+            "Hardware Supplies",
+            "DIY Repair Order",
+            "Small Tool Order",
+            "Building Materials Order"
+        ],
+        "logisticTypes": [
+            "hardwareSuppliesHorseshoeBay"
+        ],
+        "slots": [
+            8,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 0.7,
+        "generationChance": 0.6,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.3
+        ],
+        "offerDuration": 180,
+        "weight": [
+            4,
+            9,
+            16
+        ],
+        "modChance": {
+            "supplies": 1
+        }
+    },
+    "groceryOrderSperrgebiet": {
+        "names": [
+            "Grocery Order",
+            "Family Grocery Bags",
+            "Local Produce Order",
+            "Convenience Store Grocery Order"
+        ],
+        "logisticTypes": [
+            "groceryOrderSperrgebiet"
+        ],
+        "slots": [
+            4,
+            16,
+            32
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.35,
+        "generationChance": 1.2,
+        "duplicationChance": [
+            1,
+            0.5,
+            0.25
+        ],
+        "offerDuration": 120,
+        "weight": [
+            1,
+            2.5,
+            5
+        ],
+        "modChance": {
+            "timed": 0.5
+        }
+    },
+    "groceryInventorySperrgebiet": {
+        "names": [
+            "Pallet of Delarey Meat",
+            "Dry Goods Pallet",
+            "Produce Crates",
+            "Cold Storage Grocery Stock",
+            "Bakery Ingredient Pallet"
+        ],
+        "logisticTypes": [
+            "groceryInventorySperrgebiet"
+        ],
+        "slots": [
+            64,
+            128
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.9,
+        "generationChance": 0.4,
+        "duplicationChance": [
+            1,
+            0.75,
+            0.5,
+            0.25,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            12,
+            20,
+            28
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 1
+        }
+    },
+    "sandOrder": {
+        "names": [
+            "Sand Order"
+        ],
+        "logisticTypes": [
+            "sand"
+        ],
+        "slots": [
+            10,
+            20,
+            30
+        ],
+        "cargoType": "dryBulk",
+        "materialType": "sand",
+        "rarity": 1,
+        "worth": 0.5,
+        "generationChance": 0.5,
+        "duplicationChance": [
+            1
+        ],
+        "offerDuration": 300,
+        "modChance": {
+            "timed": 0,
+            "dryBulk": 1
+        }
+    },
+    "oreOrder": {
+        "names": [
+            "Ore Shipment",
+            "Mine Ore Load",
+            "Woermann Ore Bag"
+        ],
+        "logisticTypes": [
+            "ore"
+        ],
+        "slots": [
+            10,
+            20,
+            30
+        ],
+        "cargoType": "dryBulk",
+        "materialType": "ore",
+        "rarity": 1.15,
+        "worth": 1.25,
+        "generationChance": 0.4,
+        "duplicationChance": [
+            1,
+            0.5
+        ],
+        "offerDuration": 300,
+        "modChance": {
+            "timed": 0,
+            "dryBulk": 1
+        }
+    },
+    "diamondShipment": {
+        "names": [
+            "Diamond Shipment",
+            "Sealed Diamond Bags",
+            "Woermann Security Pouch"
+        ],
+        "logisticTypes": [
+            "diamonds"
+        ],
+        "slots": [
+            1,
+            2,
+            4
+        ],
+        "cargoType": "cash",
+        "materialType": "diamonds",
+        "rarity": 3,
+        "worth": 3,
+        "generationChance": 0.15,
+        "duplicationChance": [
+            1,
+            0.35,
+            0.1
+        ],
+        "offerDuration": 420,
+        "weight": [
+            8,
+            14,
+            24
+        ],
+        "modChance": {
+            "timed": 0.2,
+            "cash": 1
+        }
+    },
+    "mineEquipmentSupplies": {
+        "names": [
+            "Mine Equipment Crate",
+            "Drill Consumables Crate",
+            "Pump and Belt Parts",
+            "Heavy Tooling Shipment"
+        ],
+        "logisticTypes": [
+            "mineEquipmentSupplies"
+        ],
+        "slots": [
+            32,
+            64,
+            96
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.2,
+        "worth": 1.25,
+        "generationChance": 0.45,
+        "duplicationChance": [
+            1,
+            0.6,
+            0.25
+        ],
+        "offerDuration": 300,
+        "weight": [
+            24,
+            38,
+            55
+        ],
+        "modChance": {
+            "supplies": 1,
+            "large": 0.75
+        }
+    },
+    "mineWorkerProvisions": {
+        "names": [
+            "Mine Camp Provisions",
+            "Canteen Restock",
+            "Remote Crew Supply Boxes",
+            "Water and Meal Crates"
+        ],
+        "logisticTypes": [
+            "mineWorkerProvisions"
+        ],
+        "slots": [
+            16,
+            32,
+            64
+        ],
+        "cargoType": "parcel",
+        "rarity": 1,
+        "worth": 0.8,
+        "generationChance": 0.5,
+        "duplicationChance": [
+            1,
+            0.55,
+            0.2
+        ],
+        "offerDuration": 240,
+        "weight": [
+            8,
+            18,
+            28
+        ],
+        "modChance": {
+            "supplies": 1,
+            "timed": 0.25
+        }
+    },
+    "mineCoreSamples": {
+        "names": [
+            "Ore Core Sample Box",
+            "Geology Sample Case",
+            "Assay Sample Crate",
+            "Sealed Drill Sample Tubes"
+        ],
+        "logisticTypes": [
+            "mineCoreSamples"
+        ],
+        "slots": [
+            4,
+            8,
+            16
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.4,
+        "worth": 1.5,
+        "generationChance": 0.35,
+        "duplicationChance": [
+            1,
+            0.4,
+            0.15
+        ],
+        "offerDuration": 300,
+        "weight": [
+            6,
+            12,
+            20
+        ],
+        "modChance": {
+            "timed": 0.35,
+            "supplies": 0.5
+        }
+    },
+    "mineIncidentReports": {
+        "names": [
+            "Mine Compliance Packet",
+            "Explosives Log Envelope",
+            "Security Incident File",
+            "Export Clearance Documents"
+        ],
+        "logisticTypes": [
+            "mineIncidentReports"
+        ],
+        "slots": [
+            1,
+            2,
+            4
+        ],
+        "cargoType": "parcel",
+        "rarity": 1.8,
+        "worth": 1.4,
+        "generationChance": 0.25,
+        "duplicationChance": [
+            1,
+            0.25
+        ],
+        "offerDuration": 240,
+        "weight": [
+            1,
+            2,
+            3
+        ],
+        "modChance": {
+            "timed": 0.75
+        }
+    }
+}

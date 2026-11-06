@@ -1,0 +1,12 @@
+{
+  "id": "pepper_valley",
+  "version": 1,
+  "label": "Pepper Valley",
+  "careerCompatible": true,
+  "optionalFeatures": {
+    "dakar": {
+      "provider": "overhaul_events_dakar",
+      "config": "dakar/dakarConfig.json"
+    }
+  }
+}

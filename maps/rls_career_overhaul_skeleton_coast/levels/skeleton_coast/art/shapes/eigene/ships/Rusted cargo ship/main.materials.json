@@ -1,0 +1,91 @@
+{
+  "rustedcargoship_Area": {
+    "name": "rustedcargoship_Area",
+    "mapTo": "rustedcargoship_Area",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Area_diffuse.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Area_n.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "rustedcargoship_Bottom": {
+    "name": "rustedcargoship_Bottom",
+    "mapTo": "rustedcargoship_Bottom",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Bottom_diffuse1.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Bottom_n3.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "rustedcargoship_Details": {
+    "name": "rustedcargoship_Details",
+    "mapTo": "rustedcargoship_Details",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Details_diffuse.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Details_n.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "rustedcargoship_plugs": {
+    "name": "rustedcargoship_plugs",
+    "mapTo": "rustedcargoship_plugs",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0396797992,
+          0.0396797992,
+          0.0396797992,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "rustedcargoship_Сabins": {
+    "name": "rustedcargoship_Сabins",
+    "mapTo": "rustedcargoship_Сabins",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Cabins_diffuse.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Rusted cargo ship/rustedcargoship_Cabins_n2.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

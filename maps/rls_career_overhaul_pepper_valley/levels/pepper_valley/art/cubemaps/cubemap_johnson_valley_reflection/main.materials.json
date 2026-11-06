@@ -1,0 +1,28 @@
+{
+  "cubemap_johnson_valley_reflection":{
+    "captureLocation":"-943.932711,342.808649,129.162019",
+    "class":"CubemapData",
+    "normalize": true,
+    "cubeFace":[
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox5.hdr.dds"
+    ],
+    "name":"cubemap_johnson_valley_reflection"
+  },
+  "utah_reflection":{
+    "Stages":[
+      {},
+      {},
+      {},
+      {}
+    ],
+    "class":"Material",
+    "cubemap":"cubemap_johnson_valley_reflection",
+    "mapTo":"unmapped_mat",
+    "name":"utah_reflection"
+  }
+}

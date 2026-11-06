@@ -1,0 +1,109 @@
+{
+"traffic_offroadlights": {
+    "name": "traffic_offroadlights",
+    "mapTo": "traffic_offroadlights",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_m.data.png",
+        "normalMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_nm.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "traffic_offroadlights_on_red": {
+    "name": "traffic_offroadlights_on_red",
+    "mapTo": "traffic_offroadlights_on_red",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_b.color.png",
+        "emissiveFactor": [
+          1,
+          0,
+          0
+        ],
+        "emissiveIntensityNits": 25000,
+        "emissiveMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_m.data.png",
+        "normalMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_nm.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_r.data.png"
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "traffic_offroadlights_on": {
+    "name": "traffic_offroadlights_on",
+    "mapTo": "traffic_offroadlights_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 20000,
+        "emissiveMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_m.data.png",
+        "normalMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_nm.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/textures/traffic_offroadlights_r.data.png"
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

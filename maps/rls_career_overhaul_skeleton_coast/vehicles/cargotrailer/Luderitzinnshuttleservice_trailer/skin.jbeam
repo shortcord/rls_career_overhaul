@@ -1,0 +1,11 @@
+{
+"cargotrailer_skin_Luderitzinnshuttleservice_trailer": {
+    "information":{
+        "authors":"THom6502",
+        "name":"Luderitzinnshuttleservice_trailer",
+        "value":5000,
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "Luderitzinnshuttleservice_trailer",
+},
+}

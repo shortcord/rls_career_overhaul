@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.3.0 commit date:2024-11-19, commit time:08:52, hash:2b18cad88b13</authoring_tool>
+    </contributor>
+    <created>2025-10-27T15:27:14</created>
+    <modified>2025-10-27T15:27:14</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="afr_genericsigns-effect">
+      <profile_COMMON>
+        <newparam sid="afr_genericsigns_d_dds-surface">
+          <surface type="2D">
+            <init_from>afr_genericsigns_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="afr_genericsigns_d_dds-sampler">
+          <sampler2D>
+            <source>afr_genericsigns_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="afr_genericsigns_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ind_plywood_old-effect">
+      <profile_COMMON>
+        <newparam sid="ind_plywood_d_color_DDS-surface">
+          <surface type="2D">
+            <init_from>ind_plywood_d_color_DDS</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ind_plywood_d_color_DDS-sampler">
+          <sampler2D>
+            <source>ind_plywood_d_color_DDS-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="ind_plywood_d_color_DDS-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="afr_genericsigns_d_dds" name="afr_genericsigns_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/textures/afr_genericsigns_d.dds</init_from>
+    </image>
+    <image id="ind_plywood_d_color_DDS" name="ind_plywood_d_color_DDS">
+      <init_from>/C:/Users/Admin/Desktop/textures/ind_plywood_d.color.DDS</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="afr_genericsigns-material" name="afr_genericsigns">
+      <instance_effect url="#afr_genericsigns-effect"/>
+    </material>
+    <material id="ind_plywood_old-material" name="ind_plywood_old">
+      <instance_effect url="#ind_plywood_old-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Plane_002-mesh" name="Plane.002">
+      <mesh>
+        <source id="Plane_002-mesh-positions">
+          <float_array id="Plane_002-mesh-positions-array" count="12">-0.6961075 -0.07867902 -3.078603 4.303893 -0.07867902 -3.078603 -0.6961075 -0.07867926 1.921397 4.303893 -0.07867926 1.921397</float_array>
+          <technique_common>
+            <accessor source="#Plane_002-mesh-positions-array" count="4" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_002-mesh-normals">
+          <float_array id="Plane_002-mesh-normals-array" count="18">-0.1123331 -0.9873006 0.112333 0.07943505 -0.9873006 0.1375772 0 -0.9873006 0.1588629 0 -0.9873006 0.1588629 -7.62505e-6 -0.9873006 0.1588629 -0.04111272 -0.9873006 0.1534509</float_array>
+          <technique_common>
+            <accessor source="#Plane_002-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_002-mesh-map-0">
+          <float_array id="Plane_002-mesh-map-0-array" count="12">0.9999935 0.7900435 0.7900435 0.9999922 0.7900435 0.7900435 0.9999935 0.7900435 0.9999935 0.9999922 0.7900435 0.9999922</float_array>
+          <technique_common>
+            <accessor source="#Plane_002-mesh-map-0-array" count="6" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane_002-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_002-mesh-positions"/>
+        </vertices>
+        <triangles material="afr_genericsigns-material" count="2">
+          <input semantic="VERTEX" source="#Plane_002-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_002-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane_002-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 1 1 0 2 2 1 3 3 3 4 4 2 5 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Plane-mesh" name="Plane">
+      <mesh>
+        <source id="Plane-mesh-positions">
+          <float_array id="Plane-mesh-positions-array" count="24">-0.6961075 -0.04605752 -3.078603 4.303893 -0.04605752 -3.078603 -0.6961075 -0.04605776 1.921397 4.303893 -0.04605776 1.921397 -0.6961075 -0.07867902 -3.078603 4.303893 -0.07867902 -3.078603 -0.6961075 -0.07867926 1.921397 4.303893 -0.07867926 1.921397</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-normals">
+          <float_array id="Plane-mesh-normals-array" count="48">0.06787067 0.9907466 0.1175363 -0.09596759 0.9907466 0.09597617 0 0.9907466 0.1357248 -0.1123331 -0.9873006 0.112333 0.07943505 -0.9873006 0.1375772 0 -0.9873006 0.1588629 1 0 0 -1 0 0 0 0 1 0 0 -1 -0.03511881 0.9907466 0.1311026 -6.48373e-6 0.9907466 0.1357248 6.04242e-6 0.9907466 0.1357248 0 -0.9873006 0.1588629 -7.62505e-6 -0.9873006 0.1588629 -0.04111272 -0.9873006 0.1534509</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane-mesh-map-0">
+          <float_array id="Plane-mesh-map-0-array" count="72">0 1 1 0 0 0 0.9999935 0.7900435 0.7900435 0.9999922 0.7900435 0.7900435 0.5032621 1 0.4967378 0 0.5032622 0 0.5032622 0 0.4967378 1 0.5032621 1 0 0.5032621 1 0.4967378 1 0.5032621 1 0.5032622 0 0.4967378 0 0.5032622 0 1 1 1 1 0 0.9999935 0.7900435 0.9999935 0.9999922 0.7900435 0.9999922 0.5032621 1 0.4967378 1 0.4967378 0 0.5032622 0 0.4967378 0 0.4967378 1 0 0.5032621 0 0.4967378 1 0.4967378 1 0.5032622 1 0.4967378 0 0.4967378</float_array>
+          <technique_common>
+            <accessor source="#Plane-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane-mesh-vertices">
+          <input semantic="POSITION" source="#Plane-mesh-positions"/>
+        </vertices>
+        <triangles material="afr_genericsigns-material" count="2">
+          <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane-mesh-map-0" offset="2" set="0"/>
+          <p>5 3 3 6 4 4 4 5 5 5 13 21 7 14 22 6 15 23</p>
+        </triangles>
+        <triangles material="ind_plywood_old-material" count="10">
+          <input semantic="VERTEX" source="#Plane-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane-mesh-map-0" offset="2" set="0"/>
+          <p>2 0 0 1 1 1 0 2 2 3 6 6 5 6 7 1 6 8 0 7 9 6 7 10 2 7 11 2 8 12 7 8 13 3 8 14 1 9 15 4 9 16 0 9 17 2 10 18 3 11 19 1 12 20 3 6 24 7 6 25 5 6 26 0 7 27 4 7 28 6 7 29 2 8 30 6 8 31 7 8 32 1 9 33 5 9 34 4 9 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="nam_springboksign_a40" name="nam_springboksign_a40" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0.04605765 0 0 1 1 0 0 0 1</matrix>
+            <instance_geometry url="#Plane-mesh" name="nam_springboksign_a40">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="afr_genericsigns-material" target="#afr_genericsigns-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="ind_plywood_old-material" target="#ind_plywood_old-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="nam_springboksign_a20" name="nam_springboksign_a20" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0.04605765 0 0 1 1 0 0 0 1</matrix>
+            <instance_geometry url="#Plane_002-mesh" name="nam_springboksign_a20">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="afr_genericsigns-material" target="#afr_genericsigns-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="ind_plywood_old-material" target="#ind_plywood_old-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="nulldetail10" name="nulldetail10" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

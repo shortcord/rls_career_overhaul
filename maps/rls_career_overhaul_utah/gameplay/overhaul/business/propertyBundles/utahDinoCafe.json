@@ -1,0 +1,13 @@
+{
+  "id": "utahDinoCafe",
+  "version": 1,
+  "businessType": "passiveBusiness",
+  "businessId": "utahDinoCafe",
+  "name": "Dino Cafe",
+  "mapId": "utah",
+  "dyno": {
+    "triggerName": "dynoSessionTrigger",
+    "sitesFile": "dynoSession",
+    "parkingSpotName": "dynoSessionParking"
+  }
+}

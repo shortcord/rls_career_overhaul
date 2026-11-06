@@ -1,0 +1,54 @@
+{
+  "0-100 km/h":5,
+  "0-100 mph":10.1,
+  "0-200 km/h":17.8,
+  "0-60 mph":4.8,
+  "100-0 km/h":50.2,
+  "100-200 km/h":12.7,
+  "60-0 mph":151.4,
+  "60-100 mph":5.2,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.55,
+      -1.61,
+      -0.4533
+    ],
+    [
+      1.65,
+      3.625,
+      1.92
+    ]
+  ],
+  "Braking G":0.783,
+  "Brand":"Gavril",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Raid Class Team Jackel",
+  "Country":"United States",
+  "Description":"Dakar Raid class entry for Team Jackel, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"SC",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":56,
+  "Population":100,
+  "Power":815,
+  "PowerPeakRPM":"5400 - 6150",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":72.127449108882,
+  "Torque":1065,
+  "TorquePeakRPM":"4950 - 5550",
+  "Transmission":"Manual",
+  "Type":"Truck",
+  "Value":94785,
+  "Weight":2860,
+  "Weight/Power":3.5092024539877,
+  "Years":{
+    "max":2005,
+    "min":1992
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

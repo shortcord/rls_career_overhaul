@@ -1,0 +1,60 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "UTbusWork",
+      "name": "Utah Information Center",
+      "description": "You can loan a bus from here, just don't get too close to any cliff edges.",
+      "associatedOrganization": "infoCenter",
+      "preview": "infoCenter.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "infoPark",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "busLoan",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "utahGeneralRentals",
+      "name": "Utah Info Center Rentals",
+      "description": "Rent a vehicle or equipment for work around Utah.",
+      "associatedOrganization": "utahGeneralRentals",
+      "preview": "infoCenter.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "infoPark",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "infoGeneralRental",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1,
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    }
+  ]
+}

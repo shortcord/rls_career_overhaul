@@ -1,0 +1,115 @@
+{
+  "format": {
+    "30-15": {
+      "background": "#f2ead7",
+      "emboss": 3,
+      "normal": "vehicles/common/licenseplates/default/licenseplate-default_n.png",
+      "root": {
+        "children": [
+          {
+            "color": "#1e3553",
+            "fit": "shrink",
+            "font": "plate",
+            "fontSize": 103,
+            "fontWeight": "normal",
+            "letterSpacing": 2,
+            "name": "plate",
+            "style": {
+              "height": 150,
+              "width": "90%"
+            },
+            "text": "{plate}"
+          },
+          {
+            "color": "#8b3f2f",
+            "fit": "shrink",
+            "font": "plate",
+            "fontSize": 24,
+            "fontWeight": "bold",
+            "name": "region",
+            "style": {
+              "height": 28,
+              "left": 120,
+              "position": "absolute",
+              "right": 120,
+              "top": 10
+            },
+            "text": "PEPPER VALLEY"
+          }
+        ],
+        "name": "root",
+        "style": {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingBottom": 8,
+          "paddingLeft": 24,
+          "paddingRight": 24,
+          "paddingTop": 30
+        }
+      },
+      "size": [
+        512,
+        256
+      ]
+    },
+    "52-11": {
+      "background": "vehicles/common/licenseplates/default/license_plate_generic_new_wide_d.png",
+      "emboss": 3,
+      "root": {
+        "children": [
+          {
+            "color": "#1e3553",
+            "fit": "shrink",
+            "font": "plate",
+            "fontSize": 180,
+            "letterSpacing": 2,
+            "name": "plate",
+            "style": {
+              "height": 180,
+              "left": 68,
+              "position": "absolute",
+              "top": 16,
+              "width": 888
+            },
+            "text": "{plate}",
+            "type": "text"
+          }
+        ],
+        "name": "root",
+        "style": {
+          "alignItems": "center",
+          "justifyContent": "center",
+          "paddingBottom": 24,
+          "paddingLeft": 40,
+          "paddingRight": 40,
+          "paddingTop": 8
+        }
+      },
+      "size": [
+        1024,
+        196
+      ]
+    }
+  },
+  "name": "Pepper Valley v3",
+  "preview": {
+    "file": "vehicles/common/licenseplates/driver_training/licenseplate-52-11.dae",
+    "mesh": "licenseplate-52-11",
+    "set": "52-11",
+    "texture": "licenseplate-52-11"
+  },
+  "type": "licenseplate",
+  "vars": {
+    "plate": {
+      "charsets": {
+        "c": "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+        "d": "0123456789"
+      },
+      "default": "{c}{c}{c}-{d}{d}{d}{d}",
+      "maxLength": 8,
+      "minLength": 0,
+      "type": "string"
+    }
+  },
+  "version": 3
+}

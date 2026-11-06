@@ -1,0 +1,107 @@
+{
+  "Body_Base": {
+    "name": "Body_Base",
+    "mapTo": "Body_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Body_Base.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Body_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "DumpBed_Base": {
+    "name": "DumpBed_Base",
+    "mapTo": "DumpBed_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/DumpBed_Base.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/DumpBed_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Engine_Base": {
+    "name": "Engine_Base",
+    "mapTo": "Engine_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Engine_Base.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Engine_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Frame_Base": {
+    "name": "Frame_Base",
+    "mapTo": "Frame_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Frame_Base.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Frame_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Lights_Base": {
+    "name": "Lights_Base",
+    "mapTo": "Lights_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Lights_Base.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/Lights_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "UnderCarriage_Base": {
+    "name": "UnderCarriage_Base",
+    "mapTo": "UnderCarriage_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/UnderCarriage_Base.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/UnderCarriage_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "komatsu_glass": {
+    "name": "komatsu_glass",
+    "mapTo": "komatsu_glass",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg3_komatsu/komatsu_glass.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha"
+  }
+}

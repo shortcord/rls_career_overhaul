@@ -1,0 +1,82 @@
+{
+  "hbp_pls_panel_satin": {
+    "name": "hbp_pls_panel_satin",
+    "mapTo": "hbp_pls_panel_satin",
+    "class": "Material",
+    "version": 1.5,
+    "activeLayers": 1,
+    "Stages": [
+      {
+        "baseColorMap": "/levels/utah/art/shapes/hbp/rgb_lighting/hbp_panel_face.color.png",
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0.25,
+        "roughnessFactor": 0.46
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "Punisher Lighting Systems"
+  },
+  "hbp_pls_panel_wood": {
+    "name": "hbp_pls_panel_wood",
+    "mapTo": "hbp_pls_panel_wood",
+    "class": "Material",
+    "version": 1.5,
+    "activeLayers": 1,
+    "Stages": [
+      {
+        "baseColorMap": "/levels/utah/art/shapes/hbp/rgb_lighting/hbp_panel_wood.color.png",
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.7
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "Punisher Lighting Systems"
+  },
+  "hbp_pls_panel_green": {
+    "name": "hbp_pls_panel_green",
+    "mapTo": "hbp_pls_panel_green",
+    "class": "Material",
+    "version": 1.5,
+    "activeLayers": 1,
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0,
+          1,
+          0.1559264637078274,
+          1
+        ],
+        "emissiveFactor": [
+          0,
+          1,
+          0.1559264637078274
+        ],
+        "emissiveIntensityNits": 5,
+        "metallicFactor": 0,
+        "roughnessFactor": 0.45
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "Punisher Lighting Systems"
+  }
+}

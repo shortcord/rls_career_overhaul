@@ -1,0 +1,11 @@
+{
+  "Configuration":"Pepper Valley Shortbus",
+  "defaultMultiPaintSetup":{
+    "name":"peppervalleybus133813 Multi Paint Setup",
+    "paint1":"Champagne",
+    "paint2":"Black",
+    "paint3":"Black"
+  },
+  "Population":50,
+  "Value":65000
+}

@@ -1,0 +1,666 @@
+{
+  "airParcel1": {
+    "names": [
+      "Small Air Cargo"
+    ],
+    "logisticTypes": [
+      "airCargo"
+    ],
+    "slots": [
+      4,
+      8,
+      12
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1,
+      1,
+      1,
+      0.5,
+      0.5,
+      0.5
+    ],
+    "offerDuration": 360,
+    "weight": [
+      4,
+      10,
+      15
+    ],
+    "modChance": {
+      "airExpress": 1
+    }
+  },
+  "airParcel2": {
+    "names": [
+      "Large Air Cargo"
+    ],
+    "logisticTypes": [
+      "airCargo"
+    ],
+    "slots": [
+      16,
+      32
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1,
+      0.5,
+      0.25,
+      0.25
+    ],
+    "offerDuration": 360,
+    "weight": [
+      1
+    ],
+    "modChance": {
+      "airExpress": 1
+    }
+  },
+  "fossil": {
+    "names": [
+      "Fossils",
+      "Relics"
+    ],
+    "logisticTypes": [
+      "fossil"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 0.5,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1,
+      0.4,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      53,
+      212
+    ],
+    "modChance": {}
+  },
+  "ufo": {
+    "names": [
+      "Classified???"
+    ],
+    "logisticTypes": [
+      "fossil"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 0.5,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      0.5,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      159,
+      266
+    ],
+    "modChance": {}
+  },
+  "generalSupplies1": {
+    "names": [
+      "General Supplies"
+    ],
+    "logisticTypes": [
+      "generalSupplies"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.5
+    ],
+    "offerDuration": 360,
+    "weight": [
+      90,
+      135
+    ],
+    "modChance": {}
+  },
+  "generalSupplies2": {
+    "names": [
+      "Unmarked Boxes"
+    ],
+    "logisticTypes": [
+      "generalSupplies"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      0,
+      1,
+      0,
+      0.5,
+      0,
+      0.2,
+      0,
+      0.1
+    ],
+    "offerDuration": 360,
+    "weight": [
+      132,
+      144,
+      180
+    ],
+    "modChance": {}
+  },
+  "autoParts": {
+    "names": [
+      "No Name Auto Parts",
+      "Cross-Bolted Main Bearing Caps",
+      "EVA-10R Blocks",
+      "VXH-840 Heads",
+      "Champion RC12LYC - Set of 10",
+      "Arrow Racing Parts",
+      "Andy's Auto Body Parts",
+      "Engine Parts",
+      "Wheels",
+      "Body Parts"
+    ],
+    "logisticTypes": [
+      "autoParts"
+    ],
+    "slots": [
+      16,
+      32,
+      64,
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      0.2,
+      0.5,
+      1,
+      0.5,
+      0.6,
+      0.7,
+      0.6,
+      0.4,
+      0.2,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      10,
+      25,
+      60,
+      150,
+      200
+    ],
+    "modChance": {}
+  },
+  "utahBulkFreight": {
+    "names": [
+      "General Supplies"
+    ],
+    "logisticTypes": [
+      "utBulkFreight"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0.5
+    ],
+    "offerDuration": 360,
+    "weight": [
+      90,
+      135
+    ],
+    "modChance": {}
+  },
+  "utahCargoReturns": {
+    "names": [
+      "Unmarked Boxes"
+    ],
+    "logisticTypes": [
+      "utCargoReturns"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      0,
+      1,
+      0,
+      0.5,
+      0,
+      0.2,
+      0,
+      0.1
+    ],
+    "offerDuration": 360,
+    "weight": [
+      132,
+      144,
+      180
+    ],
+    "modChance": {}
+  },
+  "utahRetailCartons": {
+    "names": [
+      "Retail Cartons"
+    ],
+    "logisticTypes": [
+      "utRetailFreight"
+    ],
+    "slots": [
+      16,
+      32
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "offerDuration": 360,
+    "weight": [
+      12,
+      25,
+      40
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {}
+  },
+  "utahAutoWholesale": {
+    "names": [
+      "Wholesale Auto Parts"
+    ],
+    "logisticTypes": [
+      "utAutoWholesale"
+    ],
+    "slots": [
+      64,
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.5,
+      0.25
+    ],
+    "offerDuration": 360,
+    "weight": [
+      90,
+      150,
+      200
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {}
+  },
+  "utahAutoOutbound": {
+    "names": [
+      "AJ's Auto Parts"
+    ],
+    "logisticTypes": [
+      "utAutoOutbound"
+    ],
+    "slots": [
+      16,
+      32,
+      64
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.8,
+      0.5,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      10,
+      25,
+      60
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {}
+  },
+  "utahAutoReturn": {
+    "names": [
+      "Dealer Parts and Returns"
+    ],
+    "logisticTypes": [
+      "utAutoReturn"
+    ],
+    "slots": [
+      16,
+      32,
+      64
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.8,
+      0.5,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      10,
+      25,
+      60
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {}
+  },
+  "utahMiningSupplies": {
+    "names": [
+      "Dig Site Supplies"
+    ],
+    "logisticTypes": [
+      "utMiningSupplies"
+    ],
+    "slots": [
+      16,
+      32
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 1,
+    "duplicationChance": [
+      1,
+      0.8,
+      0.3
+    ],
+    "offerDuration": 360,
+    "weight": [
+      25,
+      60
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {}
+  },
+  "utahFossil64Field": {
+    "names": [
+      "Fossils"
+    ],
+    "logisticTypes": [
+      "utFossilField"
+    ],
+    "slots": [
+      64
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.6,
+    "duplicationChance": [
+      1,
+      0.4,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      300,
+      380
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {
+      "utahFossilField64": 1,
+      "timed": 0
+    }
+  },
+  "utahFossil128Field": {
+    "names": [
+      "Large Fossils"
+    ],
+    "logisticTypes": [
+      "utFossilField"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.35,
+    "duplicationChance": [
+      1,
+      0.3
+    ],
+    "offerDuration": 360,
+    "weight": [
+      650,
+      750
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {
+      "utahFossilField128": 1,
+      "timed": 0
+    }
+  },
+  "utahFossilRareField": {
+    "names": [
+      "Classified Specimen"
+    ],
+    "logisticTypes": [
+      "utFossilField"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.05,
+    "duplicationChance": [
+      1
+    ],
+    "offerDuration": 360,
+    "weight": [
+      900,
+      1050
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {
+      "utahFossilFieldRare": 1,
+      "timed": 0
+    }
+  },
+  "utahFossil64Transfer": {
+    "names": [
+      "Fossils for the Info Center"
+    ],
+    "logisticTypes": [
+      "utFossilTransfer"
+    ],
+    "slots": [
+      64
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.6,
+    "duplicationChance": [
+      1,
+      0.4,
+      0.2
+    ],
+    "offerDuration": 360,
+    "weight": [
+      300,
+      380
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {
+      "utahFossilTransfer": 1,
+      "timed": 0
+    }
+  },
+  "utahFossil128Transfer": {
+    "names": [
+      "Large Fossils for the Info Center"
+    ],
+    "logisticTypes": [
+      "utFossilTransfer"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.35,
+    "duplicationChance": [
+      1,
+      0.3
+    ],
+    "offerDuration": 360,
+    "weight": [
+      650,
+      750
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {
+      "utahFossilTransfer": 1,
+      "timed": 0
+    }
+  },
+  "utahFossilRareTransfer": {
+    "names": [
+      "Classified Specimen for the Info Center"
+    ],
+    "logisticTypes": [
+      "utFossilTransfer"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.05,
+    "duplicationChance": [
+      1
+    ],
+    "offerDuration": 360,
+    "weight": [
+      900,
+      1050
+    ],
+    "physicalWeightClass": "light",
+    "modChance": {
+      "utahFossilTransfer": 1,
+      "timed": 0
+    }
+  }
+}

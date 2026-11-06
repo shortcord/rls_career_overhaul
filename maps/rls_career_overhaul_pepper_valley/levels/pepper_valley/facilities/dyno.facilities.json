@@ -1,0 +1,12 @@
+{
+  "dynos": [
+    {
+      "id": "pepperDynoShop",
+      "name": "Pepper Valley Dyno Shop",
+      "triggerName": "dynoSessionTrigger",
+      "sitesFile": "dynoSession.sites.json",
+      "parkingSpotName": "dynoSessionParking",
+      "businessBundleId": "pepperDynoShop"
+    }
+  ]
+}

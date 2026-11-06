@@ -1,0 +1,92 @@
+{
+  "backdrop_distant": {
+    "name": "backdrop_distant",
+    "mapTo": "backdrop_distant",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/distantbase_texture.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/terrains/t_dirt_rocky_nm.png",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          1000,
+          1000
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/distantnormal.dds"
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_LOOSE"
+  },
+  "flag_namib_loose": {
+    "name": "flag_namib_loose",
+    "mapTo": "flag_namib_loose",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/materials/t_flag_namib_loose_b.color.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/materials/t_flag_namib_loose_nm.normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true
+  },
+  "nam_roadsigns": {
+    "name": "nam_roadsigns",
+    "mapTo": "nam_roadsigns",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/materials/nam_roadsigns_d.dds",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 100,
+    "alphaTest": true
+  },
+  "si_metal_roof": {
+    "name": "si_metal_roof",
+    "mapTo": "si_metal_roof_neu",
+    "class": "Material",
+    "persistentId": "bcaf5223-3125-4e13-8fe9-2cf8ce31e1c9",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/si_metal_roof/si_metal_roof_d.color.dds",
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/metal/si_metal_roof/si_metal_roof.normal.dds",
+        "specularMap": "/assets/materials/tileable/metal/si_metal_roof/si_metal_roof_s.color.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

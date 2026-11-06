@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["covet_factory"],
+  "defaultPaintName1": "opal_green",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropTraffic",
+  "Population": 10000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.covet_high.Configuration"
+}

@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":28.7,
+  "0-60 mph":27,
+  "100-0 km/h":55.4,
+  "60-0 mph":167.2,
+  "Body Style":"Fifth Wheel Truck ",
+  "BoundingBox":[
+    [
+      -1.2044,
+      -2.0441,
+      -0.7626
+    ],
+    [
+      2.0607,
+      4.044,
+      2.3984
+    ]
+  ],
+  "Braking G":0.709,
+  "Commercial Class":"Class 8 Truck",
+  "Config Type":"Factory",
+  "Configuration":"TC83_Springbok_Transport_Day",
+  "Description":"Basic 3-axle cab-over semi truck. Springbok Transport edition. Skin made by THom6502.",
+  "Drag Times":{
+    "brakingG":0.2793361243,
+    "time_0_60":26.46750141,
+    "time_1000":22.79450115,
+    "time_1_4":26.60700142,
+    "time_1_8":18.12250087,
+    "time_330":12.45650053,
+    "time_60":5.042000188,
+    "velAt_1_4":26.91682699,
+    "velAt_1_8":20.19746119
+  },
+  "Drivetrain":"6x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Off-Road Score":34,
+  "Population":6500,
+  "Power":301,
+  "PowerPeakRPM":2100,
+  "Propulsion":"ICE",
+  "Top Speed":43.01111446239,
+  "Torque":1135,
+  "TorquePeakRPM":1200,
+  "Transmission":"Manual",
+  "Value":225000,
+  "Weight":8295,
+  "Weight/Power":27.558139534884,
+  "Years":{
+    "max":1986,
+    "min":1978
+  },
+  "defaultPaintName1":"Aquamarine",
+  "defaultPaintName2":"Black",
+  "defaultPaintName3":"Orange"
+}

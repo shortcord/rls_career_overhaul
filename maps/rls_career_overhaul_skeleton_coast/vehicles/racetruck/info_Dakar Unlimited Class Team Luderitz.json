@@ -1,0 +1,54 @@
+{
+  "0-100 km/h":5.5,
+  "0-100 mph":9.3,
+  "0-200 km/h":13.3,
+  "0-60 mph":5.3,
+  "100-0 km/h":37.7,
+  "100-200 km/h":7.8,
+  "60-0 mph":114.8,
+  "60-100 mph":3.9,
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -1.22,
+      -2.375,
+      -0.80575
+    ],
+    [
+      1.22,
+      3.24,
+      1.26
+    ]
+  ],
+  "Braking G":1.044,
+  "Brand":"SP",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Unlimited Class Team Luderitz",
+  "Country":"United States",
+  "Description":"Dakar Unlimited class entry for Team Luderitz, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass":"prestige",
+  "Off-Road Score":50,
+  "Population":100,
+  "Power":896,
+  "PowerPeakRPM":"6300 - 7300",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":70.425960081569,
+  "Torque":1020,
+  "TorquePeakRPM":"5000 - 6300",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":139121,
+  "Weight":2865,
+  "Weight/Power":3.1975446428571,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

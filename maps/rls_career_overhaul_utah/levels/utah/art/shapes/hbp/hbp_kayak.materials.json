@@ -1,0 +1,125 @@
+{
+  "hbp_kayak_gold": {
+    "name": "hbp_kayak_gold",
+    "mapTo": "hbp_kayak_gold",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.500486016,
+          0.860000014,
+          0.00800000038,
+          1
+        ],
+        "roughnessFactor": 0.370000005
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "version": 1.5
+  },
+  "hbp_kayak_rubber": {
+    "name": "hbp_kayak_rubber",
+    "mapTo": "hbp_kayak_rubber",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.022,
+          0.031,
+          0.038,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.74
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "version": 1.5
+  },
+  "hbp_kayak_seam": {
+    "name": "hbp_kayak_seam",
+    "mapTo": "hbp_kayak_seam",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.012,
+          0.018,
+          0.022,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "version": 1.5
+  },
+  "hbp_kayak_seat": {
+    "name": "hbp_kayak_seat",
+    "mapTo": "hbp_kayak_seat",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.038,
+          0.051,
+          0.061,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.85
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "version": 1.5
+  },
+  "hbp_kayak_shaft": {
+    "name": "hbp_kayak_shaft",
+    "mapTo": "hbp_kayak_shaft",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.085,
+          0.12,
+          0.14,
+          1
+        ],
+        "metallicFactor": 0.65,
+        "roughnessFactor": 0.33
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "version": 1.5
+  }
+}

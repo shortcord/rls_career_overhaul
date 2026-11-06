@@ -1,0 +1,20 @@
+{
+  "oldvessel4_vessel9_basecolor_dds": {
+    "name": "oldvessel4_vessel9_basecolor_dds",
+    "mapTo": "oldvessel4_vessel9_basecolor.dds",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 4/oldvessel4_vessel9_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 4/oldvessel4_vessel9_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 4/oldvessel4_vessel9_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 4/oldvessel4_vessel9_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "0-100 km/h":14.6,
+  "0-60 mph":13.7,
+  "Body Style":"Truck",
+  "BoundingBox":[
+    [
+      -0.6203,
+      -1.589,
+      -0.6496
+    ],
+    [
+      1.5169,
+      3.336,
+      1.62
+    ]
+  ],
+  "Brand":"Autobello",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Heavy Class Team Super",
+  "Country":"Italy",
+  "Description":"Dakar Heavy class entry for Team Super, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"6x6",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "InsuranceClass":"commercial",
+  "Off-Road Score":49,
+  "Population":100,
+  "Power":242,
+  "PowerPeakRPM":"3600 - 4300",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":38.457085389507,
+  "Torque":505,
+  "TorquePeakRPM":3000,
+  "Transmission":"Manual",
+  "Type":"Truck",
+  "Value":100620,
+  "Weight":3000,
+  "Weight/Power":12.396694214876,
+  "Years":{
+    "max":1988,
+    "min":1971
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

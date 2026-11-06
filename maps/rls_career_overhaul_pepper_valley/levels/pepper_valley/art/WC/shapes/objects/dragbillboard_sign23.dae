@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.0.2 commit date:2023-12-05, commit time:07:41, hash:9be62e85b727</authoring_tool>
+    </contributor>
+    <created>2025-03-18T00:04:46</created>
+    <modified>2025-03-18T00:04:46</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="industrial-effect">
+      <profile_COMMON>
+        <newparam sid="industrial_d_dds-surface">
+          <surface type="2D">
+            <init_from>industrial_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="industrial_d_dds-sampler">
+          <sampler2D>
+            <source>industrial_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="industrial_d_dds-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="concrete_plain-effect">
+      <profile_COMMON>
+        <newparam sid="concrete_plain_d_dds-surface">
+          <surface type="2D">
+            <init_from>concrete_plain_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="concrete_plain_d_dds-sampler">
+          <sampler2D>
+            <source>concrete_plain_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="concrete_plain_d_dds-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">0.5</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="clutter_commercial-effect">
+      <profile_COMMON>
+        <newparam sid="clutter_commercial_b_color_png-surface">
+          <surface type="2D">
+            <init_from>clutter_commercial_b_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="clutter_commercial_b_color_png-sampler">
+          <sampler2D>
+            <source>clutter_commercial_b_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="clutter_commercial_b_color_png-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="balustrades-effect">
+      <profile_COMMON>
+        <newparam sid="balustrades_d_dds_002_dds-surface">
+          <surface type="2D">
+            <init_from>balustrades_d_dds_002_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="balustrades_d_dds_002_dds-sampler">
+          <sampler2D>
+            <source>balustrades_d_dds_002_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="balustrades_d_dds_002_dds-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <reflectivity>
+              <float sid="specular">0.5</float>
+            </reflectivity>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="trackbarriers-effect">
+      <profile_COMMON>
+        <newparam sid="trackbarriers_d_dds-surface">
+          <surface type="2D">
+            <init_from>trackbarriers_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="trackbarriers_d_dds-sampler">
+          <sampler2D>
+            <source>trackbarriers_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="trackbarriers_d_dds-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="tactile_indicator-effect">
+      <profile_COMMON>
+        <newparam sid="t_tactile_indicator_b_color_png-surface">
+          <surface type="2D">
+            <init_from>t_tactile_indicator_b_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_tactile_indicator_b_color_png-sampler">
+          <sampler2D>
+            <source>t_tactile_indicator_b_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="t_tactile_indicator_b_color_png-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="slabs_large-effect">
+      <profile_COMMON>
+        <newparam sid="slabs_large_d_dds-surface">
+          <surface type="2D">
+            <init_from>slabs_large_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="slabs_large_d_dds-sampler">
+          <sampler2D>
+            <source>slabs_large_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="slabs_large_d_dds-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="billboards-effect">
+      <profile_COMMON>
+        <newparam sid="billboards_d_dds-surface">
+          <surface type="2D">
+            <init_from>billboards_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="billboards_d_dds-sampler">
+          <sampler2D>
+            <source>billboards_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="billboards_d_dds-sampler" texcoord="Plane_002-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="balustrades_d_dds_002_dds" name="balustrades_d_dds_002_dds">
+      <init_from>balustrades_d.dds.002.dds</init_from>
+    </image>
+    <image id="billboards_d_dds" name="billboards_d_dds">
+      <init_from>billboards_d.dds</init_from>
+    </image>
+    <image id="clutter_commercial_b_color_png" name="clutter_commercial_b_color_png">
+      <init_from>clutter_commercial_b.color.png</init_from>
+    </image>
+    <image id="concrete_plain_d_dds" name="concrete_plain_d_dds">
+      <init_from>concrete_plain_d.dds</init_from>
+    </image>
+    <image id="industrial_d_dds" name="industrial_d_dds">
+      <init_from>industrial_d.dds</init_from>
+    </image>
+    <image id="slabs_large_d_dds" name="slabs_large_d_dds">
+      <init_from>slabs_large_d.dds</init_from>
+    </image>
+    <image id="t_tactile_indicator_b_color_png" name="t_tactile_indicator_b_color_png">
+      <init_from>t_tactile_indicator_b.color.png</init_from>
+    </image>
+    <image id="trackbarriers_d_dds" name="trackbarriers_d_dds">
+      <init_from>trackbarriers_d.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="industrial-material" name="industrial">
+      <instance_effect url="#industrial-effect"/>
+    </material>
+    <material id="concrete_plain-material" name="concrete_plain">
+      <instance_effect url="#concrete_plain-effect"/>
+    </material>
+    <material id="clutter_commercial-material" name="clutter_commercial">
+      <instance_effect url="#clutter_commercial-effect"/>
+    </material>
+    <material id="balustrades-material" name="balustrades">
+      <instance_effect url="#balustrades-effect"/>
+    </material>
+    <material id="trackbarriers-material" name="trackbarriers">
+      <instance_effect url="#trackbarriers-effect"/>
+    </material>
+    <material id="tactile_indicator-material" name="tactile_indicator">
+      <instance_effect url="#tactile_indicator-effect"/>
+    </material>
+    <material id="slabs_large-material" name="slabs_large">
+      <instance_effect url="#slabs_large-effect"/>
+    </material>
+    <material id="billboards-material" name="billboards">
+      <instance_effect url="#billboards-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Plane_003-mesh" name="Plane.003">
+      <mesh>
+        <source id="Plane_003-mesh-positions">
+          <float_array id="Plane_003-mesh-positions-array" count="18">3.997975 0 11.94827 -3.997976 0 11.94827 -3.997975 0 7.946591 3.997976 0 7.946591 -1.39233e-7 0 11.94827 0 0 7.946591</float_array>
+          <technique_common>
+            <accessor source="#Plane_003-mesh-positions-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_003-mesh-normals">
+          <float_array id="Plane_003-mesh-normals-array" count="3">0 -1 0</float_array>
+          <technique_common>
+            <accessor source="#Plane_003-mesh-normals-array" count="1" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_003-mesh-map-0">
+          <float_array id="Plane_003-mesh-map-0-array" count="24">-0.2598743 0.7477055 -0.3772888 0.6392623 -0.2597811 0.6392623 -0.3771864 0.639173 -0.259772 0.7477056 -0.3772798 0.7477056 -0.2598743 0.7477055 -0.3773819 0.7476162 -0.3772888 0.6392623 -0.3771864 0.639173 -0.2596787 0.6392624 -0.259772 0.7477056</float_array>
+          <technique_common>
+            <accessor source="#Plane_003-mesh-map-0-array" count="12" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_003-mesh-colors-Col" name="Col">
+          <float_array id="Plane_003-mesh-colors-Col-array" count="48">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Plane_003-mesh-colors-Col-array" count="12" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane_003-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_003-mesh-positions"/>
+        </vertices>
+        <triangles material="clutter_commercial-material" count="4">
+          <input semantic="VERTEX" source="#Plane_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane_003-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Plane_003-mesh-colors-Col" offset="3" set="0"/>
+          <p>5 0 0 0 0 0 1 1 4 0 2 2 2 0 3 3 4 0 4 4 1 0 5 5 5 0 6 6 3 0 7 7 0 0 8 8 2 0 9 9 5 0 10 10 4 0 11 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="nulldetail10" name="nulldetail10" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          </node>
+          <node id="dragbillboard_sign23_a20" name="dragbillboard_sign23_a20" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#Plane_003-mesh" name="dragbillboard_sign23_a20">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="industrial-material" target="#industrial-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="concrete_plain-material" target="#concrete_plain-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="clutter_commercial-material" target="#clutter_commercial-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="balustrades-material" target="#balustrades-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="trackbarriers-material" target="#trackbarriers-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="tactile_indicator-material" target="#tactile_indicator-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="slabs_large-material" target="#slabs_large-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="billboards-material" target="#billboards-material">
+                    <bind_vertex_input semantic="Plane_002-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

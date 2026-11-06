@@ -1,0 +1,72 @@
+{
+  "Elements": {
+    "name": "Elements",
+    "mapTo": "Elements",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack1/Elements_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "HouseEquip": {
+    "name": "HouseEquip",
+    "mapTo": "HouseEquip",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack1/HouseEquip_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Roof": {
+    "name": "Roof",
+    "mapTo": "Roof",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack1/Roof_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "RoofSaver": {
+    "name": "RoofSaver",
+    "mapTo": "RoofSaver",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack1/RoofSaver_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Wall": {
+    "name": "Wall",
+    "mapTo": "Wall",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shack1/WallDirty_base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

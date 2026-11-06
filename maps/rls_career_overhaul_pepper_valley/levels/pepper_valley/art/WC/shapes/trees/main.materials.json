@@ -1,0 +1,16 @@
+{
+  "leaves_thin":{
+    "Stages":[
+      {},
+      {},
+      {},
+      {}
+    ],
+    "class":"Material",
+    "groundDepth":1,
+    "groundType":"leaves_thin",
+    "mapTo":"leaves_thin",
+    "name":"leaves_thin",
+    "persistentId":"49a3f66b-12a0-496a-b6c1-44d3de52e9d5"
+  }
+}

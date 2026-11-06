@@ -1,0 +1,53 @@
+{
+  "eca_plastic_rough": {
+    "name": "eca_plastic_rough",
+    "mapTo": "eca_plastic_rough",
+    "class": "Material",
+    "persistentId": "b7f47c35-2ea3-45f2-a139-68f0ba755867",
+    "Stages": [
+      {
+        "colorMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/eca_plastic_rough_d.dds",
+        "normalMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/eca_plastic_rough_n.dds",
+        "specularMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/eca_plastic_rough_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "hirochi_raceway",
+    "translucentBlendOp": "None"
+  },
+  "hr_clutter_c": {
+    "name": "hr_clutter_c",
+    "mapTo": "hr_clutter_c",
+    "class": "Material",
+    "persistentId": "a0e76554-3cca-4d00-be38-1a778cace52c",
+    "Stages": [
+      {
+        "colorMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/clutters_c_d.dds",
+        "normalMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/clutters_c_n.dds",
+        "reflectivityMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/clutters_c_r.dds",
+        "specularMap": "levels/pepper_valley/art/mt_hirochi_raceway/shapes/buildings/clutters_c_s.dds",
+        "specularPower": 2,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "hirochi_raceway",
+    "specularStrength0": "0.5",
+    "translucentBlendOp": "None"
+  }
+}

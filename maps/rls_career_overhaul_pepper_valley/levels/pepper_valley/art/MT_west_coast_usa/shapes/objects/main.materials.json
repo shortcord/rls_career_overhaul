@@ -1,0 +1,323 @@
+{
+  "metal_plates": {
+    "name": "metal_plates",
+    "mapTo": "metal_plates",
+    "class": "Material",
+    "persistentId": "309efd5b-78cb-4fcf-a362-75b540def756",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_metal_plates_ao.data.png",
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_metal_plates_b.color.png",
+        "metallicFactor": 0.800000012,
+        "metallicMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_metal_plates_m.data.png",
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_metal_plates_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_metal_plates_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_gm_concrete_plain": {
+    "name": "m_gm_concrete_plain",
+    "mapTo": "m_gm_concrete_plain",
+    "class": "Material",
+    "persistentId": "16f0b9ce-2632-4fd0-a005-6ff1d360828c",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_concrete_plain_d.color.png",
+        "detailMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_concrete_plain_detail.data.png",
+        "detailNormalMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_concrete_plain_nm.normal.png",
+        "detailNormalMapStrength": 0.209999993,
+        "detailScale": [
+          0.200000003,
+          0.200000003
+        ],
+        "diffuseMapUseUV": null,
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_concrete_plain_nm.normal.png",
+        "normalMapStrength": 3,
+        "opacityMapUseUV": null,
+        "pixelSpecular": true,
+        "roughnessFactor": null,
+        "roughnessMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_concrete_plain_r.data.png",
+        "specular": [
+          0.517175972,
+          0.517170012,
+          0.517170012,
+          1
+        ],
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_breakup_d.color.png",
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": 1,
+        "normalMapStrength": null,
+        "opacityMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_gm_breakup_o.data.png",
+        "opacityMapUseUV": 1,
+        "pixelSpecular": null,
+        "roughnessFactor": 0.699999988,
+        "specular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT",
+    "materialTag0": "beamng",
+    "materialTag1": "gridmap",
+    "materialTag2": "concrete",
+    "specularStrength0": "0.490196",
+    "version": 1.5
+  },
+  "power_cables": {
+    "name": "power_cables",
+    "mapTo": "power_cables",
+    "class": "Material",
+    "persistentId": "2177d755-cfe3-4a75-8964-135449019205",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_power_cables_b.color.png",
+        "opacityMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_power_cables_o.data.png",
+        "pixelSpecular": true
+      },
+      {
+        "pixelSpecular": null
+      },
+      {
+        "pixelSpecular": null
+      },
+      {
+        "pixelSpecular": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "OBSTACLES",
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "containers_shipping": {
+    "name": "containers_shipping",
+    "mapTo": "containers_shipping",
+    "class": "Material",
+    "persistentId": "0054932e-2031-4f79-a5a2-aa54c2e8c69e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_ao.data.png",
+        "baseColorFactor": [
+          0.992156982,
+          0.992156982,
+          0.992156982,
+          1
+        ],
+        "baseColorMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_m.data.png",
+        "normalMap": "/assets/materials/trim/metal/containers_shipping/containers_n.normal.png",
+        "roughnessMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_r.data.png"
+      },
+      {
+        "metallicMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_m.data.png",
+        "normalMap": "/assets/materials/trim/metal/containers_shipping/containers_n.normal.png",
+        "opacityMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_o.data.png",
+        "roughnessMap": "/assets/materials/baked_props/t_containers_shipping/t_containers_shipping_r.data.png",
+        "vertColor": true,
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "OBSTACLES",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "version": 1.5
+  },
+  "containers_shipping_branding": {
+    "name": "containers_shipping_branding",
+    "mapTo": "containers_shipping_branding",
+    "class": "Material",
+    "persistentId": "e867e031-72ee-435d-b913-8d83f080445b",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.992156982,
+          0.992156982,
+          0.992156982,
+          1
+        ],
+        "baseColorMap": "/assets/materials/baked_props/t_containers_shipping_branding/t_containers_shipping_branding_b.color.png",
+        "opacityMap": "/assets/materials/baked_props/t_containers_shipping_branding/t_containers_shipping_branding_o.data.png",
+        "roughnessFactor": 0.635999978,
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "castShadows": false,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "m_container_tank": {
+    "name": "m_container_tank",
+    "mapTo": "m_container_tank",
+    "class": "Material",
+    "persistentId": "dfc009bc-2d7a-42a2-a4ef-89a2e0cc72fe",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_ao.data.dds",
+        "baseColorFactor": null,
+        "baseColorMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_b.color.dds",
+        "metallicFactor": 1,
+        "metallicMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_m.data.dds",
+        "normalMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_nm.normal.dds",
+        "roughnessMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_r.data.dds"
+      },
+      {
+        "baseColorFactor": [
+          0.156863004,
+          0.274509996,
+          0.647059023,
+          1
+        ],
+        "baseColorMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_b.color.dds",
+        "metallicFactor": null,
+        "normalMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_nm.normal.dds",
+        "opacityMap": "/assets/materials/baked_props/m_container_tank/t_container_tank_op.data.dds"
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "OBSTACLES",
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "version": 1.5
+  },
+  "corrugation": {
+    "name": "corrugation",
+    "mapTo": "corrugation",
+    "class": "Material",
+    "persistentId": "972fe668-2973-4f6a-852f-786a9531dbb0",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_corrugation_ao.data.png",
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_corrugation_b.color.png",
+        "metallicFactor": 0.600000024,
+        "metallicMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_corrugation_m.data.png",
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_corrugation_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/objects/t_corrugation_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

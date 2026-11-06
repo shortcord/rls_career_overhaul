@@ -1,0 +1,11 @@
+{
+  "pickup_skin_D15_SkeletonCoast_Policecar1_Thom6502":{
+    "globalSkin":"D15_SkeletonCoast_Policecar1_Thom6502",
+    "information":{
+      "authors":"THom6502",
+      "name":"D15_SkeletonCoast_Policecar1_Thom6502",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

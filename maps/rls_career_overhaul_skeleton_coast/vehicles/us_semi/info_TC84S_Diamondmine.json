@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":27.9,
+  "0-60 mph":26.3,
+  "100-0 km/h":63.9,
+  "60-0 mph":195.3,
+  "Body Style":"Dump Truck",
+  "BoundingBox":[
+    [
+      -1.2044,
+      -2.4502,
+      -0.76710031633048
+    ],
+    [
+      2.0607,
+      5.6711,
+      2.3984
+    ]
+  ],
+  "Braking G":0.615,
+  "Commercial Class":"Class 8 Truck",
+  "Config Type":"Custom",
+  "Configuration":"TC84S_Diamondmine",
+  "Description":"Cab-over dump truck with twin-steer front suspension and V8 engine. Used by the Woermann Mining Corporation on Skeleton Coast. Skin made by THom6502.",
+  "Drag Times":{
+    "brakingG":0.468567432,
+    "time_0_60":0,
+    "time_1000":23.49100144,
+    "time_1_4":27.51650171,
+    "time_1_8":18.61500112,
+    "time_330":12.73800073,
+    "time_60":5.20400027,
+    "velAt_1_4":24.76593793,
+    "velAt_1_8":19.37536208
+  },
+  "Drivetrain":"8x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Off-Road Score":34,
+  "Population":2500,
+  "Power":459,
+  "PowerPeakRPM":1900,
+  "Propulsion":"ICE",
+  "Top Speed":32.442911005288,
+  "Torque":1945,
+  "TorquePeakRPM":1100,
+  "Transmission":"Manual",
+  "Value":316000,
+  "Weight":12860,
+  "Weight/Power":28.0174291939,
+  "Years":{
+    "max":1977,
+    "min":1972
+  },
+  "defaultPaintName1":"Fall Gold",
+  "defaultPaintName2":"Black",
+  "defaultPaintName3":"Fall Gold"
+}

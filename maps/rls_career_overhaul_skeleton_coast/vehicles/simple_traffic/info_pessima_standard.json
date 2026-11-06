@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["pessima_factory"],
+  "defaultPaintName1": "pleasant_blue",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropTraffic",
+  "Population": 7500,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.pessima_standard.Configuration"
+}

@@ -1,0 +1,32 @@
+{
+  "hbp_rgb_star_diffuser_upstairs": {
+    "name": "hbp_rgb_star_diffuser_upstairs",
+    "mapTo": "hbp_rgb_star_diffuser_upstairs",
+    "class": "Material",
+    "version": 1.5,
+    "activeLayers": 1,
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.85,
+          0.9,
+          1,
+          1
+        ],
+        "emissiveFactor": [
+          0.85,
+          0.9,
+          1
+        ],
+        "emissiveIntensityNits": 250,
+        "metallicFactor": 0,
+        "roughnessFactor": 0.65
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "hbp_rgb_lighting"
+  }
+}

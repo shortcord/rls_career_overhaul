@@ -1,0 +1,254 @@
+{
+    "deliveryProviders": [
+        {
+            "id": "airport1",
+            "alwaysVisible": false,
+            "name": "Main Airport",
+            "description": "This really is the main airport?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "airport_delivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "airportParking1",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "airCargo"
+                    ],
+                    "logisticTypesReceived": [
+                        "airCargo"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "air.sites.json",
+            "logisticTypesProvided": [
+                "airCargo"
+            ],
+            "logisticTypesReceived": [
+                "airCargo"
+            ],
+            "logisticMaxItems": 5,
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                }
+            ]
+        },
+        {
+            "id": "airport2",
+            "alwaysVisible": false,
+            "name": "Highway Monitor Station",
+            "description": "This is what they mean be SPEED ENFORCED BY AIRCRAFT",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "monitor_station.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "airportParking2",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "airCargo"
+                    ],
+                    "logisticTypesReceived": [
+                        "airCargo"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "air.sites.json",
+            "logisticTypesProvided": [
+                "airCargo"
+            ],
+            "logisticTypesReceived": [
+                "airCargo"
+            ],
+            "logisticMaxItems": 5,
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                }
+            ]
+        },
+        {
+            "id": "airport3",
+            "alwaysVisible": false,
+            "name": "Look Out Cliff",
+            "description": "I knew I was being watched@",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "look_out_cliff.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "airportParking3",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "airCargo"
+                    ],
+                    "logisticTypesReceived": [
+                        "airCargo"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "air.sites.json",
+            "logisticTypesProvided": [
+                "airCargo"
+            ],
+            "logisticTypesReceived": [
+                "airCargo"
+            ],
+            "logisticMaxItems": 5,
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                }
+            ]
+        },
+        {
+            "id": "airport4",
+            "alwaysVisible": false,
+            "name": "Flaps 2 Base",
+            "description": "There is no way this is FAA approved",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "flaps_2_base.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "airportParking4",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "airCargo"
+                    ],
+                    "logisticTypesReceived": [
+                        "airCargo"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "air.sites.json",
+            "logisticTypesProvided": [
+                "airCargo"
+            ],
+            "logisticTypesReceived": [
+                "airCargo"
+            ],
+            "logisticMaxItems": 5,
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                }
+            ]
+        },
+        {
+            "id": "airport5",
+            "alwaysVisible": false,
+            "name": "Bridge View Station",
+            "description": "That was a short runway",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "bridge_view_delivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "airportParking5",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "airCargo"
+                    ],
+                    "logisticTypesReceived": [
+                        "airCargo"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "air.sites.json",
+            "logisticTypesProvided": [
+                "airCargo"
+            ],
+            "logisticTypesReceived": [
+                "airCargo"
+            ],
+            "logisticMaxItems": 5,
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "airCargo"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                }
+            ]
+        }
+    ]
+}

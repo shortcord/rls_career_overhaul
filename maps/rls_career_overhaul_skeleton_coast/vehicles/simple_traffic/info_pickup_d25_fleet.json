@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["pickup_factory"],
+  "ignoreModelRandomPaintDistribution": true,
+  "ignoreModelRandomMultiPaintDistribution": true,
+  "defaultRandomPaintProbability": 0,
+  "defaultRandomMultiPaintProbability": 0,
+  "randomPaintDistribution": {
+    "white": 1
+  }
+  "Type": "PropTraffic",
+  "Population": 3000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.pickup_d25_fleet.Configuration"
+}

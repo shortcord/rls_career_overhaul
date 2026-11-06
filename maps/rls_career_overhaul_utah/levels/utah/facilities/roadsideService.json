@@ -1,0 +1,66 @@
+{
+  "default": {
+    "services": [
+      "repair",
+      "maintenance",
+      "tuning"
+    ],
+    "laborMultiplier": 1.25
+  },
+  "spots": {
+    "ajs_repairSpot": {
+      "name": "AJ's Auto Repairs",
+      "preview": "ajs_repairSpot.jpg",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "tyrannos_repairSpot": {
+      "name": "Tyrannos Service Bay",
+      "preview": "tyrannos_repairSpot.jpg",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "demo_repairSpot": {
+      "name": "Demo-Derby Workshop",
+      "preview": "demo_repairSpot.jpg",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "canyon_repairSpot": {
+      "name": "Canyon Fuel Service Bay",
+      "preview": "canyon_repairSpot.jpg",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "airfield_repairSpot": {
+      "name": "Airfield Tuning Tent",
+      "preview": "airfield_repairSpot.jpg",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "burnout_repairSpot": {
+      "name": "Tire Tent",
+      "preview": "burnout_repairSpot.jpg",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    }
+  }
+}

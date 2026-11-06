@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.3.0 commit date:2024-11-19, commit time:08:52, hash:2b18cad88b13</authoring_tool>
+    </contributor>
+    <created>2025-06-16T10:46:26</created>
+    <modified>2025-06-16T10:46:26</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ut_bld_shed_overlappingwood-effect">
+      <profile_COMMON>
+        <newparam sid="ut_bld_shed_overlappingwood_d_dds-surface">
+          <surface type="2D">
+            <init_from>ut_bld_shed_overlappingwood_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ut_bld_shed_overlappingwood_d_dds-sampler">
+          <sampler2D>
+            <source>ut_bld_shed_overlappingwood_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="ut_bld_shed_overlappingwood_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="ut_bld_shed_overlappingwood_d_dds" name="ut_bld_shed_overlappingwood_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/houses/ut_bld_shed_overlappingwood_d.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="ut_bld_shed_overlappingwood-material" name="ut_bld_shed_overlappingwood">
+      <instance_effect url="#ut_bld_shed_overlappingwood-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube_218-mesh" name="Cube.218">
+      <mesh>
+        <source id="Cube_218-mesh-positions">
+          <float_array id="Cube_218-mesh-positions-array" count="72">-1 -1 -1 1.999999 -1 1.5 -1 1 -1 1.999999 1 1.5 1 -1 -1 3.999999 -1 1.5 1 1 -1 3.999999 1 1.5 25 0.9999924 -1 22 0.9999939 1.5 25 -1.000007 -1 22 -1.000006 1.5 23 0.9999918 -1 20 0.9999932 1.5 23 -1.000008 -1 20 -1.000007 1.5 1.999999 -1.120355 1.504307 22 -1.120355 1.504307 1.999999 1.120351 1.504307 22 1.12035 1.504307 1.999999 -1.120355 1.3 22 -1.120355 1.299999 1.999999 1.120351 1.3 22 1.12035 1.299999</float_array>
+          <technique_common>
+            <accessor source="#Cube_218-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_218-mesh-normals">
+          <float_array id="Cube_218-mesh-normals-array" count="108">-0.6401845 0 0.7682212 0 1 0 0.6401845 0 -0.7682212 0 -1 0 0 0 -1 0 0 1 0.6401844 0 0.7682213 2.98023e-7 -1 9.29833e-7 -0.6401844 0 -0.7682213 -2.98023e-7 1 -9.29833e-7 0 0 -1 0 0 1 0 0 1 0 1 0 0 0 -1 0 -1 0 -1 0 0 1 0 0 -0.6401845 0 0.7682212 0 1 0 0.6401845 0 -0.7682212 0 -1 0 0 0 -1 0 0 1 0.6401844 0 0.7682213 2.98023e-7 -1 9.29833e-7 -0.6401844 0 -0.7682213 -3.57628e-7 1 -9.53674e-7 0 0 -1 0 0 1 0 0 1 0 1 0 0 0 -1 0 -1 0 -1 0 0 1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Cube_218-mesh-normals-array" count="36" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_218-mesh-map-0">
+          <float_array id="Cube_218-mesh-map-0-array" count="216">1 0.2760968 0 0.1968364 0 0.2760968 1 0.1861854 0 0.106925 0 0.1861854 1 0.1968364 0 0.2760968 0 0.1968364 0 0.8246659 1 0.9039264 0 0.9039264 1 0.1968364 0 0.2760968 1 0.2760968 1 0.2760968 0 0.1968364 1 0.1968364 0 0.2760968 1 0.1968364 0 0.1968364 1 0.1861854 0 0.106925 0 0.1861854 1 0.1968364 0 0.2760968 0 0.1968364 0 0.8246659 1 0.9039264 0 0.9039264 1 0.2760968 0 0.1968364 0 0.2760968 1 0.2760968 0 0.1968364 1 0.1968364 1 0.2760968 0 0.1968364 0 0.2760968 0.8529025 0.1861854 0.1470975 0.106925 0.1470975 0.1861854 0.8529025 0.1968364 0.1470975 0.2760968 0.1470975 0.1968364 0.8529025 0.8246659 0.1470975 0.9039264 0.1470975 0.8246659 1 0.1968364 0 0.2760968 1 0.2760968 1 0.2760968 0 0.1968364 0.8529025 0.1968364 1 0.2760968 1 0.1968364 0 0.1968364 1 0.1861854 1 0.106925 0 0.106925 1 0.1968364 1 0.2760968 0 0.2760968 0 0.8246659 1 0.8246659 1 0.9039264 1 0.1968364 0 0.1968364 0 0.2760968 1 0.2760968 0 0.2760968 0 0.1968364 0 0.2760968 1 0.2760968 1 0.1968364 1 0.1861854 1 0.106925 0 0.106925 1 0.1968364 1 0.2760968 0 0.2760968 0 0.8246659 1 0.8246659 1 0.9039264 1 0.2760968 1 0.1968364 0 0.1968364 1 0.2760968 0 0.2760968 0 0.1968364 1 0.2760968 1 0.1968364 0 0.1968364 0.8529025 0.1861854 0.8529025 0.106925 0.1470975 0.106925 0.8529025 0.1968364 0.8529025 0.2760968 0.1470975 0.2760968 0.8529025 0.8246659 0.8529025 0.9039264 0.1470975 0.9039264 1 0.1968364 0 0.1968364 0 0.2760968 1 0.2760968 0 0.2760968 0 0.1968364</float_array>
+          <technique_common>
+            <accessor source="#Cube_218-mesh-map-0-array" count="108" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_218-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_218-mesh-positions"/>
+        </vertices>
+        <triangles material="ut_bld_shed_overlappingwood-material" count="36">
+          <input semantic="VERTEX" source="#Cube_218-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_218-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_218-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 2 0 1 0 0 2 3 1 3 6 1 4 2 1 5 7 2 6 4 2 7 6 2 8 4 3 9 1 3 10 0 3 11 6 4 12 0 4 13 2 4 14 3 5 15 5 5 16 7 5 17 8 6 18 11 6 19 10 6 20 11 7 21 14 7 22 10 7 23 15 8 24 12 8 25 14 8 26 12 9 27 9 9 28 8 9 29 10 10 30 12 10 31 8 10 32 11 11 33 13 11 34 15 11 35 17 12 36 18 12 37 16 12 38 19 13 39 22 13 40 18 13 41 23 14 42 20 14 43 22 14 44 21 15 45 16 15 46 20 15 47 22 16 48 16 16 49 18 16 50 19 17 51 21 17 52 23 17 53 1 18 54 3 18 55 2 18 56 3 19 57 7 19 58 6 19 59 7 20 60 5 20 61 4 20 62 4 21 63 5 21 64 1 21 65 6 22 66 4 22 67 0 22 68 3 23 69 1 23 70 5 23 71 8 24 72 9 24 73 11 24 74 11 25 75 15 25 76 14 25 77 15 26 78 13 26 79 12 26 80 12 27 81 13 27 82 9 27 83 10 28 84 14 28 85 12 28 86 11 29 87 9 29 88 13 29 89 17 30 90 19 30 91 18 30 92 19 31 93 23 31 94 22 31 95 23 32 96 21 32 97 20 32 98 21 33 99 17 33 100 16 33 101 22 34 102 20 34 103 16 34 104 19 35 105 17 35 106 21 35 107</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="mineshaft_beam1_a50" name="mineshaft_beam1_a50" type="NODE">
+            <matrix sid="transform">-0.1 3.25841e-8 0 1.210673 -3.25841e-8 -0.1 0 -0.004500151 0 0 1 1 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_218-mesh" name="mineshaft_beam1_a50">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ut_bld_shed_overlappingwood-material" target="#ut_bld_shed_overlappingwood-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="nulldetail1" name="nulldetail1" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

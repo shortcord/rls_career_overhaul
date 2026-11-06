@@ -1,0 +1,56 @@
+{
+  "0-100 km/h":13,
+  "0-100 mph":56.2,
+  "0-60 mph":12.1,
+  "100-0 km/h":41.3,
+  "60-0 mph":127.1,
+  "60-100 mph":44.1,
+  "Body Style":"Van",
+  "BoundingBox":[
+    [
+      -0.68,
+      -1.35,
+      -0.32
+    ],
+    [
+      1.78,
+      4.16,
+      1.73
+    ]
+  ],
+  "Braking G":0.952,
+  "Config Type":"Factory",
+  "Configuration":"H15_Luederitz_Inn",
+  "Description":"Van owned by Lüderitz Inn in Vogelsangbay waterfront. Basic Inline-6 powered passenger van. Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":0.8797639072,
+    "time_0_60":12.13650062,
+    "time_1000":15.56700077,
+    "time_1_4":18.63100095,
+    "time_1_8":11.9405006,
+    "time_330":7.782000414,
+    "time_60":2.701000144,
+    "velAt_1_4":33.1916483,
+    "velAt_1_8":26.60339894
+  },
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Off-Road Score":34,
+  "Population":10000,
+  "Power":185,
+  "PowerPeakRPM":"4500 - 5050",
+  "Propulsion":"ICE",
+  "Top Speed":46.80443549,
+  "Torque":310,
+  "TorquePeakRPM":"2100 - 4150",
+  "Transmission":"Automatic",
+  "Value":35900,
+  "Weight":2365,
+  "Weight/Power":12.78378378,
+  "Years":{
+    "max":1996,
+    "min":1993
+  },
+  "defaultPaintName1":"Quicksilver"
+}

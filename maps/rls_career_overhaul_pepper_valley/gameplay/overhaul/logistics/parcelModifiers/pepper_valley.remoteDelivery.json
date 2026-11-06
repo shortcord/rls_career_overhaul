@@ -1,0 +1,17 @@
+{
+  "id": "pepper_valley.remoteDelivery",
+  "version": 1,
+  "mapId": "pepper_valley",
+  "key": "remoteDelivery",
+  "template": {
+    "type": "post",
+    "moneyMultipler": 1.3
+  },
+  "unlockFlag": "smallPackagesDelivery",
+  "unlockLabel": "Remote Delivery Parcels",
+  "priority": 2,
+  "icon": "cardboardBox",
+  "label": "Remote Parcel",
+  "shortDescription": "",
+  "important": true
+}

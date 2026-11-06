@@ -1,0 +1,11 @@
+{
+  "pickup_skin_D15DiamondMine1":{
+    "globalSkin":"D15DiamondMine1",
+    "information":{
+      "authors":"thOM6502",
+      "name":"D15DiamondMine1",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

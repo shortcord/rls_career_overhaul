@@ -1,0 +1,292 @@
+{
+  "AsphaltRoad_damage_large_decal_01": {
+    "name": "AsphaltRoad_damage_large_decal_01",
+    "mapTo": "unmapped_mat",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_asphalt_repair_patch_decal_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_asphalt_repair_patch_decal_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_asphalt_repair_patch_decal_nm.normal.png",
+        "opacityFactor": 0.899999976,
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_asphalt_repair_patch_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_asphalt_repair_patch_decal_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "opacityFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "opacityFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "opacityFactor": null
+      }
+    ],
+    "castShadows": false,
+    "materialTag0": "beamng",
+    "materialTag1": "decal",
+    "materialTag2": "RoadAndPath",
+    "specularStrength0": "0.490196",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "AsphaltRoad_damage_sml_decal_01": {
+    "name": "AsphaltRoad_damage_sml_decal_01",
+    "mapTo": "unmapped_mat",
+    "class": "Material",
+    "persistentId": "b0e8b9a6-063e-4ea0-b7e2-bdceb835df20",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_asphalt_pothole_decal_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999994993,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_asphalt_pothole_decal_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_asphalt_pothole_decal_nm.normal.png",
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_asphalt_pothole_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_asphalt_pothole_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "beamng",
+    "materialTag1": "decal",
+    "materialTag2": "RoadAndPath",
+    "specularStrength0": "0.490196",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "ind_decal_stuff_01": {
+    "name": "ind_decal_stuff_01",
+    "mapTo": "ind_decal_stuff_01",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_01_decal_ao.data.png",
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_01_decal_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_01_decal_m.data.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_01_decal_nm.normal.png",
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_01_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_01_decal_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "materialTag0": "decal",
+    "materialTag1": "Industrial",
+    "materialTag2": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "ind_decal_stuff_02": {
+    "name": "ind_decal_stuff_02",
+    "mapTo": "ind_decal_stuff_02",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_02_decal_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_02_decal_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_02_decal_nm.normal.png",
+        "normalMapStrength": 2,
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_02_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_02_decal_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      },
+      {
+        "baseColorFactor": null,
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "materialTag0": "decal",
+    "materialTag1": "Industrial",
+    "materialTag2": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "ind_decal_stuff_02b": {
+    "name": "ind_decal_stuff_02b",
+    "mapTo": "ind_decal_stuff_02b",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_03_decal_ao.data.png",
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_03_decal_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_03_decal_nm.normal.png",
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_03_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_industrial_stuff_03_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "materialTag0": "decal",
+    "materialTag1": "Industrial",
+    "materialTag2": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "m_dirty_ground_decal": {
+    "name": "m_dirty_ground_decal",
+    "mapTo": "unmapped_mat",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_dirty_ground_decal_ao.data.png",
+        "baseColorFactor": [
+          0.662744999,
+          0.603922009,
+          0.529411972,
+          1
+        ],
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_dirty_ground_decal_b.color.png",
+        "detailNormalMap": "/levels/skeleton_coast/art/decal/t_asphalt_detail_02_nm.normal.png",
+        "detailNormalMapStrength": 10,
+        "detailScale": [
+          5,
+          5
+        ],
+        "normalMap": "/levels/skeleton_coast/art/decal/t_dirty_ground_decal_nm.normal.png",
+        "opacityFactor": 0.437999994,
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_dirty_ground_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_dirty_ground_decal_r.data.png"
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "opacityFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "opacityFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "opacityFactor": null
+      }
+    ],
+    "materialTag0": "decal",
+    "materialTag1": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "m_pit_mats_collection_001_decal": {
+    "name": "m_pit_mats_collection_001_decal",
+    "mapTo": "m_pit_mats_collection_001_decal",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_pit_mats_collection_001_decal_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_pit_mats_collection_001_decal_nm.normal.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_pit_mats_collection_001_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  },
+  "m_spray_difficulty_sign_decal": {
+    "name": "m_spray_difficulty_sign_decal",
+    "mapTo": "m_spray_difficulty_sign_decal",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_spray_difficulty_sign_decal_b.color.png",
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_spray_difficulty_sign_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_spray_difficulty_sign_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "cubemap_murokmaktos-first-map_reflection",
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "nat_decal_rocks_01": {
+    "name": "nat_decal_rocks_01",
+    "mapTo": "nat_decal_rocks_01",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/decal/t_fallen_rocks_01_decal_ao.data.png",
+        "baseColorFactor": [
+          0.933987975,
+          0.916324019,
+          0.832123995,
+          1
+        ],
+        "baseColorMap": "/levels/skeleton_coast/art/decal/t_fallen_rocks_01_decal_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/decal/t_fallen_rocks_01_decal_nm.normal.png",
+        "opacityMap": "/levels/skeleton_coast/art/decal/t_fallen_rocks_01_decal_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/decal/t_fallen_rocks_01_decal_r.data.png"
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      },
+      {
+        "baseColorFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "materialTag0": "decal",
+    "materialTag1": "beamng",
+    "materialTag2": "Natural",
+    "specularStrength0": "0.784314",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  }
+}

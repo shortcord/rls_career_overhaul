@@ -1,0 +1,37 @@
+{
+  "oldwood": {
+    "name": "oldwood",
+    "mapTo": "oldwood",
+    "class": "Material",
+    "persistentId": "59603651-bb7d-4c44-907d-16ef40cdaa15",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/wood/t_wood_old_pole/t_wood_old_pole_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/wood/t_wood_old_pole/t_wood_old_pole_b.color.png",
+        "normalMap": "/assets/materials/tileable/wood/t_wood_old_pole/t_wood_old_pole_nm.normal.png",
+        "normalMapStrength": 2,
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "roughnessMap": "/assets/materials/tileable/wood/t_wood_old_pole/t_wood_old_pole_r.data.png",
+        "vertColor": true
+      },
+      {
+        "normalMapStrength": null,
+        "vertColor": null
+      },
+      {
+        "normalMapStrength": null,
+        "vertColor": null
+      },
+      {
+        "normalMapStrength": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

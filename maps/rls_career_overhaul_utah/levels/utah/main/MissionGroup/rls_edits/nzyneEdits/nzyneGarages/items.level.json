@@ -1,0 +1,12 @@
+{"name":"heroHouse","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"theShack","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"ajsAddons","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"offroadGarage","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"slopGarage","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"mcgroryManor","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"hangarGarage","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"dustyHome","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"riversideCabin","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"JuniperTent","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"JuniperCamper","class":"SimGroup","__parent":"nzyneGarages"}
+{"name":"bridgeShelter","class":"SimGroup","__parent":"nzyneGarages"}

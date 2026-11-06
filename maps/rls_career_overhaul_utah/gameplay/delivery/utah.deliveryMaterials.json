@@ -1,0 +1,23 @@
+{
+  "utahDirt": {
+    "name": "Dirt",
+    "density": 1.95,
+    "type": "dryBulk",
+    "money": 0.48,
+    "icon": "rocks"
+  },
+  "debris": {
+    "name": "State Funded Heavy Debris Clean Up",
+    "density": 3.0,
+    "type": "dryBulk",
+    "money": 0.58,
+    "icon": "rocks"
+  },
+  "cement": {
+    "name": "Cement",
+    "density": 2.5,
+    "type": "cement",
+    "money": 0.65,
+    "icon": "rocks"
+  }
+}

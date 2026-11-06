@@ -1,0 +1,63 @@
+{
+  "0-100 km/h":12.7,
+  "0-100 mph":65.7,
+  "0-60 mph":11.9,
+  "100-0 km/h":58.6,
+  "60-0 mph":183.9,
+  "60-100 mph":53.8,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.55,
+      -1.57,
+      -0.4183
+    ],
+    [
+      1.65,
+      3.625,
+      1.62
+    ]
+  ],
+  "Braking G":0.67,
+  "Config Type":"Custom",
+  "Configuration":"Desert_Experience",
+  "Description":"Fitted with custom off-road suspension to tackle the wildest of- Oh look, an elephant! Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":0.9467614976,
+    "time_0_60":11.4215004,
+    "time_1000":14.93450058,
+    "time_1_4":18.02450071,
+    "time_1_8":11.3155004,
+    "time_330":7.155500233,
+    "time_60":2.291500113,
+    "velAt_1_4":32.72759805,
+    "velAt_1_8":26.70706521
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Off-Road Score":50,
+  "Population":500,
+  "Power":223,
+  "PowerPeakRPM":"4450 - 5150",
+  "Propulsion":"ICE",
+  "Top Speed":46.0070282,
+  "Torque":410,
+  "TorquePeakRPM":"2550 - 3400",
+  "Transmission":"Manual",
+  "Value":93000,
+  "Weight":2630,
+  "Weight/Power":11.79372197,
+  "Years":{
+    "max":1998,
+    "min":1992
+  },
+  "defaultMultiPaintSetup":
+  {
+    "name": "Two-Tone Adventure",
+    "class": "custom",
+    "paint1": "matte_dune",
+    "paint2": "army_green",
+    "paint3": "matte_black"
+  }
+}

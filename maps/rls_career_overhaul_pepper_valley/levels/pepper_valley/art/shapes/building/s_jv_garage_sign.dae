@@ -1,0 +1,1347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>lucar</author>
+      <authoring_tool>OpenCOLLADA for 3ds Max;  Version: 1.6;  Revision: 0</authoring_tool>
+      <source_data>file:///H:/BeamNG_Drive/1_BNGD_MAXFiles/johnson_valley/semi_trucks/jv_garage_011.max</source_data>
+    </contributor>
+    <created>2023-02-02T15:57:52</created>
+    <modified>2023-02-02T15:57:52</modified>
+    <unit name="centimeter" meter="0.01"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="lod_vertcol">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="vercolor_glow">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="SOFT_COLLISION_GENERAL">
+      <profile_COMMON>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.588 0.588 0.588 1</color>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_plastic_grainy_01">
+      <profile_COMMON>
+        <newparam sid="t_plastic_grainy_01_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_plastic_grainy_01_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_plastic_grainy_01_d_color_png-sampler">
+          <sampler2D>
+            <source>t_plastic_grainy_01_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_plastic_grainy_01_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_plastic_trim_01">
+      <profile_COMMON>
+        <newparam sid="t_plastic_trim_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_plastic_trim_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_plastic_trim_d_color_png-sampler">
+          <sampler2D>
+            <source>t_plastic_trim_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="t_plastic_trim_nm_normal_png-surface">
+          <surface type="2D">
+            <init_from>t_plastic_trim_nm_normal_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_plastic_trim_nm_normal_png-sampler">
+          <sampler2D>
+            <source>t_plastic_trim_nm_normal_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_plastic_trim_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="t_plastic_trim_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="t_plastic_trim_nm_normal_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_metal_trim_trailers">
+      <profile_COMMON>
+        <newparam sid="t_metal_trim_trailers_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_metal_trim_trailers_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_metal_trim_trailers_d_color_png-sampler">
+          <sampler2D>
+            <source>t_metal_trim_trailers_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="t_metal_trim_trailers_nm_normal_png-surface">
+          <surface type="2D">
+            <init_from>t_metal_trim_trailers_nm_normal_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_metal_trim_trailers_nm_normal_png-sampler">
+          <sampler2D>
+            <source>t_metal_trim_trailers_nm_normal_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_metal_trim_trailers_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="t_metal_trim_trailers_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="t_metal_trim_trailers_nm_normal_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_rubber_used_01">
+      <profile_COMMON>
+        <newparam sid="t_rubber_used_01_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_rubber_used_01_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_rubber_used_01_d_color_png-sampler">
+          <sampler2D>
+            <source>t_rubber_used_01_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_rubber_used_01_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_metal_new_01">
+      <profile_COMMON>
+        <newparam sid="t_metal_new_01_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_metal_new_01_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_metal_new_01_d_color_png-sampler">
+          <sampler2D>
+            <source>t_metal_new_01_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="reflectivity_png-surface">
+          <surface type="2D">
+            <init_from>reflectivity_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="reflectivity_png-sampler">
+          <sampler2D>
+            <source>reflectivity_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="t_metal_new_01_s_color_png-surface">
+          <surface type="2D">
+            <init_from>t_metal_new_01_s_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_metal_new_01_s_color_png-sampler">
+          <sampler2D>
+            <source>t_metal_new_01_s_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_metal_new_01_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <texture texture="reflectivity_png-sampler" texcoord="CHANNEL1"/>
+            </specular>
+            <shininess>
+              <float>90</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <specularLevel>
+                <texture texture="t_metal_new_01_s_color_png-sampler" texcoord="CHANNEL1"/>
+              </specularLevel>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0.7</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_concrete_01">
+      <profile_COMMON>
+        <newparam sid="t_concrete_01_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_concrete_01_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_concrete_01_d_color_png-sampler">
+          <sampler2D>
+            <source>t_concrete_01_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_concrete_01_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_plastic_creased_01">
+      <profile_COMMON>
+        <newparam sid="t_plastic_creased_01_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_plastic_creased_01_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_plastic_creased_01_d_color_png-sampler">
+          <sampler2D>
+            <source>t_plastic_creased_01_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <newparam sid="t_plastic_creased_01_nm_normal_png-surface">
+          <surface type="2D">
+            <init_from>t_plastic_creased_01_nm_normal_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_plastic_creased_01_nm_normal_png-sampler">
+          <sampler2D>
+            <source>t_plastic_creased_01_nm_normal_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_plastic_creased_01_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+          <extra>
+            <technique profile="OpenCOLLADA3dsMax">
+              <bump bumptype="HEIGHTFIELD">
+                <texture texture="t_plastic_creased_01_nm_normal_png-sampler" texcoord="CHANNEL1"/>
+              </bump>
+            </technique>
+          </extra>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_labels_trailer">
+      <profile_COMMON>
+        <newparam sid="t_trailer_labels_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_trailer_labels_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_trailer_labels_d_color_png-sampler">
+          <sampler2D>
+            <source>t_trailer_labels_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_trailer_labels_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <texture texture="t_trailer_labels_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="m_plywood_new">
+      <profile_COMMON>
+        <newparam sid="t_plywood_new_d_color_png-surface">
+          <surface type="2D">
+            <init_from>t_plywood_new_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_plywood_new_d_color_png-sampler">
+          <sampler2D>
+            <source>t_plywood_new_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <blinn>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.588 0.588 0.588 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="t_plywood_new_d_color_png-sampler" texcoord="CHANNEL1"/>
+            </diffuse>
+            <specular>
+              <color>0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float>0</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <transparent opaque="A_ONE">
+              <color>1 1 1 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </blinn>
+        </technique>
+      </profile_COMMON>
+      <extra>
+        <technique profile="OpenCOLLADA3dsMax">
+          <extended_shader>
+            <opacity_type sid="opacity_type" type="int">0</opacity_type>
+            <falloff_type sid="falloff_type" type="int">0</falloff_type>
+            <falloff sid="falloff" type="float">0</falloff>
+            <index_of_refraction sid="index_of_refraction" type="float">1.5</index_of_refraction>
+            <wire_size sid="wire_size" type="float">1</wire_size>
+            <wire_units sid="wire_units" type="int">0</wire_units>
+            <apply_reflection_dimming sid="apply_reflection_dimming" type="bool">0</apply_reflection_dimming>
+            <dim_level sid="dim_level" type="float">0</dim_level>
+            <reflection_level sid="reflection_level" type="float">3</reflection_level>
+          </extended_shader>
+          <shader>
+            <ambient_diffuse_texture_lock sid="ambient_diffuse_texture_lock" type="bool">1</ambient_diffuse_texture_lock>
+            <ambient_diffuse_lock sid="ambient_diffuse_lock" type="bool">1</ambient_diffuse_lock>
+            <diffuse_specular_lock sid="diffuse_specular_lock" type="bool">0</diffuse_specular_lock>
+            <use_self_illum_color sid="use_self_illum_color" type="bool">0</use_self_illum_color>
+            <self_illumination sid="self_illumination" type="float">0</self_illumination>
+            <specular_level sid="specular_level" type="float">0</specular_level>
+            <soften sid="soften" type="float">0.1</soften>
+          </shader>
+        </technique>
+      </extra>
+    </effect>
+    <effect id="SHOCK_ABSORBER">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.5 0.5 0.5 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>100</float>
+            </shininess>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="m_jv_garage_logo">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.5 0.5 0.5 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>100</float>
+            </shininess>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="metal_galvanized">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.5 0.5 0.5 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.5 0.5 0.5 1</color>
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+            <shininess>
+              <float>100</float>
+            </shininess>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="lod_vertcol-material" name="lod_vertcol">
+      <instance_effect url="#lod_vertcol"/>
+    </material>
+    <material id="vercolor_glow-material" name="vercolor_glow">
+      <instance_effect url="#vercolor_glow"/>
+    </material>
+    <material id="SOFT_COLLISION_GENERAL-material" name="SOFT_COLLISION_GENERAL">
+      <instance_effect url="#SOFT_COLLISION_GENERAL"/>
+    </material>
+    <material id="m_plastic_grainy_01-material" name="m_plastic_grainy_01">
+      <instance_effect url="#m_plastic_grainy_01"/>
+    </material>
+    <material id="m_plastic_trim_01-material" name="m_plastic_trim_01">
+      <instance_effect url="#m_plastic_trim_01"/>
+    </material>
+    <material id="m_metal_trim_trailers-material" name="m_metal_trim_trailers">
+      <instance_effect url="#m_metal_trim_trailers"/>
+    </material>
+    <material id="m_rubber_used_01-material" name="m_rubber_used_01">
+      <instance_effect url="#m_rubber_used_01"/>
+    </material>
+    <material id="m_metal_new_01-material" name="m_metal_new_01">
+      <instance_effect url="#m_metal_new_01"/>
+    </material>
+    <material id="m_concrete_01-material" name="m_concrete_01">
+      <instance_effect url="#m_concrete_01"/>
+    </material>
+    <material id="m_plastic_creased_01-material" name="m_plastic_creased_01">
+      <instance_effect url="#m_plastic_creased_01"/>
+    </material>
+    <material id="m_labels_trailer-material" name="m_labels_trailer">
+      <instance_effect url="#m_labels_trailer"/>
+    </material>
+    <material id="m_plywood_new-material" name="m_plywood_new">
+      <instance_effect url="#m_plywood_new"/>
+    </material>
+    <material id="SHOCK_ABSORBER-material" name="SHOCK_ABSORBER">
+      <instance_effect url="#SHOCK_ABSORBER"/>
+    </material>
+    <material id="m_jv_garage_logo-material" name="m_jv_garage_logo">
+      <instance_effect url="#m_jv_garage_logo"/>
+    </material>
+    <material id="metal_galvanized-material" name="metal_galvanized">
+      <instance_effect url="#metal_galvanized"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="geom-s_jv_garage_sign_L100" name="s_jv_garage_sign_L100">
+      <mesh>
+        <source id="geom-s_jv_garage_sign_L100-positions">
+          <float_array id="geom-s_jv_garage_sign_L100-positions-array" count="36">513.8117 -1396.879 433.4639 513.8117 -1663.822 433.4639 513.8117 -1663.822 264.075 513.8117 -1396.879 264.075 516.4525 -1396.879 433.4639 516.4524 -1663.822 433.4639 516.4524 -1663.822 264.075 516.4525 -1396.879 264.075 517.2567 -1396.88 433.4639 517.2567 -1663.822 433.4639 517.2567 -1663.822 264.075 517.2567 -1396.88 264.075</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L100-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L100-normals">
+          <float_array id="geom-s_jv_garage_sign_L100-normals-array" count="84">5.2847e-12 1.14323e-7 1 5.2847e-12 1.14323e-7 1 5.2847e-12 1.14323e-7 1 5.2847e-12 1.14323e-7 0.9999999 -4.62267e-5 -1 0 -4.62267e-5 -1 0 -4.62267e-5 -1 0 -4.62267e-5 -1 0 -5.2847e-12 -1.14323e-7 -1 -5.2847e-12 -1.14323e-7 -1 -5.2847e-12 -1.14323e-7 -0.9999999 -5.2847e-12 -1.14323e-7 -1 4.62257e-5 1 0 4.62257e-5 1 0 4.62257e-5 1 0 4.62257e-5 1 0 -0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L100-normals-array" count="28" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L100-map0">
+          <float_array id="geom-s_jv_garage_sign_L100-map0-array" count="36">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L100-map0-array" count="12" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L100-map1">
+          <float_array id="geom-s_jv_garage_sign_L100-map1-array" count="36">0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0 0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0 0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L100-map1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L100-map2">
+          <float_array id="geom-s_jv_garage_sign_L100-map2-array" count="36">-113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971 -113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971 -113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L100-map2-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-s_jv_garage_sign_L100-vertices">
+          <input semantic="POSITION" source="#geom-s_jv_garage_sign_L100-positions"/>
+        </vertices>
+        <triangles material="m_plywood_new" count="12">
+          <input semantic="VERTEX" source="#geom-s_jv_garage_sign_L100-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-s_jv_garage_sign_L100-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-s_jv_garage_sign_L100-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L100-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L100-map2" offset="4" set="1"/>
+          <p>5 0 5 5 5 4 1 4 4 4 0 2 0 0 0 0 2 0 0 0 1 3 1 1 1 5 0 5 5 5 6 4 6 6 6 5 5 5 5 5 1 6 1 1 1 1 6 1 1 1 2 7 2 2 2 6 4 6 6 6 7 8 7 7 7 6 9 6 6 6 2 10 2 2 2 2 10 2 2 2 3 11 3 3 3 7 8 7 7 7 4 12 4 4 4 7 13 7 7 7 3 14 3 3 3 3 14 3 3 3 0 15 0 0 0 4 12 4 4 4 3 17 3 3 3 2 18 2 2 2 1 19 1 1 1 1 19 1 1 1 0 16 0 0 0 3 17 3 3 3 6 21 6 6 6 7 22 7 7 7 4 23 4 4 4 4 23 4 4 4 5 20 5 5 5 6 21 6 6 6</p>
+        </triangles>
+        <triangles material="m_jv_garage_logo" count="2">
+          <input semantic="VERTEX" source="#geom-s_jv_garage_sign_L100-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-s_jv_garage_sign_L100-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-s_jv_garage_sign_L100-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L100-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L100-map2" offset="4" set="1"/>
+          <p>11 27 11 11 11 8 24 8 8 8 9 25 9 9 9 9 25 9 9 9 10 26 10 10 10 11 27 11 11 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-s_jv_garage_sign_L40" name="s_jv_garage_sign_L40">
+      <mesh>
+        <source id="geom-s_jv_garage_sign_L40-positions">
+          <float_array id="geom-s_jv_garage_sign_L40-positions-array" count="36">513.8117 -1396.879 433.4639 513.8117 -1663.822 433.4639 513.8117 -1663.822 264.075 513.8117 -1396.879 264.075 516.4525 -1396.879 433.4639 516.4524 -1663.822 433.4639 516.4524 -1663.822 264.075 516.4525 -1396.879 264.075 517.2567 -1396.88 433.4639 517.2567 -1663.822 433.4639 517.2567 -1663.822 264.075 517.2567 -1396.88 264.075</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L40-positions-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L40-normals">
+          <float_array id="geom-s_jv_garage_sign_L40-normals-array" count="36">-0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L40-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L40-map0">
+          <float_array id="geom-s_jv_garage_sign_L40-map0-array" count="36">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L40-map0-array" count="12" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L40-map1">
+          <float_array id="geom-s_jv_garage_sign_L40-map1-array" count="36">0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0 0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0 0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L40-map1-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L40-map2">
+          <float_array id="geom-s_jv_garage_sign_L40-map2-array" count="36">-113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971 -113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971 -113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L40-map2-array" count="12" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-s_jv_garage_sign_L40-vertices">
+          <input semantic="POSITION" source="#geom-s_jv_garage_sign_L40-positions"/>
+        </vertices>
+        <triangles material="m_plywood_new" count="4">
+          <input semantic="VERTEX" source="#geom-s_jv_garage_sign_L40-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-s_jv_garage_sign_L40-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-s_jv_garage_sign_L40-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L40-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L40-map2" offset="4" set="1"/>
+          <p>3 1 3 3 3 2 2 2 2 2 1 3 1 1 1 1 3 1 1 1 0 0 0 0 0 3 1 3 3 3 6 5 6 6 6 7 6 7 7 7 4 7 4 4 4 4 7 4 4 4 5 4 5 5 5 6 5 6 6 6</p>
+        </triangles>
+        <triangles material="m_jv_garage_logo" count="2">
+          <input semantic="VERTEX" source="#geom-s_jv_garage_sign_L40-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-s_jv_garage_sign_L40-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-s_jv_garage_sign_L40-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L40-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L40-map2" offset="4" set="1"/>
+          <p>11 11 11 11 11 8 8 8 8 8 9 9 9 9 9 9 9 9 9 9 10 10 10 10 10 11 11 11 11 11</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="geom-s_jv_garage_sign_L15" name="s_jv_garage_sign_L15">
+      <mesh>
+        <source id="geom-s_jv_garage_sign_L15-positions">
+          <float_array id="geom-s_jv_garage_sign_L15-positions-array" count="24">513.8117 -1396.879 433.4639 513.8117 -1663.822 433.4639 513.8117 -1663.822 264.075 513.8117 -1396.879 264.075 516.4525 -1396.879 433.4639 516.4524 -1663.822 433.4639 516.4524 -1663.822 264.075 516.4525 -1396.879 264.075</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L15-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L15-normals">
+          <float_array id="geom-s_jv_garage_sign_L15-normals-array" count="24">-0.9999999 0 0 -1 0 0 -0.9999999 0 0 -1 0 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0 1 -2.28645e-7 0 0.9999999 -2.28645e-7 0</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L15-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L15-map0">
+          <float_array id="geom-s_jv_garage_sign_L15-map0-array" count="24">0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353 0.7450981 0.6666667 0.5882353</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L15-map0-array" count="8" stride="3">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L15-map1">
+          <float_array id="geom-s_jv_garage_sign_L15-map1-array" count="24">0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0 0.9951664 0.9987722 0 0.004833579 0.9987722 0 0.004833579 0.1608827 0 0.9951664 0.1608827 0</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L15-map1-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="geom-s_jv_garage_sign_L15-map2">
+          <float_array id="geom-s_jv_garage_sign_L15-map2-array" count="24">-113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971 -113.4506 71.99026 -259.971 113.4506 71.99026 -259.971 113.4506 -71.99026 -259.971 -113.4506 -71.99026 -259.971</float_array>
+          <technique_common>
+            <accessor source="#geom-s_jv_garage_sign_L15-map2-array" count="8" stride="3">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+              <param name="P" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="geom-s_jv_garage_sign_L15-vertices">
+          <input semantic="POSITION" source="#geom-s_jv_garage_sign_L15-positions"/>
+        </vertices>
+        <triangles material="lod_vertcol" count="4">
+          <input semantic="VERTEX" source="#geom-s_jv_garage_sign_L15-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#geom-s_jv_garage_sign_L15-normals" offset="1"/>
+          <input semantic="COLOR" source="#geom-s_jv_garage_sign_L15-map0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L15-map1" offset="3" set="0"/>
+          <input semantic="TEXCOORD" source="#geom-s_jv_garage_sign_L15-map2" offset="4" set="1"/>
+          <p>3 1 3 3 3 2 2 2 2 2 1 3 1 1 1 1 3 1 1 1 0 0 0 0 0 3 1 3 3 3 6 5 6 6 6 7 6 7 7 7 4 7 4 4 4 4 7 4 4 4 5 4 5 5 5 6 5 6 6 6</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_lights>
+    <light id="EnvironmentAmbientLight" name="EnvironmentAmbientLight">
+      <technique_common>
+        <ambient>
+          <color>0 0 0</color>
+        </ambient>
+      </technique_common>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="t_trailer_labels_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Decalroads_Decals/_Decals/Johnson_Valley/t_trailer_labels_d.color.png</init_from>
+    </image>
+    <image id="reflectivity_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Metal/t_metal_new_01/reflectivity.png</init_from>
+    </image>
+    <image id="t_metal_new_01_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Metal/t_metal_new_01/t_metal_new_01_d.color.png</init_from>
+    </image>
+    <image id="t_metal_new_01_s_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Metal/t_metal_new_01/t_metal_new_01_s.color.png</init_from>
+    </image>
+    <image id="t_plastic_creased_01_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Plastic/t_plastic_creased_01/t_plastic_creased_01_d.color.png</init_from>
+    </image>
+    <image id="t_plastic_grainy_01_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Plastic/t_plastic_grainy_01/t_plastic_grainy_01_d.color.png</init_from>
+    </image>
+    <image id="t_rubber_used_01_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Rubber/t_rubber_used_01_d.color.png</init_from>
+    </image>
+    <image id="t_plywood_new_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Tiling_Output/Wood/t_plywood_new/t_plywood_new_d.color.png</init_from>
+    </image>
+    <image id="t_plastic_trim_d_color_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Trims/Plastic/t_plastic_trim/t_plastic_trim_d.color.png</init_from>
+    </image>
+    <image id="t_plastic_trim_nm_normal_png">
+      <init_from>file:///H:/BeamNG_Drive/4_BNGD_Textures/Trims/Plastic/t_plastic_trim/t_plastic_trim_nm.normal.png</init_from>
+    </image>
+    <image id="t_concrete_01_d_color_png">
+      <init_from>file:///H:/game/levels/pepper_valley/art/shapes/t_concrete_01_d.color.png</init_from>
+    </image>
+    <image id="t_metal_trim_trailers_d_color_png">
+      <init_from>file:///H:/game/levels/pepper_valley/art/shapes/t_metal_trim_trailers_d.color.png</init_from>
+    </image>
+    <image id="t_metal_trim_trailers_nm_normal_png">
+      <init_from>file:///H:/game/levels/pepper_valley/art/shapes/t_metal_trim_trailers_nm.normal.png</init_from>
+    </image>
+    <image id="t_plastic_creased_01_nm_normal_png">
+      <init_from>file:///H:/game/levels/pepper_valley/art/shapes/t_plastic_creased_01_nm.normal.png</init_from>
+    </image>
+  </library_images>
+  <library_visual_scenes>
+    <visual_scene id="MaxScene">
+      <node name="EnvironmentAmbientLight">
+        <instance_light url="#EnvironmentAmbientLight"/>
+      </node>
+      <node id="node-base00" name="base00">
+        <node id="node-start01" name="start01">
+          <node id="node-s_jv_garage_sign_L100" name="s_jv_garage_sign_L100">
+            <scale>0.85 0.5541094 0.5541094</scale>
+            <node>
+              <matrix>1 0 0 -515.5342 0 1 0 1530.351 0 0 1 -264.075 0 0 0 1</matrix>
+              <instance_geometry url="#geom-s_jv_garage_sign_L100">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="m_plywood_new" target="#m_plywood_new-material">
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                    </instance_material>
+                    <instance_material symbol="m_jv_garage_logo" target="#m_jv_garage_logo-material"/>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-s_jv_garage_sign_L40" name="s_jv_garage_sign_L40">
+            <scale>0.85 0.5541094 0.5541094</scale>
+            <node>
+              <matrix>1 0 0 -515.5342 0 1 0 1530.351 0 0 1 -264.075 0 0 0 1</matrix>
+              <instance_geometry url="#geom-s_jv_garage_sign_L40">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="m_plywood_new" target="#m_plywood_new-material">
+                      <bind_vertex_input semantic="CHANNEL1" input_semantic="TEXCOORD" input_set="0"/>
+                    </instance_material>
+                    <instance_material symbol="m_jv_garage_logo" target="#m_jv_garage_logo-material"/>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <node id="node-s_jv_garage_sign_L15" name="s_jv_garage_sign_L15">
+            <scale>0.85 0.5541094 0.5541094</scale>
+            <node>
+              <matrix>1 0 0 -515.5342 0 1 0 1530.351 0 0 1 -264.075 0 0 0 1</matrix>
+              <instance_geometry url="#geom-s_jv_garage_sign_L15">
+                <bind_material>
+                  <technique_common>
+                    <instance_material symbol="lod_vertcol" target="#lod_vertcol-material"/>
+                  </technique_common>
+                </bind_material>
+              </instance_geometry>
+            </node>
+            <extra>
+              <technique profile="OpenCOLLADA">
+                <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+                <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+                <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+                <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+              </technique>
+            </extra>
+          </node>
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <node id="node-nulldetail10" name="nulldetail10">
+          <extra>
+            <technique profile="OpenCOLLADA">
+              <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+              <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+              <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+              <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+            </technique>
+          </extra>
+        </node>
+        <extra>
+          <technique profile="OpenCOLLADA">
+            <cast_shadows sid="cast_shadows" type="bool">1</cast_shadows>
+            <receive_shadows sid="receive_shadows" type="bool">1</receive_shadows>
+            <primary_visibility sid="primary_visibility" type="bool">1</primary_visibility>
+            <secondary_visibility sid="secondary_visibility" type="bool">1</secondary_visibility>
+          </technique>
+        </extra>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#MaxScene"/>
+  </scene>
+</COLLADA>

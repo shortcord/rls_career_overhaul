@@ -1,0 +1,11 @@
+{
+  "hopper_skin_Hopper_SkeletonCoast1_THom6502":{
+    "globalSkin":"Hopper_SkeletonCoast1_THom6502",
+    "information":{
+      "authors":"THom6502",
+      "name":"Hopper_SkeletonCoast1_THom6502",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

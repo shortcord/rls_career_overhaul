@@ -1,0 +1,11 @@
+{
+  "van_skin_SkeletonCost_Surfing1":{
+    "globalSkin":"SkeletonCost_Surfing1",
+    "information":{
+      "authors":"Dynamic Decals",
+      "name":"SkeletonCost_Surfing1",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

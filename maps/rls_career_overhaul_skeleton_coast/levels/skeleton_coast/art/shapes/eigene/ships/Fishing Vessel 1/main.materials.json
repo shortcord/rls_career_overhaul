@@ -1,0 +1,59 @@
+{
+  "fishingvessel1_center_basecolor": {
+    "name": "fishingvessel1_center_basecolor",
+    "mapTo": "fishingvessel1_center_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_center_ambientocclusion.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_center_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_center_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_center_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_center_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "fishingvessel1_left_basecolor": {
+    "name": "fishingvessel1_left_basecolor",
+    "mapTo": "fishingvessel1_left_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_left_ambientocclusion.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_left_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_left_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_left_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_left_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "fishingvessel1_right_basecolor": {
+    "name": "fishingvessel1_right_basecolor",
+    "mapTo": "fishingvessel1_right_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_right_ambientocclusion.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_right_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_right_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_right_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Fishing Vessel 1/fishingvessel1_right_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

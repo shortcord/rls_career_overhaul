@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":27.6,
+  "0-60 mph":26.1,
+  "100-0 km/h":130.6,
+  "60-0 mph":399,
+  "Body Style":"Fifth Wheel Truck ",
+  "BoundingBox":[
+    [
+      -1.2044,
+      -2.85594,
+      -0.7626
+    ],
+    [
+      2.0607,
+      6.7507,
+      2.778
+    ]
+  ],
+  "Braking G":0.301,
+  "Commercial Class":"Class 8 Truck",
+  "Config Type":"Factory",
+  "Configuration":"TC83_Springbok_Transport_Sleeper",
+  "Description":"Factory setup for long distance upfit configurations. Springbok Transport edition. Skin made by THom6502.",
+  "Drag Times":{
+    "brakingG":0.2802594962,
+    "time_0_60":26.43900156,
+    "time_1000":22.78950129,
+    "time_1_4":26.60350157,
+    "time_1_8":18.12050099,
+    "time_330":12.45650063,
+    "time_60":5.041000234,
+    "velAt_1_4":26.93763125,
+    "velAt_1_8":20.21092278
+  },
+  "Drivetrain":"6x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Off-Road Score":26,
+  "Population":2500,
+  "Power":301,
+  "PowerPeakRPM":2100,
+  "Propulsion":"ICE",
+  "Top Speed":39.133221794792,
+  "Torque":1135,
+  "TorquePeakRPM":1200,
+  "Transmission":"Manual",
+  "Value":258000,
+  "Weight":8130,
+  "Weight/Power":27.009966777409,
+  "Years":{
+    "max":1986,
+    "min":1978
+  },
+  "defaultPaintName1":"White",
+  "defaultPaintName2":"Navy Blue",
+  "defaultPaintName3":"Navy Blue"
+}

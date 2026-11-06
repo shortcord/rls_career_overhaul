@@ -1,0 +1,172 @@
+{
+  "utahAJMechanic": {
+    "name": "AJ's Mechanic Shop",
+    "description": "Utah mechanic and vehicle transport work.",
+    "icon": "carDealer",
+    "loanableVehicles": [
+      {
+        "model": "pickup",
+        "config": "d25_longbed_A",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "rentalCategory": "dSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "pickup",
+        "config": "d35_longbed_dually_A",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "dSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "tiltdeck",
+        "config": "22ft_standard",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "tiltDeckTrailers",
+        "mileage": 241401600
+      },
+      {
+        "model": "tiltdeck",
+        "config": "22ft_gooseneck",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "rentalCategory": "tiltDeckTrailers",
+        "mileage": 241401600
+      }
+    ],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "utahRangerLogistics": {
+    "name": "Utah Ranger Logistics",
+    "description": "Supply the digs and recover fossils.",
+    "icon": "cardboardBox",
+    "loanableVehicles": [
+      {
+        "model": "pickup",
+        "config": "d25_longbed_A",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "rentalCategory": "dSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "pickup",
+        "config": "d35_longbed_dually_A",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "dSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "boxutility",
+        "config": "trailer_career_cargo",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "other",
+        "mileage": 241401600
+      },
+      {
+        "model": "boxutility_large",
+        "config": "trailer_career_cargo_large",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "other",
+        "mileage": 241401600
+      },
+      {
+        "model": "tiltdeck",
+        "config": "22ft_standard",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "rentalCategory": "tiltDeckTrailers",
+        "mileage": 241401600
+      },
+      {
+        "model": "tiltdeck",
+        "config": "22ft_gooseneck",
+        "reputationLvl": 2,
+        "deliveryLvl": 2,
+        "rentalCategory": "tiltDeckTrailers",
+        "mileage": 241401600
+      },
+      {
+        "model": "tiltdeck",
+        "config": "22ft_gooseneck_cargo",
+        "reputationLvl": 2,
+        "deliveryLvl": 6,
+        "rentalCategory": "tiltDeckTrailers",
+        "mileage": 241401600
+      }
+    ],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "utahGeneralRentals": {
+    "name": "Utah Info Center Rentals",
+    "description": "General vehicles and work equipment.",
+    "icon": "carDealer",
+    "loanableVehicles": [
+      {
+        "model": "pickup",
+        "config": "d25_longbed_A",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "rentalCategory": "dSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "pickup",
+        "config": "d35_longbed_dually_A",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "dSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "van",
+        "config": "h25_career_with_cargo",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "hSeries",
+        "mileage": 241401600
+      },
+      {
+        "model": "boxutility",
+        "config": "trailer_career_cargo",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "rentalCategory": "other",
+        "mileage": 241401600
+      },
+      {
+        "model": "tiltdeck",
+        "config": "22ft_standard",
+        "reputationLvl": 1,
+        "deliveryLvl": 1,
+        "rentalCategory": "tiltDeckTrailers",
+        "mileage": 241401600
+      }
+    ],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+}

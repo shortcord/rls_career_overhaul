@@ -1,0 +1,15 @@
+[
+  {
+    "_filePath":"/levels/pepper_valley/dragstrips/pepperStrip.facility.json",
+    "description":"Main drag racing facility at Pepper Valley",
+    "id":"pepperStrip",
+    "metadata":{
+      "created":"2024-01-01",
+      "modified":"2024-01-01"
+    },
+    "name":"Pepper Valley Drag Strip",
+    "stripIds":[
+      "/levels/pepper_valley/dragstrips/pepperStrip_main.strip.json"
+    ]
+  }
+]

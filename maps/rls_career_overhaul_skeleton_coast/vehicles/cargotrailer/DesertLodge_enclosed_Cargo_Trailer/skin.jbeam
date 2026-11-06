@@ -1,0 +1,11 @@
+{
+"cargotrailer_skin_DesertLodge_enclosed_Cargo_Trailer": {
+    "information":{
+        "authors":"THom6502",
+        "name":"DesertLodge_enclosed_Cargo_Trailer",
+        "value":5000,
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "DesertLodge_enclosed_Cargo_Trailer",
+},
+}

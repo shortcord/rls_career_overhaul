@@ -1,0 +1,17 @@
+{
+  "id": "utah.utahFossilField128",
+  "version": 1,
+  "mapId": "utah",
+  "key": "utahFossilField128",
+  "unlockFlag": "smallPackagesDelivery",
+  "unlockLabel": "Fossil Field Work",
+  "priority": 2,
+  "icon": "cardboardBox",
+  "label": "Heavy Fossil Extraction",
+  "shortDescription": "",
+  "important": true,
+  "template": {
+    "type": "utahFossilField128",
+    "moneyMultipler": 16
+  }
+}

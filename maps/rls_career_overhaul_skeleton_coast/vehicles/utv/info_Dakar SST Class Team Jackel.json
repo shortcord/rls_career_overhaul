@@ -1,0 +1,52 @@
+{
+  "0-100 km/h":4.3,
+  "0-100 mph":14.1,
+  "0-60 mph":4.1,
+  "100-0 km/h":43.4,
+  "60-0 mph":131.2,
+  "60-100 mph":10,
+  "Body Style":"ATV",
+  "BoundingBox":[
+    [
+      -0.7235,
+      -1.244,
+      -0.413
+    ],
+    [
+      1.1815,
+      2.286,
+      2.34022
+    ]
+  ],
+  "Braking G":0.905,
+  "Brand":"Hirochi",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar SST Class Team Jackel",
+  "Country":"Japan",
+  "Description":"Dakar SST class entry for Team Jackel, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"Turbo",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":76,
+  "Population":100,
+  "Power":226,
+  "PowerPeakRPM":"7450 - 8200",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":50.977496121973,
+  "Torque":215,
+  "TorquePeakRPM":"6650 - 7650",
+  "Transmission":"CVT",
+  "Type":"Car",
+  "Value":58245,
+  "Weight":915,
+  "Weight/Power":4.0486725663717,
+  "Years":{
+    "max":2022,
+    "min":2016
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

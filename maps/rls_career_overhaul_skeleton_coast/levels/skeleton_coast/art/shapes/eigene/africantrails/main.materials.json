@@ -1,0 +1,27 @@
+{
+  "afr_construction": {
+    "name": "afr_construction",
+    "mapTo": "afr_construction",
+    "class": "material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

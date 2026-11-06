@@ -1,0 +1,47 @@
+{
+  "ind_bld_Tin_01": {
+    "name": "ind_bld_Tin_01",
+    "mapTo": "ind_bld__2__Tin-01",
+    "class": "Material",
+    "persistentId": "b4aa2cb1-54ef-44bd-ac7d-fb5163dddb18",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_d.dds",
+        "detailMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/detail_grunge_02_streak.dds",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_n.dds",
+        "specular": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specularMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "detailScale": null,
+        "specular": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "specular": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "specular": null,
+        "useAnisotropic": null
+      }
+    ],
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "translucentBlendOp": "None"
+  }
+}

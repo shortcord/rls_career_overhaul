@@ -1,0 +1,2551 @@
+{
+  "aircraft_corrugated_metal": {
+    "name": "aircraft_corrugated_metal",
+    "mapTo": "aircraft_corrugated_metal",
+    "class": "Material",
+    "persistentId": "0608b463-71d4-4cda-9078-d54224e3b475",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/aircraft_corrugated_metal/aircraft_corrugated_metal_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/aircraft_corrugated_metal/aircraft_corrugated_metal_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "reflectivityMap": "/assets/materials/tileable/metal/aircraft_corrugated_metal/aircraft_corrugated_metal_r.dds",
+        "specularMap": "/assets/materials/tileable/metal/aircraft_corrugated_metal/aircraft_corrugated_metal_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "busstop": {
+    "name": "busstop",
+    "mapTo": "busstop",
+    "class": "Material",
+    "persistentId": "a03ffc22-198a-4c67-b8ba-b2b35bd568e3",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/busstop/busstop_d.dds",
+        "normalMap": "/assets/materials/atlas/busstop/busstop_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "/assets/materials/atlas/busstop/busstop_r.dds",
+        "specularMap": "/assets/materials/atlas/busstop/busstop_s.dds",
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "translucentBlendOp": "None"
+  },
+  "busstop_windows": {
+    "name": "busstop_windows",
+    "mapTo": "busstop_windows",
+    "class": "Material",
+    "persistentId": "e9bd365d-0c83-4d1c-bafa-2601747e7795",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/busstop/busstop_d.dds",
+        "normalMap": "/assets/materials/atlas/busstop/busstop_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "/assets/materials/atlas/busstop/busstop_r.dds",
+        "specularMap": "/assets/materials/atlas/busstop/busstop_s.dds",
+        "specularPower": 32,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 64,
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "eca_bld_bricks": {
+    "name": "eca_bld_bricks",
+    "mapTo": "eca_bld_bricks",
+    "class": "Material",
+    "persistentId": "119a7a13-623e-4ad2-b6ae-17f828d6202b",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_d.dds",
+        "normalMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_house_decoration": {
+    "name": "eca_bld_house_decoration",
+    "mapTo": "eca_bld_house_decoration",
+    "class": "Material",
+    "persistentId": "92622a6a-384d-47a0-b2cf-12296a9f06ad",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/eca_bld_house_decoration/eca_bld_house_decoration_d.dds",
+        "normalMap": "/assets/materials/baked_props/eca_bld_house_decoration/eca_bld_house_decoration_n.dds",
+        "specularMap": "/assets/materials/baked_props/eca_bld_house_decoration/eca_bld_house_decoration_s.dds",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "OBSTACLES",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "glass_dust": {
+    "name": "glass_dust",
+    "mapTo": "glass_dust",
+    "class": "Material",
+    "persistentId": "041287f7-1b7a-4218-a2b7-1b961572c92f",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/glass/glass_dust/glass_dust_d.dds",
+        "specularPower": 32,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "specularColor0": "0.1 0.1 0.1 0.1",
+    "specularStrength0": "0.05",
+    "translucent": true
+  },
+  "glass_transparent": {
+    "name": "glass_transparent",
+    "mapTo": "glass_transparent",
+    "class": "Material",
+    "persistentId": "0bd27d37-514f-4857-a3e7-e6ba56752105",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/glass/glass_transparent/glass_transparent_d.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          0.470587999
+        ],
+        "normalMap": "/assets/materials/tileable/glass/glass_transparent/glass_transparent_n.dds",
+        "reflectivityMap": "/assets/materials/tileable/glass/glass_transparent/glass_transparent_r.dds",
+        "roughnessFactor": 0.607767701,
+        "specularMap": "/assets/materials/tileable/metal/metal_tread/glass_transparent_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {
+        "diffuseColor": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "diffuseColor": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "diffuseColor": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularColor0": "1 1 1 1",
+    "specularStrength0": "0.05",
+    "translucent": true
+  },
+  "ind_bld_Tin_01": {
+    "name": "ind_bld_Tin_01",
+    "mapTo": "ind_bld__2__Tin-01",
+    "class": "Material",
+    "persistentId": "b4aa2cb1-54ef-44bd-ac7d-fb5163dddb18",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_d.dds",
+        "detailMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/detail_grunge_02_streak.dds",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_n.dds",
+        "specularMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "detailScale": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "useAnisotropic": null
+      }
+    ],
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "translucentBlendOp": "None"
+  },
+  "ind_bld_buildingextras": {
+    "name": "ind_bld_buildingextras",
+    "mapTo": "ind_bld_buildingextras",
+    "class": "material",
+    "persistentId": "e999f780-a860-440b-94e2-898647166473",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/ind_bld_buildingextras/ind_bld_buildingextras_d.dds",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "diffuseColor": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "normalMap": "/assets/materials/atlas/ind_bld_buildingextras/ind_bld_buildingextras_n.dds",
+        "specular": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "specularMap": "/assets/materials/atlas/ind_bld_buildingextras/ind_bld_buildingextras_s.dds",
+        "specularPower": 19,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 60,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "materialTag2": "utah",
+    "specularStrength0": "0.490196"
+  },
+  "ind_bld_concrete": {
+    "name": "ind_bld_concrete",
+    "mapTo": "ind_bld__2__concrete",
+    "class": "Material",
+    "persistentId": "55d804e6-7c14-4b6d-a97f-a4f69e1548f3",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/utah_ind_concrete/concrete-01_d.dds",
+        "detailMap": "/assets/materials/tileable/metal/italy_rust/detail_grunge_03.dds",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "diffuseColor": [
+          0.996078014,
+          0.996078014,
+          0.996078014,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/concrete/utah_ind_concrete/concrete-01_n.dds",
+        "specular": [
+          0.996078014,
+          0.996078014,
+          0.996078014,
+          1
+        ],
+        "specularMap": "/assets/materials/tileable/concrete/utah_ind_concrete/Concrete-01_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "detailScale": null,
+        "diffuseColor": null,
+        "specular": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "diffuseColor": null,
+        "specular": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "diffuseColor": null,
+        "specular": null,
+        "useAnisotropic": null
+      }
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "specularStrength0": "0.588235",
+    "translucentBlendOp": "None"
+  },
+  "ind_bld_metalgrate_01": {
+    "name": "ind_bld_metalgrate_01",
+    "mapTo": "ind_bld_metalgrate_01",
+    "class": "Material",
+    "persistentId": "cbd377bf-1b8a-478c-b9c1-bd2e5c88ae76",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_bld_metalgrate_01/ind_bld_mgrate-01_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/ind_bld_metalgrate_01/ind_bld_mgrate-01_s.dds",
+        "pixelSpecular": true,
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 114,
+    "alphaTest": true,
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial"
+  },
+  "ind_bld_rustymetal_01": {
+    "name": "ind_bld_rustymetal_01",
+    "mapTo": "ind_bld__2__rustymetal_01",
+    "class": "Material",
+    "persistentId": "5082fff6-0119-47ee-a8be-2285dc8ade17",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_bld_rustymetal_01/ind_bld_rustymetal_01_d.dds",
+        "detailMap": "/assets/materials/breakup/detail_grunge_02/detail_grunge_02.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/tileable/metal/ind_bld_rustymetal_01/ind_bld_rustymetal_01_n.dds",
+        "pixelSpecular": true,
+        "specularMap": "/assets/materials/tileable/metal/ind_bld_rustymetal_01/ind_bld_rustymetal_01_s.dds",
+        "specularPower": 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "translucentBlendOp": "None"
+  },
+  "ind_bld_tin_02": {
+    "name": "ind_bld_tin_02",
+    "mapTo": "ind_bld__2__Tin-02",
+    "class": "Material",
+    "persistentId": "6c8ba0c5-b083-4908-894e-fa489314ef69",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_bld_tin_02/tin-01b_d.dds",
+        "detailMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/detail_grunge_02_streak.dds",
+        "detailNormalMapStrength": 0.100000001,
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_n.dds",
+        "specularMap": "/assets/materials/tileable/metal/ind_bld_tin_02/tin-01b_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "useAnisotropic": null
+      }
+    ],
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "translucentBlendOp": "None"
+  },
+  "ind_blockwall": {
+    "name": "ind_blockwall",
+    "mapTo": "ind_blockwall",
+    "class": "material",
+    "persistentId": "de29008b-c17a-48f6-a552-8d9943fabccb",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/si_blockwall/si_blockwall_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/tileable/brick/si_blockwall/si_blockwall_n.dds",
+        "specularMap": "/assets/materials/tileable/brick/si_blockwall/si_blockwall_s.dds",
+        "specularPower": 50,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ind_blockwall_painted": {
+    "name": "ind_blockwall_painted",
+    "mapTo": "ind_blockwall_painted",
+    "class": "material",
+    "persistentId": "161ca0e0-2cda-4d31-9935-f18ba4633819",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/ind_blockwall_painted/ind_blockwall_painted_d.dds",
+        "detailScale": [
+          0.2000000029802322,
+          0.2000000029802322
+        ],
+        "diffuseColor": [
+          0.9960784912109376,
+          0.937254965,
+          0.603921592,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/brick/ind_blockwall_painted/ind_blockwall_painted_n.dds",
+        "overlayMap": "/assets/materials/decal/eca_bld_moderncorrugated_tin_white/wall_grunge_01_a.dds",
+        "specularMap": "/assets/materials/tileable/brick/ind_blockwall_painted/ind_blockwall_painted_s.dds",
+        "specularPower": 20,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ind_planks_01": {
+    "name": "ind_planks_01",
+    "mapTo": "ind_planks_01",
+    "class": "Material",
+    "persistentId": "5fb91732-070c-469f-8412-933a08db6932",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/wood/ind_planks_01/ind_planks_01_d.dds",
+        "normalMap": "/assets/materials/trim/wood/ind_planks_01/ind_planks_01_n.dds",
+        "specularMap": "/assets/materials/trim/wood/ind_planks_01/ind_planks_01_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "useAnisotropic": null
+      },
+      {
+        "useAnisotropic": null
+      },
+      {
+        "useAnisotropic": null
+      }
+    ],
+    "alphaRef": 121,
+    "alphaTest": true,
+    "groundType": "WOOD",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial"
+  },
+  "jri_port_edge": {
+    "name": "jri_port_edge",
+    "mapTo": "jri_port_edge",
+    "class": "Material",
+    "persistentId": "72847d63-1b17-4da2-b471-07af8dc850b4",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/concrete/jri_port_edge/jri_port_edge_d.dds",
+        "detailMap": "/assets/materials/tileable/metal/italy_rust/detail_grunge_03.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/trim/concrete/jri_port_edge/jri_port_edge_n.dds",
+        "pixelSpecular": true,
+        "specularMap": "/assets/materials/trim/concrete/jri_port_edge/jri_port_edge_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None"
+  },
+  "light_plane_panels": {
+    "name": "light_plane_panels",
+    "mapTo": "light_plane_panels",
+    "class": "Material",
+    "persistentId": "a2f4682b-6dc5-4cf7-9897-1bdf27f309e8",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/metal/light_plane_panels/light_plane_panels_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "diffuseColor": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "normalMap": "/assets/materials/trim/metal/light_plane_panels/light_plane_panels_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "reflectivityMap": "/assets/materials/trim/metal/light_plane_panels/light_plane_panels_r.dds",
+        "specular": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "specularMap": "/assets/materials/trim/metal/light_plane_panels/light_plane_panels_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "specularStrength0": "0.588235",
+    "translucentBlendOp": "None"
+  },
+  "lights": {
+    "name": "lights",
+    "mapTo": "lights",
+    "class": "Material",
+    "persistentId": "ee4de1da-582a-4a6f-92ea-0ca6d34247bc",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/atlas/lights/lights_d.dds",
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 6000,
+        "emissiveMap": "/assets/materials/atlas/lights/lights_d.dds",
+        "normalMap": "/assets/materials/atlas/lights/lights_n.dds",
+        "vertColor": true,
+        "vertColorEmissive": true
+      },
+      {
+        "baseColorMap": "/assets/materials/atlas/lights/lights_a.dds",
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "vertColor": null,
+        "vertColorEmissive": null
+      }
+    ],
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "logos_dealership_utah": {
+    "name": "logos_dealership_utah",
+    "mapTo": "logos_dealership_utah",
+    "class": "Material",
+    "persistentId": "a7d4b89e-dc39-450c-894c-b6e79ea534a4",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/billboard_label/logos_dealership_utah/logos_dealership_garage_utah_d.color.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "order_simset": 32766
+  },
+  "road_guardrail": {
+    "name": "road_guardrail",
+    "mapTo": "road_guardrail",
+    "class": "Material",
+    "persistentId": "bee266f3-d694-4f8d-8f93-1728b4bdc29c",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/road_guardrail/road_guardrail_d.dds",
+        "diffuseColor": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/road_guardrail/road_guardrail_n.dds",
+        "specularMap": "/assets/materials/baked_props/road_guardrail/road_guardrail_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None"
+  },
+  "stone_cladding": {
+    "name": "stone_cladding",
+    "mapTo": "stone_cladding",
+    "class": "Material",
+    "persistentId": "031440a9-dd6f-47f2-a2d0-747fb9abe2f0",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/stone/stone_cladding/stone_cladding_d.dds",
+        "detailNormalMap": "/assets/materials/breakup/stone_cladding/detail_strata_n.dds",
+        "detailScale": [
+          4,
+          4
+        ],
+        "normalMap": "/assets/materials/tileable/stone/stone_cladding/stone_cladding_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/stone/stone_cladding/stone_cladding_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "tarpaulin": {
+    "name": "tarpaulin",
+    "mapTo": "tarpaulin",
+    "class": "Material",
+    "persistentId": "907db8d1-82ce-4a99-a58a-50142f66d9d2",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/fabric/tarpaulin/tarpaulin_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/tileable/fabric/tarpaulin/tarpaulin_n.dds",
+        "pixelSpecular": true,
+        "specularMap": "/assets/materials/tileable/fabric/tarpaulin/tarpaulin_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None"
+  },
+  "usa_roadsigns_text": {
+    "name": "usa_roadsigns_text",
+    "mapTo": "usa_roadsigns_text",
+    "class": "Material",
+    "persistentId": "b4c39e99-af58-4bf4-803b-36d24336ff80",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/atlas/intro_text/usa_roadsigns_text.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          0.999989986,
+          0.999989986
+        ],
+        "emissiveIntensityNits": 1000,
+        "opacityMap": "/assets/materials/billboard_label/usa_roadsigns_text/t_usa_roadsigns_text_o.data.png"
+      },
+      {
+        "detailScale": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null
+      },
+      {
+        "detailScale": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null
+      },
+      {
+        "detailScale": null,
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null
+      }
+    ],
+    "alphaRef": 127,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "usa_roadsigns_turn_warn": {
+    "name": "usa_roadsigns_turn_warn",
+    "mapTo": "usa_roadsigns_turn_warn",
+    "class": "Material",
+    "persistentId": "150e0ac4-c0ab-47b4-bd73-9fc612234062",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/signage/usa_roadsigns_turn_warn/usa_roadsigns_turn_warning.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/metal/usa_roadsigns_turn_warn/ut_bld_metalRusted_n.dds",
+        "specularMap": "/assets/materials/tileable/metal/usa_roadsigns_turn_warn/ut_bld_metalRusted_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 107,
+    "alphaTest": true,
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None"
+  },
+  "ut_asphalt_mesh": {
+    "name": "ut_asphalt_mesh",
+    "mapTo": "ut_asphalt_mesh",
+    "class": "Material",
+    "persistentId": "c2e86c78-8c94-4ea8-a90c-1b80ce13b5cc",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/terrain/asphalt/asphalt/t_asphalt_ao.data.png",
+        "baseColorFactor": [
+          0.955172002,
+          0.955172002,
+          0.955172002,
+          1
+        ],
+        "baseColorMap": "/assets/materials/terrain/asphalt/asphalt/t_asphalt_b.color.png",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/terrain/asphalt/asphalt/t_asphalt_nm.normal.png",
+        "normalMapStrength": 1.5,
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "roughnessMap": "/assets/materials/terrain/asphalt/asphalt/t_asphalt_r.data.png",
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "ASPHALT",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "ut_bld_clean_debris": {
+    "name": "ut_bld_clean_debris",
+    "mapTo": "ut_bld_clean_debris",
+    "class": "material",
+    "persistentId": "491ec2a3-679f-467c-88a5-a446b94194c2",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/soil/ut_bld_clean_debris/ut_clean_debris_d.dds",
+        "diffuseColor": [
+          0.800000072,
+          0.796078503,
+          0.792156935,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/soil/ut_bld_clean_debris/ut_clean_debris_n.dds",
+        "specularMap": "/assets/materials/tileable/soil/ut_bld_clean_debris/ut_clean_debris_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_concrete": {
+    "name": "ut_bld_concrete",
+    "mapTo": "ut_bld_concrete",
+    "class": "Material",
+    "persistentId": "491ec2a3-679f-467c-88a5-a446b94194c2",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/ut_bld_concrete/ut_concrete_d.color.png",
+        "normalMap": "/assets/materials/tileable/concrete/ut_bld_concrete/ut_concrete_nm.normal.png",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/concrete/ut_bld_concrete/ut_concrete_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "OBSTACLES",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_concrete_cracks_decals": {
+    "name": "ut_bld_concrete_cracks_decals",
+    "mapTo": "ut_bld_concrete_cracks_decals",
+    "class": "Material",
+    "persistentId": "a9084d59-68ad-4f24-96ac-c17ee1b636b4",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/decal/concrete/ut_bld_concrete_cracks_decals/ut_concrete_cracks_decals_d.color.png",
+        "normalMap": "/assets/materials/decal/concrete/ut_bld_concrete_cracks_decals/ut_concrete_cracks_decals_nm.normal.png",
+        "specularMap": "/assets/materials/decal/concrete/ut_bld_concrete_cracks_decals/ut_concrete_cracks_decals_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 45,
+    "alphaTest": true,
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "order_simset": 1041089536,
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "ut_bld_concrete_large_decals": {
+    "name": "ut_bld_concrete_large_decals",
+    "mapTo": "ut_bld_concrete_large_decals",
+    "class": "Material",
+    "persistentId": "a167f8b5-bd89-423c-a1b0-02d07450b3da",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/concrete/ut_bld_concrete_large_decals/ut_concrete_large_decals_d.color.png",
+        "normalMap": "/assets/materials/trim/concrete/ut_bld_concrete_large_decals/ut_concrete_large_decals_nm.normal.png",
+        "specularMap": "/assets/materials/trim/concrete/ut_bld_concrete_large_decals/ut_concrete_large_decals_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 45,
+    "alphaTest": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "order_simset": 1057209975,
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "ut_bld_debris": {
+    "name": "ut_bld_debris",
+    "mapTo": "ut_bld_debris",
+    "class": "Material",
+    "persistentId": "491ec2a3-679f-467c-88a5-a446b94194c2",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_debris/ut_debris_d.dds",
+        "normalMap": "/assets/materials/baked_props/ut_bld_debris/ut_debris_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_debris/ut_debris_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_industrial_window": {
+    "name": "ut_bld_industrial_window",
+    "mapTo": "ut_bld_industrial_window",
+    "class": "material",
+    "persistentId": "bcd13290-b8f0-4646-a885-dd2f1347cfcc",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/plastic/italy_bld_ind_windows/Italy_bld_ind_windows_d.dds",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "diffuseColor": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "normalMap": "/assets/materials/trim/plastic/italy_bld_ind_windows/Italy_bld_ind_windows_n.dds",
+        "reflectivityMap": "/assets/materials/trim/plastic/italy_bld_ind_windows/Italy_bld_ind_windows_r.dds",
+        "specular": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "specularMap": "/assets/materials/trim/plastic/italy_bld_ind_windows/Italy_bld_ind_windows_s.dds",
+        "specularPower": 19,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 60,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "materialTag2": "utah",
+    "specularStrength0": "0.490196"
+  },
+  "ut_bld_metal_rust": {
+    "name": "ut_bld_metal_rust",
+    "mapTo": "ut_bld_metal_rust",
+    "class": "Material",
+    "persistentId": "3df38522-1f42-4cbe-929a-dc4e7f84d620",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_d.color.png",
+        "normalMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_nm.normal.png",
+        "reflectivityMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_ref.data.png",
+        "reflectivityMapFactor": 0.200000003,
+        "specularMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {
+        "reflectivityMapFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "reflectivityMapFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "reflectivityMapFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_bars": {
+    "name": "ut_bld_mill_bars",
+    "mapTo": "ut_bld_mill_bars",
+    "class": "Material",
+    "persistentId": "ed132717-c27b-45c3-8f2f-4c8c1410583b",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_big_twisted_bars/ut_bld_mill_big_twisted_bars_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_big_twisted_bars/ut_bld_mill_big_twisted_bars_n.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_mill_big_twisted_bars/ut_bld_mill_big_twisted_bars_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_big_floor": {
+    "name": "ut_bld_mill_big_floor",
+    "mapTo": "ut_bld_mill_big_floor",
+    "class": "Material",
+    "persistentId": "bba5a448-2f62-4469-b9a5-6732cda6a576",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_big_floor/ut_bld_mill_big_floor_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_big_floor/ut_bld_mill_big_floor_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_decal": {
+    "name": "ut_bld_mill_decal",
+    "mapTo": "ut_bld_mill_decal",
+    "class": "Material",
+    "persistentId": "ed2e9c41-32aa-47c5-a169-afff0b232d3e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/decal/surface_embeds/ut_bld_mill_decal/ut_bld_mill_decal_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/decal/surface_embeds/ut_bld_mill_decal/ut_bld_mill_decal_n.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 20,
+    "alphaTest": true,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "ut_bld_mill_floor": {
+    "name": "ut_bld_mill_floor",
+    "mapTo": "ut_bld_mill_floor",
+    "class": "Material",
+    "persistentId": "089a5279-5392-4a25-b317-066cf6dfa643",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_edges_cracks/ut_bld_mill_edges_cracks_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_edges_cracks/ut_bld_mill_edges_cracks_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_floor_cracks": {
+    "name": "ut_bld_mill_floor_cracks",
+    "mapTo": "ut_bld_mill_floor_cracks",
+    "class": "Material",
+    "persistentId": "8e95ad24-501f-4444-b46c-b80443e863d9",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_cracks/ut_bld_mill_cracks_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_cracks/ut_bld_mill_cracks_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_leaching_tank_01": {
+    "name": "ut_bld_mill_leaching_tank_01",
+    "mapTo": "ut_bld_mill_leaching_tank_01",
+    "class": "Material",
+    "persistentId": "36f202a4-7f4e-43ff-b097-822b02e67c89",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_01/ut_bld_mill_leaching_tank_01_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_01/ut_bld_mill_leaching_tank_01_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_leaching_tank_02": {
+    "name": "ut_bld_mill_leaching_tank_02",
+    "mapTo": "ut_bld_mill_leaching_tank_02",
+    "class": "Material",
+    "persistentId": "ab6c7fb8-9ae0-42e6-9de8-70849b67c9dd",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_02/ut_bld_mill_leaching_tank_02_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_02/ut_bld_mill_leaching_tank_02_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_leaching_tank_03": {
+    "name": "ut_bld_mill_leaching_tank_03",
+    "mapTo": "ut_bld_mill_leaching_tank_03",
+    "class": "Material",
+    "persistentId": "9ff0012b-0114-4e0d-82e8-e1bc11e29ce6",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_03/ut_bld_mill_leaching_tank_03_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_03/ut_bld_mill_leaching_tank_03_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_leaching_tank_04": {
+    "name": "ut_bld_mill_leaching_tank_04",
+    "mapTo": "ut_bld_mill_leaching_tank_04",
+    "class": "Material",
+    "persistentId": "6d7aa414-8615-4253-a486-fdea727770fe",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_04/ut_bld_mill_leaching_tank_04_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_04/ut_bld_mill_leaching_tank_04_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_leaching_tank_05": {
+    "name": "ut_bld_mill_leaching_tank_05",
+    "mapTo": "ut_bld_mill_leaching_tank_05",
+    "class": "Material",
+    "persistentId": "03fa10ea-30e6-47e9-92f7-3d906a76a9dd",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_05/ut_bld_mill_leaching_tank_05_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_leaching_tank_05/ut_bld_mill_leaching_tank_05_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_pillar_tank": {
+    "name": "ut_bld_mill_pillar_tank",
+    "mapTo": "ut_bld_mill_pillar_tank",
+    "class": "Material",
+    "persistentId": "d9a3cb31-226f-4830-965f-d7effc5e4b5d",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_pillar_tank/ut_bld_mill_pillar_tank_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_pillar_tank/ut_bld_mill_pillar_tank_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_pillars_body": {
+    "name": "ut_bld_mill_pillars_body",
+    "mapTo": "ut_bld_mill_pillars_body",
+    "class": "Material",
+    "persistentId": "885aa865-7ef9-409c-b62a-ccd9f9f6f770",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_pillar_body/ut_bld_mill_pillar_body_d.dds",
+        "detailNormalMapStrength": 2,
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_pillar_body/ut_bld_mill_pillar_body_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt_02/ut_bld_mill_dirt_02_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_wall": {
+    "name": "ut_bld_mill_wall",
+    "mapTo": "ut_bld_mill_wall",
+    "class": "Material",
+    "persistentId": "b29e9ff5-80ec-4fde-9cbb-7f42cb062782",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_wall/ut_bld_mill_wall_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_wall/ut_bld_mill_wall_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt/ut_bld_mill_dirt_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_wall_destroyed_01": {
+    "name": "ut_bld_mill_wall_destroyed_01",
+    "mapTo": "ut_bld_mill_wall_destroyed_01",
+    "class": "Material",
+    "persistentId": "c627502e-26fb-44cb-81af-a1f605c22f1f",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_wall_destroyed_01/ut_bld_mill_wall_destroyed_01_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_wall_destroyed_01/ut_bld_mill_wall_destroyed_01_n.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_wall_destroyed_02": {
+    "name": "ut_bld_mill_wall_destroyed_02",
+    "mapTo": "ut_bld_mill_wall_destroyed_02",
+    "class": "Material",
+    "persistentId": "70eb77db-e87c-43a1-a476-ccc3dcecc315",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_wall_destroyed_02/ut_bld_mill_wall_destroyed_02_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_wall_destroyed_02/ut_bld_mill_wall_destroyed_02_n.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_mill_wall_destroyed_03": {
+    "name": "ut_bld_mill_wall_destroyed_03",
+    "mapTo": "ut_bld_mill_wall_destroyed_03",
+    "class": "Material",
+    "persistentId": "a255fa5b-67f0-4ff7-b259-c40d8604ca44",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_wall_destroyed_03/ut_bld_mill_wall_destroyed_03_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_wall_destroyed_03/ut_bld_mill_wall_destroyed_03_n.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_painted_numbers": {
+    "name": "ut_bld_painted_numbers",
+    "mapTo": "ut_bld_painted_numbers",
+    "class": "Material",
+    "persistentId": "e8510689-a867-4a5f-8077-1f35bbc92835",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_painted_numbers/ut_bld_painted_numbers_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "utah",
+    "materialTag2": "east_coast_usa",
+    "specularStrength0": "0.196078",
+    "translucent": true
+  },
+  "ut_bld_pillars_top": {
+    "name": "ut_bld_pillars_top",
+    "mapTo": "ut_bld_pillars_top",
+    "class": "Material",
+    "persistentId": "a29894f7-c96d-4e8b-8acf-28f616a5c4e3",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_mill_pillar_top/ut_bld_mill_pillar_top_d.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_mill_pillar_top/ut_bld_mill_pillar_top_n.dds",
+        "overlayMap": "/assets/materials/baked_props/ut_bld_mill_dirt_02/ut_bld_mill_dirt_02_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_rough_concrete": {
+    "name": "ut_bld_rough_concrete",
+    "mapTo": "ut_bld_rough_concrete",
+    "class": "Material",
+    "persistentId": "fc1ba162-84e3-4d1c-8b74-cda24144c13c",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/ut_bld_rough_concrete/ut_concrete_rough_d.color.png",
+        "normalMap": "/assets/materials/tileable/concrete/ut_bld_rough_concrete/ut_concrete_rough_nm.normal.png",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/concrete/ut_bld_rough_concrete/ut_concrete_rough_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "OBSTACLES",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_shed_drums": {
+    "name": "ut_bld_shed_drums",
+    "mapTo": "ut_bld_shed_drums",
+    "class": "Material",
+    "persistentId": "b8413bf6-7bd8-43d7-9531-bae425477051",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_shed_drums/ut_bld_shed_metal_drum_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_shed_drums/ut_bld_shed_metal_drum_NM.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_shed_drums/ut_bld_shed_metal_drum_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "alphaTest": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_shed_fabric": {
+    "name": "ut_bld_shed_fabric",
+    "mapTo": "ut_bld_shed_fabric",
+    "class": "Material",
+    "persistentId": "65ba6000-3c34-40f5-92e9-e51dc705fa66",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_shed_fabric/ut_bld_shed_fabric_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_shed_fabric/ut_bld_shed_fabric_NM.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_shed_fabric/ut_bld_shed_fabric_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 208,
+    "alphaTest": true,
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucent": true,
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_shed_metal_can": {
+    "name": "ut_bld_shed_metal_can",
+    "mapTo": "ut_bld_shed_metal_can",
+    "class": "Material",
+    "persistentId": "726e9254-7367-4740-aa6e-aed7ea097ab5",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_shed_metal_can/ut_bld_shed_metal_can_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_shed_metal_can/ut_bld_shed_metal_can_n.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_shed_metal_can/ut_bld_shed_metal_can_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 26,
+    "alphaTest": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_shed_overlappingwood": {
+    "name": "ut_bld_shed_overlappingwood",
+    "mapTo": "ut_bld_shed_overlappingwood",
+    "class": "Material",
+    "persistentId": "7c3ab3b9-c245-49f9-a58f-d89196769938",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/ut_bld_shed_overlappingwood/ut_bld_shed_overlappingwood_d.dds",
+        "detailMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/detail_grunge_03_brown.dds",
+        "normalMap": "/assets/materials/tileable/wood/ut_bld_shed_overlappingwood/ut_bld_shed_overlappingwood_n.dds",
+        "overlayMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/ut_bld_shed_dirt_d.dds",
+        "specularMap": "/assets/materials/tileable/wood/ut_bld_shed_overlappingwood/ut_bld_shed_overlappingwood_s.dds",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078"
+  },
+  "ut_bld_trim_broken_wood": {
+    "name": "ut_bld_trim_broken_wood",
+    "mapTo": "ut_bld_trim_broken_wood",
+    "class": "material",
+    "persistentId": "b6b67ea1-e9f0-45ad-b55e-9b808ab05ca5",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/wood/ut_bld_trim_broken_wood/ut_trim_broken_wood_d.dds",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "diffuseColor": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "normalMap": "/assets/materials/trim/wood/ut_bld_trim_broken_wood/ut_trim_broken_wood_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specular": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "specularMap": "/assets/materials/trim/wood/ut_bld_trim_wood/ut_trim_wood_s.color.png",
+        "specularPower": 19,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 115,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "WOOD",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "materialTag2": "utah",
+    "specularStrength0": "0.490196",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_wood_decals": {
+    "name": "ut_bld_wood_decals",
+    "mapTo": "ut_bld_wood_decals",
+    "class": "material",
+    "persistentId": "1756d1db-0ed1-482a-b202-2bb8f68edf3f",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/ut_bld_wood_decals/ut_wood_decals_d.dds",
+        "normalMap": "/assets/materials/atlas/ut_bld_wood_decals/ut_wood_decals_n.dds",
+        "reflectivityMap": "/assets/materials/atlas/ut_bld_wood_decals/ut_wood_decals_r.dds",
+        "specularMap": "/assets/materials/atlas/ut_bld_wood_decals/ut_wood_decals_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 80,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah"
+  },
+  "ut_building_decoration_1": {
+    "name": "ut_building_decoration_1",
+    "mapTo": "ut_building_decoration_1",
+    "class": "material",
+    "persistentId": "ab40a77f-a7f4-4f4d-b498-6ca1d691934a",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/ut_building_decoration_1/ut_building_decoration_1_d.dds",
+        "specular": [
+          0.9882349967956544,
+          0.9882349967956544,
+          0.9882349967956544,
+          1
+        ],
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 156,
+    "alphaTest": true,
+    "doubleSided": true,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "Natural",
+    "specularStrength0": "0.784314",
+    "translucentZWrite": true
+  },
+  "ut_caravan_a": {
+    "name": "ut_caravan_a",
+    "mapTo": "ut_caravan_a",
+    "class": "Material",
+    "persistentId": "5ed8444a-5dc1-45ce-9657-acf3da507168",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_caravan_a/ut_caravan_a_d.dds",
+        "normalMap": "/assets/materials/baked_props/ut_caravan_a/ut_caravan_a_n.dds",
+        "reflectivityMap": "/assets/materials/baked_props/ut_caravan_a/ut_caravan_a_r.dds",
+        "specularMap": "/assets/materials/baked_props/ut_caravan_a/ut_caravan_a_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah"
+  },
+  "ut_con_site_addon": {
+    "name": "ut_con_site_addon",
+    "mapTo": "ut_con_site_addon",
+    "class": "Material",
+    "persistentId": "491ec2a3-679f-467c-88a5-a446b94194c2",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_con_site_addon/construction_site_addon_d.dds",
+        "normalMap": "/assets/materials/baked_props/ut_con_site_addon/construction_site_addon_n.dds",
+        "specularMap": "/assets/materials/baked_props/ut_con_site_addon/construction_site_addon_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_corrugated_tin_V1": {
+    "name": "ut_corrugated_tin_V1",
+    "mapTo": "ut_corrugated_tin_V1",
+    "class": "material",
+    "persistentId": "64e5f1f5-8dda-4170-ab36-d874c9a5642d",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_tin_01/ut_corrugated_tin_V1_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/ind_tin_01/ut_corrugated_tin_V1_n.dds",
+        "reflectivityMap": "/assets/materials/tileable/metal/ind_tin_01/ut_corrugated_tin_V1_r.dds",
+        "specularMap": "/assets/materials/tileable/metal/ind_tin_01/ut_corrugated_tin_V1_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "global_cubemap_metalblurred",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_corrugated_tin_V2": {
+    "name": "ut_corrugated_tin_V2",
+    "mapTo": "ut_corrugated_tin_V2",
+    "class": "material",
+    "persistentId": "1821c688-65a4-466c-9c40-a82496c84bd6",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ut_corrugated_tin_V2_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/ind_tin_02/ut_corrugated_tin_V2_n.dds",
+        "reflectivityMap": "/assets/materials/tileable/metal/ind_tin_02/ut_corrugated_tin_V2_r.dds",
+        "specularMap": "/assets/materials/tileable/metal/ind_tin_02/ut_corrugated_tin_V2_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "global_cubemap_metalblurred",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_corrugated_tin_V3": {
+    "name": "ut_corrugated_tin_V3",
+    "mapTo": "ut_corrugated_tin_V3",
+    "class": "material",
+    "persistentId": "80fcc736-6566-41c1-852c-88013eb897ed",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_tin_03/ut_corrugated_tin_V3_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/ind_tin_03/ut_corrugated_tin_V3_n.dds",
+        "reflectivityMap": "/assets/materials/tileable/metal/ind_tin_03/ut_corrugated_tin_V3_r.dds",
+        "specularMap": "/assets/materials/tileable/metal/ind_tin_03/ut_corrugated_tin_V3_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "global_cubemap_metalblurred",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_curb": {
+    "name": "ut_curb",
+    "mapTo": "ut_curb",
+    "class": "Material",
+    "persistentId": "d9674ffd-3b34-440d-ac7b-a998d5282d6d",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/concrete/ut_curb/ut_curb_d.dds",
+        "normalMap": "/assets/materials/trim/concrete/ut_curb/ut_curb_n.dds",
+        "specularMap": "/assets/materials/trim/concrete/ut_curb/ut_curb_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "Utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_electric_wires": {
+    "name": "ut_electric_wires",
+    "mapTo": "ut_electric_wires",
+    "class": "Material",
+    "persistentId": "5b2d66c2-1a54-4f8d-8f87-9ddcaff484fd",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/italy_bld_electric_wire/italy_bld_electric_wire_d.dds",
+        "normalMap": "/assets/materials/baked_props/italy_bld_electric_wire/italy_bld_electric_wire_n.dds",
+        "specularMap": "/assets/materials/baked_props/italy_bld_electric_wire/italy_bld_electric_wire_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 45,
+    "alphaTest": true,
+    "annotation": "OBSTACLES",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "specularStrength1": "0.980392",
+    "translucentZWrite": true
+  },
+  "ut_signs": {
+    "name": "ut_signs",
+    "mapTo": "ut_signs",
+    "class": "Material",
+    "persistentId": "94f82c4f-730d-4bcf-b0a2-6896d4031f78",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/billboard_label/ut_signs/ut_signs.dds",
+        "diffuseColor": [
+          1,
+          0.9999899864196776,
+          0.9999899864196776,
+          1
+        ],
+        "specularMap": "/assets/materials/tileable/concrete/utah_ind_concrete/Concrete-01_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "ut_tourist_posters_etc": {
+    "name": "ut_tourist_posters_etc",
+    "mapTo": "ut_tourist_posters_etc",
+    "class": "Material",
+    "persistentId": "d64aecd1-a851-4b59-ba3c-fb0f6bb8f43e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/billboard_label/ut_tourist_posters_etc/ut_tourist_posters_etc_d.dds",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "pixelSpecular": true,
+        "useAnisotropic": true
+      },
+      {
+        "detailScale": null,
+        "pixelSpecular": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "pixelSpecular": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "pixelSpecular": null,
+        "useAnisotropic": null
+      }
+    ],
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_asphalt_road_gravel_edge_mesh": {
+    "name": "utah_asphalt_road_gravel_edge_mesh",
+    "mapTo": "utah_asphalt_road_gravel_edge_mesh",
+    "class": "Material",
+    "persistentId": "50530f22-41fa-473c-84c1-b89590c2051e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/decalroad/asphalt/utah_asphalt_road_gravel_edge/t_asphalt_gravel_edge_b.color.png",
+        "diffuseColor": [
+          0.996078491,
+          0.996078491,
+          0.996078491,
+          0.600000024
+        ],
+        "normalMap": "/assets/materials/decalroad/asphalt/utah_asphalt_road_gravel_edge/t_asphalt_gravel_edge_nm.normal.png",
+        "opacityMap": "/assets/materials/decalroad/asphalt/utah_asphalt_road_gravel_edge/t_asphalt_gravel_edge_o.data.png",
+        "scrollSpeed": 4.11800003,
+        "specular": [
+          0.992156982,
+          0.992156982,
+          0.992156982,
+          1
+        ],
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 100,
+    "alphaTest": true,
+    "annotation": "ASPHALT",
+    "castShadows": false,
+    "materialTag0": "RoadAndPath",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "specularStrength0": "0.490196",
+    "specularStrength1": "0.980392",
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "translucentZWrite": true
+  },
+  "utah_bld_metalbeams": {
+    "name": "utah_bld_metalbeams",
+    "mapTo": "utah_mine_bld_metalbeams",
+    "class": "Material",
+    "persistentId": "0c0e4dae-4c24-4a53-bff5-50081ada3e26",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/utah_bld_metalbeams/ut_bld_pipe_d.dds",
+        "detailMap": "/assets/materials/tileable/brick/utah_ind_bld_brick_01/detail_grunge_01.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/utah_bld_metalbeams/ut_bld_pipe_n.dds",
+        "specularMap": "/assets/materials/baked_props/utah_bld_metalbeams/ut_bld_pipe_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_concrete": {
+    "name": "utah_mine_bld_concrete",
+    "mapTo": "utah_mine_bld_concrete",
+    "class": "Material",
+    "persistentId": "08427812-42cb-45d0-aecf-e3ab59e3a4d0",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/utah_mine_bld_concrete/ut_bld_concrete_d.dds",
+        "detailMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/detail_grunge_03_brown.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/concrete/utah_mine_bld_concrete/ut_bld_concrete_d_n.dds",
+        "specularMap": "/assets/materials/tileable/concrete/utah_mine_bld_concrete/ut_bld_concrete_d_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_concrete_bottom": {
+    "name": "utah_mine_bld_concrete_bottom",
+    "mapTo": "utah_mine_bld_concrete_bottom",
+    "class": "Material",
+    "persistentId": "c980622d-87d3-400c-b6ab-6f410aba4b66",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/utah_mine_bld_concrete_bottom/ut_bld_concrete_dirt_d.dds",
+        "detailMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/detail_grunge_03_brown.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/concrete/utah_mine_bld_concrete/ut_bld_concrete_d_n.dds",
+        "specularMap": "/assets/materials/tileable/concrete/utah_mine_bld_concrete/ut_bld_concrete_d_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_doors": {
+    "name": "utah_mine_bld_doors",
+    "mapTo": "utah_mine_bld_doors",
+    "class": "Material",
+    "persistentId": "5f7ce235-4f34-4476-8a20-2ca99532b66c",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_doors/ut_bld_doors_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_roof_plates": {
+    "name": "utah_mine_bld_roof_plates",
+    "mapTo": "utah_mine_bld_roof_plates",
+    "class": "Material",
+    "persistentId": "8412f811-5fcb-424f-9440-1e1055a26859",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_metalPlatesRusted_03/ut_bld_metalPlatesRusted_03_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_metalPlatesRusted_03/ut_bld_metalPlatesRusted_03_n.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_metalPlatesRusted_03/ut_bld_metalPlatesRusted_03_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_rusted_metal_tower": {
+    "name": "utah_mine_bld_rusted_metal_tower",
+    "mapTo": "utah_mine_bld_rusted_metal_tower",
+    "class": "Material",
+    "persistentId": "fc36f95d-70ed-4064-ade0-e2f5b9bc3dac",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/usa_roadsigns_turn_warn/ut_bld_metalRusted_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/tileable/metal/usa_roadsigns_turn_warn/ut_bld_metalRusted_n.dds",
+        "specularMap": "/assets/materials/tileable/metal/usa_roadsigns_turn_warn/ut_bld_metalRusted_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_windows_old": {
+    "name": "utah_mine_bld_windows_old",
+    "mapTo": "utah_mine_bld_windows_old",
+    "class": "Material",
+    "persistentId": "4f18197f-3dd7-432c-8223-c018f9c455bc",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_windowsOld/ut_bld_windowsOld_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "specularMap": "/assets/materials/baked_props/ut_bld_windowsOld/ut_bld_windowsOld_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_windows_small": {
+    "name": "utah_mine_bld_windows_small",
+    "mapTo": "utah_mine_bld_windows_small",
+    "class": "Material",
+    "persistentId": "e3b41e83-2751-48f5-91a8-4ad59b9d8e27",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/ut_bld_windowsSmall/ut_bld_windowsSmall_d.dds",
+        "detailScale": [
+          0.1000000014901161,
+          0.1000000014901161
+        ],
+        "normalMap": "/assets/materials/baked_props/ut_bld_windowsSmall/ut_bld_windowsSmall_n.dds",
+        "specularMap": "/assets/materials/baked_props/ut_bld_windowsSmall/ut_bld_windowsSmall_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_mine_bld_woodplanks_overlapping": {
+    "name": "utah_mine_bld_woodplanks_overlapping",
+    "mapTo": "utah_mine_bld_woodplanks_overlapping",
+    "class": "Material",
+    "persistentId": "21a16d78-b1c6-4a5f-9f2d-8ed59ba9d046",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/ut_bld_shed_overlappingwood/ut_bld_shed_overlappingwood_d.dds",
+        "detailMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/detail_grunge_03_brown.dds",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/wood/ut_bld_shed_overlappingwood/ut_bld_shed_overlappingwood_n.dds",
+        "specularMap": "/assets/materials/tileable/wood/utah_mine_bld_woodplanks_overlapping/ut_bld_woodPlanks_02_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "utah_roof_shingles": {
+    "name": "utah_roof_shingles",
+    "mapTo": "utah_roof_shingles",
+    "class": "Material",
+    "persistentId": "031440a9-dd6f-47f2-a2d0-747fb9abe2f0",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/utah_roof_shingles/utah_roof_shingles_d.dds",
+        "normalMap": "/assets/materials/baked_props/utah_roof_shingles/utah_roof_shingles_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/baked_props/utah_roof_shingles/utah_roof_shingles_d.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "translucentBlendOp": "None"
+  },
+  "utah_shed_bld_wood_rough": {
+    "name": "utah_shed_bld_wood_rough",
+    "mapTo": "utah_shed_bld_wood_rough",
+    "class": "Material",
+    "persistentId": "39535613-ed4b-4ecc-82e7-c38cd5b54992",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/ut_bld_woodrough_d.dds",
+        "detailMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/detail_grunge_03_brown.dds",
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "normalMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/ut_bld_woodrough_n.dds",
+        "overlayMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/ut_bld_shed_dirt_d.dds",
+        "specularMap": "/assets/materials/breakup/ut_bld_shed_overlappingwood/ut_bld_woodrough_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularStrength0": "0.196078",
+    "translucentBlendOp": "None"
+  },
+  "wires": {
+    "name": "wires",
+    "mapTo": "wires",
+    "class": "Material",
+    "persistentId": "e999f780-a860-440b-94e2-898647166473",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/wires/wires_d.dds",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "diffuseColor": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "normalMap": "/assets/materials/baked_props/wires/wires_n.dds",
+        "specular": [
+          0.9960780143737792,
+          0.9960780143737792,
+          0.9960780143737792,
+          1
+        ],
+        "specularMap": "/assets/materials/baked_props/wires/wires_s.dds",
+        "specularPower": 19,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 60,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "materialTag2": "utah",
+    "specularStrength0": "0.490196"
+  }
+}

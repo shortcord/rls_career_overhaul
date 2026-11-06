@@ -1,0 +1,27 @@
+{
+  "auctions": [
+    {
+      "id": "usedCarAuction",
+      "name": "Used Car Auction",
+      "description": "Enter the Pepper Valley used car auction.",
+      "sitesFile": "auction.sites.json",
+      "entryTrigger": "usedCarAuctionEntry",
+      "exitTrigger": "usedCarAuctionExit",
+      "counterTriggers": [
+        "auctionCounter_1"
+      ],
+      "spotTags": {
+        "playerStart": "auctionPlayerStart",
+        "playerExit": "auctionPlayerExit",
+        "spawn": "auctionSpawn",
+        "block": "auctionBlock",
+        "pathIn": "auctionPathIn",
+        "pathOut": "auctionPathOut",
+        "despawn": "auctionDespawn",
+        "return": "auctionReturn"
+      },
+      "poiId": "usedCarAuctionEntrance",
+      "preview": "auctionHouse.jpg"
+    }
+  ]
+}

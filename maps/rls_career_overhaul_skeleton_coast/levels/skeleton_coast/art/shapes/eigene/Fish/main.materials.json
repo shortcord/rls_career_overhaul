@@ -1,0 +1,92 @@
+{
+  "fish_guy_swim": {
+    "name": "fish_guy_swim",
+    "mapTo": "fish_guy_swim",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "02_-_Default_baseColor.jpeg",
+        "baseColorFactor": [
+          0.899080992,
+          0.899080992,
+          0.899080992,
+          1
+        ],
+        "baseColorMap": "02_-_Default_baseColor",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "detailNormalMap": "Stylized_08_Snow_normal.jpg",
+        "detailNormalMapStrength": 2,
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "metallicFactor": 0.677999973,
+        "normalMapStrength": 0,
+        "rotPivotOffset": [
+          -0.633000016,
+          -0.540000021
+        ],
+        "rotSpeed": 0.177000001,
+        "roughnessFactor": 0.263999999,
+        "scrollDir": [
+          0,
+          -0.465999991
+        ],
+        "scrollSpeed": 0.991999984,
+        "waveAmp": 0.0869999975,
+        "waveFreq": 2.44899988
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "rotPivotOffset": null,
+        "rotSpeed": null,
+        "roughnessFactor": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "rotPivotOffset": null,
+        "rotSpeed": null,
+        "roughnessFactor": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "baseColorFactor": null,
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "rotPivotOffset": null,
+        "rotSpeed": null,
+        "roughnessFactor": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "waveAmp": null,
+        "waveFreq": null
+      }
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

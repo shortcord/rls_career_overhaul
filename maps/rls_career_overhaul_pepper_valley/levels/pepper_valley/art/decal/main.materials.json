@@ -1,0 +1,255 @@
+{
+  "AsphaltRoad_damage_large_decal_01": {
+    "name": "AsphaltRoad_damage_large_decal_01",
+    "mapTo": "unmapped_mat",
+    "class": "Material",
+    "persistentId": "7605541f-093d-47ec-88ef-743b9361b2cc",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_asphalt_repair_patch_decal_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_asphalt_repair_patch_decal_b.color.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_asphalt_repair_patch_decal_nm.normal.png",
+        "opacityFactor": 0.899999976,
+        "opacityMap": "/levels/johnson_valley/art/decal/t_asphalt_repair_patch_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_asphalt_repair_patch_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "beamng",
+    "materialTag1": "decal",
+    "materialTag2": "RoadAndPath",
+    "specularStrength0": "0.490196",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "AsphaltRoad_damage_sml_decal_01": {
+    "name": "AsphaltRoad_damage_sml_decal_01",
+    "mapTo": "unmapped_mat",
+    "class": "Material",
+    "persistentId": "b0e8b9a6-063e-4ea0-b7e2-bdceb835df20",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_asphalt_pothole_decal_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999994993,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_asphalt_pothole_decal_b.color.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_asphalt_pothole_decal_nm.normal.png",
+        "opacityMap": "/levels/johnson_valley/art/decal/t_asphalt_pothole_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_asphalt_pothole_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "castShadows": false,
+    "materialTag0": "beamng",
+    "materialTag1": "decal",
+    "materialTag2": "RoadAndPath",
+    "specularStrength0": "0.490196",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "ind_decal_stuff_01": {
+    "name": "ind_decal_stuff_01",
+    "mapTo": "ind_decal_stuff_01",
+    "class": "Material",
+    "persistentId": "f8462b11-082f-4c27-a09b-faea18012180",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_01_decal_ao.data.png",
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_01_decal_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_01_decal_m.data.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_01_decal_nm.normal.png",
+        "opacityMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_01_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_01_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "materialTag0": "decal",
+    "materialTag1": "Industrial",
+    "materialTag2": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "ind_decal_stuff_02": {
+    "name": "ind_decal_stuff_02",
+    "mapTo": "ind_decal_stuff_02",
+    "class": "Material",
+    "persistentId": "9c2a25dc-eb4a-4e2c-86f8-756b488a4dc4",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_02_decal_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_02_decal_b.color.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_02_decal_nm.normal.png",
+        "normalMapStrength": 2,
+        "opacityMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_02_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_02_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "materialTag0": "decal",
+    "materialTag1": "Industrial",
+    "materialTag2": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "ind_decal_stuff_02b": {
+    "name": "ind_decal_stuff_02b",
+    "mapTo": "ind_decal_stuff_02b",
+    "class": "material",
+    "persistentId": "72e0ab33-abce-438d-a158-e0d3cb1711d5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_03_decal_ao.data.png",
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_03_decal_b.color.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_03_decal_nm.normal.png",
+        "opacityMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_03_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_industrial_stuff_03_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "materialTag0": "decal",
+    "materialTag1": "Industrial",
+    "materialTag2": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "m_dirty_ground_decal": {
+    "name": "m_dirty_ground_decal",
+    "mapTo": "unmapped_mat",
+    "class": "Material",
+    "persistentId": "a076c6ce-63de-4b86-89ea-22bf93b16577",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_dirty_ground_decal_ao.data.png",
+        "baseColorFactor": [
+          0.662744999,
+          0.603922009,
+          0.529411972,
+          1
+        ],
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_dirty_ground_decal_b.color.png",
+        "detailNormalMap": "/levels/johnson_valley/art/decal/t_asphalt_detail_02_nm.normal.png",
+        "detailNormalMapStrength": 10,
+        "detailScale": [
+          5,
+          5
+        ],
+        "normalMap": "/levels/johnson_valley/art/decal/t_dirty_ground_decal_nm.normal.png",
+        "opacityFactor": 0.437999994,
+        "opacityMap": "/levels/johnson_valley/art/decal/t_dirty_ground_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_dirty_ground_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "materialTag0": "decal",
+    "materialTag1": "beamng",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "m_pit_mats_collection_001_decal": {
+    "name": "m_pit_mats_collection_001_decal",
+    "mapTo": "m_pit_mats_collection_001_decal",
+    "class": "Material",
+    "persistentId": "a1c8e290-5153-407e-9618-040d58ca8fd8",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_pit_mats_collection_001_decal_b.color.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_pit_mats_collection_001_decal_nm.normal.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_pit_mats_collection_001_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  },
+  "m_spray_difficulty_sign_decal": {
+    "name": "m_spray_difficulty_sign_decal",
+    "mapTo": "m_spray_difficulty_sign_decal",
+    "class": "material",
+    "persistentId": "69faec0e-e0e8-4610-bc4e-30db73b9f5df",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_spray_difficulty_sign_decal_b.color.png",
+        "opacityMap": "/levels/johnson_valley/art/decal/t_spray_difficulty_sign_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_spray_difficulty_sign_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "cubemap_johnson_valley_reflection",
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "nat_decal_rocks_01": {
+    "name": "nat_decal_rocks_01",
+    "mapTo": "nat_decal_rocks_01",
+    "class": "Material",
+    "persistentId": "9a717521-be3e-4183-af7c-7105435319dc",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/johnson_valley/art/decal/t_fallen_rocks_01_decal_ao.data.png",
+        "baseColorFactor": [
+          0.933987975,
+          0.916324019,
+          0.832123995,
+          1
+        ],
+        "baseColorMap": "/levels/johnson_valley/art/decal/t_fallen_rocks_01_decal_b.color.png",
+        "normalMap": "/levels/johnson_valley/art/decal/t_fallen_rocks_01_decal_nm.normal.png",
+        "opacityMap": "/levels/johnson_valley/art/decal/t_fallen_rocks_01_decal_o.data.png",
+        "roughnessMap": "/levels/johnson_valley/art/decal/t_fallen_rocks_01_decal_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "materialTag0": "decal",
+    "materialTag1": "beamng",
+    "materialTag2": "Natural",
+    "specularStrength0": "0.784314",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  }
+}

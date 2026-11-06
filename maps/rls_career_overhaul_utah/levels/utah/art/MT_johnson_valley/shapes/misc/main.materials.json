@@ -1,0 +1,201 @@
+{
+  "glass_transparent": {
+    "name": "glass_transparent",
+    "mapTo": "glass_transparent",
+    "class": "Material",
+    "persistentId": "d86a9333-b959-4a03-9d45-d559897c3d29",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.636524975,
+          0.636519015,
+          0.636519015,
+          1
+        ],
+        "baseColorMap": "/levels/utah/art/mt_johnson_valley/shapes/misc/t_ind_glass_transparent_b.color.png",
+        "metallicFactor": 0.610000014,
+        "opacityFactor": 0.49000001,
+        "roughnessFactor": 0
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "castShadows": false,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "specularColor0": "1 1 1 1",
+    "specularStrength0": "0.05",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "tent": {
+    "name": "tent",
+    "mapTo": "tent",
+    "class": "material",
+    "persistentId": "9bd98bdd-a68f-49d4-b06d-148b9ee4d3a8",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/baked_props/tent/t_tent_ao.data.dds",
+        "baseColorMap": "/assets/materials/baked_props/tent/t_tent_b.color.dds",
+        "instanceDiffuse": true,
+        "normalMap": "/assets/materials/baked_props/tent/t_tent_nm.normal.dds",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/baked_props/tent/t_tent_r.data.dds",
+        "roughnessFactor": 0.607767701,
+        "vertColor": true
+      },
+      {
+        "instanceDiffuse": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "instanceDiffuse": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "groundType": "SHOCK_ABSORBER",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "toilet": {
+    "name": "toilet",
+    "mapTo": "toilet",
+    "class": "Material",
+    "persistentId": "45efc391-d1f0-41a2-a7c9-7f1ffbc0f654",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_johnson_valley/shapes/misc/toilet_d.dds",
+        "normalMap": "levels/utah/art/mt_johnson_valley/shapes/misc/toilet_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "levels/utah/art/mt_johnson_valley/shapes/misc/toilet_r.dds",
+        "specularMap": "levels/utah/art/mt_johnson_valley/shapes/misc/toilet_s.dds",
+        "specularPower": 19,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "annotation": "OBSTACLES",
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_concrete": {
+    "name": "ut_bld_concrete",
+    "mapTo": "ut_bld_concrete",
+    "class": "Material",
+    "persistentId": "36d69559-8434-4d37-b4c3-df1d9c823acd",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/ut_bld_concrete/ut_concrete_d.color.png",
+        "normalMap": "/assets/materials/tileable/concrete/ut_bld_concrete/ut_concrete_nm.normal.png",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/concrete/ut_bld_concrete/ut_concrete_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "order_simset": 0,
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_metal_rust": {
+    "name": "ut_bld_metal_rust",
+    "mapTo": "ut_bld_metal_rust",
+    "class": "Material",
+    "persistentId": "fe360116-c4a8-4999-9f98-794ef898f134",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_d.color.png",
+        "normalMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_nm.normal.png",
+        "reflectivityMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_ref.data.png",
+        "reflectivityMapFactor": 0.200000003,
+        "specularMap": "/assets/materials/tileable/metal/ut_bld_metal_rust/ut_metal_rust_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "order_simset": 1067860646,
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_rough_concrete": {
+    "name": "ut_bld_rough_concrete",
+    "mapTo": "ut_bld_rough_concrete",
+    "class": "Material",
+    "persistentId": "09689529-e448-4fc3-8c7a-3dc52a9662c4",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/ut_bld_rough_concrete/ut_concrete_rough_d.color.png",
+        "normalMap": "/assets/materials/tileable/concrete/ut_bld_rough_concrete/ut_concrete_rough_nm.normal.png",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/concrete/ut_bld_rough_concrete/ut_concrete_rough_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "utah",
+    "order_simset": 1061998075,
+    "translucentBlendOp": "None"
+  }
+}

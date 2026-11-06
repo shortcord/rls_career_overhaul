@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "id": "utah",
+  "name": "Utah",
+  "order": 2,
+  "expectedLocationCount": 5,
+  "stampLabel": "Utah Explorer",
+  "locations": [
+    {
+      "id": "underTheBridge",
+      "name": "Under the Bridge",
+      "description": "A quiet river crossing that runs through the ravine and passes under the large bridge.",
+      "zoneName": "underTheBridgeZone",
+      "parkingSpotName": "underTheBridge",
+      "scene": {
+        "timeOfDay": 0.68958333,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.20000000298023,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 6.123234263e-17
+        },
+        "cloudCover": 0.86,
+        "fogDensity": 0.3,
+        "fogAtmosphereHeight": 256.5,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "mainLookout",
+      "name": "Lookout Carpark",
+      "description": "A small, remote carpark overlooking the vast canyons of Utah.",
+      "zoneName": "mainLookoutZone",
+      "parkingSpotName": "mainLookout",
+      "scene": {
+        "timeOfDay": 0.8041666666666667,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.89999997615814,
+        "cloudWindDirection": {
+          "x": 0.9848077297,
+          "y": 0.1736481786
+        },
+        "cloudCover": 0.86,
+        "fogDensity": 0.3,
+        "fogAtmosphereHeight": 256.5,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "damWall",
+      "name": "Dam Wall",
+      "description": "A vast concrete wall holding back the large reservoir behind it.",
+      "zoneName": "damWallZone",
+      "parkingSpotName": "damWall",
+      "scene": {
+        "timeOfDay": 0.54166666666667,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 1.7999999523163,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 0
+        },
+        "cloudCover": 1.04,
+        "fogDensity": 0.3,
+        "fogAtmosphereHeight": 112,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "infoCenter",
+      "name": "Info Center Backyard",
+      "description": "The highest point in Utah that's accessible without an aircraft, offering the best possible view of the surrounding landscape.",
+      "zoneName": "infoCenterZone",
+      "parkingSpotName": "infoCenter",
+      "scene": {
+        "timeOfDay": 0.2208333333333333,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.20000000298023,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 6.123234263e-17
+        },
+        "cloudCover": 1.04,
+        "fogDensity": 1.42,
+        "fogAtmosphereHeight": 77.5,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    },
+    {
+      "id": "rockyDrop",
+      "name": "Rocky Drop",
+      "description": "A steep, rocky cliff that connects the Slopgear HQ to the road below.",
+      "zoneName": "rockyDropZone",
+      "parkingSpotName": "rockyDrop",
+      "scene": {
+        "timeOfDay": 0.25,
+        "play": false,
+        "year": 2026,
+        "month": 6,
+        "day": 20,
+        "utcOffset": -8,
+        "dstRule": "us",
+        "windSpeed": 0.20000000298023,
+        "cloudWindDirection": {
+          "x": 1,
+          "y": 6.123234263e-17
+        },
+        "cloudCover": 1.21,
+        "fogDensity": 2.1,
+        "fogAtmosphereHeight": 54.5,
+        "groundWind": {
+          "x": 0,
+          "y": 0,
+          "z": 0
+        }
+      }
+    }
+  ]
+}

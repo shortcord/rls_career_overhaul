@@ -1,0 +1,88 @@
+{
+  "deserttree_branches": {
+    "name": "deserttree_branches",
+    "mapTo": "deserttree_branches",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_branches_ao.data.png",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_branches_b.color.png",
+        "normalMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_branches_nm.normal.png",
+        "opacityMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_branches_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_branches_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 65,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "doubleSided": true,
+    "groundType": "FOREST",
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "deserttree_leaves": {
+    "name": "deserttree_leaves",
+    "mapTo": "deserttree_leaves",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_leaves_b.color.png",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_leaves_nm.normal.png",
+        "opacityMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_leaves_o.data.png",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_leaves_r.data.png"
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      }
+    ],
+    "alphaRef": 65,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "doubleSided": true,
+    "groundType": "LEAVES_STRONG",
+    "version": 1.5
+  },
+  "deserttree_trunk": {
+    "name": "deserttree_trunk",
+    "mapTo": "deserttree_trunk",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_trunk_ao.data.png",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_trunk_b.color.png",
+        "detailNormalMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_trunk_nm.normal.png",
+        "detailScale": [
+          8,
+          8
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_trunk_nm.normal.png",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/trees/deserttrees/t_desert_tree_trunk_r.data.png"
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      }
+    ],
+    "annotation": "NATURE",
+    "groundType": "FOREST",
+    "version": 1.5
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "line_yellow": {
+    "name": "line_yellow",
+    "mapTo": "line_yellow",
+    "class": "Material",
+    "persistentId": "9f2b2e0d-a71e-4f68-89b0-01814ded6833",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.580438972,
+          0.160874993,
+          1
+        ],
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/road/t_line_white_b.color.png",
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/road/t_line_white_nm.normal.png",
+        "opacityMap": "/levels/pepper_valley/art/mt_west_coast_usa/road/t_line_white_o.data.png",
+        "roughnessFactor": 0.400000006
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 255,
+    "annotation": "SOLID_LINE",
+    "castShadows": false,
+    "materialTag0": "RoadAndPath",
+    "materialTag1": "beamng",
+    "specularStrength0": "0",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  }
+}

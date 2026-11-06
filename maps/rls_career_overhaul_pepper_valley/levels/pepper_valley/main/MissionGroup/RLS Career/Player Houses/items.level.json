@@ -1,0 +1,18 @@
+{"name":"AJ's Drift Palace","class":"SimGroup","__parent":"Player Houses"}
+{"name":"FD Etown Tuning","class":"SimGroup","__parent":"Player Houses"}
+{"name":"FD Atlanta Tuning","class":"SimGroup","__parent":"Player Houses"}
+{"name":"FD LongBeach Tuning","class":"SimGroup","__parent":"Player Houses"}
+{"name":"FD Irwindale Tuning","class":"SimGroup","__parent":"Player Houses"}
+{"name":"FD Utah Tuning","class":"SimGroup","__parent":"Player Houses"}
+{"name":"unclesAbandonedCamper_icon","class":"BeamNGPointOfInterest","__parent":"Player Houses","position":[1329.3158,-1305.94482,122.938972],"rotationMatrix":[0.631751537,-0.775171041,-5.96046448e-08,5.13494015e-05,4.16636467e-05,-1.00000024,0.775171041,0.631751835,6.60419464e-05],"scale":[0.428938836,0.64875102,0.266688138]}
+{"name":"unclesAbandonedCamper_area","class":"BeamNGGameplayArea","__parent":"Player Houses","position":[1329.35986,-1305.91565,122.689369],"rotationMatrix":[0.780674338,0.624938011,0,-0.624938011,0.780674338,0,0,0,1],"scale":[1.60125661,1.60125661,1.19103789]}
+{"name":"saltFlatsPits_icon","class":"BeamNGPointOfInterest","__parent":"Player Houses","position":[-1756.12061,507.525085,113.982346],"rotationMatrix":[0.00708925724,-0.999974728,8.94069672e-08,6.56545162e-05,4.76837158e-07,-0.999999881,0.999974728,0.00708910823,6.58035278e-05],"scale":[0.428938836,0.64875102,0.266688138]}
+{"name":"saltFlatsPits_area","class":"BeamNGGameplayArea","__parent":"Player Houses","position":[-1756.06787,507.520233,113.046654],"rotationMatrix":[0.999998629,-0.00166935206,0,0.00166935206,0.999998629,0,0,0,1],"scale":[4.9718647,4.9718647,1.19103789]}
+{"name":"ajPepperGarage_icon","class":"BeamNGPointOfInterest","__parent":"Player Houses","position":[1459.01611,1125.17078,118.970772]}
+{"name":"ajPepperGarage_area","class":"BeamNGGameplayArea","__parent":"Player Houses","position":[1459.34814,1125.09985,117.534676],"scale":[7.9058547,12.69804,2.98876953]}
+{"name":"airportHangerPepper_icon","class":"BeamNGPointOfInterest","__parent":"Player Houses","position":[1259.78479,-826.395874,113.190437]}
+{"name":"unclesAbandonedHouse_icon","class":"BeamNGPointOfInterest","__parent":"Player Houses","position":[1361.05249,-1266.92346,123.213249]}
+{"name":"airportHangerPepper_area","class":"BeamNGGameplayArea","__parent":"Player Houses","position":[1259.75549,-826.168762,111.889496],"scale":[7.13494873,6.64832973,2.73867178]}
+{"name":"unclesAbandonedHouse_area","class":"BeamNGGameplayArea","__parent":"Player Houses","position":[1361.31995,-1267.22815,121.83889],"rotationMatrix":[0.978632092,-0.205619156,0,0.205619156,0.978632092,0,0,0,1],"scale":[3.37308979,3.37308979,3.15886211]}
+{"name":"Off Road Truck Garage_area","class":"BeamNGGameplayArea","__parent":"Player Houses","position":[1241.68384,-240.893738,115.371346],"rotationMatrix":[0.872722507,0.488216609,0,-0.488216609,0.872722507,0,0,0,1],"scale":[2.85270119,2.02542353,2.38339853]}
+{"name":"Off Road Truck Garage_icon","class":"BeamNGPointOfInterest","__parent":"Player Houses","position":[1241.03552,-240.119492,117.384926]}

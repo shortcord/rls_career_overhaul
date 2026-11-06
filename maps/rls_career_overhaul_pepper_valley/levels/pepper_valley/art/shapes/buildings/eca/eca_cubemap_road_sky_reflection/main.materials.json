@@ -1,0 +1,15 @@
+{
+  "eca_cubemap_road_sky_reflection":{
+    "class":"CubemapData",
+    "cubeFace":[
+      "/levels/Utah/art/shapes/buildings/eca/eca_cubemap_road_sky_reflection/cubemap/skybox_1",
+      "/levels/Utah/art/shapes/buildings/eca/eca_cubemap_road_sky_reflection/cubemap/skybox_2",
+      "/levels/Utah/art/shapes/buildings/eca/eca_cubemap_road_sky_reflection/cubemap/skybox_3",
+      "/levels/Utah/art/shapes/buildings/eca/eca_cubemap_road_sky_reflection/cubemap/skybox_4",
+      "/levels/Utah/art/shapes/buildings/eca/eca_cubemap_road_sky_reflection/cubemap/skybox_5",
+      "/levels/Utah/art/shapes/buildings/eca/eca_cubemap_road_sky_reflection/cubemap/skybox_6"
+    ],
+    "name":"eca_cubemap_road_sky_reflection",
+    "persistentId":"112b2f90-860c-41c9-8042-104598c12774"
+  }
+}

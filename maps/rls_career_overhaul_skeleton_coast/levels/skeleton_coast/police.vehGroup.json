@@ -1,0 +1,18 @@
+{
+  "type":"custom",
+  "data":[
+    {
+      "config":"Namibian_Traffic_Police (M)",
+      "model":"midsize"
+    },
+    {
+      "config":"D10_Namibian_Police_Force_(A)",
+      "model":"pickup"
+    }
+  ],
+  "name":"Skeleton Coast - Police",
+  "tags":[
+    "skeleton-coast",
+    "police"
+  ]
+}

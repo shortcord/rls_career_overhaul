@@ -1,0 +1,88 @@
+{
+  "tactile_indicator": {
+    "name": "tactile_indicator",
+    "mapTo": "tactile_indicator",
+    "class": "Material",
+    "persistentId": "4849922d-8ca6-4c57-9caf-115d7bc84569",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/tile/tactile_indicator/t_tactile_indicator_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/tile/tactile_indicator/t_tactile_indicator_b.color.png",
+        "normalMap": "/assets/materials/tileable/tile/tactile_indicator/t_tactile_indicator_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/tile/tactile_indicator/t_tactile_indicator_r.data.png",
+        "vertColor": true
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "SIDEWALK",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "trackbarriers": {
+    "name": "trackbarriers",
+    "mapTo": "trackbarriers",
+    "class": "Material",
+    "persistentId": "db49416e-d12b-456a-8bea-665e1165604d",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/atlas/trackbarriers/t_trackbarriers_b.color.png",
+        "detailScale": [
+          4,
+          0.5
+        ],
+        "metallicFactor": 1,
+        "metallicMap": "/assets/materials/atlas/trackbarriers/t_trackbarriers_m.data.png",
+        "normalMap": "/assets/materials/atlas/trackbarriers/t_trackbarriers_nm.normal.png",
+        "opacityMap": "/assets/materials/atlas/trackbarriers/t_trackbarriers_o.data.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/atlas/trackbarriers/t_trackbarriers_r.data.png",
+        "vertColor": true
+      },
+      {
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailScale": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 125,
+    "alphaTest": true,
+    "annotation": "GUARD_RAIL",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

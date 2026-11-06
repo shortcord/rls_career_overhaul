@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 3.0.0 commit date:2021-12-02, commit time:18:35, hash:f1cca3055776</authoring_tool>
+    </contributor>
+    <created>2022-07-01T18:25:48</created>
+    <modified>2022-07-01T18:25:48</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="dry_grass-effect">
+      <profile_COMMON>
+        <newparam sid="dry_grass_d_color_png-surface">
+          <surface type="2D">
+            <init_from>dry_grass_d_color_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="dry_grass_d_color_png-sampler">
+          <sampler2D>
+            <source>dry_grass_d_color_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="dry_grass_d_color_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="dry_grass_d_color_png" name="dry_grass_d_color_png">
+      <init_from>/C:/Doull_2/game/levels/peppervalley/art/shapes/groundcover/dry_grass_d.color.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="dry_grass-material" name="dry_grass">
+      <instance_effect url="#dry_grass-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Plane_129-mesh" name="Plane.129">
+      <mesh>
+        <source id="Plane_129-mesh-positions">
+          <float_array id="Plane_129-mesh-positions-array" count="69">-0.2755143 0.151461 -0.01239752 -0.3113563 0.09661746 0.6591809 0.3476459 -0.07723653 -0.02147138 0.3887625 0.05942434 0.6317691 0.3497993 -0.06290286 0.2075954 -0.2753784 0.1737338 0.3257476 -0.01085335 -0.05865401 0.2753878 -0.001444756 0.0508784 -0.01638823 0.02877461 -0.06156873 0.6529673 -0.1409598 0.2752275 -0.01173478 -0.3441883 0.2305614 0.5997537 0.1114317 -0.2591296 -0.008853137 -0.1273767 -0.4097972 0.5727639 -0.2476196 -0.1001491 0.2213257 -0.1276429 -0.3196846 0.0290032 0.1139354 -0.3301242 0.6589565 0.04974055 0.3146689 -0.05372691 0.09781223 0.3696853 0.6109176 0.09956479 0.3236047 0.1701467 -0.05496889 -0.3095926 0.3598428 0.1370867 -0.03427469 0.2422484 -0.04962861 -0.04069215 -0.007381975 0.2423782 0.01794373 0.603264</float_array>
+          <technique_common>
+            <accessor source="#Plane_129-mesh-positions-array" count="23" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_129-mesh-normals">
+          <float_array id="Plane_129-mesh-normals-array" count="114">-0.5533629 0.3042015 0.7754037 -0.34682 0.2187774 0.9120594 -0.003784 0.1319783 0.9912455 -0.3468248 0.2188149 0.9120486 -0.01607 -0.08671224 0.9961038 0.0272563 -0.05842858 0.9979194 -0.01605433 -0.08671504 0.9961038 0.4978821 -0.08955466 0.8626085 0.4978176 -0.08952617 0.8626486 0.02736419 -0.0584622 0.9979146 -0.3468534 0.2188096 0.9120389 -0.2813656 0.08734077 0.9556177 0.6703132 -0.1489474 0.7269766 0.3525953 0.05388951 0.934223 -0.284662 0.5558199 0.7810453 -0.3668469 -0.1484069 0.9183675 0.2316197 -0.5386676 0.8100553 -0.3184556 0.2133194 0.9236238 -0.3668903 -0.1483762 0.9183551 -0.1199651 -0.3859292 0.914695 -0.1199732 -0.3859323 0.9146927 -0.2846344 0.555827 0.7810503 -0.232558 -0.5824955 0.7788554 -0.06699419 -0.3771696 0.9237179 -0.1252098 -0.1026779 0.9868029 -0.06698018 -0.3771194 0.9237396 0.2089276 -0.05223417 0.9765352 0.23519 0.01746296 0.9717926 0.2089253 -0.05222439 0.9765362 0.1504263 0.4889622 0.8592369 0.2351424 0.01745539 0.9718042 0.2351529 0.017448 0.9718018 -0.06694275 -0.3770784 0.9237589 0.1023103 -0.2964178 0.9495626 0.1059784 0.6703286 0.7344579 0.1504084 0.4889962 0.8592206 0.09062433 0.3424888 0.935141 0.2351306 0.01738208 0.9718084</float_array>
+          <technique_common>
+            <accessor source="#Plane_129-mesh-normals-array" count="38" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_129-mesh-map-0">
+          <float_array id="Plane_129-mesh-map-0-array" count="120">0.007837414 0.378315 0.00147742 0.5178567 0.1538002 0.3785122 0.00147742 0.5178567 0.1660217 0.4959762 0.1822302 0.6517667 0.1660217 0.4959762 0.3365063 0.4733058 0.1538002 0.3785122 0.1822302 0.6517667 0.1660217 0.4959762 0.3365063 0.4733058 0.00147742 0.5178567 0.1660217 0.4959762 0.1538002 0.3785122 0.1822302 0.6517667 0.00147742 0.5178567 -0.004671514 0.6527667 0.3365063 0.4733058 0.3397175 0.3787633 0.1538002 0.3785122 0.3365063 0.4733058 0.3304717 0.6509734 0.1822302 0.6517667 0.01452577 0.7037293 0.1680071 0.832984 0.3219931 0.7037293 -0.008067011 0.9807792 0.1680071 0.832984 0.3412842 0.9789085 0.3412842 0.9789085 0.3219931 0.7037293 0.1680071 0.832984 0.1680071 0.832984 -0.008067011 0.9807792 0.01452577 0.7037293 0.007837414 0.378315 0.00147742 0.5178567 0.1538002 0.3785122 0.00147742 0.5178567 0.1660217 0.4959762 0.1822302 0.6517667 0.1660217 0.4959762 0.3365063 0.4733058 0.1538002 0.3785122 0.1822302 0.6517667 0.3365063 0.4733058 0.1660217 0.4959762 0.00147742 0.5178567 0.1660217 0.4959762 0.1538002 0.3785122 0.1822302 0.6517667 0.00147742 0.5178567 -0.004671514 0.6527667 0.3365063 0.4733058 0.3397175 0.3787633 0.1538002 0.3785122 0.3365063 0.4733058 0.3304717 0.6509734 0.1822302 0.6517667</float_array>
+          <technique_common>
+            <accessor source="#Plane_129-mesh-map-0-array" count="60" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Plane_129-mesh-colors-Col" name="Col">
+          <float_array id="Plane_129-mesh-colors-Col-array" count="240">0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 0 0.8941177 1 0 0 0 1 0 0 0 1 0 0 0 1 1 0 0.8941177 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 0 0.8941177 1 0 0 0 1 0.509804 0 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0.509804 0 1 1 1 0 0.8941177 1 0 0 0 1 0 0 0 1 0 0 0 1 0.9176471 0 1 1 0 0 0 1 0.509804 0 1 1 0.509804 0 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0.9176471 0 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 0 0.8941177 1 0 0 0 1 0 0 0 1 0 0 0 1 1 0 0.8941177 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 1 0 0.8941177 1 0 0 0 1 0.509804 0 1 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0.509804 0 1 1 1 0 0.8941177 1</float_array>
+          <technique_common>
+            <accessor source="#Plane_129-mesh-colors-Col-array" count="60" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Plane_129-mesh-vertices">
+          <input semantic="POSITION" source="#Plane_129-mesh-positions"/>
+        </vertices>
+        <triangles material="dry_grass-material" count="20">
+          <input semantic="VERTEX" source="#Plane_129-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Plane_129-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Plane_129-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Plane_129-mesh-colors-Col" offset="3" set="0"/>
+          <p>0 0 0 0 5 1 1 1 7 2 2 2 5 3 3 3 6 4 4 4 8 5 5 5 6 6 6 6 4 7 7 7 7 2 8 8 8 5 9 9 6 4 10 10 4 8 11 11 5 1 12 12 6 6 13 13 7 2 14 14 8 9 15 15 5 10 16 16 1 11 17 17 4 7 18 18 2 12 19 19 7 2 20 20 4 8 21 21 3 13 22 22 8 5 23 23 9 14 24 24 13 15 25 25 11 16 26 26 10 17 27 27 13 18 28 28 12 19 29 29 12 20 30 30 11 16 31 31 13 15 32 32 13 18 33 33 10 17 34 34 9 21 35 35 14 22 36 36 19 23 37 37 21 24 38 38 19 25 39 39 20 26 40 40 22 27 41 41 20 28 42 42 18 29 43 43 21 24 44 44 22 30 45 45 18 29 46 46 20 28 47 47 19 23 48 48 20 28 49 49 21 24 50 50 22 31 51 51 19 32 52 52 15 33 53 53 18 29 54 54 16 34 55 55 21 24 56 56 18 35 57 57 17 36 58 58 22 37 59 59</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="dry_grass_01_a150" name="dry_grass_01_a150" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#Plane_129-mesh" name="dry_grass_01_a150">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="dry_grass-material" target="#dry_grass-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

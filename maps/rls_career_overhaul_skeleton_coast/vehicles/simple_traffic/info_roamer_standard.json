@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["roamer_factory"],
+  "defaultPaintName1": "deep_plum",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropTraffic",
+  "Population": 3750,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.roamer_standard.Configuration"
+}

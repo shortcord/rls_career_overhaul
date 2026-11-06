@@ -1,0 +1,28 @@
+{
+  "eca_bld_commercial_doors":{
+    "Stages":[
+      {
+        "colorMap":"eca_bld_commercial_doors_a.dds",
+        "normalMap":"eca_bld_commercial_doors_n.dds",
+        "specularMap":"eca_bld_commercial_doors_s.dds",
+        "specularPower":1
+      },
+      {
+        "colorMap":"eca_bld_commercial_doors_d.dds",
+        "specularMap":"eca_bld_commercial_doors_s.dds",
+        "specularPower":1
+      },
+      {},
+      {}
+    ],
+    "class":"Material",
+    "cubemap":"cubemap_utah_reflection",
+    "mapTo":"eca_bld_commercial_doors",
+    "materialTag0":"beamng",
+    "materialTag1":"building",
+    "materialTag2":"east_coast_usa",
+    "name":"eca_bld_commercial_doors",
+    "persistentId":"5cf49eb2-0d5a-43a4-ac3e-94788d1b185c",
+    "translucentBlendOp":"None"
+  }
+}

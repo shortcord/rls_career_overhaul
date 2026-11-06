@@ -1,0 +1,2 @@
+{"name":"OuterLoop","class":"SimGroup","__parent":"BusStops"}
+{"name":"CentralLoop","class":"SimGroup","__parent":"BusStops"}

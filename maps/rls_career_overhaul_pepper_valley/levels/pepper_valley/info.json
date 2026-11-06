@@ -1,0 +1,185 @@
+{
+  "title": "Pepper Valley",
+  "description": "Pepper Valley",
+  "previews": [
+    "johnson_valley_01_preview.jpg",
+    "johnson_valley_04_preview.jpg",
+    "johnson_valley_02_preview.jpg",
+    "johnson_valley_05_preview.jpg",
+    "johnson_valley_03_preview.jpg"
+  ],
+  "size": [
+    3072,
+    3072
+  ],
+  "biome": "Desert",
+  "roads": "off road and paved",
+  "suitablefor": "levels.johnson_valley.info.suitablefor",
+  "features": "levels.johnson_valley.info.features",
+  "authors": "Raceless",
+  "defaultSpawnPointName": "spawn_garage2",
+  "spawnPoints": [
+    {
+      "translationId": "levels.johnson_valley.spawnpoints.spawn_gas_station",
+      "objectname": "spawn_gas_station",
+      "preview": "spawn_gas_station_preview.jpg"
+    },
+    {
+      "translationId": "Off-road track",
+      "objectname": "spawn_offroadtrack",
+      "preview": "spawn_offroadtrack_preview.jpg"
+    },
+    {
+      "translationId": "Garage",
+      "objectname": "spawn_garage",
+      "preview": "spawn_garage_preview.jpg"
+    },
+    {
+      "translationId": "Long Beach",
+      "objectname": "spawn_longBeach",
+      "preview": "spawn_longBeach_preview.jpg"
+    },
+    {
+      "translationId": "Atlanta",
+      "objectname": "spawn_fdrpAtlanta",
+      "preview": "spawn_atlanta_preview.jpg"
+    },
+    {
+      "translationId": "Airport",
+      "objectname": "spawn_airport",
+      "preview": "spawn_airport_preview.jpg"
+    },
+    {
+      "translationId": "Garage - ",
+      "objectname": "spawn_garage2",
+      "preview": "johnson_valley_02_preview.jpg"
+    },
+    {
+      "translationId": "Salt Flats",
+      "objectname": "spawn_event_saltflat",
+      "preview": "spawn_saltflat_preview.jpg"
+    },
+    {
+      "translationId": "levels.johnson_valley.spawnpoints.spawn_remote_pits",
+      "objectname": "spawn_remote_pits",
+      "preview": "spawn_remote_pits_preview.jpg"
+    },
+    {
+      "translationId": "levels.johnson_valley.spawnpoints.spawn_settlement",
+      "objectname": "spawn_settlement",
+      "preview": "spawn_settlement_preview.jpg"
+    },
+    {
+      "translationId": "levels.johnson_valley.spawnpoints.spawn_highway_north",
+      "objectname": "spawn_highway_north",
+      "preview": "spawn_highway_north_preview.jpg"
+    },
+    {
+      "translationId": "levels.johnson_valley.spawnpoints.spawn_highway_south",
+      "objectname": "spawn_highway_south",
+      "preview": "spawn_highway_south_preview.jpg"
+    },
+    {
+      "translationId": "levels.johnson_valley.spawnpoints.spawn_event_city",
+      "objectname": "spawn_event_city",
+      "preview": "spawn_event_city_preview.jpg"
+    },
+    {
+      "translationId": "Orlando",
+      "objectname": "spawn_orlando",
+      "preview": "orlando.jpg"
+    },
+    {
+      "translationId": "Englishtown",
+      "objectname": "spawn_englishtown",
+      "preview": "englishtown.jpg"
+    },
+    {
+      "translationId": "St. Louis",
+      "objectname": "spawn_stlouis",
+      "preview": "stLouis.jpg"
+    },
+    {
+      "translationId": "Seattle",
+      "objectname": "spawn_seattle",
+      "preview": "seattle.jpg"
+    },
+    {
+      "translationId": "Utah",
+      "objectname": "spawn_utah",
+      "preview": "utah.jpg"
+    },
+    {
+      "translationId": "Irwindale",
+      "objectname": "spawn_irwindale",
+      "preview": "irwindale.jpg"
+    }
+  ],
+  "minimap": [
+    {
+      "file": "minimap/minimap_terrain.png",
+      "size": [
+        3072,
+        3072
+      ],
+      "offset": [
+        -1536,
+        1536
+      ]
+    },
+    {
+      "file": "minimap/minimap_north.png",
+      "size": [
+        6142,
+        6142
+      ],
+      "offset": [
+        -1536,
+        7680
+      ]
+    },
+    {
+      "file": "minimap/minimap_south.png",
+      "size": [
+        6142,
+        6142
+      ],
+      "offset": [
+        -1536,
+        -1536
+      ]
+    },
+    {
+      "file": "minimap/minimap_east.png",
+      "size": [
+        3072,
+        3072
+      ],
+      "offset": [
+        1536,
+        1536
+      ]
+    },
+    {
+      "file": "minimap/minimap_west.png",
+      "size": [
+        6142,
+        6142
+      ],
+      "offset": [
+        -7680,
+        3584
+      ]
+    }
+  ],
+  "gasStationPoints": [
+    {
+      "translationId": "levels.johnson_valley.gasStationPoints.tyrannos",
+      "description": "levels.johnson_valley.gasStationPoints.tyrannos.description",
+      "preview": "fuel_tyrannos_preview.jpg",
+      "zoneNames": [
+        "fuel_tyrannos"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{"name":"springbokTransport_icon_21","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[402.27417,7991.42725,20.4865131]}
+{"name":"springbokTransport_area_1","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[402.27417,7991.42725,20.4865131]}
+{"name":"vogelsangGroen_area_1","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[3567.51538,6462.79395,92.8489227]}
+{"name":"scrappers_area_1","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[56763.0547,7498.32617,84.9292908]}
+{"name":"nebenan_area_1","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[56776.0938,7520.64648,84.6623306]}
+{"name":"nebenan_icon_18","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[56776.0938,7520.64648,84.6566238]}
+{"name":"scrappers_icon_19","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[56763.0547,7498.32617,84.9292908]}
+{"name":"vogelsangGroen_icon_20","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[3567.51538,6462.79395,92.8489227]}
+{"name":"vogelsangbayIbishu_icon_17","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[1738.55383,8026.71338,25.6831417]}
+{"name":"vogelsangbayIbishu_area_1","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[1738.55383,8026.71338,25.1752853]}
+{"name":"dakarDealership_area","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[5212.4375,7501.86768,115.013763],"rotationMatrix":[0.742908835,0.669392526,0,-0.669392526,0.742908835,0,0,0,1],"scale":[1,1,1.95185542]}
+{"name":"dakarDealership_icon","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[5212.4375,7501.86768,115.872368],"rotationMatrix":[0.742908835,0.669392526,0,-0.669392526,0.742908835,0,0,0,1]}
+{"name":"safariOutfittersDealership_icon","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[4057.83154,7701.84814,124.343628],"rotationMatrix":[0.997066915,0.076534383,0,-0.076534383,0.997066915,0,0,0,1]}
+{"name":"safariOutfittersDealership_area","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[4057.83154,7701.84814,123.485023],"rotationMatrix":[0.997066915,0.076534383,0,-0.076534383,0.997066915,0,0,0,1],"scale":[1,1,1.95185542]}
+{"name":"bushRiggsDealership_icon","class":"BeamNGPointOfInterest","__parent":"Dealerships","position":[56704.9883,7189.19336,86.6387024],"rotationMatrix":[0.998163104,0.0605843291,0,-0.0605843291,0.998163104,0,0,0,1]}
+{"name":"bushRiggsDealership_area","class":"BeamNGGameplayArea","__parent":"Dealerships","position":[56704.9883,7189.19336,85.780098],"rotationMatrix":[0.998163104,0.0605843291,0,-0.0605843291,0.998163104,0,0,0,1],"scale":[1,1,1.95185542]}

@@ -1,0 +1,17 @@
+{
+  "id": "utah.airExpress",
+  "version": 1,
+  "mapId": "utah",
+  "key": "airExpress",
+  "unlockFlag": "smallPackagesDelivery",
+  "unlockLabel": "Air Express Parcels",
+  "priority": 2,
+  "icon": "cardboardBox",
+  "label": "Air Parcel",
+  "shortDescription": "",
+  "important": true,
+  "template": {
+    "type": "post",
+    "moneyMultipler": 36
+  }
+}

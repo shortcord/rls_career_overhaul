@@ -1,0 +1,4 @@
+{"name":"northHubFenceInner","class":"SimGroup","__parent":"LogisitcsFencing"}
+{"name":"northHubFence","class":"SimGroup","__parent":"LogisitcsFencing"}
+{"name":"southHubFence","class":"SimGroup","__parent":"LogisitcsFencing"}
+{"name":"southHubFenceInner","class":"SimGroup","__parent":"LogisitcsFencing"}

@@ -1,0 +1,107 @@
+{
+  "passiveBusinesses": [
+    {
+      "id": "pepperRightTurnHwy",
+      "type": "passiveBusiness",
+      "archetypeId": "miniMart",
+      "name": "Right Turn Store Hwy",
+      "preview": "pepperRightTurnHwy.png",
+      "price": 75000,
+      "financingAllowed": false,
+      "description": "Own and stock the convenience store at Right Turn Store Hwy. Collect supplies from Southern Import/Exports, deliver them here, and collect the store's earnings.",
+      "mapId": "pepper_valley",
+      "supplierFacilityId": "southImport",
+      "supplierParkingSpotName": "southImportParking",
+      "receivingFacilityId": "pepperRightTurnHwyReceiving",
+      "receivingParkingSpotName": "Right Turn Store Hwy",
+      "sitesFile": "smallBusinesses.sites.json",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "rightTurnHwy_area",
+          "rightTurnHwy_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "cardboardBox",
+          "keyLabel": "Supply pallet",
+          "valueLabel": "128 slots"
+        },
+        {
+          "icon": "time",
+          "keyLabel": "Production cycle",
+          "valueLabel": "6 active minutes"
+        }
+      ]
+    },
+    {
+      "id": "pepperRightTurnTrackside",
+      "type": "passiveBusiness",
+      "archetypeId": "miniMart",
+      "name": "Right Turn Store Trackside",
+      "preview": "pepperRightTurnTrackside.png",
+      "price": 75000,
+      "financingAllowed": false,
+      "description": "Own and stock the convenience store at Right Turn Store Trackside. Collect supplies from Southern Import/Exports, deliver them here, and collect the store's earnings.",
+      "mapId": "pepper_valley",
+      "supplierFacilityId": "southImport",
+      "supplierParkingSpotName": "southImportParking",
+      "receivingFacilityId": "pepperRightTurnTracksideReceiving",
+      "receivingParkingSpotName": "Right Turn Store Trackside",
+      "sitesFile": "smallBusinesses.sites.json",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "rightTurnTrackside_area",
+          "rightTurnTrackside_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "cardboardBox",
+          "keyLabel": "Supply pallet",
+          "valueLabel": "128 slots"
+        },
+        {
+          "icon": "time",
+          "keyLabel": "Production cycle",
+          "valueLabel": "6 active minutes"
+        }
+      ]
+    },
+    {
+      "id": "pepperDynoShop",
+      "type": "passiveBusiness",
+      "archetypeId": "dinoShop",
+      "name": "Pepper Valley Dyno Shop",
+      "price": 500000,
+      "financingAllowed": false,
+      "description": "Own the local dyno shop and unlock unlimited free dyno pulls. Repairs remain paid.",
+      "mapId": "pepper_valley",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "pepperDynoShop_area",
+          "pepperDynoShop_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "checkmark",
+          "keyLabel": "Owner dyno access",
+          "valueLabel": "Unlimited free pulls"
+        }
+      ]
+    }
+  ]
+}

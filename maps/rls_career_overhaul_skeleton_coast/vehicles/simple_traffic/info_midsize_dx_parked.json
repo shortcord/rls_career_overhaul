@@ -1,0 +1,18 @@
+{
+  "paints": {},
+  "paintCollections": ["midsize_factory"],
+  "defaultPaintName1": "champagne",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropParked",
+  "isAuxiliary": true,
+  "Population": 6000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.midsize_dx_parked.Configuration"
+}

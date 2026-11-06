@@ -1,0 +1,226 @@
+{
+  "CONCA_NEW4": {
+    "name": "CONCA_NEW4",
+    "mapTo": "CONCA_NEW4",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/concanewdesatlighter.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "GRASS": {
+    "name": "trackcover_GRASS",
+    "mapTo": "GRASS",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/grass.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "GRASS1B": {
+    "name": "GRASS1B",
+    "mapTo": "GRASS1B",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/grass1bnew.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "GRASS1D": {
+    "name": "GRASS1D",
+    "mapTo": "GRASS1D",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/grass1dnew2.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "GRASSB": {
+    "name": "GRASSB",
+    "mapTo": "GRASSB",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/grassb.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "GRASSOT": {
+    "name": "GRASSOT",
+    "mapTo": "GRASSOT",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/grassot.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "RA01": {
+    "name": "RA01",
+    "mapTo": "RA01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/ra01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "RMBLBIGnonrm": {
+    "name": "RMBLBIGnonrm",
+    "mapTo": "RMBLBIGnonrm",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/rmbl_ra_new_21.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "RMBL_CURBG": {
+    "name": "RMBL_CURBG",
+    "mapTo": "RMBL_CURBG",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/rmbl_ra_new_21.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "RMBL_CURBW": {
+    "name": "RMBL_CURBW",
+    "mapTo": "RMBL_CURBW",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/rmbl_ra_new_21.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ROADA": {
+    "name": "ROADA",
+    "mapTo": "ROADA",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/roadanewcracks2.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ROADAOLD": {
+    "name": "ROADAOLD",
+    "mapTo": "ROADAOLD",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/roadcurbanew.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ROADB": {
+    "name": "ROADB",
+    "mapTo": "ROADB",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/roadanewcracksDARKER.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ROADDK2": {
+    "name": "ROADDK2",
+    "mapTo": "ROADDK2",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/roadcurbanew.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "SANDA": {
+    "name": "SANDA",
+    "mapTo": "SANDA",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/sandanew.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "SANDB": {
+    "name": "SANDB",
+    "mapTo": "SANDB",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/track cover/sandbdesat.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

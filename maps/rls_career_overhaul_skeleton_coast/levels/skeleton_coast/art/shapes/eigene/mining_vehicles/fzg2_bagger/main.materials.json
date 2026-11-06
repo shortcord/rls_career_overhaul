@@ -1,0 +1,197 @@
+{
+  "axle_rims_02": {
+    "name": "axle_rims_02",
+    "mapTo": "axle_rims_02",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_axle_rims_02_BaseColo.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "bucket": {
+    "name": "bucket",
+    "mapTo": "bucket",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_bucket_BaseColor.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "fzg2_bagger_glass": {
+    "name": "fzg2_bagger_glass",
+    "mapTo": "fzg2_bagger_glass",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Mul"
+  },
+  "generic_front_loader_arm_BaseColor": {
+    "name": "generic_front_loader_arm_BaseColor",
+    "mapTo": "generic_front_loader_arm_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_arm_BaseColor.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_axle_rims_01_BaseColo": {
+    "name": "generic_front_loader_axle_rims_01_BaseColo",
+    "mapTo": "generic_front_loader_axle_rims_01_BaseColo",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_axle_rims_01_BaseColo.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_backBumperFan_BaseCol": {
+    "name": "generic_front_loader_backBumperFan_BaseCol",
+    "mapTo": "generic_front_loader_backBumperFan_BaseCol",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_backBumperFan_BaseCol.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_back_BaseColor": {
+    "name": "generic_front_loader_back_BaseColor",
+    "mapTo": "generic_front_loader_back_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_back_BaseColor.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_back_hydraulics1_Base": {
+    "name": "generic_front_loader_back_hydraulics1_Base",
+    "mapTo": "generic_front_loader_back_hydraulics1_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_back_hydraulics1_Base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_cabin_outdoor1_BaseCo": {
+    "name": "generic_front_loader_cabin_outdoor1_BaseCo",
+    "mapTo": "generic_front_loader_cabin_outdoor1_BaseCo",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_cabin_outdoor1_BaseCo.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_front1_BaseColor": {
+    "name": "generic_front_loader_front1_BaseColor",
+    "mapTo": "generic_front_loader_front1_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_front1_BaseColor.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "generic_front_loader_front_hydraulics_Base": {
+    "name": "generic_front_loader_front_hydraulics_Base",
+    "mapTo": "generic_front_loader_front_hydraulics_Base",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_front_hydraulics_Base.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "insideCabin_parts": {
+    "name": "insideCabin_parts",
+    "mapTo": "insideCabin_parts",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_insideCabin_parts_Bas.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "railing_parts": {
+    "name": "railing_parts",
+    "mapTo": "railing_parts",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_railing_parts_BaseCol.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "tires": {
+    "name": "tires",
+    "mapTo": "tires",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg2_bagger/generic_front_loader_tires_BaseColor.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

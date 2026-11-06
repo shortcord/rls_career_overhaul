@@ -1,0 +1,11 @@
+{
+    "SkeletonCoastPolice_license_plate_2_1": {
+    "information":{
+        "authors":"THom6502",
+        "name":"SkeletonCoastPolice",
+        "value":50
+    },
+    "slotType" : "licenseplate_design_2_1",
+    "licenseplate_path" : "vehicles/common/licenseplates/SkeletonCoastPolice/SkeletonCoastPolice.json"
+    }
+}

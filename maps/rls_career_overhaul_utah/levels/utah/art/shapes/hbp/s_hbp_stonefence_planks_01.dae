@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.5.3 LTS commit date:2025-09-08, commit time:12:46, hash:67807e1800cc</authoring_tool>
+    </contributor>
+    <created>2026-09-23T23:26:34</created>
+    <modified>2026-09-23T23:26:34</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ind_concrete-effect">
+      <profile_COMMON>
+        <newparam sid="concrete-01_d_png-surface">
+          <surface type="2D">
+            <init_from>concrete-01_d_png</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="concrete-01_d_png-sampler">
+          <sampler2D>
+            <source>concrete-01_d_png-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="concrete-01_d_png-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="it_stone_wall-effect">
+      <profile_COMMON>
+        <newparam sid="t_stone_wall_b_color_dds-surface">
+          <surface type="2D">
+            <init_from>t_stone_wall_b_color_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="t_stone_wall_b_color_dds-sampler">
+          <sampler2D>
+            <source>t_stone_wall_b_color_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="t_stone_wall_b_color_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ut_bld_wood_old-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <color sid="diffuse">0.8 0.8 0.8 1</color>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="concrete-01_d_png" name="concrete-01_d_png">
+      <init_from>/D:/Desktop/Projects/BeamNG/Dev%20Mods/Materials/tileable/assets/materials/tileable/concrete/ind_concrete/concrete-01_d.png</init_from>
+    </image>
+    <image id="t_stone_wall_b_color_dds" name="t_stone_wall_b_color_dds">
+      <init_from>/C:/Users/Punisher/Desktop/RLS%20Projects/Material_Lib/tileable/tileable/assets/materials/tileable/stone/it_stone_wall/t_stone_wall_b.color.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="ind_concrete-material" name="ind_concrete">
+      <instance_effect url="#ind_concrete-effect"/>
+    </material>
+    <material id="it_stone_wall-material" name="it_stone_wall">
+      <instance_effect url="#it_stone_wall-effect"/>
+    </material>
+    <material id="ut_bld_wood_old-material" name="ut_bld_wood_old">
+      <instance_effect url="#ut_bld_wood_old-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="s_hbp_stonefence_01_001-mesh" name="s_hbp_stonefence_01.001">
+      <mesh>
+        <source id="s_hbp_stonefence_01_001-mesh-positions">
+          <float_array id="s_hbp_stonefence_01_001-mesh-positions-array" count="24">0.2005088 -0.1629242 -0.3688194 0.2005088 0.1629242 -0.3688194 0.2005088 0.1629242 1.175843 0.2005088 -0.1629242 1.175843 3.612139 -0.1629242 -0.3688194 3.612139 0.1629242 -0.3688194 3.612139 0.1629242 1.175843 3.612139 -0.1629242 1.175843</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01_001-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="s_hbp_stonefence_01_001-mesh-normals">
+          <float_array id="s_hbp_stonefence_01_001-mesh-normals-array" count="36">0 -1 0 1 0 0 0 0 1 0 0 -1 0 1 0 -1 0 0 0 -1 0 1 0 0 0 0 1 0 0 -1 0 1 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01_001-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="s_hbp_stonefence_01_001-mesh-map-0">
+          <float_array id="s_hbp_stonefence_01_001-mesh-map-0-array" count="72">0.4864367 0.1925958 0.7142392 0.6051587 0.4864367 0.6051588 0.5108788 0.6051588 0.4891211 0.1925958 0.5108788 0.1925958 0.4864367 0.4564847 0.7142392 0.5435153 0.4864367 0.5435153 0.4864367 0.5435153 0.7142392 0.4564846 0.4864367 0.4564847 0.4864367 0.6051588 0.7142392 0.1925958 0.4864367 0.1925958 0.4850548 0.6051588 0.4850548 0.1925958 0.4850548 0.1925958 0.4864367 0.1925958 0.7142392 0.1925958 0.7142392 0.6051587 0.5108788 0.6051588 0.4891211 0.6051588 0.4891211 0.1925958 0.4864367 0.4564847 0.7142392 0.4564846 0.7142392 0.5435153 0.4864367 0.5435153 0.7142392 0.5435153 0.7142392 0.4564846 0.4864367 0.6051588 0.7142392 0.6051588 0.7142392 0.1925958 0.4850548 0.6051588 0.4850548 0.5435153 0.4850548 0.1925958</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01_001-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="s_hbp_stonefence_01_001-mesh-colors-Attribute" name="Attribute">
+          <float_array id="s_hbp_stonefence_01_001-mesh-colors-Attribute-array" count="144">1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01_001-mesh-colors-Attribute-array" count="36" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="s_hbp_stonefence_01_001-mesh-vertices">
+          <input semantic="POSITION" source="#s_hbp_stonefence_01_001-mesh-positions"/>
+        </vertices>
+        <triangles material="ind_concrete-material" count="12">
+          <input semantic="VERTEX" source="#s_hbp_stonefence_01_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#s_hbp_stonefence_01_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#s_hbp_stonefence_01_001-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#s_hbp_stonefence_01_001-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>0 0 0 0 7 0 1 1 3 0 2 2 6 1 3 3 4 1 4 4 5 1 5 5 3 2 6 6 6 2 7 7 2 2 8 8 1 3 9 9 4 3 10 10 0 3 11 11 2 4 12 12 5 4 13 13 1 4 14 14 3 5 15 15 1 5 16 16 0 5 17 17 0 6 18 18 4 6 19 19 7 6 20 20 6 7 21 21 7 7 22 22 4 7 23 23 3 8 24 24 7 8 25 25 6 8 26 26 1 9 27 27 5 9 28 28 4 9 29 29 2 10 30 30 6 10 31 31 5 10 32 32 3 11 33 33 2 11 34 34 1 11 35 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="s_hbp_stonefence_01-mesh" name="s_hbp_stonefence_01">
+      <mesh>
+        <source id="s_hbp_stonefence_01-mesh-positions">
+          <float_array id="s_hbp_stonefence_01-mesh-positions-array" count="48">0.1963445 -0.03537857 1.224674 0.1963445 -0.03537857 1.414151 0.1963445 0.03537857 1.224674 0.1963445 0.03537857 1.414151 3.617336 -0.03537857 1.224674 3.617336 -0.03537857 1.414151 3.617336 0.03537857 1.224674 3.617336 0.03537857 1.414151 0.1963445 -0.03537857 0.6257336 0.1963445 -0.03537857 0.8152103 0.1963445 0.03537857 0.6257336 0.1963445 0.03537857 0.8152103 3.617336 -0.03537857 0.6257336 3.617336 -0.03537857 0.8152103 3.617336 0.03537857 0.6257336 3.617336 0.03537857 0.8152103</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="s_hbp_stonefence_01-mesh-normals">
+          <float_array id="s_hbp_stonefence_01-mesh-normals-array" count="48">0 1 0 0 -1 0 0 0 -1 0 0 1 0 1 0 0 -1 0 0 0 -1 0 0 1 0 1 0 0 -1 0 0 0 -1 0 0 1 0 1 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01-mesh-normals-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="s_hbp_stonefence_01-mesh-map-0">
+          <float_array id="s_hbp_stonefence_01-mesh-map-0-array" count="96">-0.5238051 0.763563 1.763426 0.6368813 -0.5238051 0.6368813 1.763426 0.7635629 -0.5238051 0.6368813 1.763426 0.6368813 1.763426 0.5236536 -0.5238051 0.4763462 -0.5238051 0.5236536 -0.5238051 0.5236536 1.763426 0.4763462 1.763426 0.5236536 -0.5238051 0.3631188 1.763426 0.236437 -0.5238051 0.236437 1.763426 0.3631187 -0.5238051 0.236437 1.763426 0.236437 1.763426 0.5236536 -0.5238051 0.4763462 -0.5238051 0.5236536 -0.5238051 0.5236536 1.763426 0.4763462 1.763426 0.5236536 -0.5238051 0.763563 1.763426 0.763563 1.763426 0.6368813 1.763426 0.7635629 -0.5238051 0.763563 -0.5238051 0.6368813 1.763426 0.5236536 1.763426 0.4763462 -0.5238051 0.4763462 -0.5238051 0.5236536 -0.5238051 0.4763462 1.763426 0.4763462 -0.5238051 0.3631188 1.763426 0.3631187 1.763426 0.236437 1.763426 0.3631187 -0.5238051 0.3631188 -0.5238051 0.236437 1.763426 0.5236536 1.763426 0.4763462 -0.5238051 0.4763462 -0.5238051 0.5236536 -0.5238051 0.4763462 1.763426 0.4763462</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01-mesh-map-0-array" count="48" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="s_hbp_stonefence_01-mesh-colors-Attribute" name="Attribute">
+          <float_array id="s_hbp_stonefence_01-mesh-colors-Attribute-array" count="192">0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1 0.345098 0.1529412 0.1137255 1</float_array>
+          <technique_common>
+            <accessor source="#s_hbp_stonefence_01-mesh-colors-Attribute-array" count="48" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="s_hbp_stonefence_01-mesh-vertices">
+          <input semantic="POSITION" source="#s_hbp_stonefence_01-mesh-positions"/>
+        </vertices>
+        <triangles material="ut_bld_wood_old-material" count="16">
+          <input semantic="VERTEX" source="#s_hbp_stonefence_01-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#s_hbp_stonefence_01-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#s_hbp_stonefence_01-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#s_hbp_stonefence_01-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>3 0 0 0 6 0 1 1 2 0 2 2 5 1 3 3 0 1 4 4 4 1 5 5 6 2 6 6 0 2 7 7 2 2 8 8 3 3 9 9 5 3 10 10 7 3 11 11 11 4 12 12 14 4 13 13 10 4 14 14 13 5 15 15 8 5 16 16 12 5 17 17 14 6 18 18 8 6 19 19 10 6 20 20 11 7 21 21 13 7 22 22 15 7 23 23 3 8 24 24 7 8 25 25 6 8 26 26 5 9 27 27 1 9 28 28 0 9 29 29 6 10 30 30 4 10 31 31 0 10 32 32 3 11 33 33 1 11 34 34 5 11 35 35 11 12 36 36 15 12 37 37 14 12 38 38 13 13 39 39 9 13 40 40 8 13 41 41 14 14 42 42 12 14 43 43 8 14 44 44 11 15 45 45 9 15 46 46 13 15 47 47</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="s_hbp_stonefence_01_a45" name="s_hbp_stonefence_01_a45" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+            <instance_geometry url="#s_hbp_stonefence_01-mesh" name="s_hbp_stonefence_01_a45">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="it_stone_wall-material" target="#it_stone_wall-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="ind_concrete-material" target="#ind_concrete-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="ut_bld_wood_old-material" target="#ut_bld_wood_old-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="colmesh-1" name="colmesh-1" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0.2788866 0 0 0 1</matrix>
+            <instance_geometry url="#s_hbp_stonefence_01_001-mesh" name="colmesh-1">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ind_concrete-material" target="#ind_concrete-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="nulldetail10" name="nulldetail10" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

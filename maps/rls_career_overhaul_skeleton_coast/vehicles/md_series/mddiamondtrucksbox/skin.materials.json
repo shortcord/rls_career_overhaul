@@ -1,0 +1,170 @@
+{
+  "md_series_main.skin.mddiamondtrucksbox": {
+    "name": "md_series_main.skin.mddiamondtrucksbox",
+    "mapTo": "md_series_main.skin.mddiamondtrucksbox",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/md_series/md_series_main_ao.data.dds",
+        "baseColorMap": "/vehicles/md_series/md_series_main_b.color.dds",
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/md_series/md_series_main_m.data.dds",
+        "normalMap": "/vehicles/md_series/md_series_main_nm.normal.dds",
+        "roughnessMap": "/vehicles/md_series/md_series_main_r.data.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/md_series/md_series_main_ao.data.dds",
+        "baseColorMap": "/vehicles/md_series/mddiamondtrucksbox/md_series_skin_mddiamondtrucksbox.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/md_series/md_series_main_cc.data.dds",
+        "clearCoatRoughnessFactor": 0.0500000007,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.5,
+        "normalMap": "/vehicles/md_series/md_series_main_nm.normal.dds",
+        "opacityMap": "/vehicles/md_series/md_series_main_c.data.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "md_series_main_alt.skin.mddiamondtrucksbox": {
+    "name": "md_series_main_alt.skin.mddiamondtrucksbox",
+    "mapTo": "md_series_main_alt.skin.mddiamondtrucksbox",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/md_series/md_series_main_ao.data.dds",
+        "baseColorMap": "/vehicles/md_series/md_series_main_alt_b.color.dds",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/md_series/md_series_main_alt_m.data.dds",
+        "normalMap": "/vehicles/md_series/md_series_main_nm.normal.dds",
+        "roughnessMap": "/vehicles/md_series/md_series_main_alt_r.data.dds",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/md_series/md_series_main_ao.data.dds",
+        "baseColorMap": "/vehicles/md_series/mddiamondtrucksbox/md_series_skin_mddiamondtrucksbox.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/md_series/md_series_main_alt_cc.data.dds",
+        "clearCoatRoughnessFactor": 0.0500000007,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.5,
+        "normalMap": "/vehicles/md_series/md_series_main_nm.normal.dds",
+        "opacityMap": "/vehicles/md_series/md_series_main_alt_c.data.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "pickup.skin.mddiamondtrucksbox": {
+    "name": "pickup.skin.mddiamondtrucksbox",
+    "mapTo": "pickup.skin.mddiamondtrucksbox",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/pickup/pickup_main_ao.data.DDS",
+        "baseColorMap": "/vehicles/common/pickup/pickup_main_b.color.DDS",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/pickup/pickup_main_m.data.DDS",
+        "normalMap": "vehicles/common/pickup/pickup_n.dds",
+        "roughnessMap": "/vehicles/common/pickup/pickup_main_r.data.DDS",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/pickup/pickup_main_ao.data.DDS",
+        "baseColorMap": "/vehicles/md_series/mddiamondtrucksbox/md_series_skin_mddiamondtrucksbox.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/pickup/pickup_main_cc.data.DDS",
+        "clearCoatRoughnessFactor": 0.05,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.5,
+        "normalMap": "/vehicles/common/pickup/pickup_n.dds",
+        "opacityMap": "/vehicles/pickup/pickup_skin_o.data.DDS",
+        "useAnisotropic": true
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "order_simset": 1052095917,
+    "version": 1.5
+  },
+  "us_semi_cargobox.skin_md_series_cargobox.mddiamondtrucksbox": {
+    "name": "us_semi_cargobox.skin_md_series_cargobox.mddiamondtrucksbox",
+    "mapTo": "us_semi_cargobox.skin_md_series_cargobox.mddiamondtrucksbox",
+    "class": "material",
+    "persistentId": "",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/cargobox_ao.data.dds",
+        "baseColorMap": "/vehicles/common/cargobox_b.color.DDS",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/cargobox_m.data.DDS",
+        "normalMap": "/vehicles/common/us_semi_cargobox/cargobox_nm.normal.dds",
+        "roughnessFactor": 1,
+        "roughnessMap": "/vehicles/common/cargobox_r.data.DDS",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/cargobox_ao.data.dds",
+        "baseColorMap": "/vehicles/md_series/mddiamondtrucksbox/cargobox_skin_mddiamondtrucksbox.dds",
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.800000012,
+        "normalMap": "/vehicles/common/us_semi_cargobox/cargobox_nm.normal.dds",
+        "opacityMap": "/vehicles/common/cargobox_c.data.DDS",
+        "roughnessFactor": 0.600000024
+      },
+      {
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

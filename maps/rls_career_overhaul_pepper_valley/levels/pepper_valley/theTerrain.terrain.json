@@ -1,0 +1,33 @@
+{
+  "binaryFormat": "version(char), size(unsigned int), heightMap(heightMapSize * heightMapItemSize), layerMap(layerMapSize * layerMapItemSize), layerTextureMap(layerMapSize * layerMapItemSize), materialNames",
+  "datafile": "/levels/pepper_valley/theTerrain.ter",
+  "heightMapItemSize": 2,
+  "heightMapSize": 16777216,
+  "heightmapImage": "/levels/pepper_valley/theTerrain.terrainheightmap.png",
+  "layerMapItemSize": 1,
+  "layerMapSize": 16777216,
+  "materials": [
+    "rockydirt",
+    "Grass2",
+    "dirt_sandy",
+    "dirt_rocky",
+    "dirt_rocky_large",
+    "dirt_loose",
+    "asphalt",
+    "dirt_loose_dusty",
+    "sand",
+    "dirt_grass",
+    "Dirt",
+    "Grass",
+    "RLS_MYMUD",
+    "RLS_MYMUDMID",
+    "RLS_MYMUDDEEP",
+    "RLS_MYMUDBOUNTY",
+    "RLS_SAND",
+    "rlsasphalt",
+    "asphalt2",
+    "rls_concrete"
+  ],
+  "size": 4096,
+  "version": 9
+}

@@ -1,0 +1,6 @@
+{"name":"rls_demo_derby_marker_icon_demo_pepper","class":"BeamNGWaypoint","__parent":"RandomFixes","position":[1074.46313,-752.487183,113.03231],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821]}
+{"name":"rls_demo_derby_marker_area_demo_pepper","class":"BeamNGTrigger","__parent":"RandomFixes","position":[1074.47546,-752.411499,111.844406],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821],"scale":[4.27831364,3.85087252,6.08582783]}
+{"name":"roadAdjustments","class":"SimGroup","__parent":"RandomFixes"}
+{"name":"minimapFixes","class":"SimGroup","__parent":"RandomFixes"}
+{"name":"moreCarparks","class":"SimGroup","__parent":"RandomFixes"}
+{"name":"highwayBarrier","class":"SimGroup","__parent":"RandomFixes"}

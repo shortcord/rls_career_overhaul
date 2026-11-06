@@ -1,0 +1,96 @@
+{
+  "version": 1,
+  "groups": {
+    "downstairs": {
+      "diamonds": [
+        "hbpRgbPreview112",
+        "hbpRgbPreview1121",
+        "hbpRgbPreview11211",
+        "hbp_diamond_down_01",
+        "hbp_diamond_down_02"
+      ],
+      "triangles": [
+        "hbp_triangle_down_01",
+        "hbp_triangle_down_02",
+        "hbp_triangle_down_03",
+        "hbp_triangle_down_04",
+        "hbp_triangle_down_05"
+      ],
+      "cairo": [
+        "hbp_cairo_down_01",
+        "hbp_cairo_down_02",
+        "hbp_cairo_down_03",
+        "hbp_cairo_down_04",
+        "hbp_cairo_down_05"
+      ],
+      "honeycomb": [
+        "hbp_honeycomb_down_01",
+        "hbp_honeycomb_down_02",
+        "hbp_honeycomb_down_03",
+        "hbp_honeycomb_down_04",
+        "hbp_honeycomb_down_05"
+      ],
+      "hextrails": [
+        "hbp_hex_trails_down_01",
+        "hbp_hex_trails_down_02"
+      ],
+      "rhombus": [
+        "hbp_rhombus_down_01",
+        "hbp_rhombus_down_02",
+        "hbp_rhombus_down_03",
+        "hbp_rhombus_down_04",
+        "hbp_rhombus_down_05",
+        "hbp_rhombus_down_06"
+      ],
+      "petal": [
+        "hbp_petal_down_01",
+        "hbp_petal_down_02",
+        "hbp_petal_down_03",
+        "hbp_petal_down_04",
+        "hbp_petal_down_05"
+      ],
+      "arrowline": [
+        "hbp_arrowline_down_01",
+        "hbp_arrowline_down_02"
+      ]
+    },
+    "upstairs": {
+      "diamonds": [
+        "hbpRgbPreview1111",
+        "hbpRgbPreview11111",
+        "hbpRgbPreview111111"
+      ],
+      "triangles": [
+        "hbp_triangle_up_01",
+        "hbp_triangle_up_02",
+        "hbp_triangle_up_03"
+      ],
+      "cairo": [
+        "hbp_cairo_up_01",
+        "hbp_cairo_up_02",
+        "hbp_cairo_up_03"
+      ],
+      "honeycomb": [
+        "hbp_honeycomb_up_01",
+        "hbp_honeycomb_up_02",
+        "hbp_honeycomb_up_03"
+      ],
+      "hextrails": [
+        "hbp_hex_trails_up_01"
+      ],
+      "rhombus": [
+        "hbp_rhombus_up_01",
+        "hbp_rhombus_up_02",
+        "hbp_rhombus_up_03"
+      ],
+      "petal": [
+        "hbp_petal_up_01",
+        "hbp_petal_up_02",
+        "hbp_petal_up_03"
+      ],
+      "arrowline": [
+        "hbp_arrowline_up_01"
+      ]
+    }
+  }
+}

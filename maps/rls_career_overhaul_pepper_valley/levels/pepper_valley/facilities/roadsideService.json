@@ -1,0 +1,178 @@
+{
+  "default": {
+    "services": [
+      "repair",
+      "maintenance",
+      "tuning"
+    ],
+    "laborMultiplier": 1.25
+  },
+  "spots": {
+    "saltPits_repairSpot": {
+      "name": "Salt Flats Pits",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop8_repairSpot": {
+      "name": "Remote Pit Stop 8",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop7_repairSpot": {
+      "name": "Remote Pit Stop 7",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "dragTent_repairSpot": {
+      "name": "Drag Strip Service Tent",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop6_repairSpot": {
+      "name": "Remote Pit Stop 6",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop5_repairSpot": {
+      "name": "Remote Pit Stop 5",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop4_repairSpot": {
+      "name": "Remote Pit Stop Main",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop3_repairSpot": {
+      "name": "Remote Pit Stop 3",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop2_repairSpot": {
+      "name": "Remote Pit Stop 2",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop1_repairSpot": {
+      "name": "Remote Pit Stop 1",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "remotePitStop_repairSpot": {
+      "name": "Remote Pit Stop",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair7_repairSpot": {
+      "name": "Irwindale Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair6_repairSpot": {
+      "name": "Utah Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair5_repairSpot": {
+      "name": "Seattle Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair4_repairSpot": {
+      "name": "St. Louis Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair3_repairSpot": {
+      "name": "Englishtown Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair2_repairSpot": {
+      "name": "Orlando Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair1_repairSpot": {
+      "name": "Road Atlanta Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "trackRepair_repairSpot": {
+      "name": "Long Beach Track Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "offroadTrackSpot_repairSpot": {
+      "name": "Off-Road Track Service",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "burnoutTag_repairSpot": {
+      "name": "Burnout Pad Service",
+      "services": [
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "aj2_repairSpot": {
+      "name": "AJ's Drift Palace Service",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    },
+    "aj1_repairSpot": {
+      "name": "AJ's Pepper Valley Service",
+      "services": [
+        "repair",
+        "maintenance",
+        "tuning"
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "it_stone_wall_2": {
+    "name": "it_stone_wall_2",
+    "mapTo": "it_stone_wall_2",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/tileable/stone/t_stone_wall/t_stone_wall_b.color.png",
+        "normalMap": "/assets/materials/tileable/stone/t_stone_wall/t_stone_wall_nm.normal.png",
+        "roughnessMap": "/assets/materials/tileable/stone/t_stone_wall/t_stone_wall_r.data.png",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "groundType": "ROCK",
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_wood_oak_raw_02": {
+    "name": "m_wood_oak_raw_02",
+    "mapTo": "m_wood_oak_raw_02",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "t_wood_oak_raw_01_b.color"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

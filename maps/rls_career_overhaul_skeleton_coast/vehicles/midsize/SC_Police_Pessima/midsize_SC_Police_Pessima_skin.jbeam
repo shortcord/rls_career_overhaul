@@ -1,0 +1,11 @@
+{
+  "midsize_skin_SC_Police_pessima":{
+    "globalSkin":"SC_Police_pessima",
+    "information":{
+      "authors":"Dynamic Decals",
+      "name":"SC Police Pessima",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

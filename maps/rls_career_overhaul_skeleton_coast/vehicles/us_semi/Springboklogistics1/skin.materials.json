@@ -1,0 +1,138 @@
+{
+  "cabover_main.skin.Springboklogistics1": {
+    "name": "cabover_main.skin.Springboklogistics1",
+    "mapTo": "cabover_main.skin.Springboklogistics1",
+    "class": "Material",
+    "persistentId": "70a9ba8a-00db-44c8-866c-d13dbf4447fe",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/us_semi/cabover_main_ao.data.dds",
+        "baseColorMap": "/vehicles/us_semi/cabover_main_b.color.dds",
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/us_semi/cabover_main_m.data.dds",
+        "normalMap": "/vehicles/us_semi/cabover_main_nm.normal.dds",
+        "roughnessMap": "/vehicles/us_semi/cabover_main_r.data.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/us_semi/cabover_main_ao.data.dds",
+        "baseColorMap": "/vehicles/us_semi/Springboklogistics1/cabover_skin_Springboklogistics1.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/us_semi/cabover_main_c.data.dds",
+        "clearCoatRoughnessFactor": 0.0500000007,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.746999979,
+        "normalMap": "/vehicles/us_semi/cabover_main_nm.normal.dds",
+        "opacityMap": "/vehicles/us_semi/cabover_main_c.data.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "longnose_main.skin.Springboklogistics1": {
+    "name": "longnose_main.skin.Springboklogistics1",
+    "mapTo": "longnose_main.skin.Springboklogistics1",
+    "class": "Material",
+    "persistentId": "6436ce55-07f4-49d8-965b-6815fda691e1",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/us_semi/longnose_main_ao.data.dds",
+        "baseColorMap": "/vehicles/us_semi/longnose_main_b.color.dds",
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/us_semi/longnose_main_m.data.dds",
+        "normalMap": "/vehicles/us_semi/longnose_main_nm.normal.dds",
+        "roughnessMap": "/vehicles/us_semi/longnose_main_r.data.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/us_semi/longnose_main_ao.data.dds",
+        "baseColorMap": "/vehicles/us_semi/Springboklogistics1/conventional_skin_Springboklogistics1.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/us_semi/longnose_main_cc.data.dds",
+        "clearCoatRoughnessFactor": 0.0500000007,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.750999987,
+        "normalMap": "/vehicles/us_semi/longnose_main_nm.normal.dds",
+        "opacityMap": "/vehicles/us_semi/longnose_main_c.data.dds"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "us_semi_cargobox.skin_us_semi_cargobox.Springboklogistics1": {
+    "name": "us_semi_cargobox.skin_us_semi_cargobox.Springboklogistics1",
+    "mapTo": "us_semi_cargobox.skin_us_semi_cargobox.Springboklogistics1",
+    "class": "material",
+    "persistentId": "",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/cargobox_ao.data.dds",
+        "baseColorMap": "/vehicles/common/cargobox_b.color.DDS",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/cargobox_m.data.DDS",
+        "normalMap": "/vehicles/common/us_semi_cargobox/cargobox_nm.normal.dds",
+        "roughnessFactor": 1,
+        "roughnessMap": "/vehicles/common/cargobox_r.data.DDS",
+        "useAnisotropic": true
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/cargobox_ao.data.dds",
+        "baseColorMap": "/vehicles/us_semi/Springboklogistics1/cargobox_skin_Springboklogistics1.dds",
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.800000012,
+        "normalMap": "/vehicles/common/us_semi_cargobox/cargobox_nm.normal.dds",
+        "opacityMap": "/vehicles/common/cargobox_c.data.DDS",
+        "roughnessFactor": 0.600000024
+      },
+      {
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

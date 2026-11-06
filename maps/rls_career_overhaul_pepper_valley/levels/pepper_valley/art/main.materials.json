@@ -1,0 +1,89 @@
+{
+  "rlspepperroad": {
+    "name": "rlspepperroad",
+    "mapTo": "rlspepperroad",
+    "class": "Material",
+    "persistentId": "a4f7ca77-c455-4cf3-b28a-ca70580d6080",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/decalroad/rlsroad2.dds",
+        "diffuseColor": [
+          0.860607028,
+          0.876006007,
+          0.891407013,
+          0.738390028
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "rlspepperroad2": {
+    "name": "rlspepperroad2",
+    "mapTo": "rlspepperroad2",
+    "class": "Material",
+    "persistentId": "fcd4eb3a-74fe-45c0-96a9-27e5b244619c",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/decalroad/rlsroad3.dds",
+        "diffuseColor": [
+          0.860607028,
+          0.876006007,
+          0.891407013,
+          0.738390028
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "rlspepperroadempty": {
+    "name": "rlspepperroadempty",
+    "mapTo": "rlspepperroadempty",
+    "class": "Material",
+    "persistentId": "423cfc95-4747-4268-996a-71526a07013f",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/decalroad/rlsroad3.dds",
+        "diffuseColor": [
+          0.860607028,
+          0.876006007,
+          0.891407013,
+          0.738390028
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentZWrite": true
+  }
+}

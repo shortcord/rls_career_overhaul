@@ -1,0 +1,47 @@
+{
+  "sitesFile": "demolition.sites.json",
+  "arenaBarriersGroup": "Demo Derby",
+  "defaults": {
+    "maxOpponents": 9,
+    "noContactTimeoutSeconds": 60,
+    "noContactWarningSeconds": 10,
+    "timeLimitSeconds": 300,
+    "removeTraffic": true,
+    "startEngineOnSpawn": true,
+    "type": ["demo"],
+    "reward": 500,
+    "aiAggression": 1.2,
+    "aiRetargetInterval": 8,
+    "aiPlayerTargetWeight": 0.4,
+    "aiAvoidCars": "off",
+    "aiActivationDelay": 2.0,
+    "maxDamageForDisplayAi": 50000,
+    "maxDamageForDisplayPlayer": 100000,
+    "winnerRepairInsurance": {
+      "enabled": true,
+      "defaultSelected": false,
+      "rewardCutPercent": 50
+    }
+  },
+  "events": {
+    "demo_pepper": {
+      "label": "Pepper Valley Demolition Derby",
+      "introSplash": {
+        "title": "Pepper Valley Demolition Derby",
+        "subtitle": "Airport burnout arena",
+        "body": "Smash the competition until you're the last car running. Configure the field, then stage on the grid.",
+        "features": [
+          "5-minute limit: eliminate all rivals or outscore the survivors",
+          "Rewards scale with the number of opponents",
+          "Keep fighting: 60 seconds without contact eliminates you",
+          "Keep moving: sitting still for 30 seconds eliminates you"
+        ],
+        "continueLabel": "Continue"
+      },
+      "spawnPrefix": "Spawn",
+      "startSpotName": "start_demo_pepper",
+      "playZone": "DemoPlayZone",
+      "eliminationZones": []
+    }
+  }
+}

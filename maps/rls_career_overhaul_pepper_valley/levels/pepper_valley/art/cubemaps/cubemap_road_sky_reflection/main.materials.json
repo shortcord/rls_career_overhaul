@@ -1,0 +1,26 @@
+{
+  "cubemap_road_sky_reflection" : {
+    "name" : "cubemap_road_sky_reflection",
+    "class" : "CubemapData",
+    "persistentId" : "f7e2259a-9176-454f-81c2-b213d1993ea2",
+    "cubeFace" : [
+      "/levels/pepper_valley/art/cubemaps/cubemap_road_sky_reflection/cubemap/skybox_1.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_road_sky_reflection/cubemap/skybox_2.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_road_sky_reflection/cubemap/skybox_3.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_road_sky_reflection/cubemap/skybox_4.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_road_sky_reflection/cubemap/skybox_5.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_road_sky_reflection/cubemap/skybox_6.dds"
+    ]
+  },
+  "road_sky_reflection" : {
+    "name" : "road_sky_reflection",
+    "mapTo" : "unmapped_mat",
+    "class" : "Material",
+    "persistentId" : "3c2b191e-905e-454e-a365-1294617ec4c5",
+    "Stages" : [ {}, {}, {}, {} ],
+    "cubemap" : "cubemap_road_sky_reflection",
+    "materialTag0" : "beamng",
+    "materialTag1" : "Natural",
+    "materialTag2" : "BNG_sky"
+  }
+}

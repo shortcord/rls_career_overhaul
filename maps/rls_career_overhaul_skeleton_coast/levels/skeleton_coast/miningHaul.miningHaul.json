@@ -1,0 +1,108 @@
+{
+  "id": "skeletonCoastMiningCompany",
+  "label": "Mining Company",
+  "sitesFile": "miningTruck.sites.json",
+  "officeSpot": "miningOffice",
+  "truckSpawnSpot": "miningTruckSpawn",
+  "pickupSpots": [
+    "miningPickup1",
+    "miningPickup2",
+    "miningPickup3"
+  ],
+  "dropOffArea": "miningDropOff",
+  "routeHintRoadPersistentId": "b994806e-ebc7-417c-ab64-c46de1f1b325",
+  "organizationId": "skeletonCoastMiningCompany",
+  "vehicle": {
+    "model": "dumptruck",
+    "config": "standard",
+    "bedSettings": "dumptruck",
+    "licenseText": "HT-55"
+  },
+  "material": {
+    "model": "rock_pile",
+    "config": "default",
+    "count": 1,
+    "tons": 100
+  },
+  "loader": {
+    "model": "wl40",
+    "config": "arm_bucket_alt",
+    "licenseText": "WL-40",
+    "pickupOffset": [
+      0,
+      -25,
+      0.25
+    ],
+    "lookAtMaterial": true
+  },
+  "economy": {
+    "payPerRock": 350,
+    "payPerTon": 20,
+    "diamondChance": 0.12,
+    "diamondBonus": 4500,
+    "repairCost": 750
+  },
+  "detection": {
+    "officeRadius": 8,
+    "pickupRadius": 10,
+    "dropoffVehicleRadius": 14,
+    "minDeliveryRatio": 0.005,
+    "bedRouteRatio": 0.02,
+    "nodeStep": 10,
+    "processNodeStep": 1,
+    "dropoffPadding": [
+      2,
+      2,
+      1.25
+    ]
+  },
+  "autoLoad": {
+    "enabled": true,
+    "dropHeight": 0.35,
+    "spacing": 1.25,
+    "offsetSide": -0.45,
+    "offsetForward": 0,
+    "offsetUp": 0
+  },
+  "bedSettings": {
+    "dumptruck": {
+      "offsetBack": 3.1,
+      "offsetSide": 0,
+      "length": 5.8,
+      "width": 3.2,
+      "floorHeight": 1.05,
+      "loadHeight": 3.0
+    },
+    "us_semi": {
+      "offsetBack": 3.0,
+      "offsetSide": -0.45,
+      "length": 6.0,
+      "width": 2.4,
+      "floorHeight": 0.3,
+      "loadHeight": 3.5
+    }
+  },
+  "dropOffAreaFallback": {
+    "position": [
+      2741.2981,
+      5374.80664,
+      74.6072845
+    ],
+    "rotationMatrix": [
+      0.759369135,
+      -0.650660038,
+      0,
+      0.650660038,
+      0.759369135,
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      2.46868801,
+      4.36005211,
+      2.06645441
+    ]
+  }
+}

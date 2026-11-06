@@ -1,0 +1,131 @@
+{
+  "levelId": "pepper_valley",
+  "saveFile": "/career/rls_career/pepperValleyDakar.json",
+  "poiPrefix": "pepperValleyDakar",
+  "sitesFile": "/levels/pepper_valley/dakarStages.sites.json",
+  "registrationSpot": "dakarRegistration",
+  "startSpot": "dakarStart",
+  "finishSpot": "dakarFinish",
+  "checkpointNamePrefix": "dakarStage",
+  "checkpointImageDir": "/levels/pepper_valley/facilities/dakar/",
+  "checkpointImageExtension": ".png",
+  "checkpointRevealDistanceMeters": 300,
+  "checkpointRadiusMeters": 18,
+  "startRadiusMeters": 18,
+  "showHeadingClue": true,
+  "classOrder": ["SSV", "Raid", "Heavy", "Unlimited"],
+  "classes": {
+    "SSV": {
+      "label": "SSV",
+      "bodyStyles": ["Buggy", "UTV", "ATV"],
+      "checkpointCount": 3,
+      "endpointMinSpacingMeters": 500,
+      "minSpacingMeters": 1200
+    },
+    "Raid": {
+      "label": "Raid",
+      "bodyStyles": ["Pickup", "SUV"],
+      "checkpointCount": 4,
+      "endpointMinSpacingMeters": 500,
+      "minSpacingMeters": 1500
+    },
+    "Heavy": {
+      "label": "Heavy",
+      "models": ["stambecco", "midtruck", "md_series", "us_semi"],
+      "checkpointCount": 5,
+      "endpointMinSpacingMeters": 500,
+      "minSpacingMeters": 1000
+    },
+    "Unlimited": {
+      "label": "Unlimited",
+      "models": ["racetruck"],
+      "checkpointCount": 5,
+      "endpointMinSpacingMeters": 500,
+      "minSpacingMeters": 1000
+    }
+  },
+  "repairKit": {
+    "slots": 4,
+    "weightKg": 50,
+    "costVehicleValueFactor": 0.05,
+    "penaltySeconds": 60
+  },
+  "rewards": {
+    "baseMoney": 5000,
+    "moneyPerKm": 500,
+    "placements": [
+      { "id": "first", "label": "1st Place", "secondsPerKm": 45, "bonusFactor": 0.25 },
+      { "id": "second", "label": "2nd Place", "secondsPerKm": 60, "bonusFactor": 0.12 },
+      { "id": "third", "label": "3rd Place", "secondsPerKm": 70, "bonusFactor": 0.05 },
+      { "id": "top10", "label": "Finished", "secondsPerKm": 999999, "bonusFactor": 0 }
+    ]
+  },
+  "failure": {
+    "failActiveOnLoad": true,
+    "allowRecoveryAfterFailure": false
+  },
+  "accolades": [
+    {
+      "id": "touaregHunter",
+      "title": "Touareg Hunter",
+      "description": "Win 3 Dakars.",
+      "stat": "totalWins",
+      "target": 3,
+      "reward": { "money": 50000 }
+    },
+    {
+      "id": "duneWalker",
+      "title": "Dune Walker",
+      "description": "Complete a Dakar without using any Repair Kits.",
+      "stat": "noRepairCompletions",
+      "target": 1,
+      "reward": { "money": 20000 }
+    },
+    {
+      "id": "sandFlea",
+      "title": "Sand Flea",
+      "description": "Complete 10 SSV Dakars.",
+      "stat": "classCompletions",
+      "class": "SSV",
+      "target": 10,
+      "reward": { "money": 100000 }
+    },
+    {
+      "id": "desertFox",
+      "title": "Desert Fox",
+      "description": "Complete 10 Raid Dakars.",
+      "stat": "classCompletions",
+      "class": "Raid",
+      "target": 10,
+      "reward": { "money": 100000 }
+    },
+    {
+      "id": "ironRhino",
+      "title": "Iron Rhino",
+      "description": "Complete 10 Heavy Class Dakars.",
+      "stat": "classCompletions",
+      "class": "Heavy",
+      "target": 10,
+      "reward": { "money": 100000 }
+    },
+    {
+      "id": "oryx",
+      "title": "Oryx",
+      "description": "Complete 10 Unlimited Dakars.",
+      "stat": "classCompletions",
+      "class": "Unlimited",
+      "target": 10,
+      "reward": { "money": 100000 }
+    },
+    {
+      "id": "shaiHulud",
+      "title": "Shai-Hulud",
+      "description": "Complete 50 Dakars.",
+      "stat": "totalCompletions",
+      "target": 50,
+      "reward": {
+        "money": 1000000
+      }
+    }
+  ]
+}

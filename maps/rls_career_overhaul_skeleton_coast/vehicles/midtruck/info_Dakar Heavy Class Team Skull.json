@@ -1,0 +1,47 @@
+{
+  "0-100 km/h":15.8,
+  "0-60 mph":14.7,
+  "Body Style":"Truck",
+  "BoundingBox":[
+    [
+      -0.6203,
+      -1.589,
+      -0.6496
+    ],
+    [
+      1.5169,
+      3.583,
+      1.62
+    ]
+  ],
+  "Brand":"Autobello",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Heavy Class Team Skull",
+  "Country":"Italy",
+  "Description":"Dakar Heavy class entry for Team Skull, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"6x6",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "InsuranceClass":"commercial",
+  "Off-Road Score":53,
+  "Population":100,
+  "Power":242,
+  "PowerPeakRPM":"3600 - 4300",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":38.004440743627,
+  "Torque":505,
+  "TorquePeakRPM":3000,
+  "Transmission":"Manual",
+  "Type":"Truck",
+  "Value":104140,
+  "Weight":3280,
+  "Weight/Power":13.553719008264,
+  "Years":{
+    "max":1988,
+    "min":1971
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

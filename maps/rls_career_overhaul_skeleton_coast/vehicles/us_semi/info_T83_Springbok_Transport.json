@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":22.7,
+  "0-60 mph":21.5,
+  "100-0 km/h":100.1,
+  "60-0 mph":308,
+  "Body Style":"Fifth Wheel Truck ",
+  "BoundingBox":[
+    [
+      -0.9714,
+      -4.18,
+      -0.7626
+    ],
+    [
+      1.8224,
+      3.634,
+      2.7273
+    ]
+  ],
+  "Braking G":0.393,
+  "Commercial Class":"Class 8 Truck",
+  "Config Type":"Factory",
+  "Configuration":"T83_Springbok_Transport",
+  "Description":"Extended 3-axle conventional-cab semi truck with a sleeper cab, higher power and other accessories. Springbok Transport edition. Skin made by THom6502.",
+  "Drag Times":{
+    "brakingG":0.3274445948,
+    "time_0_60":23.31000081,
+    "time_1000":21.92250076,
+    "time_1_4":25.51100089,
+    "time_1_8":17.50750062,
+    "time_330":12.17100039,
+    "time_60":4.861000124,
+    "velAt_1_4":28.70117611,
+    "velAt_1_8":21.32965295
+  },
+  "Drivetrain":"6x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Off-Road Score":25,
+  "Population":5500,
+  "Power":410,
+  "PowerPeakRPM":2000,
+  "Propulsion":"ICE",
+  "Top Speed":43.4177517547,
+  "Torque":1685,
+  "TorquePeakRPM":1200,
+  "Transmission":"Manual",
+  "Value":302000,
+  "Weight":8820,
+  "Weight/Power":21.512195121951,
+  "Years":{
+    "max":1986,
+    "min":1978
+  },
+  "defaultPaintName1":"White",
+  "defaultPaintName2":"Vibrant Red",
+  "defaultPaintName3":"Vibrant Red"
+}

@@ -1,0 +1,29 @@
+{
+  "heightMapPath":"/levels/pepper_valley/export/theTerrain_heightmap.png",
+  "heightScale":200,
+  "holeMapPath":"/levels/pepper_valley/export/theTerrain_holemap.png",
+  "name":"theTerrain",
+  "opacityMaps":[
+    "/levels/pepper_valley/export/theTerrain_layerMap_0_rockydirt.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_10_Grass2.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_11_dirt_sandy.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_12_dirt_rocky.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_13_dirt_rocky_large.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_1_dirt_loose.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_2_asphalt.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_3_asphalt2.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_4_dirt_loose_dusty.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_5_sand.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_6_dirt_grass.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_7_Dirt.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_8_groundmodel_asphalt1.png",
+    "/levels/pepper_valley/export/theTerrain_layerMap_9_Grass.png"
+  ],
+  "pos":{
+    "x":-1534.391357,
+    "y":-1533.79248,
+    "z":99.93948364
+  },
+  "squareSize":0.75,
+  "type":"TerrainData"
+}

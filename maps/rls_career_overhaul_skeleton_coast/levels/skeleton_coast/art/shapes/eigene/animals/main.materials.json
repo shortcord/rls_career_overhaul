@@ -1,0 +1,18 @@
+{
+  "antelopes": {
+    "name": "antelopes",
+    "mapTo": "antelopes",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/animals/antelopes"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaTest": true,
+    "doubleSided": true,
+    "translucentBlendOp": "None"
+  }
+}

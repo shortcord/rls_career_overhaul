@@ -1,0 +1,11 @@
+{
+"md_series_skin_mddiamondtrucks": {
+    "information":{
+        "authors":"THom6502",
+        "name":"mddiamondtrucks",
+        "value":0
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "mddiamondtrucks"
+  },
+}

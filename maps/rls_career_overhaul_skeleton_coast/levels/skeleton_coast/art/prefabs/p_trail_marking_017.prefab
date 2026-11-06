@@ -1,0 +1,58 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      groupPosition = "-1070.3626708984 -7.6630511283875 156.59167480469";
+
+   new DecalRoad() {
+      drivability = "-1";
+      lanesLeft = "1";
+      lanesRight = "1";
+      oneWay = "0";
+      flipDirection = "0";
+      gatedRoad = "0";
+      useSubdivisions = "1";
+      ImprovedSpline = "1";
+      startTangent = "0";
+      endTangent = "0";
+      looped = "0";
+      smoothness = "0.5";
+      detail = "0.100000001";
+      overObjects = "0";
+      material = "m_wip_trails_easy";
+      textureLength = "5";
+      breakAngle = "3";
+      renderPriority = "10";
+      zBias = "0";
+      decalBias = "0.000500000024";
+      distanceFade = "0 0";
+      startEndFade = "0 0";
+      hiddenInNavi = "0";
+      position = "0 0 184.685455";
+      scale = "1 1 1";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      persistentId = "434db338-5861-43b7-9323-e5d72343bd99";
+
+      Node = "0.000000 0.000000 184.685455 4.000000";
+      Node = "-8.191162 -0.388161 183.252914 4.000000";
+      Node = "-18.159424 -3.548218 182.948639 4.000000";
+      Node = "-26.695435 -4.429436 184.942398 4.000000";
+      Node = "-31.679932 -6.648537 183.587372 4.000000";
+      Node = "-38.477173 -15.671860 177.507492 4.000000";
+      Node = "-45.119019 -22.352234 173.319336 4.000000";
+      Node = "-51.486084 -24.453869 171.632172 4.000000";
+      Node = "-59.445679 -21.804165 172.178040 4.000000";
+      Node = "-68.927979 -18.181229 175.782959 4.000000";
+      Node = "-81.808716 -12.377598 182.968277 4.000000";
+      Node = "-100.253418 0.639574 199.674713 4.000000";
+      Node = "-107.484863 7.501127 206.710526 4.000000";
+      Node = "-113.858887 12.423278 212.389908 4.000000";
+      Node = "-124.064575 12.296854 215.982971 4.000000";
+      Node = "-141.124023 8.025752 217.888107 4.000000";
+      Node = "-159.201904 9.595776 221.784393 4.000000";
+      Node = "-178.043945 13.520985 220.468185 4.000000";
+   };
+};
+//--- OBJECT WRITE END ---

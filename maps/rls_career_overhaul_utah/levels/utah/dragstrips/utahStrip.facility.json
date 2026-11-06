@@ -1,0 +1,12 @@
+{
+  "id": "utahStrip",
+  "name": "Utah Drag Strip",
+  "description": "Main drag racing facility at Utah Raceway",
+  "stripIds": [
+    "/levels/utah/dragstrips/utahStrip_main.strip.json"
+  ],
+  "metadata": {
+    "created": "2024-01-01",
+    "modified": "2024-01-01"
+  }
+}

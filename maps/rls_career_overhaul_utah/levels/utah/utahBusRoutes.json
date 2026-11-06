@@ -1,0 +1,28 @@
+{
+  "routes": {
+    "mainTour": {
+      "name": "Main Tour",
+      "stops": [
+        ["ut_bs_01", "Info Center"],
+        ["ut_bs_02", "Derby Arena"],
+        ["ut_bs_03", "Airfield"],
+        ["ut_bs_04", "Ruins"],
+        ["ut_bs_05", "Construction"],
+        ["ut_bs_06", "Scenic View"],
+        ["ut_bs_07", "Auto Repair"]
+      ]  
+      },
+      "mainTourReverse": {
+      "name": "Return Tour",
+      "stops": [
+        ["ut_bs_07_b", "Auto Repair"],
+        ["ut_bs_06_b", "Scenic Drive"],
+        ["ut_bs_05_b", "Construction"],
+        ["ut_bs_04_b", "Ruins"],
+        ["ut_bs_03_b", "Airfield"],
+        ["ut_bs_02_b", "Derby Arena"],
+        ["ut_bs_01_b", "Info Center"]
+      ]  
+      }
+  }
+}

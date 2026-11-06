@@ -1,0 +1,93 @@
+{
+  "Material_001": {
+    "name": "Material_001",
+    "mapTo": "Material.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.00677771121,
+          0.0327202901,
+          0.0352178812,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "backgroundisland2": {
+    "name": "backgroundisland2",
+    "mapTo": "backgroundisland2",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/background_island2/background_island2_base.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/shapes/misc/t_dirt_rocky_nm.normal.png",
+        "detailScale": [
+          500,
+          500
+        ]
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_LOOSE",
+    "translucentBlendOp": "None"
+  },
+  "backgroundisland2road": {
+    "name": "backgroundisland2road",
+    "mapTo": "backgroundisland2road",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/decalroad/dirt/m_dirt_road_01/t_dirt_road_b.color.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "DIRT"
+  },
+  "road": {
+    "name": "road",
+    "mapTo": "road",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.434153706,
+          0.339293212,
+          0.2372199,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "groundType": "DIRT",
+    "translucentBlendOp": "None"
+  }
+}

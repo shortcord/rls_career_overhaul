@@ -1,0 +1,11 @@
+{"name":"concrete barriers","class":"SimGroup","persistentId":"1790ffbf-7ef1-492f-aeef-5a48c1cceb14","__parent":"v1"}
+{"name":"homegarage","class":"SimGroup","persistentId":"8cee311f-2e09-4dea-b41e-4ed01b909808","__parent":"v1"}
+{"name":"outerroad","class":"SimGroup","persistentId":"786aba12-4e9c-4653-8f6a-ed3e902539f2","__parent":"v1"}
+{"name":"airport","class":"SimGroup","persistentId":"a2c5c9f7-4916-479e-a8de-d3b67558480f","__parent":"v1"}
+{"name":"saltflat","class":"SimGroup","persistentId":"ea2169c1-45de-4938-b74a-ce7f736cd85f","__parent":"v1"}
+{"name":"intersection2","class":"SimGroup","persistentId":"00c181cc-8354-48fc-8dac-5371fae7f2a4","__parent":"v1"}
+{"name":"intersection1","class":"SimGroup","persistentId":"0881e85a-a5fb-4a6d-8711-23847a70581c","__parent":"v1"}
+{"name":"DRAGTREE","class":"SimGroup","persistentId":"eef27a03-6792-46db-836a-1147bc797e28","__parent":"v1"}
+{"name":"offroadtrack1","class":"SimGroup","persistentId":"6141aa53-5c96-461a-bdf5-7653fa290959","__parent":"v1"}
+{"name":"constructionbarriers","class":"SimGroup","persistentId":"93a07e5a-62c2-479c-935e-6729d6dc7c7c","__parent":"v1"}
+{"name":"fence","class":"SimGroup","persistentId":"927b2b77-d238-407f-9fbc-290d4844c3af","__parent":"v1"}

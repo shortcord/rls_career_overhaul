@@ -1,0 +1,154 @@
+{
+  "cubemap_automation_reflection": {
+    "name": "cubemap_automation_reflection",
+    "class": "CubemapData",
+    "normalize": true,
+    "cubeFace": [
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox5.hdr.dds"
+    ]
+  },
+  "cubemap_buildings_reflection": {
+    "name": "cubemap_buildings_reflection",
+    "class": "CubemapData",
+    "normalize": true,
+    "cubeFace": [
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox5.hdr.dds"
+    ]
+  },
+  "cubemap_city": {
+    "name": "cubemap_city",
+    "class": "CubemapData",
+    "normalize": true,
+    "cubeFace": [
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox5.hdr.dds"
+    ]
+  },
+  "cubemap_substancePanorama_reflection": {
+    "name": "cubemap_substancePanorama_reflection",
+    "class": "CubemapData",
+    "normalize": true,
+    "cubeFace": [
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox5.hdr.dds"
+    ]
+  },
+  "cubemap_wca_reflection": {
+    "name": "cubemap_wca_reflection",
+    "class": "CubemapData",
+    "normalize": true,
+    "cubeFace": [
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/pepper_valley/art/cubemaps/cubemap_johnson_valley_reflection/cubemap/skybox5.hdr.dds"
+    ]
+  },
+  "ind_bricks_01": {
+    "name": "ind_bricks_01",
+    "mapTo": "ind_bricks_01",
+    "class": "Material",
+    "persistentId": "0bfcbd0f-73f6-414a-a746-3f32be522e17",
+    "Stages": [
+      {
+        "colorMap": "/levels/industrial/art/shapes/buildings/ind_bricks_01_d.color.png",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/levels/industrial/art/shapes/buildings/ind_bricks_01_nm.normal.png",
+        "overlayMap": "/levels/industrial/art/shapes/buildings/utah_breakup_texture.dds",
+        "roughnessFactor": 0.634000003,
+        "specularMap": "/levels/industrial/art/shapes/buildings/ind_bricks_02_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "translucentBlendOp": "None"
+  },
+  "ind_decaying_industrial_interiors": {
+    "name": "ind_decaying_industrial_interiors",
+    "mapTo": "ind_decaying_industrial_interiors",
+    "class": "Material",
+    "persistentId": "5961928d-9b6b-4d85-b858-53c6781f42e6",
+    "Stages": [
+      {
+        "colorMap": "/levels/industrial/art/shapes/buildings/ind_decaying_industrial_interiors.color.png",
+        "detailScale": [
+          6,
+          6
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 63,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial"
+  },
+  "bld_glass_transparent": {
+    "name": "bld_glass_transparent",
+    "mapTo": "bld_glass_transparent",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.1,
+          0.14,
+          0.18,
+          0.32
+        ],
+        "metallicFactor": 0.1,
+        "pixelSpecular": true,
+        "roughnessFactor": 0.12
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "castShadows": false,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "translucent": true,
+    "translucentBlendOp": "LerpAlpha",
+    "translucentZWrite": false,
+    "version": 1.5
+  }
+}

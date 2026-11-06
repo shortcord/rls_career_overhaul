@@ -1,0 +1,8 @@
+{
+  "description": "Empty demolition sites placeholder for shared FRE scanners.",
+  "dir": "/levels/skeleton_coast/",
+  "locations": {},
+  "name": "demolition.sites.json",
+  "parkingSpots": [],
+  "zones": []
+}

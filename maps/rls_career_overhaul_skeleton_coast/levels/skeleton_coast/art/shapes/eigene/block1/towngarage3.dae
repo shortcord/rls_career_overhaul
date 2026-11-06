@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.3.0 commit date:2024-11-19, commit time:08:52, hash:2b18cad88b13</authoring_tool>
+    </contributor>
+    <created>2025-05-16T10:07:49</created>
+    <modified>2025-05-16T10:07:49</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="italy_sidewalk_tiles_2-effect">
+      <profile_COMMON>
+        <newparam sid="italy_sidewalk_tiles_2_d_dds-surface">
+          <surface type="2D">
+            <init_from>italy_sidewalk_tiles_2_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="italy_sidewalk_tiles_2_d_dds-sampler">
+          <sampler2D>
+            <source>italy_sidewalk_tiles_2_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="italy_sidewalk_tiles_2_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="eca_bld_decking_oldwood_annotation_street-effect">
+      <profile_COMMON>
+        <newparam sid="eca_bld_decking_oldwood_d_dds-surface">
+          <surface type="2D">
+            <init_from>eca_bld_decking_oldwood_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eca_bld_decking_oldwood_d_dds-sampler">
+          <sampler2D>
+            <source>eca_bld_decking_oldwood_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="eca_bld_decking_oldwood_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ind_bricks_02-effect">
+      <profile_COMMON>
+        <newparam sid="ind_bricks_02_d_color_DDS-surface">
+          <surface type="2D">
+            <init_from>ind_bricks_02_d_color_DDS</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ind_bricks_02_d_color_DDS-sampler">
+          <sampler2D>
+            <source>ind_bricks_02_d_color_DDS-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="ind_bricks_02_d_color_DDS-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="windows_doors_reflective-effect">
+      <profile_COMMON>
+        <newparam sid="windows_doors_reflective_d_dds-surface">
+          <surface type="2D">
+            <init_from>windows_doors_reflective_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="windows_doors_reflective_d_dds-sampler">
+          <sampler2D>
+            <source>windows_doors_reflective_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="windows_doors_reflective_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="eca_bld_decking_oldwood_d_dds" name="eca_bld_decking_oldwood_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/houses/eca_bld_decking_oldwood_d.dds</init_from>
+    </image>
+    <image id="ind_bricks_02_d_color_DDS" name="ind_bricks_02_d_color_DDS">
+      <init_from>/C:/Users/Admin/Desktop/houses/ind_bricks_02_d.color.DDS</init_from>
+    </image>
+    <image id="italy_sidewalk_tiles_2_d_dds" name="italy_sidewalk_tiles_2_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/houses/italy_sidewalk_tiles_2_d.dds</init_from>
+    </image>
+    <image id="windows_doors_reflective_d_dds" name="windows_doors_reflective_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/textures/windows_doors_reflective_d.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="italy_sidewalk_tiles_2-material" name="italy_sidewalk_tiles_2">
+      <instance_effect url="#italy_sidewalk_tiles_2-effect"/>
+    </material>
+    <material id="eca_bld_decking_oldwood_annotation_street-material" name="eca_bld_decking_oldwood_annotation_street">
+      <instance_effect url="#eca_bld_decking_oldwood_annotation_street-effect"/>
+    </material>
+    <material id="ind_bricks_02-material" name="ind_bricks_02">
+      <instance_effect url="#ind_bricks_02-effect"/>
+    </material>
+    <material id="windows_doors_reflective-material" name="windows_doors_reflective">
+      <instance_effect url="#windows_doors_reflective-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube_3571-mesh" name="Cube.3571">
+      <mesh>
+        <source id="Cube_3571-mesh-positions">
+          <float_array id="Cube_3571-mesh-positions-array" count="24">-10.2 -2.666666 -1.628205 -10.2 -2.666666 1.371795 -10.2 2.533333 -1.628205 -10.2 2.533333 1.871795 10.2 -2.666666 -1.628205 10.2 -2.666666 1.371795 10.2 2.533333 -1.628205 10.2 2.533333 1.871795</float_array>
+          <technique_common>
+            <accessor source="#Cube_3571-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_3571-mesh-normals">
+          <float_array id="Cube_3571-mesh-normals-array" count="36">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 -0.09571236 0.995409 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 -0.09571236 0.995409</float_array>
+          <technique_common>
+            <accessor source="#Cube_3571-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_3571-mesh-map-0">
+          <float_array id="Cube_3571-mesh-map-0-array" count="72">-0.9005402 1.240671 1.90054 -0.3753376 -0.9005402 -0.3753376 -4.994426 1.510005 5.994426 -0.3753376 -4.994426 -0.3753376 1.90054 -0.3753376 -0.9005402 1.240671 -0.9005402 -0.3753376 5.994426 1.240671 -4.994426 -0.3753376 5.994426 -0.3753376 5.994426 1.90054 -4.994426 -0.9005402 -4.994426 1.90054 -2.09642 1.161833 3.09642 -0.1618326 3.09642 1.161833 -0.9005402 1.240671 1.90054 1.510005 1.90054 -0.3753376 -4.994426 1.510005 5.994426 1.510005 5.994426 -0.3753376 1.90054 -0.3753376 1.90054 1.510005 -0.9005402 1.240671 5.994426 1.240671 -4.994426 1.240671 -4.994426 -0.3753376 5.994426 1.90054 5.994426 -0.9005402 -4.994426 -0.9005402 -2.09642 1.161833 -2.09642 -0.1618326 3.09642 -0.1618326</float_array>
+          <technique_common>
+            <accessor source="#Cube_3571-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_3571-mesh-colors-Attribute" name="Attribute">
+          <float_array id="Cube_3571-mesh-colors-Attribute-array" count="144">0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_3571-mesh-colors-Attribute-array" count="36" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_3571-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_3571-mesh-positions"/>
+        </vertices>
+        <triangles material="italy_sidewalk_tiles_2-material" count="10">
+          <input semantic="VERTEX" source="#Cube_3571-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_3571-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_3571-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_3571-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>1 0 0 0 2 0 1 1 0 0 2 2 3 1 3 3 6 1 4 4 2 1 5 5 6 2 6 6 5 2 7 7 4 2 8 8 5 3 9 9 0 3 10 10 4 3 11 11 6 4 12 12 0 4 13 13 2 4 14 14 1 6 18 18 3 6 19 19 2 6 20 20 3 7 21 21 7 7 22 22 6 7 23 23 6 8 24 24 7 8 25 25 5 8 26 26 5 9 27 27 1 9 28 28 0 9 29 29 6 10 30 30 4 10 31 31 0 10 32 32</p>
+        </triangles>
+        <triangles material="eca_bld_decking_oldwood_annotation_street-material" count="2">
+          <input semantic="VERTEX" source="#Cube_3571-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_3571-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_3571-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_3571-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>3 5 15 15 5 5 16 16 7 5 17 17 3 11 33 33 1 11 34 34 5 11 35 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_678-mesh" name="Cube.678">
+      <mesh>
+        <source id="Cube_678-mesh-positions">
+          <float_array id="Cube_678-mesh-positions-array" count="144">-10.2 -4.1 -1.088698 -10.2 -4.1 0.9113017 -10.2 1.1 1.411302 9.800001 1.1 1.1 -4.7 1.1 1.1 10.2 -4.1 0.9113017 6.9 1.1 1.1 10.2 1.1 1.411302 -4 1.1 1.1 -7.6 1.1 -1.088698 -6.9 1.1 -1.088698 -4.7 1.1 -1.088698 -1.8 1.1 -1.088698 1.8 1.1 -1.088698 1.1 1.1 -1.088698 4 1.1 -1.088698 6.9 1.1 -1.088698 -10.5 -4.409826 0.8815109 -10.5 1.429927 1.443026 10.5 -4.409826 0.8815109 10.5 1.429927 1.443026 -10.5 -4.419397 0.9810518 -10.5 1.420356 1.542566 10.5 1.420356 1.542566 10.5 -4.419397 0.9810518 -10.2 -4.1 -2.088698 -10.2 1.1 -2.088698 -10.2 1.1 -1.088698 10.2 -4.1 -2.088698 10.2 -4.1 -1.088698 10.2 1.1 -2.088698 10.2 1.1 -1.088698 7.6 1.1 1.1 1.1 1.1 1.1 4 1.1 1.1 -9.800001 1.1 1.1 -7.6 1.1 1.1 -1.8 1.1 1.1 -6.9 1.1 1.1 -1.1 1.1 1.1 1.8 1.1 1.1 4.7 1.1 1.1 -4 1.1 -1.088698 -1.1 1.1 -1.088698 7.6 1.1 -1.088698 4.7 1.1 -1.088698 9.800001 1.1 -1.088698 -9.800001 1.1 -1.088698</float_array>
+          <technique_common>
+            <accessor source="#Cube_678-mesh-positions-array" count="48" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_678-mesh-normals">
+          <float_array id="Cube_678-mesh-normals-array" count="270">-1 3.66798e-7 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0.09571236 -0.995409 0 -0.09571236 0.995409 0 -0.9954092 -0.09571075 0 0.995409 0.09571319 1 0 0 -1 0 0 -1 0 -1.90735e-6 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 -1 0 -7.62939e-7 -2.98025e-7 1 0 0 1 0 0 1 0 2.98024e-7 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0.09571236 -0.995409 0 -0.09571236 0.995409 0 -0.9954092 -0.09571075 0 0.995409 0.09571319 1 0 0 -1 0 0 -1 3.66798e-7 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Cube_678-mesh-normals-array" count="90" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_678-mesh-map-0">
+          <float_array id="Cube_678-mesh-map-0-array" count="540">-1.471085 1.485045 1.940409 0.1729314 -1.471085 0.1729314 -6.191776 1.813073 -0.6809014 1.608842 -2.124226 1.608842 1.940409 0.1729314 -1.471085 1.485045 -1.471085 0.1729314 7.191776 1.485045 -6.191776 0.1729314 7.191776 0.1729314 1.221662 2.185921 -6.191776 -1.225573 -0.2216621 2.185921 3.381764 -0.3000574 -2.381764 1.302684 3.381764 1.302684 -2.381764 1.300058 3.381764 -0.3026844 3.381764 1.300058 3.381764 0.4092856 -2.381764 0.4366049 -2.381764 0.4092856 -2.381764 0.5633954 3.381764 0.5907149 3.381764 0.5633954 0.5020739 -0.3049334 0.5422198 1.304934 0.5147753 1.30515 0.5147753 1.30515 0.5295185 -0.3051501 0.5020739 -0.3049334 -0.624929 0.7163323 1.624929 0.2836675 -0.624929 0.2836675 -3.913182 0.7163323 4.913182 0.2836675 -3.913182 0.2836675 1.624929 0.7163323 -0.624929 0.2836675 1.624929 0.2836675 4.913182 0.7163323 -3.913182 0.2836675 4.913182 0.2836675 4.913182 1.624929 -3.913182 -0.624929 -3.913182 1.624929 -3.913182 1.624929 4.913182 -0.624929 4.913182 1.624929 0.3664944 4.64916e-4 0.1832985 0.182944 0.3664944 0.182944 0.3664944 4.64916e-4 0.1832985 0.182944 0.3664944 0.182944 0.3664944 4.64916e-4 0.1832985 0.182944 0.3664944 0.182944 0.1832984 4.64931e-4 0.3664944 0.182944 0.3664944 4.64916e-4 0.3664944 4.64857e-4 0.1832985 0.182944 0.3664944 0.182944 0.3664944 4.64916e-4 0.1832985 0.1829441 0.3664944 0.182944 0.3664944 4.64916e-4 0.1832985 0.1829441 0.3664944 0.1829441 -1.471085 1.485045 1.940409 1.813073 1.940409 0.1729314 -5.929354 0.1729314 -6.191776 0.1729314 -5.929354 1.608842 -6.191776 0.1729314 -6.191776 1.813073 -5.929354 1.608842 7.191776 1.813073 7.191776 0.1729314 6.929354 1.608842 7.191776 0.1729314 6.929354 0.1729314 6.929354 1.608842 -4.026789 0.1729314 -4.486029 0.1729314 -4.486029 1.608842 -4.486029 1.608842 -5.929354 1.608842 -6.191776 1.813073 -6.191776 1.813073 7.191776 1.813073 1.221662 1.608842 7.191776 1.813073 6.929354 1.608842 5.48603 1.608842 5.48603 1.608842 5.48603 0.1729314 5.026789 0.1729314 7.191776 1.813073 5.48603 1.608842 5.026789 1.608842 -4.026789 1.608842 -4.026789 0.1729314 -4.486029 1.608842 5.48603 1.608842 5.026789 0.1729314 5.026789 1.608842 3.583466 1.608842 3.583466 0.1729314 3.124226 0.1729314 7.191776 1.813073 5.026789 1.608842 3.583466 1.608842 3.583466 1.608842 3.124226 0.1729314 3.124226 1.608842 7.191776 1.813073 3.583466 1.608842 3.124226 1.608842 -4.026789 1.608842 -4.486029 1.608842 -6.191776 1.813073 -2.124226 0.1729314 -2.583466 0.1729314 -2.583466 1.608842 -2.583466 1.608842 -4.026789 1.608842 -6.191776 1.813073 7.191776 1.813073 3.124226 1.608842 1.680901 1.608842 1.680901 1.608842 1.680901 0.1729314 1.221662 0.1729314 7.191776 1.813073 1.680901 1.608842 1.221662 1.608842 -2.124226 1.608842 -2.124226 0.1729314 -2.583466 1.608842 1.680901 1.608842 1.221662 0.1729314 1.221662 1.608842 -0.2216621 1.608842 -0.2216621 0.1729314 -0.6809014 0.1729314 -0.2216621 1.608842 -0.6809014 0.1729314 -0.6809014 1.608842 -6.191776 1.813073 1.221662 1.608842 -0.2216621 1.608842 -2.124226 1.608842 -2.583466 1.608842 -6.191776 1.813073 -6.191776 1.813073 -0.2216621 1.608842 -0.6809014 1.608842 1.940409 0.1729314 1.940409 1.813073 -1.471085 1.485045 7.191776 1.485045 -6.191776 1.485045 -6.191776 0.1729314 6.929354 2.185921 7.191776 2.185921 7.191776 -1.225573 7.191776 -1.225573 -6.191776 -1.225573 1.221662 2.185921 -6.191776 -1.225573 -6.191776 2.185921 -5.929354 2.185921 7.191776 -1.225573 5.026789 2.185921 5.48603 2.185921 -5.929354 2.185921 -4.486029 2.185921 -6.191776 -1.225573 -4.486029 2.185921 -4.026789 2.185921 -6.191776 -1.225573 6.929354 2.185921 7.191776 -1.225573 5.48603 2.185921 5.026789 2.185921 7.191776 -1.225573 3.583466 2.185921 -4.026789 2.185921 -2.583466 2.185921 -6.191776 -1.225573 -2.583466 2.185921 -2.124226 2.185921 -6.191776 -1.225573 3.583466 2.185921 7.191776 -1.225573 3.124226 2.185921 3.124226 2.185921 7.191776 -1.225573 1.680901 2.185921 -2.124226 2.185921 -0.6809014 2.185921 -6.191776 -1.225573 -0.6809014 2.185921 -0.2216621 2.185921 -6.191776 -1.225573 1.680901 2.185921 7.191776 -1.225573 1.221662 2.185921 3.381764 -0.3000574 -2.381764 -0.3000574 -2.381764 1.302684 -2.381764 1.300058 -2.381764 -0.3026844 3.381764 -0.3026844 3.381764 0.4092856 3.381764 0.4366049 -2.381764 0.4366049 -2.381764 0.5633954 -2.381764 0.5907149 3.381764 0.5907149 0.5020739 -0.3049334 0.5295185 -0.3051501 0.5422198 1.304934 0.5147753 1.30515 0.5422198 1.304934 0.5295185 -0.3051501 -0.624929 0.7163323 1.624929 0.7163323 1.624929 0.2836675 -3.913182 0.7163323 4.913182 0.7163323 4.913182 0.2836675 1.624929 0.7163323 -0.624929 0.7163323 -0.624929 0.2836675 4.913182 0.7163323 -3.913182 0.7163323 -3.913182 0.2836675 4.913182 1.624929 4.913182 -0.624929 -3.913182 -0.624929 -3.913182 1.624929 -3.913182 -0.624929 4.913182 -0.624929 0.3664944 4.64916e-4 0.1832984 4.64931e-4 0.1832985 0.182944 0.3664944 4.64916e-4 0.1832984 4.64931e-4 0.1832985 0.182944 0.3664944 4.64916e-4 0.1832984 4.64931e-4 0.1832985 0.182944 0.1832984 4.64931e-4 0.1832985 0.182944 0.3664944 0.182944 0.3664944 4.64857e-4 0.1832984 4.64871e-4 0.1832985 0.182944 0.3664944 4.64916e-4 0.1832984 4.64931e-4 0.1832985 0.1829441 0.3664944 4.64916e-4 0.1832985 4.64931e-4 0.1832985 0.1829441</float_array>
+          <technique_common>
+            <accessor source="#Cube_678-mesh-map-0-array" count="270" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_678-mesh-colors-Attribute" name="Attribute">
+          <float_array id="Cube_678-mesh-colors-Attribute-array" count="1080">0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 0.3411765 0.5725491 0.7843137 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_678-mesh-colors-Attribute-array" count="270" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_678-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_678-mesh-positions"/>
+        </vertices>
+        <triangles material="italy_sidewalk_tiles_2-material" count="52">
+          <input semantic="VERTEX" source="#Cube_678-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_678-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_678-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_678-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>1 0 0 0 27 0 1 1 0 0 2 2 2 1 3 3 37 1 4 4 8 1 5 5 31 2 6 6 5 2 7 7 29 2 8 8 5 3 9 9 0 3 10 10 29 3 11 11 14 4 12 12 0 4 13 13 43 4 14 14 1 24 72 72 2 24 73 73 27 24 74 74 47 25 75 75 27 25 76 76 35 25 77 77 27 26 78 78 2 26 79 79 35 26 80 80 7 27 81 81 31 27 82 82 3 27 83 83 31 28 84 84 46 28 85 85 3 28 86 86 10 29 87 87 9 29 88 88 36 29 89 89 36 30 90 90 35 30 91 91 2 30 92 92 2 31 93 93 7 31 94 94 33 31 95 95 7 32 96 96 3 32 97 97 32 32 98 98 32 33 99 99 44 33 100 100 16 33 101 101 7 34 102 102 32 34 103 103 6 34 104 104 38 35 105 105 10 35 106 106 36 35 107 107 32 36 108 108 16 36 109 109 6 36 110 110 41 37 111 111 45 37 112 112 15 37 113 113 7 38 114 114 6 38 115 115 41 38 116 116 41 39 117 117 15 39 118 118 34 39 119 119 7 40 120 120 41 40 121 121 34 40 122 122 38 41 123 123 36 41 124 124 2 41 125 125 42 42 126 126 11 42 127 127 4 42 128 128 4 43 129 129 38 43 130 130 2 43 131 131 7 44 132 132 34 44 133 133 40 44 134 134 40 45 135 135 13 45 136 136 14 45 137 137 7 46 138 138 40 46 139 139 33 46 140 140 8 47 141 141 42 47 142 142 4 47 143 143 40 48 144 144 14 48 145 145 33 48 146 146 39 49 147 147 43 49 148 148 12 49 149 149 39 50 150 150 12 50 151 151 37 50 152 152 2 51 153 153 33 51 154 154 39 51 155 155 8 52 156 156 4 52 157 157 2 52 158 158 2 53 159 159 39 53 160 160 37 53 161 161 31 54 162 162 7 54 163 163 5 54 164 164 5 55 165 165 1 55 166 166 0 55 167 167 46 56 168 168 31 56 169 169 29 56 170 170 29 57 171 171 0 57 172 172 14 57 173 173 0 58 174 174 27 58 175 175 47 58 176 176 29 59 177 177 16 59 178 178 44 59 179 179 47 60 180 180 9 60 181 181 0 60 182 182 9 61 183 183 10 61 184 184 0 61 185 185 46 62 186 186 29 62 187 187 44 62 188 188 16 63 189 189 29 63 190 190 45 63 191 191 10 64 192 192 11 64 193 193 0 64 194 194 11 65 195 195 42 65 196 196 0 65 197 197 45 66 198 198 29 66 199 199 15 66 200 200 15 67 201 201 29 67 202 202 13 67 203 203 42 68 204 204 12 68 205 205 0 68 206 206 12 69 207 207 43 69 208 208 0 69 209 209 13 70 210 210 29 70 211 211 14 70 212 212</p>
+        </triangles>
+        <triangles material="eca_bld_decking_oldwood_annotation_street-material" count="12">
+          <input semantic="VERTEX" source="#Cube_678-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_678-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_678-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_678-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>19 5 15 15 18 5 16 16 20 5 17 17 22 6 18 18 24 6 19 19 23 6 20 20 19 7 21 21 21 7 22 22 17 7 23 23 18 8 24 24 23 8 25 25 20 8 26 26 20 9 27 27 24 9 28 28 19 9 29 29 17 10 30 30 22 10 31 31 18 10 32 32 19 71 213 213 17 71 214 214 18 71 215 215 22 72 216 216 21 72 217 217 24 72 218 218 19 73 219 219 24 73 220 220 21 73 221 221 18 74 222 222 22 74 223 223 23 74 224 224 20 75 225 225 23 75 226 226 24 75 227 227 17 76 228 228 21 76 229 229 22 76 230 230</p>
+        </triangles>
+        <triangles material="ind_bricks_02-material" count="12">
+          <input semantic="VERTEX" source="#Cube_678-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_678-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_678-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_678-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>0 11 33 33 26 11 34 34 25 11 35 35 27 12 36 36 30 12 37 37 26 12 38 38 31 13 39 39 28 13 40 40 30 13 41 41 29 14 42 42 25 14 43 43 28 14 44 44 30 15 45 45 25 15 46 46 26 15 47 47 27 16 48 48 29 16 49 49 31 16 50 50 0 77 231 231 27 77 232 232 26 77 233 233 27 78 234 234 31 78 235 235 30 78 236 236 31 79 237 237 29 79 238 238 28 79 239 239 29 80 240 240 0 80 241 241 25 80 242 242 30 81 243 243 28 81 244 244 25 81 245 245 27 82 246 246 0 82 247 247 29 82 248 248</p>
+        </triangles>
+        <triangles material="windows_doors_reflective-material" count="14">
+          <input semantic="VERTEX" source="#Cube_678-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_678-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_678-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_678-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>39 17 51 51 14 17 52 52 43 17 53 53 8 18 54 54 12 18 55 55 42 18 56 56 38 19 57 57 11 19 58 58 10 19 59 59 36 20 60 60 47 20 61 61 35 20 62 62 40 21 63 63 15 21 64 64 13 21 65 65 41 22 66 66 16 22 67 67 45 22 68 68 32 23 69 69 46 23 70 70 44 23 71 71 39 83 249 249 33 83 250 250 14 83 251 251 8 84 252 252 37 84 253 253 12 84 254 254 38 85 255 255 4 85 256 256 11 85 257 257 36 86 258 258 9 86 259 259 47 86 260 260 40 87 261 261 34 87 262 262 15 87 263 263 41 88 264 264 6 88 265 265 16 88 266 266 32 89 267 267 3 89 268 268 46 89 269 269</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="towngarage3_a300" name="towngarage3_a300" type="NODE">
+            <matrix sid="transform">1 0 0 0 0 1 0 -0.2727142 0 0 1 1.1 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_678-mesh" name="towngarage3_a300">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="italy_sidewalk_tiles_2-material" target="#italy_sidewalk_tiles_2-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="eca_bld_decking_oldwood_annotation_street-material" target="#eca_bld_decking_oldwood_annotation_street-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="ind_bricks_02-material" target="#ind_bricks_02-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="windows_doors_reflective-material" target="#windows_doors_reflective-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="towngarage3_a30" name="towngarage3_a30" type="NODE">
+            <matrix sid="transform">1 0 0 9.53674e-7 0 1 0 -1.706048 0 0 1 0.6395067 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_3571-mesh" name="towngarage3_a30">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="italy_sidewalk_tiles_2-material" target="#italy_sidewalk_tiles_2-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="eca_bld_decking_oldwood_annotation_street-material" target="#eca_bld_decking_oldwood_annotation_street-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="nulldetail1" name="nulldetail1" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

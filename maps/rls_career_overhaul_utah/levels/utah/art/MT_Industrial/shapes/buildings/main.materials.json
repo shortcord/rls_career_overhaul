@@ -1,0 +1,141 @@
+{
+  "ind_bricks_01": {
+    "name": "ind_bricks_01",
+    "mapTo": "ind_bricks_01",
+    "class": "Material",
+    "persistentId": "8e0fb1ae-c631-4fad-8888-7f779dbb14a8",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/ind_bricks_01/ind_bricks_01_d.color.dds",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "diffuseColor": [
+          0.996078491,
+          0.996078491,
+          0.996078491,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/brick/ind_bricks_01/ind_bricks_01_nm.normal.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "roughnessFactor": 0.634000003,
+        "specular": [
+          0.517647088,
+          0.517647088,
+          0.517647088,
+          1
+        ],
+        "specularMap": "/assets/materials/tileable/brick/ind_bricks_01/ind_bricks_02_s.color.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "specularStrength0": "1.3",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "None"
+  },
+  "ind_bricks_02": {
+    "name": "ind_bricks_02",
+    "mapTo": "ind_bricks_02",
+    "class": "Material",
+    "persistentId": "8dc4cec7-44bc-4395-90ae-e0c4c566a263",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/ind_bricks_02/ind_bricks_02_d.color.dds",
+        "detailScale": [
+          0.200000003,
+          0.200000003
+        ],
+        "diffuseColor": [
+          0.996078491,
+          0.996078491,
+          0.996078491,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/brick/ind_bricks_02/ind_bricks_02_nm.normal.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "roughnessFactor": 0.714999974,
+        "specular": [
+          0.517647088,
+          0.517647088,
+          0.517647088,
+          1
+        ],
+        "specularMap": "/assets/materials/tileable/brick/ind_bricks_01/ind_bricks_02_s.color.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 28,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "specularStrength0": "1.3",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "Add"
+  },
+  "ind_tin_01": {
+    "name": "ind_tin_01",
+    "mapTo": "ind_tin_01",
+    "class": "Material",
+    "persistentId": "47792b02-c6dd-439e-8797-d7708fab55dc",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_industrial/shapes/buildings/ut_corrugated_tin_v1_d.dds",
+        "detailScale": [
+          0.150000006,
+          0.150000006
+        ],
+        "diffuseColor": [
+          0.870588303,
+          0.870588303,
+          0.870588303,
+          1
+        ],
+        "normalMap": "/assets/materials/tileable/metal/ind_tin_01/ut_corrugated_tin_V1_n.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "roughnessFactor": 0.503000021,
+        "specular": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "specularMap": "/assets/materials/tileable/metal/ind_tin_01/ut_corrugated_tin_V1_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "materialTag3": "vegetation",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "0",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "None"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "description":"Description of these Sites. Contains Locations, Zones, and Parking Spots.",
+  "dir":"/levels/utah/facilities/delivery/",
+  "locations":{},
+  "name":"roleplay.sites.json",
+  "parkingSpots":[
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"busLoan",
+      "oldId":493,
+      "pos":[
+        -530.51885986328,
+        246.49171447754,
+        298.48275756836
+      ],
+      "rot":[
+        0,
+        0,
+        -0.6440754532814,
+        0.76496189832687
+      ],
+      "scl":[
+        4,
+        14,
+        8
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"infoPark",
+      "oldId":494,
+      "pos":[
+        -526.48889160156,
+        253.79942321777,
+        298.48275756836
+      ],
+      "rot":[
+        0,
+        0,
+        0.10157907754183,
+        0.9948273897171
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "infoGeneralRental",
+      "oldId": 3494,
+      "pos": [
+        -518.48889160156,
+        253.79942321777,
+        298.48275756836
+      ],
+      "rot": [
+        0,
+        0,
+        0.10157907754183,
+        0.9948273897171
+      ],
+      "scl": [
+        3.2,
+        7.5,
+        3
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    }
+  ],
+  "zones":{}
+}

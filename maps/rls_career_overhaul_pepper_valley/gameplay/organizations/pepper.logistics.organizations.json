@@ -1,0 +1,80 @@
+{
+  "ajsAutoRepairOfPepperValley": {
+    "name": "AJs Auto Repair of Pepper Valley",
+    "description": "AJs Auto Repair of Pepper Valley",
+    "icon": "deliveryTruck",
+    "loanableVehicles": [],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "northValleyImports": {
+    "name": "North Valley Imports",
+    "description": "North Valley Imports",
+    "icon": "deliveryTruck",
+    "loanableVehicles": [],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "southernPepperExports": {
+    "name": "Southern Pepper Exports",
+    "description": "Southern Pepper Exports",
+    "icon": "deliveryTruck",
+    "loanableVehicles": [],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "tyrannosFuels": {
+    "name": "Tyrannos Fuels",
+    "description": "Tyrannos Fuels",
+    "icon": "deliveryTruck",
+    "loanableVehicles": [],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "pepperValleyAuctions": {
+    "name": "Pepper Valley Auctions",
+    "description": "Pepper Valley Auctions",
+    "icon": "deliveryTruck",
+    "loanableVehicles": [],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "offRoadSupplies": {
+    "name": "Off Road Supplies",
+    "description": "Parts and transport for Pepper Valley’s off-road supply hubs.",
+    "icon": "deliveryTruck",
+    "loanableVehicles": [],
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
+}

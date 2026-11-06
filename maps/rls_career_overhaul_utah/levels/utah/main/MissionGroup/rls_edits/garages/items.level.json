@@ -1,0 +1,12 @@
+{"name":"Cave","class":"SimGroup","__parent":"garages"}
+{"name":"slopGearGarage_area","class":"BeamNGGameplayArea","__parent":"garages","position":[88.8870316,297.006958,236.950165],"scale":[1.79172909,1.38623023,3.13281012]}
+{"name":"slopGearGarage_icon","class":"BeamNGPointOfInterest","__parent":"garages","position":[90.2824631,297.396301,238.065079]}
+{"name":"uncleCamperComputer_icon","class":"BeamNGPointOfInterest","__parent":"garages","position":[508.00354,-509.347473,136.407669],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821]}
+{"name":"uncleCamperComputer_area","class":"BeamNGGameplayArea","__parent":"garages","position":[507.539429,-509.289734,136.366592],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821],"scale":[1.63529158,1.63529158,1.56320786]}
+{"name":"offRoadGarage_area","class":"BeamNGGameplayArea","__parent":"garages","position":[-389.173767,86.8828888,239.761887],"rotationMatrix":[0.889505923,-0.456923664,0,0.456923664,0.889505923,0,0,0,1],"scale":[1.36484265,1.33893752,1.82634878]}
+{"name":"offRoadGarage_icon","class":"BeamNGPointOfInterest","__parent":"garages","position":[-390.311493,86.9253922,240.035187]}
+{"name":"ajsComputer_icon","class":"BeamNGPointOfInterest","__parent":"garages","position":[788.927246,-182.482422,145.54599],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821]}
+{"name":"ajsComputer_area","class":"BeamNGGameplayArea","__parent":"garages","position":[792.84491,-180.973236,146.781357],"rotationMatrix":[-0.984629035,-0.174659282,2.67156963e-07,0.174659282,-0.984629035,-1.01272799e-05,2.03187392e-06,-9.92495188e-06,1],"scale":[4.34797573,10.2619963,3.10998535]}
+{"name":"airportComputer_area","class":"BeamNGGameplayArea","__parent":"garages","position":[-316.562103,-526.394775,131.464172],"rotationMatrix":[-0.98301816,0.183510989,0,-0.183510989,-0.98301816,-1.01308078e-05,-1.85911404e-06,-9.95876235e-06,1],"scale":[1.30232561,1.89458585,1.3449198]}
+{"name":"airportComputer_icon","class":"BeamNGPointOfInterest","__parent":"garages","position":[-315.759827,-524.892151,131.481644],"rotationMatrix":[-0.98301816,0.183510989,0,-0.183510989,-0.98301816,-1.01308078e-05,-1.85911404e-06,-9.95876235e-06,1]}
+{"name":"Slop Gear Garage","class":"SimGroup","__parent":"garages"}

@@ -1,0 +1,68 @@
+{
+  "pickup.skin.SkeletonCoast_WLP_D-serie1_THom6502": {
+    "name": "pickup.skin.SkeletonCoast_WLP_D-serie1_THom6502",
+    "mapTo": "pickup.skin.SkeletonCoast_WLP_D-serie1_THom6502",
+    "class": "Material",
+    "persistentId": "1bb617bf-47ad-4fb5-99c4-cf6b0ca0cb8a",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/common/pickup/pickup_main_ao.data.DDS",
+        "baseColorMap": "/vehicles/common/pickup/pickup_main_b.color.DDS",
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/common/pickup/pickup_main_m.data.DDS",
+        "metallicMapUseUV": null,
+        "normalMap": "vehicles/common/pickup/pickup_n.dds",
+        "roughnessMap": "/vehicles/common/pickup/pickup_main_r.data.DDS",
+        "roughnessMapUseUV": null
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/common/pickup/pickup_main_ao.data.DDS",
+        "baseColorMap": "/vehicles/pickup/SkeletonCoast_WLP_D-serie1_THom6502/SkeletonCoast_WLP_D-serie1_THom6502_d.data.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/common/pickup/pickup_main_cc.data.DDS",
+        "clearCoatRoughnessFactor": 0.0599999987,
+        "colorPaletteMap": "/vehicles/pickup/SkeletonCoast_WLP_D-serie1_THom6502/SkeletonCoast_WLP_D-serie1_THom6502_cp.data.dds",
+        "colorPaletteMapUseUV": 1,
+        "diffuseMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/pickup/SkeletonCoast_WLP_D-serie1_THom6502/SkeletonCoast_WLP_D-serie1_THom6502_m.data.dds",
+        "metallicMapUseUV": 1,
+        "normalMap": "/vehicles/common/pickup/pickup_n.dds",
+        "opacityMap": "/vehicles/pickup/pickup_skin_o.data.DDS",
+        "roughnessMap": "/vehicles/pickup/SkeletonCoast_WLP_D-serie1_THom6502/SkeletonCoast_WLP_D-serie1_THom6502_r.data.dds",
+        "roughnessMapUseUV": 1
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "metallicMapUseUV": null,
+        "roughnessMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "metallicMapUseUV": null,
+        "roughnessMapUseUV": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

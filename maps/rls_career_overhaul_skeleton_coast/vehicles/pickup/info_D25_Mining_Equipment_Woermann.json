@@ -1,0 +1,55 @@
+{
+  "0-100 km/h":13.4,
+  "0-60 mph":12.6,
+  "100-0 km/h":41.4,
+  "60-0 mph":127.4,
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -0.58,
+      -1.41,
+      -0.2999
+    ],
+    [
+      1.68,
+      4.03,
+      1.41
+    ]
+  ],
+  "Braking G":0.949,
+  "Config Type":"Factory",
+  "Configuration":"D25 Mining Equipment Woermann",
+  "Description":"A longer frame and 8-foot bed allow for a high carrying capacity, used by the Woermann Mining corporation on the Skeleton Coast. Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":0.857107663,
+    "time_0_60":11.56250061,
+    "time_1000":15.09850083,
+    "time_1_4":18.15950103,
+    "time_1_8":11.4885006,
+    "time_330":7.35150037,
+    "time_60":2.414500157,
+    "velAt_1_4":33.13168425,
+    "velAt_1_8":26.7406437
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass": "commercial",
+  "Off-Road Score":35,
+  "Population":3000,
+  "Power":152,
+  "PowerPeakRPM":"4200 - 4850",
+  "Propulsion":"ICE",
+  "Top Speed":44.35823653,
+  "Torque":275,
+  "TorquePeakRPM":"1700 - 3700",
+  "Transmission":"Manual",
+  "Value":32300,
+  "Weight":1995,
+  "Weight/Power":13.125,
+  "Years":{
+    "max":1991,
+    "min":1986
+  },
+  "defaultPaintName1":"White"
+}

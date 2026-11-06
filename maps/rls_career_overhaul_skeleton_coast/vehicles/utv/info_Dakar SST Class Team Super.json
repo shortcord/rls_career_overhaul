@@ -1,0 +1,50 @@
+{
+  "0-100 km/h":6.8,
+  "0-60 mph":6.4,
+  "100-0 km/h":37.2,
+  "60-0 mph":113.3,
+  "Body Style":"ATV",
+  "BoundingBox":[
+    [
+      -0.7235,
+      -1.244,
+      -0.413
+    ],
+    [
+      1.1815,
+      2.286,
+      2.34022
+    ]
+  ],
+  "Braking G":1.057,
+  "Brand":"Hirochi",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar SST Class Team Super",
+  "Country":"Japan",
+  "Description":"Dakar SST class entry for Team Super, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":63,
+  "Population":100,
+  "Power":184,
+  "PowerPeakRPM":8800,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":44.008159476904,
+  "Torque":150,
+  "TorquePeakRPM":7850,
+  "Transmission":"CVT",
+  "Type":"Car",
+  "Value":59395,
+  "Weight":915,
+  "Weight/Power":4.9728260869565,
+  "Years":{
+    "max":2022,
+    "min":2016
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

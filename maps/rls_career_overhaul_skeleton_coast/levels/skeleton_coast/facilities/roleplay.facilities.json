@@ -1,0 +1,192 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "wcuParamedicWork",
+      "name": "Skeleton Coast Medical Response",
+      "description": "Work as a paramedic to earn money. Try to return with no damage for bonus xp.",
+      "associatedOrganization": "wcuParamedicWork",
+      "preview": "facilities/pictures/medicalCenter.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "Hospital Entrance",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "ambulanceWork",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "policeLoaner",
+      "name": "Skeleton Coast Police Department",
+      "description": "Use police vehicles to earn money. Try to return with no damage for bonus xp.",
+      "associatedOrganization": "policeLoaner",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "Police Entrance",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "policeWork",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "roadAuthority",
+      "name": "Skeleton Coast Road Authority",
+      "description": "Also used by the Wildlife Protection Agency",
+      "associatedOrganization": "roadAuthority",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "roadAuthority",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "roadAuthorityLoaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "roadAuthority2",
+      "name": "Skeleton Coast Road Authority",
+      "description": "Also used by the Wildlife Protection Agency",
+      "associatedOrganization": "roadAuthority",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "roadAuthority2",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "roadAuthorityLoaner2",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "roadAuthority3",
+      "name": "Skeleton Coast Road Authority",
+      "description": "Also used by the Wildlife Protection Agency",
+      "associatedOrganization": "roadAuthority",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "roadAuthority3",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "roadAuthorityLoaner3",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "skeletonCoastPoliceDiamondVault",
+      "name": "Skeleton Coast Police Diamond Vault",
+      "description": "Secure police intake for high-value diamond shipments from Woermann Mines.",
+      "associatedOrganization": "policeLoaner",
+      "preview": "",
+      "manualAccessPoints": [
+        {
+          "psName": "Police Entrance",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "diamonds",
+            "mineIncidentReports"
+          ]
+        }
+      ],
+      "sitesFile": "roleplay.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "diamonds",
+        "mineIncidentReports"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "diamonds"
+          ],
+          "materialType": "diamonds",
+          "capacity": 1200,
+          "target": 0,
+          "variance": 120,
+          "interval": 600,
+          "rate": 75
+        },
+        {
+          "type": "parcelReceiver",
+          "logisticTypes": [
+            "mineIncidentReports"
+          ],
+          "min": -1,
+          "max": 1,
+          "interval": 300
+        }
+      ],
+      "logisticMaxItems": 6
+    }
+  ]
+}

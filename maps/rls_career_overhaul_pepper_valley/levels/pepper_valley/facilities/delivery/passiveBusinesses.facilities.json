@@ -1,0 +1,46 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "pepperRightTurnHwyReceiving",
+      "name": "Right Turn Store Hwy",
+      "description": "Receiving area for the owned Right Turn Store Hwy convenience store.",
+      "manualAccessPoints": [
+        {
+          "psName": "Right Turn Store Hwy",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "miniMartSupplies"
+          ]
+        }
+      ],
+      "sitesFile": "smallBusinesses.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "miniMartSupplies"
+      ],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "pepperRightTurnTracksideReceiving",
+      "name": "Right Turn Store Trackside",
+      "description": "Receiving area for the owned Right Turn Store Trackside convenience store.",
+      "manualAccessPoints": [
+        {
+          "psName": "Right Turn Store Trackside",
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "miniMartSupplies"
+          ]
+        }
+      ],
+      "sitesFile": "smallBusinesses.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "miniMartSupplies"
+      ],
+      "logisticGenerators": [],
+      "logisticMaxItems": 0
+    }
+  ]
+}

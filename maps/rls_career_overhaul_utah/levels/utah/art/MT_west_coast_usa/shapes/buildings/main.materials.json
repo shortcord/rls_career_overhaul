@@ -1,0 +1,515 @@
+{
+  "brick_painted": {
+    "name": "brick_painted",
+    "mapTo": "brick_painted",
+    "class": "Material",
+    "persistentId": "92a52013-d1c3-4758-91aa-cc5bad49c28a",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/brick/t_brick_white_paint_01/t_brick_white_paint_01_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/brick/t_brick_white_paint_01/t_brick_white_paint_01_b.color.png",
+        "detailBaseColorMapStrength": 0.5,
+        "detailMap": "/assets/materials/trim/concrete/tunnel/t_tunnel_detail_b.data.png",
+        "detailRoughnessMapStrength": 0.300000012,
+        "detailScale": [
+          0.100000001,
+          0.0500000007
+        ],
+        "normalMap": "/assets/materials/tileable/brick/t_brick_white_paint_01/t_brick_white_paint_01_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "pixelSpecular": true,
+        "roughnessDetailMap": "/assets/materials/breakup/t_detail_concrete_02/t_detail_concrete_02_r.data.png",
+        "roughnessFactor": 0.607767701,
+        "roughnessMap": "/assets/materials/tileable/brick/t_brick_white_paint_01/t_brick_white_paint_01_r.data.png",
+        "vertColor": true
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailRoughnessMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailRoughnessMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailRoughnessMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "canal": {
+    "name": "canal",
+    "mapTo": "canal",
+    "class": "Material",
+    "persistentId": "84c4bad9-56da-4c7d-be4f-1e8debfcffd0",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/trim/concrete/canal/t_canal_ao.data.png",
+        "baseColorMap": "/assets/materials/trim/concrete/canal/t_canal_b.color.png",
+        "detailBaseColorMapStrength": 0.150000006,
+        "detailMap": "/assets/materials/breakup/t_detail_concrete_02/t_detail_concrete_02_detail_b.data.png",
+        "detailNormalMap": "/assets/materials/breakup/t_detail_concrete_02/t_detail_concrete_02_nm.normal.png",
+        "detailNormalMapStrength": 0.699999988,
+        "detailRoughnessMapStrength": 0.5,
+        "detailScale": [
+          14,
+          7
+        ],
+        "normalMap": "/assets/materials/trim/concrete/canal/t_canal_nm.normal.png",
+        "normalMapStrength": 0.400000006,
+        "pixelSpecular": true,
+        "roughnessDetailMap": "/assets/materials/breakup/t_detail_concrete_02/t_detail_concrete_02_r.data.png",
+        "roughnessMap": "/assets/materials/trim/concrete/canal/t_canal_r.data.png",
+        "vertColor": true
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailNormalMapStrength": null,
+        "detailRoughnessMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailNormalMapStrength": null,
+        "detailRoughnessMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailNormalMapStrength": null,
+        "detailRoughnessMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "concrete_precast1": {
+    "name": "concrete_precast1",
+    "mapTo": "concrete_precast1",
+    "class": "Material",
+    "persistentId": "de092ecf-8272-459f-92eb-6384d0ab030d",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/concrete/concrete_precast1/t_concrete_precast_01_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/concrete/concrete_precast1/t_concrete_precast_01_b.color.png",
+        "normalMap": "/assets/materials/tileable/concrete/concrete_precast1/t_concrete_precast_01_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/concrete/concrete_precast1/t_concrete_precast_01_r.data.png",
+        "vertColor": true
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "corrugated_modern": {
+    "name": "corrugated_modern",
+    "mapTo": "corrugated_modern",
+    "class": "Material",
+    "persistentId": "dfeda9f3-b255-49f5-82cb-93a6ff9d8ef5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/utah/art/MT_west_coast_usa/shapes/buildings/t_corrugated_modern_ao.data.dds",
+        "baseColorMap": "/levels/utah/art/MT_west_coast_usa/shapes/buildings/t_corrugated_modern_b.color.dds",
+        "metallicFactor": 0.899999976,
+        "normalMap": "/levels/utah/art/MT_west_coast_usa/shapes/buildings/t_corrugated_modern_nm.normal.dds",
+        "overlayMap": "/assets/materials/tileable/metal/corrugated_modern/grunge_dripping_d.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701,
+        "roughnessMap": "/levels/utah/art/MT_west_coast_usa/shapes/buildings/t_corrugated_modern_r.data.dds",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "version": 1.5
+  },
+  "highrise": {
+    "name": "highrise",
+    "mapTo": "highrise",
+    "class": "Material",
+    "persistentId": "446d3030-cc58-4dd7-9f59-021e5e06bc53",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/atlas/highrise/t_highrise_b.color.png",
+        "emissive": null,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 200,
+        "emissiveMap": "/assets/materials/atlas/highrise/t_highrise_e.data.png",
+        "metallicFactor": 0.5,
+        "metallicMap": "/assets/materials/atlas/highrise/t_highrise_m.data.png",
+        "normalMap": "/assets/materials/atlas/highrise/t_highrise_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/atlas/highrise/t_highrise_r.data.png",
+        "vertColor": true
+      },
+      {
+        "emissive": true,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "cubemap": "cubemap_wca_city_reflection",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_gasstation_tyrannos": {
+    "name": "m_gasstation_tyrannos",
+    "mapTo": "m_gasstation_tyrannos",
+    "class": "Material",
+    "persistentId": "c1c990be-30f0-4068-ba8b-0b2a70f177d2",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/billboard_label/m_gasstation_tyrannos/t_gasstation_tyrannos_b.color.png",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "m_movie_studio_signage": {
+    "name": "m_movie_studio_signage",
+    "mapTo": "m_movie_studio_signage",
+    "class": "Material",
+    "persistentId": "8448fc6b-a063-466d-952b-d73d1b2e259e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/billboard_label/m_movie_studio_signage/t_movie_studio_signage_b.color.png",
+        "roughnessFactor": 0.400000006
+      },
+      {
+        "roughnessFactor": null
+      },
+      {
+        "roughnessFactor": null
+      },
+      {
+        "roughnessFactor": null
+      }
+    ]
+  },
+  "rooftiles": {
+    "name": "rooftiles",
+    "mapTo": "rooftiles",
+    "class": "Material",
+    "persistentId": "897e59ca-36c4-4841-b13b-3190e00e2f87",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/roofing/m_roof_slates_ochre/t_roof_slates_ochre_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/roofing/m_roof_slates_ochre/t_roof_slates_ochre_b.color.png",
+        "normalMap": "/assets/materials/tileable/roofing/m_roof_slates_ochre/t_roof_slates_ochre_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/roofing/m_roof_slates_ochre/t_roof_slates_ochre_r.data.png",
+        "vertColor": true
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "stucco1_white": {
+    "name": "stucco1_white",
+    "mapTo": "stucco1_white",
+    "class": "Material",
+    "persistentId": "2ae25802-0973-4f3b-a6b3-8431c3c678dc",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/plaster/stucco1_white/t_stucco1_white_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/plaster/stucco1_white/t_stucco1_white_b.color.png",
+        "normalMap": "/assets/materials/tileable/plaster/stucco1_white/t_stucco1_white_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/plaster/stucco1_white/t_stucco1_white_r.data.png",
+        "vertColor": true
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "version": 1.5
+  },
+  "tiles_marble_square": {
+    "name": "tiles_marble_square",
+    "mapTo": "tiles_marble_square",
+    "class": "Material",
+    "persistentId": "3064edbc-76c8-426e-b778-f10e43f5e66a",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/marble/tiles_marble_square/t_tiles_marble_square_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/marble/tiles_marble_square/t_tiles_marble_square_b.color.png",
+        "normalMap": "/assets/materials/tileable/marble/tiles_marble_square/t_tiles_marble_square_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/marble/tiles_marble_square/t_tiles_marble_square_r.data.png",
+        "vertColor": true
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "weatherboards": {
+    "name": "weatherboards",
+    "mapTo": "weatherboards",
+    "class": "Material",
+    "persistentId": "ef956073-7923-4aaf-86e7-c8d3b1078759",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/wood/weatherboards/t_weatherboards_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/wood/weatherboards/t_weatherboards_b.color.png",
+        "detailBaseColorMapStrength": 0.300000012,
+        "detailMap": "/assets/materials/trim/concrete/tunnel/t_tunnel_detail_b.data.png",
+        "detailScale": [
+          0.300000012,
+          0.300000012
+        ],
+        "normalMap": "/assets/materials/tileable/wood/weatherboards/t_weatherboards_nm.normal.png",
+        "normalMapStrength": 1.79999995,
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/wood/weatherboards/t_weatherboards_r.data.png",
+        "vertColor": true
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailBaseColorMapStrength": null,
+        "detailScale": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "wood_rough": {
+    "name": "wood_rough",
+    "mapTo": "wood_rough",
+    "class": "Material",
+    "persistentId": "7165449c-ed64-456a-8ee8-4bd4c932d234",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_ao.data.png",
+        "baseColorFactor": [
+          0.894329011,
+          0.894329011,
+          0.894329011,
+          1
+        ],
+        "baseColorMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_b.color.png",
+        "detailMap": "/assets/materials/trim/concrete/tunnel/t_tunnel_detail_b.data.png",
+        "detailNormalMapStrength": 5,
+        "detailScale": [
+          0.0149999997,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_nm.normal.png",
+        "opacityFactor": null,
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_r.data.png",
+        "vertColor": true
+      },
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_ao.data.png",
+        "baseColorFactor": null,
+        "baseColorMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_b.color.png",
+        "detailNormalMap": "/assets/materials/tileable/wood/m_wood_oak_raw_01/t_wood_oak_raw_01_nm.normal.png",
+        "detailNormalMapStrength": 15,
+        "detailScale": [
+          8,
+          2
+        ],
+        "normalMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_nm.normal.png",
+        "opacityFactor": 0.5,
+        "pixelSpecular": null,
+        "roughnessMap": "/assets/materials/tileable/wood/wood_rough/t_wood_rough_r.data.png",
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "opacityFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "alphaRef": 0,
+    "annotation": "POLE",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

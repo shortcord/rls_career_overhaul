@@ -1,0 +1,52 @@
+{
+  "m_metal_new_01_001": {
+    "name": "m_metal_new_01_001",
+    "mapTo": "m_metal_new_01.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0650000125,
+          0.0480000004,
+          0.0320000015,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ut_bld_wood_old_001": {
+    "name": "ut_bld_wood_old_001",
+    "mapTo": "ut_bld_wood_old.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.189999998,
+          0.0850000009,
+          0.0320000015,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

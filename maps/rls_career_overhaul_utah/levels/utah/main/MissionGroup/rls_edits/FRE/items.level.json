@@ -1,0 +1,19 @@
+{"name":"Mountain Drift 1","class":"SimGroup","__parent":"FRE"}
+{"name":"Mountain Drift 2","class":"SimGroup","__parent":"FRE"}
+{"name":"Aj Drift Run","class":"SimGroup","__parent":"FRE"}
+{"name":"Boat Drags","class":"SimGroup","__parent":"FRE"}
+{"name":"Drit Drags","class":"SimGroup","__parent":"FRE"}
+{"name":"Utah Rally 1","class":"SimGroup","__parent":"FRE"}
+{"name":"Rock Bouncer","class":"SimGroup","__parent":"FRE"}
+{"name":"Cargo Yard","class":"SimGroup","__parent":"FRE"}
+{"name":"Valley View","class":"SimGroup","__parent":"FRE"}
+{"name":"Slop Gear Stroll","class":"SimGroup","__parent":"FRE"}
+{"name":"Perimeter Sweep","class":"SimGroup","__parent":"FRE"}
+{"name":"Hill Climb","class":"SimGroup","__parent":"FRE"}
+{"name":"Last Loop","class":"SimGroup","__parent":"FRE"}
+{"name":"Campground Rally","class":"SimGroup","__parent":"FRE"}
+{"name":"Highway Loop","class":"SimGroup","__parent":"FRE"}
+{"name":"AJ Crawl","class":"SimGroup","__parent":"FRE"}
+{"name":"Feathers Fall","class":"SimGroup","__parent":"FRE"}
+{"name":"Broken Bridge Crawl","class":"SimGroup","__parent":"FRE"}
+{"name":"Yard Drift","class":"SimGroup","__parent":"FRE","hidden":true}

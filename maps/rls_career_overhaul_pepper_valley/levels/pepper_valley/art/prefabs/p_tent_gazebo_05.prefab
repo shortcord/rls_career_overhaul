@@ -1,0 +1,133 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   order_simset = "0";
+   canSave = "1";
+   canSaveDynamicFields = "1";
+      groupPosition = "0 0 0";
+
+   new TSStatic() {
+      shapeName = "/levels/pepper_valley/art/shapes/misc/pole_metal1.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-2.84602022 -3.01135755 0";
+      scale = "1 1 1";
+      rotationMatrix = "0.999174654 0.000990411034 0.0406081639 0.000990411034 0.998811483 -0.048729796 -0.0406081639 0.048729796 0.997986138";
+      isRenderEnabled = "false";
+      mode = "Ignore";
+      order_simset = "273";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "/levels/pepper_valley/art/shapes/misc/pole_metal1.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "2.99738955 -2.98883843 0";
+      scale = "1 1 1";
+      rotationMatrix = "0.999174654 0.000990411034 0.0406081639 0.000990411034 0.998811483 -0.048729796 -0.0406081639 0.048729796 0.997986138";
+      isRenderEnabled = "false";
+      mode = "Ignore";
+      order_simset = "274";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "/levels/pepper_valley/art/shapes/misc/pole_metal1.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "3.01383638 2.80469275 0";
+      scale = "1 1 1";
+      rotationMatrix = "0.999174654 0.000990411034 0.0406081639 0.000990411034 0.998811483 -0.048729796 -0.0406081639 0.048729796 0.997986138";
+      isRenderEnabled = "false";
+      mode = "Ignore";
+      order_simset = "275";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "/levels/pepper_valley/art/shapes/misc/pole_metal1.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-2.83617735 2.8005774 0";
+      scale = "1 1 1";
+      rotationMatrix = "0.999174654 0.000990411034 0.0406081639 0.000990411034 0.998811483 -0.048729796 -0.0406081639 0.048729796 0.997986138";
+      isRenderEnabled = "false";
+      mode = "Ignore";
+      order_simset = "276";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+   };
+   new TSStatic() {
+      shapeName = "/levels/pepper_valley/art/shapes/misc/gazebo_white.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "0 0 2.51999998";
+      scale = "1 1 1";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      isRenderEnabled = "false";
+      mode = "Ignore";
+      order_simset = "46";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      persistentId = "0c3ab827-87a6-4fd8-8ba7-74349a269664";
+   };
+};
+//--- OBJECT WRITE END ---
+
+
+

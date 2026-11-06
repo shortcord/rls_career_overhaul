@@ -1,0 +1,16 @@
+# Git LFS: binary assets shipped with the extracted maps under maps/.
+# Text assets (.json, .dae, .prefab, .link, .jbeam, .lua, ...) stay in normal git.
+
+# Textures
+maps/**/*.dds   filter=lfs diff=lfs merge=lfs -text
+maps/**/*.DDS   filter=lfs diff=lfs merge=lfs -text
+maps/**/*.png   filter=lfs diff=lfs merge=lfs -text
+maps/**/*.jpg   filter=lfs diff=lfs merge=lfs -text
+maps/**/*.jpeg  filter=lfs diff=lfs merge=lfs -text
+
+# Binary geometry / terrain
+maps/**/*.cdae  filter=lfs diff=lfs merge=lfs -text
+maps/**/*.ter   filter=lfs diff=lfs merge=lfs -text
+
+# Audio
+maps/**/*.ogg   filter=lfs diff=lfs merge=lfs -text

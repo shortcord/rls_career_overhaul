@@ -1,0 +1,787 @@
+{
+  "localDeliveryAssociation": {
+    "roleplayType": "bus",
+    "name": "Pepper Valley Bus Service",
+    "description": "A local bus service that serves the community of Pepper Valley.",
+    "icon": "cardboardBox",
+    "loanerUnlockMode": "skillLevel",
+    "loanerUnlockSkillPathIds": ["careerSkills-civilService-bus", "bus"],
+    "loanerUnlockSkillLabel": "Bus Skill",
+    "loanerUnlockSkillIcon": "bus",
+    "loanableVehicles": [
+      {
+        "model": "md_series",
+        "config": "peppervalleybus133813",
+        "reputationLvl": 2,
+        "requiredSkillLevel": 20,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 241401600,
+          "0": 241401600,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "md_series",
+        "config": "peppervalleyshortbus791116",
+        "reputationLvl": 1,
+        "requiredSkillLevel": 10,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 241401600,
+          "0": 241401600,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "van",
+        "config": "peppervalleyminibus703559",
+        "reputationLvl": 0,
+        "requiredSkillLevel": 1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 241401600,
+          "0": 241401600,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      }
+    ],
+    "reputationValues": {
+      "returnLoanerDamaged": -50
+    },
+    "reputationLevels": [
+      {
+        // Level -1
+        "label": "Recruit",
+        "min": -200,
+        "loanerCut": {
+          "value": 0.85,
+          "icon": "boxPickUp03"
+        }
+      },
+      {
+        // Level 0
+        "label": "Rookie",
+        "loanerCut": {
+          "value": 0.65,
+          "icon": "boxPickUp03"
+        }
+      },
+      {
+        // Level 1
+        "deliveryBonus": {
+          "value": 1.20
+        },
+        "label": "Driver",
+        "loanerCut": {
+          "value": 0.5,
+          "icon": "boxPickUp03"
+        }
+      },
+      {
+        // Level 2
+        "deliveryBonus": {
+          "value": 1.45
+        },
+        "label": "Driver",
+        "loanerCut": {
+          "value": 0.35,
+          "icon": "boxPickUp03"
+        }
+      },
+      {
+        // Level 3
+        "deliveryBonus": {
+          "value": 1.75
+        },
+        "label": "Driver",
+        "loanerCut": {
+          "value": 0.25,
+          "icon": "boxPickUp03"
+        }
+      },
+      {
+        // Level 4
+        "deliveryBonus": {
+          "value": 3
+        },
+        "requiredValue": 112710,
+        "levelLabel": "Reputation: Level 4",
+        "label": "Senior Driver",
+        "loanerCut": {
+          "value": 0.15,
+          "icon": "boxPickUp03"
+        }
+      },
+      {
+        // Level 5
+        "deliveryBonus": {
+          "value": 10
+        },
+        "requiredValue": 301350,
+        "max": 350000,
+        "levelLabel": "Reputation: Level 5",
+        "label": "Working Supervisor",
+        "loanerCut": {
+          "value": 0,
+          "icon": "boxPickUp03"
+        }
+      }
+    ]
+  },
+  "tyrannosDealership": {
+    "name": "Tyrannos Dealership",
+    "description": "Got A Lemon? We pay top dollar!",
+    "icon": "beamCurrency",
+    "loanableVehicles": [],
+    "reputationValues": {
+      "returnLoanerDamaged": 20
+    },
+    "reputationLevels": [
+      {
+        "stock": 5,
+        "hiddenFromDealerList": true,
+        "range": [
+          0.8,
+          0.95,
+          1.25,
+          1.5
+        ],
+        "fees": 1540,
+        "testDrive": {
+          "abandonFees": 500,
+          "timeLimit": 60,
+          "licencePlate": ""
+        },
+        "subFilters": [
+          {
+            "probability": 8,
+            "whiteList": {
+              "Country": [
+                "United States"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 80000
+              }
+            }
+          },
+          {
+            "probability": 2,
+            "whiteList": {
+              "Country": [
+                "Poland",
+                "Italy",
+                "France",
+                "Germany",
+                "Japan",
+                "Canada",
+                "Great Britain",
+                "Soviet Union/Russia",
+                "United Kingdom",
+                "Sweden"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 80000
+              }
+            }
+          },
+          {
+            "probability": 1,
+            "whiteList": {
+              "Value": {
+                "min": 500,
+                "max": 80000
+              }
+            }
+          }
+        ]
+      },
+      {
+        "stock": 10,
+        "hiddenFromDealerList": true,
+        "range": [
+          0.7,
+          0.90,
+          1.20,
+          1.4
+        ],
+        "fees": 1000,
+        "testDrive": {
+          "abandonFees": 500,
+          "timeLimit": 90,
+          "licencePlate": ""
+        },
+        "subFilters": [
+          {
+            "probability": 8,
+            "whiteList": {
+              "Country": [
+                "United States"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 80000
+              }
+            }
+          },
+          {
+            "probability": 2,
+            "whiteList": {
+              "Country": [
+                "Poland",
+                "Italy",
+                "France",
+                "Germany",
+                "Japan",
+                "Canada",
+                "Great Britain",
+                "Soviet Union/Russia",
+                "United Kingdom",
+                "Sweden"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 80000
+              }
+            }
+          },
+          {
+            "probability": 1,
+            "whiteList": {
+              "Value": {
+                "min": 500,
+                "max": 80000
+              }
+            }
+          }
+        ]
+      },
+      {
+        "stock": 20,
+        "range": [
+          0.6,
+          0.85,
+          1.15,
+          1.3
+        ],
+        "fees": 750,
+        "testDrive": {
+          "abandonFees": 350,
+          "timeLimit": 120,
+          "licencePlate": ""
+        },
+        "subFilters": [
+          {
+            "probability": 8,
+            "whiteList": {
+              "Country": [
+                "United States"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 150000
+              }
+            }
+          },
+          {
+            "probability": 2,
+            "whiteList": {
+              "Country": [
+                "Poland",
+                "Italy",
+                "France",
+                "Germany",
+                "Japan",
+                "Canada",
+                "Great Britain",
+                "Soviet Union/Russia",
+                "United Kingdom",
+                "Sweden"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 150000
+              }
+            }
+          },
+          {
+            "probability": 1,
+            "whiteList": {
+              "Value": {
+                "min": 500,
+                "max": 150000
+              }
+            }
+          }
+        ]
+      },
+      {
+        "stock": 25,
+        "range": [
+          0.6,
+          0.80,
+          1.05,
+          1.25
+        ],
+        "fees": 400,
+        "testDrive": {
+          "abandonFees": 250,
+          "timeLimit": 150,
+          "licencePlate": ""
+        },
+        "subFilters": [
+          {
+            "probability": 8,
+            "whiteList": {
+              "Country": [
+                "United States"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 1000000
+              }
+            }
+          },
+          {
+            "probability": 2,
+            "whiteList": {
+              "Country": [
+                "Poland",
+                "Italy",
+                "France",
+                "Germany",
+                "Japan",
+                "Canada",
+                "Great Britain",
+                "Soviet Union/Russia",
+                "United Kingdom",
+                "Sweden"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 1000000
+              }
+            }
+          },
+          {
+            "probability": 1,
+            "whiteList": {
+              "Value": {
+                "min": 500,
+                "max": 1000000
+              }
+            }
+          }
+        ]
+      },
+      {
+        "stock": 35,
+        "range": [
+          0.5,
+          0.75,
+          1.05,
+          1.15
+        ],
+        "fees": 0,
+        "testDrive": {
+          "abandonFees": 150,
+          "timeLimit": 180,
+          "licencePlate": ""
+        },
+        "subFilters": [
+          {
+            "probability": 8,
+            "whiteList": {
+              "Country": [
+                "United States"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 10000000
+              }
+            }
+          },
+          {
+            "probability": 2,
+            "whiteList": {
+              "Country": [
+                "Poland",
+                "Italy",
+                "France",
+                "Germany",
+                "Japan",
+                "Canada",
+                "Great Britain",
+                "Soviet Union/Russia",
+                "United Kingdom",
+                "Sweden"
+              ],
+              "Value": {
+                "min": 500,
+                "max": 10000000
+              }
+            }
+          },
+          {
+            "probability": 1,
+            "whiteList": {
+              "Value": {
+                "min": 500,
+                "max": 10000000
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "estradaDealership": {
+    "name": "Estrada Dealership",
+    "description": "Estrada surprised everyone by showing up with some amazing vehicles",
+    "icon": "beamCurrency",
+    "loanableVehicles": [],
+    "reputationValues": {
+      "returnLoanerDamaged": 20
+    },
+    "reputationLevels": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "policePepperLoaner": {
+    "name": "Pepper Valley Police Department",
+    "description": "Patrol Pepper Valley, pursue traffic offenders, and return issued police vehicles after a shift.",
+    "roleplayType": "police",
+    "icon": "beamCurrency",
+    "loanableVehicles": [
+      {
+        "model": "fullsize",
+        "config": "police",
+        "reputationLvl": -1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 804672000,
+          "0": 321868800,
+          "1": 160934400,
+          "2": 160934400,
+          "3": 80467200,
+          "4": 80467200,
+          "5": 40233600
+        }
+      },
+      {
+        "model": "fullsize",
+        "config": "unmarked",
+        "reputationLvl": 0,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+      {
+        "model": "fullsize",
+        "config": "interceptor",
+        "reputationLvl": 1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 76443840,
+          "4": 38221920,
+          "5": 38221920
+        }
+      },
+      {
+        "model": "roamer",
+        "config": "police",
+        "reputationLvl": 1,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 860999040,
+          "0": 258299712,
+          "1": 258299712,
+          "2": 86099904,
+          "3": 86099904,
+          "4": 86099904,
+          "5": 17219980.8
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_v8_awd_A",
+        "reputationLvl": 2,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 265541760,
+          "1": 177027840,
+          "2": 88513920,
+          "3": 88513920,
+          "4": 17219981,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A_Blue",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 41038272,
+          "4": 8207654,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A_Red",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 41038272,
+          "4": 8207654,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_unmarked_v8_awd_A_Silver",
+        "reputationLvl": 3,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 76443840,
+          "3": 41038272,
+          "4": 8207654,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "police_redtail",
+        "reputationLvl": 4,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 72420480,
+          "3": 36210240,
+          "4": 14484096,
+          "5": 17220
+        }
+      },
+      {
+        "model": "bastion",
+        "config": "undercover_redtail",
+        "reputationLvl": 4,
+        "deliveryLvl": 0,
+        "mileages": {
+          "-1": 764438400,
+          "0": 305775360,
+          "1": 152887680,
+          "2": 72420480,
+          "3": 36210240,
+          "4": 14484096,
+          "5": 17220
+        }
+      }
+    ],
+    "reputationValues": {
+      "returnLoanerDamaged": 20
+    },
+    "reputationLevels": [
+      {
+        // Level -1
+        "label": "Probation",
+        "min": -200,
+        "hiddenFromDealerList": true
+      },
+      {
+        // Level 0
+        "label": "Rookie",
+        "hiddenFromDealerList": true
+      },
+      {
+        // Level 1
+        "deliveryBonus": {
+          "value": 1.20
+        },
+        "label": "Sergeant",
+        "hiddenFromDealerList": true
+      },
+      {
+        // Level 2
+        "deliveryBonus": {
+          "value": 1.45
+        },
+        "label": "Captain"
+      },
+      {
+        // Level 3
+        "deliveryBonus": {
+          "value": 1.75
+        },
+        "label": "Chief"
+      },
+      {
+        // Level 4
+        "deliveryBonus": {
+          "value": 3
+        },
+        "requiredValue": 1000,
+        "levelLabel": "Reputation: Level 4",
+        "label": "GSP"
+      },
+      {
+        // Level 5
+        "deliveryBonus": {
+          "value": 10
+        },
+        "requiredValue": 5000,
+        "max": 7500,
+        "levelLabel": "Reputation: Level 5",
+        "label": "FBI"
+      }
+    ]
+  },
+  "commercialDealer": {
+    "name": "Commerical Imports",
+    "description": "A local vehicle importer and dealership that operates out of the northern logistics hub.",
+    "icon": "garage02",
+	"reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Dodgy"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Decent"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+    },
+  "driftDealer": {
+    "name": "Pepper Valley Drift Dealership",
+    "description": "Overnight cars from Japan. Or West Coast.",
+    "icon": "garage02",
+	"reputationLevels": [
+      {
+        // Level -1
+        "unlocks": [
+          {
+            "icon": "boxPickUp03",
+            "label": "Dodgy"
+          }
+        ]
+      },
+      {
+        // Level 0
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Decent"
+          }
+        ]
+      },
+      {
+        // Level 1
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Good"
+          }
+        ]
+      },
+      {
+        // Level 2
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Better"
+          }
+        ]
+      },
+      {
+        // Level 3
+        "unlocks": [
+          {
+            "icon": "smallTrailer",
+            "label": "Best"
+          }
+        ]
+      }
+    ]
+    }
+}

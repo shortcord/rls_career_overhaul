@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":56.9,
+  "0-60 mph":52.9,
+  "100-0 km/h":59.6,
+  "60-0 mph":181.3,
+  "Body Style":"Dump Truck",
+  "BoundingBox":[
+    [
+      -0.9714,
+      -3.4636,
+      -0.76710031633048
+    ],
+    [
+      1.8224,
+      6.1707,
+      3.2084
+    ]
+  ],
+  "Braking G":0.66,
+  "Commercial Class":"Class 8 Truck",
+  "Config Type":"Custom",
+  "Configuration":"T83S_Diamondmine",
+  "Description":"Conventional  dump truck with a short final drive and a lift axle. Used by the Woermann Diamond Mining Corporation on Skeleton Coast. Skin made by THom6502.",
+  "Drag Times":{
+    "brakingG":0.5441919094,
+    "time_0_60":0,
+    "time_1000":26.74800089,
+    "time_1_4":31.59750119,
+    "time_1_8":20.90000057,
+    "time_330":14.06000026,
+    "time_60":5.494000088,
+    "velAt_1_4":21.15562556,
+    "velAt_1_8":16.33541787
+  },
+  "Drivetrain":"8x4",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "Off-Road Score":26,
+  "Population":2000,
+  "Power":254,
+  "PowerPeakRPM":2100,
+  "Propulsion":"ICE",
+  "Top Speed":32.732930389455,
+  "Torque":945,
+  "TorquePeakRPM":"1150 - 1750",
+  "Transmission":"Manual",
+  "Value":290000,
+  "Weight":12545,
+  "Weight/Power":49.389763779528,
+  "Years":{
+    "max":1986,
+    "min":1978
+  },
+  "defaultPaintName1":"Burgundy",
+  "defaultPaintName2":"Burgundy",
+  "defaultPaintName3":"Burgundy"
+}

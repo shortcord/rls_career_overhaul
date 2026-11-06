@@ -1,0 +1,13 @@
+{
+  "id": "pepperDynoShop",
+  "version": 1,
+  "businessType": "passiveBusiness",
+  "businessId": "pepperDynoShop",
+  "name": "Pepper Valley Dyno Shop",
+  "mapId": "pepper_valley",
+  "dyno": {
+    "triggerName": "dynoSessionTrigger",
+    "sitesFile": "dynoSession",
+    "parkingSpotName": "dynoSessionParking"
+  }
+}

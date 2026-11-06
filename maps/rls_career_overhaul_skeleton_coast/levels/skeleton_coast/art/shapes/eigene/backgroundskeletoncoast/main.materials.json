@@ -1,0 +1,30 @@
+{
+  "Material_004": {
+    "name": "Material_004",
+    "mapTo": "Material.004",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/backgroundskeletoncoast/8x8image"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Material_007": {
+    "name": "Material_007",
+    "mapTo": "Material.007",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "8x8image"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

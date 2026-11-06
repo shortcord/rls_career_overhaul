@@ -1,0 +1,31 @@
+{
+  "levelId": "skeleton_coast",
+  "sitesFile": "/levels/skeleton_coast/fastTravel.sites.json",
+  "title": "Fast Travel",
+  "subtitle": "Skeleton Coast",
+  "description": "Skeleton Coast fast travel",
+  "defaults": {
+    "enabled": true,
+    "mode": "walk",
+    "priceSource": "taxi",
+    "priceMultiplier": 0.5,
+    "vehiclePriceMultiplier": 15,
+    "vehicleBaseFee": 250
+  },
+  "places": [
+    {
+      "id": "horseshoeBayAirport",
+      "spot": "horseshoeBayAirport",
+      "label": "Horseshoe Bay Airport",
+      "mode": "walk",
+      "priceMultiplier": 0.5
+    },
+    {
+      "id": "otjovasandoAirport",
+      "spot": "otjovasandoAirport",
+      "label": "Otjovasando Airport",
+      "mode": "walk",
+      "priceMultiplier": 0.5
+    }
+  ]
+}

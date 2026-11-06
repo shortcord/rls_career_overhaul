@@ -1,0 +1,15 @@
+{
+"defaultPaintName1":"Old White",
+"Type":"PropParked",
+"isAuxiliary":true,
+"Population":4285,
+"Region":["africa"],
+"Configuration":"Gavril H-Series Vanster (Parked)",
+"ignoreModelRandomPaintDistribution":true,
+"ignoreModelRandomMultiPaintDistribution":true,
+"defaultRandomPaintProbability": 0,
+"defaultRandomMultiPaintProbability": 0,
+"randomPaintDistribution":{
+  "Old White":10,
+},
+}

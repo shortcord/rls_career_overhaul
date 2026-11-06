@@ -1,0 +1,306 @@
+{
+  "traffic_paint_pickup": {
+    "name": "traffic_paint_pickup",
+    "mapTo": "traffic_paint_pickup",
+    "class": "Material",
+    "Stages": [
+      {
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "colorPaletteMap": "/vehicles/simple_traffic/textures/traffic_paint_p.color.png",
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_pickup_paint_n.normal.png",
+        "useAnisotropicFilter": false
+      },
+      {
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMap": "/vehicles/simple_traffic/textures/traffic_paint_p.color.png",
+        "colorPaletteMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": 1,
+        "useAnisotropicFilter": false
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "useAnisotropicFilter": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "useAnisotropicFilter": null
+      }
+    ],
+    "alphaRef": 0,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_pickup": {
+    "name": "traffic_pickup",
+    "mapTo": "traffic_pickup",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_b.color.png",
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_pickup_n.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/pickup/traffic_pickup_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_pickup_lightglass": {
+    "name": "traffic_pickup_lightglass",
+    "mapTo": "traffic_pickup_lightglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_b.color.png",
+        "metallicFactor": 0.93900001,
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_nm.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_o.data.png",
+        "roughnessFactor": 0.0489999987
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_pickup_lightglass_dmg": {
+    "name": "traffic_pickup_lightglass_dmg",
+    "mapTo": "traffic_pickup_lightglass_dmg",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_b.color.png",
+        "metallicFactor": 0.93900001,
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_nm.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_dmg_o.data.png",
+        "roughnessFactor": 0.0489999987
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_pickup_lightglass_on": {
+    "name": "traffic_pickup_lightglass_on",
+    "mapTo": "traffic_pickup_lightglass_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_g.color.png",
+        "metallicFactor": 0.93900001,
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_nm.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lightglass_o.data.png",
+        "roughnessFactor": 0.0489999987
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_pickup_lights": {
+    "name": "traffic_pickup_lights",
+    "mapTo": "traffic_pickup_lights",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_m.data.png",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_r.data.png"
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_pickup_lights_on": {
+    "name": "traffic_pickup_lights_on",
+    "mapTo": "traffic_pickup_lights_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_m.data.png",
+        "roughnessFactor": 0,
+        "roughnessMap": "/vehicles/simple_traffic/pickup/traffic_pickup_lights_r.data.png"
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_pickup_wheels": {
+    "name": "traffic_pickup_wheels",
+    "mapTo": "traffic_pickup_wheels",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_pickup_wheels_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/pickup/traffic_pickup_wheels_m.data.png",
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_pickup_wheels_n.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/pickup/traffic_pickup_wheels_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_wheels_pickup": {
+    "name": "traffic_wheels_pickup",
+    "mapTo": "traffic_wheels_pickup",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/pickup/traffic_wheels_pickup_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/pickup/traffic_wheels_pickup_m.data.png",
+        "normalMap": "/vehicles/simple_traffic/pickup/traffic_wheels_pickup_n.normal.png",
+        "roughnessMap": "/vehicles/simple_traffic/pickup/traffic_wheels_pickup_r.data.png"
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      },
+      {
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  }
+}

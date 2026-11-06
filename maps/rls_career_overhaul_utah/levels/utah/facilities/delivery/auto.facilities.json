@@ -1,0 +1,1606 @@
+{
+    "deliveryProviders": [
+        {
+            "id": "ajDelivery",
+            "alwaysVisible": false,
+            "name": "AJ's Delivery",
+            "description": "Business must be booming.",
+            "facilityInformation": "",
+            "associatedOrganization": "utahAJMechanic",
+            "preview": "ajDelivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "ajDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "autoParts",
+                        "vehNeedsRepair",
+                        "vehForPrivate",
+                        "vehRepairFinished",
+                        "utAutoOutbound",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                        "utJockeyTo_westRockDelivery",
+                        "utJockeyTo_acceleritDelivery",
+                        "utJockeyTo_canyonDelivery",
+                        "utJockeyTo_topRockDelivery"
+                    ],
+                    "logisticTypesReceived": [
+                        "autoParts",
+                        "utAutoWholesale",
+                        "utAutoReturn",
+                        "utJockeyRepairFrom_westRockDelivery",
+                        "utJockeyRepairFrom_acceleritDelivery",
+                        "utJockeyRepairFrom_canyonDelivery",
+                        "utJockeyRepairFrom_topRockDelivery",
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ],
+                    "loanerNonTrailerPriority": 1,
+                    "loanerTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "auto.sites.json",
+            "logisticTypesProvided": [
+                "autoParts",
+                "vehNeedsRepair",
+                "vehForPrivate",
+                "vehRepairFinished",
+                "utAutoOutbound",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                "utJockeyTo_westRockDelivery",
+                "utJockeyTo_acceleritDelivery",
+                "utJockeyTo_canyonDelivery",
+                "utJockeyTo_topRockDelivery"
+            ],
+            "logisticTypesReceived": [
+                "autoParts",
+                "utAutoWholesale",
+                "utAutoReturn",
+                "utJockeyRepairFrom_westRockDelivery",
+                "utJockeyRepairFrom_acceleritDelivery",
+                "utJockeyRepairFrom_canyonDelivery",
+                "utJockeyRepairFrom_topRockDelivery",
+                "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utAutoWholesale"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utAutoOutbound"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utAutoReturn"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_600",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "WestRockMotorsVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_westRockDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "WestRockMotorsVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_westRockDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "utahAccelerItVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_acceleritDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "utahAccelerItVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_acceleritDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "canyonAutoVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_canyonDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "canyonAutoVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_canyonDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "topRockGarageVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_topRockDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "topRockGarageVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_topRockDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "westRockDelivery",
+            "alwaysVisible": false,
+            "name": "West Rock Delivery",
+            "description": "I wonder if they are freinds with Top Rock?",
+            "facilityInformation": "",
+            "associatedOrganization": "WestRockMotors",
+            "preview": "westRockDelivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "westRockDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "autoParts",
+                        "utAutoReturn",
+                        "utJockeyRepairFrom_westRockDelivery",
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ],
+                    "logisticTypesReceived": [
+                        "autoParts",
+                        "vehNeedsRepair",
+                        "vehForPrivate",
+                        "vehRepairFinished",
+                        "utAutoOutbound",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                        "utJockeyTo_westRockDelivery"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "auto.sites.json",
+            "logisticTypesProvided": [
+                "autoParts",
+                "utAutoReturn",
+                "utJockeyRepairFrom_westRockDelivery",
+                "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+            ],
+            "logisticTypesReceived": [
+                "autoParts",
+                "vehNeedsRepair",
+                "vehForPrivate",
+                "vehRepairFinished",
+                "utAutoOutbound",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                "utJockeyTo_westRockDelivery"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utAutoOutbound"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utAutoReturn"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_600",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "WestRockMotorsVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_westRockDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "WestRockMotorsVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_westRockDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "acceleritDelivery",
+            "alwaysVisible": false,
+            "name": "Acceler It Delivery",
+            "description": "Management Seems kinda tight around here.",
+            "facilityInformation": "",
+            "associatedOrganization": "acceleritGarage",
+            "preview": "acceleritDelivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "acceleritDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "autoParts",
+                        "utAutoReturn",
+                        "utJockeyRepairFrom_acceleritDelivery",
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ],
+                    "logisticTypesReceived": [
+                        "autoParts",
+                        "utAutoOutbound",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                        "utJockeyTo_acceleritDelivery"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "auto.sites.json",
+            "logisticTypesProvided": [
+                "autoParts",
+                "utAutoReturn",
+                "utJockeyRepairFrom_acceleritDelivery",
+                "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+            ],
+            "logisticTypesReceived": [
+                "autoParts",
+                "utAutoOutbound",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                "utJockeyTo_acceleritDelivery"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utAutoOutbound"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utAutoReturn"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_600",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "utahAccelerItVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_acceleritDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "utahAccelerItVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_acceleritDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "canyonDelivery",
+            "alwaysVisible": false,
+            "name": "Canyon Delivery",
+            "description": "They must really go through parts",
+            "facilityInformation": "",
+            "associatedOrganization": "canyonAuto",
+            "preview": "canyonDelivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "canyonDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "autoParts",
+                        "utAutoReturn",
+                        "utJockeyRepairFrom_canyonDelivery",
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ],
+                    "logisticTypesReceived": [
+                        "autoParts",
+                        "vehNeedsRepair",
+                        "vehForPrivate",
+                        "vehRepairFinished",
+                        "utAutoOutbound",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                        "utJockeyTo_canyonDelivery"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "auto.sites.json",
+            "logisticTypesProvided": [
+                "autoParts",
+                "utAutoReturn",
+                "utJockeyRepairFrom_canyonDelivery",
+                "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+            ],
+            "logisticTypesReceived": [
+                "autoParts",
+                "vehNeedsRepair",
+                "vehForPrivate",
+                "vehRepairFinished",
+                "utAutoOutbound",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                "utJockeyTo_canyonDelivery"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utAutoOutbound"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utAutoReturn"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_600",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "canyonAutoVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_canyonDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "canyonAutoVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_canyonDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "topRockDelivery",
+            "alwaysVisible": false,
+            "name": "Top Rock Delivery",
+            "description": "These are some unique parts",
+            "facilityInformation": "",
+            "associatedOrganization": "topRockGarage",
+            "preview": "topRockDelivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "topRockDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "autoParts",
+                        "utAutoReturn",
+                        "utJockeyRepairFrom_topRockDelivery",
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ],
+                    "logisticTypesReceived": [
+                        "autoParts",
+                        "vehNeedsRepair",
+                        "vehForPrivate",
+                        "vehRepairFinished",
+                        "utAutoOutbound",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                        "utJockeyTo_topRockDelivery"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "auto.sites.json",
+            "logisticTypesProvided": [
+                "autoParts",
+                "utAutoReturn",
+                "utJockeyRepairFrom_topRockDelivery",
+                "utAutoEmpty_vanillaTrailer_boxutility_unloaded",
+                "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded",
+                "utAutoEmpty_vanillaTrailer_tsfb_unloaded",
+                "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+            ],
+            "logisticTypesReceived": [
+                "autoParts",
+                "vehNeedsRepair",
+                "vehForPrivate",
+                "vehRepairFinished",
+                "utAutoOutbound",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_200",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_loaded_600",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_400",
+                "utAutoParts_vanillaTrailer_boxutility_large_loaded_800",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_400",
+                "utAutoParts_vanillaTrailer_tsfb_loaded_800",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_400",
+                "utAutoParts_vanillaTrailer_cargotrailer_loaded_800",
+                "utJockeyTo_topRockDelivery"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utAutoOutbound"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utAutoReturn"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_600",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_loaded_600"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_tsfb_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_400",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utAutoParts_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "vehOfferReceiver",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 3,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "topRockGarageVehFilter",
+                    "logisticTypes": [
+                        "utJockeyTo_topRockDelivery"
+                    ]
+                },
+                {
+                    "type": "vehOfferProvider",
+                    "interval": 300,
+                    "min": 0,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 900
+                    },
+                    "filter": "topRockGarageVehFilter",
+                    "logisticTypes": [
+                        "utJockeyRepairFrom_topRockDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utAutoEmpty_vanillaTrailer_cargotrailer_default"
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+{"name":"heroHouse","class":"SimGroup","__parent":"Garages"}
+{"name":"lonelyHome","class":"SimGroup","__parent":"Garages"}
+{"name":"SandyCabin","class":"SimGroup","__parent":"Garages"}
+{"name":"rvGarage4","class":"SimGroup","__parent":"Garages"}
+{"name":"rvGarage3","class":"SimGroup","__parent":"Garages"}
+{"name":"rvGarage2","class":"SimGroup","__parent":"Garages"}
+{"name":"rvGarage","class":"SimGroup","__parent":"Garages"}

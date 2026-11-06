@@ -1,0 +1,230 @@
+{
+  "eca_bld_wood": {
+    "name": "eca_bld_wood",
+    "mapTo": "eca_bld_wood",
+    "class": "Material",
+    "persistentId": "7629c779-2c60-4697-b5a4-eff7c9be1d30",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/eca_bld_wood_d.dds",
+        "detailScale": [
+          0.2300000041723251,
+          0.2300000041723251
+        ],
+        "diffuseColor": [
+          0.9882353544235228,
+          0.9960784912109376,
+          0.9882353544235228,
+          0.00800000038
+        ],
+        "normalMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/eca_bld_wood_n.dds",
+        "specularMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/eca_bld_wood_s.dds",
+        "specularPower": 11,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "specularMapUV0": "0",
+    "specularMapUV1": "1",
+    "specularStrength0": "1.37255",
+    "translucentBlendOp": "None"
+  },
+  "metal_paint_peeling": {
+    "name": "metal_paint_peeling",
+    "mapTo": "metal_paint_peeling",
+    "class": "Material",
+    "persistentId": "492e6652-b368-492a-85e5-2b0fd4457afa",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/metal_paint_peeling/metal_galvanized_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/metal_paint_peeling/paint_peeling_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "/assets/materials/tileable/metal/m_metal_plates/metal_galvanized_r.dds",
+        "specularMap": "/assets/materials/tileable/metal/metal_paint_peeling/metal_galvanized_s.dds",
+        "specularPower": 32,
+        "useAnisotropic": true
+      },
+      {
+        "colorMap": "/assets/materials/tileable/metal/metal_paint_peeling/paint_peeling_d.dds",
+        "vertColor": true
+      },
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag1": "building",
+    "translucentBlendOp": "None"
+  },
+  "hr_bld_metal_trim": {
+    "name": "hr_bld_metal_trim",
+    "mapTo": "hr_bld_metal_trim",
+    "class": "Material",
+    "persistentId": "25e146e1-8704-4f02-8f6a-e870aa17f7d2",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/metal/hr_bld_metal_trim/hr_bld_metal_trim_d.dds",
+        "detailMap": "/assets/materials/trim/metal/hr_bld_metal_trim/macro_drips.dds",
+        "detailScale": [
+          0.230000004,
+          0.230000004
+        ],
+        "diffuseColor": [
+          0.988235354,
+          0.996078491,
+          0.988235354,
+          0.00800000038
+        ],
+        "normalMap": "/assets/materials/trim/metal/hr_bld_metal_trim/hr_bld_metal_trim_n.dds",
+        "reflectivityMap": "/assets/materials/trim/metal/hr_bld_metal_trim/hr_bld_metal_trim_r.dds",
+        "roughnessFactor": 0.812008262,
+        "specularMap": "/assets/materials/trim/metal/hr_bld_metal_trim/hr_bld_metal_trim_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "specularMapUV0": "0",
+    "specularMapUV1": "1",
+    "specularStrength0": "1.37255",
+    "translucentBlendOp": "None"
+  },
+  "hr_tent_large": {
+    "name": "hr_tent_large",
+    "mapTo": "hr_tent_large",
+    "class": "Material",
+    "persistentId": "e93d51ef-6259-47d4-9999-7ef192fd800b",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/hr_tent_large/hr_tent_large_d.dds",
+        "detailNormalMap": "/assets/materials/atlas/gazebo_square/fabric_detail_n.dds",
+        "detailNormalMapStrength": 0.699999988,
+        "detailScale": [
+          10,
+          10
+        ],
+        "diffuseColor": [
+          0.988235354,
+          0.996078491,
+          0.988235354,
+          0.00800000038
+        ],
+        "normalMap": "/assets/materials/atlas/hr_tent_large/hr_tent_large_n.dds",
+        "roughnessFactor": 0.812008262,
+        "specularMap": "/assets/materials/atlas/hr_tent_large/hr_tent_large_d.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "OBSTACLES",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "specularMapUV0": "0",
+    "specularMapUV1": "1",
+    "specularStrength0": "1.37255",
+    "translucentBlendOp": "None"
+  },
+  "eca_plastic_rough": {
+    "name": "eca_plastic_rough",
+    "mapTo": "eca_plastic_rough",
+    "class": "Material",
+    "persistentId": "760601f1-3bdf-4b18-9813-94cda0cdcdc6",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/plastic/eca_plastic_rough/eca_plastic_rough_d.dds",
+        "normalMap": "/assets/materials/tileable/plastic/eca_plastic_rough/eca_plastic_rough_n.dds",
+        "specularMap": "/assets/materials/tileable/plastic/eca_plastic_rough/eca_plastic_rough_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "hirochi_raceway",
+    "translucentBlendOp": "None"
+  },
+  "hr_clutter_c": {
+    "name": "hr_clutter_c",
+    "mapTo": "hr_clutter_c",
+    "class": "Material",
+    "persistentId": "d6405e45-2823-419c-ac31-ab9a65e1d498",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_d.dds",
+        "normalMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_n.dds",
+        "reflectivityMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_r.dds",
+        "specularMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_s.dds",
+        "specularPower": 2,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "hirochi_raceway",
+    "specularStrength0": "0.5",
+    "translucentBlendOp": "None"
+  },
+  "hr_clutter_c_mod": {
+    "name": "hr_clutter_c_mod",
+    "mapTo": "hr_clutter_c_mod",
+    "class": "Material",
+    "persistentId": "f7c681d1-55a1-4810-8577-8c5daf3ac4a5",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_d_mod.dds",
+        "normalMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_n.dds",
+        "reflectivityMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_r.dds",
+        "specularMap": "levels/utah/art/mt_hirochi_raceway/shapes/buildings/clutters_c_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "useAnisotropic": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "hirochi_raceway",
+    "specularStrength0": "0.5",
+    "translucentBlendOp": "None"
+  }
+}

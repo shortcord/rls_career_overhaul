@@ -1,0 +1,55 @@
+{
+  "0-100 km/h":6,
+  "0-100 mph":12.7,
+  "0-200 km/h":18.8,
+  "0-300 km/h":133,
+  "0-60 mph":5.8,
+  "100-0 km/h":45.1,
+  "100-200 km/h":12.8,
+  "60-0 mph":138,
+  "60-100 mph":6.9,
+  "Body Style":"Buggy",
+  "BoundingBox":[
+    [
+      -0.9825,
+      -1.152,
+      -0.48042
+    ],
+    [
+      0.9825,
+      2.92944,
+      1.324
+    ]
+  ],
+  "Braking G":0.871,
+  "Brand":"Autobello",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar SST Class Team Skull",
+  "Country":"Italy",
+  "Description":"Dakar SST class entry for Team Skull, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"Turbo",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":43,
+  "Population":100,
+  "Power":404,
+  "PowerPeakRPM":6200,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":84.230349177424,
+  "Torque":465,
+  "TorquePeakRPM":5950,
+  "Transmission":"Manual",
+  "Type":"Car",
+  "Value":87660,
+  "Weight":1520,
+  "Weight/Power":3.7623762376238,
+  "Years":{
+    "max":1973,
+    "min":1957
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

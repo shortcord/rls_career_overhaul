@@ -1,0 +1,55 @@
+{
+  "0-100 km/h":13.4,
+  "0-60 mph":12.6,
+  "100-0 km/h":41.4,
+  "60-0 mph":127.4,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.6,
+      -1.54,
+      -0.3399
+    ],
+    [
+      1.7,
+      3.4773,
+      1.539
+    ]
+  ],
+  "Braking G":0.875,
+  "Config Type":"Police",
+  "Configuration":"D10_Skeleton_Coast_Park_Ranger",
+  "Description":"Ranger vehicle of the Skeleton Coast National Park. Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":0.857107663,
+    "time_0_60":11.56250061,
+    "time_1000":15.09850083,
+    "time_1_4":18.15950103,
+    "time_1_8":11.4885006,
+    "time_330":7.35150037,
+    "time_60":2.414500157,
+    "velAt_1_4":33.13168425,
+    "velAt_1_8":26.7406437
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass": "commercial",
+  "Off-Road Score":35,
+  "Population":3000,
+  "Power":152,
+  "PowerPeakRPM":"4200 - 4850",
+  "Propulsion":"ICE",
+  "Top Speed":44.35823653,
+  "Torque":275,
+  "TorquePeakRPM":"1700 - 3700",
+  "Transmission":"Manual",
+  "Value":32300,
+  "Weight":1995,
+  "Weight/Power":13.125,
+  "Years":{
+    "max":1991,
+    "min":1986
+  },
+  "defaultPaintName1":"White"
+}

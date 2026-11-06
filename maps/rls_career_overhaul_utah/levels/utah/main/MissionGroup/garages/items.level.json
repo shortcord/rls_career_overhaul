@@ -1,0 +1,2 @@
+{"name":"uncleCamperComputer_icon","class":"BeamNGPointOfInterest","__parent":"garages","position":[508.00354,-509.347473,136.407669],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821]}
+{"name":"uncleCamperComputer_area","class":"BeamNGGameplayArea","__parent":"garages","position":[507.539429,-509.289734,136.366592],"rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821],"scale":[1.63529158,1.63529158,1.56320786]}

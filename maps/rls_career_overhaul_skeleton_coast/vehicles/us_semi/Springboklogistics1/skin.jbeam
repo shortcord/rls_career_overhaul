@@ -1,0 +1,20 @@
+{
+"us_semi_cargobox_skin_Springboklogistics1": {
+    "information":{
+        "authors":"THom6502",
+        "name":"Springboklogistics1",
+        "value":2200
+    },
+    "slotType" : "skin_us_semi_cargobox",
+    "skinName" : "Springboklogistics1"
+},
+"us_semi_skin_Springboklogistics1": {
+    "information":{
+        "authors":"THom6502",
+        "name":"Springboklogistics1",
+        "value":0,
+    },
+    "slotType" : "paint_design",
+    "globalSkin" : "Springboklogistics1",
+},
+}

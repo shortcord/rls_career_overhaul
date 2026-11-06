@@ -1,0 +1,52 @@
+{
+  "0-100 km/h":3.8,
+  "0-100 mph":9.1,
+  "0-60 mph":3.6,
+  "100-0 km/h":36.6,
+  "60-0 mph":112.6,
+  "60-100 mph":5.5,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.5525,
+      -2.034,
+      -0.7276
+    ],
+    [
+      1.6525,
+      1.791,
+      1.18
+    ]
+  ],
+  "Braking G":1.074,
+  "Brand":"Ibishu",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Raid Class Team Skull",
+  "Country":"Japan",
+  "Description":"Dakar Raid class entry for Team Skull, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":76,
+  "Population":100,
+  "Power":590,
+  "PowerPeakRPM":"5700 - 6350",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":49.018917025121,
+  "Torque":740,
+  "TorquePeakRPM":"4700 - 5750",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":91151,
+  "Weight":2000,
+  "Weight/Power":3.3898305084746,
+  "Years":{
+    "max":2001,
+    "min":1989
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

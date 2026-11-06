@@ -1,0 +1,24 @@
+{"name":"Autocross FRE","class":"SimGroup","__parent":"FRE"}
+{"name":"Full Circuit","class":"SimGroup","__parent":"FRE"}
+{"name":"Rallycross 2","class":"SimGroup","__parent":"FRE"}
+{"name":"Rallycross 1","class":"SimGroup","__parent":"FRE"}
+{"name":"Tough Truck Shakedown","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Atlanta","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Irwindale","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Longbeach","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Orlando","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Englishtown","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Utah","class":"SimGroup","__parent":"FRE"}
+{"name":"FD St Louis","class":"SimGroup","__parent":"FRE"}
+{"name":"FD Seattle","class":"SimGroup","__parent":"FRE"}
+{"name":"Salt Flat FRE","class":"SimGroup","__parent":"FRE"}
+{"name":"Offroad Short Track","class":"SimGroup","__parent":"FRE"}
+{"name":"Off Road Track 2","class":"SimGroup","__parent":"FRE"}
+{"name":"Airport Drift Loop","class":"SimGroup","__parent":"FRE"}
+{"name":"Sand Drag","class":"SimGroup","__parent":"FRE"}
+{"name":"Sand Drag Half","class":"SimGroup","__parent":"FRE"}
+{"name":"Sand Climb 1","class":"SimGroup","__parent":"FRE"}
+{"name":"Sand Climb 2","class":"SimGroup","__parent":"FRE"}
+{"name":"Sand Climb 3","class":"SimGroup","__parent":"FRE"}
+{"name":"Crawling Trails","class":"SimGroup","__parent":"FRE"}
+{"name":"Justin Backyard Loop","class":"SimGroup","__parent":"FRE"}

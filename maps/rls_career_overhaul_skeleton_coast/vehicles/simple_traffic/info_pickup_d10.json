@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["gavril_twotone_factory"],
+  "defaultMultiPaintSetup": "gavril_charro_blue",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropTraffic",
+  "Population": 3000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.pickup_d10.Configuration"
+}

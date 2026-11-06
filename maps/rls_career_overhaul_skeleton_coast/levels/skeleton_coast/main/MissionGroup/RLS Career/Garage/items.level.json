@@ -1,0 +1,47 @@
+{"name":"computer_1780634185_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[3624.20728,6677.3457,93.1604919],"rotationMatrix":[0.985132635,0.171795473,0,-0.171795473,0.985132635,0,0,0,1],"scale":[9.4434309,5.32766008,7.00607872]}
+{"name":"212MesaLane_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[56695.0039,7523.48535,85.1293945],"scale":[7.02311468,3.89420843,1.94476318]}
+{"name":"lastStop_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[56770.1875,7703.25977,84.1148987],"scale":[4.63286829,6.11568069,3.87432861]}
+{"name":"RV There Yet Garage 2_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[34727.9766,4550.96338,128.999695],"rotationMatrix":[0.830249965,-0.557391286,0,0.557391286,0.830249965,0,0,0,1],"scale":[7.20401287,4.48855925,2.03156757]}
+{"name":"lastStop_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[56777.6445,7704.81592,84.9872055]}
+{"name":"computer_1780634185_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[3623.30811,6677.04639,94.037529]}
+{"name":"HorseshowBayCottage_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1945.87646,1918.96497,22.8578472]}
+{"name":"murielFarmHouse_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[56100.6562,6904.56055,84.8186188]}
+{"name":"theHideaway_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[5501.25049,2579.06274,120.730728]}
+{"name":"twinRoofsRanch_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[57916.0664,6448.76123,93.4062042],"rotationMatrix":[0.679217219,0.733937204,0,-0.733937204,0.679217219,0,0,0,1],"scale":[12.4656229,7.85752583,4.33991718]}
+{"name":"Oasis Farms_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[5023.625,1751.66956,80.5068817]}
+{"name":"murielFarmHouse2_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[56134.3906,6911.59863,85.078476],"rotationMatrix":[0.727580547,0.686022162,0,-0.686022162,0.727580547,0,0,0,1],"scale":[5.17563534,5.64841509,1.53388667]}
+{"name":"murielFarmHouse2_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[56138.4688,6913.11035,84.7809372]}
+{"class":"TSStatic","__parent":"Garage","position":[3628.27344,6680.146,93.1967697],"isRenderEnabled":false,"rotationMatrix":[-0.982240438,-0.186747119,-0.0181342158,0.186777845,-0.982401967,0,-0.0178150926,-0.0033870698,0.999835551],"shapeName":"/levels/small_island/art/shapes/buildings/si_big_shack.DAE","useInstanceRenderData":true}
+{"name":"murielFarmHouse_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[56101.6602,6904.99365,84.839859],"scale":[1.30863571,1.75828743,1.34360337]}
+{"name":"Oasis Farms_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[5004.33105,1749.46472,80.8609848],"rotationMatrix":[0.838261962,0.545267761,0,-0.545267761,0.838261962,0,0,0,1],"scale":[9.85955238,5.71506929,4.46571064]}
+{"name":"horseshoeFarm_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1788.95935,809.276001,24.9081383],"rotationMatrix":[0.772919476,-0.63450408,0,0.63450408,0.772919476,0,0,0,1],"scale":[6.88330126,16.0262604,4.93593788]}
+{"name":"horseshoeFarm_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1791.52161,807.914246,25.8667774]}
+{"name":"computer_1780636944_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[3503.64136,1158.87976,81.6959]}
+{"name":"theHideaway_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[5502.9834,2580.9895,120.010742],"rotationMatrix":[0.863708854,-0.503991127,0,0.503991127,0.863708854,0,0,0,1],"scale":[5.84021568,5.72906542,3.37004375]}
+{"name":"rvThereYet_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[34748.7461,4573.31592,128.079453]}
+{"name":"rvThereYet_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[34748.5273,4573.29297,127.207092],"rotationMatrix":[0.52673471,0.850029767,0,-0.850029767,0.52673471,0,0,0,1],"scale":[1,1,2.63020039]}
+{"name":"HorseshowBayCottage_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1946.78772,1915.61218,23.7098808],"rotationMatrix":[0.99689132,0.0787886754,0,-0.0787886754,0.99689132,0,0,0,1],"scale":[9.86186504,15.6257401,2.51687336]}
+{"name":"RV There Yet Garage 2_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[34728.7734,4551.17383,128.138306]}
+{"name":"computer_1780636944_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[3510.44385,1157.27136,82.2027664],"scale":[6.30429697,6.04472685,2.36721182]}
+{"name":"RV There Yet Garage 1_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[34745.4688,4590.1123,127.219009],"rotationMatrix":[0.872761965,-0.488146007,0,0.488146007,0.872761965,0,0,0,1],"scale":[5.17697048,4.83373308,3.00429726]}
+{"name":"RV There Yet Garage 1_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[34745.4141,4595.22021,128.231064]}
+{"name":"twinRoofsRanch_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[57922.8047,6455.64697,93.5859604]}
+{"name":"vogelsangGetaway_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[2064.9021,8050.93701,59.1310234]}
+{"name":"downTownCondo_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1741.34827,7964.25928,23.9475117],"rotationMatrix":[0.980035245,-0.198823899,0,0.198823899,0.980035245,0,0,0,1],"scale":[5.2836194,3.07358742,3.2151432]}
+{"name":"vogelsangGetaway_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[2063.53906,8051.04199,59.6788483],"rotationMatrix":[0.969682217,0.244369492,0,-0.244369492,0.969682217,0,0,0,1],"scale":[1.88714242,1.32571006,2.30684805]}
+{"name":"BeaconsEdge_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1101.26868,7523.19678,27.6388493]}
+{"name":"theNook_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1656.4469,7859.00928,20.9628906],"rotationMatrix":[0.975898325,-0.218225643,0,0.218225643,0.975898325,0,0,0,1],"scale":[7.01885033,3.24709606,4.53616047]}
+{"name":"BeaconsEdge_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1102.8822,7524.73242,26.7846928],"rotationMatrix":[0.612202168,0.79070127,0,-0.79070127,0.612202168,0,0,0,1],"scale":[3.34864807,3.34864807,3.95095539]}
+{"name":"dustyLane_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[2557.87207,7930.4082,96.2437439],"rotationMatrix":[0.991333187,0.131371632,0,-0.131371632,0.991333187,0,0,0,1],"scale":[1.56085968,1.56085968,2.87104511]}
+{"name":"vogelsangGetaway2_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[2047.44458,8078.47852,56.5330658],"rotationMatrix":[0.723629475,0.690188587,0,-0.690188587,0.723629475,0,0,0,1],"scale":[3.06501722,7.19916344,2.37860107]}
+{"name":"dustyLane_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[2557.93628,7929.58643,95.8353348]}
+{"name":"downTownCondo_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1737.1394,7966.01953,25.3391933]}
+{"name":"vogelsangGetaway2_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[2049.73926,8080.08301,56.6335945]}
+{"name":"theNook_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1650.71643,7861.50439,21.7643147]}
+{"name":"unclesMotel_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1500.23792,8063.14062,20.859127],"rotationMatrix":[0.974185765,0.225747824,0,-0.225747824,0.974185765,0,0,0,1],"scale":[2.20548463,2.20548463,2.77676392]}
+{"name":"unclesMotel_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1499.34668,8064.5498,21.6366329]}
+{"name":"palmDr1878_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[1561.56152,7877.38232,21.7407627]}
+{"name":"palmDr1878_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[1558.63379,7876.16455,22.253767],"rotationMatrix":[0.963709593,0.266952813,0,-0.266952813,0.963709593,0,0,0,1],"scale":[3.61793327,3.57951522,1.40965581]}
+{"name":"mesaLane212_area","class":"BeamNGGameplayArea","__parent":"Garage","position":[56696.2617,7529.35596,85.9671021],"scale":[14.2562561,12.4273443,2.36293936]}
+{"name":"mesaLane212_icon","class":"BeamNGPointOfInterest","__parent":"Garage","position":[56697.1094,7524.40479,84.7123642]}
+{"class":"TSStatic","__parent":"Garage","position":[3773.98853,6163.51123,93.1872787],"isRenderEnabled":false,"rotationMatrix":[-0.513084888,0.85814625,-0.0181342233,-0.858287394,-0.513169289,1.25728548e-08,-0.00930591486,0.0155643821,0.999835551],"shapeName":"/levels/small_island/art/shapes/buildings/si_big_shack.DAE","useInstanceRenderData":true}

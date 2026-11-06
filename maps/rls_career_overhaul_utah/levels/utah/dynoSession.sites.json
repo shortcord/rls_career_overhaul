@@ -1,0 +1,45 @@
+{
+  "description":"Description of these Sites. Contains Locations, Zones, and Parking Spots.",
+  "dir":"/levels/utah/",
+  "locations":{},
+  "name":"dynoSession.sites.json",
+  "parkingSpots":[
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"dynoSessionParking",
+      "oldId":1453,
+      "pos":[
+        662.76214599609,
+        119.72500610352,
+        147.17245483398
+      ],
+      "rot":[
+        0,
+        0,
+        0.64390969276428,
+        0.76510137319565
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    }
+  ],
+  "zones":{}
+}

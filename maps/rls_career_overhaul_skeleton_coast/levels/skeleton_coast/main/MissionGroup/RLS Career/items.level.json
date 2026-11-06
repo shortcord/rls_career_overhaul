@@ -1,0 +1,9 @@
+{"class":"TSStatic","__parent":"RLS Career","position":[1829.21436,1952.29565,23.4261265],"isRenderEnabled":false,"rotationMatrix":[0.025649488,0.99966836,0.00222466886,-0.99592936,0.0257458091,-0.0863808542,-0.0864094943,0,0.996259689],"scale":[0.730079412,1,0.730079412],"shapeName":"/levels/skeleton_coast/art/shapes/eigene/shopsigns/nam_springboksign.dae","useInstanceRenderData":true}
+{"name":"rls_burnoutZone_skeletonCoast","class":"BeamNGTrigger","__parent":"RLS Career","position":[3159.45972,7848.66455,97.2166214],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821],"scale":[41.0328636,44.8664627,10.9376097],"triggerMode":"Overlaps"}
+{"name":"Core","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Garage","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Dealerships","class":"SimGroup","__parent":"RLS Career"}
+{"name":"FRE","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Whale Sand","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Mining Gameplay","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Dakar Props","class":"SimGroup","__parent":"RLS Career"}

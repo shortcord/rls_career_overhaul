@@ -1,0 +1,117 @@
+{
+  "description": "Utah fuel tanker receiving pads",
+  "dir": "",
+  "locations": [],
+  "name": "Utah Fuel Deliveries",
+  "parkingSpots": [
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "utahCanyonFuelTanker",
+      "oldId": 4100,
+      "pos": [
+        781,
+        -144,
+        144.3049
+      ],
+      "rot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scl": [
+        4,
+        14,
+        8
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "utahGasolinTanker",
+      "oldId": 4101,
+      "pos": [
+        -809,
+        -90,
+        296.624
+      ],
+      "rot": [
+        0,
+        0,
+        0.11945946514606,
+        0.99283909797668
+      ],
+      "scl": [
+        4,
+        14,
+        8
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "utahTyrannosFuelTanker",
+      "oldId": 4102,
+      "pos": [
+        803,
+        -920,
+        161.95
+      ],
+      "rot": [
+        0,
+        0,
+        -0.29386380314827,
+        0.95584726333618
+      ],
+      "scl": [
+        4,
+        14,
+        8
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    }
+  ],
+  "zones": []
+}

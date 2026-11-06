@@ -1,0 +1,50 @@
+{
+  "0-100 km/h":20.4,
+  "0-60 mph":19.8,
+  "100-0 km/h":49.2,
+  "60-0 mph":150.1,
+  "Body Style":"Box Truck",
+  "BoundingBox":[
+    [
+      -0.826,
+      -1.315984,
+      -0.9454
+    ],
+    [
+      1.694,
+      5.2636,
+      2.5996
+    ]
+  ],
+  "Braking G":0.799,
+  "Brand":"Gavril",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Heavy Class Team Jackel",
+  "Country":"United States",
+  "Description":"Dakar Heavy class entry for Team Jackel, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "InsuranceClass":"commercial",
+  "Off-Road Score":35,
+  "Population":100,
+  "Power":688,
+  "PowerPeakRPM":3150,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":43.15973966819,
+  "Torque":1635,
+  "TorquePeakRPM":"2400 - 2950",
+  "Transmission":"Manual",
+  "Type":"Truck",
+  "Value":132035,
+  "Weight":7600,
+  "Weight/Power":11.046511627907,
+  "Years":{
+    "max":2000,
+    "min":1987
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

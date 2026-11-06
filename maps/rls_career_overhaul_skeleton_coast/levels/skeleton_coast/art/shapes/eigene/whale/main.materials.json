@@ -1,0 +1,18 @@
+{
+  "HumpbackWhale": {
+    "name": "HumpbackWhale",
+    "mapTo": "HumpbackWhale",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/whale/HumpbackWhale_albedo.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/whale/HumpbackWhale_normal.dds",
+        "specularMap": "/levels/skeleton_coast/art/shapes/eigene/whale/HumpbackWhale_AO.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

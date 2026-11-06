@@ -1,0 +1,79 @@
+{
+  "deserttree_branches": {
+    "name": "deserttree_branches",
+    "mapTo": "deserttree_branches",
+    "class": "Material",
+    "persistentId": "81b8e171-c128-47a2-a436-25160022dcbe",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_branches_ao.data.png",
+        "baseColorMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_branches_b.color.png",
+        "normalMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_branches_nm.normal.png",
+        "opacityMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_branches_o.data.png",
+        "roughnessMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_branches_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 65,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "doubleSided": true,
+    "groundType": "FOREST",
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "deserttree_leaves": {
+    "name": "deserttree_leaves",
+    "mapTo": "deserttree_leaves",
+    "class": "Material",
+    "persistentId": "f0eacfe6-2ffc-4692-8ba8-565e439cca7d",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_leaves_b.color.png",
+        "detailScale": [
+          1,
+          1
+        ],
+        "normalMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_leaves_nm.normal.png",
+        "opacityMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_leaves_o.data.png",
+        "roughnessMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_leaves_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 65,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "doubleSided": true,
+    "groundType": "LEAVES_STRONG",
+    "version": 1.5
+  },
+  "deserttree_trunk": {
+    "name": "deserttree_trunk",
+    "mapTo": "deserttree_trunk",
+    "class": "Material",
+    "persistentId": "59793931-81a3-4a73-8348-8c5e7b1e4877",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_trunk_ao.data.png",
+        "baseColorMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_trunk_b.color.png",
+        "detailNormalMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_trunk_nm.normal.png",
+        "detailScale": [
+          8,
+          8
+        ],
+        "normalMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_trunk_nm.normal.png",
+        "roughnessMap": "/levels/pepper_valley/art/shapes/trees/deserttrees/t_desert_tree_trunk_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "NATURE",
+    "groundType": "FOREST",
+    "version": 1.5
+  }
+}

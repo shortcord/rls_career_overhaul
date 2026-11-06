@@ -1,0 +1,1086 @@
+{
+    "deliveryProviders": [
+        {
+            "id": "cargoYardDelivery",
+            "alwaysVisible": false,
+            "name": "Shuffleboard Logistics Utah",
+            "description": "I had a bad dream that this whole place was built inside a hole off the highway. Terrifying.",
+            "facilityInformation": "Everything logistics related comes through here. If you're after something to deliver, this is the place to look.",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "cargo_yard_delivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "cargoPark",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "miniMartSupplies"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "cargoParcel",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "generalSupplies",
+                        "autoParts",
+                        "utBulkFreight",
+                        "utRetailFreight",
+                        "utAutoWholesale"
+                    ],
+                    "logisticTypesReceived": [
+                        "generalSupplies",
+                        "utCargoReturns"
+                    ]
+                },
+                {
+                    "psName": "cargoTrailer",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "trailerDeliveryFlatbed",
+                        "trailerDeliveryDryVan",
+                        "goosePlanks",
+                        "utTrailer_vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                        "utTrailer_vanillaTrailer_flatbed_28ft_single_wood",
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_pipes",
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_coil",
+                        "utTrailer_vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                        "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+                    ],
+                    "logisticTypesReceived": [
+                        "trailerDeliveryFlatbedEmpty",
+                        "trailerDeliveryDryVan",
+                        "goosePlanksReturn",
+                        "utReturn_vanillaTrailer_tiltdeck_22ft_gooseneck_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_flatbed_28ft_single_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_flatbed_28ft_double_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_containerTrailer_20ft_2axle_transport_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery",
+                        "utFuelEmptyShort"
+                    ]
+                },
+                {
+                    "psName": "cargoFluid",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "utahDirt",
+                        "cement"
+                    ],
+                    "logisticTypesReceived": [
+                        "debris"
+                    ]
+                },
+                {
+                    "psName": "cargoCompanyTruck",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "loanerNonTrailerPriority": 1
+                },
+                {
+                    "psName": "cargoCompanyTrailer",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [],
+                    "logisticTypesReceived": [],
+                    "loanerTrailerPriority": 1
+                },
+                {
+                    "psName": "cargoGasoline",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "gasoline",
+                        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+                        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3"
+                    ],
+                    "logisticTypesReceived": []
+                },
+                {
+                    "psName": "cargoDiesel",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "diesel",
+                        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+                        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+                    ],
+                    "logisticTypesReceived": []
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "miniMartSupplies",
+                "generalSupplies",
+                "utahDirt",
+                "cement",
+                "autoParts",
+                "trailerDeliveryFlatbed",
+                "trailerDeliveryDryVan",
+                "goosePlanks",
+                "utBulkFreight",
+                "utRetailFreight",
+                "utAutoWholesale",
+                "gasoline",
+                "diesel",
+                "utTrailer_vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                "utTrailer_vanillaTrailer_flatbed_28ft_single_wood",
+                "utTrailer_vanillaTrailer_flatbed_28ft_double_pipes",
+                "utTrailer_vanillaTrailer_flatbed_28ft_double_coil",
+                "utTrailer_vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                "utTrailer_vanillaTrailer_dryvan_28ft_4500kg",
+                "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+                "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+                "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+                "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+            ],
+            "logisticTypesReceived": [
+                "generalSupplies",
+                "debris",
+                "trailerDeliveryFlatbedEmpty",
+                "trailerDeliveryDryVan",
+                "goosePlanksReturn",
+                "utCargoReturns",
+                "utReturn_vanillaTrailer_tiltdeck_22ft_gooseneck_cargoYardDelivery",
+                "utReturn_vanillaTrailer_flatbed_28ft_single_cargoYardDelivery",
+                "utReturn_vanillaTrailer_flatbed_28ft_double_cargoYardDelivery",
+                "utReturn_vanillaTrailer_containerTrailer_20ft_2axle_transport_cargoYardDelivery",
+                "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery",
+                "utFuelEmptyShort"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "debris"
+                    ],
+                    "materialType": "debris",
+                    "capacity": 40000,
+                    "target": 0,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 7460
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "utahDirt"
+                    ],
+                    "materialType": "utahDirt",
+                    "capacity": 40000,
+                    "target": 35000,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 6460
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "cement"
+                    ],
+                    "materialType": "cement",
+                    "capacity": 24000,
+                    "target": 20000,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 1460
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utBulkFreight"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utCargoReturns"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utRetailFreight"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utAutoWholesale"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "gasoline"
+                    ],
+                    "materialType": "gasoline",
+                    "capacity": 40000,
+                    "target": 35000,
+                    "variance": 5000,
+                    "interval": 600,
+                    "rate": 4500,
+                    "pickUpSpotName": "cargoGasoline"
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "diesel"
+                    ],
+                    "materialType": "diesel",
+                    "capacity": 40000,
+                    "target": 35000,
+                    "variance": 5000,
+                    "interval": 600,
+                    "rate": 4500,
+                    "pickUpSpotName": "cargoDiesel"
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_tiltdeck_22ft_gooseneck_wood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_tiltdeck_22ft_gooseneck_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_single_wood",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_flatbed_28ft_single_wood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_single",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_flatbed_28ft_single_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double_pipes",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_pipes"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_flatbed_28ft_double_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 600,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double_coil",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_coil"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_containerTrailer_20ft_2axle_20ft"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_transport",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_containerTrailer_20ft_2axle_transport_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 4,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tanker_petroleum_short_2",
+                    "logisticTypes": [
+                        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tanker_petroleum_short_3",
+                    "logisticTypes": [
+                        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tanker_diesel_short_2",
+                    "logisticTypes": [
+                        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tanker_diesel_short_3",
+                    "logisticTypes": [
+                        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tanker_empty_short",
+                    "logisticTypes": [
+                        "utFuelEmptyShort"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "infoCenter",
+            "alwaysVisible": false,
+            "name": "Info Center Delivery",
+            "description": "Maybe they have some info about those rumored hidden deliveries?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "info_center.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "infoCenterDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "trailerDeliveryDryVan",
+                        "utCargoReturns"
+                    ],
+                    "logisticTypesReceived": [
+                        "generalSupplies",
+                        "trailerDeliveryDryVan",
+                        "utBulkFreight",
+                        "utFossilTransfer"
+                    ],
+                    "loanerNonTrailerPriority": 1
+                },
+                {
+                    "psName": "infoFreightBay",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+                    ],
+                    "logisticTypesReceived": [
+                        "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+                    ]
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "trailerDeliveryDryVan",
+                "utCargoReturns",
+                "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+            ],
+            "logisticTypesReceived": [
+                "generalSupplies",
+                "trailerDeliveryDryVan",
+                "utBulkFreight",
+                "utFossilTransfer",
+                "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utBulkFreight"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utCargoReturns"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utFossilTransfer"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "constructionBuilding",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Construction Building Delivery",
+            "description": "Construction on this is taking FOREVER...",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "construction_delivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "constructionBuildingDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "debris",
+                        "trailerDeliveryFlatbedEmpty",
+                        "goosePlanksReturn"
+                    ],
+                    "logisticTypesReceived": [
+                        "utahDirt",
+                        "cement",
+                        "trailerDeliveryFlatbed",
+                        "goosePlanks",
+                        "utBulkFreight"
+                    ]
+                },
+                {
+                    "psName": "constructionFreightBay",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "utReturn_vanillaTrailer_tiltdeck_22ft_gooseneck_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_flatbed_28ft_single_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_flatbed_28ft_double_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_containerTrailer_20ft_2axle_transport_cargoYardDelivery",
+                        "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+                    ],
+                    "logisticTypesReceived": [
+                        "utTrailer_vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                        "utTrailer_vanillaTrailer_flatbed_28ft_single_wood",
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_pipes",
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_coil",
+                        "utTrailer_vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                        "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+                    ]
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "debris",
+                "trailerDeliveryFlatbedEmpty",
+                "goosePlanksReturn",
+                "utReturn_vanillaTrailer_tiltdeck_22ft_gooseneck_cargoYardDelivery",
+                "utReturn_vanillaTrailer_flatbed_28ft_single_cargoYardDelivery",
+                "utReturn_vanillaTrailer_flatbed_28ft_double_cargoYardDelivery",
+                "utReturn_vanillaTrailer_containerTrailer_20ft_2axle_transport_cargoYardDelivery",
+                "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+            ],
+            "logisticTypesReceived": [
+                "utahDirt",
+                "cement",
+                "trailerDeliveryFlatbed",
+                "goosePlanks",
+                "utBulkFreight",
+                "utTrailer_vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                "utTrailer_vanillaTrailer_flatbed_28ft_single_wood",
+                "utTrailer_vanillaTrailer_flatbed_28ft_double_pipes",
+                "utTrailer_vanillaTrailer_flatbed_28ft_double_coil",
+                "utTrailer_vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "utahDirt"
+                    ],
+                    "materialType": "utahDirt",
+                    "capacity": 40000,
+                    "target": 0,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 7460
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "cement"
+                    ],
+                    "materialType": "cement",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 3460
+                },
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "debris"
+                    ],
+                    "materialType": "debris",
+                    "capacity": 30000,
+                    "target": 25000,
+                    "variance": 1360,
+                    "interval": 300,
+                    "rate": 2460
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utBulkFreight"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_tiltdeck_22ft_gooseneck_wood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_tiltdeck_22ft_gooseneck_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_single_wood",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_flatbed_28ft_single_wood"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_single",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_flatbed_28ft_single_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double_pipes",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_pipes"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_flatbed_28ft_double_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 600,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_flatbed_28ft_double_coil",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_flatbed_28ft_double_coil"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_containerTrailer_20ft_2axle_20ft"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_containerTrailer_20ft_2axle_transport",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_containerTrailer_20ft_2axle_transport_cargoYardDelivery"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 2,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft_4500kg",
+                    "logisticTypes": [
+                        "utTrailer_vanillaTrailer_dryvan_28ft_4500kg"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_dryvan_28ft",
+                    "logisticTypes": [
+                        "utReturn_vanillaTrailer_dryvan_28ft_cargoYardDelivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "damDelivery",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Utah Dam",
+            "description": "Why do they need all this stuff?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "dam_delivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "damDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "utCargoReturns"
+                    ],
+                    "logisticTypesReceived": [
+                        "generalSupplies",
+                        "cement",
+                        "utBulkFreight"
+                    ]
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "utCargoReturns"
+            ],
+            "logisticTypesReceived": [
+                "generalSupplies",
+                "cement",
+                "utBulkFreight"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "cement"
+                    ],
+                    "materialType": "cement",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 3460
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utBulkFreight"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utCargoReturns"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 60
+                }
+            ]
+        },
+        {
+            "id": "debrisDelivery",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Mental Sanity Center",
+            "description": "Someone really let this place go...",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "mental_sanity_delivery.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "debrisDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "debris"
+                    ],
+                    "logisticTypesReceived": []
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "debris"
+            ],
+            "logisticTypesReceived": [],
+            "logisticGenerators": [
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "debris"
+                    ],
+                    "materialType": "debris",
+                    "capacity": 15000,
+                    "target": 14000,
+                    "variance": 1360,
+                    "interval": 300,
+                    "rate": 2460
+                }
+            ]
+        },
+        {
+            "id": "millDelivery",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Ye Ole Mill",
+            "description": "What was this even used for?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "ye_old_mill.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "millDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "debris"
+                    ],
+                    "logisticTypesReceived": []
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "debris"
+            ],
+            "logisticTypesReceived": [],
+            "logisticGenerators": [
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "debris"
+                    ],
+                    "materialType": "debris",
+                    "capacity": 8000,
+                    "target": 7000,
+                    "variance": 960,
+                    "interval": 300,
+                    "rate": 1460
+                }
+            ]
+        },
+        {
+            "id": "brokenBridgeDelivery",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Bridge Repair Project",
+            "description": "The sky is falling! No, wait, it's just the bridge.",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "bridge_repair.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "brokenBridgeDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "debris"
+                    ],
+                    "logisticTypesReceived": [
+                        "utBulkFreight"
+                    ]
+                },
+                {
+                    "psName": "brokenBridgeDeliveryTrailer",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "trailerDeliveryFlatbedEmpty",
+                        "goosePlanksReturn"
+                    ],
+                    "logisticTypesReceived": [
+                        "generalSupplies",
+                        "trailerDeliveryFlatbed",
+                        "goosePlanks",
+                        "cement"
+                    ]
+                }
+            ],
+            "sitesFile": "yard.sites.json",
+            "logisticTypesProvided": [
+                "debris",
+                "trailerDeliveryFlatbedEmpty",
+                "goosePlanksReturn"
+            ],
+            "logisticTypesReceived": [
+                "generalSupplies",
+                "trailerDeliveryFlatbed",
+                "goosePlanks",
+                "utBulkFreight",
+                "cement"
+            ],
+            "logisticGenerators": [
+                {
+                    "type": "materialProvider",
+                    "logisticTypes": [
+                        "debris"
+                    ],
+                    "materialType": "debris",
+                    "capacity": 60000,
+                    "target": 50000,
+                    "variance": 1360,
+                    "interval": 300,
+                    "rate": 2460
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utBulkFreight"
+                    ],
+                    "min": -1,
+                    "max": 4,
+                    "interval": 60
+                },
+                {
+                    "type": "materialReceiver",
+                    "logisticTypes": [
+                        "cement"
+                    ],
+                    "materialType": "cement",
+                    "capacity": 20000,
+                    "target": 0,
+                    "variance": 2360,
+                    "interval": 300,
+                    "rate": 3460
+                }
+            ]
+        }
+    ]
+}

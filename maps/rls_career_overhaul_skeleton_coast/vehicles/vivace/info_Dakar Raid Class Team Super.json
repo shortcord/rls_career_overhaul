@@ -1,0 +1,54 @@
+{
+  "0-100 km/h":6.2,
+  "0-100 mph":17,
+  "0-200 km/h":32.7,
+  "0-60 mph":5.8,
+  "100-0 km/h":35.7,
+  "100-200 km/h":26.4,
+  "60-0 mph":108.3,
+  "60-100 mph":11.2,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.85,
+      -1.798,
+      -0.291
+    ],
+    [
+      1.17,
+      2.489,
+      1.197
+    ]
+  ],
+  "Braking G":1.102,
+  "Brand":"Cherrier",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Raid Class Team Super",
+  "Country":"France",
+  "Description":"Dakar Raid class entry for Team Super, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"AWD",
+  "Fuel Type":"Diesel",
+  "Induction Type":"Turbo",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":41,
+  "Population":100,
+  "Power":191,
+  "PowerPeakRPM":"3500 - 4000",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":63.112443375429,
+  "Torque":400,
+  "TorquePeakRPM":"1700 - 3350",
+  "Transmission":"DCT",
+  "Type":"Car",
+  "Value":84063,
+  "Weight":1480,
+  "Weight/Power":7.7486910994764,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

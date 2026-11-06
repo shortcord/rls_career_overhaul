@@ -1,0 +1,23 @@
+{
+  "binaryFormat": "version(char), size(unsigned int), heightMap(heightMapSize * heightMapItemSize), layerMap(layerMapSize * layerMapItemSize), layerTextureMap(layerMapSize * layerMapItemSize), materialNames",
+  "datafile": "/levels/skeleton_coast/theTerrain.ter",
+  "heightMapItemSize": 2,
+  "heightMapSize": 16777216,
+  "heightmapImage": "/levels/skeleton_coast/theTerrain.terrainheightmap.png",
+  "layerMapItemSize": 1,
+  "layerMapSize": 16777216,
+  "materials": [
+    "dirt_rocky_large",
+    "dirt_loose",
+    "dirt_rocky",
+    "rockydirt",
+    "sand",
+    "Dirt",
+    "groundmodel_asphalt1",
+    "dirt_grass",
+    "Grass",
+    "Grass2"
+  ],
+  "size": 4096,
+  "version": 9
+}

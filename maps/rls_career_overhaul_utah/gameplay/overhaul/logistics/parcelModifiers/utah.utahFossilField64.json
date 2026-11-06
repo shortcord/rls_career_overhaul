@@ -1,0 +1,17 @@
+{
+  "id": "utah.utahFossilField64",
+  "version": 1,
+  "mapId": "utah",
+  "key": "utahFossilField64",
+  "unlockFlag": "smallPackagesDelivery",
+  "unlockLabel": "Fossil Field Work",
+  "priority": 2,
+  "icon": "cardboardBox",
+  "label": "Fossil Extraction",
+  "shortDescription": "",
+  "important": true,
+  "template": {
+    "type": "utahFossilField64",
+    "moneyMultipler": 20
+  }
+}

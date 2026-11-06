@@ -1,0 +1,11 @@
+{
+  "Configuration":"Pepper Valley Minibus",
+  "defaultMultiPaintSetup":{
+    "name":"peppervalleyminibus703559 Multi Paint Setup",
+    "paint1":"Champagne",
+    "paint2":"Silver",
+    "paint3":"Silver"
+  },
+  "Value": 35000,
+  "Population": 100
+}

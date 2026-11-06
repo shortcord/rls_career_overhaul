@@ -1,0 +1,212 @@
+{
+  "dry_grass": {
+    "name": "dry_grass",
+    "mapTo": "dry_grass",
+    "class": "Material",
+    "persistentId": "a269c30f-2863-4077-907b-5bfba1dc1f2f",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_ao.data.png",
+        "baseColorFactor": [
+          0.905882418,
+          0.905882418,
+          0.905882418,
+          1
+        ],
+        "baseColorMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_b.color.png",
+        "normalMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_r.data.png",
+        "specular": [
+          0.988235354,
+          0.988235354,
+          0.988235354,
+          1
+        ]
+      },
+      {
+        "baseColorFactor": null,
+        "specular": null
+      },
+      {
+        "baseColorFactor": null,
+        "specular": null
+      },
+      {
+        "baseColorFactor": null,
+        "specular": null
+      }
+    ],
+    "alphaRef": 60,
+    "alphaTest": true,
+    "annotation": "GRASS",
+    "doubleSided": true,
+    "groundType": "GRASS",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vegetation",
+    "materialTag2": "vegetation",
+    "materialTag3": "Natural",
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_jv_dry_branch": {
+    "name": "m_jv_dry_branch",
+    "mapTo": "m_jv_dry_branch",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_b.color.png",
+        "normalMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/bush/t_jv_dry_branch/t_jv_dry_branch_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "version": 1.5
+  },
+  "m_jv_dry_bush": {
+    "name": "m_jv_dry_bush",
+    "mapTo": "m_jv_dry_bush",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_02_b.color.png",
+        "normalMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/bush/t_jv_dry_bush/t_jv_dry_bush_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "version": 1.5
+  },
+  "m_jv_dry_grass": {
+    "name": "m_jv_dry_grass",
+    "mapTo": "m_jv_dry_grass",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_b.color.png",
+        "normalMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_nm.normal.png",
+        "opacityMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/grass/t_jv_dry_grass/t_jv_dry_grass_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "version": 1.5
+  },
+  "m_utah_dry_grass": {
+    "name": "m_utah_dry_grass",
+    "mapTo": "m_utah_dry_grass",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_b.color.png",
+        "normalMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_nm.normal.png",
+        "normalMapStrength": 0.5,
+        "opacityMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_o.data.png",
+        "roughnessMap": "/assets/materials/foliage/grass/t_utah_dry_grass/t_utah_dry_grass_r.data.png"
+      },
+      {
+        "normalMapStrength": null
+      },
+      {
+        "normalMapStrength": null
+      },
+      {
+        "normalMapStrength": null
+      }
+    ],
+    "alphaRef": 70,
+    "alphaTest": true,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "version": 1.5
+  },
+  "utah_bush_vegetation": {
+    "name": "utah_bush_vegetation",
+    "mapTo": "utah_bush_vegetation",
+    "class": "Material",
+    "persistentId": "bac5d1ea-ea54-41fa-9260-0e9e83b7e00c",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/foliage/bush/t_utah_grey_bush/t_utah_grey_bush_ao.data.png",
+        "baseColorMap": "/assets/materials/foliage/bush/t_utah_grey_bush/t_utah_grey_bush_b.color.png",
+        "normalMap": "/assets/materials/foliage/bush/t_utah_grey_bush/t_utah_grey_bush_nm.normal.png",
+        "normalMapStrength": 2,
+        "opacityMap": "/assets/materials/foliage/bush/t_utah_grey_bush/t_utah_grey_bush_o.data.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/foliage/bush/t_utah_grey_bush/t_utah_grey_bush_r.data.png",
+        "specular": [
+          0.321568638,
+          0.321568638,
+          0.321568638,
+          1
+        ]
+      },
+      {
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "specular": null
+      },
+      {
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "specular": null
+      },
+      {
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "specular": null
+      }
+    ],
+    "alphaRef": 60,
+    "alphaTest": true,
+    "annotation": "GRASS",
+    "doubleSided": true,
+    "groundType": "GRASS",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "vegetation",
+    "materialTag3": "Natural",
+    "subSurface": true,
+    "subSurfaceIntensity": 1,
+    "version": 1.5
+  }
+}

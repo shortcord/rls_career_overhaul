@@ -1,0 +1,14 @@
+{
+  "generibush_leaves": {
+    "name": "generibush_leaves",
+    "mapTo": "generibush_leaves",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

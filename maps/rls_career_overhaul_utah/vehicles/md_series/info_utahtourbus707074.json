@@ -1,0 +1,22 @@
+{
+  "Configuration":"Utah Tour Bus",
+  "defaultMultiPaintSetup":{
+    "name":"utahtourbus707074 Multi Paint Setup",
+    "paint1":{
+      "baseColor":[
+        0.64700001478195,
+        0.4379999935627,
+        0.16200000047684,
+        1.1000000238419
+      ],
+      "class":"hidden",
+      "clearcoat":0,
+      "clearcoatRoughness":0,
+      "metallic":0,
+      "name":"utahtourbus707074 Paint 1",
+      "roughness":0.0700000003
+    },
+    "paint2":"Black",
+    "paint3":"Black"
+  }
+}

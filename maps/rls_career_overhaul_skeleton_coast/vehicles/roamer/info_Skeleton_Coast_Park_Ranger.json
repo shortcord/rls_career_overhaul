@@ -1,0 +1,56 @@
+{
+  "0-100 km/h":11.8,
+  "0-100 mph":44.6,
+  "0-60 mph":11,
+  "100-0 km/h":41.9,
+  "60-0 mph":126.1,
+  "60-100 mph":33.6,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.55,
+      -1.47,
+      -0.3269
+    ],
+    [
+      1.65,
+      3.55,
+      1.44
+    ]
+  ],
+  "Braking G":0.938,
+  "Config Type":"Factory",
+  "Configuration":"Skeleton_Coast_Park_Ranger",
+  "Description":"Roamer used by the Skeleton Coast National Park. Inline 6 model equipped with 4-wheel drive and offroad suspension. Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":0.9704500252,
+    "time_0_60":10.50700039,
+    "time_1000":14.77500059,
+    "time_1_4":17.72250073,
+    "time_1_8":11.28400041,
+    "time_330":7.291000261,
+    "time_60":2.468000108,
+    "velAt_1_4":34.49543923,
+    "velAt_1_8":27.7676265
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Off-Road Score":46,
+  "Population":7000,
+  "Power":185,
+  "PowerPeakRPM":"4500 - 5050",
+  "Propulsion":"ICE",
+  "Top Speed":49.09854099,
+  "Torque":310,
+  "TorquePeakRPM":"2100 - 4150",
+  "Transmission":"Manual",
+  "Value":44000,
+  "Weight":2185,
+  "Weight/Power":11.81081081,
+  "Years":{
+    "max":1998,
+    "min":1992
+  },
+  "defaultMultiPaintSetup":"Clay Red"
+}

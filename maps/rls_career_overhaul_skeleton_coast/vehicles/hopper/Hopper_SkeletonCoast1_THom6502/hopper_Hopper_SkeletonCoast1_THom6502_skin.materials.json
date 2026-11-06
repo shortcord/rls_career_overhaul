@@ -1,0 +1,68 @@
+{
+  "hopper.skin.Hopper_SkeletonCoast1_THom6502": {
+    "name": "hopper.skin.Hopper_SkeletonCoast1_THom6502",
+    "mapTo": "hopper.skin.Hopper_SkeletonCoast1_THom6502",
+    "class": "Material",
+    "persistentId": "f868b9af-e7bb-4347-a43e-d74b348a42ff",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/hopper/hopper_main_ao.data.dds",
+        "baseColorMap": "/vehicles/hopper/hopper_main_b.color.DDS",
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/hopper/hopper_main_m.data.DDS",
+        "metallicMapUseUV": null,
+        "normalMap": "/vehicles/hopper/hopper_main_n.normal.DDS",
+        "roughnessMap": "/vehicles/hopper/hopper_main_r.data.DDS",
+        "roughnessMapUseUV": null
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/hopper/hopper_main_ao.data.dds",
+        "baseColorMap": "/vehicles/hopper/Hopper_SkeletonCoast1_THom6502/Hopper_SkeletonCoast1_THom6502_d.data.dds",
+        "clearCoatFactor": 1,
+        "clearCoatMap": "/vehicles/hopper/hopper_main_cc.data.dds",
+        "clearCoatRoughnessFactor": 0.600000024,
+        "colorPaletteMap": "/vehicles/hopper/Hopper_SkeletonCoast1_THom6502/Hopper_SkeletonCoast1_THom6502_cp.data.dds",
+        "colorPaletteMapUseUV": 1,
+        "diffuseMapUseUV": 1,
+        "instanceDiffuse": true,
+        "metallicFactor": null,
+        "metallicMap": "/vehicles/hopper/Hopper_SkeletonCoast1_THom6502/Hopper_SkeletonCoast1_THom6502_m.data.dds",
+        "metallicMapUseUV": 1,
+        "normalMap": "/vehicles/hopper/hopper_main_n.normal.DDS",
+        "opacityMap": "/vehicles/hopper/hopper_main_c.data.DDS",
+        "roughnessMap": "/vehicles/hopper/Hopper_SkeletonCoast1_THom6502/Hopper_SkeletonCoast1_THom6502_r.data.dds",
+        "roughnessMapUseUV": 1
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "metallicMapUseUV": null,
+        "roughnessMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "instanceDiffuse": null,
+        "metallicFactor": null,
+        "metallicMapUseUV": null,
+        "roughnessMapUseUV": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

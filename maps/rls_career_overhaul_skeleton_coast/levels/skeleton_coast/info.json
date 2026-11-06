@@ -1,0 +1,123 @@
+{
+  "title": "Skeleton Coast",
+  "description": "uninhabitable coast line in southern Africa where the desert meets the Atlantic ocean.",
+  "previews":[
+    "skeleton_coast_01_preview.jpg",
+    "skeleton_coast_02_preview.jpg",
+    "skeleton_coast_03_preview.jpg",
+    "skeleton_coast_04_preview.jpg",
+    "skeleton_coast_05_preview.jpg",
+  ],
+  "size": [8192, 8192],
+  "biome": "Coastal desert",
+  "roads": "Highway, Dirt roads and tracks",
+  "suitablefor": "Exploring, Offroad, long distance driving",
+  "features": "Many miles of unpaved roads and a lot of stuff to explore",
+  "region": "africa",
+  "authors": "Murokmakto",
+  "spawnPoints":[
+    {
+      "translationId": "Ghosttown",
+	  "description":"Small mining town that was abandoned in the 1930s. Today only inhabited by sandvipers and shackals.",
+      "objectname": "spawn_ghost_town",
+      "preview": "spawn_ghost_town_preview.jpg"
+    },
+    {
+      "translationId": "Squatter Mine",
+	  "description":"An old mine that has been occupied illegally. Apparently the output is good enough that a small settlement formed around it.",
+      "objectname": "spawn_squatter_mine",
+      "preview": "spawn_squatter_mine_preview.jpg"
+    },
+    {
+      "translationId": "Villa Kopp",
+	  "description":"Villa Kopp was build in 1906 by the german doctor Arthur Kopp who settled in Vogelsangbay in 1904. After being abandoned for nearly 40 years, the house has recently been renovated and partly rebuild with the addition of the terrace, the garage and an interior makeover.",
+      "objectname": "spawn_home",
+      "preview": "spawn_home_preview.jpg"
+    },
+    {
+      "translationId": "Vogelsang Bay",
+	  "description":"The only town in the area. Shops, restaurants, accomodation, a harbor and many well preserved colonial buildings.",
+      "objectname": "spawn_town",
+      "preview": "spawn_town_preview.jpg"
+    },
+	{
+      "translationId": "Roadhouse",
+	  "description":"A petrol station on the highway. It's not a particularly nice place to stay but at least the food is bad and the fuel expensive.",
+      "objectname": "spawn_eastern_highway2",
+      "preview": "spawn_roadhouse_preview.jpg"
+    },
+    {
+      "translationId": "Otjovasando",
+	  "description":"A small town in the Kalahari. Nothing of interest ever happened here.",
+      "objectname": "spawn_eastern_highway",
+      "preview": "spawn_otjovasando_preview.jpg"
+    },
+    {
+      "translationId": "Dunes",
+	  "description":"The Namib desert sand dunes. Lifeless and hostile but a great offroad playground.",
+      "objectname": "spawn_dunes",
+      "preview": "spawn_dunes_preview.jpg"
+    },
+    {
+      "translationId": "Sport Fishing Camp",
+	  "description":"A sport fishing camp on the Atlantic coast.",
+      "objectname": "spawn_fishing_camp",
+      "preview": "spawn_fishing_camp_preview.jpg"
+    },
+    {
+      "translationId": "Desert Lodge",
+	  "description":"The Tsau Khaeb Desert Lodge. So you have somewhere nice to stay after wrecking your precious Land Cruiser in the dunes.",
+      "objectname": "spawn_tsau_khaeb_desert_lodge",
+      "preview": "spawn_tsau_khaeb_desert_lodge_preview.jpg"
+    },
+    {
+      "translationId": "Atlantic Coast",
+	  "description":"The Atlantic ocean. More sharks than water in the sea.",
+      "objectname": "spawn_coast",
+      "preview": "spawn_coast_preview.jpg"
+    },
+    {
+      "translationId": "Research Station",
+	  "description":"A research station that focuses on the local fauna, flora and climate. Also features a workshop and some guest accomodation.",
+      "objectname": "spawn_research_station",
+      "preview": "spawn_research_station_preview.jpg"
+    },
+    {
+      "translationId": "Commercial Zone",
+	  "description":"Some shops, local businesses, a petrolstation and many shacks.",
+      "objectname": "spawn_commercial_zone",
+      "preview": "spawn_commercial_zone_preview.jpg"
+    },
+    {
+      "translationId": "Motel",
+	  "description":"A small roadside motel. Bedbugs included.",
+      "objectname": "spawn_motel",
+      "preview": "spawn_motel_preview.jpg"
+    },
+    {
+      "translationId": "Horseshoe Bay",
+	  "description":"Small fishing community on the Atlantic.",
+      "objectname": "spawn_horseshoebay",
+      "preview": "spawn_horseshoebay_preview.jpg"
+    },
+    {
+      "translationId": "Farm",
+	  "description":"A secluded farm in the bush. Not the most prosperous ranch out there but at least the hyenas like it there.",
+      "objectname": "spawn_bush_farm",
+      "preview": "spawn_bush_farm_preview.jpg"
+    },
+    {
+      "translationId": "Diamond Mine",
+	  "description":"Diamonds are mined on the beach by strip mining and accretion, a process where the land is pushed further into the sea to gain new mining grounds.",
+      "objectname": "spawn_diamond_mine",
+      "preview": "spawn_diamond_mine_preview.jpg"
+    }
+  ],
+  "minimap": [
+    {
+      "file":"minimap/minimap_terrain.png",
+      "size":[4096,4096],
+      "offset":[-1536,2556]
+    }
+  ]
+}

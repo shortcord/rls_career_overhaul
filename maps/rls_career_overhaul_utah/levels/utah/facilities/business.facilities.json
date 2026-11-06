@@ -1,0 +1,146 @@
+{
+  "passiveBusinesses": [
+    {
+      "id": "utahTheRightTurn",
+      "type": "passiveBusiness",
+      "archetypeId": "miniMart",
+      "name": "The Right Turn",
+      "preview": "fuel_gasolin.jpg",
+      "price": 75000,
+      "financingAllowed": false,
+      "description": "Own and stock the convenience store at The Right Turn. Collect supplies from Utah Cargo Facility, deliver them here, and collect the store's earnings.",
+      "mapId": "utah",
+      "supplierFacilityId": "cargoYardDelivery",
+      "supplierParkingSpotName": "cargoPark",
+      "receivingFacilityId": "utahTheRightTurnReceiving",
+      "receivingParkingSpotName": "The Right Turn",
+      "sitesFile": "smallBusinesses.sites.json",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "theRightTurn_area",
+          "theRightTurn_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "cardboardBox",
+          "keyLabel": "Supply pallet",
+          "valueLabel": "128 slots"
+        },
+        {
+          "icon": "time",
+          "keyLabel": "Production cycle",
+          "valueLabel": "6 active minutes"
+        }
+      ]
+    },
+    {
+      "id": "utahTyrannos",
+      "type": "passiveBusiness",
+      "archetypeId": "miniMart",
+      "name": "Utah Tyrannos",
+      "price": 75000,
+      "financingAllowed": false,
+      "description": "Own and stock the convenience store at Utah Tyrannos. Collect supplies from Utah Cargo Facility, deliver them here, and collect the store's earnings.",
+      "mapId": "utah",
+      "supplierFacilityId": "cargoYardDelivery",
+      "supplierParkingSpotName": "cargoPark",
+      "receivingFacilityId": "utahTyrannosReceiving",
+      "receivingParkingSpotName": "Utah Tyrannos",
+      "sitesFile": "smallBusinesses.sites.json",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "utahTyrannos_area",
+          "utahTyrannos_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "cardboardBox",
+          "keyLabel": "Supply pallet",
+          "valueLabel": "128 slots"
+        },
+        {
+          "icon": "time",
+          "keyLabel": "Production cycle",
+          "valueLabel": "6 active minutes"
+        }
+      ],
+      "preview": "tyrannosStation.jpg"
+    },
+    {
+      "id": "utahCanyonFuel",
+      "type": "passiveBusiness",
+      "archetypeId": "miniMart",
+      "name": "Canyon Fuel",
+      "preview": "fuel_canyon_auto.jpg",
+      "price": 75000,
+      "financingAllowed": false,
+      "description": "Own and stock the convenience store at Canyon Fuel. Collect supplies from Utah Cargo Facility, deliver them here, and collect the store's earnings.",
+      "mapId": "utah",
+      "supplierFacilityId": "cargoYardDelivery",
+      "supplierParkingSpotName": "cargoPark",
+      "receivingFacilityId": "utahCanyonFuelReceiving",
+      "receivingParkingSpotName": "Canyon Fuel",
+      "sitesFile": "smallBusinesses.sites.json",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "canyonFuel_area",
+          "canyonFuel_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "cardboardBox",
+          "keyLabel": "Supply pallet",
+          "valueLabel": "128 slots"
+        },
+        {
+          "icon": "time",
+          "keyLabel": "Production cycle",
+          "valueLabel": "6 active minutes"
+        }
+      ]
+    },
+    {
+      "id": "utahDinoCafe",
+      "type": "passiveBusiness",
+      "archetypeId": "dynoOnly",
+      "name": "Dino Cafe",
+      "preview": "dino_cafe.jpg",
+      "price": 1000000,
+      "financingAllowed": false,
+      "description": "Own the Dino Cafe and unlock unlimited free dyno pulls here. Repairs remain paid.",
+      "mapId": "utah",
+      "icon": "poi_laptop_round",
+      "playModeIconName": "poi_laptop_round",
+      "iconOffsetHeight": 0.15,
+      "iconLift": 0.2,
+      "doors": [
+        [
+          "utahDinoCafe_area",
+          "utahDinoCafe_icon"
+        ]
+      ],
+      "activityAcceptProps": [
+        {
+          "icon": "checkmark",
+          "keyLabel": "Owner dyno access",
+          "valueLabel": "Unlimited free pulls"
+        }
+      ]
+    }
+  ]
+}

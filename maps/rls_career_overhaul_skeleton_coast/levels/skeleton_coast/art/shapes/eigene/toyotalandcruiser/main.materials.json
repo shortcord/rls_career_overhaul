@@ -1,0 +1,33 @@
+{
+  "landcruiser1": {
+    "name": "landcruiser1",
+    "mapTo": "landcruiser1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/toyotalandcruiser/landcruiser_d.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/toyotalandcruiser/landcruiser_n.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "landcruiser2": {
+    "name": "landcruiser2",
+    "mapTo": "landcruiser2",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/toyotalandcruiser/landcruiser_d.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/toyotalandcruiser/landcruiser_n.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Add"
+  }
+}

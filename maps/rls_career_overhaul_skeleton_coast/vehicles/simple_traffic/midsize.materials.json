@@ -1,0 +1,350 @@
+{
+  "traffic_midsize_glass": {
+    "name": "traffic_midsize_glass",
+    "mapTo": "traffic_midsize_glass",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.52302599,
+          0.529775023,
+          0.58377099,
+          1
+        ],
+        "metallicFactor": 0.662,
+        "opacityFactor": 0.0390000008,
+        "roughnessFactor": 0.0560000017
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_midsize_lightglass": {
+    "name": "traffic_midsize_lightglass",
+    "mapTo": "traffic_midsize_lightglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/simple_traffic/midsize/traffic_midsize_glass_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/midsize/traffic_midsize_glass_m.data.png",
+        "normalMap": "vehicles/simple_traffic/midsize/traffic_midsize_glass_nm.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/midsize/traffic_midsize_glass_op.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.0219999999
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_midsize_lightglass_dmg": {
+    "name": "traffic_midsize_lightglass_dmg",
+    "mapTo": "traffic_midsize_lightglass_dmg",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/midsize/traffic_midsize_glass_b.color.png",
+        "detailNormalMap": "/vehicles/simple_traffic/textures/traffic_glass_dmg_n.normal.png",
+        "detailNormalMapStrength": 0.75,
+        "metallicFactor": 0.749000013,
+        "normalDetailMapUseUV": 1,
+        "opacityFactor": 0.90200001,
+        "opacityMap": "/vehicles/simple_traffic/midsize/traffic_midsize_glass_dmg_o.data.png",
+        "roughnessFactor": 0
+      },
+      {
+        "detailNormalMapStrength": null,
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "opacityFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 71,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_midsize_lightglass_on": {
+    "name": "traffic_midsize_lightglass_on",
+    "mapTo": "traffic_midsize_lightglass_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/simple_traffic/midsize/traffic_midsize_glass_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "vehicles/simple_traffic/midsize/traffic_midsize_glass_g.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/simple_traffic/midsize/traffic_midsize_glass_m.data.png",
+        "normalMap": "vehicles/simple_traffic/midsize/traffic_midsize_glass_nm.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/midsize/traffic_midsize_glass_op.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.0219999999
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 0,
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_midsize_lights": {
+    "name": "traffic_midsize_lights",
+    "mapTo": "traffic_midsize_lights",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "vehicles/simple_traffic/midsize/traffic_midsize_lights_b.color.png",
+        "metallicFactor": 1,
+        "normalMap": "vehicles/simple_traffic/midsize/traffic_midsize_lights_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "vehicles/simple_traffic/midsize/traffic_midsize_lights_r.data.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "traffic_midsize_lights_on": {
+    "name": "traffic_midsize_lights_on",
+    "mapTo": "traffic_midsize_lights_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/midsize/traffic_midsize_lights_b.color.png",
+        "emissive": true,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "/vehicles/simple_traffic/midsize/traffic_midsize_lights_g.color.png",
+        "metallicFactor": 1,
+        "normalMap": "vehicles/simple_traffic/midsize/traffic_midsize_lights_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/vehicles/simple_traffic/midsize/traffic_midsize_lights_r.data.png"
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "emissive": null,
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "castShadows": false,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  },
+  "traffic_paint.skin_traffic_midsize.traffic_midsize_taxi": {
+    "name": "traffic_paint.skin_traffic_midsize.traffic_midsize_taxi",
+    "mapTo": "traffic_paint.skin_traffic_midsize.traffic_midsize_taxi",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/midsize/midsize_skin_taxi.color.DDS",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 0.340999991
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_paint.skin_traffic_midsize.traffic_midsize_turboburger": {
+    "name": "traffic_paint.skin_traffic_midsize.traffic_midsize_turboburger",
+    "mapTo": "traffic_paint.skin_traffic_midsize.traffic_midsize_turboburger",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/midsize/traffic_midsize_skin_turboburger_b.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "metallicFactor": 0.340999991
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_paint_trim.skin_traffic_midsize.traffic_midsize_turboburger": {
+    "name": "traffic_paint_trim.skin_traffic_midsize.traffic_midsize_turboburger",
+    "mapTo": "traffic_paint_trim.skin_traffic_midsize.traffic_midsize_turboburger",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/midsize/traffic_midsize_skin_turboburger_b.color.png",
+        "clearCoatFactor": 1,
+        "clearCoatRoughnessFactor": 0,
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.340999991,
+        "normalMap": "/vehicles/simple_traffic/textures/traffic_main_n.normal.png"
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "diffuseMapUseUV": null,
+        "metallicFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  }
+}

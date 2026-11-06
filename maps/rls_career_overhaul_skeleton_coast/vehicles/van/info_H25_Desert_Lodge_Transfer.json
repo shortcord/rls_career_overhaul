@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":9.7,
+  "0-100 mph":33.6,
+  "0-60 mph":9.1,
+  "100-0 km/h":49.5,
+  "60-0 mph":151.1,
+  "60-100 mph":24.4,
+  "Body Style":"Van",
+  "BoundingBox":[
+    [
+      -0.68,
+      -1.35,
+      -0.4103
+    ],
+    [
+      1.78,
+      4.175,
+      1.73
+    ]
+  ],
+  "Braking G":0.794,
+  "Config Type":"Factory",
+  "Configuration":"H25_Desert_Lodge_Transfer",
+  "Description":"Premium Medium-Duty Passenger Van with 4WD",
+  "Drag Times":{
+    "brakingG":0.9088559834,
+    "time_0_60":9.306500602,
+    "time_1000":14.1545009,
+    "time_1_4":17.0500011,
+    "time_1_8":10.7710007,
+    "time_330":6.905000459,
+    "time_60":2.356500172,
+    "velAt_1_4":35.03490433,
+    "velAt_1_8":28.83287488
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Off-Road Score":44,
+  "Population":5000,
+  "Power":223,
+  "PowerPeakRPM":"4450 - 5150",
+  "Propulsion":"ICE",
+  "Top Speed":49.68589105,
+  "Torque":410,
+  "TorquePeakRPM":"2550 - 3400",
+  "Transmission":"Automatic",
+  "Value":54000,
+  "Weight":2560,
+  "Weight/Power":11.47982063,
+  "Years":{
+    "max":2005,
+    "min":1993
+  },
+  "defaultPaintName1":"White",
+  "defaultPaintName2":"White"
+}

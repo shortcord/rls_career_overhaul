@@ -1,0 +1,28 @@
+{
+  "t_trailers_metal_trim_01": {
+    "name": "t_trailers_metal_trim_01",
+    "mapTo": "t_trailers_metal_trim_01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/building/t_trailers_metal_trim_01_d.color",
+        "specular": [
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "specular": null
+      },
+      {
+        "specular": null
+      },
+      {
+        "specular": null
+      }
+    ],
+    "translucent": true
+  }
+}

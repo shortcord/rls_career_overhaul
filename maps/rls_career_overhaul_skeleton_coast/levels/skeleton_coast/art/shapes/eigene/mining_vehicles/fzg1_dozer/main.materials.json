@@ -1,0 +1,222 @@
+{
+  "LP_Tractor2_baki_BaseColor": {
+    "name": "LP_Tractor2_baki_BaseColor",
+    "mapTo": "LP_Tractor2_baki_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_baki_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_baki_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_catki1_BaseColor": {
+    "name": "LP_Tractor2_catki1_BaseColor",
+    "mapTo": "LP_Tractor2_catki1_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_catki1_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_catki1_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_catki2_BaseColor": {
+    "name": "LP_Tractor2_catki2_BaseColor",
+    "mapTo": "LP_Tractor2_catki2_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_catki2_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_catki2_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_corpus1_BaseColor": {
+    "name": "LP_Tractor2_corpus1_BaseColor",
+    "mapTo": "LP_Tractor2_corpus1_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_corpus1_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_corpus1_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_corpus2_BaseColor": {
+    "name": "LP_Tractor2_corpus2_BaseColor",
+    "mapTo": "LP_Tractor2_corpus2_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_corpus2_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_corpus2_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_covsh1_BaseColor": {
+    "name": "LP_Tractor2_covsh1_BaseColor",
+    "mapTo": "LP_Tractor2_covsh1_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_covsh1_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_covsh1_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_covsh1_BaseColor_001": {
+    "name": "LP_Tractor2_covsh1_BaseColor_001",
+    "mapTo": "LP_Tractor2_covsh1_BaseColor.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "LP_Tractor2_covsh1_BaseColor"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_covsh2_BaseColor": {
+    "name": "LP_Tractor2_covsh2_BaseColor",
+    "mapTo": "LP_Tractor2_covsh2_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_covsh2_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_covsh2_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_glass": {
+    "name": "LP_Tractor2_glass",
+    "mapTo": "LP_Tractor2_glass",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Mul"
+  },
+  "LP_Tractor2_kabina_BaseColor": {
+    "name": "LP_Tractor2_kabina_BaseColor",
+    "mapTo": "LP_Tractor2_kabina_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_kabina_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_kabina_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_naves_BaseColor": {
+    "name": "LP_Tractor2_naves_BaseColor",
+    "mapTo": "LP_Tractor2_naves_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_naves_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_naves_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_salon_BaseColor": {
+    "name": "LP_Tractor2_salon_BaseColor",
+    "mapTo": "LP_Tractor2_salon_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_salon_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_salon_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_track1_BaseColor": {
+    "name": "LP_Tractor2_track1_BaseColor",
+    "mapTo": "LP_Tractor2_track1_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_track1_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_track1_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "LP_Tractor2_track2_BaseColor": {
+    "name": "LP_Tractor2_track2_BaseColor",
+    "mapTo": "LP_Tractor2_track2_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_track2_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/fzg1_dozer/LP_Tractor2_track2_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

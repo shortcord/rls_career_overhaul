@@ -1,0 +1,594 @@
+{
+  "eca_asphalt": {
+    "name": "eca_asphalt",
+    "mapTo": "eca_asphalt",
+    "class": "Material",
+    "persistentId": "c98d6252-f876-4008-b76e-d6bcc894ab9e",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/road/eca_asphalt/t_asphalt_ao.data.png",
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/assets/materials/tileable/road/eca_asphalt/t_asphalt_b.color.png",
+        "detailMap": "/assets/materials/tileable/road/eca_asphalt/t_macro_asphalt_detail.data.png",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/tileable/road/eca_asphalt/t_asphalt_nm.normal.png",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "roughnessMap": "/assets/materials/tileable/road/eca_asphalt/t_asphalt_r.data.png",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "annotation": "ASPHALT",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "eca_bld_bricks": {
+    "name": "eca_bld_bricks",
+    "mapTo": "eca_bld_bricks",
+    "class": "Material",
+    "persistentId": "08a84ec1-569b-4898-8366-0fcf3b319c4a",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_d.dds",
+        "normalMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_bricks_painted": {
+    "name": "eca_bld_bricks_painted",
+    "mapTo": "eca_bld_bricks_painted",
+    "class": "Material",
+    "persistentId": "044db0e7-291d-415f-8af2-eacbb23c8a41",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/brick/eca_bld_bricks_painted/eca_bld_bricks_painted_d.dds",
+        "normalMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/brick/eca_bld_bricks/eca_bld_bricks_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_concrete": {
+    "name": "eca_bld_concrete",
+    "mapTo": "eca_bld_concrete",
+    "class": "Material",
+    "persistentId": "6454a9c9-93fa-4c21-a291-3e6422415c9e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/eca_bld_concrete/eca_bld_concrete_d.dds",
+        "detailMap": "/assets/materials/tileable/concrete/eca_bld_concrete/detail_grunge_01b_low_desat.dds",
+        "detailScale": [
+          0.300000012,
+          0.300000012
+        ],
+        "normalMap": "/assets/materials/tileable/concrete/eca_bld_concrete/eca_bld_concrete_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/concrete/eca_bld_concrete/eca_bld_concrete_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "CONCRETE",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_decking": {
+    "name": "eca_bld_decking",
+    "mapTo": "eca_bld_decking",
+    "class": "Material",
+    "persistentId": "f3e83999-7166-4090-8def-eeb93287f794",
+    "Stages": [
+      {
+        "colorMap": "/levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_decking_d.dds",
+        "normalMap": "/levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_decking_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_decking_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_decking_old": {
+    "name": "eca_bld_decking_old",
+    "mapTo": "eca_bld_decking_old",
+    "class": "Material",
+    "persistentId": "74ad4419-7b73-4b17-b44a-74f79e525fa5",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_decking_old_d.dds",
+        "normalMap": "levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_decking_old_n.dds",
+        "specularMap": "levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_decking_old_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_house_decoration": {
+    "name": "eca_bld_house_decoration",
+    "mapTo": "eca_bld_house_decoration",
+    "class": "material",
+    "persistentId": "92622a6a-384d-47a0-b2cf-12296a9f06ad",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/eca_bld_house_decoration/eca_bld_house_decoration_d.dds",
+        "normalMap": "/assets/materials/baked_props/eca_bld_house_decoration/eca_bld_house_decoration_n.normal.png",
+        "specularMap": "/assets/materials/baked_props/eca_bld_house_decoration/eca_bld_house_decoration_s.dds",
+        "useAnisotropic": true
+      },
+      {
+        "useAnisotropic": null
+      },
+      {
+        "useAnisotropic": null
+      },
+      {
+        "useAnisotropic": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_metal_painted": {
+    "name": "eca_bld_metal_painted",
+    "mapTo": "eca_bld_metal_painted",
+    "class": "Material",
+    "persistentId": "f8269f42-0261-43ba-84ce-6b36cf1cc0db",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/eca_bld_metal_painted/eca_bld_metal_painted_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/eca_bld_metal_painted/eca_bld_metal_painted_n.dds",
+        "reflectivityMap": "/assets/materials/tileable/metal/eca_bld_metal_painted/eca_bld_metal_painted_r.dds",
+        "specularMap": "/assets/materials/tileable/metal/eca_bld_metal_painted/eca_bld_metal_painted_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_metal_trim": {
+    "name": "eca_bld_metal_trim",
+    "mapTo": "eca_bld_metal_trim",
+    "class": "Material",
+    "persistentId": "6e21d59d-d2d2-425a-a1aa-0517133af666",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/metal/eca_bld_metal_trim/eca_bld_metal_trim_d.dds",
+        "diffuseColor": [
+          0.988235354,
+          0.996078491,
+          0.988235354,
+          0.00800000038
+        ],
+        "normalMap": "/assets/materials/trim/metal/eca_bld_metal_trim/eca_bld_metal_trim_n.dds",
+        "pixelSpecular": true,
+        "reflectivityMap": "/assets/materials/trim/metal/eca_bld_metal_trim/eca_bld_metal_trim_r.dds",
+        "roughnessFactor": 0.812008262,
+        "specularMap": "/assets/materials/trim/metal/eca_bld_metal_trim/eca_bld_metal_trim_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_moderncorrugated_tin": {
+    "name": "eca_bld_moderncorrugated_tin",
+    "mapTo": "eca_bld_moderncorrugated_tin",
+    "class": "Material",
+    "persistentId": "0f9c8bd9-e210-4087-8448-255433e02e6d",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/moderncorrugated_tin/eca_bld_moderncorrugated_tin_d.dds",
+        "normalMap": "/assets/materials/tileable/metal/moderncorrugated_tin/eca_bld_moderncorrugated_tin_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/metal/moderncorrugated_tin/eca_bld_moderncorrugated_tin_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_shop_window_decoration": {
+    "name": "eca_bld_shop_window_decoration",
+    "mapTo": "eca_bld_shop_window_decoration",
+    "class": "Material",
+    "persistentId": "543d3e18-97cd-4ee2-b40b-0420187a014f",
+    "Stages": [
+      {
+        "colorMap": "levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_shop_window_decoration_d.dds",
+        "specular": [
+          0.988234997,
+          0.988234997,
+          0.988234997,
+          1
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 107,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "vegetation",
+    "materialTag2": "Natural",
+    "specularStrength0": "0.784314",
+    "translucentZWrite": true
+  },
+  "eca_bld_sidewalks": {
+    "name": "eca_bld_sidewalks",
+    "mapTo": "eca_bld_sidewalks",
+    "class": "Material",
+    "persistentId": "eaf5a163-c783-4a29-baf5-164c2dd43770",
+    "Stages": [
+      {
+        "colorMap": "/levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_sidewalks_d.dds",
+        "normalMap": "/levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_sidewalks_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/levels/utah/art/mt_east_coast_usa/shapes/buildings/eca_bld_sidewalks_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "SIDEWALK",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_trim_wood": {
+    "name": "eca_bld_trim_wood",
+    "mapTo": "eca_bld_trim_wood",
+    "class": "Material",
+    "persistentId": "a67d0b86-c8c1-4fe0-a9cb-a683582d1e21",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/wood/eca_bld_trim_wood/eca_bld_trim_wood_d.dds",
+        "normalMap": "/assets/materials/trim/wood/eca_bld_trim_wood/eca_bld_trim_wood_n.dds",
+        "specularMap": "/assets/materials/trim/wood/eca_bld_trim_wood/eca_bld_trim_wood_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_trim_wood_paint": {
+    "name": "eca_bld_trim_wood_paint",
+    "mapTo": "eca_bld_trim_wood_paint",
+    "class": "Material",
+    "persistentId": "a4286f00-14e5-4689-9bd2-0acb8e5326ef",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/wood/eca_bld_trim_wood_paint/eca_bld_trim_wood_paint_d.dds",
+        "normalMap": "/assets/materials/trim/wood/eca_bld_trim_wood_paint/eca_bld_trim_wood_paint_n.dds",
+        "specularMap": "/assets/materials/trim/wood/eca_bld_trim_wood_paint/eca_bld_trim_wood_paint_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_wood": {
+    "name": "eca_bld_wood",
+    "mapTo": "eca_bld_wood",
+    "class": "Material",
+    "persistentId": "12424f12-42f2-45dd-832e-7636e164200e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/eca_bld_wood/eca_bld_wood_d.dds",
+        "normalMap": "/assets/materials/tileable/wood/eca_bld_wood/eca_bld_wood_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/wood/eca_bld_wood/eca_bld_wood_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_bld_wood_rooftiles": {
+    "name": "eca_bld_wood_rooftiles",
+    "mapTo": "eca_bld_wood_rooftiles",
+    "class": "Material",
+    "persistentId": "3f7f5a64-b539-4b4a-ada3-55d4c6f90752",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_b.color.png",
+        "normalMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_nm.normal.png",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "roughnessMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_r.data.png",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "eca_bld_woodcladding_new": {
+    "name": "eca_bld_woodcladding_new",
+    "mapTo": "eca_bld_woodcladding_new",
+    "class": "Material",
+    "persistentId": "711a9962-c6f4-4666-b16b-5a8d0d82fa79",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/eca_bld_woodcladding_new/eca_bld_woodcladding_new_d.dds",
+        "normalMap": "/assets/materials/tileable/wood/eca_bld_woodcladding_new/eca_bld_woodcladding_new_n.dds",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/wood/eca_bld_woodcladding_new/eca_bld_woodcladding_new_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "useAnisotropic": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_doors_windows": {
+    "name": "eca_doors_windows",
+    "mapTo": "eca_doors_windows",
+    "class": "Material",
+    "persistentId": "0d627683-9ed2-46ce-9647-cd73cd466fe2",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/atlas/eca_doors_windows/eca_doors_windows_b.color.png",
+        "metallicFactor": 1,
+        "metallicMap": "/assets/materials/atlas/eca_doors_windows/eca_doors_windows_m.data.png",
+        "normalMap": "/assets/materials/atlas/eca_doors_windows/eca_doors_windows_nm.normal.png",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "roughnessMap": "/assets/materials/atlas/eca_doors_windows/eca_doors_windows_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "eca_fabric_generic": {
+    "name": "eca_fabric_generic",
+    "mapTo": "eca_fabric_generic",
+    "class": "Material",
+    "persistentId": "9e6d33da-0bef-4fdc-93ea-f3c8e585915f",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/fabric/eca_fabric_generic/fabric_generic_d.dds",
+        "normalMap": "/assets/materials/tileable/fabric/eca_fabric_generic/fabric_generic_n.dds",
+        "specularMap": "/assets/materials/tileable/fabric/eca_fabric_generic/fabric_generic_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "eca_fiberglass": {
+    "name": "eca_fiberglass",
+    "mapTo": "eca_fiberglass",
+    "class": "Material",
+    "persistentId": "fee4143c-0297-409d-9e63-660753df4426",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/glass/eca_fiberglass/eca_fiberglass_d.dds",
+        "normalMap": "/assets/materials/tileable/glass/eca_fiberglass/eca_fiberglass_n.dds",
+        "specularMap": "/assets/materials/tileable/glass/eca_fiberglass/eca_fiberglass_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "PLASTIC",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None"
+  },
+  "ind_bld_Tin_01": {
+    "name": "ind_bld_Tin_01",
+    "mapTo": "ind_bld_Tin_01",
+    "class": "Material",
+    "persistentId": "5c71812e-9b5a-4619-ae05-fb7cc5f694bd",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_d.dds",
+        "detailMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/detail_grunge_02_streak.dds",
+        "detailScale": [
+          0.1000000015,
+          0.1000000015
+        ],
+        "normalMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_n.dds",
+        "specularMap": "/assets/materials/tileable/metal/ind_bld_Tin_01/tin-01_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "METAL",
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "translucentBlendOp": "None"
+  }
+}

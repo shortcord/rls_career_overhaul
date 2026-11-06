@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.3.0 commit date:2024-11-19, commit time:08:52, hash:2b18cad88b13</authoring_tool>
+    </contributor>
+    <created>2025-05-16T14:17:11</created>
+    <modified>2025-05-16T14:17:11</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="italy_sidewalk_tiles_2-effect">
+      <profile_COMMON>
+        <newparam sid="italy_sidewalk_tiles_2_d_dds-surface">
+          <surface type="2D">
+            <init_from>italy_sidewalk_tiles_2_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="italy_sidewalk_tiles_2_d_dds-sampler">
+          <sampler2D>
+            <source>italy_sidewalk_tiles_2_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="italy_sidewalk_tiles_2_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="eca_bld_decking_oldwood_annotation_street-effect">
+      <profile_COMMON>
+        <newparam sid="eca_bld_decking_oldwood_d_dds-surface">
+          <surface type="2D">
+            <init_from>eca_bld_decking_oldwood_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="eca_bld_decking_oldwood_d_dds-sampler">
+          <sampler2D>
+            <source>eca_bld_decking_oldwood_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="eca_bld_decking_oldwood_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="windows_doors_reflective-effect">
+      <profile_COMMON>
+        <newparam sid="windows_doors_reflective_d_dds-surface">
+          <surface type="2D">
+            <init_from>windows_doors_reflective_d_dds</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="windows_doors_reflective_d_dds-sampler">
+          <sampler2D>
+            <source>windows_doors_reflective_d_dds-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="windows_doors_reflective_d_dds-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ind_bricks_02-effect">
+      <profile_COMMON>
+        <newparam sid="ind_bricks_02_d_color_DDS-surface">
+          <surface type="2D">
+            <init_from>ind_bricks_02_d_color_DDS</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ind_bricks_02_d_color_DDS-sampler">
+          <sampler2D>
+            <source>ind_bricks_02_d_color_DDS-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="ind_bricks_02_d_color_DDS-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="eca_bld_decking_oldwood_d_dds" name="eca_bld_decking_oldwood_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/houses/eca_bld_decking_oldwood_d.dds</init_from>
+    </image>
+    <image id="ind_bricks_02_d_color_DDS" name="ind_bricks_02_d_color_DDS">
+      <init_from>/C:/Users/Admin/Desktop/houses/ind_bricks_02_d.color.DDS</init_from>
+    </image>
+    <image id="italy_sidewalk_tiles_2_d_dds" name="italy_sidewalk_tiles_2_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/houses/italy_sidewalk_tiles_2_d.dds</init_from>
+    </image>
+    <image id="windows_doors_reflective_d_dds" name="windows_doors_reflective_d_dds">
+      <init_from>/C:/Users/Admin/Desktop/textures/windows_doors_reflective_d.dds</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="italy_sidewalk_tiles_2-material" name="italy_sidewalk_tiles_2">
+      <instance_effect url="#italy_sidewalk_tiles_2-effect"/>
+    </material>
+    <material id="eca_bld_decking_oldwood_annotation_street-material" name="eca_bld_decking_oldwood_annotation_street">
+      <instance_effect url="#eca_bld_decking_oldwood_annotation_street-effect"/>
+    </material>
+    <material id="windows_doors_reflective-material" name="windows_doors_reflective">
+      <instance_effect url="#windows_doors_reflective-effect"/>
+    </material>
+    <material id="ind_bricks_02-material" name="ind_bricks_02">
+      <instance_effect url="#ind_bricks_02-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube_3580-mesh" name="Cube.3580">
+      <mesh>
+        <source id="Cube_3580-mesh-positions">
+          <float_array id="Cube_3580-mesh-positions-array" count="24">-1.8 -2.683333 -1.913381 -1.8 -2.683333 1.086619 -1.8 2.516667 -1.913381 -1.8 2.516667 1.586619 1.8 -2.683333 -1.913381 1.8 -2.683333 1.086619 1.8 2.516667 -1.913381 1.8 2.516667 1.586619</float_array>
+          <technique_common>
+            <accessor source="#Cube_3580-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_3580-mesh-normals">
+          <float_array id="Cube_3580-mesh-normals-array" count="30">-1 0 0 0 1 0 1 0 0 0 -1 0 0 -0.09571236 0.995409 -1 0 0 0 1 0 1 0 0 0 -1 0 0 -0.09571236 0.995409</float_array>
+          <technique_common>
+            <accessor source="#Cube_3580-mesh-normals-array" count="10" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_3580-mesh-map-0">
+          <float_array id="Cube_3580-mesh-map-0-array" count="60">-1.121125 1.357326 2.121125 -0.5132034 -1.121125 -0.5132034 -0.6223176 1.669081 1.622318 -0.5132034 -0.6223176 -0.5132034 2.121125 -0.5132034 -1.121125 1.357326 -1.121125 -0.5132034 1.622318 1.357326 -0.6223176 -0.5132034 1.622318 -0.5132034 -0.06734234 1.319494 1.067342 -0.3194944 1.067342 1.319494 -1.121125 1.357326 2.121125 1.669081 2.121125 -0.5132034 -0.6223176 1.669081 1.622318 1.669081 1.622318 -0.5132034 2.121125 -0.5132034 2.121125 1.669081 -1.121125 1.357326 1.622318 1.357326 -0.6223176 1.357326 -0.6223176 -0.5132034 -0.06734234 1.319494 -0.06734234 -0.3194944 1.067342 -0.3194944</float_array>
+          <technique_common>
+            <accessor source="#Cube_3580-mesh-map-0-array" count="30" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_3580-mesh-colors-Attribute" name="Attribute">
+          <float_array id="Cube_3580-mesh-colors-Attribute-array" count="120">0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 1 1 1 1 1 1 1 1 1 1 1 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 0.5607843 0.5686275 0.5686275 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_3580-mesh-colors-Attribute-array" count="30" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_3580-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_3580-mesh-positions"/>
+        </vertices>
+        <triangles material="italy_sidewalk_tiles_2-material" count="8">
+          <input semantic="VERTEX" source="#Cube_3580-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_3580-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_3580-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_3580-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>1 0 0 0 2 0 1 1 0 0 2 2 3 1 3 3 6 1 4 4 2 1 5 5 6 2 6 6 5 2 7 7 4 2 8 8 5 3 9 9 0 3 10 10 4 3 11 11 1 5 15 15 3 5 16 16 2 5 17 17 3 6 18 18 7 6 19 19 6 6 20 20 6 7 21 21 7 7 22 22 5 7 23 23 5 8 24 24 1 8 25 25 0 8 26 26</p>
+        </triangles>
+        <triangles material="eca_bld_decking_oldwood_annotation_street-material" count="2">
+          <input semantic="VERTEX" source="#Cube_3580-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_3580-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_3580-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_3580-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>3 4 12 12 5 4 13 13 7 4 14 14 3 9 27 27 1 9 28 28 5 9 29 29</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_507-mesh" name="Cube.507">
+      <mesh>
+        <source id="Cube_507-mesh-positions">
+          <float_array id="Cube_507-mesh-positions-array" count="72">-1.797133 -2.657683 1.46492 1.102867 2.542317 1.653618 1.802867 -2.657683 1.46492 1.802867 2.542317 1.96492 -1.797133 2.542317 1.96492 -1.097133 2.542317 1.653618 -1.097133 2.542317 -0.5350801 1.102867 2.542317 -0.5350801 -1.797132 -2.967509 1.435129 -1.797132 2.872244 1.996644 1.802867 -2.967509 1.435129 1.802867 2.872244 1.996644 -1.797132 -2.97708 1.53467 -1.797132 2.862673 2.096185 1.802867 2.862673 2.096185 1.802867 -2.97708 1.53467 -1.797133 -2.657683 -1.53508 -1.797133 -2.657683 -0.5350801 -1.797133 2.542317 -1.53508 -1.797133 2.542317 -0.5350801 1.802867 -2.657683 -1.53508 1.802867 -2.657683 -0.5350801 1.802867 2.542317 -1.53508 1.802867 2.542317 -0.5350801</float_array>
+          <technique_common>
+            <accessor source="#Cube_507-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_507-mesh-normals">
+          <float_array id="Cube_507-mesh-normals-array" count="114">-1 0 0 1 0 -2.38419e-7 0 -1 0 3.40598e-7 1 0 0 1 0 0 1 0 0 0.09571236 -0.995409 0 -0.09571236 0.995409 0 -0.9954092 -0.09571069 0 0.9954087 0.0957154 1 0 0 -1 0 0 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1 -1 0 0 1 0 -1.90735e-7 0 -1 0 0 1 0 -3.40598e-7 1 0 0 1 0 0 1 0 0 1 0 0 0.09571236 -0.995409 0 -0.09571236 0.995409 0 -0.9954092 -0.09571069 0 0.9954087 0.0957154 1 0 0 -1 0 0 -1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_507-mesh-normals-array" count="38" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_507-mesh-map-0">
+          <float_array id="Cube_507-mesh-map-0-array" count="228">-1.877233 1.167084 2.677233 -0.5846341 -1.877233 -0.5846341 2.677233 -0.5846341 -1.877233 1.167084 -1.877233 -0.5846341 2.26266 -0.5846341 -0.8904321 1.167084 -0.8904321 -0.5846341 1.649559 1.332357 2.26266 -0.5846341 1.649559 -0.5846341 -0.2773308 1.332357 -0.890432 1.605013 1.649559 1.332357 0.3664944 4.64916e-4 0.1832985 0.182944 0.3664944 0.182944 1.000936 -0.3144269 -0.00484246 1.317101 1.000936 1.317101 -0.00484246 1.314427 1.000936 -0.3171009 1.000936 1.314427 1.000936 0.4076562 -0.00484246 0.4354662 -0.00484246 0.4076562 -0.00484246 0.5645339 1.000936 0.5923438 1.000936 0.5645339 0.5082679 -0.319505 0.5386072 1.319505 0.5106691 1.319546 0.5106691 1.319546 0.536206 -0.3195459 0.5082679 -0.319505 -0.7716969 0.7445572 1.771697 0.2554429 -0.7716969 0.2554429 -0.3804051 0.7445572 1.380406 0.2554429 -0.3804051 0.2554429 1.771697 0.7445572 -0.7716969 0.2554429 1.771697 0.2554429 1.380406 0.7445572 -0.3804051 0.2554429 1.380406 0.2554429 1.380406 1.771697 -0.3804051 -0.7716969 -0.3804051 1.771697 -0.3804051 1.771697 1.380406 -0.7716969 1.380406 1.771697 -1.877233 1.167084 2.677233 1.605013 2.677233 -0.5846341 2.677233 -0.5846341 2.677233 1.605013 -1.877233 1.167084 2.26266 -0.5846341 2.26266 1.167084 -0.8904321 1.167084 1.649559 1.332357 2.26266 1.605013 2.26266 -0.5846341 -0.2773308 1.332357 -0.2773308 -0.5846341 -0.8904321 -0.5846341 -0.890432 1.605013 2.26266 1.605013 1.649559 1.332357 -0.2773308 1.332357 -0.8904321 -0.5846341 -0.890432 1.605013 0.3664944 4.64916e-4 0.1832984 4.64931e-4 0.1832985 0.182944 1.000936 -0.3144269 -0.00484246 -0.3144269 -0.00484246 1.317101 -0.00484246 1.314427 -0.00484246 -0.3171009 1.000936 -0.3171009 1.000936 0.4076562 1.000936 0.4354662 -0.00484246 0.4354662 -0.00484246 0.5645339 -0.00484246 0.5923438 1.000936 0.5923438 0.5082679 -0.319505 0.536206 -0.3195459 0.5386072 1.319505 0.5106691 1.319546 0.5386072 1.319505 0.536206 -0.3195459 -0.7716969 0.7445572 1.771697 0.7445572 1.771697 0.2554429 -0.3804051 0.7445572 1.380406 0.7445572 1.380406 0.2554429 1.771697 0.7445572 -0.7716969 0.7445572 -0.7716969 0.2554429 1.380406 0.7445572 -0.3804051 0.7445572 -0.3804051 0.2554429 1.380406 1.771697 1.380406 -0.7716969 -0.3804051 -0.7716969 -0.3804051 1.771697 -0.3804051 -0.7716969 1.380406 -0.7716969</float_array>
+          <technique_common>
+            <accessor source="#Cube_507-mesh-map-0-array" count="114" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_507-mesh-colors-Attribute" name="Attribute">
+          <float_array id="Cube_507-mesh-colors-Attribute-array" count="456">0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 0.7294118 0.7294118 0.7294118 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_507-mesh-colors-Attribute-array" count="114" stride="4">
+              <param name="R" type="float"/>
+              <param name="G" type="float"/>
+              <param name="B" type="float"/>
+              <param name="A" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_507-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_507-mesh-positions"/>
+        </vertices>
+        <triangles material="italy_sidewalk_tiles_2-material" count="12">
+          <input semantic="VERTEX" source="#Cube_507-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_507-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_507-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_507-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>0 0 0 0 19 0 1 1 17 0 2 2 23 1 3 3 2 1 4 4 21 1 5 5 21 2 6 6 0 2 7 7 17 2 8 8 1 3 9 9 23 3 10 10 7 3 11 11 5 4 12 12 4 4 13 13 1 4 14 14 0 18 54 54 4 18 55 55 19 18 56 56 23 19 57 57 3 19 58 58 2 19 59 59 21 20 60 60 2 20 61 61 0 20 62 62 1 21 63 63 3 21 64 64 23 21 65 65 5 22 66 66 6 22 67 67 19 22 68 68 4 23 69 69 3 23 70 70 1 23 71 71 5 24 72 72 19 24 73 73 4 24 74 74</p>
+        </triangles>
+        <triangles material="windows_doors_reflective-material" count="2">
+          <input semantic="VERTEX" source="#Cube_507-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_507-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_507-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_507-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>5 5 15 15 7 5 16 16 6 5 17 17 5 25 75 75 1 25 76 76 7 25 77 77</p>
+        </triangles>
+        <triangles material="eca_bld_decking_oldwood_annotation_street-material" count="12">
+          <input semantic="VERTEX" source="#Cube_507-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_507-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_507-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_507-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>10 6 18 18 9 6 19 19 11 6 20 20 13 7 21 21 15 7 22 22 14 7 23 23 10 8 24 24 12 8 25 25 8 8 26 26 9 9 27 27 14 9 28 28 11 9 29 29 11 10 30 30 15 10 31 31 10 10 32 32 8 11 33 33 13 11 34 34 9 11 35 35 10 26 78 78 8 26 79 79 9 26 80 80 13 27 81 81 12 27 82 82 15 27 83 83 10 28 84 84 15 28 85 85 12 28 86 86 9 29 87 87 13 29 88 88 14 29 89 89 11 30 90 90 14 30 91 91 15 30 92 92 8 31 93 93 12 31 94 94 13 31 95 95</p>
+        </triangles>
+        <triangles material="ind_bricks_02-material" count="12">
+          <input semantic="VERTEX" source="#Cube_507-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_507-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_507-mesh-map-0" offset="2" set="0"/>
+          <input semantic="COLOR" source="#Cube_507-mesh-colors-Attribute" offset="3" set="0"/>
+          <p>17 12 36 36 18 12 37 37 16 12 38 38 19 13 39 39 22 13 40 40 18 13 41 41 23 14 42 42 20 14 43 43 22 14 44 44 21 15 45 45 16 15 46 46 20 15 47 47 22 16 48 48 16 16 49 49 18 16 50 50 19 17 51 51 21 17 52 52 23 17 53 53 17 32 96 96 19 32 97 97 18 32 98 98 19 33 99 99 23 33 100 100 22 33 101 101 23 34 102 102 21 34 103 103 20 34 104 104 21 35 105 105 17 35 106 106 16 35 107 107 22 36 108 108 20 36 109 109 16 36 110 110 19 37 111 111 17 37 112 112 21 37 113 113</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="towngarage4_a150" name="towngarage4_a150" type="NODE">
+            <matrix sid="transform">1 0 0 -0.002867267 0 1 0 0.1593633 0 0 1 0.5463817 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_507-mesh" name="towngarage4_a150">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="italy_sidewalk_tiles_2-material" target="#italy_sidewalk_tiles_2-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="windows_doors_reflective-material" target="#windows_doors_reflective-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="eca_bld_decking_oldwood_annotation_street-material" target="#eca_bld_decking_oldwood_annotation_street-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="ind_bricks_02-material" target="#ind_bricks_02-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="towngarage4_a40" name="towngarage4_a40" type="NODE">
+            <matrix sid="transform">1 0 0 -2.13276e-7 0 1 0 0.1850133 0 0 1 0.924683 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_3580-mesh" name="towngarage4_a40">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="italy_sidewalk_tiles_2-material" target="#italy_sidewalk_tiles_2-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                  <instance_material symbol="eca_bld_decking_oldwood_annotation_street-material" target="#eca_bld_decking_oldwood_annotation_street-material">
+                    <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="nulldetail1" name="nulldetail1" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

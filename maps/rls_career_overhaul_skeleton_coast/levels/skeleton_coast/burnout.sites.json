@@ -1,0 +1,14 @@
+{
+  "events": [
+    {
+      "eventId": "burnout_skeletonCoast",
+      "zoneId": "skeletonCoast",
+      "label": "Skeleton Coast Burnout Zone",
+      "types": ["burnout", "freeroam"],
+      "triggerName": "rls_burnoutZone_skeletonCoast",
+      "thumbnail": "/levels/skeleton_coast/facilities/freeroamEvents/burnout_skeletonCoast.jpg",
+      "reward": 200,
+      "scoreGoal": 6000
+    }
+  ]
+}

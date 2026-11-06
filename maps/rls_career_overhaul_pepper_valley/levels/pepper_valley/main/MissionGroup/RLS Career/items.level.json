@@ -1,0 +1,13 @@
+{"name":"policeAssignment","class":"BeamNGTrigger","__parent":"RLS Career","position":[1190.58435,-764.609863,112.813416],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-1,0,0,0,-0.999999821,-1.00413963e-05,0,-1.02202102e-05,0.999999821],"scale":[2.70135927,6.1801672,4.98143291]}
+{"name":"Remote Deliveries","class":"SimGroup","__parent":"RLS Career"}
+{"name":"FRE","class":"SimGroup","__parent":"RLS Career"}
+{"name":"small business","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Dealerships","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Player Houses","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Fuel Station","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Drag Racing","class":"SimGroup","__parent":"RLS Career"}
+{"name":"DesertRoadRallye","class":"SimGroup","__parent":"RLS Career"}
+{"name":"trail rocks","class":"SimGroup","__parent":"RLS Career"}
+{"name":"Level Gate","class":"SpawnSphere","__parent":"RLS Career","position":[1887.12085,4647.57373,111.653008],"dataBlock":"SpawnSphereMarker","radius":1,"rotationMatrix":[-0.827978253,-0.560759902,-6.14672899e-08,0.55962503,-0.826302648,-0.0635875836,0.0356573164,-0.0526491813,0.997976243],"spawnClass":"Player","sphereWeight0":"1"}
+{"name":"switchMaps","class":"BeamNGTrigger","__parent":"RLS Career","position":[2005.36816,4656.91846,112.157455],"luaFunction":"onBeamNGTrigger","rotationMatrix":[0.789740562,0.613440871,1.11758709e-08,-0.612452269,0.788467824,-0.0567505993,-0.0348131508,0.0448182411,0.99838841],"scale":[25.518898,14.2206526,7.70923615]}
+{"name":"nzyneEdits","class":"SimGroup","__parent":"RLS Career"}

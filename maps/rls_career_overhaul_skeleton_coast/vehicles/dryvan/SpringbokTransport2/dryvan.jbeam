@@ -1,0 +1,11 @@
+{
+"dryvan_skin_SpringbokTransport2": {
+    "information":{
+        "authors":"THom6502",
+        "name":"Springbok Transport Dryvan",
+        "value":1000,
+    }
+    "slotType" : "paint_design",
+    "globalSkin" : "SpringbokTransport2",
+}
+}

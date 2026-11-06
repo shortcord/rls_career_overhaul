@@ -1,0 +1,52 @@
+{
+  "0-100 km/h":6.1,
+  "0-100 mph":15.6,
+  "0-60 mph":5.8,
+  "100-0 km/h":33.9,
+  "60-0 mph":103.4,
+  "60-100 mph":9.8,
+  "Body Style":"Buggy",
+  "BoundingBox":[
+    [
+      -0.8775,
+      -1.36,
+      -0.424
+    ],
+    [
+      1.3975,
+      2.84708,
+      1.432
+    ]
+  ],
+  "Braking G":1.16,
+  "Brand":"SP",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar SST Class Team Luderitz",
+  "Country":"United States",
+  "Description":"Dakar SST class entry for Team Luderitz, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass":"prestige",
+  "Off-Road Score":76,
+  "Population":100,
+  "Power":353,
+  "PowerPeakRPM":6200,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":47.687818979472,
+  "Torque":490,
+  "TorquePeakRPM":"3350 - 4300",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":80356,
+  "Weight":1715,
+  "Weight/Power":4.8583569405099,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

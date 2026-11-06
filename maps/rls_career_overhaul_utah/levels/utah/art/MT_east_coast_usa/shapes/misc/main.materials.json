@@ -1,0 +1,30 @@
+{
+  "lumber_raw": {
+    "name": "lumber_raw",
+    "mapTo": "lumber_raw",
+    "class": "Material",
+    "persistentId": "ba61b321-241c-4440-baa1-d94ab3e01d5d",
+    "Stages": [
+      {
+        "colorMap": "/levels/utah/art/mt_east_coast_usa/shapes/misc/lumber_raw_d.dds",
+        "diffuseColor": [
+          0.992156982,
+          0.992156982,
+          0.992156982,
+          1
+        ],
+        "normalMap": "/levels/utah/art/mt_east_coast_usa/shapes/misc/lumber_raw_n.dds",
+        "specularMap": "/levels/utah/art/mt_east_coast_usa/shapes/misc/lumber_raw_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "OBSTACLES",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial"
+  }
+}

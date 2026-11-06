@@ -1,0 +1,11 @@
+{
+    "Namibia_usernumber_license_plate_2_1": {
+    "information":{
+        "authors":"THom6502",
+        "name":"Namibia_usernumber",
+        "value":50
+    },
+    "slotType" : "licenseplate_design_2_1",
+    "licenseplate_path" : "vehicles/common/licenseplates/Namibia_usernumber/Namibia_usernumber.json"
+    }
+}

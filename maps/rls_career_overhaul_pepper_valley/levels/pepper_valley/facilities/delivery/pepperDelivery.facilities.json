@@ -1,0 +1,2797 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "northImport",
+      "alwaysVisible": false,
+      "name": "Northern Import/Exports",
+      "description": "It's about time they built this!",
+      "facilityInformation": "",
+      "associatedOrganization": "northValleyImports",
+      "preview": "n_import_export.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "northImportParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "northImportParcel",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3"
+          ],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel4"
+          ]
+        },
+        {
+          "psName": "northImportBridge",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "fuel",
+            "water"
+          ],
+          "logisticTypesReceived": [
+            "fuel",
+            "water"
+          ]
+        },
+        {
+          "psName": "northImportTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy",
+            "pepperHubFreightSouthToNorth"
+          ]
+        },
+        {
+          "psName": "northImportTrailerSpare1",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer2",
+            "pepperHubFreightNorthToSouth"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "northImportTrailerSpare2",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "northImportFreightBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy"
+          ]
+        },
+        {
+          "psName": "northImportCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "northImportCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [
+        "fuel",
+        "water",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer2",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2",
+        "pepperHubFreightNorthToSouth"
+      ],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel4",
+        "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy",
+        "pepperHubFreightSouthToNorth"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "northImportFreightBay",
+          "contractDestinationFacilityIds": [
+            "ajDelivery",
+            "remotePitOffroad",
+            "tyrannosFuelStation",
+            "remotePitMain",
+            "remotePitSalt"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "northImportFreightBay",
+          "contractDestinationFacilityIds": [
+            "remotePitMain",
+            "remotePit1",
+            "remotePit2",
+            "remotePit3",
+            "remotePit4",
+            "remotePit5",
+            "remotePit6",
+            "remotePit9",
+            "remotePitOffroad",
+            "remotePitSalt"
+          ],
+          "contractAmounts": [
+            5000,
+            7500,
+            10000
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperHubFreightNorthToSouth"
+          ],
+          "min": 8,
+          "max": 16,
+          "filter": [
+            "vanillaTrailer_boxutility_loaded_200",
+            "vanillaTrailer_boxutility_loaded_400",
+            "vanillaTrailer_boxutility_loaded_600",
+            "vanillaTrailer_boxutility_unloaded",
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default",
+            "vanillaTrailer_tsfb_loaded_400",
+            "vanillaTrailer_tsfb_loaded_800",
+            "vanillaTrailer_tsfb_unloaded",
+            "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+            "vanillaTrailer_dryvan_28ft",
+            "vanillaTrailer_dryvan_28ft_4500kg",
+            "vanillaTrailer_dryvan_28ft_9600kg",
+            "vanillaTrailer_flatbed_28ft_double",
+            "vanillaTrailer_flatbed_28ft_double_coil",
+            "vanillaTrailer_flatbed_28ft_double_pipes",
+            "vanillaTrailer_flatbed_28ft_single_wood",
+            "vanillaTrailer_flatbed_32ft_coil",
+            "vanillaTrailer_flatbed_32ft_pipes",
+            "vanillaTrailer_flatbed_32ft_wood",
+            "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+            "vanillaTrailer_tiltdeck_30ft_gooseneck_wood"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4"
+          ],
+          "min": 4,
+          "max": 12,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel"
+          ],
+          "min": 6,
+          "max": 10,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3"
+          ],
+          "min": 8,
+          "max": 12,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "northImportFreightBay",
+          "contractDestinationFacilityIds": [
+            "ajDelivery",
+            "remotePitOffroad",
+            "tyrannosFuelStation",
+            "remotePitMain",
+            "remotePitSalt"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+          ],
+          "min": 4,
+          "max": 12,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperHubFreightNorthToSouth"
+          ],
+          "min": 4,
+          "max": 8,
+          "offerMode": "independent",
+          "filter": [
+            "vanillaTrailer_boxutility_loaded_200",
+            "vanillaTrailer_boxutility_loaded_400",
+            "vanillaTrailer_boxutility_loaded_600",
+            "vanillaTrailer_boxutility_unloaded",
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default",
+            "vanillaTrailer_tsfb_loaded_400",
+            "vanillaTrailer_tsfb_loaded_800",
+            "vanillaTrailer_tsfb_unloaded",
+            "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+            "vanillaTrailer_dryvan_28ft",
+            "vanillaTrailer_dryvan_28ft_4500kg",
+            "vanillaTrailer_dryvan_28ft_9600kg",
+            "vanillaTrailer_flatbed_28ft_double",
+            "vanillaTrailer_flatbed_28ft_double_coil",
+            "vanillaTrailer_flatbed_28ft_double_pipes",
+            "vanillaTrailer_flatbed_28ft_single_wood",
+            "vanillaTrailer_flatbed_32ft_coil",
+            "vanillaTrailer_flatbed_32ft_pipes",
+            "vanillaTrailer_flatbed_32ft_wood",
+            "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+            "vanillaTrailer_tiltdeck_30ft_gooseneck_wood"
+          ]
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      }
+    },
+    {
+      "id": "southImport",
+      "alwaysVisible": false,
+      "name": "Southern Import/Exports",
+      "description": "Where'd all this come from?",
+      "facilityInformation": "",
+      "associatedOrganization": "southernPepperExports",
+      "preview": "s_import_export.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "southImportParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "miniMartSupplies"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "southImportParcel",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel4"
+          ],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3"
+          ]
+        },
+        {
+          "psName": "southImportBridge",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "fuel",
+            "water"
+          ],
+          "logisticTypesReceived": [
+            "fuel",
+            "water"
+          ]
+        },
+        {
+          "psName": "southImportTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer2",
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+            "pepperHubFreightNorthToSouth"
+          ]
+        },
+        {
+          "psName": "southImportTrailerSpare1",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer",
+            "pepperHubFreightSouthToNorth"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "southImportTrailerSpare2",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "southImportFreightBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy"
+          ]
+        },
+        {
+          "psName": "southImportCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "southImportCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [
+        "miniMartSupplies",
+        "fuel",
+        "water",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel4",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+        "pepperHubFreightSouthToNorth"
+      ],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer2",
+        "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+        "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy",
+        "pepperHubFreightNorthToSouth"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "southImportFreightBay",
+          "contractDestinationFacilityIds": [
+            "ajDelivery",
+            "remotePitOffroad",
+            "tyrannosFuelStation",
+            "remotePitMain",
+            "remotePitSalt"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "southImportFreightBay",
+          "contractDestinationFacilityIds": [
+            "remotePitMain",
+            "remotePit1",
+            "remotePit2",
+            "remotePit3",
+            "remotePit4",
+            "remotePit5",
+            "remotePit6",
+            "remotePit9",
+            "remotePitOffroad",
+            "remotePitSalt"
+          ],
+          "contractAmounts": [
+            5000,
+            7500,
+            10000
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperHubFreightSouthToNorth"
+          ],
+          "min": 8,
+          "max": 16,
+          "filter": [
+            "vanillaTrailer_boxutility_loaded_200",
+            "vanillaTrailer_boxutility_loaded_400",
+            "vanillaTrailer_boxutility_loaded_600",
+            "vanillaTrailer_boxutility_unloaded",
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default",
+            "vanillaTrailer_tsfb_loaded_400",
+            "vanillaTrailer_tsfb_loaded_800",
+            "vanillaTrailer_tsfb_unloaded",
+            "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+            "vanillaTrailer_dryvan_28ft",
+            "vanillaTrailer_dryvan_28ft_4500kg",
+            "vanillaTrailer_dryvan_28ft_9600kg",
+            "vanillaTrailer_flatbed_28ft_double",
+            "vanillaTrailer_flatbed_28ft_double_coil",
+            "vanillaTrailer_flatbed_28ft_double_pipes",
+            "vanillaTrailer_flatbed_28ft_single_wood",
+            "vanillaTrailer_flatbed_32ft_coil",
+            "vanillaTrailer_flatbed_32ft_pipes",
+            "vanillaTrailer_flatbed_32ft_wood",
+            "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+            "vanillaTrailer_tiltdeck_30ft_gooseneck_wood"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3"
+          ],
+          "min": 4,
+          "max": 12,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel2"
+          ],
+          "min": 6,
+          "max": 10,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel4"
+          ],
+          "min": 8,
+          "max": 12,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "southImportFreightBay",
+          "contractDestinationFacilityIds": [
+            "ajDelivery",
+            "remotePitOffroad",
+            "tyrannosFuelStation",
+            "remotePitMain",
+            "remotePitSalt"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy"
+          ],
+          "min": 4,
+          "max": 12,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperHubFreightSouthToNorth"
+          ],
+          "min": 4,
+          "max": 8,
+          "offerMode": "independent",
+          "filter": [
+            "vanillaTrailer_boxutility_loaded_200",
+            "vanillaTrailer_boxutility_loaded_400",
+            "vanillaTrailer_boxutility_loaded_600",
+            "vanillaTrailer_boxutility_unloaded",
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default",
+            "vanillaTrailer_tsfb_loaded_400",
+            "vanillaTrailer_tsfb_loaded_800",
+            "vanillaTrailer_tsfb_unloaded",
+            "vanillaTrailer_containerTrailer_20ft_2axle_20ft",
+            "vanillaTrailer_dryvan_28ft",
+            "vanillaTrailer_dryvan_28ft_4500kg",
+            "vanillaTrailer_dryvan_28ft_9600kg",
+            "vanillaTrailer_flatbed_28ft_double",
+            "vanillaTrailer_flatbed_28ft_double_coil",
+            "vanillaTrailer_flatbed_28ft_double_pipes",
+            "vanillaTrailer_flatbed_28ft_single_wood",
+            "vanillaTrailer_flatbed_32ft_coil",
+            "vanillaTrailer_flatbed_32ft_pipes",
+            "vanillaTrailer_flatbed_32ft_wood",
+            "vanillaTrailer_tiltdeck_22ft_gooseneck_wood",
+            "vanillaTrailer_tiltdeck_30ft_gooseneck_wood"
+          ]
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      }
+    },
+    {
+      "id": "ajDelivery",
+      "alwaysVisible": false,
+      "name": "AJ's Part Supply",
+      "description": "Rumor has it that eventually you'll deliver past this road block.",
+      "facilityInformation": "",
+      "associatedOrganization": "ajsAutoRepairOfPepperValley",
+      "preview": "aj_delivery.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "ajDeliveryParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "ajDeliveryServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel2",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "pepperValleyLogisticsPlan2AjSPartSupplyCarJockey",
+            "pepperAjDealerVehicleIndependent",
+            "pepperAjDealerPartsEmployment",
+            "pepperAjDealerPartsIndependent",
+            "pepperAjDealerVehicleEmployment"
+          ],
+          "logisticTypesReceived": [
+            "fuel",
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel4",
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy",
+            "pepperDealerRepairReturnsEmployment",
+            "pepperDealerRepairReturnsIndependent",
+            "pepperDealerRepairVehicleEmployment",
+            "pepperDealerRepairVehicleIndependent"
+          ]
+        },
+        {
+          "psName": "ajDeliveryCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel2",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "pepperValleyLogisticsPlan2AjSPartSupplyCarJockey",
+        "pepperAjDealerVehicleIndependent",
+        "pepperAjDealerPartsEmployment",
+        "pepperAjDealerPartsIndependent",
+        "pepperAjDealerVehicleEmployment"
+      ],
+      "logisticTypesReceived": [
+        "fuel",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel4",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy",
+        "pepperDealerRepairReturnsEmployment",
+        "pepperDealerRepairReturnsIndependent",
+        "pepperDealerRepairVehicleEmployment",
+        "pepperDealerRepairVehicleIndependent"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel"
+          ],
+          "min": 6,
+          "max": 18,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+          ],
+          "min": 0,
+          "max": 2,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3"
+          ],
+          "min": 6,
+          "max": 18,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyCarJockey"
+          ],
+          "min": 1,
+          "max": 3,
+          "filter": [
+            "budgetVehFilter",
+            "cheapVehFilter",
+            "exoticTierVehFilter",
+            "heavyVehFilter",
+            "highEndVehFilter",
+            "mediumVehFilter"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperAjDealerVehicleIndependent"
+          ],
+          "min": 1,
+          "max": 3,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperAjDealerPartsEmployment"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperAjDealerPartsIndependent"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperAjDealerVehicleEmployment"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "employment"
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "employmentRepo": true,
+      "repoProvider": true
+    },
+    {
+      "id": "remotePitMain",
+      "alwaysVisible": false,
+      "name": "Main Remote Pit",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "offRoadSupplies",
+      "preview": "main_remote_pit.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePitMainParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePitMainFreightBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy",
+            "pepperOffRoadSuppliesremotePitMainParts"
+          ],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+          ]
+        },
+        {
+          "psName": "remotePitMainCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "remotePitMainCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy",
+        "pepperOffRoadSuppliesremotePitMainParts"
+      ],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailer"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2MainRemotePitSouthernImportExportsTrailerCopy"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperOffRoadSuppliesremotePitMainParts"
+          ],
+          "min": 2,
+          "max": 6,
+          "offerMode": "employment"
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      }
+    },
+    {
+      "id": "remotePit1",
+      "alwaysVisible": false,
+      "name": "Remote Pit 1",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_1.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit1Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit1ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit2",
+      "alwaysVisible": false,
+      "name": "Remote Pit 2",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_2.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit2Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit2ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit3",
+      "alwaysVisible": false,
+      "name": "Remote Pit 3",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_3.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit3Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit3ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit4",
+      "alwaysVisible": false,
+      "name": "Remote Pit 4",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_4.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit4Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit4ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit5",
+      "alwaysVisible": false,
+      "name": "Remote Pit 5",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_5.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit5Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit5ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit6",
+      "alwaysVisible": false,
+      "name": "Remote Pit 6",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_6.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit6Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit6ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit7",
+      "alwaysVisible": false,
+      "name": "Remote Pit 7",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_7.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit7Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit8",
+      "alwaysVisible": false,
+      "name": "Remote Pit 8",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_8.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit8Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit10",
+      "alwaysVisible": false,
+      "name": "Radio Tower",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "radio_tower.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit10Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePit9",
+      "alwaysVisible": false,
+      "name": "Remote Pit 9",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "remote_9.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePit9Parking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePit9ServiceBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperOffRoadSuppliesremotePitMainParts",
+            "pepperOffRoadSuppliesremotePitSaltParts",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperOffRoadSuppliesremotePitMainParts",
+        "pepperOffRoadSuppliesremotePitSaltParts",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePitSalt",
+      "alwaysVisible": false,
+      "name": "Salt Flat Supplies",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "offRoadSupplies",
+      "preview": "saltflat_supply.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePitSaltParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePitSaltFreightBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy",
+            "pepperOffRoadSuppliesremotePitSaltParts"
+          ],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+            "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+            "fuel",
+            "water",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer2",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel4",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+          ]
+        },
+        {
+          "psName": "remotePitSaltCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "remotePitSaltCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy",
+        "pepperOffRoadSuppliesremotePitSaltParts"
+      ],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel",
+        "pepperValleyLogisticsPlan2AjSPartSupplyParcel3",
+        "fuel",
+        "water",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel4",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer2",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailer"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SaltFlatSuppliesSouthernImportExportsTrailerCopy"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperOffRoadSuppliesremotePitSaltParts"
+          ],
+          "min": 2,
+          "max": 6,
+          "offerMode": "employment"
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      }
+    },
+    {
+      "id": "remotePitAirport",
+      "alwaysVisible": false,
+      "name": "Airport Supplies",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "airport_supply.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePitAirportParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel4"
+          ]
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel2",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel4"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "omitEmployment": true,
+      "employmentCustomer": true
+    },
+    {
+      "id": "remotePitOffroad",
+      "alwaysVisible": false,
+      "name": "Offroad Supply Point",
+      "description": "Glad this is here",
+      "facilityInformation": "",
+      "associatedOrganization": "offRoadSupplies",
+      "preview": "offroad_supply.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "remotePitOffroadParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "remotePitOffroadFreightBay",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer",
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy",
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ],
+          "logisticTypesReceived": [
+            "fuel",
+            "water",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+            "pepperValleyLogisticsPlan2NorthernImportExportsParcel3"
+          ]
+        },
+        {
+          "psName": "remotePitOffroadTrailerDrop",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+          ],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+            "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+          ]
+        },
+        {
+          "psName": "remotePitOffroadCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "remotePitOffroadCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer",
+        "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy",
+        "pepperOffRoadSuppliesremotePitOffroadParts"
+      ],
+      "logisticTypesReceived": [
+        "fuel",
+        "water",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer3",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailer4",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel",
+        "pepperValleyLogisticsPlan2NorthernImportExportsParcel3",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy",
+        "pepperValleyLogisticsPlan2SouthernImportExportsTrailerCopy2"
+      ],
+      "logisticMaxItems": 0,
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "type": "materialReceiver",
+          "materialType": "water",
+          "logisticTypes": [
+            "water"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailer"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "trailerOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2OffroadSupplyPointSouthernImportExportsTrailerCopy"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "vanillaTrailer_boxutility_large_loaded_400",
+            "vanillaTrailer_boxutility_large_loaded_800",
+            "vanillaTrailer_boxutility_large_unloaded",
+            "vanillaTrailer_cargotrailer_loaded_400",
+            "vanillaTrailer_cargotrailer_loaded_800",
+            "vanillaTrailer_cargotrailer_default"
+          ],
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperOffRoadSuppliesremotePitOffroadParts"
+          ],
+          "min": 2,
+          "max": 6,
+          "offerMode": "employment"
+        }
+      ],
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      }
+    },
+    {
+      "id": "policePepperLoaner",
+      "name": "Pepper Valley Police Department",
+      "description": "Patrol Pepper Valley, pursue traffic offenders, and return issued police vehicles after a shift.",
+      "roleplayType": "police",
+      "associatedOrganization": "policePepperLoaner",
+      "preview": "police_certification.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "pepperPoliceParking",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "pepperPoliceParkingLoaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticGenerators": []
+    },
+    {
+      "id": "auctionBlock",
+      "name": "Auction Block",
+      "description": "",
+      "preview": "auctionBlock.jpg",
+      "sitesFile": "pepperDelivery.sites.json",
+      "manualAccessPoints": [
+        {
+          "psName": "auctionLogisticsAccess",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy"
+          ],
+          "logisticTypesReceived": [
+            "pepperValleyLogisticsPlan2AjSPartSupplyCarJockey",
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling",
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling2"
+          ]
+        }
+      ],
+      "logisticMaxItems": 0,
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockey"
+          ],
+          "min": 3,
+          "max": 6,
+          "filter": [
+            "budgetVehFilter",
+            "cheapVehFilter",
+            "exoticTierVehFilter",
+            "heavyVehFilter",
+            "highEndVehFilter",
+            "mediumVehFilter"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy"
+          ],
+          "min": 3,
+          "max": 6,
+          "filter": [
+            "budgetVehFilter",
+            "cheapVehFilter",
+            "exoticTierVehFilter",
+            "heavyVehFilter",
+            "highEndVehFilter",
+            "mediumVehFilter"
+          ],
+          "offerMode": "independent"
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockey",
+        "pepperValleyLogisticsPlan2AuctionBlockCarJockeyCopy"
+      ],
+      "logisticTypesReceived": [
+        "pepperValleyLogisticsPlan2AjSPartSupplyCarJockey",
+        "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling",
+        "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling2"
+      ],
+      "associatedOrganization": "pepperValleyAuctions"
+    },
+    {
+      "id": "tyrannosFuelStation",
+      "name": "Tyrannos Fuel Station",
+      "description": "",
+      "preview": "tyrannosFuelStation.jpg",
+      "sitesFile": "pepperDelivery.sites.json",
+      "manualAccessPoints": [
+        {
+          "psName": "tyrannosFuelStationAccess",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "fuel"
+          ],
+          "logisticTypesReceived": [
+            "fuel"
+          ]
+        },
+        {
+          "psName": "tyrannosFuelStationCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "logisticMaxItems": 0,
+      "legacyMaterialAliases": {
+        "fuelRemote": "fuel",
+        "fuelRemoteExtreme": "fuel",
+        "waterRemote": "water",
+        "waterRemoteExtreme": "water"
+      },
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 0,
+          "variance": 1000,
+          "interval": 300,
+          "rate": 500
+        },
+        {
+          "interval": 300,
+          "type": "materialProvider",
+          "materialType": "fuel",
+          "logisticTypes": [
+            "fuel"
+          ],
+          "capacity": 120000,
+          "target": 110000,
+          "variance": 1000,
+          "rate": 500,
+          "pickUpSpotName": "tyrannosFuelStationAccess",
+          "contractDestinationFacilityIds": [
+            "remotePitMain",
+            "remotePit1",
+            "remotePit2",
+            "remotePit3",
+            "remotePit4",
+            "remotePit5",
+            "remotePit6",
+            "remotePit9",
+            "remotePitOffroad"
+          ],
+          "contractAmounts": [
+            5000,
+            7500,
+            10000
+          ],
+          "offerMode": "employment"
+        }
+      ],
+      "logisticTypesProvided": [
+        "fuel"
+      ],
+      "logisticTypesReceived": [
+        "fuel"
+      ],
+      "associatedOrganization": "tyrannosFuels"
+    },
+    {
+      "id": "southImportCarHauling",
+      "name": "Southern Import/Exports — Vehicle Transport",
+      "description": "Company vehicle hauling to the auction.",
+      "preview": "southImportCarHauling.jpg",
+      "associatedOrganization": "southernPepperExports",
+      "sitesFile": "pepperDelivery.sites.json",
+      "vehicleDistributor": true,
+      "carHaulFacility": true,
+      "manualAccessPoints": [
+        {
+          "psName": "southImportCarHaulingStaging1",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "southImportCarHaulingStaging2",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "southImportCarHaulingCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "southImportCarHaulingCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling"
+      ],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "budgetVehFilter",
+            "cheapVehFilter",
+            "exoticTierVehFilter",
+            "heavyVehFilter",
+            "highEndVehFilter",
+            "mediumVehFilter"
+          ],
+          "offerMode": "employment"
+        }
+      ],
+      "logisticMaxItems": 0,
+      "loanableVehicles": [
+        {
+          "model": "us_semi",
+          "config": "Fink Industries TC83",
+          "reputationLvl": 3,
+          "deliveryLvl": 3,
+          "rentalCategory": "tSeriesRollbacks",
+          "mileage": 241401600,
+          "connector": "fifthwheel"
+        },
+        {
+          "model": "dryvan",
+          "config": "Fink Industries Car Hauler",
+          "reputationLvl": 3,
+          "deliveryLvl": 3,
+          "rentalCategory": "carHaulTrailers",
+          "mileage": 241401600,
+          "connector": "fifthwheel"
+        }
+      ]
+    },
+    {
+      "id": "northImportCarHauling",
+      "name": "Northern Import/Exports — Vehicle Transport",
+      "description": "Company vehicle hauling to the auction.",
+      "preview": "northImportCarHauling.jpg",
+      "associatedOrganization": "northValleyImports",
+      "sitesFile": "pepperDelivery.sites.json",
+      "vehicleDistributor": true,
+      "carHaulFacility": true,
+      "manualAccessPoints": [
+        {
+          "psName": "northImportCarHaulingInspection",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "northImportCarHaulingStaging1",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling2"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "northImportCarHaulingStaging2",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling2"
+          ],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "northImportCarHaulingCompanyTruck",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerNonTrailerPriority": 1
+        },
+        {
+          "psName": "northImportCarHaulingCompanyTrailer",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling2"
+      ],
+      "logisticTypesReceived": [],
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperValleyLogisticsPlan2SouthernImportExportsCarHauling2"
+          ],
+          "min": 2,
+          "max": 6,
+          "filter": [
+            "budgetVehFilter",
+            "cheapVehFilter",
+            "exoticTierVehFilter",
+            "heavyVehFilter",
+            "highEndVehFilter",
+            "mediumVehFilter"
+          ],
+          "offerMode": "employment"
+        }
+      ],
+      "logisticMaxItems": 0,
+      "loanableVehicles": [
+        {
+          "model": "us_semi",
+          "config": "Fink Industries TC83",
+          "reputationLvl": 3,
+          "deliveryLvl": 3,
+          "rentalCategory": "tSeriesRollbacks",
+          "mileage": 241401600,
+          "connector": "fifthwheel"
+        },
+        {
+          "model": "dryvan",
+          "config": "Fink Industries Car Hauler",
+          "reputationLvl": 3,
+          "deliveryLvl": 3,
+          "rentalCategory": "carHaulTrailers",
+          "mileage": 241401600,
+          "connector": "fifthwheel"
+        }
+      ]
+    },
+    {
+      "id": "remotePitMainBus",
+      "alwaysVisible": false,
+      "name": "Pepper Valley Bus Service",
+      "description": "The safest way to get around Pepper Valley.",
+      "facilityInformation": "",
+      "associatedOrganization": "localDeliveryAssociation",
+      "preview": "main_remote_pit.jpg",
+      "manualAccessPoints": [
+        {
+          "psName": "busLoanerPark",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": []
+        },
+        {
+          "psName": "busLoaner",
+          "isInspectSpot": false,
+          "logisticTypesProvided": [],
+          "logisticTypesReceived": [],
+          "loanerTrailerPriority": 1,
+          "loanerNonTrailerPriority": 1
+        }
+      ],
+      "sitesFile": "pepperDelivery.sites.json",
+      "logisticTypesProvided": [],
+      "logisticTypesReceived": [],
+      "logisticMaxItems": 5,
+      "logisticGenerators": []
+    },
+    {
+      "id": "tyrannosDealershipDelivery",
+      "name": "Tyrannos Dealership Delivery",
+      "description": "Parts, repairs, and vehicle transfers for Tyrannos Dealership.",
+      "preview": "tyrannosDealershipDelivery.jpg",
+      "associatedOrganization": "tyrannosDealership",
+      "sitesFile": "pepperDelivery.sites.json",
+      "manualAccessPoints": [
+        {
+          "psName": "pepperDealerTyrannos",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pepperDealerRepairReturnsEmployment",
+            "pepperDealerRepairReturnsIndependent",
+            "pepperDealerRepairVehicleEmployment",
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "logisticTypesReceived": [
+            "pepperAjDealerVehicleIndependent",
+            "pepperAjDealerPartsEmployment",
+            "pepperAjDealerPartsIndependent",
+            "pepperAjDealerVehicleEmployment"
+          ]
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperDealerRepairReturnsEmployment",
+        "pepperDealerRepairReturnsIndependent",
+        "pepperDealerRepairVehicleEmployment",
+        "pepperDealerRepairVehicleIndependent"
+      ],
+      "logisticTypesReceived": [
+        "pepperAjDealerVehicleIndependent",
+        "pepperAjDealerPartsEmployment",
+        "pepperAjDealerPartsIndependent",
+        "pepperAjDealerVehicleEmployment"
+      ],
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsEmployment"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsIndependent"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleEmployment"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "independent"
+        }
+      ]
+    },
+    {
+      "id": "estradaDealershipDelivery",
+      "name": "Estrada Dealership Delivery",
+      "description": "Parts, repairs, and vehicle transfers for Estrada Dealership.",
+      "preview": "estradaDealershipDelivery.jpg",
+      "associatedOrganization": "estradaDealership",
+      "sitesFile": "pepperDelivery.sites.json",
+      "manualAccessPoints": [
+        {
+          "psName": "pepperDealerEstrada",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pepperDealerRepairReturnsEmployment",
+            "pepperDealerRepairReturnsIndependent",
+            "pepperDealerRepairVehicleEmployment",
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "logisticTypesReceived": [
+            "pepperAjDealerVehicleIndependent",
+            "pepperAjDealerPartsEmployment",
+            "pepperAjDealerPartsIndependent",
+            "pepperAjDealerVehicleEmployment"
+          ]
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperDealerRepairReturnsEmployment",
+        "pepperDealerRepairReturnsIndependent",
+        "pepperDealerRepairVehicleEmployment",
+        "pepperDealerRepairVehicleIndependent"
+      ],
+      "logisticTypesReceived": [
+        "pepperAjDealerVehicleIndependent",
+        "pepperAjDealerPartsEmployment",
+        "pepperAjDealerPartsIndependent",
+        "pepperAjDealerVehicleEmployment"
+      ],
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsEmployment"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsIndependent"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleEmployment"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "independent"
+        }
+      ]
+    },
+    {
+      "id": "commercialDealerDelivery",
+      "name": "Commercial Imports Delivery",
+      "description": "Parts, repairs, and vehicle transfers for Commercial Imports.",
+      "preview": "commercialDealerDelivery.jpg",
+      "associatedOrganization": "commercialDealer",
+      "sitesFile": "pepperDelivery.sites.json",
+      "manualAccessPoints": [
+        {
+          "psName": "pepperDealerCommercial",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pepperDealerRepairReturnsEmployment",
+            "pepperDealerRepairReturnsIndependent",
+            "pepperDealerRepairVehicleEmployment",
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "logisticTypesReceived": [
+            "pepperAjDealerVehicleIndependent",
+            "pepperAjDealerPartsEmployment",
+            "pepperAjDealerPartsIndependent",
+            "pepperAjDealerVehicleEmployment"
+          ]
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperDealerRepairReturnsEmployment",
+        "pepperDealerRepairReturnsIndependent",
+        "pepperDealerRepairVehicleEmployment",
+        "pepperDealerRepairVehicleIndependent"
+      ],
+      "logisticTypesReceived": [
+        "pepperAjDealerVehicleIndependent",
+        "pepperAjDealerPartsEmployment",
+        "pepperAjDealerPartsIndependent",
+        "pepperAjDealerVehicleEmployment"
+      ],
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsEmployment"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsIndependent"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleEmployment"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "independent"
+        }
+      ]
+    },
+    {
+      "id": "driftDealerDelivery",
+      "name": "Pepper Valley Drift Dealership Delivery",
+      "description": "Parts, repairs, and vehicle transfers for Pepper Valley Drift Dealership.",
+      "preview": "driftDealerDelivery.jpg",
+      "associatedOrganization": "driftDealer",
+      "sitesFile": "pepperDelivery.sites.json",
+      "manualAccessPoints": [
+        {
+          "psName": "pepperDealerDrift",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "pepperDealerRepairReturnsEmployment",
+            "pepperDealerRepairReturnsIndependent",
+            "pepperDealerRepairVehicleEmployment",
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "logisticTypesReceived": [
+            "pepperAjDealerVehicleIndependent",
+            "pepperAjDealerPartsEmployment",
+            "pepperAjDealerPartsIndependent",
+            "pepperAjDealerVehicleEmployment"
+          ]
+        }
+      ],
+      "logisticTypesProvided": [
+        "pepperDealerRepairReturnsEmployment",
+        "pepperDealerRepairReturnsIndependent",
+        "pepperDealerRepairVehicleEmployment",
+        "pepperDealerRepairVehicleIndependent"
+      ],
+      "logisticTypesReceived": [
+        "pepperAjDealerVehicleIndependent",
+        "pepperAjDealerPartsEmployment",
+        "pepperAjDealerPartsIndependent",
+        "pepperAjDealerVehicleEmployment"
+      ],
+      "logisticGenerators": [
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsEmployment"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "parcelProvider",
+          "logisticTypes": [
+            "pepperDealerRepairReturnsIndependent"
+          ],
+          "min": 2,
+          "max": 4,
+          "offerMode": "independent"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleEmployment"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "employment"
+        },
+        {
+          "interval": 300,
+          "type": "vehOfferProvider",
+          "logisticTypes": [
+            "pepperDealerRepairVehicleIndependent"
+          ],
+          "min": 1,
+          "max": 2,
+          "filter": [
+            "cheapVehFilter",
+            "budgetVehFilter",
+            "mediumVehFilter",
+            "highEndVehFilter",
+            "exoticTierVehFilter"
+          ],
+          "offerMode": "independent"
+        }
+      ]
+    }
+  ]
+}

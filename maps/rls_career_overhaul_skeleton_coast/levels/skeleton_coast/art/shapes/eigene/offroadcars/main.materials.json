@@ -1,0 +1,152 @@
+{
+  "LOWfix_lambert1_BaseColor": {
+    "name": "LOWfix_lambert1_BaseColor",
+    "mapTo": "LOWfix_lambert1_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/Nissan1LOWfix_lambert1_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/Nissan1LOWfix_lambert1_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "Nissan1LOWfix_plastic_BaseColor": {
+    "name": "Nissan1LOWfix_plastic_BaseColor",
+    "mapTo": "Nissan1LOWfix_plastic_BaseColor",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/Nissan1LOWfix_plastic_BaseColor.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/Nissan1LOWfix_plastic_Normal.dds"
+      },
+      {},
+      {},
+      {}
+    ]
+  },
+  "NissanRGB": {
+    "name": "NissanRGB",
+    "mapTo": "NissanRGB",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/NissanRGB.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Add"
+  },
+  "jeepcherokee": {
+    "name": "jeepcherokee",
+    "mapTo": "jeepcherokee",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/default_Base_Color.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "large_car_body_mat": {
+    "name": "large_car_body_mat",
+    "mapTo": "large_car_body_mat",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/large_car_d.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/large_car_ddna.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "large_car_glass_mat": {
+    "name": "large_car_glass_mat",
+    "mapTo": "large_car_glass_mat",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/large_car_glass_d.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Add"
+  },
+  "large_car_wheels_mat": {
+    "name": "large_car_wheels_mat",
+    "mapTo": "large_car_wheels_mat",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/large_car_wheel_d.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/large_car_wheel_ddna.dds"
+      },
+      {},
+      {},
+      {}
+    ]
+  },
+  "roamer_albedo": {
+    "name": "roamer_albedo",
+    "mapTo": "roamer_albedo",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_albedo.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_normal.dds",
+        "opacityMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_opacity.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  },
+  "roamer_opacity1": {
+    "name": "roamer_opacity1",
+    "mapTo": "roamer_opacity1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_opacity.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Mul"
+  },
+  "roamer_opacity1.001": {
+    "name": "roamer_opacity1.001",
+    "mapTo": "roamer_opacity1.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/offroadcars/roamer_opacity.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Mul"
+  }
+}

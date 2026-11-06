@@ -1,0 +1,72 @@
+{
+  "m_electric_wires": {
+    "name": "m_electric_wires",
+    "mapTo": "m_electric_wires",
+    "class": "Material",
+    "persistentId": "e93611b9-9970-40f7-92d4-c7bd128c259d",
+    "Stages": [
+      {
+        "metallicFactor": 0.273999989,
+        "roughnessFactor": 0.361000001,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_glass_isolator": {
+    "name": "m_glass_isolator",
+    "mapTo": "m_glass_isolator",
+    "class": "Material",
+    "persistentId": "8c2182b6-c190-45b8-8552-c273412da287",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.999989986,
+          1,
+          0.999998987,
+          1
+        ],
+        "roughnessFactor": 0.0500000007,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "alphaTest": true,
+    "castShadows": false,
+    "cubemap": "cubemap_utah_reflection",
+    "translucentBlendOp": "None",
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "oldwood": {
+    "name": "oldwood",
+    "mapTo": "oldwood",
+    "class": "Material",
+    "persistentId": "e3ba417a-f051-4a27-addd-76be60946aa7",
+    "Stages": [
+      {
+        "colorMap": "levels/pepper_valley/art/shapes/power_lines/old_wood_d.png",
+        "normalMap": "levels/pepper_valley/art/shapes/power_lines/old_wood_n.png",
+        "overlayMap": "/levels/pepper_valley/art/shapes/power_lines/utah_breakup_texture.dds",
+        "specularMap": "levels/pepper_valley/art/shapes/power_lines/old_wood_s.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucentBlendOp": "None"
+  }
+}

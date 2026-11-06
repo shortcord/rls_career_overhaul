@@ -1,0 +1,170 @@
+{
+  "backdrophwybank": {
+    "name": "backdrophwybank",
+    "mapTo": "backdrophwybank",
+    "class": "material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/highwaybankgravel.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/shapes/misc/t_dirt_rocky_nm.normal.dds",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          1,
+          1
+        ],
+        "instanceDiffuse": true,
+        "normalMap": "/levels/skeleton_coast/art/shapes/materials/blank_nm.dds"
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "instanceDiffuse": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "instanceDiffuse": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "instanceDiffuse": null
+      }
+    ],
+    "groundType": "DIRT"
+  },
+  "backdrophwyroad": {
+    "name": "backdrophwyroad",
+    "mapTo": "backdrophwyroad",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/asphaltroad.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "groundType": "ASPHALT"
+  },
+  "base_texture1_x0_y0": {
+    "name": "base_texture1_x0_y0",
+    "mapTo": "base_texture1_x0_y0",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_base_texture1_x0_y0.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/terrains/t_dirt_rocky_nm.png",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          1000,
+          1000
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_8x8normal_x0_y0.dds"
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_LOOSE"
+  },
+  "base_texture2_x1_y0": {
+    "name": "base_texture2_x1_y0",
+    "mapTo": "base_texture2_x1_y0",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_base_texture2_x1_y0.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/terrains/t_dirt_rocky_nm.png",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          1000,
+          1000
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_8x8normal_x1_y0.dds"
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_LOOSE"
+  },
+  "base_texture2_x2_y0": {
+    "name": "base_texture2_x2_y0",
+    "mapTo": "base_texture2_x2_y0",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_base_texture2_x2_y0.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/terrains/t_dirt_rocky_nm.png",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          1000,
+          1000
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_8x8normal_x2_y0.dds"
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_LOOSE"
+  },
+  "base_texture_x3_y0": {
+    "name": "base_texture_x3_y0",
+    "mapTo": "base_texture_x3_y0",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_base_texture_x3_y0.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/terrains/t_dirt_rocky_nm.png",
+        "detailNormalMapStrength": 0.300000012,
+        "detailScale": [
+          1000,
+          1000
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/skeleton_backdrop_highway/skeleton_8x8normal_x3_y0.dds"
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      },
+      {
+        "detailNormalMapStrength": null,
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_LOOSE"
+  }
+}

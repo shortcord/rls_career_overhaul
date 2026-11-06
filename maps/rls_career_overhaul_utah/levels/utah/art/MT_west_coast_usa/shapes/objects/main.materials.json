@@ -1,0 +1,348 @@
+{
+  "metal_plates": {
+    "name": "metal_plates",
+    "mapTo": "metal_plates",
+    "class": "Material",
+    "persistentId": "b7e361cf-999f-436d-ab75-dbf5e46a4b84",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_b.color.png",
+        "metallicFactor": 0.800000012,
+        "metallicMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_m.data.png",
+        "normalMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "corrugation": {
+    "name": "corrugation",
+    "mapTo": "corrugation",
+    "class": "Material",
+    "persistentId": "6aa31e8c-a027-49b7-b019-0ae6ce4f3c36",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/metal/corrugation/t_corrugation_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/metal/corrugation/t_corrugation_b.color.png",
+        "metallicFactor": 0.600000024,
+        "metallicMap": "/assets/materials/tileable/metal/corrugation/t_corrugation_m.data.png",
+        "normalMap": "/assets/materials/tileable/metal/corrugation/t_corrugation_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/metal/corrugation/t_corrugation_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "BUILDINGS",
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_gm_concrete_plain": {
+    "name": "m_gm_concrete_plain",
+    "mapTo": "m_gm_concrete_plain",
+    "class": "Material",
+    "persistentId": "a366d21d-a2fa-4324-91fc-25993bc1f38a",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/assets/materials/tileable/concrete/m_gm_concrete_plain/t_gm_concrete_plain_d.color.png",
+        "detailMap": "/assets/materials/tileable/concrete/m_gm_concrete_plain/t_gm_concrete_plain_detail.data.png",
+        "detailNormalMap": "/assets/materials/tileable/concrete/m_gm_concrete_plain/t_gm_concrete_plain_nm.normal.png",
+        "detailNormalMapStrength": 0.209999993,
+        "detailScale": [
+          0.200000003,
+          0.200000003
+        ],
+        "diffuseMapUseUV": null,
+        "normalMap": "/assets/materials/tileable/concrete/m_gm_concrete_plain/t_gm_concrete_plain_nm.normal.png",
+        "normalMapStrength": 3,
+        "opacityMapUseUV": null,
+        "pixelSpecular": true,
+        "roughnessFactor": null,
+        "roughnessMap": "/assets/materials/tileable/concrete/m_gm_concrete_plain/t_gm_concrete_plain_r.data.png",
+        "specular": [
+          0.517175972,
+          0.517170012,
+          0.517170012,
+          1
+        ],
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/levels/utah/art/mt_west_coast_usa/shapes/objects/t_gm_breakup_d.color.png",
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": 1,
+        "normalMapStrength": null,
+        "opacityMap": "/assets/materials/tileable/concrete/m_gm_concrete_plain/t_gm_breakup_o.data.dds",
+        "opacityMapUseUV": 1,
+        "pixelSpecular": null,
+        "roughnessFactor": 0.699999988,
+        "specular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "opacityMapUseUV": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "specular": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 2,
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT",
+    "materialTag0": "beamng",
+    "materialTag1": "gridmap",
+    "materialTag2": "concrete",
+    "specularStrength0": "0.490196",
+    "version": 1.5
+  },
+  "metal_plates": {
+    "name": "metal_plates",
+    "mapTo": "metal_plates",
+    "class": "Material",
+    "persistentId": "b7e361cf-999f-436d-ab75-dbf5e46a4b84",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_b.color.png",
+        "metallicFactor": 0.800000012,
+        "metallicMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_m.data.png",
+        "normalMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/tileable/metal/metal_plates/t_metal_plates_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "power_cables": {
+    "name": "power_cables",
+    "mapTo": "power_cables",
+    "class": "Material",
+    "persistentId": "a98c04a3-48b4-433d-853d-1584e1b8cf33",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/trim/plastic/power_cables/t_power_cables_b.color.png",
+        "opacityMap": "/assets/materials/trim/plastic/power_cables/t_power_cables_o.data.png",
+        "pixelSpecular": true
+      },
+      {
+        "pixelSpecular": null
+      },
+      {
+        "pixelSpecular": null
+      },
+      {
+        "pixelSpecular": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "OBSTACLES",
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "translucent": true,
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "catchfence": {
+    "name": "catchfence",
+    "mapTo": "catchfence",
+    "class": "Material",
+    "persistentId": "c6f994e0-7bc3-4715-a522-54bc5820343c",
+    "Stages": [
+      {
+        "baseColorMap": "/assets/materials/tileable/metal/catchfence/t_catchfence_01_b.color.png",
+        "metallicFactor": 0.800000012,
+        "metallicMap": "/assets/materials/tileable/metal/catchfence/t_catchfence_01_m.data.png",
+        "normalMap": "/assets/materials/tileable/metal/catchfence/t_catchfence_01_nm.normal.png",
+        "opacityMap": "/assets/materials/tileable/metal/catchfence/t_catchfence_01_o.data.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.800000012,
+        "roughnessMap": "/assets/materials/tileable/metal/catchfence/t_catchfence_01_r.data.png",
+        "vertColor": true
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "metallicFactor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 69,
+    "alphaTest": true,
+    "annotation": "OBSTACLES",
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "floodlight": {
+    "name": "floodlight",
+    "mapTo": "floodlight",
+    "class": "Material",
+    "persistentId": "13e4d489-d76f-463d-a3d5-02ccd59ca5f5",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/baked_props/floodlight/t_floodlight_ao.data.png",
+        "baseColorMap": "/assets/materials/baked_props/floodlight/t_floodlight_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 4000,
+        "emissiveMap": "/assets/materials/baked_props/floodlight/t_floodlight_e.color.png",
+        "instanceEmissive": true,
+        "metallicFactor": 1,
+        "metallicMap": "/assets/materials/baked_props/floodlight/t_floodlight_m.data.png",
+        "normalMap": "/assets/materials/baked_props/floodlight/t_floodlight_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/assets/materials/baked_props/floodlight/t_floodlight_r.data.png"
+      },
+      {
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "instanceEmissive": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "instanceEmissive": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      },
+      {
+        "emissiveFactor": null,
+        "emissiveIntensityNits": null,
+        "instanceEmissive": null,
+        "metallicFactor": null,
+        "pixelSpecular": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "OBSTACLES",
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

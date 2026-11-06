@@ -1,0 +1,14 @@
+{"name":"logisticsInnerFence3","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"logisticsInnerFence4","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"logisticsFenceInner","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"logisticsFence","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"logisticsFenceInner2","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"navRoads","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"decalRoads","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"PetrolStation","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"nzyneLighting","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"AuctionHouse","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"logisticsLights","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"AuctionLights","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"roadLights","class":"SimGroup","__parent":"LogisticsAuctionHub"}
+{"name":"logistics","class":"SimGroup","__parent":"LogisticsAuctionHub"}

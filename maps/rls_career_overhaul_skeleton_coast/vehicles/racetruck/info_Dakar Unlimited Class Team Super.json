@@ -1,0 +1,52 @@
+{
+  "0-100 km/h":6.1,
+  "0-100 mph":11.5,
+  "0-60 mph":5.9,
+  "100-0 km/h":36.6,
+  "60-0 mph":111.4,
+  "60-100 mph":5.6,
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -1.22,
+      -2.375,
+      -0.80575
+    ],
+    [
+      1.22,
+      3.24,
+      1.26
+    ]
+  ],
+  "Braking G":1.074,
+  "Brand":"SP",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Unlimited Class Team Super",
+  "Country":"United States",
+  "Description":"Dakar Unlimited class entry for Team Super, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass":"prestige",
+  "Off-Road Score":50,
+  "Population":100,
+  "Power":701,
+  "PowerPeakRPM":"6050 - 7000",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":50.77623140264,
+  "Torque":885,
+  "TorquePeakRPM":"4600 - 5400",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":138921,
+  "Weight":2785,
+  "Weight/Power":3.9728958630528,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

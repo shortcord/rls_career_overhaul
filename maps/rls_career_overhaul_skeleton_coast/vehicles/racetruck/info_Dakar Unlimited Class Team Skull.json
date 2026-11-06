@@ -1,0 +1,52 @@
+{
+  "0-100 km/h":7,
+  "0-100 mph":13,
+  "0-60 mph":6.7,
+  "100-0 km/h":40.2,
+  "60-0 mph":123.2,
+  "60-100 mph":6.2,
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -1.22,
+      -2.375,
+      -0.78075
+    ],
+    [
+      1.22,
+      3.24,
+      1.26
+    ]
+  ],
+  "Braking G":0.978,
+  "Brand":"SP",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Unlimited Class Team Skull",
+  "Country":"United States",
+  "Description":"Dakar Unlimited class entry for Team Skull, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"SC",
+  "InsuranceClass":"prestige",
+  "Off-Road Score":46,
+  "Population":100,
+  "Power":638,
+  "PowerPeakRPM":"5900 - 6750",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":48.237553505212,
+  "Torque":815,
+  "TorquePeakRPM":"4400 - 5350",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":143121,
+  "Weight":2770,
+  "Weight/Power":4.3416927899687,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

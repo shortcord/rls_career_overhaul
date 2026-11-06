@@ -1,0 +1,47 @@
+{
+  "version": 1,
+  "displayName": "Pepper Valley - Mojave Summer",
+  "conditionWeights": {
+    "clear": 58,
+    "partlyCloudy": 28,
+    "overcast": 8,
+    "drizzle": 1,
+    "rain": 3,
+    "storm": 2
+  },
+  "conditionDurationsMinutes": {
+    "clear": [180, 420],
+    "partlyCloudy": [90, 240],
+    "overcast": [45, 120],
+    "drizzle": [15, 45],
+    "rain": [15, 60],
+    "storm": [15, 45]
+  },
+  "morningFog": {
+    "chance": 0.01,
+    "startMinute": 300,
+    "peakMinute": 360,
+    "clearMinute": 405,
+    "endMinuteMin": 420,
+    "endMinuteMax": 450,
+    "maxDensity": 0.003,
+    "atmosphereHeight": 70
+  },
+  "temperatureCurveC": [
+    [0, 27],
+    [360, 22],
+    [720, 36],
+    [900, 38],
+    [1140, 33],
+    [1440, 27]
+  ],
+  "dailyTemperatureVarianceC": 3.0,
+  "transitionMinutes": 12,
+  "wetness": {
+    "drizzlePerMinute": 0.002,
+    "rainPerMinute": 0.010,
+    "stormPerMinute": 0.020,
+    "dryPerMinute": 0.009
+  },
+  "visualWetMaterialCap": 16
+}

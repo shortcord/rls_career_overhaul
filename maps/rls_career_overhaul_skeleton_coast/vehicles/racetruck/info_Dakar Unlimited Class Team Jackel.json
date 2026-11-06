@@ -1,0 +1,52 @@
+{
+  "0-100 km/h":6,
+  "0-100 mph":11.5,
+  "0-60 mph":5.8,
+  "100-0 km/h":37.4,
+  "60-0 mph":114.1,
+  "60-100 mph":5.7,
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -1.22,
+      -2.375,
+      -0.80575
+    ],
+    [
+      1.22,
+      3.24,
+      1.26
+    ]
+  ],
+  "Braking G":1.05,
+  "Brand":"SP",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Unlimited Class Team Jackel",
+  "Country":"United States",
+  "Description":"Dakar Unlimited class entry for Team Jackel, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"RWD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass":"prestige",
+  "Off-Road Score":50,
+  "Population":100,
+  "Power":732,
+  "PowerPeakRPM":6600,
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":50.790218346071,
+  "Torque":785,
+  "TorquePeakRPM":"5850 - 6750",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":138921,
+  "Weight":2865,
+  "Weight/Power":3.9139344262295,
+  "Years":{
+    "max":2022,
+    "min":2020
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

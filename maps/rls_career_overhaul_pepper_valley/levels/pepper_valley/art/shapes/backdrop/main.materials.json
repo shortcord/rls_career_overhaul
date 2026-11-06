@@ -1,0 +1,88 @@
+{
+  "island_terrain": {
+    "name": "island_terrain",
+    "mapTo": "island_terrain",
+    "class": "Material",
+    "persistentId": "573c1603-7f52-4824-bfd3-50840890c387",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.999989986,
+          0.999989986,
+          1
+        ],
+        "baseColorMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_b.color.png",
+        "detailBaseColorMapStrength": null,
+        "detailMap": "/levels/west_coast_usa/art/shapes/backdrop/t_grassy_detail_b.data.png",
+        "detailNormalMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_grass_detail_nm.normal.png",
+        "detailNormalMapStrength": 1.5,
+        "detailScale": [
+          200,
+          100
+        ],
+        "diffuseMapUseUV": null,
+        "normalMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_nm.normal.png",
+        "normalMapStrength": 0,
+        "roughnessFactor": 0.91900003,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_grass_b.color.dds",
+        "detailBaseColorMapStrength": 0.75,
+        "detailMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_grass_alt.data.png",
+        "detailNormalMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_grass_detail_nm.normal.png",
+        "detailNormalMapStrength": 1.5,
+        "detailScale": [
+          200,
+          100
+        ],
+        "diffuseMapUseUV": 1,
+        "normalMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_nm.normal.png",
+        "normalMapStrength": 0,
+        "opacityMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_grass_o.data.png",
+        "roughnessFactor": 0.893999994,
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "baseColorMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_dirt_b.color.png",
+        "detailBaseColorMapStrength": 0,
+        "detailNormalMap": "/assets/materials/terrain/soil/dirt_crumbly/t_dirt_crumbly_nm.normal.png",
+        "detailNormalMapStrength": 1.5,
+        "detailScale": [
+          200,
+          100
+        ],
+        "diffuseMapUseUV": 1,
+        "normalMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_nm.normal.png",
+        "normalMapStrength": 0,
+        "opacityMap": "/levels/west_coast_usa/art/shapes/backdrop/island_terrain_dirt_o.data.png",
+        "roughnessFactor": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailBaseColorMapStrength": null,
+        "detailNormalMapStrength": null,
+        "detailScale": null,
+        "diffuseMapUseUV": null,
+        "normalMapStrength": null,
+        "roughnessFactor": null,
+        "vertColor": null
+      }
+    ],
+    "activeLayers": 3,
+    "annotation": "NATURE",
+    "dynamicCubemap": true,
+    "groundType": "GRASS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "specularColor0": "0.1 0.1 0.1 0.1",
+    "specularStrength0": "0.05",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

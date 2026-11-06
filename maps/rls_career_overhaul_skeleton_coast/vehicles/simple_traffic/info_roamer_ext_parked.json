@@ -1,0 +1,18 @@
+{
+  "paints": {},
+  "paintCollections": ["gavril_twotone_factory"],
+  "defaultMultiPaintSetup": "gavril_plum_twotone",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "isAuxiliary": true,
+  "Type": "PropParked",
+  "Population": 3750,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.roamer_ext_parked.Configuration"
+}

@@ -1,0 +1,51 @@
+{
+  "ut_roadsigns": {
+    "name": "ut_roadsigns",
+    "mapTo": "ut_roadsigns",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "levels/skeleton_coast/art/shapes/eigene/ut_roadsigns/ut_roadsigns_d.dds",
+        "diffuseColor": [
+          1,
+          1,
+          0.999000013,
+          1
+        ],
+        "pixelSpecular": true,
+        "roughnessFactor": 0.607767701,
+        "specularMap": "levels/skeleton_coast/art/shapes/eigene/ut_roadsigns/ut_roadsigns_s.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {
+        "diffuseColor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "diffuseColor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      },
+      {
+        "diffuseColor": null,
+        "pixelSpecular": null,
+        "roughnessFactor": null,
+        "useAnisotropic": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "materialTag2": "Utah",
+    "translucentBlendOp": "None"
+  }
+}

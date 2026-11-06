@@ -1,0 +1,55 @@
+//--- OBJECT WRITE BEGIN ---
+$ThisPrefab = new SimGroup() {
+   canSave = "1";
+   canSaveDynamicFields = "1";
+   persistentId = "61d2fa81-c3fd-458b-9e5c-a4571bb02234";
+      groupPosition = "1186.1940917969 -109.26700592041 115.69249725342";
+
+   new TSStatic() {
+      shapeName = "/levels/johnson_valley/art/shapes/building/s_jv_garage_sign.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "0.0174560547 -0.0399398804 0.271591187";
+      scale = "0.859960914 0.859960914 0.859960914";
+      rotationMatrix = "-1.1920929e-07 -0.999999821 0 0.999999821 -1.1920929e-07 0 0 0 1";
+      isRenderEnabled = "false";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      persistentId = "2b69a9be-22c2-4538-8eb3-8743d5551996";
+   };
+   new TSStatic() {
+      shapeName = "/art/shapes/garage_and_dealership/s_billboard_metal_stand_03.dae";
+      dynamic = "0";
+      playAmbient = "1";
+      meshCulling = "0";
+      originSort = "0";
+      useInstanceRenderData = "1";
+      instanceColor = "White";
+      instanceColor1 = "White";
+      instanceColor2 = "White";
+      collisionType = "Collision Mesh";
+      decalType = "Collision Mesh";
+      prebuildCollisionData = "0";
+      renderNormals = "0";
+      forceDetail = "-1";
+      position = "-0.0174560547 0.0399398804 -0.271591187";
+      scale = "0.722851396 0.722851396 0.722851396";
+      rotationMatrix = "1 0 0 0 1 0 0 0 1";
+      isRenderEnabled = "false";
+      canSave = "1";
+      canSaveDynamicFields = "1";
+      persistentId = "c39d96ee-b954-40f3-85c3-65a6e6c8c854";
+   };
+};
+//--- OBJECT WRITE END ---

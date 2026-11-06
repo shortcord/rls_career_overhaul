@@ -1,0 +1,17 @@
+{
+  "auctions": [
+    {
+      "id": "utahUsedCarAuction",
+      "name": "Used Car Auction",
+      "description": "Enter the Utah used car auction.",
+      "sitesFile": "auction.sites.json",
+      "entryTrigger": "usedCarAuctionEntry",
+      "exitTrigger": "usedCarAuctionExit",
+      "counterTriggers": [
+        "auctionCounter_1"
+      ],
+      "preview": "usedCarAuctionEntrance.jpg",
+      "poiId": "usedCarAuctionEntrance"
+    }
+  ]
+}

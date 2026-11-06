@@ -1,0 +1,91 @@
+{
+  "line_yellow": {
+    "name": "line_yellow",
+    "mapTo": "line_yellow",
+    "class": "Material",
+    "persistentId": "f7b8da6e-f1af-41dd-aaf3-aba075a85fe6",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          1,
+          0.580438972,
+          0.160874993,
+          1
+        ],
+        "baseColorMap": "/assets/materials/decalroad/lines/line_white/t_line_white_b.color.dds",
+        "normalMap": "/assets/materials/decalroad/lines/line_white/t_line_white_nm.normal.dds",
+        "opacityMap": "/assets/materials/decalroad/lines/line_white/t_line_white_o.data.dds",
+        "roughnessFactor": 0.400000006
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 255,
+    "annotation": "SOLID_LINE",
+    "castShadows": false,
+    "materialTag0": "RoadAndPath",
+    "materialTag1": "beamng",
+    "specularStrength0": "0",
+    "translucent": true,
+    "translucentZWrite": true,
+    "version": 1.5
+  },
+  "groundmesh_grass2": {
+    "name": "groundmesh_grass2",
+    "mapTo": "groundmesh_grass2",
+    "class": "Material",
+    "persistentId": "96f701d8-b2ba-427f-8b0d-f59629be866d",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.871662974,
+          0.83999902,
+          0.733981013,
+          1
+        ],
+        "baseColorMap": "/assets/materials/terrain/grass/groundmesh_grass2/groundmesh_grass_b.color.dds",
+        "detailMap": "/assets/materials/terrain/grass/groundmesh_grass2/groundmesh_grass_detail.color.dds",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "normalMap": "/assets/materials/terrain/grass/grass_garden/t_grass_long_nm.png"
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null
+      }
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "cubemap": "cubemap_city",
+    "groundType": "GRASS",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "specularColor0": "0.1 0.1 0.1 0.1",
+    "specularStrength0": "0.05",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

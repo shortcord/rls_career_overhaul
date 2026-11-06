@@ -1,0 +1,6 @@
+{
+  "_comment": "Empty demolition derby config placeholder so shared FRE demo scanners do not spam missing-file logs on Skeleton Coast.",
+  "sitesFile": "demolition.sites.json",
+  "defaults": {},
+  "events": {}
+}

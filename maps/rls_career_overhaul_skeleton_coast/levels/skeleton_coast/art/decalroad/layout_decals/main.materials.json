@@ -1,0 +1,107 @@
+{
+  "layout_asphalt": {
+    "name": "layout_asphalt",
+    "mapTo": "layout_asphalt",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/decalroad/layout_decals/white_texture.color.png",
+        "diffuseColor": [
+          0,
+          0.386826992,
+          1,
+          0.338571995
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true
+  },
+  "layout_crawling": {
+    "name": "layout_crawling",
+    "mapTo": "layout_crawling",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/decalroad/layout_decals/white_texture.color.png",
+        "diffuseColor": [
+          1,
+          0,
+          0,
+          0.116451003
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true
+  },
+  "layout_dirt_trails": {
+    "name": "layout_dirt_trails",
+    "mapTo": "layout_dirt_trails",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/decalroad/layout_decals/white_texture.color.png",
+        "diffuseColor": [
+          1,
+          0.414626002,
+          0,
+          0.111515
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true
+  },
+  "layout_main_dirt_roads": {
+    "name": "layout_main_dirt_roads",
+    "mapTo": "layout_main_dirt_roads",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/decalroad/layout_decals/white_texture.color.png",
+        "diffuseColor": [
+          0.980256021,
+          0.899973989,
+          0,
+          0.210235
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "castShadows": false,
+    "translucent": true
+  }
+}

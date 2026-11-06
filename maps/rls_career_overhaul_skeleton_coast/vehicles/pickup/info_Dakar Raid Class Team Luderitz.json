@@ -1,0 +1,54 @@
+{
+  "0-100 km/h":4.2,
+  "0-100 mph":9.4,
+  "0-200 km/h":15.1,
+  "0-60 mph":4,
+  "100-0 km/h":54.1,
+  "100-200 km/h":10.9,
+  "60-0 mph":165,
+  "60-100 mph":5.4,
+  "Body Style":"Pickup",
+  "BoundingBox":[
+    [
+      -0.62459,
+      -1.54,
+      -0.61494
+    ],
+    [
+      1.72459,
+      4.008885,
+      1.671
+    ]
+  ],
+  "Braking G":0.726,
+  "Brand":"Gavril",
+  "Config Type":"Dakar",
+  "Configuration":"Dakar Raid Class Team Luderitz",
+  "Country":"United States",
+  "Description":"Dakar Raid class entry for Team Luderitz, prepared for Skeleton Coast rally raid competition. Performance test data has not been generated yet.",
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"SC",
+  "InsuranceClass":"dailyDriver",
+  "Off-Road Score":51,
+  "Population":100,
+  "Power":929,
+  "PowerPeakRPM":"5400 - 6050",
+  "Propulsion":"ICE",
+  "Source":"Custom",
+  "Top Speed":74.35183726108,
+  "Torque":1220,
+  "TorquePeakRPM":"4900 - 5550",
+  "Transmission":"Automatic",
+  "Type":"Truck",
+  "Value":127065,
+  "Weight":3625,
+  "Weight/Power":3.9020452099031,
+  "Years":{
+    "max":2003,
+    "min":1985
+  },
+  "defaultPaintName1":"Dakar",
+  "defaultPaintName2":"Dakar",
+  "defaultPaintName3":"Dakar"
+}

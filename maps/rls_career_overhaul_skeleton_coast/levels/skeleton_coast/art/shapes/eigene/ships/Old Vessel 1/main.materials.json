@@ -1,0 +1,40 @@
+{
+  "oldvessel1_part1_basecolor": {
+    "name": "oldvessel1_part1_basecolor",
+    "mapTo": "oldvessel1_part1_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part1_ao.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part1_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part1_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part1_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part1_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "oldvessel1_part2_basecolor": {
+    "name": "oldvessel1_part2_basecolor",
+    "mapTo": "oldvessel1_part2_basecolor",
+    "class": "Material",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part2_ao.dds",
+        "baseColorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part2_basecolor.dds",
+        "metallicMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part2_metallic.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part2_normal.dds",
+        "roughnessMap": "/levels/skeleton_coast/art/shapes/eigene/ships/Old Vessel 1/oldvessel1_part2_roughness.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

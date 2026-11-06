@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":54.4,
+  "0-120 mph":18.8,
+  "0-60 mph":45.4,
+  "100-0 km/h":50.5,
+  "60-0 mph":154.2,
+  "60-120 mph":12.7,
+  "Body Style":"Van",
+  "BoundingBox":[
+    [
+      -0.68,
+      -1.49,
+      -0.4683
+    ],
+    [
+      1.78,
+      4.16,
+      2.191
+    ]
+  ],
+  "Braking G":0.779,
+  "Config Type":"Custom",
+  "Configuration":"H15_Surfing",
+  "Description":"Customized van for your next surfing trip. Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":1.034551496,
+    "time_0_60":0,
+    "time_1000":19.0750011,
+    "time_1_4":23.23850139,
+    "time_1_8":14.30300082,
+    "time_330":8.879500505,
+    "time_60":2.858000197,
+    "velAt_1_4":23.93985679,
+    "velAt_1_8":20.44073032
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "Off-Road Score":43,
+  "Population":50,
+  "Power":152,
+  "PowerPeakRPM":"4200 - 4850",
+  "Propulsion":"ICE",
+  "Top Speed":30.24357257,
+  "Torque":275,
+  "TorquePeakRPM":"1700 - 3700",
+  "Transmission":"Manual",
+  "Value":93750,
+  "Weight":2670,
+  "Weight/Power":17.56578947,
+  "Years":{
+    "max":2005,
+    "min":1993
+  },
+  "defaultPaintName1":"Cream",
+  "defaultPaintName3":"Cream"
+}

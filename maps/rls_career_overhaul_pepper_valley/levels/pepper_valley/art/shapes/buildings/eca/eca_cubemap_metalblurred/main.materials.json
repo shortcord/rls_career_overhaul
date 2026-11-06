@@ -1,0 +1,16 @@
+{
+  "eca_cubemap_metalblurred": {
+    "class": "CubemapData",
+    "cubeFace": [
+      "/levels/east_coast_usa/art/cubemaps/cubemap_eca_reflection/cubemap/skybox0.hdr.dds",
+      "/levels/east_coast_usa/art/cubemaps/cubemap_eca_reflection/cubemap/skybox1.hdr.dds",
+      "/levels/east_coast_usa/art/cubemaps/cubemap_eca_reflection/cubemap/skybox2.hdr.dds",
+      "/levels/east_coast_usa/art/cubemaps/cubemap_eca_reflection/cubemap/skybox3.hdr.dds",
+      "/levels/east_coast_usa/art/cubemaps/cubemap_eca_reflection/cubemap/skybox4.hdr.dds",
+      "/levels/east_coast_usa/art/cubemaps/cubemap_eca_reflection/cubemap/skybox5.hdr.dds"
+    ],
+    "name": "eca_cubemap_metalblurred",
+    "persistentId": "6761880b-944a-4a14-ab53-1e5b2f6f573b",
+    "normalize": true
+  }
+}

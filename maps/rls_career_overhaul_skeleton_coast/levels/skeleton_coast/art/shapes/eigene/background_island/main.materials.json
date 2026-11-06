@@ -1,0 +1,29 @@
+{
+  "background_island": {
+    "name": "background_island",
+    "mapTo": "background_island",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/background_island/base_texture.dds",
+        "detailNormalMap": "/levels/skeleton_coast/art/terrains/t_dirt_rocky_nm.png",
+        "detailScale": [
+          128,
+          128
+        ],
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/background_island/background_island_normal.dds"
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      },
+      {
+        "detailScale": null
+      }
+    ],
+    "groundType": "DIRT_DUSTY_LOOSE",
+    "translucentBlendOp": "None"
+  }
+}

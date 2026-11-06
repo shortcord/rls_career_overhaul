@@ -1,0 +1,1201 @@
+{
+  "dealerships": [
+    {
+      "id": "vogelsangbayIbishu",
+      "name": "Vogelsang Bay Ibishu",
+      "description": "Used Ibishu imports brought in through the coast. Mostly older, practical cars that still have enough life left for town runs, courier work, and rough gravel commutes.",
+      "preview": "pictures/ibishuDealer.jpg",
+      "stock": 7,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "vogelsangbayIbishu",
+      "doors": [
+        [
+          "vogelsangbayIbishu_area_1",
+          "vogelsangbayIbishu_icon_17",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "vogelsangbayIbishuParking2"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Brand": [
+            "Ibishu"
+          ],
+          "Years": {
+            "min": 1933,
+            "max": 2005
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 2,
+          "whiteList": {
+            "Mileage": {
+              "min": 56881943.0685,
+              "max": 175270436.352
+            },
+            "Config Type": [
+              "Factory"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "Fast"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "vogelsangGroen",
+      "name": "Groen Deur Dealership",
+      "description": "A small backstreet lot for European and Japanese oddities, rally leftovers, and custom builds. Nothing here is new, but most of it has already survived worse roads than these.",
+      "preview": "pictures/groenDeur.jpg",
+      "stock": 5,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "vogelsangGroen",
+      "doors": [
+        [
+          "vogelsangGroen_area_1",
+          "vogelsangGroen_icon_20",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "vogelsangGroenParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 16093440,
+            "max": 482803200
+          },
+          "Config Type": [
+            "Custom",
+            "Drift",
+            "Race",
+            "Rally"
+          ],
+          "Type": [
+            "Car",
+            "Truck"
+          ],
+          "Country": [
+            "Germany",
+            "France",
+            "Italy",
+            "Japan",
+            "Poland"
+          ],
+          "Value": {
+            "min": 0,
+            "max": 79500
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Semi Truck"
+          ],
+          "Body Style": [
+            "ATV"
+          ],
+          "Configuration": [
+            "Pigeon",
+            "wigeon"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Value": {},
+            "Years": {
+              "min": 2000,
+              "max": 2008
+            }
+          }
+        },
+        {
+          "probability": 2,
+          "whiteList": {
+            "Years": {
+              "min": 1995,
+              "max": 1999
+            }
+          }
+        },
+        {
+          "probability": 6,
+          "whiteList": {
+            "Years": {
+              "min": 1990,
+              "max": 1995
+            }
+          }
+        },
+        {
+          "probability": 6,
+          "whiteList": {
+            "Years": {
+              "min": 1980,
+              "max": 1989
+            }
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1970,
+              "max": 1979
+            }
+          }
+        },
+        {
+          "probability": 9,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1950,
+              "max": 1969
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1900,
+              "max": 1949
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3",
+        "Sub-Filter 4",
+        "Sub-Filter 5",
+        "Sub-Filter 6",
+        "Sub-Filter 7"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "Fast"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "springbokTransport",
+      "name": "Springbok Transport",
+      "description": "Commercial trucks and working rigs for port, mine, and long-distance freight jobs. Expect tired odometers, big frames, and vehicles bought to earn their keep.",
+      "preview": "pictures/springbokDealer.jpg",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "springbokTransport",
+      "doors": [
+        [
+          "springbokTransport_area_1",
+          "springbokTransport_icon_21",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "springbokTransportParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Body Style": [
+            "Fifth Wheel Truck",
+            "Fifth Wheel Truck ",
+            "Flatbed",
+            "Tanker Truck",
+            "Semi Truck",
+            "Box Truck"
+          ]
+        },
+        "blackList": {
+          "Type": [
+            "Car",
+            "Heavy Machinery",
+            "Debug",
+            "Boat",
+            "Prop",
+            "PropParked",
+            "PropTraffic",
+            "Traffic"
+          ],
+          "Config Type": [
+            "Frame"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 2,
+          "whiteList": {
+            "Mileage": {
+              "min": 114243634.098,
+              "max": 321868800
+            },
+            "Config Type": [
+              "Factory"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "Fast"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "scrappers",
+      "name": "Lemon Zest",
+      "description": "Project cars, scrap-yard rescues, and questionable bargains sold with a straight face. Cheap entry fees, high mileage, and plenty of stories hiding under the dust.",
+      "preview": "pictures/lemonZestDealer.jpg",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "scrappers",
+      "doors": [
+        [
+          "scrappers_area_1",
+          "scrappers_icon_19",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "scrappersParking1"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 16093440,
+            "max": 482803200
+          },
+          "Config Type": [
+            "joesJunk",
+            "slopGear",
+            "joesjunkcar",
+            "Frame"
+          ],
+          "Type": [
+            "Car",
+            "Truck"
+          ],
+          "Country": [
+            "Germany",
+            "France",
+            "Italy",
+            "Japan",
+            "Poland"
+          ],
+          "Value": {
+            "min": 0,
+            "max": 100000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Semi Truck"
+          ],
+          "Body Style": [
+            "ATV"
+          ],
+          "Configuration": [
+            "Pigeon",
+            "wigeon"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Value": {},
+            "Years": {
+              "min": 2000,
+              "max": 2008
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Years": {
+              "min": 1995,
+              "max": 1999
+            }
+          }
+        },
+        {
+          "probability": 8,
+          "whiteList": {
+            "Years": {
+              "min": 1990,
+              "max": 1995
+            }
+          }
+        },
+        {
+          "probability": 10,
+          "whiteList": {
+            "Years": {
+              "min": 1980,
+              "max": 1989
+            }
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1970,
+              "max": 1979
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1950,
+              "max": 1969
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1900,
+              "max": 1949
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "Fast"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "nebenan",
+      "name": "Nebenan",
+      "description": "Budget cars from neighbors, farms, and roadside workshops around Solitaire. Good for first wheels, parts runs, or anyone willing to forgive a few warning lights.",
+      "preview": "pictures/nebenanDealer.jpg",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "nebenan",
+      "doors": [
+        [
+          "nebenan_area_1",
+          "nebenan_icon_18",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "nebenanParking2"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 241401600,
+            "max": 321868800
+          },
+          "Config Type": [
+            "Factory",
+            "joesJunk",
+            "slopGear",
+            "joesjunkcar",
+            "Hardcore",
+            "Frame",
+            "Loaner",
+            "Custom"
+          ],
+          "Type": [
+            "Car",
+            "Truck"
+          ],
+          "Country": [
+            "Germany",
+            "France",
+            "Italy",
+            "Japan",
+            "Poland"
+          ],
+          "Value": {
+            "min": 0,
+            "max": 50000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Semi Truck"
+          ],
+          "Body Style": [
+            "ATV"
+          ],
+          "Configuration": [
+            "Pigeon",
+            "wigeon"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Value": {},
+            "Years": {
+              "min": 2000,
+              "max": 2008
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Years": {
+              "min": 1995,
+              "max": 1999
+            }
+          }
+        },
+        {
+          "probability": 8,
+          "whiteList": {
+            "Years": {
+              "min": 1990,
+              "max": 1995
+            }
+          }
+        },
+        {
+          "probability": 10,
+          "whiteList": {
+            "Years": {
+              "min": 1980,
+              "max": 1989
+            }
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1970,
+              "max": 1979
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1950,
+              "max": 1969
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Mileage": {
+              "min": 241401600,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1900,
+              "max": 1949
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1"
+      ],
+      "fees": 250,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "Fast"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "dakarDealership",
+      "name": "Dakar Dealership",
+      "description": "Purpose-built Dakar machines for the dunes and dry riverbeds. Fresh rally-raid stock with the lighting, travel, and ground clearance needed to get lost properly.",
+      "preview": "pictures/dakarDealer.jpg",
+      "stock": 10,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "dakarDealership",
+      "doors": [
+        [
+          "dakarDealership_area",
+          "dakarDealership_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "dakarDealershipParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 40233600
+          },
+          "Config Type": [
+            "Dakar"
+          ]
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ]
+        }
+      },
+      "subFilters": {},
+      "subFilterNames": {},
+      "fees": 250,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "Fast"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          false,
+          true,
+          false,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "safariOutfitters",
+      "name": "Safari Outfitters",
+      "description": "Overland SUVs, trail pickups, and old expedition wagons set up for sand, gravel, and long distances between fuel stops. Expect roof racks, lift kits, and plenty of sun-baked mileage.",
+      "preview": "pictures/safariOutfitters.jpg",
+      "stock": 8,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "safariOutfitters",
+      "doors": [
+        [
+          "safariOutfittersDealership_area",
+          "safariOutfittersDealership_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "safariOutfitters"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Used 4x4s"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 80467200,
+            "max": 482803200
+          },
+          "Type": [
+            "Car",
+            "Truck"
+          ],
+          "Body Style": [
+            "SUV",
+            "Pickup",
+            "Wagon"
+          ],
+          "Value": {
+            "min": 0,
+            "max": 150000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Semi Truck",
+            "Heavy Machinery",
+            "Debug",
+            "Boat",
+            "Prop",
+            "PropParked",
+            "PropTraffic",
+            "Traffic"
+          ],
+          "Config Type": [
+            "Dakar",
+            "Drag",
+            "Drift",
+            "Race",
+            "Track",
+            "joesJunk",
+            "joesjunkcar"
+          ],
+          "Body Style": [
+            "ATV"
+          ],
+          "Configuration": [
+            "Pigeon",
+            "wigeon"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 8,
+          "whiteList": {
+            "Years": {
+              "min": 1990,
+              "max": 2005
+            }
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Mileage": {
+              "min": 160934400,
+              "max": 482803200
+            },
+            "Years": {
+              "min": 1965,
+              "max": 1989
+            }
+          }
+        },
+        {
+          "probability": 2,
+          "whiteList": {
+            "Config Type": [
+              "Custom",
+              "Factory",
+              "Off-Road"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Classic Expedition Stock",
+        "Old Bush Survivors",
+        "Prepared 4x4s"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "SAFARI"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "bushRiggs",
+      "name": "Bush Riggs",
+      "description": "Cheap farm trucks, dusty vans, small trailers, and older utility rigs from ranches, lodges, and roadside contractors. Not pretty, but built for chores.",
+      "preview": "pictures/bushRiggs.jpg",
+      "stock": 9,
+      "range": [
+        0.8,
+        0.9,
+        1.35,
+        1.8
+      ],
+      "associatedOrganization": "bushRiggs",
+      "doors": [
+        [
+          "bushRiggsDealership_area",
+          "bushRiggsDealership_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "bushRiggs"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Work Rigs"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 120700800,
+            "max": 482803200
+          },
+          "Type": [
+            "Truck",
+            "Trailer"
+          ],
+          "Value": {
+            "min": 0,
+            "max": 90000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Semi Truck",
+            "Heavy Machinery",
+            "Debug",
+            "Boat",
+            "Prop",
+            "PropParked",
+            "PropTraffic",
+            "Traffic"
+          ],
+          "Config Type": [
+            "Dakar",
+            "Drag",
+            "Drift",
+            "Race",
+            "Track",
+            "joesJunk",
+            "joesjunkcar"
+          ],
+          "Body Style": [
+            "SUV",
+            "Fifth Wheel Truck",
+            "Semi Truck",
+            "ATV",
+            "Forklift"
+          ],
+          "Configuration": [
+            "Pigeon",
+            "wigeon"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 4,
+          "whiteList": {
+            "Years": {
+              "min": 1970,
+              "max": 2004
+            }
+          }
+        },
+        {
+          "probability": 7,
+          "whiteList": {
+            "Config Type": [
+              "Factory",
+              "Fleet",
+              "Custom",
+              "Utility",
+              "Cargo"
+            ]
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Fuel Type": [
+              "Diesel"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Old Work Stock",
+        "Fleet and Utility Builds",
+        "Diesel Workhorses"
+      ],
+      "fees": 250,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": "RIGGS"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    }
+  ],
+  "privateSellers": [
+    {
+      "id": "private",
+      "name": "Private",
+      "description": "Private Sellers Selling Private Vehicles",
+      "preview": "pictures/private.jpg",
+      "stock": 20,
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 16093440,
+            "max": 482803200
+          },
+          "Config Type": [
+            "Factory",
+            "joesJunk",
+            "slopGear",
+            "joesjunkcar",
+            "Hardcore",
+            "Frame",
+            "Loaner"
+          ],
+          "Type": [
+            "Car",
+            "Truck"
+          ],
+          "Country": [
+            "Germany",
+            "France",
+            "Italy",
+            "Japan",
+            "Poland"
+          ],
+          "Value": {
+            "min": 0,
+            "max": 100000
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer",
+            "Semi Truck"
+          ],
+          "Body Style": [
+            "ATV"
+          ],
+          "Configuration": [
+            "Pigeon",
+            "wigeon"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Years": {
+              "min": 2000,
+              "max": 2008
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Years": {
+              "min": 1995,
+              "max": 1999
+            }
+          }
+        },
+        {
+          "probability": 8,
+          "whiteList": {
+            "Years": {
+              "min": 1990,
+              "max": 1995
+            }
+          }
+        },
+        {
+          "probability": 10,
+          "whiteList": {
+            "Years": {
+              "min": 1980,
+              "max": 1989
+            }
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Years": {
+              "min": 1970,
+              "max": 1979
+            }
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Years": {
+              "min": 1950,
+              "max": 1969
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Years": {
+              "min": 1900,
+              "max": 1949
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2",
+        "Sub-Filter 3",
+        "Sub-Filter 4",
+        "Sub-Filter 5",
+        "Sub-Filter 6",
+        "Sub-Filter 7"
+      ],
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    }
+  ]
+}

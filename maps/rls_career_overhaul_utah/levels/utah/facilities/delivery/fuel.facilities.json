@@ -1,0 +1,409 @@
+{
+  "deliveryProviders": [
+    {
+      "id": "utahCanyonFuel",
+      "omitEmployment": true,
+      "employmentCustomer": true,
+      "name": "Canyon Fuel",
+      "description": "Fuel deliveries for this station.",
+      "preview": "utahCanyonFuel.jpg",
+      "associatedOrganization": "localDeliveryAssociation",
+      "manualAccessPoints": [
+        {
+          "psName": "utahCanyonFuelTanker",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "utFuelEmptyShort"
+          ],
+          "logisticTypesReceived": [
+            "gasoline",
+            "diesel",
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+          ]
+        }
+      ],
+      "sitesFile": "fuel.sites.json",
+      "logisticTypesProvided": [
+        "utFuelEmptyShort"
+      ],
+      "logisticTypesReceived": [
+        "gasoline",
+        "diesel",
+        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "gasoline"
+          ],
+          "materialType": "gasoline",
+          "capacity": 15000,
+          "target": 5000,
+          "variance": 2500,
+          "interval": 60,
+          "rate": 160
+        },
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "diesel"
+          ],
+          "materialType": "diesel",
+          "capacity": 15000,
+          "target": 5000,
+          "variance": 2500,
+          "interval": 60,
+          "rate": 160
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_petroleum_short_2",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_petroleum_short_3",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_diesel_short_2",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_diesel_short_3",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_empty_short",
+          "logisticTypes": [
+            "utFuelEmptyShort"
+          ]
+        }
+      ],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "utahGasolin",
+      "omitEmployment": true,
+      "employmentCustomer": true,
+      "name": "Gasolin",
+      "description": "Fuel deliveries for this station.",
+      "preview": "utahGasolin.jpg",
+      "associatedOrganization": "localDeliveryAssociation",
+      "manualAccessPoints": [
+        {
+          "psName": "utahGasolinTanker",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "utFuelEmptyShort"
+          ],
+          "logisticTypesReceived": [
+            "gasoline",
+            "diesel",
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+          ]
+        }
+      ],
+      "sitesFile": "fuel.sites.json",
+      "logisticTypesProvided": [
+        "utFuelEmptyShort"
+      ],
+      "logisticTypesReceived": [
+        "gasoline",
+        "diesel",
+        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "gasoline"
+          ],
+          "materialType": "gasoline",
+          "capacity": 15000,
+          "target": 5000,
+          "variance": 2500,
+          "interval": 60,
+          "rate": 160
+        },
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "diesel"
+          ],
+          "materialType": "diesel",
+          "capacity": 15000,
+          "target": 5000,
+          "variance": 2500,
+          "interval": 60,
+          "rate": 160
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_petroleum_short_2",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_petroleum_short_3",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_diesel_short_2",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_diesel_short_3",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_empty_short",
+          "logisticTypes": [
+            "utFuelEmptyShort"
+          ]
+        }
+      ],
+      "logisticMaxItems": 0
+    },
+    {
+      "id": "utahTyrannosFuel",
+      "omitEmployment": true,
+      "employmentCustomer": true,
+      "name": "Tyrannos Fuel Station",
+      "description": "Fuel deliveries for this station.",
+      "preview": "utahTyrannosFuel.jpg",
+      "associatedOrganization": "localDeliveryAssociation",
+      "manualAccessPoints": [
+        {
+          "psName": "utahTyrannosFuelTanker",
+          "isInspectSpot": true,
+          "logisticTypesProvided": [
+            "utFuelEmptyShort"
+          ],
+          "logisticTypesReceived": [
+            "gasoline",
+            "diesel",
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+          ]
+        }
+      ],
+      "sitesFile": "fuel.sites.json",
+      "logisticTypesProvided": [
+        "utFuelEmptyShort"
+      ],
+      "logisticTypesReceived": [
+        "gasoline",
+        "diesel",
+        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2",
+        "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3",
+        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2",
+        "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+      ],
+      "logisticGenerators": [
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "gasoline"
+          ],
+          "materialType": "gasoline",
+          "capacity": 15000,
+          "target": 5000,
+          "variance": 2500,
+          "interval": 60,
+          "rate": 160
+        },
+        {
+          "type": "materialReceiver",
+          "logisticTypes": [
+            "diesel"
+          ],
+          "materialType": "diesel",
+          "capacity": 15000,
+          "target": 5000,
+          "variance": 2500,
+          "interval": 60,
+          "rate": 160
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_petroleum_short_2",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_2"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_petroleum_short_3",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_petroleum_short_3"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_diesel_short_2",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_2"
+          ]
+        },
+        {
+          "type": "trailerOfferReceiver",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_diesel_short_3",
+          "logisticTypes": [
+            "utFuelTrailer_vanillaTrailer_tanker_diesel_short_3"
+          ]
+        },
+        {
+          "type": "trailerOfferProvider",
+          "interval": 120,
+          "min": -1,
+          "max": 2,
+          "offerDuration": {
+            "min": 300,
+            "max": 600
+          },
+          "filter": "vanillaTrailer_tanker_empty_short",
+          "logisticTypes": [
+            "utFuelEmptyShort"
+          ]
+        }
+      ],
+      "logisticMaxItems": 0
+    }
+  ]
+}

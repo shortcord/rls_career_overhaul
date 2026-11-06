@@ -1,0 +1,46 @@
+{
+  "cargotrailer.skin.Luderitzinnshuttleservice_trailer": {
+    "name": "cargotrailer.skin.Luderitzinnshuttleservice_trailer",
+    "mapTo": "cargotrailer.skin.Luderitzinnshuttleservice_trailer",
+    "class": "material",
+    "persistentId": "720d1ecc-42ca-4838-afdd-19fd58128c87",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/vehicles/cargotrailer/cargotrailer_ao.data.dds",
+        "baseColorMap": "/vehicles/cargotrailer/cargotrailer_b.color.dds",
+        "diffuseMapUseUV": null,
+        "metallicFactor": 1,
+        "metallicMap": "/vehicles/cargotrailer/cargotrailer_m.data.dds",
+        "normalMap": "/vehicles/cargotrailer/cargotrailer_nm.normal.dds",
+        "roughnessFactor": null,
+        "roughnessMap": "/vehicles/cargotrailer/cargotrailer_r.data.dds"
+      },
+      {
+        "ambientOcclusionMap": "/vehicles/cargotrailer/cargotrailer_ao.data.dds",
+        "baseColorMap": "vehicles/cargotrailer/Luderitzinnshuttleservice_trailer/Luderitzinnshuttleservice_trailer.dds",
+        "diffuseMapUseUV": 1,
+        "metallicFactor": 0.800000012,
+        "metallicMap": "/vehicles/cargotrailer/cargotrailer_m.data.dds",
+        "normalMap": "/vehicles/cargotrailer/cargotrailer_nm.normal.dds",
+        "opacityMap": "/vehicles/cargotrailer/cargotrailer_o.data.dds",
+        "roughnessFactor": 0.600000024,
+        "roughnessMap": "/vehicles/cargotrailer/cargotrailer_r.data.dds"
+      },
+      {
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "diffuseMapUseUV": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "activeLayers": 2,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

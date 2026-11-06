@@ -1,0 +1,332 @@
+{
+  "ind_concrete_road": {
+    "name": "ind_concrete_road",
+    "mapTo": "ind_concrete_road",
+    "class": "Material",
+    "persistentId": "b17c54f8-db9e-491f-ae1d-004f6bfd5854",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_concrete_road_b.color.png",
+        "diffuseColor": [
+          0.988235354,
+          0.988235354,
+          0.988235354,
+          1
+        ],
+        "normalMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_concrete_road_nm.normal.png",
+        "overlayMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/utah_breakup_texture.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.787999988,
+        "specularMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_concrete_road_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "Industrial",
+    "specularColor0": "0.1 0.1 0.1 0.1",
+    "specularStrength0": "0.05",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "None"
+  },
+  "ind_metal_expanded": {
+    "name": "ind_metal_expanded",
+    "mapTo": "ind_metal_expanded",
+    "class": "Material",
+    "persistentId": "d19a6a8b-685d-4b48-8fa6-b7885a7dc45d",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_expanded_d.color.png",
+        "normalMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_expanded_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.490999997,
+        "specularMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_expanded_s.color.png",
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 58,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "object",
+    "materialTag2": "beamng",
+    "materialTag3": "Natural",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "0.3",
+    "specularStrength1": "0.2",
+    "translucent": true,
+    "translucentBlendOp": "None"
+  },
+  "ind_metal_grate": {
+    "name": "ind_metal_grate",
+    "mapTo": "ind_metal_grate",
+    "class": "Material",
+    "persistentId": "e8ea6202-9995-4097-8721-d113a7b1b308",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_grate_d.color.png",
+        "normalMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_grate_nm.normal.png",
+        "overlayMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/utah_breakup_texture.dds",
+        "pixelSpecular": true,
+        "reflectivityMapFactor": 0.300000012,
+        "roughnessFactor": 0.757000029,
+        "specularMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_grate_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 114,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "Industrial",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "materialTag3": "Natural",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "0.490196",
+    "specularStrength1": "0.2",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "translucentZWrite": true
+  },
+  "ind_metal_trim": {
+    "name": "ind_metal_trim",
+    "mapTo": "ind_metal_trim",
+    "class": "Material",
+    "persistentId": "6dbc420f-d560-4c63-a808-8c6b90aac0ef",
+    "Stages": [
+      {
+        "colorMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_trim_d.color.png",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "diffuseColor": [
+          0.992156923,
+          0.992156923,
+          0.992156923,
+          1
+        ],
+        "normalMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_trim_nm.normal.png",
+        "roughnessFactor": 0.667999983,
+        "specular": [
+          0.996078014,
+          0.996078014,
+          0.996078014,
+          1
+        ],
+        "specularMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_metal_trim_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 104,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "materialTag3": "vegetation",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "1.3",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "None"
+  },
+  "ind_decaying_industrial_interiors": {
+    "name": "ind_decaying_industrial_interiors",
+    "mapTo": "ind_decaying_industrial_interiors",
+    "class": "Material",
+    "persistentId": "46f5ee79-f774-40c0-a4d3-0b470e9736a8",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_decaying_industrial_interiors.color.png",
+        "detailScale": [
+          6,
+          6
+        ],
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 63,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "METAL",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "specularStrength0": "0.490196"
+  },
+  "ind_plywood_old": {
+    "name": "ind_plywood_old",
+    "mapTo": "ind_plywood_old",
+    "class": "Material",
+    "persistentId": "8700d342-275a-4bb9-9200-173acea52a1e",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_plywood_d.color.png",
+        "normalMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_plywood_nm.normal.png",
+        "overlayMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/utah_breakup_texture.dds",
+        "roughnessFactor": 0.879999995,
+        "specularMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_plywood_s.color.png",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 121,
+    "alphaTest": true,
+    "annotation": "BUILDINGS",
+    "doubleSided": true,
+    "groundType": "WOOD",
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "beamng",
+    "materialTag2": "Industrial",
+    "materialTag3": "vegetation",
+    "materialTag4": "east_coast_usa",
+    "specularStrength0": "0.294118",
+    "specularStrength1": "0.2"
+  },
+  "industrial_signs": {
+    "name": "industrial_signs",
+    "mapTo": "industrial_signs",
+    "class": "Material",
+    "persistentId": "d0d7a235-d3a4-4669-819d-303411f77ae5",
+    "Stages": [
+      {
+        "colorMap": "/levels/pepper_valley/art/mt_industrial/shapes/buildings/ind_industrial_signs_d.color.png",
+        "detailScale": [
+          0.100000001,
+          0.100000001
+        ],
+        "diffuseColor": [
+          0.996078491,
+          0.996078491,
+          0.996078491,
+          1
+        ],
+        "pixelSpecular": true,
+        "roughnessFactor": 0.582000017,
+        "specular": [
+          0.402357012,
+          0.402352989,
+          0.402352989,
+          1
+        ],
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "beamng",
+    "materialTag1": "Industrial",
+    "materialTag2": "Industrial",
+    "specularStrength0": "1.3",
+    "specularStrength1": "0.2",
+    "translucentBlendOp": "None"
+  },
+  "italy_guardrails": {
+    "name": "italy_guardrails",
+    "mapTo": "italy_guardrails",
+    "class": "Material",
+    "persistentId": "e44bd6a0-4910-4bb9-a43d-53c9df79cd0d",
+    "Stages": [
+      {
+        "colorMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/italy_guardrails_d.dds",
+        "detailScale": [
+          6,
+          6
+        ],
+        "normalMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/italy_guardrails_n.dds",
+        "reflectivityMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/italy_guardrails_r.dds",
+        "specularMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/italy_guardrails_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {}
+    ],
+    "annotation": "GUARD_RAIL",
+    "cubemap": "global_cubemap_metalblurred",
+    "groundType": "METAL",
+    "materialTag0": "beamng",
+    "materialTag1": "italy",
+    "specularStrength0": "0.490196",
+    "translucentBlendOp": "None"
+  },
+  "road2_concrete": {
+    "name": "road2_concrete",
+    "mapTo": "road2_concrete",
+    "class": "Material",
+    "persistentId": "8f179a30-5837-403f-9dba-fd43851d2b74",
+    "Stages": [
+      {
+        "colorMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/street_concrete1_d.dds",
+        "detailMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/detail_grunge_02_streak_desat.dds",
+        "detailNormalMapStrength": 0.5,
+        "detailScale": [
+          0.2000000029802322,
+          0.2000000029802322
+        ],
+        "diffuseColor": [
+          0.505882382,
+          0.505882382,
+          0.505882382,
+          1
+        ],
+        "normalMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/street_concrete1_n.dds",
+        "specularMap": "levels/pepper_valley/art/mt_industrial/shapes/buildings/street_concrete1_s.dds",
+        "specularPower": 1,
+        "useAnisotropic": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 0,
+    "annotation": "STREET",
+    "doubleSided": true,
+    "groundType": "ASPHALT_OLD",
+    "materialTag0": "buildingsAndPath",
+    "materialTag1": "beamng",
+    "specularStrength0": "0",
+    "translucentBlendOp": "None"
+  }
+}

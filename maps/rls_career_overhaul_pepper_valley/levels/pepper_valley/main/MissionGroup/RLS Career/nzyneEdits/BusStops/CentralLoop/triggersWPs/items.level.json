@@ -1,0 +1,83 @@
+{"name":"pv_wp_19","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1017.78986,-1400.06738,135.8069],"scale":[5,5,5]}
+{"name":"pv_wp_52","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1415.92908,-358.919037,112.602005],"scale":[5,5,5]}
+{"name":"pv_bs_01","class":"BeamNGTrigger","__parent":"triggersWPs","position":[-1177.34692,259.00946,121.100197],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-0.764901757,0.6441468,0,-0.6441468,-0.764901757,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Main Pit","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_23","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-602.916748,-1273.76721,119.516487],"scale":[5,5,5]}
+{"name":"pv_wp_56","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1247.5238,19.2432823,115.42382],"scale":[5,5,5]}
+{"name":"pv_wp_27","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-118.212349,-1326.98413,127.278824],"scale":[5,5,5]}
+{"name":"pv_wp_60","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1090.7323,362.000824,114.694458],"scale":[5,5,5]}
+{"name":"pv_wp_31","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[232.36467,-1396.50232,132.020203],"scale":[5,5,5]}
+{"name":"pv_wp_64","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1022.69305,595.494812,117.940567],"scale":[5,5,5]}
+{"name":"pv_wp_02","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1321.27942,123.235931,118.93399],"scale":[5,5,5]}
+{"name":"pv_wp_35","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[600.739258,-1373.66528,126.090363],"scale":[5,5,5]}
+{"name":"pv_wp_68","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[664.11499,558.838257,116.497185],"scale":[5,5,5]}
+{"name":"pv_wp_06","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1393.80566,-245.218414,117.99897],"scale":[5,5,5]}
+{"name":"pv_wp_39","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1026.76758,-1349.85376,122.580109],"scale":[5,5,5]}
+{"name":"pv_wp_72","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[257.292877,443.186432,123.638008],"scale":[5,5,5]}
+{"name":"pv_wp_10","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1331.38147,-614.642883,112.419464],"scale":[5,5,5]}
+{"name":"pv_wp_43","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1380.72888,-1220.31689,119.635597],"scale":[5,5,5]}
+{"name":"pv_wp_14","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1323.1062,-1061.40869,115.868141],"scale":[5,5,5]}
+{"name":"pv_wp_47","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1396.43103,-836.674744,112.088333],"scale":[5,5,5]}
+{"name":"pv_wp_18","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1117.2052,-1378.62341,128.200394],"scale":[5,5,5]}
+{"name":"pv_wp_51","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1412.24268,-454.544495,111.739494],"scale":[5,5,5]}
+{"name":"pv_wp_22","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-689.359131,-1316.97888,122.08448],"scale":[5,5,5]}
+{"name":"pv_wp_55","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1294.41675,-60.1223717,115.783287],"scale":[5,5,5]}
+{"name":"pv_bs_03","class":"BeamNGTrigger","__parent":"triggersWPs","position":[-917.707031,-1403.95142,130.275864],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-0.154494524,-0.987993479,0,0.987993479,-0.154494524,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Remote Pit #2","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_26","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-315.056091,-1303.10132,122.245804],"scale":[5,5,5]}
+{"name":"pv_wp_59","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1123.91882,268.708984,115.153168],"scale":[5,5,5]}
+{"name":"pv_wp_30","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[142.596298,-1418.58594,139.579849],"scale":[5,5,5]}
+{"name":"pv_wp_63","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1101.98901,640.685425,122.222519],"scale":[5,5,5]}
+{"name":"pv_wp_01","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1263.54553,198.848709,120.550926],"scale":[5,5,5]}
+{"name":"pv_wp_34","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[506.998016,-1377.4646,125.979927],"scale":[5,5,5]}
+{"name":"pv_wp_67","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[754.788025,561.132568,118.542297],"scale":[5,5,5]}
+{"name":"pv_wp_05","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1390.26819,-148.620422,122.626862],"scale":[5,5,5]}
+{"name":"pv_wp_38","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[937.315369,-1361.91223,122.846687],"scale":[5,5,5]}
+{"name":"pv_wp_71","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[346.685242,463.653076,120.75016],"scale":[5,5,5]}
+{"name":"pv_wp_09","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1368.51294,-525.007935,113.074356],"scale":[5,5,5]}
+{"name":"pv_wp_42","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1300.63159,-1266.69177,121.705162],"scale":[5,5,5]}
+{"name":"pv_wp_75","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[0.583068848,446.753143,129.462601],"scale":[5,5,5]}
+{"name":"pv_wp_13","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1326.19617,-965.451538,112.343048],"scale":[5,5,5]}
+{"name":"pv_wp_46","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1395.68604,-933.73645,112.61245],"scale":[5,5,5]}
+{"name":"pv_wp_17","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1188.54065,-1327.42944,123.363312],"scale":[5,5,5]}
+{"name":"pv_wp_50","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1409.51794,-545.219666,111.355515],"scale":[5,5,5]}
+{"name":"pv_wp_21","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-744.502014,-1390.64526,127.303841],"scale":[5,5,5]}
+{"name":"pv_wp_54","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1394.9104,-178.515289,113.917992],"scale":[5,5,5]}
+{"name":"pv_wp_25","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-406.043793,-1290.61572,121.787575],"scale":[5,5,5]}
+{"name":"pv_wp_58","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1158.9187,182.118256,114.510025],"scale":[5,5,5]}
+{"name":"pv_wp_29","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[67.3014221,-1368.78174,128.384323],"scale":[5,5,5]}
+{"name":"pv_wp_62","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1105.47168,556.2323,118.646477],"scale":[5,5,5]}
+{"name":"pv_bs_04","class":"BeamNGTrigger","__parent":"triggersWPs","position":[-218.128677,-1314.12439,120.935486],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-0.115131736,-0.993350089,0,0.993350089,-0.115131736,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Remote Pit #3","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_33","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[412.735229,-1398.04211,131.076172],"scale":[5,5,5]}
+{"name":"pv_wp_66","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[847.267517,563.504517,117.277885],"scale":[5,5,5]}
+{"name":"pv_wp_04","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1369.54565,-60.7931633,121.862785],"scale":[5,5,5]}
+{"name":"pv_wp_37","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[793.831482,-1368.36194,123.751022],"scale":[5,5,5]}
+{"name":"pv_wp_70","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[437.098358,494.208344,119.458191],"scale":[5,5,5]}
+{"name":"pv_wp_08","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1399.74963,-433.23465,113.053238],"scale":[5,5,5]}
+{"name":"pv_wp_41","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1206.81226,-1300.54602,122.794769],"scale":[5,5,5]}
+{"name":"pv_wp_74","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[75.0775986,403.296936,130.653931],"scale":[5,5,5]}
+{"name":"pv_bs_02","class":"BeamNGTrigger","__parent":"triggersWPs","position":[-1302.45825,-680.182312,112.113731],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-0.99207139,-0.125679746,0,0.125679746,-0.99207139,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Remote Pit #1","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_12","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1323.21228,-873.203613,111.320305],"scale":[5,5,5]}
+{"name":"pv_wp_45","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1404.19446,-1037.80859,114.767632],"scale":[5,5,5]}
+{"name":"pv_bs_08","class":"BeamNGTrigger","__parent":"triggersWPs","position":[-89.4832077,524.48584,124.260269],"luaFunction":"onBeamNGTrigger","rotationMatrix":[0.516608715,0.856221557,0,-0.856221557,0.516608715,0,0,0,1],"scale":[5.50560904,20.9311047,10.7284184],"stopName0":"Remote Pit #5","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_16","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1245.23669,-1242.74927,123.366852],"scale":[5,5,5]}
+{"name":"pv_wp_49","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1404.94153,-638.737244,111.294655],"scale":[5,5,5]}
+{"name":"pv_wp_20","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-828.396057,-1435.98193,135.546066],"scale":[5,5,5]}
+{"name":"pv_wp_53","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1418.60486,-266.873383,113.457863],"scale":[5,5,5]}
+{"name":"pv_wp_24","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-506.831421,-1275.66626,120.244484],"scale":[5,5,5]}
+{"name":"pv_wp_57","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1195.99207,99.1440201,115.466019],"scale":[5,5,5]}
+{"name":"pv_wp_28","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-20.3863277,-1337.63757,123.688499],"scale":[5,5,5]}
+{"name":"pv_wp_61","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1087.36157,461.721466,115.776726],"scale":[5,5,5]}
+{"name":"pv_bs_07","class":"BeamNGTrigger","__parent":"triggersWPs","position":[624.464172,552.397949,116.589668],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-0.253809452,0.967254281,0,-0.967254281,-0.253809452,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Remote Pit #6","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_32","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[321.068542,-1414.41577,132.490524],"scale":[5,5,5]}
+{"name":"pv_wp_65","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[938.137024,565.113953,118.179276],"scale":[5,5,5]}
+{"name":"pv_wp_03","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1329.46912,27.9138508,120.573753],"scale":[5,5,5]}
+{"name":"pv_wp_36","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[700.309204,-1369.12415,124.597198],"scale":[5,5,5]}
+{"name":"pv_wp_69","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[527.733887,524.957153,118.659828],"scale":[5,5,5]}
+{"name":"pv_wp_07","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1401.62268,-342.900482,116.231544],"scale":[5,5,5]}
+{"name":"pv_wp_40","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1117.4906,-1327.36133,123.265091],"scale":[5,5,5]}
+{"name":"pv_wp_73","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[167.197372,432.971222,129.430634],"scale":[5,5,5]}
+{"name":"pv_wp_11","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1325.13281,-776.311096,112.783463],"scale":[5,5,5]}
+{"name":"pv_wp_44","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1412.64319,-1132.50134,117.241127],"scale":[5,5,5]}
+{"name":"pv_bs_06","class":"BeamNGTrigger","__parent":"triggersWPs","position":[1350.09985,-140.754837,115.672867],"luaFunction":"onBeamNGTrigger","rotationMatrix":[0.771643758,0.636054933,0,-0.636054933,0.771643758,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Base Camp","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}
+{"name":"pv_wp_15","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[-1296.50916,-1156.60669,119.251984],"scale":[5,5,5]}
+{"name":"pv_wp_48","class":"BeamNGWaypoint","__parent":"triggersWPs","position":[1400.02942,-720.791382,111.569519],"scale":[5,5,5]}
+{"name":"pv_bs_05","class":"BeamNGTrigger","__parent":"triggersWPs","position":[835.980347,-1366.31873,122.778877],"luaFunction":"onBeamNGTrigger","rotationMatrix":[0.0112259388,-0.999936938,0,0.999936938,0.0112259388,0,0,0,1],"scale":[5.14348221,20.9311047,10.7284184],"stopName0":"Remote Pit #4","ticking":true,"triggerMode":"Contains","triggerTestType":"Bounding box","type0":"busstop"}

@@ -1,0 +1,14 @@
+{
+  "type": "custom",
+  "data": [
+    {
+      "config": "interceptor",
+      "model": "fullsize"
+    },
+    {
+      "config": "police",
+      "model": "roamer"
+    }
+  ],
+  "name": "Pepper - Police"
+}

@@ -1,0 +1,41 @@
+{
+  "branches_strong": {
+    "name": "branches_strong",
+    "mapTo": "branches_strong",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "groundDepth": 1,
+    "groundType": "branches_strong"
+  },
+  "leaves_strong": {
+    "name": "leaves_strong",
+    "mapTo": "leaves_strong",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "groundDepth": 0.600000024,
+    "groundType": "leaves_strong"
+  },
+  "leaves_thin": {
+    "name": "leaves_thin",
+    "mapTo": "leaves_thin",
+    "class": "Material",
+    "Stages": [
+      {},
+      {},
+      {},
+      {}
+    ],
+    "groundDepth": 1,
+    "groundType": "leaves_thin"
+  }
+}

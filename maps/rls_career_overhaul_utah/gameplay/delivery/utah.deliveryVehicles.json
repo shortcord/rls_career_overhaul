@@ -1,0 +1,343 @@
+{
+  "utFlatbedFull": {
+    "type": "trailer",
+    "unlockTag": "loadedLargeTrailers",
+    "filterName": "Large Trailer",
+    "connector": "towhitch",
+    "baseReward": 3500,
+    "rewardPerKm": 1200,
+    "filter": {
+      "whiteList": {
+        "model_key": [
+          "flatbed",
+          "containerTrailer"
+        ],
+        "hasLoad": [
+          true
+        ]
+      }
+    }
+  },
+  "utFlatbedEmpty": {
+    "type": "trailer",
+    "unlockTag": "loadedLargeTrailers",
+    "filterName": "Large Trailer",
+    "connector": "towhitch",
+    "baseReward": 2200,
+    "rewardPerKm": 950,
+    "filter": {
+      "whiteList": {
+        "model_key": [
+          "flatbed",
+          "containerTrailer"
+        ],
+        "hasLoad": [
+          false
+        ]
+      }
+    }
+  },
+  "utDryVan": {
+    "type": "trailer",
+    "unlockTag": "loadedMediumTrailers",
+    "filterName": "Large Trailer",
+    "connector": "towhitch",
+    "baseReward": 3300,
+    "rewardPerKm": 600,
+    "filter": {
+      "whiteList": {
+        "model_key": [
+          "dryvan"
+        ],
+        "hasLoad": [
+          true
+        ]
+      }
+    }
+  },
+  "canyonAutoVehFilter": {
+    "type": "vehicle",
+    "unlockTag": "exoticVeh",
+    "filterName": "Canyon Auto",
+    "baseReward": 800,
+    "rewardPerKm": 1030,
+    "filter": {
+      "whiteList": {
+        "Mileage": {
+          "min": 0,
+          "max": 241401600
+        }
+      },
+      "blackList": {
+        "Config Type": [
+          "joesJunk"
+        ],
+        "Brand": [
+          "Carbonworks"
+        ]
+      }
+    },
+    "subFilters": [
+      {
+        "probability": 6,
+        "whiteList": {
+          "Config Type": [
+            "Rally"
+          ]
+        }
+      },
+      {
+        "probability": 8,
+        "whiteList": {
+          "Body Style": [
+            "Buggy"
+          ]
+        }
+      },
+      {
+        "probability": 5,
+        "whiteList": {
+          "Brand": [
+            "DW",
+            "SP",
+            "Trackfab"
+          ]
+        }
+      }
+    ]
+  },
+  "WestRockMotorsVehFilter": {
+    "type": "vehicle",
+    "unlockTag": "smallVeh",
+    "filterName": "West Rock Motors",
+    "baseReward": 200,
+    "rewardPerKm": 210,
+    "filter": {
+      "whiteList": {
+        "Mileage": {
+          "min": 297728640,
+          "max": 643737600
+        },
+        "Config Type": [
+          "joesJunk",
+          "Used",
+          "Taxi",
+          "factory",
+          "Factory"
+        ],
+        "Country": [
+          "United States",
+          "USA"
+        ],
+        "Value": {
+          "min": 0,
+          "max": 100000
+        }
+      },
+      "blackList": {
+        "Body Style": [
+          "Forklift",
+          "JATO truck",
+          "ATV"
+        ],
+        "Brand": [
+          "Carbonworks"
+        ]
+      }
+    },
+    "subFilters": []
+  },
+  "topRockGarageVehFilter": {
+    "type": "vehicle",
+    "unlockTag": "fleetVeh",
+    "filterName": "Top Rock Garage",
+    "baseReward": 500,
+    "rewardPerKm": 700,
+    "filter": {
+      "whiteList": {
+        "Mileage": {
+          "min": 0,
+          "max": 241401600
+        }
+      },
+      "blackList": {
+        "Body Style": [
+          "Mixer Truck",
+          "Tanker Truck",
+          "Semi Truck",
+          "Dump Truck",
+          "Logging Truck",
+          "Fifth Wheel Truck",
+          "Fifth Wheel Truck ",
+          "Flatbed Truck",
+          "Flatbed",
+          "Forklift",
+          "JATO truck",
+          "Box Truck",
+          "Chassis Cab",
+          "Bus"
+        ],
+        "Brand": [
+          "Carbonworks"
+        ]
+      }
+    },
+    "subFilters": [
+      {
+        "probability": 8,
+        "whiteList": {
+          "Country": [
+            "United States",
+            "Canada",
+            "USA"
+          ],
+          "Config Type": [
+            "Aftermarket",
+            "Custom",
+            "Alt Factory",
+            "Frame"
+          ]
+        }
+      },
+      {
+        "probability": 1,
+        "whiteList": {
+          "Country": [
+            "Germany",
+            "Italy",
+            "Japan",
+            "Poland",
+            "Isle of Man",
+            "France",
+            "Canada",
+            "Sweden",
+            "The Netherlands",
+            "Soviet Union/Russia",
+            "Great Britain",
+            "United Kingdom"
+          ],
+          "Config Type": [
+            "Aftermarket",
+            "Custom",
+            "Alt Factory",
+            "Frame"
+          ]
+        }
+      }
+    ]
+  },
+  "goosePlanks30": {
+    "type": "trailer",
+    "unlockTag": "smallMediumTrailers",
+    "filterName": "Large Trailer",
+    "connector": "towhitch",
+    "baseReward": 1500,
+    "rewardPerKm": 550,
+    "filter": {
+      "whiteList": {
+        "model_key": [
+          "tiltdeck"
+        ],
+        "theLoad": [
+          "30planks"
+        ],
+        "hasLoad": [
+          true
+        ]
+      }
+    }
+  },
+  "goosePlanks40": {
+    "type": "trailer",
+    "unlockTag": "smallMediumTrailers",
+    "filterName": "Large Trailer",
+    "connector": "towhitch",
+    "baseReward": 1800,
+    "rewardPerKm": 550,
+    "filter": {
+      "whiteList": {
+        "model_key": [
+          "tiltdeck"
+        ],
+        "theLoad": [
+          "40planks"
+        ],
+        "hasLoad": [
+          true
+        ]
+      }
+    }
+  },
+  "gooseEmpty": {
+    "type": "trailer",
+    "unlockTag": "smallMediumTrailers",
+    "filterName": "Large Trailer",
+    "connector": "towhitch",
+    "baseReward": 1700,
+    "rewardPerKm": 350,
+    "filter": {
+      "whiteList": {
+        "model_key": [
+          "tiltdeck"
+        ],
+        "hasLoad": [
+          false
+        ],
+        "theLoad": [
+          "Empty"
+        ]
+      }
+    }
+  },
+  "utahAccelerItVehFilter": {
+    "type": "vehicle",
+    "unlockTag": "exoticVeh",
+    "filterName": "Acceler It",
+    "baseReward": 800,
+    "rewardPerKm": 1030,
+    "filter": {
+      "whiteList": {
+        "Mileage": {
+          "min": 0,
+          "max": 241401600
+        }
+      },
+      "blackList": {
+        "Config Type": [
+          "joesJunk"
+        ],
+        "Brand": [
+          "Carbonworks"
+        ]
+      }
+    },
+    "subFilters": [
+      {
+        "probability": 6,
+        "whiteList": {
+          "Config Type": [
+            "Rally"
+          ]
+        }
+      },
+      {
+        "probability": 8,
+        "whiteList": {
+          "Body Style": [
+            "Buggy"
+          ]
+        }
+      },
+      {
+        "probability": 5,
+        "whiteList": {
+          "Brand": [
+            "DW",
+            "SP",
+            "Trackfab"
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,486 @@
+{
+  "traffic_etki_lightglass": {
+    "name": "traffic_etki_lightglass",
+    "mapTo": "traffic_etki_lightglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_b.color.png",
+        "metallicFactor": 0.819999993,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_o.data.png",
+        "roughnessFactor": 0.169
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_etki_lightglass.skin_traffic_etki_lights.traffic_etki_lights_facelift": {
+    "name": "traffic_etki_lightglass.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "mapTo": "traffic_etki_lightglass.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_alt_b.color.png",
+        "metallicFactor": 0.819999993,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_o.data.png",
+        "roughnessFactor": 0.169
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_etki_lightglass_dmg": {
+    "name": "traffic_etki_lightglass_dmg",
+    "mapTo": "traffic_etki_lightglass_dmg",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_b.color.png",
+        "detailNormalMap": "/vehicles/simple_traffic/textures/traffic_glass_dmg_n.normal.png",
+        "metallicFactor": 0.749000013,
+        "normalDetailMapUseUV": 1,
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_dmg_o.data.png",
+        "roughnessFactor": 0
+      },
+      {
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 71,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_etki_lightglass_dmg.skin_traffic_etki_lights.traffic_etki_lights_facelift": {
+    "name": "traffic_etki_lightglass_dmg.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "mapTo": "traffic_etki_lightglass_dmg.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_alt_b.color.png",
+        "detailNormalMap": "/vehicles/simple_traffic/textures/traffic_glass_dmg_n.normal.png",
+        "metallicFactor": 0.749000013,
+        "normalDetailMapUseUV": 1,
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_dmg_o.data.png",
+        "roughnessFactor": 0
+      },
+      {
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "normalDetailMapUseUV": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 71,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_etki_lightglass_on": {
+    "name": "traffic_etki_lightglass_on",
+    "mapTo": "traffic_etki_lightglass_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 7500,
+        "emissiveMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_g.color.png",
+        "metallicFactor": 0.788999975,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_o.data.png",
+        "roughnessFactor": 0.151999995
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "traffic_etki_lightglass_on.skin_traffic_etki_lights.traffic_etki_lights_facelift": {
+    "name": "traffic_etki_lightglass_on.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "mapTo": "traffic_etki_lightglass_on.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_alt_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 7500,
+        "emissiveMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_g.color.png",
+        "metallicFactor": 0.788999975,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_o.data.png",
+        "roughnessFactor": 0.151999995
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_etki_lightglass_on_intense": {
+    "name": "traffic_etki_lightglass_on_intense",
+    "mapTo": "traffic_etki_lightglass_on_intense",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_intense_g.color.png",
+        "metallicFactor": 0.873000026,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_o.data.png",
+        "roughnessFactor": 0.210999995
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_etki_lightglass_on_intense.skin_traffic_etki_lights.traffic_etki_lights_facelift": {
+    "name": "traffic_etki_lightglass_on_intense.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "mapTo": "traffic_etki_lightglass_on_intense.skin_traffic_etki_lights.traffic_etki_lights_facelift",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_alt_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_intense_g.color.png",
+        "metallicFactor": 0.873000026,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_n.normal.png",
+        "opacityMap": "/vehicles/simple_traffic/etki/traffic_etki_lightglass_o.data.png",
+        "roughnessFactor": 0.210999995
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 2,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "translucent": true,
+    "translucentBlendOp": "PreMulAlpha",
+    "version": 1.5
+  },
+  "traffic_etki_lights": {
+    "name": "traffic_etki_lights",
+    "mapTo": "traffic_etki_lights",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_b.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_n.normal.png",
+        "roughnessFactor": 0.208000004
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_etki_lights_on": {
+    "name": "traffic_etki_lights_on",
+    "mapTo": "traffic_etki_lights_on",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 7500,
+        "emissiveMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_g.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_n.normal.png",
+        "roughnessFactor": 0.0960000008
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_etki_lights_on_intense": {
+    "name": "traffic_etki_lights_on_intense",
+    "mapTo": "traffic_etki_lights_on_intense",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_b.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "emissiveIntensityNits": 10000,
+        "emissiveMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_intense_g.color.png",
+        "metallicFactor": 1,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_lights_n.normal.png",
+        "roughnessFactor": 0.120999999
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "emissiveFactor": null,
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_etki_trim": {
+    "name": "traffic_etki_trim",
+    "mapTo": "traffic_etki_trim",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_trim_b.color.png",
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_trim_n.normal.png",
+        "roughnessFactor": 0.453999996
+      },
+      {
+        "roughnessFactor": null
+      },
+      {
+        "roughnessFactor": null
+      },
+      {
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  },
+  "traffic_etki_wheels": {
+    "name": "traffic_etki_wheels",
+    "mapTo": "traffic_etki_wheels",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/simple_traffic/etki/traffic_etki_wheels_b.color.png",
+        "metallicFactor": 0.194000006,
+        "normalMap": "/vehicles/simple_traffic/etki/traffic_etki_wheels_n.normal.png",
+        "roughnessFactor": 0.289999992
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      },
+      {
+        "metallicFactor": null,
+        "roughnessFactor": null
+      }
+    ],
+    "dynamicCubemap": true,
+    "materialTag0": "beamng",
+    "materialTag1": "traffic",
+    "version": 1.5
+  }
+}

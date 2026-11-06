@@ -1,0 +1,36 @@
+{
+  "ColorEffectR27G177B88_material": {
+    "name": "ColorEffectR27G177B88_material",
+    "mapTo": "ColorEffectR27G177B88-material",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.0856184885,
+          0.55509752,
+          0.2773633,
+          1
+        ],
+        "specular": [
+          0.25,
+          0.25,
+          0.25,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null,
+        "specular": null
+      },
+      {
+        "diffuseColor": null,
+        "specular": null
+      },
+      {
+        "diffuseColor": null,
+        "specular": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

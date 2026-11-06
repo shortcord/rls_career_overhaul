@@ -1,0 +1,1038 @@
+{
+    "deliveryProviders": [
+        {
+            "id": "ranger",
+            "alwaysVisible": false,
+            "name": "Ranger Station Delivery",
+            "description": "Feels like they are hidding something...",
+            "facilityInformation": "",
+            "associatedOrganization": "utahRangerLogistics",
+            "preview": "ranger.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "rangerDelivery",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "utMiningSupplies",
+                        "utFossilTransfer",
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_200",
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_400",
+                        "utDigSupply_vanillaTrailer_boxutility_large_loaded_800",
+                        "utDigSupply_vanillaTrailer_tsfb_loaded_400",
+                        "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+                    ],
+                    "logisticTypesReceived": [
+                        "fossil",
+                        "generalSupplies",
+                        "utFossilField",
+                        "utDigReturn_vanillaTrailer_boxutility_unloaded",
+                        "utDigReturn_vanillaTrailer_boxutility_large_unloaded",
+                        "utDigReturn_vanillaTrailer_tsfb_unloaded",
+                        "utDigReturn_vanillaTrailer_cargotrailer_default",
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard",
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+                    ],
+                    "loanerNonTrailerPriority": 1,
+                    "loanerTrailerPriority": 1
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesReceived": [
+                "fossil",
+                "generalSupplies",
+                "utFossilField",
+                "utDigReturn_vanillaTrailer_boxutility_unloaded",
+                "utDigReturn_vanillaTrailer_boxutility_large_unloaded",
+                "utDigReturn_vanillaTrailer_tsfb_unloaded",
+                "utDigReturn_vanillaTrailer_cargotrailer_default",
+                "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard",
+                "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+            ],
+            "logisticMaxItems": 10,
+            "logisticGenerators": [
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilTransfer"
+                    ],
+                    "min": -1,
+                    "max": 2,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_cargotrailer_default"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_standard",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+                    ]
+                }
+            ],
+            "logisticTypesProvided": [
+                "utMiningSupplies",
+                "utFossilTransfer",
+                "utDigSupply_vanillaTrailer_boxutility_loaded_200",
+                "utDigSupply_vanillaTrailer_boxutility_loaded_400",
+                "utDigSupply_vanillaTrailer_boxutility_large_loaded_800",
+                "utDigSupply_vanillaTrailer_tsfb_loaded_400",
+                "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+            ]
+        },
+        {
+            "id": "fossil1",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_1.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery1",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies"
+            ]
+        },
+        {
+            "id": "fossil2",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_5.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery2",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies"
+            ]
+        },
+        {
+            "id": "fossil3",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_2.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery3",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies"
+            ]
+        },
+        {
+            "id": "fossil4",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_3.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery4",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                },
+                {
+                    "psName": "fossilStage4",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "utDigReturn_vanillaTrailer_boxutility_unloaded",
+                        "utDigReturn_vanillaTrailer_boxutility_large_unloaded",
+                        "utDigReturn_vanillaTrailer_tsfb_unloaded",
+                        "utDigReturn_vanillaTrailer_cargotrailer_default",
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard",
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+                    ],
+                    "logisticTypesReceived": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_200",
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_400",
+                        "utDigSupply_vanillaTrailer_boxutility_large_loaded_800",
+                        "utDigSupply_vanillaTrailer_tsfb_loaded_400",
+                        "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField",
+                "utDigReturn_vanillaTrailer_boxutility_unloaded",
+                "utDigReturn_vanillaTrailer_boxutility_large_unloaded",
+                "utDigReturn_vanillaTrailer_tsfb_unloaded",
+                "utDigReturn_vanillaTrailer_cargotrailer_default",
+                "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard",
+                "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_cargotrailer_default"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_standard",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+                    ]
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies",
+                "utDigSupply_vanillaTrailer_boxutility_loaded_200",
+                "utDigSupply_vanillaTrailer_boxutility_loaded_400",
+                "utDigSupply_vanillaTrailer_boxutility_large_loaded_800",
+                "utDigSupply_vanillaTrailer_tsfb_loaded_400",
+                "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+            ]
+        },
+        {
+            "id": "fossil5",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_6.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery5",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                },
+                {
+                    "psName": "fossilStage5",
+                    "isInspectSpot": false,
+                    "logisticTypesProvided": [
+                        "utDigReturn_vanillaTrailer_boxutility_unloaded",
+                        "utDigReturn_vanillaTrailer_boxutility_large_unloaded",
+                        "utDigReturn_vanillaTrailer_tsfb_unloaded",
+                        "utDigReturn_vanillaTrailer_cargotrailer_default",
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard",
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+                    ],
+                    "logisticTypesReceived": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_200",
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_400",
+                        "utDigSupply_vanillaTrailer_boxutility_large_loaded_800",
+                        "utDigSupply_vanillaTrailer_tsfb_loaded_400",
+                        "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField",
+                "utDigReturn_vanillaTrailer_boxutility_unloaded",
+                "utDigReturn_vanillaTrailer_boxutility_large_unloaded",
+                "utDigReturn_vanillaTrailer_tsfb_unloaded",
+                "utDigReturn_vanillaTrailer_cargotrailer_default",
+                "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard",
+                "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_200",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_200"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_loaded_400",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_loaded_800",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_boxutility_large_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_loaded_400",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_tsfb_loaded_400"
+                    ]
+                },
+                {
+                    "type": "trailerOfferReceiver",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_loaded_800",
+                    "logisticTypes": [
+                        "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_boxutility_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_boxutility_large_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_boxutility_large_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tsfb_unloaded",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tsfb_unloaded"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_cargotrailer_default",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_cargotrailer_default"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_standard",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_standard"
+                    ]
+                },
+                {
+                    "type": "trailerOfferProvider",
+                    "interval": 120,
+                    "min": -1,
+                    "max": 1,
+                    "offerDuration": {
+                        "min": 300,
+                        "max": 600
+                    },
+                    "filter": "vanillaTrailer_tiltdeck_22ft_gooseneck",
+                    "logisticTypes": [
+                        "utDigReturn_vanillaTrailer_tiltdeck_22ft_gooseneck"
+                    ]
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies",
+                "utDigSupply_vanillaTrailer_boxutility_loaded_200",
+                "utDigSupply_vanillaTrailer_boxutility_loaded_400",
+                "utDigSupply_vanillaTrailer_boxutility_large_loaded_800",
+                "utDigSupply_vanillaTrailer_tsfb_loaded_400",
+                "utDigSupply_vanillaTrailer_cargotrailer_loaded_800"
+            ]
+        },
+        {
+            "id": "fossil6",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_8.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery6",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies"
+            ]
+        },
+        {
+            "id": "fossil7",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "utah_dig_4.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery7",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies"
+            ]
+        },
+        {
+            "id": "fossil8",
+            "omitEmployment": true,
+            "employmentCustomer": true,
+            "alwaysVisible": false,
+            "name": "Dig Site",
+            "description": "Wondering why they chose to dig here?",
+            "facilityInformation": "",
+            "associatedOrganization": "localDeliveryAssociation",
+            "preview": "fossil8.jpg",
+            "manualAccessPoints": [
+                {
+                    "psName": "fossilDelivery8",
+                    "isInspectSpot": true,
+                    "logisticTypesProvided": [
+                        "fossil",
+                        "utFossilField"
+                    ],
+                    "logisticTypesReceived": [
+                        "utMiningSupplies"
+                    ]
+                }
+            ],
+            "sitesFile": "fossil.sites.json",
+            "logisticTypesProvided": [
+                "fossil",
+                "utFossilField"
+            ],
+            "logisticMaxItems": 3,
+            "logisticGenerators": [
+                {
+                    "type": "parcelReceiver",
+                    "logisticTypes": [
+                        "utMiningSupplies"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                },
+                {
+                    "type": "parcelProvider",
+                    "logisticTypes": [
+                        "utFossilField"
+                    ],
+                    "min": -1,
+                    "max": 3,
+                    "interval": 60
+                }
+            ],
+            "logisticTypesReceived": [
+                "utMiningSupplies"
+            ]
+        }
+    ]
+}

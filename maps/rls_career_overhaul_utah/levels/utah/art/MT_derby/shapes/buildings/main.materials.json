@@ -1,0 +1,19 @@
+{
+  "stand_seats": {
+    "name": "stand_seats",
+    "mapTo": "stand_seats",
+    "class": "Material",
+    "persistentId": "65d58142-198b-4cbd-ab7e-386bb4c4fa2e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/baked_props/stand_seats/grandstand_seats_d.dds",
+        "normalMap": "/assets/materials/baked_props/stand_seats/grandstand_seats_n.dds",
+        "specularMap": "/assets/materials/baked_props/stand_seats/grandstand_seats_s.dds",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ]
+  }
+}

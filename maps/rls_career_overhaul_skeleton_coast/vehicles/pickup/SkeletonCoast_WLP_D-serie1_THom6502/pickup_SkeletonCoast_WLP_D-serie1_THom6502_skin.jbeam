@@ -1,0 +1,11 @@
+{
+  "pickup_skin_SkeletonCoast_WLP_D-serie1_THom6502":{
+    "globalSkin":"SkeletonCoast_WLP_D-serie1_THom6502",
+    "information":{
+      "authors":"THom6502",
+      "name":"SkeletonCoast_WLP_D-serie1_THom6502",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

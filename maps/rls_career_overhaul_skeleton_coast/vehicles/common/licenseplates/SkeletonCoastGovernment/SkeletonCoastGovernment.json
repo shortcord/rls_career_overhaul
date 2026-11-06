@@ -1,0 +1,39 @@
+{
+  "name" : "SkeletonCoastGovernment",
+  "version": 2,
+  "data": {
+    "gen":{
+      "pattern" : ["GVN %D%D%DT"],
+          },
+    "format": {
+     
+      "52-11": { //EU
+        "size": {
+          "x": 1024,
+          "y": 196
+        },
+        "text": {
+          "x": 0.5,
+          "y": 0.45,
+          "scale": 1.8,
+          "color": "white",
+          "limit": 9
+        },
+        "diffuse": {
+          "spriteImg": "vehicles/common/licenseplates/default/platefont_d.png",
+          "backgroundImg" : "vehicles/common/licenseplates/SkeletonCoastGovernment/EUSkeletonCoastGovernment_d.png",
+          "fillStyle": "white"
+        },
+        "bump": {
+          "spriteImg": "vehicles/common/licenseplates/default/platefont_n.png",
+          "backgroundImg": "vehicles/common/licenseplates/SkeletonCoastGovernment/EUSkeletonCoastGovernment_n.png",
+          "fillStyle": "rgb(0,0,255)"
+        },
+        "specular": {
+          "spriteImg": "vehicles/common/licenseplates/default/platefont_s.png",
+          "fillStyle": "rgb(233,233,233)"
+        }
+      }
+    }
+  }
+}

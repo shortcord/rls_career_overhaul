@@ -1,0 +1,16 @@
+{
+  "fuel": {
+    "name": "Fuel Delivery",
+    "density": 0.75,
+    "type": "fluid",
+    "money": 0.22,
+    "icon": "droplet"
+  },
+  "water": {
+    "name": "Water",
+    "density": 1,
+    "type": "fluid",
+    "money": 0.24,
+    "icon": "droplet"
+  }
+}

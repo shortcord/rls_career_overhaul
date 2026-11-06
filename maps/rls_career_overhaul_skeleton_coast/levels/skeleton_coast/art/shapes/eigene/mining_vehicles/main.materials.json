@@ -1,0 +1,16 @@
+{
+  "villageexcavator1": {
+    "name": "villageexcavator1",
+    "mapTo": "villageexcavator1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/mining_vehicles/villageexcavator1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

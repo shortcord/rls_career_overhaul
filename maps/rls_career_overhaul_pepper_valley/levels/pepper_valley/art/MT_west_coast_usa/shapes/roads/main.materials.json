@@ -1,0 +1,149 @@
+{
+  "curbs": {
+    "name": "curbs",
+    "mapTo": "curbs",
+    "class": "Material",
+    "persistentId": "79edeb3d-e6dc-426b-9d30-67ad4de97976",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_curbs_ao.data.png",
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_curbs_b.color.png",
+        "detailNormalMap": "/levels/pepper_valley/art/mt_west_coast_usa/road/pbr_textures/detailed_normals/t_asphalt_detail_04.normal.png",
+        "detailScale": [
+          1.5,
+          0.75
+        ],
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_curbs_nm.normal.png",
+        "pixelSpecular": true,
+        "roughnessMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_curbs_r.data.png",
+        "vertColor": true
+      },
+      {
+        "detailScale": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailScale": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "detailScale": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "SIDEWALK",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "grass_garden": {
+    "name": "grass_garden",
+    "mapTo": "grass_garden",
+    "class": "Material",
+    "persistentId": "caa8b3fe-79ea-4f23-bfbe-5d4c8ff9c9c4",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.809099019,
+          0.816608012,
+          0.720762014,
+          1
+        ],
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/grass_garden_d.dds",
+        "detailMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_grass_mown_detail.data.png",
+        "detailScale": [
+          0.5,
+          0.5
+        ],
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/terrains/t_grass_long_nm.normal.png",
+        "roughnessFactor": 0.917999983
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "roughnessFactor": null
+      },
+      {
+        "baseColorFactor": null,
+        "detailScale": null,
+        "roughnessFactor": null
+      }
+    ],
+    "alphaRef": 64,
+    "alphaTest": true,
+    "annotation": "NATURE",
+    "groundType": "GRASS",
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "specularColor0": "0 0 0",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "sidewalk1": {
+    "name": "sidewalk1",
+    "mapTo": "sidewalk1",
+    "class": "Material",
+    "persistentId": "6340e784-f03f-4185-85d8-2ed36dbe5775",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_sidewalk1_ao.data.png",
+        "baseColorFactor": [
+          0.745097995,
+          0.745097995,
+          0.745097995,
+          1
+        ],
+        "baseColorMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_sidewalk1_b.color.png",
+        "metallicFactor": 0.699999988,
+        "metallicMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_sidewalk1_m.data.png",
+        "normalMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_sidewalk1_nm.normal.png",
+        "normalMapStrength": 1.20000005,
+        "pixelSpecular": true,
+        "roughnessMap": "/levels/pepper_valley/art/mt_west_coast_usa/shapes/roads/t_sidewalk1_r.data.png",
+        "vertColor": true
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      },
+      {
+        "baseColorFactor": null,
+        "metallicFactor": null,
+        "normalMapStrength": null,
+        "pixelSpecular": null,
+        "vertColor": null
+      }
+    ],
+    "alphaRef": 0,
+    "annotation": "SIDEWALK",
+    "dynamicCubemap": true,
+    "groundType": "CONCRETE",
+    "materialTag0": "beamng",
+    "materialTag1": "road",
+    "translucent": true,
+    "translucentBlendOp": "None",
+    "version": 1.5
+  }
+}

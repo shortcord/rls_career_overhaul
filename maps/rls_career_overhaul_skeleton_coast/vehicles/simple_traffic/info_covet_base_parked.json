@@ -1,0 +1,18 @@
+{
+  "paints": {},
+  "paintCollections": ["covet_factory"],
+  "defaultPaintName1": "sea_blue",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "isAuxiliary": true,
+  "Type": "PropParked",
+  "Population": 10000,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.covet_base_parked.Configuration"
+}

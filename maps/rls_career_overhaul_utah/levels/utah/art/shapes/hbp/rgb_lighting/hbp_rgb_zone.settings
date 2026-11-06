@@ -1,0 +1,85 @@
+{
+  "activeGroup":"upstairs",
+  "brightness":10,
+  "color":[
+    0.55294117647059,
+    0.094117647058824,
+    0.72156862745098
+  ],
+  "fields":{
+    "position":"117.122971 -784.894775 125.921852",
+    "rotation":"1 0 0 0.237388134",
+    "scale":"1.5 1.5 2.4000001"
+  },
+  "fixtureStyles":{
+    "downstairs":"arrowline",
+    "upstairs":"cairo"
+  },
+  "groups":{
+    "downstairs":{
+      "brightness":10,
+      "color":[
+        0.45098039215686,
+        0,
+        1
+      ],
+      "mode":"rainbow",
+      "pattern":"outward",
+      "speed":8
+    },
+    "upstairs":{
+      "brightness":10,
+      "color":[
+        0.55294117647059,
+        0.094117647058824,
+        0.72156862745098
+      ],
+      "mode":"rainbow",
+      "pattern":"cycle",
+      "speed":0.5
+    }
+  },
+  "mode":"rainbow",
+  "pattern":"cycle",
+  "presets":{
+    "Pink":{
+      "brightness":0.9642,
+      "color":[
+        1,
+        0,
+        0.72631597518921
+      ],
+      "mode":"custom",
+      "pattern":"sweep",
+      "speed":4
+    },
+    "Teal":{
+      "brightness":1.1436,
+      "color":[
+        0,
+        1,
+        0.84210515022278
+      ],
+      "mode":"custom",
+      "pattern":"cycle",
+      "speed":4
+    }
+  },
+  "speed":0.5,
+  "upstairsFixtures":[
+    "hbpRgbPreview1111",
+    "hbpRgbPreview11111",
+    "hbpRgbPreview111111"
+  ],
+  "version":6,
+  "zones":[
+    {
+      "fields":{
+        "position":"115.410713 -784.429688 129.248428",
+        "rotation":"1 0 0 0.205584139",
+        "scale":"1.5 1.5 2.4000001"
+      },
+      "name":"hbpRgbSwitchTrigger2"
+    }
+  ]
+}

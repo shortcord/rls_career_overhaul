@@ -1,0 +1,17 @@
+{
+  "paints": {},
+  "paintCollections": ["gavril_twotone_factory"],
+  "defaultMultiPaintSetup": "gavril_champagne_twotone",
+  "onlyUseConfigPaintsForRandomPaintDistribution": true,
+  "onlyUseConfigPaintsForRandomMultiPaintDistribution": true,
+  "ignoreModelRandomPaintDistribution":true,
+  "ignoreModelRandomMultiPaintDistribution":true,
+  "defaultRandomPaintProbability": 1,
+  "defaultRandomMultiPaintProbability": 1,
+  "Type": "PropTraffic",
+  "Population": 4285,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.van_passenger_facelift.Configuration"
+}

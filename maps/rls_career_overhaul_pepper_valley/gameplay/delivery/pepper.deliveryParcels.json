@@ -1,0 +1,592 @@
+{
+  "pepperValleyLogisticsPlan2AjSPartSupplyParcel": {
+    "names": [
+      "Small Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2AjSPartSupplyParcel"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperValleyLogisticsPlan2AjSPartSupplyParcel2": {
+    "names": [
+      "Remote Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2AjSPartSupplyParcel2"
+    ],
+    "slots": [
+      64,
+      128
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 1,
+    "generationChance": 0.3,
+    "duplicationChance": [
+      1,
+      0.5,
+      0.5
+    ],
+    "offerDuration": 360,
+    "weight": [
+      50,
+      100,
+      200
+    ],
+    "modChance": {
+      "remoteDelivery": 1
+    }
+  },
+  "pepperValleyLogisticsPlan2AjSPartSupplyParcel3": {
+    "names": [
+      "Small Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2AjSPartSupplyParcel3"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperValleyLogisticsPlan2NorthernImportExportsParcel": {
+    "names": [
+      "Large General Freight"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2NorthernImportExportsParcel"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "physicalWeightClass": "freight",
+    "rarity": 1.5,
+    "worth": 1.1,
+    "generationChance": 0.15,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "offerDuration": 180,
+    "weight": [
+      30,
+      56
+    ],
+    "modChance": {
+      "supplies": 1
+    }
+  },
+  "pepperValleyLogisticsPlan2NorthernImportExportsParcel2": {
+    "names": [
+      "Large General Freight"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2NorthernImportExportsParcel2"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "physicalWeightClass": "freight",
+    "rarity": 1.5,
+    "worth": 1.1,
+    "generationChance": 0.15,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "offerDuration": 180,
+    "weight": [
+      30,
+      56
+    ],
+    "modChance": {
+      "supplies": 1
+    }
+  },
+  "pepperValleyLogisticsPlan2NorthernImportExportsParcel3": {
+    "names": [
+      "Large General Freight"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2NorthernImportExportsParcel3"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "physicalWeightClass": "freight",
+    "rarity": 1.5,
+    "worth": 1.1,
+    "generationChance": 0.15,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "offerDuration": 180,
+    "weight": [
+      30,
+      56
+    ],
+    "modChance": {
+      "supplies": 1
+    }
+  },
+  "pepperValleyLogisticsPlan2NorthernImportExportsParcel4": {
+    "names": [
+      "Large General Freight"
+    ],
+    "logisticTypes": [
+      "pepperValleyLogisticsPlan2NorthernImportExportsParcel4"
+    ],
+    "slots": [
+      128
+    ],
+    "cargoType": "parcel",
+    "physicalWeightClass": "freight",
+    "rarity": 1.5,
+    "worth": 1.1,
+    "generationChance": 0.15,
+    "duplicationChance": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "offerDuration": 180,
+    "weight": [
+      30,
+      56
+    ],
+    "modChance": {
+      "supplies": 1
+    }
+  },
+  "pepperOffRoadSuppliesremotePitMainParts": {
+    "names": [
+      "Small Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperOffRoadSuppliesremotePitMainParts"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperOffRoadSuppliesremotePitSaltParts": {
+    "names": [
+      "Small Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperOffRoadSuppliesremotePitSaltParts"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperOffRoadSuppliesremotePitOffroadParts": {
+    "names": [
+      "Small Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperOffRoadSuppliesremotePitOffroadParts"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperDealerRepairReturnsEmployment": {
+    "names": [
+      "Returned Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperDealerRepairReturnsEmployment"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.6,
+      0.3
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperDealerRepairReturnsIndependent": {
+    "names": [
+      "Returned Repair Parts"
+    ],
+    "logisticTypes": [
+      "pepperDealerRepairReturnsIndependent"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.6,
+      0.3
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperAjDealerPartsEmployment": {
+    "names": [
+      "Dealership Parts"
+    ],
+    "logisticTypes": [
+      "pepperAjDealerPartsEmployment"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  },
+  "pepperAjDealerPartsIndependent": {
+    "names": [
+      "Dealership Parts"
+    ],
+    "logisticTypes": [
+      "pepperAjDealerPartsIndependent"
+    ],
+    "slots": [
+      4,
+      8,
+      16
+    ],
+    "cargoType": "parcel",
+    "rarity": 1,
+    "worth": 0.4,
+    "generationChance": 0.5,
+    "duplicationChance": [
+      1,
+      0.9,
+      0.8,
+      0.7,
+      0.6,
+      0.5,
+      0.4,
+      0.3,
+      0.2,
+      0.1
+    ],
+    "offerDuration": 300,
+    "weight": [
+      1.2,
+      1.8,
+      2.2
+    ],
+    "modChance": {
+      "timed": 0
+    }
+  }
+}

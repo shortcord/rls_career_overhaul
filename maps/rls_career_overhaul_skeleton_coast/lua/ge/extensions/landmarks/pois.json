@@ -1,0 +1,1293 @@
+[
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_01",
+      "objectname":"landmark_01",
+      "translationId":"Landmark 01",
+      "type":"landmark"
+     },
+     "id":"landmark_01",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Historical site",
+        "icon":"room",
+        "name":"Diaz Cross",
+        "pos":{"x":1520.490,"y":2263.059,"z":26.262},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Diaz Cross",
+			"",
+			"A stone cross was put here by portuguese seafarers",
+			"in 1489 to mark the position where they set foot",
+			"on the uninhabited land. It took another 400 years",
+			"before any people settled in the area when the",
+			"town of Vogelsang Bay was founded.",
+		],
+		"title":"Diaz Cross",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_02",
+      "objectname":"landmark_02",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 02",
+      "type":"landmark"
+     },
+     "id":"landmark_02",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Historical neighbourhood in Vogelsang Bay",
+        "icon":"room",
+        "name":"Hawekop",
+        "pos":{"x":1445.795,"y":7702.609,"z":23.793},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Hawekop",
+			"",
+			"Hawekop is a historical Vogelsang Bay neighbourhood",
+			"known for its steep streets, colourful houses and",
+			"cultural legacy. Originally developed to house the",
+			"increasing population of workers for the local",
+			"industry in the late 19th century, Hawekop became",
+			"a center of local cuisine, religious tradition and",
+			"vibrant community life. While its heritage draws",
+			"interest, the area is increasingly under pressure",
+			"from tourism and gentrification.",
+		],
+		"title":"Hawekop",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_03",
+      "objectname":"landmark_03",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 03",
+      "type":"landmark"
+     },
+     "id":"landmark_03",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Rocky Island in the Atlantic Ocean",
+        "icon":"room",
+        "name":"Cormorant Island",
+        "pos":{"x":-1891.747,"y":4274.540,"z":18.714},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Cormorant Island",
+			"",
+			"This is Cormorant island. A barren rock in the",
+			"Atlantic Ocean. Thanks to large scale guano mining",
+			"in the late 19th century, the local population of",
+			"cape penguin is now critically endagered. Today a small",
+			"research and weather station is housed in the old buildings.",
+		],
+		"title":"Cormorant Island",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_04",
+      "objectname":"landmark_04",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 04",
+      "type":"landmark"
+     },
+     "id":"landmark_04",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Budget accomodation on the beach.",
+        "icon":"room",
+        "name":"Beach Hotel",
+        "pos":{"x":2253.881,"y":2809.544,"z":27.030},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Going for a swim is not adviced since the ocean is",
+			"very cold and full of sharks. Very popular by surfers",
+			"and fishermen",
+		],
+		"title":"Cormorant Island",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_05",
+      "objectname":"landmark_05",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 05",
+      "type":"landmark"
+     },
+     "id":"landmark_05",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Remains of early 20th century diamond mining.",
+        "icon":"room",
+        "name":"Abandoned Mine",
+        "pos":{"x":6626.548,"y":2359.065,"z":88.968},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"The mining boom of past decades left many places",
+			"like this abandoned when the local resources",
+			"were depleted. This facility was used to process",
+			"diamonds and closed its gates in the 1940s. Most of",
+			"the equipment was looted in the years after and",
+			"used somewhere else.",
+		],
+		"title":"Abandoned Mine",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_06",
+      "objectname":"landmark_06",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 06",
+      "type":"landmark"
+     },
+     "id":"landmark_06",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Abandoned Mining Town",
+        "icon":"room",
+        "name":"Liliental Ghosttown",
+        "pos":{"x":7362.411,"y":1015.086,"z":76.652},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Despite the name suggesting it, there are no lilies",
+			"growing in this place. The town was abandoned",
+			"after the mine ran out of diamonds. Today the",
+			"buildings are rather frequented by hyena looking",
+			"for shelter than people.",
+		],
+		"title":"Liliental",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_07",
+      "objectname":"landmark_07",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 07",
+      "type":"landmark"
+     },
+     "id":"landmark_07",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Luxury Safari Lodge",
+        "icon":"room",
+        "name":"Kalahari Desert Lodge",
+        "pos":{"x":57964.301,"y":1723.339,"z":103.489},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"The Kalahari Desert Lodge offers 5 star accomodation",
+			"in the remote landscape. ",
+		],
+		"title":"Kalahari Desert Lodge",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_08",
+      "objectname":"landmark_08",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 08",
+      "type":"landmark"
+     },
+     "id":"landmark_08",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Local airfield",
+        "icon":"room",
+        "name":"Otjovasando Airfield",
+        "pos":{"x":57336.035,"y":7038.475,"z":86.119},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Mostly used for local flights but once a week there's",
+			"a scheduled flight to Windhoek. Propably not suited",
+			"for a 747.",
+		],
+		"title":"Otjovasando Airfield",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_09",
+      "objectname":"landmark_09",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 09",
+      "type":"landmark"
+     },
+     "id":"landmark_09",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Otjovasando Distribution center of Springbok Logistics",
+        "icon":"room",
+        "name":"Springbok Transport",
+        "pos":{"x":57068.207,"y":7712.143,"z":84.146},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Distribution center of Springbok Transport.",
+			"Your logistics partner in Karas region.",
+		],
+		"title":"Springbok Transport",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_10",
+      "objectname":"landmark_10",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 10",
+      "type":"landmark"
+     },
+     "id":"landmark_10",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"One of the many wrecks on the Skeleton Coast",
+        "icon":"room",
+        "name":"Shipwreck",
+        "pos":{"x":2241.706,"y":4228.229,"z":17.682},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Strong currents combined with sudden appearance",
+			"of heavy fog makes these one of the most",
+			"dangerous waters to navigate. Over the years,",
+			"countless ships have ran aground on these shores.",
+			"While in modern times, shipwrecked crews are",
+			"rescued by professional search parties, in past",
+			"centuries, beaching a ship and finding yourself",
+			"surrounded by endless miles of lifeless desert almost",
+			"always spelled certain death.",
+		],
+		"title":"Shipwreck",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_11",
+      "objectname":"landmark_11",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 11",
+      "type":"landmark"
+     },
+     "id":"landmark_11",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Facility to process diamonds",
+        "icon":"room",
+        "name":"Diamond Batching Plant",
+        "pos":{"x":2650.273,"y":5371.830,"z":68.653},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Raw material is being transported from the beach",
+			"to this facility where it is further processed",
+			"with the goal of filtering out the diamonds.",
+			"The Atlantic coast of southern Africa still holds",
+			"one of the largest diamond deposits of the world, ",
+			"making this a worthwhile area of mining exploration",
+			"The diamond mine is one of the largest employers in",
+			"the area, however the diamond boom is not without its",
+			"downsides. The mining activities on the beach leave",
+			"behind a post industrial wasteland that is barely",
+			"inhabitable by the local wildlife.",
+		],
+		"title":"Diamond Batching Plant",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_12",
+      "objectname":"landmark_12",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 12",
+      "type":"landmark"
+     },
+     "id":"landmark_12",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Local drift spot",
+        "icon":"room",
+        "name":"Vogelsang Bay Spinning Ground",
+        "pos":{"x":3159.684,"y":7850.588,"z":92.740},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Spinning is a motoring event very popular in",
+			"southern Africa. The drivers perform all sorts",
+			"of stunts, doing burnouts and drifting to cheer up",
+			"the crowd of spectators. The events are mostly a",
+			"social gathering with music, food and other activities.",
+		],
+		"title":"Vogelsang Bay Spinning Ground",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_13",
+      "objectname":"landmark_13",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 13",
+      "type":"landmark"
+     },
+     "id":"landmark_13",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"The only harbour for many miles",
+        "icon":"room",
+        "name":"Vogelsang Bay Harbour",
+        "pos":{"x":278.142,"y":7817.048,"z":19.706},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Its the only natural harbour on the coast and",
+			"therefor the reason Vogelsang Bay was build in",
+			"this place. Still, it is the main transshipment",
+			"point for all sorts of goods in the area.",
+		],
+		"title":"Vogelsang Bay Harbour",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_14",
+      "objectname":"landmark_14",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 14",
+      "type":"landmark"
+     },
+     "id":"landmark_14",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"The name suggests it",
+        "icon":"room",
+        "name":"Mountain Research Station",
+        "pos":{"x":7687.027,"y":6730.045,"z":180.016},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Small research station to monitor local",
+			"wildlife and weather",
+		],
+		"title":"Mountain Research Station",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_15",
+      "objectname":"landmark_15",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 15",
+      "type":"landmark"
+     },
+     "id":"landmark_15",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Colonial Fort and settlement",
+        "icon":"room",
+        "name":"Fort Twaalfontein",
+        "pos":{"x":22419.945,"y":5303.739,"z":96.877},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Fort Twaalfontein was originally established in 1908",
+			"during the period of German colonial rule in what",
+			"was then German South West Africa. It was built as",
+			"part of a chain of small military outposts intended",
+			"to secure control over the remote region, regulate",
+			"movement along trade routes, and monitor local",
+			"populations during colonial expansion. The fort was",
+			"abandoned after the German colonial forces withdrew",
+			"following World War I, and over time it fell into",
+			"disrepair.",
+		],
+		"title":"Fort Twaalfontein",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_16",
+      "objectname":"landmark_16",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 16",
+      "type":"landmark"
+     },
+     "id":"landmark_16",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"Historical Site",
+        "icon":"room",
+        "name":"Fort Vogelsangbay",
+        "pos":{"x":1551.992,"y":7414.798,"z":77.329},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Fort Vogelsangbay is one of the oldest surviving",
+			"buildings in the town and was constructed in 1890",
+			"by the German colonial Schutztruppe under Captain",
+			"Curt von François as a fort to secure German presence",
+			"in the region. Originally serving as a military",
+			"headquarters and barracks during the early colonial",
+			"occupation of what was then German South West Africa,",
+			"it played a central role in the establishment of",
+			"colonial administration in Vogelsangbay.",
+			"Over time, as its military importance declined,",
+			"the building was repurposed several times,",
+			"including as a school and administrative facility.",
+			"Today, after restoration efforts, it functions as part",
+			"of Namibia’s National Museum complex, preserving and",
+			"exhibiting historical artifacts that reflect both the",
+			"colonial period and broader Namibian history.",
+		],
+		"title":"Fort Vogelsangbay",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_17",
+      "objectname":"landmark_17",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 17",
+      "type":"landmark"
+     },
+     "id":"landmark_17",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"local runway",
+        "icon":"room",
+        "name":"Horseshoebay Runway",
+        "pos":{"x":2125.943,"y":1618.603,"z":24.365},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Local unpaved runway. Only suitable for light",
+			"aircraft.",
+		],
+		"title":"Horseshoebay Runway",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	},
+	{
+	 "data":{
+	  "flag":"default",
+      "id":"landmark_18",
+      "objectname":"landmark_18",
+      "previews":[
+        "/lua/ge/extensions/landmarks/src/poi_mark.png"
+      ],
+      "translationId":"Landmark 18",
+      "type":"landmark"
+     },
+     "id":"landmark_18",
+     "markerInfo":{
+      "bigmapMarker":{
+        "cluster":true,
+		"description":"local racetrack",
+        "icon":"room",
+        "name":"Horseshoebay Dirttrack",
+        "pos":{"x":2058.186,"y":1275.930,"z":24.365},
+        "previews":[
+          "/lua/ge/extensions/landmarks/src/poi_mark.png"
+        ],
+        "quickTravelPosRotFunction":null,
+        "thumbnail":"/lua/ge/extensions/landmarks/src/poi_mark.png"
+      }
+     },
+	 "popUpRadius":15,
+	 "uiData":{
+		"bgColor":[
+			0.2, 
+			0.2, 
+			0.2, 
+			0.5
+		],
+		"textColor":[
+			1, 
+			1, 
+			1, 
+			1
+		],
+		"roundedEdges":true,
+		"lore":[
+			"Small dirt racetrack next to the runway.",
+		],
+		"title":"Horseshoebay Dirttrack",
+		"closeButton":true,
+		"buttonText":"Close",
+		"buttonCol":[
+			0.5, 
+			0.5, 
+			0.5, 
+			0.7
+		],
+		"buttonHoverCol":[
+			0.5, 
+			0.5, 
+			0, 
+			0.7
+		],
+		"buttonActiveCol":[
+			1, 
+			0.5, 
+			0, 
+			0.7
+		]
+	 }
+	}
+]

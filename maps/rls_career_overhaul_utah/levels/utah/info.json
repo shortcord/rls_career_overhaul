@@ -1,0 +1,76 @@
+{
+  "features": "levels.utah.info.features",
+  "suitablefor": "levels.utah.info.suitablefor",
+  "authors": "BeamNG",
+  "roads": "levels.utah.info.roads",
+  "size": [
+    2048,
+    2048
+  ],
+  "title": "levels.utah.info.title",
+  "description": "levels.utah.info.description",
+  "defaultSpawnPointName": "spawn_auto_repair_zone",
+  "country": "levels.common.country.usa",
+  "region": "northAmerica",
+  "biome": "levels.utah.info.biome",
+  "previews": [
+    "utah_preview1.jpg"
+  ],
+  "spawnPoints": [
+    {
+      "translationId": "levels.utah.spawnpoints.westHighway",
+      "objectname": "spawn_west_highway",
+      "preview": "spawn_west_highway_preview.jpg"
+    },
+    {
+      "translationId": "levels.utah.spawnpoints.buildingSite",
+      "objectname": "spawn_building_site",
+      "preview": "spawn_building_site_preview.jpg"
+    },
+    {
+      "translationId": "levels.utah.spawnpoints.tourist",
+      "objectname": "spawn_tourist",
+      "preview": "spawn_tourist_preview.jpg"
+    },
+    {
+      "translationId": "levels.utah.spawnpoints.parkingLot",
+      "objectname": "spawn_parking_lot",
+      "preview": "spawn_parking_lot_preview.jpg"
+    },
+    {
+      "translationId": "levels.utah.spawnpoints.AutoRepairZone",
+      "objectname": "spawn_auto_repair_zone",
+      "preview": "spawn_auto_repair_zone_preview.jpg"
+    },
+    {
+      "translationId": "levels.utah.spawnpoints.campsite",
+      "objectname": "spawn_campsite",
+      "preview": "spawn_campsite_preview.jpg"
+    },
+    {
+      "translationId": "levels.utah.spawnpoints.airfield",
+      "objectname": "spawn_airfield",
+      "preview": "utah_preview4.jpg"
+    },
+    {
+      "translationId": "Cargo Yard",
+      "objectname": "spawn_cargoYard",
+      "preview": "spawn_cargoYard.png"
+    },
+    {
+      "translationId": "Slop Gear",
+      "objectname": "spawn_slopGear",
+      "preview": "spawn_slopGear.png"
+    },
+    {
+      "translationId": "Off Road Compound",
+      "objectname": "spawn_offRoadCompound",
+      "preview": "spawn_offRoadCompound.png"
+    },
+    {
+      "translationId": "Dam",
+      "objectname": "spawn_Dam",
+      "preview": "spawn_Dam.png"
+    }
+  ],
+}

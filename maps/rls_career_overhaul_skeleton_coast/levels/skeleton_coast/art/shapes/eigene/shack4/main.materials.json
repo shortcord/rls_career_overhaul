@@ -1,0 +1,16 @@
+{
+  "shack4_001": {
+    "name": "shack4_001",
+    "mapTo": "shack4.001",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "shack4_Base_Color.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

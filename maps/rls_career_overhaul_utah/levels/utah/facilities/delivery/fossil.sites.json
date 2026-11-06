@@ -1,0 +1,549 @@
+{
+  "description":"Description of these Sites. Contains Locations, Zones, and Parking Spots.",
+  "dir":"/levels/utah/facilities/delivery/",
+  "locations":{},
+  "name":"fossil.sites.json",
+  "parkingSpots":[
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"rangerDelivery",
+      "oldId":149,
+      "pos":[
+        133.6962891,
+        7.697178364,
+        171.4045105
+      ],
+      "rot":[
+        0,
+        0,
+        0.9747521281,
+        -0.2232893407
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery1",
+      "oldId":152,
+      "pos":[
+        -913.7734375,
+        -182.459198,
+        263.0663757
+      ],
+      "rot":[
+        0.01324712688,
+        -0.03642873894,
+        0.8884216804,
+        0.4573885959
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery2",
+      "oldId":153,
+      "pos":[
+        -859.6173096,
+        -166.799469,
+        261.0602112
+      ],
+      "rot":[
+        0.0916166145,
+        0.03784353657,
+        -0.439105248,
+        0.8929505168
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery3",
+      "oldId":154,
+      "pos":[
+        -836.5075073,
+        -86.04484558,
+        256.4985352
+      ],
+      "rot":[
+        0.06050192755,
+        0.06296342748,
+        -0.6902250243,
+        0.71830659
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery4",
+      "oldId":155,
+      "pos":[
+        -457.3030396,
+        282.7099304,
+        287.1825562
+      ],
+      "rot":[
+        0,
+        0,
+        -0.7864583135,
+        0.6176434755
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery5",
+      "oldId":156,
+      "pos":[
+        -638.7525635,
+        313.078125,
+        289.998291
+      ],
+      "rot":[
+        0.1571222681,
+        -0.08539379959,
+        0.9397077185,
+        0.2914950634
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery6",
+      "oldId":157,
+      "pos":[
+        115.2827301,
+        -442.8534546,
+        126.1536636
+      ],
+      "rot":[
+        0,
+        0,
+        0.3592121005,
+        0.9332559109
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery7",
+      "oldId":158,
+      "pos":[
+        292.7457581,
+        -257.6085815,
+        131.2217712
+      ],
+      "rot":[
+        0,
+        0,
+        0.345158875,
+        0.9385442138
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color":[
+        1,
+        1,
+        1
+      ],
+      "customFields":{
+        "names":{},
+        "tags":{},
+        "types":{},
+        "values":{}
+      },
+      "isMultiSpot":false,
+      "name":"fossilDelivery8",
+      "oldId":159,
+      "pos":[
+        -259.9780273,
+        409.8482361,
+        279.3278198
+      ],
+      "rot":[
+        0,
+        0,
+        0.8351812959,
+        0.5499745607
+      ],
+      "scl":[
+        2.5,
+        6,
+        3
+      ],
+      "spotAmount":1,
+      "spotDirection":"Left",
+      "spotOffset":0,
+      "spotRotation":0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "fossilStage1",
+      "oldId": 4501,
+      "pos": [
+        -976.664,
+        -254.488,
+        295.345
+      ],
+      "rot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scl": [
+        3,
+        8,
+        4
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "fossilStage2",
+      "oldId": 4502,
+      "pos": [
+        -837.092,
+        -217.698,
+        296.726
+      ],
+      "rot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scl": [
+        3,
+        8,
+        4
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "fossilStage3",
+      "oldId": 4503,
+      "pos": [
+        -821.694,
+        -104.619,
+        296.599
+      ],
+      "rot": [
+        0,
+        0,
+        0.991009,
+        -0.133795
+      ],
+      "scl": [
+        3,
+        8,
+        4
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "fossilStage4",
+      "oldId": 4504,
+      "pos": [
+        -490.573,
+        297.541,
+        298.476
+      ],
+      "rot": [
+        0,
+        0,
+        0.097485,
+        0.995237
+      ],
+      "scl": [
+        3,
+        8,
+        4
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "fossilStage5",
+      "oldId": 4505,
+      "pos": [
+        -557.31,
+        278.601,
+        298.47
+      ],
+      "rot": [
+        0,
+        0,
+        -0.633842,
+        0.773462
+      ],
+      "scl": [
+        3,
+        8,
+        4
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    },
+    {
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "customFields": {
+        "names": {},
+        "tags": {},
+        "types": {},
+        "values": {}
+      },
+      "isMultiSpot": false,
+      "name": "fossilStage6",
+      "oldId": 4506,
+      "pos": [
+        143.607,
+        -463.684,
+        141.976
+      ],
+      "rot": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "scl": [
+        3,
+        8,
+        4
+      ],
+      "spotAmount": 1,
+      "spotDirection": "Left",
+      "spotOffset": 0,
+      "spotRotation": 0
+    }
+  ],
+  "zones":{}
+}

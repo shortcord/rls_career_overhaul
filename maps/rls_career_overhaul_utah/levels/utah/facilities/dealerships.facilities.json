@@ -1,0 +1,836 @@
+{
+  "dealerships": [
+    {
+      "id": "WestRockMotors",
+      "name": "West Rock Motors",
+      "description": "Like a Rock... Sort of",
+      "preview": "west_rock_dealer.jpg",
+      "stock": 30,
+      "range": [
+        0.5,
+        0.8,
+        1.1,
+        1.4
+      ],
+      "associatedOrganization": "WestRockMotors",
+      "doors": [
+        [
+          "westRockMotors_area",
+          "westRockMotors_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "westRockMotorsParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 297728640,
+            "max": 643737600
+          }
+        },
+        "blackList": {
+          "Config Type": [
+            "joesJunk"
+          ],
+          "Body Style": [
+            "Forklift",
+            "JATO truck",
+            "ATV"
+          ],
+          "Brand": [
+            "Carbonworks"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 4,
+          "whiteList": {
+            "Config Type": [
+              "joesJunk",
+              "Used",
+              "Taxi",
+              "factory",
+              "Factory"
+            ],
+            "Country": [
+              "United States",
+              "USA"
+            ],
+            "Value": {
+              "min": 0,
+              "max": 100000
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Config Type": [
+              "joesJunk",
+              "Taxi",
+              "factory",
+              "Used",
+              "Factory"
+            ],
+            "Country": [
+              "Japan",
+              "Italy",
+              "Germany",
+              "France",
+              "Poland",
+              "Isle of Man",
+              "Canada",
+              "Sweden",
+              "The Netherlands",
+              "Great Britain",
+              "Soviet Union/Russia",
+              "United Kingdom"
+            ],
+            "Value": {
+              "min": 0,
+              "max": 100000
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "us",
+        "import"
+      ],
+      "fees": 249,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "West Rock"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "canyonAuto",
+      "name": "Canyon Auto",
+      "description": "Get you in and out of any canyon",
+      "preview": "canyon_auto.jpg",
+      "stock": 30,
+      "range": [
+        0.5,
+        0.7,
+        1.1,
+        1.4
+      ],
+      "associatedOrganization": "canyonAuto",
+      "doors": [
+        [
+          "canyonAuto_area",
+          "canyonAuto_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "canyonAutoParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 241401600
+          }
+        },
+        "blackList": {
+          "Config Type": [
+            "joesJunk"
+          ],
+          "Brand": [
+            "Carbonworks"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 6,
+          "whiteList": {
+            "Config Type": [
+              "Rally"
+            ]
+          }
+        },
+        {
+          "probability": 8,
+          "whiteList": {
+            "Body Style": [
+              "Buggy"
+            ]
+          }
+        },
+        {
+          "probability": 5,
+          "whiteList": {
+            "Brand": [
+              "DW",
+              "SP",
+              "Trackfab"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "rally",
+        "buggy",
+        "brand",
+        "offroad"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "Canyon"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.1,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "topRockGarage",
+      "name": "Top Rock Garage",
+      "description": "Top of the line custom builds",
+      "preview": "top_rock_dealer.jpg",
+      "stock": 30,
+      "range": [
+        0.5,
+        0.7,
+        1.1,
+        1.4
+      ],
+      "associatedOrganization": "topRockGarage",
+      "doors": [
+        [
+          "topRockGarage_area",
+          "topRockGarage_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "topRockGarageParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 241401600
+          }
+        },
+        "blackList": {
+          "Body Style": [
+            "Mixer Truck",
+            "Tanker Truck",
+            "Semi Truck",
+            "Dump Truck",
+            "Logging Truck",
+            "Fifth Wheel Truck",
+            "Fifth Wheel Truck ",
+            "Flatbed Truck",
+            "Flatbed",
+            "Forklift",
+            "JATO truck",
+            "Box Truck",
+            "Chassis Cab",
+            "Bus"
+          ],
+          "Brand": [
+            "Carbonworks"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 8,
+          "whiteList": {
+            "Country": [
+              "United States",
+              "Canada",
+              "USA"
+            ],
+            "Config Type": [
+              "Aftermarket",
+              "Custom",
+              "Alt Factory",
+              "Frame"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Germany",
+              "Italy",
+              "Japan",
+              "Poland",
+              "Isle of Man",
+              "France",
+              "Canada",
+              "Sweden",
+              "The Netherlands",
+              "Soviet Union/Russia",
+              "Great Britain",
+              "United Kingdom"
+            ],
+            "Config Type": [
+              "Aftermarket",
+              "Custom",
+              "Alt Factory",
+              "Frame"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "american custom",
+        "import custom"
+      ],
+      "fees": 300,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": "Top Rock"
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "acceleritGarage",
+      "name": "Acceler It Auto Sales",
+      "description": "Best car money can buy",
+      "preview": "acceler_auto.jpg",
+      "stock": 40,
+      "range": [
+        0.5,
+        0.7,
+        1.1,
+        1.4
+      ],
+      "associatedOrganization": "acceleritGarage",
+      "doors": [
+        [
+          "accelerIT_area",
+          "accelerIT_icon",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "accelerITParking"
+      ],
+      "activityAcceptProps": [
+        {
+          "keyLabel": "New & Used Vehicles"
+        }
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 160934400
+          }
+        },
+        "blackList": {
+          "Brand": [
+            "Carbonworks"
+          ],
+          "Config Type": [
+            "joesJunk",
+            "Used",
+            "Aftermarket",
+            "Custom",
+            "Alt Factory",
+            "Exocar",
+            "Frame",
+            "Hardcore",
+            "Pace Car",
+            "Powerglow",
+            "Race",
+            "Rally",
+            "Police",
+            "Service",
+            "Ibishu Plus",
+            "Drift",
+            "Gambler"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 3,
+          "whiteList": {
+            "Country": [
+              "United States",
+              "USA"
+            ],
+            "Years": {
+              "min": 1998,
+              "max": 2233
+            }
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Canada",
+              "Germany",
+              "Italy",
+              "Poland",
+              "Japan",
+              "Isle of Man",
+              "France",
+              "The Netherlands",
+              "Sweden",
+              "United Kingdom",
+              "Soviet Union/Russia",
+              "Great Britain"
+            ],
+            "Years": {
+              "min": 1998,
+              "max": 2233
+            }
+          }
+        }
+      ],
+      "subFilterNames": [
+        "us",
+        "import"
+      ],
+      "fees": 249,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 100,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "iconOffsetHeight": 1,
+      "iconLift": 0.25,
+      "playModeIconName": "poi_entrance_round",
+      "salesTax": 0.07,
+      "ui": {
+        "showMatchingConfigs": [
+          true
+        ],
+        "configSearchText": {}
+      }
+    },
+    {
+      "id": "rangerStation",
+      "name": "Ranger Station",
+      "description": "Police Vehicles",
+      "preview": "ranger_dealer.jpg",
+      "associatedOrganization": "policeUtahLoaner",
+      "stock": 15,
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "rangerStation_area_1",
+          "rangerStation_icon_15",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "rangerStationParking1"
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 160934400
+          }
+        },
+        "blackList": {
+          "Brand": [
+            "Carbonworks"
+          ],
+          "Body Style": [
+            "Custom Buggy"
+          ],
+          "Config Type": [
+            "joesJunk"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 4,
+          "whiteList": {
+            "Country": [
+              "United States",
+              "USA"
+            ],
+            "Config Type": [
+              "Police"
+            ]
+          }
+        },
+        {
+          "probability": 2,
+          "whiteList": {
+            "Country": [
+              "Canada",
+              "Germany",
+              "Italy",
+              "Poland",
+              "Japan",
+              "Isle of Man",
+              "France",
+              "Great Britain",
+              "Soviet Union/Russia",
+              "United Kingdom",
+              "The Netherlands",
+              "Sweden"
+            ],
+            "Config Type": [
+              "Police",
+              "Service"
+            ]
+          }
+        },
+        {
+          "probability": 3,
+          "whiteList": {
+            "Type": [
+              "Truck"
+            ],
+            "Config Type": [
+              "Police",
+              "Service"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "us police",
+        "import police",
+        "Sub-Filter 3"
+      ],
+      "fees": 750,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      },
+      "salesTax": 0.07
+    },
+    {
+      "id": "spOnline",
+      "name": "SP Online Dealership",
+      "description": "Buy Off-Road Ready Vehicles From SP",
+      "preview": "sp_dealer.jpg",
+      "stock": 5,
+      "range": [
+        0.89999997615814,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "spOnline_area_2",
+          "spOnline_icon_16",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "domesticOnlineParking"
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 2409187.968
+          }
+        },
+        "blackList": {
+          "Type": [
+            "Trailer"
+          ],
+          "Brand": [
+            "Carbonworks"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 1,
+          "whiteList": {
+            "Brand": [
+              "SP"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Brand": [
+              "SP"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 1 (Copy)"
+      ],
+      "fees": 1000,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "ui": {
+        "showMatchingConfigs": [
+          true
+        ],
+        "configSearchText": {}
+      },
+      "salesTax": 0.07
+    },
+    {
+      "id": "cargoYardDealership",
+      "name": "Cargo Yard Dealership",
+      "description": "All things Commerical!",
+      "preview": "cargo_yard_dealer.jpg",
+      "associatedOrganization": "cargoYardDealership",
+      "stock": 30,
+      "range": [
+        0.8,
+        0.9,
+        1.15,
+        1.3
+      ],
+      "doors": [
+        [
+          "cargoYardDealership_area_1",
+          "cargoYardDealership_icon_17",
+          30
+        ]
+      ],
+      "parkingSpotNames": [
+        "cargoYardDealershipParking1"
+      ],
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 1445512.8004453,
+            "max": 66975748.6365
+          }
+        },
+        "blackList": {
+          "Brand": [
+            "Carbonworks"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 3,
+          "whiteList": {
+            "Type": [
+              "Trailer"
+            ]
+          }
+        },
+        {
+          "probability": 2,
+          "whiteList": {
+            "Body Style": [
+              "Fifth Wheel Truck ",
+              "Fifth Wheel Truck"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Body Style": [
+              "Box Truck",
+              "Chassis Cab",
+              "Flatbed",
+              "Flatbed Truck"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Body Style": [
+              "Mixer Truck",
+              "Forklift",
+              "Logging Truck",
+              "Semi Truck",
+              "Tanker Truck"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Trailer",
+        "5th wheel",
+        "other truck",
+        "material"
+      ],
+      "fees": 500,
+      "containsStarterVehicles": false,
+      "testDrive": {
+        "abandonFees": 250,
+        "timeLimit": 120,
+        "licencePlate": ""
+      },
+      "ui": {
+        "showMatchingConfigs": [
+          true,
+          true,
+          true,
+          true
+        ],
+        "configSearchText": {}
+      },
+      "salesTax": 0.07
+    }
+  ],
+  "privateSellers": [
+    {
+      "id": "private",
+      "name": "Private",
+      "description": "Privately sold cars in Utah.",
+      "preview": "private_dealer.jpg",
+      "stock": 30,
+      "filter": {
+        "whiteList": {
+          "Mileage": {
+            "min": 0,
+            "max": 560934400
+          }
+        },
+        "blackList": {
+          "Brand": [
+            "Carbonworks"
+          ],
+          "Config Type": [
+            "joesJunk"
+          ]
+        }
+      },
+      "subFilters": [
+        {
+          "probability": 4,
+          "whiteList": {
+            "Country": [
+              "United States",
+              "USA"
+            ],
+            "Config Type": [
+              "joesJunk",
+              "Used",
+              "Taxi",
+              "factory",
+              "Factory"
+            ]
+          }
+        },
+        {
+          "probability": 1,
+          "whiteList": {
+            "Country": [
+              "Japan",
+              "Italy",
+              "Germany",
+              "France",
+              "Poland",
+              "Isle of Man",
+              "Canada",
+              "Sweden",
+              "The Netherlands",
+              "Great Britain",
+              "Soviet Union/Russia",
+              "United Kingdom"
+            ],
+            "Config Type": [
+              "joesJunk",
+              "Used",
+              "Taxi",
+              "factory",
+              "Factory"
+            ]
+          }
+        }
+      ],
+      "subFilterNames": [
+        "Sub-Filter 1",
+        "Sub-Filter 2"
+      ]
+    }
+  ]
+}

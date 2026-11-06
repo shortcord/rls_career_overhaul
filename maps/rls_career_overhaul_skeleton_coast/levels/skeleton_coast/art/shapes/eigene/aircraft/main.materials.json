@@ -1,0 +1,96 @@
+{
+  "ExtFix_aircraft_DiffMap": {
+    "name": "ExtFix_aircraft_DiffMap",
+    "mapTo": "ExtFix_aircraft_DiffMap",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/aircraft/ExtFix_aircraft_DiffMap.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ExtMob_aircraft_DiffMap": {
+    "name": "ExtMob_aircraft_DiffMap",
+    "mapTo": "ExtMob_aircraft_DiffMap",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/aircraft/ExtMob_aircraft_DiffMap.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "IntFix_aircraft_DiffMap": {
+    "name": "IntFix_aircraft_DiffMap",
+    "mapTo": "IntFix_aircraft_DiffMap",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/aircraft/IntFix_aircraft_DiffMap.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "aircrafglass2": {
+    "name": "aircrafglass2",
+    "mapTo": "aircrafglass2",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Mul"
+  },
+  "aircraftglass": {
+    "name": "aircraftglass",
+    "mapTo": "aircraftglass",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.800000012,
+          0.800000012,
+          0.800000012,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true,
+    "translucentBlendOp": "Mul"
+  }
+}

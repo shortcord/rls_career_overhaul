@@ -1,0 +1,210 @@
+{
+  "waves": {
+    "name": "waves",
+    "mapTo": "waves",
+    "class": "Material",
+    "Stages": [
+      {
+        "animFlags": 5,
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/Waves/wave1big.png",
+        "scrollDir": [
+          0.00499999989,
+          0.114
+        ],
+        "scrollSpeed": 0.0850000009,
+        "sequenceFramePerSec": 1.995,
+        "sequenceSegmentSize": 16.6949997,
+        "waveAmp": 0.500999987,
+        "waveFreq": 0.0719999969
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      }
+    ],
+    "groundType": "CUSTOM_WAVES",
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha",
+    "translucentZWrite": true
+  },
+  "waves2": {
+    "name": "waves2",
+    "mapTo": "waves2",
+    "class": "Material",
+    "Stages": [
+      {
+        "animFlags": 5,
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/Waves/wave2big.png",
+        "scrollDir": [
+          0.00499999989,
+          0.342000008
+        ],
+        "scrollSpeed": 0.128999993,
+        "sequenceFramePerSec": 1.995,
+        "sequenceSegmentSize": 16.6949997,
+        "waveAmp": 0.120999999,
+        "waveFreq": 0.114
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      }
+    ],
+    "groundType": "CUSTOM_WAVES",
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha",
+    "translucentZWrite": true
+  },
+  "waves3": {
+    "name": "waves3",
+    "mapTo": "waves3",
+    "class": "Material",
+    "Stages": [
+      {
+        "animFlags": 5,
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/Waves/wave3.png",
+        "scrollDir": [
+          0.00499999989,
+          0.342000008
+        ],
+        "scrollSpeed": 0.128999993,
+        "sequenceFramePerSec": 1.995,
+        "sequenceSegmentSize": 16.6949997,
+        "waveAmp": 0.298999995,
+        "waveFreq": 0.0520000011
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      }
+    ],
+    "groundType": "CUSTOM_WAVES",
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha",
+    "translucentZWrite": true
+  },
+  "waves4": {
+    "name": "waves4",
+    "mapTo": "waves4",
+    "class": "Material",
+    "Stages": [
+      {
+        "animFlags": 5,
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/Waves/wave4.png",
+        "scrollDir": [
+          0.00499999989,
+          0.342000008
+        ],
+        "scrollSpeed": 0.128999993,
+        "sequenceFramePerSec": 1.995,
+        "sequenceSegmentSize": 16.6949997,
+        "waveAmp": 0.286000013,
+        "waveFreq": 0.050999999
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      },
+      {
+        "animFlags": null,
+        "scrollDir": null,
+        "scrollSpeed": null,
+        "sequenceFramePerSec": null,
+        "sequenceSegmentSize": null,
+        "waveAmp": null,
+        "waveFreq": null
+      }
+    ],
+    "groundType": "CUSTOM_WAVES",
+    "materialTag0": "RoadAndPath",
+    "translucent": true,
+    "translucentBlendOp": "AddAlpha",
+    "translucentZWrite": true
+  }
+}

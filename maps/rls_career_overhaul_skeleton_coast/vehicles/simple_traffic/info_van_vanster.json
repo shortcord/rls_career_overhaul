@@ -1,0 +1,17 @@
+{
+  "defaultPaintName1": "White",
+  "Type": "PropTraffic",
+  "Population": 4285,
+  "Region": [
+    "africa"
+  ],
+  "Configuration": "vehiclesData.simple_traffic.van_vanster.Configuration",
+  "ignoreModelRandomPaintDistribution": true,
+  "ignoreModelRandomMultiPaintDistribution": true,
+  "defaultRandomPaintProbability": 0,
+  "defaultRandomMultiPaintProbability": 0,
+  "randomPaintDistribution": {
+    "White": 10,
+    "Black": 1
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "GroundGrid": {
+    "name": "GroundGrid",
+    "mapTo": "grid_10_diff",
+    "internalName": "Grid",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/grid_10_diff",
+        "detailScale": [
+          50,
+          50
+        ],
+        "useAnisotropic": true
+      },
+      {
+        "detailScale": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "useAnisotropic": null
+      },
+      {
+        "detailScale": null,
+        "useAnisotropic": null
+      }
+    ],
+    "detailDistance": "2000",
+    "detailSize": "1",
+    "diffuseSize": "1",
+    "materialTag0": "Miscellaneous"
+  }
+}

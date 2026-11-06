@@ -1,0 +1,45 @@
+{
+    "diesel": {
+        "name": "Diesel",
+        "density": 0.83,
+        "type": "fluid",
+        "money": 0.21,
+        "icon": "droplet"
+    },
+    "gasoline": {
+        "name": "Gasoline",
+        "density": 0.75,
+        "type": "fluid",
+        "money": 0.18,
+        "icon": "droplet"
+    },
+    "water": {
+        "name": "Water",
+        "density": 1,
+        "type": "fluid",
+        "money": 0.24,
+        "icon": "droplet"
+    },
+    "sand": {
+        "name": "Sand",
+        "density": 1.6,
+        "type": "dryBulk",
+        "money": 0.42,
+        "icon": "rocks"
+    },
+    "ore": {
+        "name": "Ore",
+        "density": 2.8,
+        "type": "dryBulk",
+        "money": 1.35,
+        "icon": "rocks"
+    },
+    "diamonds": {
+        "name": "Diamonds",
+        "density": 6,
+        "type": "cash",
+        "money": 20,
+        "units": "Bag",
+        "icon": "beamCurrency"
+    }
+}

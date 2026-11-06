@@ -1,0 +1,57 @@
+{
+  "0-100 km/h":9.9,
+  "0-100 mph":47.2,
+  "0-60 mph":9.1,
+  "100-0 km/h":44.9,
+  "60-0 mph":136,
+  "60-100 mph":38.1,
+  "Body Style":"SUV",
+  "BoundingBox":[
+    [
+      -0.6,
+      -1.54,
+      -0.3399
+    ],
+    [
+      1.7,
+      3.4773,
+      1.539
+    ]
+  ],
+  "Braking G":0.875,
+  "Config Type":"Police",
+  "Configuration":"D10_Namibian_Police_Force_(A)",
+  "Description":"D10 for the Namibian Police Forces. Equipped with 4WD and a lumpy V8 to make sure no baddies will outrun you on any terrain. Skin made by THom6502",
+  "Drag Times":{
+    "brakingG":0.7783997954,
+    "time_0_60":9.390000345,
+    "time_1000":14.24300057,
+    "time_1_4":17.08700071,
+    "time_1_8":10.88350041,
+    "time_330":7.051000251,
+    "time_60":2.455500071,
+    "velAt_1_4":35.67555192,
+    "velAt_1_8":28.81310277
+  },
+  "Drivetrain":"4WD",
+  "Fuel Type":"Gasoline",
+  "Induction Type":"NA",
+  "InsuranceClass": "commercial",
+  "Off-Road Score":49,
+  "Population":10,
+  "Power":223,
+  "PowerPeakRPM":"4450 - 5150",
+  "Propulsion":"ICE",
+  "Top Speed":45.87374562,
+  "Torque":410,
+  "TorquePeakRPM":"2550 - 3400",
+  "Transmission":"Automatic",
+  "Value":47950,
+  "Weight":2305,
+  "Weight/Power":10.33632287,
+  "Years":{
+    "max":1997,
+    "min":1992
+  },
+  "defaultPaintName1":"White"
+}

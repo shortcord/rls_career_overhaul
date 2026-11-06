@@ -1,0 +1,11 @@
+{
+  "van_skin_Shuttleservice_DesertLodge_SC1":{
+    "globalSkin":"Shuttleservice_DesertLodge_SC1",
+    "information":{
+      "authors":"THom6502",
+      "name":"Shuttleservice_DesertLodge_SC1",
+      "value":1337
+    },
+    "slotType":"paint_design"
+  }
+}

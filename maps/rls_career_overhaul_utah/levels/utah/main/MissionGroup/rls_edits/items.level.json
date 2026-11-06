@@ -1,0 +1,18 @@
+{"name":"dam mud art","class":"SimGroup","__parent":"rls_edits"}
+{"name":"water noises","class":"SimGroup","__parent":"rls_edits"}
+{"name":"dirt wall","class":"SimGroup","__parent":"rls_edits"}
+{"name":"utah drag art","class":"SimGroup","__parent":"rls_edits"}
+{"name":"drag wall","class":"SimGroup","__parent":"rls_edits"}
+{"name":"policeAssignment","class":"BeamNGTrigger","__parent":"rls_edits","position":[118.490746,-20.6093407,171.607727],"rotationMatrix":[-0.528110147,-0.849176228,3.7252903e-08,0.844501555,-0.52520299,-0.104783118,0.0889793336,-0.0553369671,0.994495094],"scale":[5.04133415,5.92813015,5.77165318]}
+{"name":"switchMaps","class":"BeamNGTrigger","__parent":"rls_edits","position":[-298.631104,-508.09726,134.62561],"luaFunction":"onBeamNGTrigger","rotationMatrix":[-0.970365167,0.241585523,0.00526033249,-0.241630465,-0.970305562,-0.0110256001,0.0024405052,-0.0119699165,0.999925375],"scale":[28,20,10.8861847]}
+{"name":"small businesses","class":"SimGroup","__parent":"rls_edits"}
+{"name":"career dealerships","class":"SimGroup","__parent":"rls_edits"}
+{"name":"garages","class":"SimGroup","__parent":"rls_edits"}
+{"name":"dam","class":"SimGroup","__parent":"rls_edits"}
+{"name":"Off-Road Compound","class":"SimGroup","__parent":"rls_edits"}
+{"name":"Airports","class":"SimGroup","__parent":"rls_edits"}
+{"name":"FRE","class":"SimGroup","__parent":"rls_edits"}
+{"name":"drag_strip","class":"SimGroup","__parent":"rls_edits"}
+{"name":"nzyneEdits","class":"SimGroup","__parent":"rls_edits"}
+{"name":"otbedits","class":"SimGroup","__parent":"rls_edits"}
+{"name":"punisherHeroHouse","class":"SimGroup","__parent":"rls_edits"}

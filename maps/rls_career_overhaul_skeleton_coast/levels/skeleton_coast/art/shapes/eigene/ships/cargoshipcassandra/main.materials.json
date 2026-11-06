@@ -1,0 +1,862 @@
+{
+  "BM_chrome_small": {
+    "name": "BM_chrome_small",
+    "mapTo": "BM_chrome_small",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/BM_chrome_small.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "BM_metal_black": {
+    "name": "BM_metal_black",
+    "mapTo": "BM_metal_black",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/BM_metal_black.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "CJ_POLE1": {
+    "name": "CJ_POLE1",
+    "mapTo": "CJ_POLE1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/CJ_POLE1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_ShipCargo1": {
+    "name": "ET_ShipCargo1",
+    "mapTo": "ET_ShipCargo1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_ShipCargo1.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipcargo1_n.dds",
+        "specularMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipcargo1_s.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_ShipMetal_ed": {
+    "name": "ET_ShipMetal_ed",
+    "mapTo": "ET_ShipMetal_ed",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_ShipMetal_ed.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_Shipbox01": {
+    "name": "ET_Shipbox01",
+    "mapTo": "ET_Shipbox01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_Shipbox01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_Shiprust01ET_Shiprust01_A": {
+    "name": "ET_Shiprust01ET_Shiprust01_A",
+    "mapTo": "ET_Shiprust01ET_Shiprust01_A",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_Shiprust01ET_Shiprust01_A.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 76,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "ET_Shipwippers": {
+    "name": "ET_Shipwippers",
+    "mapTo": "ET_Shipwippers",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_Shipwippers.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_barrier5": {
+    "name": "ET_barrier5",
+    "mapTo": "ET_barrier5",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_barrier5.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_cargoship03": {
+    "name": "ET_cargoship03",
+    "mapTo": "ET_cargoship03",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_cargoship03.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_cargoship04": {
+    "name": "ET_cargoship04",
+    "mapTo": "ET_cargoship04",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_cargoship04.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_cargoship08": {
+    "name": "ET_cargoship08",
+    "mapTo": "ET_cargoship08",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_cargoship08.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_cargoship_wh1": {
+    "name": "ET_cargoship_wh1",
+    "mapTo": "ET_cargoship_wh1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_cargoship_wh1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_shipmetal04": {
+    "name": "ET_shipmetal04",
+    "mapTo": "ET_shipmetal04",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_shipmetal04.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "ET_shiprustET_shiprust_a": {
+    "name": "ET_shiprustET_shiprust_a",
+    "mapTo": "ET_shiprustET_shiprust_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_shiprustET_shiprust_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 68,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "ET_shipstainET_shipstain_a": {
+    "name": "ET_shipstainET_shipstain_a",
+    "mapTo": "ET_shipstainET_shipstain_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/ET_shipstainET_shipstain_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 72,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "NJDock_cable1": {
+    "name": "NJDock_cable1",
+    "mapTo": "NJDock_cable1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/NJDock_cable1.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/njdock_rope_n.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "NJDock_rope": {
+    "name": "NJDock_rope",
+    "mapTo": "NJDock_rope",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/NJDock_rope.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/njdock_rope_n.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "bm_nylamp_bulb": {
+    "name": "bm_nylamp_bulb",
+    "mapTo": "bm_nylamp_bulb",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/bm_nylamp_bulb.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          0.5
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucent": true
+  },
+  "cj_greenmetal": {
+    "name": "cj_greenmetal",
+    "mapTo": "cj_greenmetal",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/cj_greenmetal.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "cj_metal_1": {
+    "name": "cj_metal_1",
+    "mapTo": "cj_metal_1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/cj_metal_1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "cj_strap1": {
+    "name": "cj_strap1",
+    "mapTo": "cj_strap1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/cj_strap1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "cj_white_plastic": {
+    "name": "cj_white_plastic",
+    "mapTo": "cj_white_plastic",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/cj_white_plastic.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "cj_white_plastic2": {
+    "name": "cj_white_plastic2",
+    "mapTo": "cj_white_plastic2",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/cj_white_plastic2.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "cj_wire_glasscj_wire_glass_a": {
+    "name": "cj_wire_glasscj_wire_glass_a",
+    "mapTo": "cj_wire_glasscj_wire_glass_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/cj_wire_glasscj_wire_glass_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_boatwin01": {
+    "name": "et_boatwin01",
+    "mapTo": "et_boatwin01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_boatwin01.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_boatwin01_n.dds",
+        "specularMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_boatwin01_s.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_cargoship05": {
+    "name": "et_cargoship05",
+    "mapTo": "et_cargoship05",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoship05.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoship05_n.dds",
+        "specularMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoship05_s.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_cargoship07": {
+    "name": "et_cargoship07",
+    "mapTo": "et_cargoship07",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoship07.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_cargoship10": {
+    "name": "et_cargoship10",
+    "mapTo": "et_cargoship10",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoship10.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_cargoship_wh2": {
+    "name": "et_cargoship_wh2",
+    "mapTo": "et_cargoship_wh2",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoship_wh2.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_cargoshipframe": {
+    "name": "et_cargoshipframe",
+    "mapTo": "et_cargoshipframe",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cargoshipframe.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_carwashgrill": {
+    "name": "et_carwashgrill",
+    "mapTo": "et_carwashgrill",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_carwashgrill.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_carwashgrill_n.dds",
+        "specularMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_carwashgrill_s.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_cranelight02": {
+    "name": "et_cranelight02",
+    "mapTo": "et_cranelight02",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_cranelight02.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_floures01": {
+    "name": "et_floures01",
+    "mapTo": "et_floures01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_floures01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_floures01light": {
+    "name": "et_floures01light",
+    "mapTo": "et_floures01light",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_floures01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_gluerustet_gluerust_a": {
+    "name": "et_gluerustet_gluerust_a",
+    "mapTo": "et_gluerustet_gluerust_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_gluerustet_gluerust_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 198,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "et_lifebelt04": {
+    "name": "et_lifebelt04",
+    "mapTo": "et_lifebelt04",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_lifebelt04.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_lifeboat01": {
+    "name": "et_lifeboat01",
+    "mapTo": "et_lifeboat01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_lifeboat01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_lifeboat02et_lifeboat03_a": {
+    "name": "et_lifeboat02et_lifeboat03_a",
+    "mapTo": "et_lifeboat02et_lifeboat03_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_lifeboat02et_lifeboat03_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 100,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "et_numbers3et_numbers3_a": {
+    "name": "et_numbers3et_numbers3_a",
+    "mapTo": "et_numbers3et_numbers3_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_numbers3et_numbers3_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 108,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "et_ship01": {
+    "name": "et_ship01",
+    "mapTo": "et_ship01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_ship01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_ship02": {
+    "name": "et_ship02",
+    "mapTo": "et_ship02",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_ship02.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_ship03et_ship03_a": {
+    "name": "et_ship03et_ship03_a",
+    "mapTo": "et_ship03et_ship03_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_ship03et_ship03_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 169,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "et_ship04bet_ship04b_a": {
+    "name": "et_ship04bet_ship04b_a",
+    "mapTo": "et_ship04bet_ship04b_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_ship04bet_ship04b_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 91,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "et_ship05": {
+    "name": "et_ship05",
+    "mapTo": "et_ship05",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_ship05.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_ship06et_ship06_a": {
+    "name": "et_ship06et_ship06_a",
+    "mapTo": "et_ship06et_ship06_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "et_ship06et_ship06_a"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_shipcrane01": {
+    "name": "et_shipcrane01",
+    "mapTo": "et_shipcrane01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipcrane01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_shipcrane01light": {
+    "name": "et_shipcrane01light",
+    "mapTo": "et_shipcrane01light",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipcrane01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_shipgirder01": {
+    "name": "et_shipgirder01",
+    "mapTo": "et_shipgirder01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipgirder01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_shipmetal02": {
+    "name": "et_shipmetal02",
+    "mapTo": "et_shipmetal02",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipmetal02.dds",
+        "normalMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipmetal02_n.dds",
+        "specularMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shipmetal02_s.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "et_shpedge02": {
+    "name": "et_shpedge02",
+    "mapTo": "et_shpedge02",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/et_shpedge02.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "etsmoking2etsmoking2_a": {
+    "name": "etsmoking2etsmoking2_a",
+    "mapTo": "etsmoking2etsmoking2_a",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/etsmoking2etsmoking2_a.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 118,
+    "alphaTest": true,
+    "castShadows": false,
+    "translucentBlendOp": "None"
+  },
+  "metalplate2_512": {
+    "name": "metalplate2_512",
+    "mapTo": "metalplate2_512",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/metalplate2_512.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "null": {
+    "name": "null",
+    "mapTo": "null",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.490196109,
+          0.490196109,
+          0.490196109,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sl_chrome_rusty": {
+    "name": "sl_chrome_rusty",
+    "mapTo": "sl_chrome_rusty",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/sl_chrome_rusty.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sl_rustedftplate01": {
+    "name": "sl_rustedftplate01",
+    "mapTo": "sl_rustedftplate01",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/sl_rustedftplate01.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  },
+  "sl_rustedmetal01_256": {
+    "name": "sl_rustedmetal01_256",
+    "mapTo": "sl_rustedmetal01_256",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/ships/cargoshipcassandra/sl_rustedmetal01_256.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucentBlendOp": "None"
+  }
+}

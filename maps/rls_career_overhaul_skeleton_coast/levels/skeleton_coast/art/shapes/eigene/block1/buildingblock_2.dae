@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 4.3.0 commit date:2024-11-19, commit time:08:52, hash:2b18cad88b13</authoring_tool>
+    </contributor>
+    <created>2026-03-30T19:00:23</created>
+    <modified>2026-03-30T19:00:23</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="ind_concrete_eroded-effect">
+      <profile_COMMON>
+        <newparam sid="ind_concrete_eroded_d_color_DDS-surface">
+          <surface type="2D">
+            <init_from>ind_concrete_eroded_d_color_DDS</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="ind_concrete_eroded_d_color_DDS-sampler">
+          <sampler2D>
+            <source>ind_concrete_eroded_d_color_DDS-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="ind_concrete_eroded_d_color_DDS-sampler" texcoord="Cube_004-mesh-map-0"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.5</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="ind_concrete_eroded_d_color_DDS" name="ind_concrete_eroded_d_color_DDS">
+      <init_from>/C:/Users/Admin/Desktop/textures/ind_concrete_eroded_d.color.DDS</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="ind_concrete_eroded-material" name="ind_concrete_eroded">
+      <instance_effect url="#ind_concrete_eroded-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Cube_004-mesh" name="Cube.004">
+      <mesh>
+        <source id="Cube_004-mesh-positions">
+          <float_array id="Cube_004-mesh-positions-array" count="24">-1 -1 -1 -1 1 -1 1 -1 -1 1 1 -1 -1 -1 1 -1 1 1 1 1 1 1 -1 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_004-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_004-mesh-normals">
+          <float_array id="Cube_004-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_004-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_004-mesh-map-0">
+          <float_array id="Cube_004-mesh-map-0-array" count="72">-1.10436 2.10436 2.10436 -1.10436 -1.10436 -1.10436 -0.9205849 1.920585 1.920585 -0.9205849 -0.9205849 -0.9205849 2.10436 2.10436 -1.10436 -1.10436 2.10436 -1.10436 1.920585 1.920585 -0.9205849 -0.9205849 1.920585 -0.9205849 1 1 0 0 0 1 1 0 0 1 0 0 -1.10436 2.10436 2.10436 2.10436 2.10436 -1.10436 -0.9205849 1.920585 1.920585 1.920585 1.920585 -0.9205849 2.10436 2.10436 -1.10436 2.10436 -1.10436 -1.10436 1.920585 1.920585 -0.9205849 1.920585 -0.9205849 -0.9205849 1 1 1 0 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_004-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_004-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_004-mesh-positions"/>
+        </vertices>
+        <triangles material="ind_concrete_eroded-material" count="12">
+          <input semantic="VERTEX" source="#Cube_004-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_004-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_004-mesh-map-0" offset="2" set="0"/>
+          <p>4 0 0 1 0 1 0 0 2 5 1 3 3 1 4 1 1 5 6 2 6 2 2 7 3 2 8 7 3 9 0 3 10 2 3 11 3 4 12 0 4 13 1 4 14 7 5 15 5 5 16 4 5 17 4 0 18 5 0 19 1 0 20 5 1 21 6 1 22 3 1 23 6 2 24 7 2 25 2 2 26 7 3 27 4 3 28 0 3 29 3 4 30 2 4 31 0 4 32 7 5 33 6 5 34 5 5 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_003-mesh" name="Cube.003">
+      <mesh>
+        <source id="Cube_003-mesh-positions">
+          <float_array id="Cube_003-mesh-positions-array" count="48">-1 -1 -1 -0.9378799 -0.9234632 1 -1 1 -1 -0.9378799 0.9234632 1 1 -1 -1 0.9402827 -0.9234632 1 1 1 -1 0.9402827 0.9234632 1 -1 -1 1 -1 1 1 1 1 1 1 -1 1 -0.9378799 -0.9234632 0.8479518 -0.9378799 0.9234632 0.8479518 0.9402827 0.9234632 0.8479518 0.9402827 -0.9234632 0.8479518</float_array>
+          <technique_common>
+            <accessor source="#Cube_003-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_003-mesh-normals">
+          <float_array id="Cube_003-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_003-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_003-mesh-map-0">
+          <float_array id="Cube_003-mesh-map-0-array" count="168">-1.10436 2.10436 2.10436 -1.10436 -1.10436 -1.10436 -0.9205849 1.920585 1.920585 -0.9205849 -0.9205849 -0.9205849 2.10436 2.10436 -1.10436 -1.10436 2.10436 -1.10436 1.920585 1.920585 -0.9205849 -0.9205849 1.920585 -0.9205849 1 1 0 0 0 1 2.085045 0.6283186 -1.085045 0.3716814 -1.085045 0.6283186 -0.8343259 1.834326 -0.9449151 -0.9449151 -0.8343259 -0.8343259 -0.8343259 1.834326 1.944915 1.944915 -0.9449151 1.944915 1.834326 -0.8343259 1.944915 1.944915 1.834326 1.834326 -0.8343259 -0.8343259 1.944915 -0.9449151 1.834326 -0.8343259 -0.8343259 1.834326 1.834326 -0.8343259 1.834326 1.834326 -1.085045 0.6283186 2.085045 0.3716814 2.085045 0.6283186 2.058683 0.6283186 -1.058683 0.3716814 -1.058683 0.6283186 -1.058683 0.6283186 2.058683 0.3716814 2.058683 0.6283186 -1.10436 2.10436 2.10436 2.10436 2.10436 -1.10436 -0.9205849 1.920585 1.920585 1.920585 1.920585 -0.9205849 2.10436 2.10436 -1.10436 2.10436 -1.10436 -1.10436 1.920585 1.920585 -0.9205849 1.920585 -0.9205849 -0.9205849 1 1 1 0 0 0 2.085045 0.6283186 2.085045 0.3716814 -1.085045 0.3716814 -0.8343259 1.834326 -0.9449151 1.944915 -0.9449151 -0.9449151 -0.8343259 1.834326 1.834326 1.834326 1.944915 1.944915 1.834326 -0.8343259 1.944915 -0.9449151 1.944915 1.944915 -0.8343259 -0.8343259 -0.9449151 -0.9449151 1.944915 -0.9449151 -0.8343259 1.834326 -0.8343259 -0.8343259 1.834326 -0.8343259 -1.085045 0.6283186 -1.085045 0.3716814 2.085045 0.3716814 2.058683 0.6283186 2.058683 0.3716814 -1.058683 0.3716814 -1.058683 0.6283186 -1.058683 0.3716814 2.058683 0.3716814</float_array>
+          <technique_common>
+            <accessor source="#Cube_003-mesh-map-0-array" count="84" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_003-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_003-mesh-positions"/>
+        </vertices>
+        <triangles count="28">
+          <input semantic="VERTEX" source="#Cube_003-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_003-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_003-mesh-map-0" offset="2" set="0"/>
+          <p>8 0 0 2 0 1 0 0 2 9 1 3 6 1 4 2 1 5 10 2 6 4 2 7 6 2 8 11 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 5 1 15 12 1 16 1 1 17 3 5 18 8 5 19 1 5 20 3 5 21 10 5 22 9 5 23 5 5 24 10 5 25 7 5 26 1 5 27 11 5 28 5 5 29 13 5 30 15 5 31 14 5 32 3 3 33 14 3 34 7 3 35 7 0 36 15 0 37 5 0 38 1 2 39 13 2 40 3 2 41 8 0 42 9 0 43 2 0 44 9 1 45 10 1 46 6 1 47 10 2 48 11 2 49 4 2 50 11 3 51 8 3 52 0 3 53 6 4 54 4 4 55 0 4 56 5 1 57 15 1 58 12 1 59 3 5 60 9 5 61 8 5 62 3 5 63 7 5 64 10 5 65 5 5 66 11 5 67 10 5 68 1 5 69 8 5 70 11 5 71 13 5 72 12 5 73 15 5 74 3 3 75 13 3 76 14 3 77 7 0 78 14 0 79 15 0 80 1 2 81 12 2 82 13 2 83</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="Cube_001-mesh" name="Cube.001">
+      <mesh>
+        <source id="Cube_001-mesh-positions">
+          <float_array id="Cube_001-mesh-positions-array" count="48">-1 -1 -1 -0.9378799 -0.9234632 1 -1 1 -1 -0.9378799 0.9234632 1 1 -1 -1 0.9402827 -0.9234632 1 1 1 -1 0.9402827 0.9234632 1 -1 -1 1 -1 1 1 1 1 1 1 -1 1 -0.9378799 -0.9234632 0.8479518 -0.9378799 0.9234632 0.8479518 0.9402827 0.9234632 0.8479518 0.9402827 -0.9234632 0.8479518</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_001-mesh-normals">
+          <float_array id="Cube_001-mesh-normals-array" count="18">-1 0 0 0 1 0 1 0 0 0 -1 0 0 0 -1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-normals-array" count="6" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Cube_001-mesh-map-0">
+          <float_array id="Cube_001-mesh-map-0-array" count="168">-1.10436 2.10436 2.10436 -1.10436 -1.10436 -1.10436 -0.9205849 1.920585 1.920585 -0.9205849 -0.9205849 -0.9205849 2.10436 2.10436 -1.10436 -1.10436 2.10436 -1.10436 1.920585 1.920585 -0.9205849 -0.9205849 1.920585 -0.9205849 1 1 0 0 0 1 2.085045 0.6283186 -1.085045 0.3716814 -1.085045 0.6283186 -0.8343259 1.834326 -0.9449151 -0.9449151 -0.8343259 -0.8343259 -0.8343259 1.834326 1.944915 1.944915 -0.9449151 1.944915 1.834326 -0.8343259 1.944915 1.944915 1.834326 1.834326 -0.8343259 -0.8343259 1.944915 -0.9449151 1.834326 -0.8343259 -0.8343259 1.834326 1.834326 -0.8343259 1.834326 1.834326 -1.085045 0.6283186 2.085045 0.3716814 2.085045 0.6283186 2.058683 0.6283186 -1.058683 0.3716814 -1.058683 0.6283186 -1.058683 0.6283186 2.058683 0.3716814 2.058683 0.6283186 -1.10436 2.10436 2.10436 2.10436 2.10436 -1.10436 -0.9205849 1.920585 1.920585 1.920585 1.920585 -0.9205849 2.10436 2.10436 -1.10436 2.10436 -1.10436 -1.10436 1.920585 1.920585 -0.9205849 1.920585 -0.9205849 -0.9205849 1 1 1 0 0 0 2.085045 0.6283186 2.085045 0.3716814 -1.085045 0.3716814 -0.8343259 1.834326 -0.9449151 1.944915 -0.9449151 -0.9449151 -0.8343259 1.834326 1.834326 1.834326 1.944915 1.944915 1.834326 -0.8343259 1.944915 -0.9449151 1.944915 1.944915 -0.8343259 -0.8343259 -0.9449151 -0.9449151 1.944915 -0.9449151 -0.8343259 1.834326 -0.8343259 -0.8343259 1.834326 -0.8343259 -1.085045 0.6283186 -1.085045 0.3716814 2.085045 0.3716814 2.058683 0.6283186 2.058683 0.3716814 -1.058683 0.3716814 -1.058683 0.6283186 -1.058683 0.3716814 2.058683 0.3716814</float_array>
+          <technique_common>
+            <accessor source="#Cube_001-mesh-map-0-array" count="84" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Cube_001-mesh-vertices">
+          <input semantic="POSITION" source="#Cube_001-mesh-positions"/>
+        </vertices>
+        <triangles material="ind_concrete_eroded-material" count="28">
+          <input semantic="VERTEX" source="#Cube_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Cube_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Cube_001-mesh-map-0" offset="2" set="0"/>
+          <p>8 0 0 2 0 1 0 0 2 9 1 3 6 1 4 2 1 5 10 2 6 4 2 7 6 2 8 11 3 9 0 3 10 4 3 11 6 4 12 0 4 13 2 4 14 5 1 15 12 1 16 1 1 17 3 5 18 8 5 19 1 5 20 3 5 21 10 5 22 9 5 23 5 5 24 10 5 25 7 5 26 1 5 27 11 5 28 5 5 29 13 5 30 15 5 31 14 5 32 3 3 33 14 3 34 7 3 35 7 0 36 15 0 37 5 0 38 1 2 39 13 2 40 3 2 41 8 0 42 9 0 43 2 0 44 9 1 45 10 1 46 6 1 47 10 2 48 11 2 49 4 2 50 11 3 51 8 3 52 0 3 53 6 4 54 4 4 55 0 4 56 5 1 57 15 1 58 12 1 59 3 5 60 9 5 61 8 5 62 3 5 63 7 5 64 10 5 65 5 5 66 11 5 67 10 5 68 1 5 69 8 5 70 11 5 71 13 5 72 12 5 73 15 5 74 3 3 75 13 3 76 14 3 77 7 0 78 14 0 79 15 0 80 1 2 81 12 2 82 13 2 83</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="base00" name="base00" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <node id="start01" name="start01" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+          <node id="buildingblock_2_a100" name="buildingblock_2_a100" type="NODE">
+            <matrix sid="transform">4 0 0 0 0 3 0 0 0 0 2 2 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_001-mesh" name="buildingblock_2_a100">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ind_concrete_eroded-material" target="#ind_concrete_eroded-material">
+                    <bind_vertex_input semantic="Cube_001-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+          <node id="colmesh-1" name="colmesh-1" type="NODE">
+            <matrix sid="transform">4 0 0 0 0 3 0 0 0 0 2 2 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_003-mesh" name="colmesh-1"/>
+          </node>
+          <node id="buildingblock_2_a20" name="buildingblock_2_a20" type="NODE">
+            <matrix sid="transform">4 0 0 0 0 3 0 0 0 0 2 2 0 0 0 1</matrix>
+            <instance_geometry url="#Cube_004-mesh" name="buildingblock_2_a20">
+              <bind_material>
+                <technique_common>
+                  <instance_material symbol="ind_concrete_eroded-material" target="#ind_concrete_eroded-material">
+                    <bind_vertex_input semantic="Cube_004-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                  </instance_material>
+                </technique_common>
+              </bind_material>
+            </instance_geometry>
+          </node>
+        </node>
+        <node id="nulldetail1" name="nulldetail1" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        </node>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,35 @@
+{
+  "nam_shopsigns1": {
+    "name": "nam_shopsigns1",
+    "mapTo": "nam_shopsigns1",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shopsigns/nam_shopsigns1.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaTest": true,
+    "doubleSided": true,
+    "translucentBlendOp": "None"
+  },
+  "nam_shopsigns2": {
+    "name": "nam_shopsigns2",
+    "mapTo": "nam_shopsigns2",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorMap": "/levels/skeleton_coast/art/shapes/eigene/shopsigns/nam_shopsigns2.dds"
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaTest": true,
+    "doubleSided": true,
+    "translucentBlendOp": "None",
+    "persistentId": "5c3b0eff-ba4e-5077-a0cc-e31d3ed8f787"
+  }
+}

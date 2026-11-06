@@ -1,0 +1,1080 @@
+{
+  "computers": [
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "How Many Campers does Uncle Have?",
+      "doors": [
+        [
+          "unclesAbandonedCamper_area",
+          "unclesAbandonedCamper_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "unclesAbandonedCamper",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "unclesAbandonedCamper",
+      "name": "Uncle's Abandoned Camper",
+      "preview": "houses/uncletrailer_house.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": true
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        }
+      ],
+      "description": "A small garage great for working on your salt flat racer.",
+      "doors": [
+        [
+          "saltFlatsPits_area",
+          "saltFlatsPits_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "saltFlatsPits",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.2,
+      "iconOffsetHeight": 0.15,
+      "id": "saltFlatsPits",
+      "name": "Salt Flats Pits",
+      "preview": "houses/saltflat_house.jpg",
+      "screens": {}
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        }
+      ],
+      "description": "A large lot, must be expensive!",
+      "doors": [
+        [
+          "Off Road Truck Garage_area",
+          "Off Road Truck Garage_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "offRoadTruckGarage",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.2,
+      "iconOffsetHeight": 0.15,
+      "id": "offRoadTruckGarage",
+      "name": "Off Road Truck Garage",
+      "preview": "houses/offroad_house.jpg",
+      "screens": {}
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        }
+      ],
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "doors": [
+        [
+          "airportHangerPepper_area",
+          "airportHangerPepper_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "airportHangerPepper",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.2,
+      "iconOffsetHeight": 0.15,
+      "id": "airportHangerPepper",
+      "name": "Pepper Valley Airport Hanger",
+      "preview": "houses/airport_house.jpg",
+      "screens": {}
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        }
+      ],
+      "description": "Is this Uncles First House?",
+      "doors": [
+        [
+          "unclesAbandonedHouse_area",
+          "unclesAbandonedHouse_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "unclesAbandonedHouse",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.2,
+      "iconOffsetHeight": 0.15,
+      "id": "unclesAbandonedHouse",
+      "name": "Uncle's Abandoned House",
+      "preview": "houses/unclehouse_house.jpg",
+      "screens": {}
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        }
+      ],
+      "description": "Didn't know they had another location",
+      "doors": [
+        [
+          "ajPepperGarage_area",
+          "ajPepperGarage_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "ajPepperGarage",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.2,
+      "iconOffsetHeight": 0.15,
+      "id": "ajPepperGarage",
+      "name": "AJ's Pepper Valley Garage",
+      "preview": "houses/aj_house.jpg",
+      "screens": {}
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        }
+      ],
+      "description": "ui.career.computer.bigmapLabel.garage",
+      "doors": [
+        [
+          "computer_1770335200_area",
+          "computer_1770335200_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "ajDriftPalace",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.2,
+      "iconOffsetHeight": 0.15,
+      "id": "computer_1770335200",
+      "name": "AJ's Drift Palace",
+      "preview": "houses/ajDriftPalace.jpg",
+      "screens": {}
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "This moderately sized RV sits at the centre of the base camp and gives you easy access to various offroad events.",
+      "doors": [
+        [
+          "rvGarageComputer_area",
+          "rvGarageComputer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "rvGarage",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "rvGarageComputer",
+      "name": "White RV",
+      "preview": "houses/rvGarage.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "Prefer dark mode? The RV also comes in black!",
+      "doors": [
+        [
+          "rvGarage2Computer_area",
+          "rvGarage2Computer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "rvGarage2",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "rvGarage2Computer",
+      "name": "Black RV",
+      "preview": "houses/rvGarage2.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "The previous owner didn't like to get rid of things. Hope you like clutter!",
+      "doors": [
+        [
+          "rvGarage3Computer_area",
+          "rvGarage3Computer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "rvGarage3",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "rvGarage3Computer",
+      "name": "Hoarder's Trailer",
+      "preview": "houses/rvGarage3.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "Right by the entrance, so it's easy to find, but that's about it. You don't even get a gazebo here!",
+      "doors": [
+        [
+          "rvGarage4Computer_area",
+          "rvGarage4Computer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "rvGarage4",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "rvGarage4Computer",
+      "name": "Base Camp Trailer",
+      "preview": "houses/rvGarage4.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "Surrounded by sand dunes and not much else.",
+      "doors": [
+        [
+          "sandyCabinComputer_area",
+          "sandyCabinComputer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "sandyCabin",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "sandyCabinComputer",
+      "name": "Sandy Cabin",
+      "preview": "houses/sandyCabin.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "If you feel like the settlement is too crowded, this could be the place for you.",
+      "doors": [
+        [
+          "lonelyHomeComputer_area",
+          "lonelyHomeComputer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "lonelyHome",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "lonelyHomeComputer",
+      "name": "Lonely Home",
+      "preview": "houses/lonelyHome.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps": [
+        {
+          "keyLabel": "Vehicle & Parts Management"
+        },
+        {
+          "keyLabel": "Vehicle & Parts Shopping"
+        }
+      ],
+      "description": "The largest house in Pepper Valley with a spacious garage, tucked away on a quiet hillside.",
+      "doors": [
+        [
+          "herohouseComputer_area",
+          "herohouseComputer_icon"
+        ]
+      ],
+      "functions": {
+        "insurances": true,
+        "painting": true,
+        "partInventory": true,
+        "partShop": true,
+        "playerAbstract": true,
+        "sleep": true,
+        "tuning": true,
+        "vehicleInventory": true,
+        "vehicleShop": true
+      },
+      "garageId": "herohouse",
+      "icon": "poi_laptop_round",
+      "iconLift": 0.24,
+      "iconOffsetHeight": 0.24,
+      "id": "herohouseComputer",
+      "name": "Desert Villa",
+      "preview": "houses/herohouse.jpg",
+      "screens": [
+        "commercialGarageComputer_screen_2"
+      ],
+      "starterGarage": false
+    },
+    {
+      "activityAcceptProps":[
+        {
+          "keyLabel":"Vehicle & Parts Management"
+        },
+        {
+          "keyLabel":"Vehicle & Parts Shopping"
+        }
+      ],
+      "description":"ui.career.computer.bigmapLabel.garage",
+      "doors":[
+        [
+          "recoveryYard_area",
+          "recoveryYard_icon"
+        ]
+      ],
+      "functions":{
+        "insurances":true,
+        "painting":true,
+        "partInventory":true,
+        "partShop":true,
+        "playerAbstract":true,
+        "sleep":true,
+        "tuning":true,
+        "vehicleInventory":true,
+        "vehicleShop":true
+      },
+      "garageId":"PVrecoveryYard",
+      "icon":"poi_laptop_round",
+      "iconLift":0.2,
+      "iconOffsetHeight":0.15,
+      "id":"PVrecoveryYardComputer",
+      "name":"Pepper Valley Recovery Yard",
+      "preview":"recoveryYard.jpg",
+      "screens":{}
+    }
+  ],
+  "garages": [
+    {
+      "capacity": 1,
+      "defaultPrice": 10000,
+      "description": "How Many Campers does Uncle Have?",
+      "icon": "poi_garage_2_round",
+      "id": "unclesAbandonedCamper",
+      "name": "Uncle's Abandoned Camper",
+      "parkingSpotNames": [
+        "unclesAbandonedCamper_parking"
+      ],
+      "preview": "houses/uncletrailer_house.jpg",
+      "starterGarage": true,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "unclesAbandonedCamper_zone"
+      ]
+    },
+    {
+      "capacity": 2,
+      "defaultPrice": 115000,
+      "description": "A small garage great for working on your salt flat racer.",
+      "icon": "poi_garage_2_round",
+      "id": "saltFlatsPits",
+      "name": "Salt Flats Pits",
+      "parkingSpotNames": [
+        "spot_saltFlatsPits_1",
+        "spot_saltFlatsPits_2"
+      ],
+      "preview": "houses/saltflat_house.jpg",
+      "tags": {},
+      "zoneNames": [
+        "saltFlatsPits_1"
+      ]
+    },
+    {
+      "capacity": 4,
+      "defaultPrice": 225000,
+      "description": "A large lot, must be expensive!",
+      "icon": "poi_garage_2_round",
+      "id": "offRoadTruckGarage",
+      "name": "Off Road Truck Garage",
+      "parkingSpotNames": [
+        "spot_offRoadTruckGarage_1",
+        "spot_offRoadTruckGarage_2",
+        "spot_offRoadTruckGarage_3",
+        "spot_offRoadTruckGarage_4"
+      ],
+      "preview": "houses/offroad_house.jpg",
+      "tags": {},
+      "zoneNames": [
+        "offRoadTruckGarage_1"
+      ]
+    },
+    {
+      "capacity": 8,
+      "defaultPrice": 550000,
+      "description": "They have no idea how many cars I could fit in here. \n",
+      "icon": "poi_garage_2_round",
+      "id": "airportHangerPepper",
+      "name": "Pepper Valley Airport Hanger",
+      "parkingSpotNames": [
+        "spot_airportHangerPepper_1",
+        "spot_airportHangerPepper_2",
+        "spot_airportHangerPepper_3",
+        "spot_airportHangerPepper_4",
+        "spot_airportHangerPepper_5",
+        "spot_airportHangerPepper_6",
+        "spot_airportHangerPepper_7",
+        "spot_airportHangerPepper_8",
+        "spot_airportHangerPepper_9"
+      ],
+      "preview": "houses/garage_servicestation.jpg",
+      "tags": {},
+      "zoneNames": [
+        "airportHangerPepper_1"
+      ]
+    },
+    {
+      "capacity": 4,
+      "defaultPrice": 190000,
+      "description": "Is this Uncles First House?\n",
+      "icon": "poi_garage_2_round",
+      "id": "unclesAbandonedHouse",
+      "name": "Uncle's Abandoned House",
+      "parkingSpotNames": [
+        "spot_unclesAbandonedHouse_1",
+        "spot_unclesAbandonedHouse_2",
+        "spot_unclesAbandonedHouse_3",
+        "spot_unclesAbandonedHouse_4",
+        "spot_unclesAbandonedHouse_5"
+      ],
+      "preview": "houses/unclehouse_house.jpg",
+      "tags": {},
+      "zoneNames": [
+        "unclesAbandonedHouse_1"
+      ]
+    },
+    {
+      "capacity": 8,
+      "defaultPrice": 600000,
+      "description": "Didn't know they had another location",
+      "icon": "poi_garage_2_round",
+      "id": "ajPepperGarage",
+      "name": "AJ's Pepper Valley Garage",
+      "parkingSpotNames": [
+        "spot_ajPepperGarage_1",
+        "spot_ajPepperGarage_2",
+        "spot_ajPepperGarage_3",
+        "spot_ajPepperGarage_4",
+        "spot_ajPepperGarage_5",
+        "spot_ajPepperGarage_6",
+        "spot_ajPepperGarage_7",
+        "spot_ajPepperGarage_8",
+        "spot_ajPepperGarage_9"
+      ],
+      "preview": "houses/aj_house.jpg",
+      "tags": {},
+      "zoneNames": [
+        "ajPepperGarage_1"
+      ]
+    },
+    {
+      "capacity": 8,
+      "defaultPrice": 600000,
+      "description": "You must really like drifting...\n",
+      "icon": "poi_garage_2_round",
+      "id": "ajDriftPalace",
+      "name": "AJ's Drift Palace",
+      "parkingSpotNames": [
+        "spot_ajDriftPalace_1",
+        "spot_ajDriftPalace_2",
+        "spot_ajDriftPalace_3",
+        "spot_ajDriftPalace_4",
+        "spot_ajDriftPalace_5",
+        "spot_ajDriftPalace_6",
+        "spot_ajDriftPalace_7",
+        "spot_ajDriftPalace_8"
+      ],
+      "preview": "houses/ajDriftPalace.jpg",
+      "zoneNames": [
+        "ajDriftPalace_1"
+      ]
+    },
+    {
+      "capacity": 1,
+      "defaultPrice": 21000,
+      "description": "This moderately sized RV sits at the centre of the base camp and gives you easy access to various offroad events.",
+      "icon": "poi_garage_2_round",
+      "id": "rvGarage",
+      "name": "White RV",
+      "parkingSpotNames": [
+        "rvGarageParking",
+        "rvGarageParking2"
+      ],
+      "preview": "houses/rvGarage.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "rvGarageZone"
+      ]
+    },
+    {
+      "capacity": 1,
+      "defaultPrice": 21500,
+      "description": "Prefer dark mode? The RV also comes in black!",
+      "icon": "poi_garage_2_round",
+      "id": "rvGarage2",
+      "name": "Black RV",
+      "parkingSpotNames": [
+        "rvGarage2Parking",
+        "rvGarage2Parking2"
+      ],
+      "preview": "houses/rvGarage2.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "rvGarage2Zone"
+      ]
+    },
+    {
+      "capacity": 1,
+      "defaultPrice": 18000,
+      "description": "The previous owner didn't like to get rid of things. Hope you like clutter!",
+      "icon": "poi_garage_2_round",
+      "id": "rvGarage3",
+      "name": "Hoarder's Trailer",
+      "parkingSpotNames": [
+        "rvGarage3Parking",
+        "rvGarage3Parking2"
+      ],
+      "preview": "houses/rvGarage3.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "rvGarage3Zone"
+      ]
+    },
+    {
+      "capacity": 1,
+      "defaultPrice": 20000,
+      "description": "Right by the entrance, so it's easy to find, but that's about it. You don't even get a gazebo here!",
+      "icon": "poi_garage_2_round",
+      "id": "rvGarage4",
+      "name": "Base Camp Trailer",
+      "parkingSpotNames": [
+        "rvGarage4Parking",
+        "rvGarage4Parking2"
+      ],
+      "preview": "houses/rvGarage4.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "rvGarage4Zone"
+      ]
+    },
+    {
+      "capacity": 3,
+      "defaultPrice": 150000,
+      "description": "Surrounded by sand dunes and not much else.",
+      "icon": "poi_garage_2_round",
+      "id": "sandyCabin",
+      "name": "Sandy Cabin",
+      "parkingSpotNames": [
+        "sandyCabinParking",
+        "sandyCabinParking2",
+        "sandyCabinParking3",
+        "sandyCabinParking4"
+      ],
+      "preview": "houses/sandyCabin.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "sandyCabinZone"
+      ]
+    },
+    {
+      "capacity": 3,
+      "defaultPrice": 165000,
+      "description": "If you feel like the settlement is too crowded, this could be the place for you.",
+      "icon": "poi_garage_2_round",
+      "id": "lonelyHome",
+      "name": "Lonely Home",
+      "parkingSpotNames": [
+        "lonelyHomeParking",
+        "lonelyHomeParking2",
+        "lonelyHomeParking3",
+        "lonelyHomeParking4"
+      ],
+      "preview": "houses/lonelyHome.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "lonelyHomeZone"
+      ]
+    },
+    {
+      "capacity": 8,
+      "defaultPrice": 650000,
+      "description": "The largest house in Pepper Valley with a spacious garage, tucked away on a quiet hillside.",
+      "icon": "poi_garage_2_round",
+      "id": "herohouse",
+      "name": "Desert Villa",
+      "parkingSpotNames": [
+        "herohousePark",
+        "herohousePark2",
+        "herohousePark3",
+        "herohousePark4",
+        "herohousePark5",
+        "herohousePark6",
+        "herohousePark7",
+        "herohousePark8",
+        "herohousePark9"
+      ],
+      "preview": "houses/herohousePark.jpg",
+      "starterGarage": false,
+      "tags": [
+        "truck"
+      ],
+      "zoneNames": [
+        "herohouseZone"
+      ]
+    },
+    {
+      "capacity":4,
+      "defaultPrice":200000,
+      "description":"A dedicated off-road Recovery Yard with storage for recovery rigs, trailers, and recovered vehicles.",
+      "icon":"poi_garage_2_round",
+      "id":"PVrecoveryYard",
+      "isRecoveryYard":true,
+      "name":"Pepper Valley Recovery Yard",
+      "parkingSpotNames":[
+        "recoveryPark",
+        "recoveryPark2",
+        "recoveryPark3",
+        "recoveryPark4"
+        
+      ],
+      "preview":"recoveryYard.jpg",
+      "recoveryComputerId":"PVrecoveryYardComputer",
+      "recoveryDropoffSpotName":"recoveryDrop",
+      "zoneNames":[
+        "PVrecoveryYard"
+      ]
+    }
+  ],
+  "gasStations": [
+    {
+      "name": "Tyrannos Fuel Station",
+      "description": "Tyrannos Station",
+      "id": "tyrannos_gas",
+      "preview": "tyrannos_gas.jpg",
+      "energyTypes": [
+        "gasoline",
+        "diesel",
+        "unknown",
+        "n2o"
+      ],
+      "prices": {
+        "diesel": {
+          "priceBaseline": 10.53,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "gasoline": {
+          "priceBaseline": 10.37,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "n2o": {
+          "priceBaseline": 25,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "unknown": {
+          "priceBaseline": 15,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        }
+      },
+      "pumps": [
+        [
+          "tyrannos_icon",
+          "tyrannos_area"
+        ],
+        [
+          "tyrannos_icon1",
+          "tyrannos_area1"
+        ],
+        [
+          "tyrannos_icon2",
+          "tyrannos_area2"
+        ],
+        [
+          "tyrannos_icon3",
+          "tyrannos_area3"
+        ]
+      ]
+    },
+    {
+      "name": "Gas ol' In",
+      "description": "A small petrol station attached to AJs Auto Repairs. Cheap prices, but not all fuels are available.",
+      "id": "gasolinFuel",
+      "preview": "gasolin.jpg",
+      "energyTypes": [
+        "gasoline",
+        "diesel"
+      ],
+      "prices": {
+        "diesel": {
+          "priceBaseline": 8.35,
+          "priceRandomnessBias": 0.3,
+          "priceRandomnessGain": 0.05,
+          "us_9_10_tax": true
+        },
+        "gasoline": {
+          "priceBaseline": 7.96,
+          "priceRandomnessBias": 0.25,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        }
+      },
+      "pumps": [
+        [
+          "gasolin_icon",
+          "gasolin_area"
+        ],
+        [
+          "gasolin_icon1",
+          "gasolin_area1"
+        ]
+      ]
+    },
+    {
+      "name": "AJ's Charging",
+      "description": "AJ keeps a couple of electric car chargers out back, if that's what you're into.",
+      "id": "ajsCharger",
+      "preview": "ajsCharger.jpg",
+      "energyTypes": [
+        "electricEnergy"
+      ],
+      "prices": {
+        "electricEnergy": {
+          "priceBaseline": 0.85,
+          "priceRandomnessBias": 0.3,
+          "priceRandomnessGain": 0.05
+        }
+      },
+      "pumps": [
+        [
+          "ajsCharger_icon",
+          "ajsCharger_area"
+        ],
+        [
+          "ajsCharger_icon2",
+          "ajsCharger_area2"
+        ]
+      ]
+    },
+    {
+      "description": "Salt Flats Fuel Station",
+      "energyTypes": [
+        "gasoline",
+        "diesel",
+        "n2o",
+        "unknown"
+      ],
+      "id": "salt_gas",
+      "name": "Salt Flats Fuel Station",
+      "preview": "salt_fuel.jpg",
+      "prices": {
+        "diesel": {
+          "priceBaseline": 50.53,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "gasoline": {
+          "priceBaseline": 50.37,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "n2o": {
+          "priceBaseline": 100,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "unknown": {
+          "priceBaseline": 100.37,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        }
+      },
+      "pumps": [
+        [
+          "salt_fuel_pump_area",
+          "salt_fuel_pump_icon"
+        ]
+      ]
+    },
+    {
+      "description": "Drift Palace Fuel Station",
+      "energyTypes": [
+        "gasoline",
+        "diesel",
+        "n2o",
+        "unknown"
+      ],
+      "id": "drift_fuel",
+      "name": "Drift Palace Fuel Station",
+      "preview": "houses/ajDriftPalace.jpg",
+      "prices": {
+        "diesel": {
+          "priceBaseline": 50.53,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "gasoline": {
+          "priceBaseline": 50.37,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "n2o": {
+          "priceBaseline": 100,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        },
+        "unknown": {
+          "priceBaseline": 100.37,
+          "priceRandomnessBias": 0.2,
+          "priceRandomnessGain": 0.1,
+          "us_9_10_tax": true
+        }
+      },
+      "pumps": [
+        [
+          "driftPalace_fuel_pump_area",
+          "driftPalace_fuel_pump_icon"
+        ],
+        [
+          "driftPalace_fuel_pump_icon1",
+          "driftPalace_fuel_pump_area1"
+        ]
+      ]
+    }
+  ]
+}

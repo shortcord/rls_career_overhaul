@@ -1,0 +1,13 @@
+{"name":"dynoShop","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"AJsCharging","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"nzyneDealerships","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"NorthLogistics","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"SouthLogistics","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"RecoveryYard","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"Burnout","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"DerbyTent","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"BusStops","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"RandomFixes","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"Garages","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"FREs","class":"SimGroup","__parent":"nzyneEdits"}
+{"name":"LogisitcsFencing","class":"SimGroup","__parent":"nzyneEdits"}

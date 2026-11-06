@@ -1,0 +1,52 @@
+{
+  "m_modern_corrugated": {
+    "name": "m_modern_corrugated",
+    "mapTo": "m_modern_corrugated",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  },
+  "m_s_batchingplant": {
+    "name": "m_s_batchingplant",
+    "mapTo": "m_s_batchingplant",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseColor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "translucentBlendOp": "None"
+  }
+}

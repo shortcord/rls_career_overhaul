@@ -1,0 +1,269 @@
+{
+  "m_concrete_01": {
+    "name": "m_concrete_01",
+    "mapTo": "m_concrete_01",
+    "class": "Material",
+    "persistentId": "2773e202-2eb0-4276-8888-c235f3976f2c",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/concrete/m_concrete_01/t_concrete_01_d.color.dds",
+        "normalMap": "/assets/materials/tileable/concrete/m_concrete_01/t_concrete_01_nm.normal.dds",
+        "specularMap": "/assets/materials/tileable/concrete/m_concrete_01/t_concrete_01_s.color.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ]
+  },
+  "m_labels_trailer": {
+    "name": "m_labels_trailer",
+    "mapTo": "m_labels_trailer",
+    "class": "material",
+    "persistentId": "d5dde62f-132f-4b85-91f0-0c73d171972b",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/atlas/m_labels_trailer/t_trailer_labels_d.color.dds",
+        "diffuseColor": [
+          1,
+          1,
+          1,
+          0.78281498
+        ],
+        "pixelSpecular": true,
+        "roughnessFactor": 0,
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 40,
+    "alphaTest": true,
+    "translucent": true,
+    "translucentZWrite": true
+  },
+  "m_metal_trim_trailers": {
+    "name": "m_metal_trim_trailers",
+    "mapTo": "m_metal_trim_trailers",
+    "class": "Material",
+    "persistentId": "e119e250-28cb-48e6-b697-482fe708eddf",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/atlas/m_metal_trim_trailers/t_metal_trim_trailers_ao.data.dds",
+        "baseColorMap": "/assets/materials/atlas/m_metal_trim_trailers/t_metal_trim_trailers_b.color.dds",
+        "metallicFactor": 1,
+        "metallicMap": "/assets/materials/atlas/m_metal_trim_trailers/t_metal_trim_trailers_m.data.dds",
+        "normalMap": "/assets/materials/atlas/m_metal_trim_trailers/t_metal_trim_trailers_nm.normal.dds",
+        "opacityMap": "/assets/materials/atlas/m_metal_trim_trailers/t_metal_trim_trailers_o.data.dds",
+        "overlayMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_b.color.dds",
+        "roughnessMap": "/assets/materials/atlas/m_metal_trim_trailers/t_metal_trim_trailers_r.data.dds",
+        "vertColor": true
+      },
+      {
+        "baseColorMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_b.color.dds",
+        "diffuseMapUseUV": 1,
+        "opacityMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_o.data.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "alphaRef": 100,
+    "alphaTest": true,
+    "dynamicCubemap": true,
+    "translucentBlendOp": "None",
+    "translucentRecvShadows": true,
+    "version": 1.5
+  },
+  "m_plastic_creased_01": {
+    "name": "m_plastic_creased_01",
+    "mapTo": "m_plastic_creased_01",
+    "class": "Material",
+    "persistentId": "79268c47-e172-4827-9e05-e8c16a82a459",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/plastic/m_plastic_creased_01/t_plastic_creased_01_d.color.dds",
+        "detailNormalMapStrength": 0.100000001,
+        "instanceDiffuse": true,
+        "normalMap": "/assets/materials/tileable/plastic/m_plastic_creased_01/t_plastic_creased_01_nm.normal.dds",
+        "overlayMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_b.color.dds",
+        "pixelSpecular": true,
+        "roughnessFactor": 0.699999988,
+        "specularMap": "/assets/materials/tileable/plastic/m_plastic_creased_01/t_plastic_creased_01_s.color.dds",
+        "useAnisotropic": true,
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true,
+    "translucentRecvShadows": true,
+    "translucentZWrite": true
+  },
+  "m_plastic_grainy_01": {
+    "name": "m_plastic_grainy_01",
+    "mapTo": "m_plastic_grainy_01",
+    "class": "Material",
+    "persistentId": "c6761920-52ee-4322-8a9c-8406121f0b18",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/plastic/m_plastic_grainy_01/t_plastic_grainy_01_d.color.dds",
+        "instanceDiffuse": true,
+        "normalMap": "/assets/materials/tileable/plastic/m_plastic_grainy_01/t_plastic_grainy_01_nm.normal.dds",
+        "overlayMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_b.color.dds",
+        "specularMap": "/assets/materials/tileable/plastic/m_plastic_grainy_01/t_plastic_grainy_01_s.color.dds",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true
+  },
+  "m_plastic_trim_01": {
+    "name": "m_plastic_trim_01",
+    "mapTo": "m_plastic_trim_01",
+    "class": "Material",
+    "persistentId": "8ebc6638-6c56-4234-b116-3fe8db08742e",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/trim/plastic/m_plastic_trim_01/t_plastic_trim_d.color.dds",
+        "instanceDiffuse": true,
+        "normalMap": "/assets/materials/trim/plastic/m_plastic_trim_01/t_plastic_trim_nm.normal.dds",
+        "specularMap": "/assets/materials/trim/plastic/m_plastic_trim_01/t_plastic_trim_s.color.dds",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "alphaRef": 100,
+    "alphaTest": true,
+    "translucentBlendOp": "None"
+  },
+  "m_plywood_new": {
+    "name": "m_plywood_new",
+    "mapTo": "m_plywood_new",
+    "class": "Material",
+    "persistentId": "aea1306c-8243-4c91-829f-b9c6684b82c3",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/m_plywood_new/t_plywood_new_d.color.dds",
+        "normalMap": "/assets/materials/tileable/wood/m_plywood_new/t_plywood_new_nm.normal.dds",
+        "pixelSpecular": true,
+        "specularMap": "/assets/materials/tileable/wood/m_plywood_new/t_plywood_new_s.color.dds",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ]
+  },
+  "m_rubber_used_01": {
+    "name": "m_rubber_used_01",
+    "mapTo": "m_rubber_used_01",
+    "class": "Material",
+    "persistentId": "571a13ef-f3c2-4af4-a492-158304b684a5",
+    "Stages": [
+      {
+        "baseColorMap": "/levels/utah/art/mt_johnson_valley/shapes/building/t_rubber_used_01_b.color.png",
+        "normalMap": "/levels/utah/art/mt_johnson_valley/shapes/building/t_rubber_used_01_nm.normal.png",
+        "overlayMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_b.color.dds",
+        "roughnessMap": "/levels/utah/art/mt_johnson_valley/shapes/building/t_rubber_used_01_r.data.png"
+      },
+      {
+        "baseColorMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_b.color.dds",
+        "diffuseMapUseUV": 1,
+        "opacityMap": "/assets/materials/atlas/m_metal_trim_trailers/t_breakup_dust_mild_o.data.dds"
+      },
+      {},
+      {}
+    ],
+    "activeLayers": 2,
+    "version": 1.5
+  },
+  "m_dealership_logo": {
+    "name": "m_dealership_logo",
+    "mapTo": "m_dealership_logo",
+    "class": "Material",
+    "persistentId": "b3f075e2-56f9-459a-958b-d26bf98fdafd",
+    "Stages": [
+      {
+        "colorMap": "/levels/utah/art/mt_johnson_valley/shapes/building/t_dealership_logo_d.color.png"
+      },
+      {},
+      {},
+      {}
+    ],
+    "doubleSided": true
+  },
+  "eca_bld_wood": {
+    "name": "eca_bld_wood",
+    "mapTo": "eca_bld_wood",
+    "class": "Material",
+    "persistentId": "cf3b30d3-4906-44cb-9cd5-1302e9e3b4fd",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/eca_bld_wood/eca_bld_wood_d.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds"
+      },
+      {},
+      {},
+      {}
+    ]
+  },
+  "eca_bld_wood_rooftiles": {
+    "name": "eca_bld_wood_rooftiles",
+    "mapTo": "eca_bld_wood_rooftiles",
+    "class": "Material",
+    "persistentId": "ab338bed-b6d5-4d8a-ad1d-e0603813e375",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_ao.data.png",
+        "baseColorMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_b.color.png",
+        "normalMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_nm.normal.png",
+        "overlayMap": "/assets/materials/tileable/road/eca_asphalt/eca_breakup_texture.dds",
+        "roughnessMap": "/assets/materials/tileable/roofing/eca_bld_wood_rooftiles/t_eca_bld_wood_rooftiles_r.data.png",
+        "vertColor": true
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      },
+      {
+        "vertColor": null
+      }
+    ],
+    "annotation": "BUILDINGS",
+    "groundType": "WOOD",
+    "materialTag0": "beamng",
+    "materialTag1": "building",
+    "materialTag2": "east_coast_usa",
+    "translucentBlendOp": "None",
+    "version": 1.5
+  },
+  "m_wood_wall": {
+    "name": "m_wood_wall",
+    "mapTo": "m_wood_wall",
+    "class": "Material",
+    "persistentId": "6048f4f4-269a-454f-b969-04231d598e23",
+    "Stages": [
+      {
+        "colorMap": "/assets/materials/tileable/wood/m_wood_wall/si_wood_wall_d.color.dds",
+        "normalMap": "/assets/materials/tileable/wood/m_wood_wall/si_wood_wall_n.normal.dds",
+        "overlayMap": "/assets/materials/breakup/utah_breakup/utah_breakup_texture.dds",
+        "specularMap": "/assets/materials/tileable/wood/m_wood_wall/si_wood_wall_s.color.dds",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ]
+  }
+}

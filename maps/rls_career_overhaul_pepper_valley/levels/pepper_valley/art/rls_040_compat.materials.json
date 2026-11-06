@@ -1,0 +1,39 @@
+{
+  "ind_wood_stack": {
+    "name": "ind_wood_stack",
+    "mapTo": "ind_wood_stack",
+    "class": "material",
+    "persistentId": "173da68f-ab02-45e2-87d5-e7308b28fd50",
+    "Stages": [
+      {
+        "ambientOcclusionMap": "/assets/materials/trim/wood/ind_wood_stack/wood_stack_ao.data.png",
+        "baseColorMap": "/assets/materials/trim/wood/ind_wood_stack/wood_stack_b.color.png",
+        "normalMap": "/assets/materials/trim/wood/ind_wood_stack/wood_stack_nm.normal.png",
+        "roughnessMap": "/assets/materials/trim/wood/ind_wood_stack/wood_stack_r.data.png",
+        "vertColor": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "version": 1.5
+  },
+  "SHOCK_ABSORBER.001": {
+    "name": "SHOCK_ABSORBER.001",
+    "mapTo": "SHOCK_ABSORBER.001",
+    "class": "Material",
+    "version": 1.5,
+    "groundType": "WOOD",
+    "Stages": [
+      {
+        "baseColorFactor": [
+          0.5,
+          0.5,
+          0.5,
+          1
+        ],
+        "roughnessFactor": 1
+      }
+    ]
+  }
+}
