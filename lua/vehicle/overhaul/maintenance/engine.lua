@@ -4,8 +4,6 @@ local M = {}
 
 local common = require('vehicle/overhaul/maintenance/common')
 local getLimitStressFactor = require('vehicle/overhaul/maintenance/limitStress')
-local wearModel = require('vehicle/overhaul/maintenance/engine/wear')
-local failureThresholds = wearModel.failureThresholds
 local weightedSum = require('vehicle/overhaul/maintenance/weightedSum')
 
 local abs = math.abs
@@ -301,17 +299,6 @@ local function drainEngineOilCondition(maintenance, deltaMiles, avgMiles, env, d
   return oilLevelCapacityFactor, oilLevelMileageMultiplier, lowOilConditionMultiplier, oilConditionInterval
 end
 
--- inventoryId scopes the per-vehicle wear state so multiple career vehicles don't share service history.
--- Falls back to the global runtime.inventoryId set by overhaulMaintenance during a tick.
-local function getWearInventoryId(inventoryId)
-  if type(inventoryId) == "number" then return inventoryId end
-  local globalRuntime = rawget(_G, 'runtime') or nil
-  if type(globalRuntime) == "table" and type(globalRuntime.inventoryId) == "number" then
-    return tonumber(globalRuntime.inventoryId)
-  end
-  return nil
-end
-
 local function drainMaintenance(maintenance, deltaMiles, avgMiles, env)
   maintenance = common.shallowCopy(maintenance)
   env = env or {}
@@ -322,23 +309,18 @@ local function drainMaintenance(maintenance, deltaMiles, avgMiles, env)
     maintenance, deltaMiles, avgMiles, env, driveMultipliers, profile
   )
 
-  -- advenginetune's setPartConditionThermals: component condition degrades incrementally by mileage delta
-  -- since last service, then persists until a recompute or repair. Services restore it rather than being wiped.
-  local wearState = wearModel.degrade({
-    inventoryId = getWearInventoryId(),
-    odometerMetres = avgMiles,
-    odometerDeltaMetres = deltaMiles,
-    integrityValue = common.clamp(env.integrityValue or 1, 0, 1),
-  })
-
-  -- advenginetune's hard-failure thresholds on installed integrity; these now apply to every vehicle.
-  env.pistonRingsDamaged = (wearState.integrityValue or 1) < failureThresholds.pistonRingsDamaged
-  env.headGasketBlown = (wearState.integrityValue or 1) < failureThresholds.headGasketBlown
-  env.connectingRodBearingsDamaged = (wearState.integrityValue or 1) < failureThresholds.connectingRodBearingsDamaged
-
-  -- Career-facing mechanical condition, the worst of the three component conditions.
-  maintenance.engineOverhaul = min(wearState.pistonWear, wearState.pistonRingWear,
-                                    wearState.cylinderWallWear)
+  if profile.fuelType == 'diesel' then
+    local idleRuntimeSeconds = max(tonumber(env.idleRuntimeSeconds) or 0, 0)
+    if idleRuntimeSeconds > 0 then
+      maintenance.oilCondition = common.applyIntervalWear(
+        maintenance.oilCondition or 1,
+        oilConditionInterval,
+        idleRuntimeSeconds * (25 / 3600),
+        lowOilConditionMultiplier,
+        serviceTargetValues.oilCondition
+      )
+    end
+  end
 
   if env.pistonRingsDamaged == true then
     local engineRunningSeconds = max(tonumber(env.engineRunningSeconds) or 0, 0)
@@ -1465,15 +1447,7 @@ end
 
 M.getDefaultMaintenance = getDefaultMaintenance
 M.getLiveTorqueHoldCoef = getLiveTorqueHoldCoef
--- advenginetune's repairEngineParts hook, scoped per vehicle. Resets the wear baseline so a completed
--- Engine Overhaul service restores mechanical condition rather than being immediately overwritten.
-local function repairEngineParts(inventoryId)
-  local inventoryIdToUse = tonumber(inventoryId) or nil
-  if not inventoryIdToUse then return false end
-  wearModel.repairEngineParts({inventoryId = inventoryIdToUse})
-  return true
-end
-M.repairEngineParts = repairEngineParts
+M.drainMaintenance = drainMaintenance
 M.buildDerived = buildDerived
 M.stepRuntime = stepRuntime
 M.apply = apply

@@ -56,17 +56,6 @@ local categoryDefinitions = {
         servicePricePct = 10.0,
         servicePriceFloor = 200,
       },
-      {
-        name = "engineOverhaul",
-        label = "Engine Overhaul",
-        actionLabel = "Rebuild",
-        -- advenginetune's repairEngineParts hook resets piston, ring and cylinder-wall wear plus oil pump/filter;
-        -- this is the career-facing service that restores mechanical condition to full.
-        checkDurationSeconds = 300,
-        serviceDurationSeconds = 600,
-        servicePricePct = 8.0,
-        servicePriceFloor = 250,
-      },
     },
   },
   radiator = {

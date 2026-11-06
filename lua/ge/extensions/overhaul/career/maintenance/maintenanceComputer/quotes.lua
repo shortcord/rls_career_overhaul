@@ -379,9 +379,6 @@ function partFactory.new(inputs)
       return 25, 0, 16, inputs.max(tonumber(capacities.transmission) or 6, 0) * fillFraction
     elseif itemName == "fluidCondition" then
       return 105, 50, 16, inputs.max(tonumber(capacities.transmission) or 6, 0)
-    elseif itemName == "engineOverhaul" then
-      -- Labour and filter are fixed; material scales with the powertrain grade like the fluid items do.
-      return 150, 40, 750, 1
     end
     return nil
   end
