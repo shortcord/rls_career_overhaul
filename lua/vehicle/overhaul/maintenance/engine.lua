@@ -85,8 +85,7 @@ local function getDefaultMaintenance()
   return {
     oilCondition = 1,
     oilLevel = 1,
-    ignitionService = 1,
-    engineOverhaul = 1
+    ignitionService = 1
   }
 end
 
@@ -302,6 +301,17 @@ local function drainEngineOilCondition(maintenance, deltaMiles, avgMiles, env, d
   return oilLevelCapacityFactor, oilLevelMileageMultiplier, lowOilConditionMultiplier, oilConditionInterval
 end
 
+-- inventoryId scopes the per-vehicle wear state so multiple career vehicles don't share service history.
+-- Falls back to the global runtime.inventoryId set by overhaulMaintenance during a tick.
+local function getWearInventoryId(inventoryId)
+  if type(inventoryId) == "number" then return inventoryId end
+  local globalRuntime = rawget(_G, 'runtime') or nil
+  if type(globalRuntime) == "table" and type(globalRuntime.inventoryId) == "number" then
+    return tonumber(globalRuntime.inventoryId)
+  end
+  return nil
+end
+
 local function drainMaintenance(maintenance, deltaMiles, avgMiles, env)
   maintenance = common.shallowCopy(maintenance)
   env = env or {}
@@ -315,10 +325,9 @@ local function drainMaintenance(maintenance, deltaMiles, avgMiles, env)
   -- advenginetune's setPartConditionThermals: component condition degrades incrementally by mileage delta
   -- since last service, then persists until a recompute or repair. Services restore it rather than being wiped.
   local wearState = wearModel.degrade({
-    inventoryId = tonumber(env.inventoryId),
-    -- Installed distance is not class-adjusted; the category API otherwise uses miles.
-    odometerMetres = tonumber(env.odometerMetres) or avgMiles * common.milesToMeters,
-    odometerDeltaMetres = deltaMiles * common.milesToMeters,
+    inventoryId = getWearInventoryId(),
+    odometerMetres = avgMiles,
+    odometerDeltaMetres = deltaMiles,
     integrityValue = common.clamp(env.integrityValue or 1, 0, 1),
   })
 
@@ -834,8 +843,6 @@ local function writeEngineDriveEffects(
   result.symptomRate = effects.symptomRate
   result.hardFailureRate = serviceRates.hardFailureRate
   result.pistonRingsDamaged = pistonRingsDamaged
-  result.headGasketBlown = env.headGasketBlown == true
-  result.connectingRodBearingsDamaged = env.connectingRodBearingsDamaged == true
   result.pistonRingOilConsumptionRate = serviceRates.pistonRingOilConsumptionRate
   result.profile = common.deepCopy(profile)
   result.mileageAgeIndex = common.getMileageAgeIndex(env.avgMiles)
@@ -1457,7 +1464,6 @@ end
 -- Public API --------------------------------------------------------------------------------------
 
 M.getDefaultMaintenance = getDefaultMaintenance
-M.drainMaintenance = drainMaintenance
 M.getLiveTorqueHoldCoef = getLiveTorqueHoldCoef
 -- advenginetune's repairEngineParts hook, scoped per vehicle. Resets the wear baseline so a completed
 -- Engine Overhaul service restores mechanical condition rather than being immediately overwritten.

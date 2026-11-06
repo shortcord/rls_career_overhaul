@@ -52,7 +52,11 @@ function partFactory.new(inputs)
   -- advenginetune's repairEngineParts: only the Engine Overhaul service resets per-vehicle wear.
   local function resetEngineWearBaseline(inventoryId, itemName)
     if not inventoryId or itemName ~= 'engineOverhaul' then return false end
-    return overhaul_vehicles_maintenanceBridge.resetEngineWearBaseline(inventoryId)
+    -- Look up the maintenance extension defensively; it is registered as overhaulMaintenance in _G by
+    -- the vehicle-side maintenance extension. Fallback to nil so a missing manager is a no-op.
+    local manager = rawget(_G, 'overhaulMaintenance')
+    if type(manager) ~= "table" or type(manager.repairEngineParts) ~= "function" then return false end
+    return pcall(manager.repairEngineParts, inventoryId)
   end
 
   local function completeServiceJob(uiState, categoryState, job, itemDefinition)
@@ -83,7 +87,6 @@ function partFactory.new(inputs)
       if type(job) == "table" and definition and categoryState then
         if job.kind == "service" then
           completeServiceJob(uiState, categoryState, job, definition)
-          resetEngineWearBaseline(runtimeInventoryId, job.item)
           didService = true
         else
           revealMaintenanceItem(uiState, job.category, job.item, inputs.roundPercent(categoryState.maintenance[job.item] or 0))
@@ -314,8 +317,7 @@ function partFactory.new(inputs)
       completeServiceJob(uiState, maintenanceState.categories[categoryName], {
         kind = "service", category = categoryName, item = itemName,
       }, itemDefinition)
-      -- Fleet IDs are not personal inventory IDs. Fleet maintenance currently
-      -- has saved snapshots only, with no maintenanceBridge runtime owner.
+      resetEngineWearBaseline(vehicleId, itemName)
       overhaul_career_saveSystem.saveCurrent()
     end, debug.traceback)
     if not committed then
@@ -454,7 +456,6 @@ function partFactory.new(inputs)
     prepareBusinessVehicleState = prepareBusinessVehicleState,
     prepareVehicleState = prepareVehicleState,
     refundServicePrice = refundServicePrice,
-    resetEngineWearBaseline = resetEngineWearBaseline,
     startCheck = startCheck,
     startCheckForBusinessVehicle = startCheckForBusinessVehicle,
     startService = startService,

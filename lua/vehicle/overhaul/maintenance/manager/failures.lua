@@ -557,8 +557,6 @@ function M.create(inputs)
     module, categoryState, deltaMiles, avgMiles, previousHardwareInstalled, hasHardware
   )
     local env = parts.environment.buildEnvironment(categoryName, avgMiles, environmentSnapshot)
-    env.inventoryId = runtime.inventoryId
-    env.odometerMetres = categoryOdometers[categoryName]
     if not runtime.runtimeReadOnly and hasHardware then
       if previousHardwareInstalled == false then
         -- Newly visible hardware uses its own age; draining a lifetime as one increment would empty every item.
