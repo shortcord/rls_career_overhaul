@@ -68,6 +68,36 @@ local function shrinkPoliceRespawnRadius(veh)
   veh.respawn.finalRadius = math.min(veh.respawn.finalRadius or 160, 160)
 end
 
+-- Ambient police spawns use the stock box-floor placement, which can leave one
+-- axle high when the model's wheel-support plane is tilted. Mark provider-built
+-- entries so the spawn adapter corrects only these ambient vehicles.
+-- The lifted park-ranger coilovers also preload 46% at spawn; use the stock
+-- suspension variant for police traffic while leaving the original config alone.
+local policeConfigOverrides = {
+  d10_4wd_parkranger = 'd10_4wd_parkranger_police',
+}
+
+local function applyPoliceConfigOverride(entry)
+  if entry.model ~= 'pickup' or type(entry.config) ~= 'string' then return end
+  local key = entry.config:match('([^/\\]+)%.pc$') or entry.config
+  local replacement = policeConfigOverrides[key:lower()]
+  if replacement then entry.config = replacement end
+end
+
+local function markWheelSupport(group)
+  for index, entry in ipairs(group or {}) do
+    if type(entry) == 'table' then
+      if entry[1] then -- old array format is normalized by core_multiSpawn
+        entry = {model=entry[1], config=entry[2], paint=entry[3], paint2=entry[4], paint3=entry[5]}
+        group[index] = entry
+      end
+      applyPoliceConfigOverride(entry)
+      entry.overhaulWheelSupport = true
+    end
+  end
+  return group
+end
+
 local function onTrafficSpecialVehiclesProviders()
   gameplay_traffic.registerSpecialVehicleProvider({
     name = 'police',
@@ -97,7 +127,7 @@ local function onTrafficSpecialVehiclesProviders()
           table.insert(group, {model = 'fullsize', config = 'police'})
         end
       end
-      return group
+      return markWheelSupport(group)
     end,
   })
 end

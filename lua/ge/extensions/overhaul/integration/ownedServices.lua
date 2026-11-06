@@ -5,6 +5,7 @@ local M = {}
 local wrapperLifetime = require("overhaul/lib/shell/wrapperLifetime")
 local trafficVehicleMethods = require("overhaul/integration/ownedServices/trafficVehicle")
 local policeRole = require("overhaul/integration/ownedServices/trafficPoliceRole")
+local wheelSupportPlacement = require("overhaul/lib/vehicles/placement/wheelSupportPlacement")
 
 M.dependencies = {'overhaul_shell_patches', 'gameplay_traffic', 'overhaul_integration_services_parking', 'overhaul_integration_services_police', 'overhaul_integration_services_speedTraps'}
 
@@ -165,11 +166,52 @@ local function bindTraffic()
   refreshHooks()
 end
 
+-- Stock placement grounds the collidable-node box floor. Ambient police models
+-- can have a wheel-support plane tilted relative to it, leaving one axle high.
+-- Keep the original placement and checks, then apply a bounded correction.
+local function bindSpawnPlacement()
+  if type(spawn) ~= 'table' then return end
+  wrap(spawn, 'safeTeleport', function(original, veh, pos, rot, checkOnlyStatics, visibilityPoint,
+      removeTraffic, centeredPosition, resetVehicle, player, unlimitedSafeSpawnRange)
+    if not veh then
+      return original(veh, pos, rot, checkOnlyStatics, visibilityPoint, removeTraffic,
+        centeredPosition, resetVehicle, player, unlimitedSafeSpawnRange)
+    end
+    if type(veh.getId) == 'function' then
+      local ok, id = pcall(function() return veh:getId() end)
+      if ok then wheelSupportPlacement.forget(id) end
+    end
+    local result, pose = wheelSupportPlacement.placeWithCapture(original, veh, pos, rot,
+      checkOnlyStatics, visibilityPoint, removeTraffic, centeredPosition, resetVehicle,
+      player, unlimitedSafeSpawnRange)
+    if pose and resetVehicle ~= false then
+      wheelSupportPlacement.correctIfPolice(veh, pose)
+    end
+    return result
+  end, 'spawn')
+  wrap(spawn, 'spawnVehicle', function(original, model, partConfig, pos, rot, options)
+    local veh = original(model, partConfig, pos, rot, options)
+    if veh and options and options.overhaulWheelSupport then
+      wheelSupportPlacement.correctMarked(veh)
+    end
+    return veh
+  end, 'spawn')
+  -- The installed spawn module records its pre-correction pose for MP sync.
+  -- Preserve consume-on-read semantics while returning the corrected pose.
+  if type(spawn.takeLastSafeTeleportPose) == 'function' then
+    wrap(spawn, 'takeLastSafeTeleportPose', function(original, id)
+      local pose = original(id)
+      return wheelSupportPlacement.takeCorrectedPose(id) or pose
+    end, 'spawn')
+  end
+end
+
 local function install()
   if installed then return end
   enableServices()
   bindParkingAndPolice()
   bindTraffic()
+  bindSpawnPlacement()
 end
 
 -- Level loads replace the game's traffic modules; wrap the copies that are live now.
@@ -198,6 +240,7 @@ local function uninstall()
   end
   table.clear(wrappers)
   table.clear(patchedClasses)
+  wheelSupportPlacement.clear()
   for veh, state in pairs(adoptedVehicles) do
     if veh.getPolice == state.police then veh.getPolice = state.getPolice end
     if veh.getPoliceVars == state.vars then veh.getPoliceVars = state.getPoliceVars end

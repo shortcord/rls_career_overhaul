@@ -1,0 +1,103 @@
+{
+  "0-100 km/h": 10.5,
+  "0-100 mph": 33.5,
+  "0-60 mph": 9.6,
+  "100-0 km/h": 49.2,
+  "60-0 mph": 147.5,
+  "60-100 mph": 23.9,
+  "Body Style": "SUV",
+  "BoundingBox": [
+    [
+      -0.58,
+      -1.41,
+      -0.3099
+    ],
+    [
+      1.68,
+      3.476,
+      1.43
+    ]
+  ],
+  "Braking G": 0.8,
+  "Config Type": "Police",
+  "Configuration": "vehiclesData.pickup.d10_4wd_parkranger.Configuration",
+  "Description": "vehiclesData.pickup.d10_4wd_parkranger.Description",
+  "Drag Times": {
+    "time_0_60": 9.5350001454353,
+    "time_1000": 14.468000218272,
+    "time_1_4": 17.385500263423,
+    "time_1_8": 11.050500165671,
+    "time_330": 7.1350001096725,
+    "time_60": 2.4350000396371,
+    "velAt_1_4": 34.955536524318,
+    "velAt_1_8": 28.25125516384
+  },
+  "Drivetrain": "4WD",
+  "Fuel Type": "Gasoline",
+  "Induction Type": "NA",
+  "InsuranceClass": "commercial",
+  "Off-Road Score": 59,
+  "Performance Data": {
+    "fuelType": {
+      "fuelTank:gasoline": true
+    },
+    "inductionType": {
+      "naturalAspiration": true
+    },
+    "lateralAcceleration": {
+      "maxAcceleration": 6.9223470444132
+    },
+    "performanceIndex": 34.390072051728,
+    "power": {
+      "propulsionPowerCombined": 164540.91991773
+    },
+    "powertrainLayout": {
+      "poweredWheelsFront": 2,
+      "poweredWheelsRear": 2
+    },
+    "time_0_60": 9.5350001454353,
+    "time_1000": 14.468000218272,
+    "time_1_4": 17.385500263423,
+    "time_1_8": 11.050500165671,
+    "time_330": 7.1350001096725,
+    "time_60": 2.4350000396371,
+    "transmissionStyle": {
+      "automaticGearbox": true,
+      "rangeBox": true
+    },
+    "vehicleClass": {
+      "description": "Standard",
+      "minPI": 21,
+      "name": "C"
+    },
+    "velAt_1_4": 34.955536524318,
+    "velAt_1_8": 28.25125516384,
+    "weight": 2542.0249023438
+  },
+  "Population": 10,
+  "Power": 223,
+  "PowerPeakRPM": "4450 - 5150",
+  "Propulsion": "ICE",
+  "Top Speed": 52.604675655685,
+  "Torque": 410,
+  "TorquePeakRPM": "2550 - 3400",
+  "Transmission": "Automatic",
+  "Value": 47950,
+  "Weight": 2426,
+  "Weight/Power": 10.878923766816,
+  "Years": {
+    "max": 1997,
+    "min": 1992
+  },
+  "defaultMultiPaintSetup": {
+    "name": "Park Ranger",
+    "paint1": "white",
+    "paint2": "white",
+    "paint3": "charcoal"
+  },
+  "thumbnailConfig": {
+    "configCamEnabled": false,
+    "modelCamEnabled": false
+  },
+  "vehicleSelectorSubGroup": "vehiclesData.pickup.d10_423sport_A.vehicleSelectorSubGroup"
+}
