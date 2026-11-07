@@ -26,13 +26,41 @@ jobs:
   build:
     name: Build release artifacts
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # ~5 GiB of Git LFS map assets, a 2.4 GiB staging copy at a time, and each
+    # map zipped at level 9.
+    timeout-minutes: 90
     steps:
+      - name: Free disk space
+        shell: bash
+        run: |
+          set -euo pipefail
+          # The image starts with ~14 GiB free; the LFS checkout plus one staged
+          # map plus the archives need more than that. None of this is used here.
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android /opt/ghc /opt/hostedtoolcache/CodeQL 2>/dev/null || true
+          sudo apt-get clean
+          df -h /
+
       - name: Check out source
         uses: actions/checkout@v4
         with:
           # Tags are needed for the generated developer changelog.
           fetch-depth: 0
+          # maps/ keeps its binary assets in Git LFS; the map archives must be
+          # built from the real files, not the pointers.
+          lfs: true
+
+      - name: Verify map assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo "LFS files: $(git lfs ls-files | wc -l)"
+          # A '-' marker means the object is still a pointer. build_map_zips.sh
+          # refuses to package pointers, but failing here names the cause.
+          missing="$(git lfs ls-files | awk '$2 == "-" { print $0 }' | head -n 5)"
+          if [[ -n "$missing" ]]; then
+            printf '::error::Git LFS assets were not downloaded: %s\n' "$(printf '%s' "$missing" | tr '\n' ' ')"
+            exit 1
+          fi
 
       - name: Resolve version
         id: version
@@ -60,12 +88,14 @@ jobs:
         run: |
           set -euo pipefail
           rm -rf dist
-          args=(--version "$VERSION" --out dist --changelog-from-git)
+          common_args=(--out dist)
           if [[ -n "${SOURCE_SHA:-}" ]]; then
-            args+=(--source-sha "$SOURCE_SHA")
+            common_args+=(--source-sha "$SOURCE_SHA")
           fi
-          bash tools/build_release.sh "${args[@]}"
+          bash tools/build_release.sh --version "$VERSION" --changelog-from-git "${common_args[@]}"
+          bash tools/build_map_zips.sh --version "$VERSION" "${common_args[@]}"
           sha256sum dist/*
+          df -h /
 
       - name: Upload release artifacts
         uses: actions/upload-artifact@v4
@@ -73,7 +103,7 @@ jobs:
           name: rls-career-overhaul-v${{ steps.version.outputs.value }}
           path: dist/*
           if-no-files-found: error
-          # The ZIP is already compressed.
+          # The ZIPs are already compressed.
           compression-level: 0
           retention-days: 30
 

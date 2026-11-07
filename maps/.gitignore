@@ -1,1 +1,3 @@
 *.zip
+*.zip.manifest.json
+*-maps-SHA256SUMS.txt

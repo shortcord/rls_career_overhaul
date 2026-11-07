@@ -21,6 +21,7 @@ EXTRA_FILES=(
   "licenses/tyre-thermals-AGPL-3.0.txt"
   "licenses/tyre-thermals-NOTICE.md"
 )
+MAPS_DIR="maps"
 
 SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd)"
 DEFAULT_SOURCE="$(cd -- "$SCRIPT_DIR/.." && pwd)"
@@ -49,6 +50,8 @@ Options:
   --changelog PATH     existing developer changelog to bundle
   --changelog-from-git generate a developer changelog from git log
   --previous-tag TAG   tag to diff against when generating a changelog
+  --with-maps[=LIST]   also package the map mods under maps/ into the same ZIP
+                       (bare flag = every map; LIST = comma-separated short names)
   -h, --help           show this help
 EOF
 }
@@ -61,6 +64,8 @@ source_sha_arg=""
 changelog_arg=""
 changelog_from_git=0
 previous_tag=""
+bundle_all_maps=0
+bundle_map_list=""
 
 while (( $# > 0 )); do
   case "$1" in
@@ -95,6 +100,15 @@ while (( $# > 0 )); do
     --previous-tag)
       previous_tag="${2:?--previous-tag needs a value}"
       shift 2
+      ;;
+    --with-maps)
+      bundle_all_maps=1
+      shift
+      ;;
+    --with-maps=*)
+      bundle_map_list="${1#--with-maps=}"
+      [[ -n "$bundle_map_list" ]] || die "--with-maps= needs a comma-separated map list"
+      shift
       ;;
     -h|--help)
       usage
@@ -182,6 +196,65 @@ for rel in "${EXTRA_FILES[@]}"; do
   cp -p "$source/$rel" "$staging/$rel"
 done
 
+# Optional: fold the map mods under maps/ into the same archive. Maps normally
+# ship as their own ZIPs (tools/build_map_zips.sh) because the combined download
+# is several gigabytes; this is for builds that must be a single mod.
+bundle_maps=()
+if (( bundle_all_maps )) || [[ -n "$bundle_map_list" ]]; then
+  maps_root="$source/$MAPS_DIR"
+  [[ -d "$maps_root" ]] || die "--with-maps requires $maps_root"
+
+  available_maps=()
+  for dir in "$maps_root"/*; do
+    [[ -d "$dir" ]] || continue
+    name="$(basename -- "$dir")"
+    [[ "$name" == "${PACKAGE}_"* ]] || continue
+    [[ -d "$dir/levels" ]] || continue
+    available_maps+=("$name")
+  done
+  (( ${#available_maps[@]} > 0 )) || die "no map mods found under $maps_root"
+
+  if (( bundle_all_maps )); then
+    bundle_maps=("${available_maps[@]}")
+  else
+    IFS=',' read -r -a wanted_maps <<< "$bundle_map_list"
+    for want in "${wanted_maps[@]}"; do
+      [[ -n "$want" ]] || continue
+      match=""
+      for name in "${available_maps[@]}"; do
+        if [[ "$name" == "$want" || "$name" == "${PACKAGE}_${want}" ]]; then
+          match="$name"
+          break
+        fi
+      done
+      [[ -n "$match" ]] || die "unknown map '$want' for --with-maps"
+      duplicate=0
+      if (( ${#bundle_maps[@]} > 0 )); then
+        for name in "${bundle_maps[@]}"; do
+          if [[ "$name" == "$match" ]]; then
+            duplicate=1
+          fi
+        done
+      fi
+      (( duplicate )) || bundle_maps+=("$match")
+    done
+  fi
+
+  # A map must only add files; a clash would silently replace mod content.
+  staged_list="$tmp/staged-files"
+  ( cd "$staging" && find . -type f -print | sed 's|^\./||' | LC_ALL=C sort > "$staged_list" )
+  for name in "${bundle_maps[@]}"; do
+    map_list="$tmp/map-files-$name"
+    ( cd "$maps_root/$name" && find . -type f -print | sed 's|^\./||' | LC_ALL=C sort > "$map_list" )
+    collisions="$(LC_ALL=C comm -12 "$staged_list" "$map_list" || true)"
+    if [[ -n "$collisions" ]]; then
+      die "map $name would overwrite packaged files: $(printf '%s' "$collisions" | tr '\n' ' ')"
+    fi
+    cp -a "$maps_root/$name/." "$staging/"
+    ( cd "$staging" && find . -type f -print | sed 's|^\./||' | LC_ALL=C sort > "$staged_list" )
+  done
+fi
+
 # Remove development files that may live inside a content directory.
 find "$staging" -type d \( \
   -name .git -o -name .hg -o -name .svn -o \
@@ -246,9 +319,19 @@ else
   size_tier="large"
 fi
 
+maps_json="[]"
+if (( ${#bundle_maps[@]} > 0 )); then
+  maps_json="["
+  for name in "${bundle_maps[@]}"; do
+    maps_json+="\"${name#${PACKAGE}_}\","
+  done
+  maps_json="${maps_json%,}]"
+fi
+
 cat > "$manifest_path" <<EOF
 {
   "package": "$PACKAGE",
+  "maps": $maps_json,
   "source_sha": "$source_sha",
   "version": "$version",
   "zip": "$zip_name",
@@ -308,6 +391,12 @@ echo "  archive:   $zip_bytes bytes"
 echo "  sha256:    $zip_sha"
 echo "  manifest:  $manifest_path"
 echo "  sums:      $sums_path"
+if (( ${#bundle_maps[@]} > 0 )); then
+  echo "  maps:      ${bundle_maps[*]}"
+fi
+if (( zip_bytes > 2147483648 )); then
+  warn "$zip_name is larger than GitHub's 2 GiB release asset limit; ship the maps as separate ZIPs instead"
+fi
 if (( changelog_created )); then
   echo "  changelog: $changelog_path"
 fi
