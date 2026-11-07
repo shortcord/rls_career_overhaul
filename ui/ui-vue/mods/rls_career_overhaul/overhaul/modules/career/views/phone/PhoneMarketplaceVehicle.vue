@@ -179,6 +179,9 @@ const ownDetail = computed(() => {
     name: listing.niceName,
     priceLabel: 'Your asking price',
     priceText: money(asking),
+    // Own listing: you are the seller, so the raw base estimate is the honest benchmark. The
+    // buyer-side market index (marketValueAdjusted) applies to purchases only and would flatter
+    // your asking price, so it is deliberately not used here.
     delta: marketDelta(asking, listing.marketValue, { overIsGood: true }),
     condition: Number.isFinite(Number(data.condition)) ? Number(data.condition) : null,
     conditionColour: conditionColour(Number(data.condition)),
@@ -205,13 +208,17 @@ const feedDetail = computed(() => {
   if (!v) return null
 
   const asking = Number(v.valueAdjusted || v.Value || 0)
+  // Show the same estimate the purchase screen shows: the dealer market index scales the base
+  // estimate into marketValueAdjusted, so both the row and the delta must use it or the discount
+  // chip contradicts the value printed directly above it.
+  const marketValue = v.marketValueAdjusted || v.marketValue
   const sellerName = v.sellerName || 'Private seller'
   const rows = [
     { label: 'Odometer', value: mileageText(v.Mileage) },
     v.Transmission ? { label: 'Transmission', value: v.Transmission } : null,
     v.Drivetrain ? { label: 'Drivetrain', value: v.Drivetrain } : null,
     v['Fuel Type'] ? { label: 'Fuel type', value: v['Fuel Type'] } : null,
-    { label: 'Est. market value', value: money(v.marketValue), money: true },
+    { label: 'Est. market value', value: money(marketValue), money: true },
   ].filter(Boolean)
 
   return {
@@ -221,7 +228,7 @@ const feedDetail = computed(() => {
     name: [v.Brand, v.Name].filter(Boolean).join(' ') || v.Name || 'Vehicle',
     priceLabel: 'Asking price',
     priceText: money(asking),
-    delta: marketDelta(asking, v.marketValue),
+    delta: marketDelta(asking, marketValue),
     // marketplace stock has no part conditions, so there is nothing honest to show here
     condition: null,
     conditionColour: '#6fe094',
