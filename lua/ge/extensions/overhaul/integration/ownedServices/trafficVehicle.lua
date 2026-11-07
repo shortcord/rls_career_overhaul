@@ -984,8 +984,14 @@ function C:onUpdate(dt, dtSim)
     if self.isAi then
       if self.state == 'fadeOut' or self.state == 'fadeIn' then
         if self.state == 'fadeIn' then
-          if self.damage >= 500 and self.respawnActive and self.alpha > 0 then
-            log('W', logTag, string.format('Traffic vehicle respawned with big damage: %d', self.id))
+          -- crashDamage is reset by resetTracking() on refresh, so it measures damage taken since
+          -- this respawn. self.damage is lifetime-cumulative (mapmgr never clears it on respawn),
+          -- so comparing it here warned on every respawn of any car that had ever been damaged.
+          local spawnDamage = self.crashDamage or 0
+          local lowDamage = gameplay_traffic_trafficUtils.getBaseValues().lowDamage
+          if spawnDamage >= lowDamage and self.respawnActive and self.alpha > 0 then
+            log('W', logTag, string.format('Traffic vehicle respawned with big damage: %d (%d since respawn, %d total)',
+              self.id, spawnDamage, self.damage))
             self:fade(1)
             -- simTimeAuthority.pause(false) -- uncomment this to stop the simulation when this issue happens
           end
