@@ -140,8 +140,9 @@ const feed = computed(() => {
         initials: avatarInitials(sellerName),
         avatarBg: avatarColour(sellerName),
         askingText: money(asking),
-        // buying: paying under estimated market is the good outcome
-        delta: marketDelta(asking, v.marketValue),
+        // buying: paying under estimated market is the good outcome. Compare against the same
+        // purchase-adjusted estimate the detail view and purchase screen show.
+        delta: marketDelta(asking, v.marketValueAdjusted || v.marketValue),
         canNegotiate: v.negotiationPossible !== false && !(Number(v.discountPercentage) > 0),
       }
     })
