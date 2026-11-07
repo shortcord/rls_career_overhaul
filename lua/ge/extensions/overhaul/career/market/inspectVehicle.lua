@@ -40,6 +40,13 @@ local state = {
 -- Reused for every distance check so the per-frame update allocates nothing.
 local scratchDir = vec3()
 
+-- A hired cab carries the player but is not the player's own car: its route may pass the listed car
+-- or end away from it, so neither counts as arriving at the sale or as leaving it (#536).
+local function isTaxiRideActive()
+  local taxi = overhaul_integration_services_taxi
+  return taxi ~= nil and taxi.isTaxiRideActive() == true
+end
+
 -- Inspection routes and previews ------------------------------------------------------------------
 
 local inspectSeam = {}
@@ -192,7 +199,9 @@ end
 local function addSaleTether()
   state.leaveSaleTether = overhaul_career_maintenance_tether.startVehicleTether(state.testDriveVehInfo.vehId, config.LEAVE_SALE_DIST, false, function()
     M.leaveSaleCallback("flagForDeletion", true, true)
-  end)
+  end,
+  -- Hold the sale while the cab moves, then re-measure from wherever the player got out.
+  isTaxiRideActive)
 end
 
 local function removeSaleTether()
@@ -665,8 +674,9 @@ local function onUpdate(dtReal, dtSim, dtRaw)
 
   if state.testDriveInfo then
     checkTestDriveVehMoved(vehObj) -- to avoid stealing the vehicle
-    -- player on its way to the vehicle
-    if state.testDriveInfo.doesThePlayerHaveToDriveThere and not state.hasPlayerArrivedToVehInspection then
+    -- player on its way to the vehicle; a cab ride is not that journey, so it neither counts as
+    -- arrival nor spends the inspection time (#536)
+    if state.testDriveInfo.doesThePlayerHaveToDriveThere and not state.hasPlayerArrivedToVehInspection and not isTaxiRideActive() then
       updateTimeLeftToInspectVehicle(dtSim)
       checkIfPlayerHasArrivedToVehInspection(playerVehObj, vehObj)
     end
