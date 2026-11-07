@@ -131,6 +131,8 @@ M.startCapsuleTetherBetweenStatics = startCapsuleTetherBetweenStatics
 
 
 local function checkVehicleTether(tether)
+  -- A suppressed tether stays armed but cannot fire, so a sale can outlast a taxi ride (#536).
+  if tether.suppressWhile and tether.suppressWhile() then return false end
   if not getPlayerVehicle(0) then return end
   local playerPos = getPlayerVehicle(0):getPosition()
 
@@ -153,13 +155,15 @@ local function checkVehicleTether(tether)
   end
 end
 
-local function startVehicleTether(vehId, radius, inverse, callback)
+local function startVehicleTether(vehId, radius, inverse, callback, suppressWhile)
   local tether = {
     checkfun = checkVehicleTether,
     vehId = vehId,
     r1 = radius,
     callback = callback,
     inverse = inverse or false,
+    -- optional predicate: while it returns true the tether holds instead of breaking
+    suppressWhile = suppressWhile,
     data = data or {}
   }
   M.addTether(tether)
