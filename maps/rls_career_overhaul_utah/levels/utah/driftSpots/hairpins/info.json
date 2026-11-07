@@ -1,0 +1,30 @@
+{
+  "name":"levels.utah.driftSpots.hairpins.name",
+  "objectives":[
+    {
+      "id":"bronze",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":5000
+    },
+    {
+      "id":"silver",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":11000
+    },
+    {
+      "id":"gold",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":20000
+    }
+  ],
+  "unlock":{}
+}

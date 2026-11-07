@@ -12,12 +12,5 @@
     "type": "dryBulk",
     "money": 0.58,
     "icon": "rocks"
-  },
-  "cement": {
-    "name": "Cement",
-    "density": 2.5,
-    "type": "cement",
-    "money": 0.65,
-    "icon": "rocks"
   }
 }

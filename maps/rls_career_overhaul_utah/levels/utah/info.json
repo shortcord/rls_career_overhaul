@@ -1,4 +1,18 @@
 {
+  "defaultDate": {"year": 2026, "month": 7, "day": 29},
+  "multiseat": {
+    "maxPlayers": 4,
+    "suggestedVehicles": [
+    {"model": "hopper", "config": "vehicles/hopper/offroad.pc"},
+    {"model": "hopper", "config": "vehicles/hopper/rock_racer.pc"},
+    {"model": "pickup", "config": "vehicles/pickup/d15_4wd_offroad_M.pc"},
+    {"model": "pickup", "config": "vehicles/pickup/deserttruck_crawler_A.pc"},
+    {"model": "pickup", "config": "vehicles/pickup/deserttruck_rockracer_A.pc"},
+    {"model": "roamer", "config": "vehicles/roamer/offroad.pc"},
+    {"model": "van", "config": "vehicles/van/offroad.pc"},
+    {"model": "rockbouncer", "config": "vehicles/rockbouncer/rock_racer.pc"}
+    ]
+  },
   "features": "levels.utah.info.features",
   "suitablefor": "levels.utah.info.suitablefor",
   "authors": "BeamNG",
@@ -65,12 +79,12 @@
     {
       "translationId": "Off Road Compound",
       "objectname": "spawn_offRoadCompound",
-      "preview": "spawn_offRoadCompound.png"
+      "preview": "spawn_offroadCompound.png"
     },
     {
       "translationId": "Dam",
-      "objectname": "spawn_Dam",
-      "preview": "spawn_Dam.png"
+      "objectname": "spawn_dam",
+      "preview": "spawn_dam.png"
     }
-  ],
+  ]
 }

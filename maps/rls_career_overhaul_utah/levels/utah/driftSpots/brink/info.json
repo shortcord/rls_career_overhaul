@@ -1,0 +1,30 @@
+{
+  "name":"levels.utah.driftSpots.brink.name",
+  "objectives":[
+    {
+      "id":"bronze",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":2500
+    },
+    {
+      "id":"silver",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":6500
+    },
+    {
+      "id":"gold",
+      "rewards":{
+        "beamXP":50,
+        "money":1000
+      },
+      "score":13500
+    }
+  ],
+  "unlock":{}
+}
