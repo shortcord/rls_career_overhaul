@@ -154,6 +154,15 @@ function lib.create(ownerServices)
     return vehId and be:getObjectByID(vehId) or nil
   end
 
+  -- The winner repair has to drop the persisted tyre flats as well, otherwise the restored car comes
+  -- back on popped tyres even though its damage is gone. Paid repairs clear the same state.
+  local function clearTireFlats(inventoryId)
+    if not inventoryId then return false end
+    local tireSystem = overhaul_career_maintenance_tireSystem
+    if not (tireSystem and tireSystem.clearFlatsForVehicle) then return false end
+    return (pcall(function() tireSystem.clearFlatsForVehicle(inventoryId) end))
+  end
+
   -- Tries an instant repair, then a respawn from the inventory, then pushes the part conditions to the live car.
   local function reloadRepairedVehicle(vehicleInfo)
     local didReload = false
@@ -162,7 +171,18 @@ function lib.create(ownerServices)
         overhaul_career_repair_insurance.startRepairInstant(vehicleInfo, function(success)
           if success == false then return end
           derby.saveCareerProgress("winner repair")
-        end, true)
+        end, true, function()
+          -- Runs after the outgoing damage capture and before the replacement spawn, so the capture
+          -- cannot hand the restored car the flats it just recorded. Damage is cleared here too: this
+          -- hook replaces the default one startRepairInstant would install.
+          clearTireFlats(derbyState.playerInventoryId)
+          if overhaul_career_repair_damageManager then
+            pcall(function()
+              overhaul_career_repair_damageManager.clearDamageState(derbyState.playerInventoryId)
+            end)
+          end
+          return true
+        end)
       end)
     end
     if not didReload and overhaul_career_garage_inventory then
@@ -189,6 +209,8 @@ function lib.create(ownerServices)
         overhaul_career_repair_damageManager.clearDamageState(derbyState.playerInventoryId)
       end)
     end
+    -- Also covers the fallback paths: no respawn, so the conditions go straight to the live car.
+    clearTireFlats(derbyState.playerInventoryId)
     if overhaul_career_garage_inventory then
       pcall(function()
         overhaul_career_garage_inventory.setVehicleDirty(derbyState.playerInventoryId)
