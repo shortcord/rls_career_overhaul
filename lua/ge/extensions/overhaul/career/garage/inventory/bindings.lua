@@ -272,10 +272,30 @@ function bindings.new(inputs)
     return true
   end
 
+  -- Restored conditions ------------------------------------------------------------------------------
+
+  -- A restore replaces the live shape, so a capture that lands while one is pending only proves the car
+  -- was still pristine. One bounded waiter per inventory id captures the restored values afterwards.
+  local CONDITIONS_RESYNC_INTERVAL_S = 0.25
+  local CONDITIONS_RESYNC_ATTEMPTS = 240
+  local pendingConditionsResync = {}
+  local scheduleConditionsResync  -- Assigned after updatePartConditions; captures the restored state once.
+
+  local function isConditionsRestorePending(inventoryId)
+    return (M and M.isDamageRestorePending and M.isDamageRestorePending(inventoryId)) == true
+  end
+
   local function getPartConditionsCallback(partConditions, inventoryId, batchToken)
     if not helpers.partConditionBatches:isLive(batchToken) then return end
     if M.isTransientBuild and M.isTransientBuild(inventoryId) then return end
     if type(partConditions) ~= "table" or not vehicles[inventoryId] then
+      onPartConditionsUpdateFinished(inventoryId)
+      return
+    end
+    -- The saved damage is not applied yet: keep the stored record and capture the live values once
+    -- the restore completes, so neither the save nor the inventory sees a pristine replacement.
+    if isConditionsRestorePending(inventoryId) then
+      scheduleConditionsResync(inventoryId)
       onPartConditionsUpdateFinished(inventoryId)
       return
     end
@@ -345,6 +365,30 @@ function bindings.new(inputs)
       end,
       'getOverhaulInventoryVehicleState'
     )
+  end
+
+  -- The guard above keeps the stored record while a restore runs; this captures the restored values once.
+  scheduleConditionsResync = function(inventoryId)
+    if pendingConditionsResync[inventoryId] then return end
+    pendingConditionsResync[inventoryId] = true
+    core_jobsystem.create(function(job)
+      for _ = 1, CONDITIONS_RESYNC_ATTEMPTS do
+        if not pendingConditionsResync[inventoryId] or not vehicles[inventoryId] then break end
+        if not isConditionsRestorePending(inventoryId) then
+          pendingConditionsResync[inventoryId] = nil
+          local vehId = inventoryIdToVehId[inventoryId]
+          -- A car that left the world keeps its stored record; a save captures it once it respawns.
+          if vehId and getObjectByID(vehId) then updatePartConditions(vehId, inventoryId) end
+          return
+        end
+        job.sleep(CONDITIONS_RESYNC_INTERVAL_S)
+      end
+      pendingConditionsResync[inventoryId] = nil
+      if vehicles[inventoryId] and isConditionsRestorePending(inventoryId) then
+        log('W', 'inventory', 'part conditions of vehicle ' .. tostring(inventoryId)
+          .. ' were not refreshed: its damage restore did not finish')
+      end
+    end)
   end
 
   local function applyPartConditions(inventoryId, vehId)
