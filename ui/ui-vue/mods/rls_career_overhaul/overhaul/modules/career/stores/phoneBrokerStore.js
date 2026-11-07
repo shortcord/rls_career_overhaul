@@ -175,7 +175,7 @@ export const usePhoneBrokerStore = defineStore('overhaulPhoneBroker', () => {
   const rows = computed(() => filterOffers(data.value.offers || [], market.value, filter.value, scope.value))
   const selectedRow = computed(() => selected.value == null ? undefined
     : [...(data.value.jobs || []), ...(data.value.offers || []), ...Object.values(data.value.plans || {})].find(r => r.id === selected.value))
-  let preferencesLoaded = false, profileKey
+  let preferencesLoaded = false, profileKey, mapKey
   let requestSequence = 0, latestRequestId, waitingRequest
   let stateVersion = 0, rentalRequest = false
   function releaseRequest(result) {
@@ -213,7 +213,17 @@ export const usePhoneBrokerStore = defineStore('overhaulPhoneBroker', () => {
     for (const key of ['offers', 'jobs', 'stops', 'loaners', 'rentals']) payload[key] = markRaw(Object.values(payload[key] || {}))
     payload.plans = markRaw(payload.plans || {})
     for (const job of [...payload.offers, ...payload.jobs]) job.vehicles = Object.values(job.vehicles || {})
-    if (profileKey !== payload.profile) { rehydrate(); preferencesLoaded = false; profileKey = payload.profile; selected.value = null; scope.value = ''; view.value = 'markets'; availability.value = 'available' }
+    if (profileKey !== payload.profile) {
+      rehydrate(); preferencesLoaded = false; profileKey = payload.profile; selected.value = null; scope.value = ''
+      view.value = 'markets'; availability.value = 'available'
+      if (typeof payload.map === 'string') mapKey = payload.map
+    } else if (typeof payload.map === 'string') {
+      // Facility ids are map-local: a scope taken from a facility screen on the old map
+      // matches no offer on the new one, which left the list empty until a game restart.
+      // Only an actual map change clears it, so a facility-scoped open still works.
+      if (mapKey != null && mapKey !== payload.map) scope.value = ''
+      mapKey = payload.map
+    }
     if (data.value.busy && payload.busy === false) message.value = ''
     data.value = payload; loaded.value = true
     if (payload.busy === false && payload.requestId === latestRequestId) releaseRequest()

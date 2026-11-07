@@ -584,6 +584,15 @@ export function useBrokerScreen() {
     }
   }
 
+  // A deep link outlives the map it was opened on: scoping to a facility this board does
+  // not know about would strand the list empty after travel.
+  function facilityOnBoard(id) {
+    const d = s.data
+    return d.depot?.id === id
+      || (d.loanerFacilities || []).some(f => f.id === id)
+      || (d.offers || []).some(r => r.origin?.facId === id)
+  }
+
   onMounted(async () => {
     s.rehydrate()
     events.on('phoneBrokerState', receiveBrokerState); events.on('phoneBrokerResult', s.receiveResult); events.on('phoneBrokerContainers', receiveContainers)
@@ -603,7 +612,8 @@ export function useBrokerScreen() {
     if (context.routeTab) jobsTab.value = 'route'
     if (context.expanded) s.expanded = true
     refreshTimer = setInterval(() => refreshBroker(true), 10000)
-    if (route.query.facility) { s.scope = String(route.query.facility); s.chooseMarket('all'); s.expanded = true }
+    const linkedFacility = route.query.facility && String(route.query.facility)
+    if (linkedFacility && facilityOnBoard(linkedFacility)) { s.scope = linkedFacility; s.chooseMarket('all'); s.expanded = true }
     if (route.query.depot) { s.view = 'loaners'; s.expanded = true }
   })
   onUnmounted(() => {
