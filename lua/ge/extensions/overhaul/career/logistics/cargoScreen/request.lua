@@ -228,8 +228,16 @@ function part.new(inputs)
   end
 
   -- The facility projection: the facility panel and its cards. Returns the parking-spot location, when a spot was given.
+  -- Returns nil, with no uiData.facility, when the facility is not on this map.
   local function publishFacility(uiData, facId, psPath, playerCargoContainers)
     local fac = ext.generator.getFacilityById(facId)
+    -- A facility the UI knows about can be missing from this map (stale activity link, unloaded addon).
+    -- Publish the player half only: no facility panel reads a nil facility downstream.
+    if not fac then
+      log("W", "", string.format(
+        "Cargo screen facility %s is not on this map; publishing without a facility panel", tostring(facId)))
+      return nil
+    end
     fac.progress.interacted = true
     local organization = overhaul_world_organizations.getUIDataForOrg(fac.associatedOrganization)
     uiData.facility = formatFacilityPanel(fac)
