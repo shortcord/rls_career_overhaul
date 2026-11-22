@@ -279,7 +279,9 @@ do
   check(w.inspect.getSpawnedVehicleInfo() ~= nil, 'D4 inspection still holds the car')
 end
 
--- Scenario E: the tether keeps its stock behaviour when no suppression predicate is given --------
+-- Scenario E: the vehicle tether still breaks by distance ----------------------------------------
+-- Upstream 2.8.1 dropped the sale tether and its suppression predicate, so the vehicle tether is
+-- back to its stock contract: inside the radius it holds, outside it fires.
 
 do
   local w = newWorld()
@@ -291,7 +293,7 @@ do
 
   w.movePlayer(60)
   w.tether.onUpdate()
-  check(fired == 1, 'E2 tether without a predicate still breaks by distance')
+  check(fired == 1, 'E2 the vehicle tether breaks by distance')
 end
 
 print('')
