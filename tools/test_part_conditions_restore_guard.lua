@@ -1,6 +1,9 @@
 -- Issue #544: a pristine fresh-spawn capture must not replace the stored part conditions while a
 -- saved damage restore is still pending. Runs bindings.lua against stubbed engine globals.
 
+-- bindings pulls in the real fuelConditions library, which upstream 2.8.1 started using.
+package.path = 'lua/ge/extensions/?.lua;' .. package.path
+
 local logs, hooks, inventoryPushes, sanitized = {}, {}, {}, {}
 
 log = function(level, tag, message)

@@ -17,7 +17,6 @@ local core_locales = {contextTranslate = deliveryText.context}
 local M = {}
 
 local ffi = require('ffi')
-local loanerCuts = require("overhaul/lib/logistics/loanerCuts")
 
 local cargoLocationsChangedThisFrame = false
 
@@ -563,20 +562,23 @@ local function getRewardsWithBreakdown(cargo)
     end
   end
 
+  -- A truck and trailer from different organizations take one cut, not one each. The employer's cut on shift is
+  -- settled by employment pay, so it never counts as the cut here.
+  local loanerCut = require("overhaul/lib/logistics/loanerCut")
+  local employment = overhaul_career_work_employment
   local loanerReputation = 5 + round((tonumber(cargo.data and cargo.data.originalDistance) or 0)/1000)
-  local loanerRows = loanerCuts.compute(cargo.loanerOrganisations, originalMoney, {
-    reputationAmount = loanerReputation,
+  local loanerRows = loanerCut.breakdownRows({
+    organizationIds = cargo.loanerOrganisations,
+    baseMoney = originalMoney,
+    moneyEarned = loanerCut.moneyEarned(originalMoney, breakdown),
+    getOrganization = function(id) return overhaul_world_organizations.getOrganization(id) end,
+    reputationFor = function() return loanerReputation end,
+    label = function(cut)
+      return core_locales.contextTranslate("ui.career.delivery.breakdown.loanerOrganization", {cut = round(cut * 100)})
+    end,
+    paysOwnCut = employment and employment.usesEmploymentPayForOrg,
   })
-  for _, loaner in ipairs(loanerRows) do
-    local organizationElement = {
-      label = core_locales.contextTranslate("ui.career.delivery.breakdown.loanerOrganization", {cut = round(loaner.cut * 100)}),
-      rewards = {money = loaner.money},
-      simpleBreakdownType = "loaner",
-    }
-    organizationElement.rewards[loaner.organizationId.."Reputation"] = loaner.reputationAmount
-
-    table.insert(breakdown, organizationElement)
-  end
+  for _, row in ipairs(loanerRows) do table.insert(breakdown, row) end
 
 
   local branchMultiplier = tonumber(overhaul_career_progression_skills.getLevelRewardMultiplier("logistics")) or 1

@@ -110,6 +110,12 @@ end
 local function onCareerActivated()
   decided = false
   currentPlan = nil
+  -- A checked checkpoint return resumes the same session without another intro.
+  if require('overhaul/lib/career/checkpointSessions').isReturning() then
+    requested, decided = false, true
+    guihooks.trigger("RlsCareerIntroHide")
+    return
+  end
   requestSplash(false)
   -- The overlay can outlive this Lua owner when another career is loaded.
   -- Ask the mounted UI for its preference again; onMounted covers a new UI.

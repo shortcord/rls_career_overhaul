@@ -1,5 +1,7 @@
 -- Run with luajit tools/test_derby_winner_tire_repair.lua (or lua5.4); no engine globals required.
 -- Covers issue #539: the derby winner repair must clear persisted tyre flats before the car is reloaded.
+-- Upstream 2.8.1 moved that work into overhaul/lib/vehicles/condition.repairVehicle, which the repair
+-- runs through its prepare hook: after the outgoing capture, before the replacement spawn.
 package.path = 'lua/?.lua;lua/ge/extensions/?.lua;' .. package.path
 
 local events = {}
@@ -18,6 +20,19 @@ local function resetEvents() events = {} end
 
 -- Engine/global stubs. Each test replaces what it needs. --------------------------------------------------
 local derbySessionModule = require('overhaul/events/derby/derby/derbySession')
+
+-- Mirrors spawn.lua: capture the outgoing snapshot, then pcall the prepare, and refuse the
+-- replacement rather than raise when preparation fails.
+local function runPrepare(prepareRepair, onPrepared)
+  record('capture')
+  local ok, prepared = pcall(prepareRepair)
+  if not ok or prepared ~= true then
+    record('refused', ok and 'prepare returned false' or prepared)
+    return false
+  end
+  onPrepared()
+  return true
+end
 
 local function baseStubs(options)
   options = options or {}
@@ -40,17 +55,37 @@ local function baseStubs(options)
   overhaul_career_career = {isActive = function() return true end}
 
   local vehicles = {[inventoryId] = vehicleInfo}
+  -- The winner's car is live when the repair is queued, as it is in a real derby win.
+  local liveVehId = options.liveVehId or 7
   local inventory = {
     getVehicles = function() return vehicles end,
-    getVehicleIdFromInventoryId = function() return nil end,
+    getVehicleIdFromInventoryId = function() return options.liveVehId == false and nil or liveVehId end,
     setVehicleDirty = function(id) record('setVehicleDirty', id) end,
-    spawnVehicle = function(id) record('inventorySpawn', id) end,
+    spawnVehicle = function(id, replaceOption, callback, a, b, spawnOptions)
+      local prepare = spawnOptions and spawnOptions.prepareReplacement
+      if type(prepare) == 'function' then
+        if not runPrepare(prepare, function() record('inventorySpawn', id) end) then
+          if callback then callback(false) end
+          return
+        end
+      else
+        record('inventorySpawn', id)
+      end
+      if callback then callback() end
+    end,
   }
   overhaul_career_garage_inventory = inventory
 
   overhaul_career_repair_damageManager = {
     clearDamageState = function(id) record('clearDamageState', id) end,
     saveDamageState = function(id) record('saveDamageState', id) end,
+  }
+
+  -- condition.repairVehicle pushes conditions back into the part inventory.
+  overhaul_career_parts_partInventory = {
+    updatePartConditionsInInventory = function() record('pushPartConditions') end,
+    getPartPathToPartIdMap = function() return {} end,
+    getInventory = function() return {} end,
   }
 
   if not options.noTireSystem then
@@ -66,12 +101,10 @@ local function baseStubs(options)
       startRepairInstant = function(vehInfo, callback, skipSound, prepareRepair)
         record('startRepairInstant', skipSound)
         if type(prepareRepair) == 'function' then
-          -- Mirrors spawn.lua: capture the outgoing snapshot, then prepare, then spawn.
-          record('capture')
-          local ok, prepared = pcall(prepareRepair)
-          assert(ok, 'prepareRepair threw: ' .. tostring(prepared))
-          assert(prepared == true, 'prepareRepair must return true or the spawn is refused')
-          record('spawn')
+          if not runPrepare(prepareRepair, function() record('spawn') end) then
+            if callback then callback(false) end
+            return function() end
+          end
         end
         if callback then callback(vehInfo) end
         return function() end
@@ -104,7 +137,7 @@ local function test(name, body)
   end
 end
 
-test('winner repair clears flats, keeps skipSound and prepares before the spawn', function()
+test('winner repair clears flats between the capture and the spawn', function()
   local session, state = baseStubs()
   assert(session.repairWinningOwnCar() == true, 'repair should be queued')
 
@@ -115,14 +148,9 @@ test('winner repair clears flats, keeps skipSound and prepares before the spawn'
   local clear, capture, spawn = indexOf('clearFlats'), indexOf('capture'), indexOf('spawn')
   assert(clear, 'clearFlatsForVehicle must be called')
   assert(capture and spawn, 'capture and spawn should be recorded')
-  assert(clear < capture, 'flats must be cleared before the outgoing capture')
-  assert(capture < spawn, 'capture must precede the spawn')
-  -- One clear inside the prepare hook, after the capture and before the spawn.
-  local afterCapture
-  for i = capture + 1, #events do
-    if events[i]:sub(1, 10) == 'clearFlats' then afterCapture = i end
-  end
-  assert(afterCapture and afterCapture < spawn, 'hook must clear flats between capture and spawn')
+  -- condition.repairVehicle deliberately commits after the outgoing capture.
+  assert(capture < clear, 'flats must be cleared after the outgoing capture, got ' .. tostring(clear) .. '/' .. tostring(capture))
+  assert(clear < spawn, 'flats must be cleared before the spawn')
 
   for _, entry in ipairs(events) do
     if entry:sub(1, 10) == 'clearFlats' then
@@ -130,6 +158,7 @@ test('winner repair clears flats, keeps skipSound and prepares before the spawn'
     end
   end
   assert(indexOf('setVehicleDirty'), 'the inventory record should still be marked dirty')
+  assert(indexOf('saveCareerProgress'), 'a completed repair must still save career progress')
   assert(state.playerInventoryId == 42, 'state must not be mutated')
 end)
 
@@ -152,26 +181,30 @@ test('fallback spawn path still clears flats before replacing the car', function
   assert(spawn, 'the inventory spawn fallback should run')
   assert(clear < spawn, 'flats must be cleared before the fallback spawn')
 
-  local afterCapture
+  local clearDamage
   for i = 1, #events do
-    if events[i] == 'clearDamageState:42' then afterCapture = i end
+    if events[i] == 'clearDamageState:42' then clearDamage = i end
   end
-  assert(afterCapture and afterCapture < spawn, 'damage should be cleared before the fallback spawn too')
+  assert(clearDamage and clearDamage < spawn, 'damage should be cleared before the fallback spawn too')
 end)
 
 test('a missing tire system is tolerated', function()
   local session = baseStubs({noTireSystem = true})
   assert(session.repairWinningOwnCar() == true, 'repair must still be queued')
   assert(indexOf('spawn'), 'the repair should still spawn the vehicle')
+  assert(indexOf('saveCareerProgress'), 'the repair should still complete')
 end)
 
-test('a throwing tire system is tolerated and does not skip the repair', function()
+test('a throwing tire system refuses the replacement instead of raising', function()
   local session = baseStubs()
   overhaul_career_maintenance_tireSystem.clearFlatsForVehicle = function()
     error('tire system blew up')
   end
   assert(session.repairWinningOwnCar() == true, 'repair must still be queued')
-  assert(indexOf('spawn'), 'the repair should still spawn the vehicle')
+  assert(indexOf('refused'), 'the failing prepare must refuse the replacement, not raise')
+  assert(indexOf('spawn') == nil, 'no replacement may spawn when preparation failed')
+  assert(indexOf('inventorySpawn') == nil, 'no fallback spawn either')
+  assert(indexOf('saveCareerProgress') == nil, 'a refused repair must not save progress')
 end)
 
 test('no inventory id means no repair and no tire work', function()
@@ -179,6 +212,15 @@ test('no inventory id means no repair and no tire work', function()
   state.playerInventoryId = nil
   assert(session.repairWinningOwnCar() == false, 'repair should be refused')
   assert(indexOf('clearFlats') == nil, 'no tyre work without an inventory id')
+end)
+
+test('a stored car with no live vehicle still prepares before the reload', function()
+  local session = baseStubs({liveVehId = false, noInsurance = true})
+  assert(session.repairWinningOwnCar() == true, 'repair should be queued')
+  local clear, spawn = indexOf('clearFlats'), indexOf('inventorySpawn')
+  assert(clear, 'flats must be cleared for a stored car')
+  assert(spawn, 'the stored car should be reloaded')
+  assert(clear < spawn, 'flats must be cleared before the reload')
 end)
 
 print(string.format('%d/%d passed', count - failures, count))

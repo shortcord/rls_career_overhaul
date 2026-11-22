@@ -122,6 +122,7 @@ import { usePhoneMarketplaceListings, requestSellTab } from '../../composables/u
 import {
   avatarColour,
   avatarInitials,
+  buyMarketValue,
   freeroamValueText,
   marketDelta,
   mileageText,
@@ -208,17 +209,15 @@ const feedDetail = computed(() => {
   if (!v) return null
 
   const asking = Number(v.valueAdjusted || v.Value || 0)
-  // Show the same estimate the purchase screen shows: the dealer market index scales the base
-  // estimate into marketValueAdjusted, so both the row and the delta must use it or the discount
-  // chip contradicts the value printed directly above it.
-  const marketValue = v.marketValueAdjusted || v.marketValue
+  // buyMarketValue() applies the dealer market index the purchase screen shows, so the row and the
+  // delta cannot contradict each other or the discount chip above them.
   const sellerName = v.sellerName || 'Private seller'
   const rows = [
     { label: 'Odometer', value: mileageText(v.Mileage) },
     v.Transmission ? { label: 'Transmission', value: v.Transmission } : null,
     v.Drivetrain ? { label: 'Drivetrain', value: v.Drivetrain } : null,
     v['Fuel Type'] ? { label: 'Fuel type', value: v['Fuel Type'] } : null,
-    { label: 'Est. market value', value: money(marketValue), money: true },
+    { label: 'Est. market value', value: money(buyMarketValue(v)), money: true },
   ].filter(Boolean)
 
   return {
@@ -228,7 +227,7 @@ const feedDetail = computed(() => {
     name: [v.Brand, v.Name].filter(Boolean).join(' ') || v.Name || 'Vehicle',
     priceLabel: 'Asking price',
     priceText: money(asking),
-    delta: marketDelta(asking, marketValue),
+    delta: marketDelta(asking, buyMarketValue(v)),
     // marketplace stock has no part conditions, so there is nothing honest to show here
     condition: null,
     conditionColour: '#6fe094',

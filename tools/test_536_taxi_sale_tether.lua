@@ -2,6 +2,9 @@
 -- Runs the real tether and inspectVehicle modules against stubbed engine globals (luajit or lua5.4),
 -- from the repository root: lua5.4 tools/test_536_taxi_sale_tether.lua
 
+-- inspectVehicle pulls real libraries (freeze, ...); capabilities stays stubbed via package.loaded.
+package.path = 'lua/ge/extensions/?.lua;' .. package.path
+
 local inspectPath = 'lua/ge/extensions/overhaul/career/market/inspectVehicle.lua'
 local tetherPath = 'lua/ge/extensions/overhaul/career/maintenance/tether.lua'
 
@@ -237,27 +240,30 @@ do
 end
 
 -- Scenario C: sale armed at the car, then the player leaves by cab -------------------------------
--- The tether must hold during the ride and re-measure from the dropoff afterwards.
+-- Upstream 2.8.1 dropped the distance sale tether: distance only closes the purchase menu, so a cab
+-- ride must not invalidate the inspection either.
 
 do
   local w = newWorld()
   w.startSale()
-  w.movePlayer(15) -- player walks up to the car; the sale tether is armed here
+  w.movePlayer(15) -- player walks up to the car; the inspection arms here
   w.ticks(2)
+  check(#w.flagged == 0, 'C1 sale still held at the car')
 
   w.taxiRide = true
   w.movePlayer(100) -- the cab takes the player away
   w.ticks(10)
-  check(#w.flagged == 0, 'C1 tether holds while the player is a passenger')
-  check(w.message('leftSale') == nil, 'C2 no leave-sale message during the ride')
+  check(#w.flagged == 0, 'C2 sale survives the ride')
+  check(w.message('leftSale') == nil, 'C3 no leave-sale message during the ride')
 
-  w.taxiRide = false -- dropped 100 m away: the player really did leave the sale
+  w.taxiRide = false -- dropped off 100 m away
   w.ticks(2)
-  check(#w.flagged == 1 and w.flagged[1] == w.carId, 'C3 release fires from the dropoff position')
-  check(w.message('leftSale') ~= nil, 'C4 leave-sale message after the ride')
+  check(#w.flagged == 0, 'C4 the dropoff does not invalidate the sale')
+  check(w.inspect.getSpawnedVehicleInfo() ~= nil, 'C5 inspection still holds the car')
 end
 
--- Scenario D: driving away normally still ends the sale (no taxi involved) ------------------------
+-- Scenario D: driving away normally also keeps the inspection (no taxi involved) -----------------
+-- Only an explicit lifecycle action ends it now: seller timeout, the listed car moving, purchase.
 
 do
   local w = newWorld()
@@ -268,8 +274,9 @@ do
 
   w.movePlayer(100) -- player drives their own car away
   w.ticks(2)
-  check(#w.flagged == 1 and w.flagged[1] == w.carId, 'D2 plain drive-away still releases the sale')
-  check(w.message('leftSale') ~= nil, 'D3 plain drive-away still announces leaving the sale')
+  check(#w.flagged == 0, 'D2 plain drive-away no longer releases the sale')
+  check(w.message('leftSale') == nil, 'D3 no leave-sale message on drive-away')
+  check(w.inspect.getSpawnedVehicleInfo() ~= nil, 'D4 inspection still holds the car')
 end
 
 -- Scenario E: the tether keeps its stock behaviour when no suppression predicate is given --------
