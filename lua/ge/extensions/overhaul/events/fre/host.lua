@@ -1,6 +1,7 @@
 -- Loads the freeroam progression files as child extensions and runs their shared maintenance clock.
 -- State, offers, skills, sanctioned racing and the UI feed are separate files; this one only sequences them.
 local M = {}
+local luaTiming = require('overhaul/lib/perf/luaTiming')
 
 -- Lua reload can reconstruct this host before the manager that supplies its accepted child roster.
 M.dependencies = {"overhaul_shell_extensionManager"}
@@ -77,7 +78,7 @@ local function onOverhaulSaveCurrentProfile(currentSavePath, _, writer)
   overhaul_events_fre_state.saveState(currentSavePath, writer)
 end
 
-M.onUpdate = onUpdate
+M.onUpdate = luaTiming.wrap('overhaul_events_fre_host.onUpdate', onUpdate)
 M.onExtensionLoaded = onExtensionLoaded
 M.onExtensionUnloaded = onExtensionUnloaded
 M.onOverhaulModulesActivated = onOverhaulModulesActivated

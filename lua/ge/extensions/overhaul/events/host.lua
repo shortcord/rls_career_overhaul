@@ -10,6 +10,7 @@
 local eventHelpers = require("overhaul/lib/events/helpers")
 local eventArtwork = require("overhaul/lib/events/artwork")
 local M = {}
+local luaTiming = require('overhaul/lib/perf/luaTiming')
 
 M.dependencies = { "overhaul_events_fre_host", "overhaul_events_session" }
 
@@ -558,7 +559,7 @@ end
 M.onGameStateUpdate = onGameStateUpdate
 M.onReplayStateChanged = onReplayStateChanged
 M.onBeamNGTrigger = triggers.onBeamNGTrigger
-M.onUpdate = onUpdate
+M.onUpdate = luaTiming.wrap('overhaul_events_host.onUpdate', onUpdate)
 M.onVehicleSwitched = triggers.onVehicleSwitched
 M.onWorldReadyState = onWorldReadyState
 M.onClientStartMission = onClientStartMission

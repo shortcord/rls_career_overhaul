@@ -19,6 +19,7 @@ local saveStore = require('overhaul/lib/save/store')
 local lifecycle = require('overhaul/lib/lifecycle/host')
 local transitions = require('overhaul/lib/lifecycle/transitions')
 local saveJson = require('overhaul/lib/save/jsonWriter')
+local luaTiming = require('overhaul/lib/perf/luaTiming')
 
 -- SaveStore key over the file this module commits; module keys live with their owners.
 saveStore.registerKeys({
@@ -1543,7 +1544,7 @@ M.deferSaveWork = function(callback, filename, priority)
 end
 M.setTimingLog = function(enabled) timingLog = enabled == true end
 M.getLastSaveStats = function() return lastSaveStats end
-M.onUpdate = onUpdate
+M.onUpdate = luaTiming.wrap('overhaul_career_saveSystem.onUpdate', onUpdate)
 
 -- Older callers retain their save-slot entry points across the profile API naming change.
 M.setSaveSlot = setProfile

@@ -16,6 +16,7 @@ local serializedTable = require('overhaul/lib/save/serializedTable')
 local saveStore = require('overhaul/lib/save/store')
 local partConditionCompatibility = require('overhaul/lib/parts/conditionCompatibility')
 local uiPublisher = require('overhaul/career/parts/partInventory/ui').newPublisher()
+local luaTiming = require('overhaul/lib/perf/luaTiming')
 
 -- SaveStore key over the file this module writes today (metadata only). It completes after
 -- the vehicle data arrives, through the async save extension of the same name.
@@ -1022,7 +1023,7 @@ M.sellParts = sellParts
 M.isHiddenInUI = isHiddenInUI
 
 M.onExtensionLoaded = onExtensionLoaded
-M.onUpdate = onUpdate
+M.onUpdate = luaTiming.wrap('overhaul_career_parts_partInventory.onUpdate', onUpdate)
 M.onOverhaulVehicleSaveFinished = onOverhaulVehicleSaveFinished
 M.onOverhaulSaveFinished = onOverhaulSaveFinished
 M.onOverhaulEnterVehicleFinished = onOverhaulEnterVehicleFinished
