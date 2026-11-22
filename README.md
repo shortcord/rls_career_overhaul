@@ -1,3 +1,16 @@
+# Personal Fork of RLS
+<sup>Because I'm impatient</sup>
+
+This is a personal fork of RLS Career Overhaul, code committed here is for personal use only.
+
+This notice does not change existing licensed code, all code follows existing licensing as listed at the bottom of this document.
+
+This notice is also to disclose the use of Generative AI tools such as OpenCode.
+
+Generative AI is used to navigate and implement changes guided by a developer. All code generated is reviewed by a human before being committed. This does not guarantee a bug-free experience, just potentially a more buggy one.
+
+---
+
 # RLS Career Overhaul
 
 Build a career around the way you like to drive. Race, deliver cargo, run businesses, work shifts, buy and build cars, or take a different route through police work and off-road events.
