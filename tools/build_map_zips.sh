@@ -11,9 +11,9 @@
 # mod_info/ entry, so the archive can be dropped into the mods directory as-is.
 #
 # Example:
-#   tools/build_map_zips.sh --version 2.8.1-scf
-#   tools/build_map_zips.sh --version 2.8.1-scf --map utah
-#   tools/build_map_zips.sh --tag v2.8.1-scf --out maps
+#   tools/build_map_zips.sh --version 2.8.2-scf
+#   tools/build_map_zips.sh --version 2.8.2-scf --map utah
+#   tools/build_map_zips.sh --tag v2.8.2-scf --out maps
 
 set -euo pipefail
 
@@ -43,7 +43,7 @@ Options:
   --source PATH        repository root (default: ${DEFAULT_SOURCE})
   --out PATH           output directory (default: <source>/dist)
   --version VERSION    version to stamp into the file names, with or without a leading v
-  --tag TAG            release tag to derive the version from, e.g. v2.8.1-scf
+  --tag TAG            release tag to derive the version from, e.g. v2.8.2-scf
   --source-sha SHA     commit SHA to record (default: git HEAD)
   --map NAME           build only this map (repeatable); accepts the folder name
                        (${PACKAGE}_utah) or the short name (utah)

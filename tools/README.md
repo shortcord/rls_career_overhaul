@@ -23,19 +23,19 @@ each archive against its source tree.
 Run from the repository root:
 
 ```sh
-tools/build_release.sh --version 2.8.1-scf
+tools/build_release.sh --version 2.8.2-scf
 ```
 
 The files are written to `dist/`. To derive the version from a tag:
 
 ```sh
-tools/build_release.sh --tag v2.8.1-scf --changelog-from-git
+tools/build_release.sh --tag v2.8.2-scf --changelog-from-git
 ```
 
 To include a curated changelog instead of generating one from `git log`:
 
 ```sh
-tools/build_release.sh --version 2.8.1-scf --changelog path/to/changelog.md
+tools/build_release.sh --version 2.8.2-scf --changelog path/to/changelog.md
 ```
 
 `--source` and `--out` select another checkout and output directory. Without
@@ -67,8 +67,8 @@ The maps under `maps/` ship as their own mod archives, built from the same
 version tag:
 
 ```sh
-tools/build_map_zips.sh --version 2.8.1-scf
-tools/build_map_zips.sh --tag v2.8.1-scf --map utah
+tools/build_map_zips.sh --version 2.8.2-scf
+tools/build_map_zips.sh --tag v2.8.2-scf --map utah
 tools/build_map_zips.sh --list
 ```
 
@@ -84,8 +84,8 @@ map is verified against its source tree before the manifest is written.
 a single mod:
 
 ```sh
-tools/build_release.sh --version 2.8.1-scf --with-maps
-tools/build_release.sh --version 2.8.1-scf --with-maps=utah
+tools/build_release.sh --version 2.8.2-scf --with-maps
+tools/build_release.sh --version 2.8.2-scf --with-maps=utah
 ```
 
 The merge aborts if a map would overwrite a file that is already packaged. The

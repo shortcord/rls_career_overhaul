@@ -1,4 +1,4 @@
-# v2.8.1-scf credits
+# v2.8.2-scf credits
 
 Thanks to everyone who helped since the previous public release, v2.6.5.
 

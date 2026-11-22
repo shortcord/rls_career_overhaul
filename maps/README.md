@@ -16,8 +16,8 @@ The prebuilt ZIPs sitting next to the folders are build output and are ignored b
 ## Build
 
 ```sh
-tools/build_map_zips.sh --version 2.8.1-scf
-tools/build_map_zips.sh --version 2.8.1-scf --map utah
+tools/build_map_zips.sh --version 2.8.2-scf
+tools/build_map_zips.sh --version 2.8.2-scf --map utah
 ```
 
 That writes `rls_career_overhaul_<map>_v<version>.zip` plus its manifest to `dist/`, one archive per map, stamped with the mod version. `--out maps` puts them back next to the sources. `--with-maps` on `tools/build_release.sh` folds them into the base archive instead, at the cost of a ~3 GB download.

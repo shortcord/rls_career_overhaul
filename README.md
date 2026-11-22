@@ -15,9 +15,9 @@ Generative AI is used to navigate and implement changes guided by a developer. A
 
 Build a career around the way you like to drive. Race, deliver cargo, run businesses, work shifts, buy and build cars, or take a different route through police work and off-road events.
 
-**v2.8.1-scf Public Release · BeamNG.drive 0.40.5**
+**v2.8.2-scf Public Release · BeamNG.drive 0.40.5**
 
-[Download v2.8.1-scf](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest) · [Getting started](https://github.com/RLS-Modding/rls_career_overhaul/wiki/Installation) · [Wiki](https://github.com/RLS-Modding/rls_career_overhaul/wiki) · [Report a bug](https://github.com/RLS-Modding/rls_career_overhaul/issues)
+[Download v2.8.2-scf](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest) · [Getting started](https://github.com/RLS-Modding/rls_career_overhaul/wiki/Installation) · [Wiki](https://github.com/RLS-Modding/rls_career_overhaul/wiki) · [Report a bug](https://github.com/RLS-Modding/rls_career_overhaul/issues)
 
 ![RLS West Coast](ui/modules/whatsnew/2.8.1_scf/west-coast.jpg)
 
@@ -35,7 +35,7 @@ Overhaul has its own career mode, saves and RLS West Coast map. Start a new care
 
 Available jobs, facilities and events depend on your map, equipment and career progress.
 
-## What's new in v2.8.1-scf
+## What's new in v2.8.2-scf
 
 - **Motorsport Events:** sanctioned drag weekends with staging, qualifying, eliminations and spectator betting across 19 classes and four leagues.
 - **No Prep Knights:** street racing for cash or pink slips, with title defenses, win-backs and the new Belasco Sewer venue.
@@ -45,7 +45,7 @@ Available jobs, facilities and events depend on your map, equipment and career p
 - **West Coast and phone:** the new Drift Playground course, Notification Center and smoother weather and daylight.
 - Plus a large round of fixes for saves, insurance, deliveries, garages and menus.
 
-[Read the full changelog](https://github.com/RLS-Modding/rls_career_overhaul/releases/tag/v2.8.1-scf).
+[Read the full changelog](https://github.com/RLS-Modding/rls_career_overhaul/releases/tag/v2.8.2-scf).
 
 ![No Prep Knights street racing](ui/modules/whatsnew/2.8.1_scf/no-prep.jpg)
 
@@ -65,7 +65,7 @@ These additions are on the development branch after the public release.
 
 ## Install
 
-1. Download **`rls_career_overhaul_v2.8.1-scf.zip`** from the [release Assets](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest).
+1. Download **`rls_career_overhaul_v2.8.2-scf.zip`** from the [release Assets](https://github.com/RLS-Modding/rls_career_overhaul/releases/latest).
 2. In the BeamNG launcher, open **Manage User Folder → Open in Explorer**. Use the user folder for the profile you actually play.
 3. Put the ZIP in its `mods` folder. Leave it zipped.
 4. Remove or disable older Overhaul copies, including unpacked copies. Enable the new version in the Mod Manager and restart the game after changing versions.
@@ -107,7 +107,7 @@ For suspected security vulnerabilities, use the [private reporting policy](SECUR
 
 ## Credits
 
-Created and maintained by **RLS Modding**, with help from contributors, testers and the community. See the [v2.8.1-scf credits](CREDITS.md), [contributors](https://github.com/RLS-Modding/rls_career_overhaul/graphs/contributors) and bundled `licenses` for included third-party material.
+Created and maintained by **RLS Modding**, with help from contributors, testers and the community. See the [v2.8.2-scf credits](CREDITS.md), [contributors](https://github.com/RLS-Modding/rls_career_overhaul/graphs/contributors) and bundled `licenses` for included third-party material.
 
 RLS Career Overhaul is a community mod and is not affiliated with BeamNG GmbH.
 
